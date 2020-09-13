@@ -1,11 +1,20 @@
-<nav class="navbar navbar-default navbar-expand-sm navbar-dark bg-darkblue">
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-darkblue">
 
   <a class="navbar-brand" href="#">
-    <img src="assets/img/logo.svg" style="height: 3rem; margin-top: -20px; margin-bottom: -20px;">
+    <img src="assets/img/logo.svg" style="height: 3rem; margin-top: -1rem; margin-bottom: -1rem;">
     </img>
   </a>
    
-  <div class="collapse navbar-collapse justify-content-between">
+  <button class="navbar-toggler" 
+    type="button" 
+    data-toggle="collapse" 
+    data-target="#navbarNavAltMarkup" 
+    aria-controls="navbarNavAltMarkup" 
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
       <a class="nav-item nav-link active" href="/">Home</a>
       <a class="nav-item nav-link" href="/news.html">News</a>
@@ -15,10 +24,4 @@
     </div>
   </div>
   
-  <button class="navbar-toggler ml-auto" type="button" 
-    data-toggle="collapse" data-target="#navbarNavAltMarkup" 
-    aria-controls="navbarNavAltMarkup" 
-    aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 </nav>
