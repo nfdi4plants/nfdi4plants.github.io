@@ -38,7 +38,6 @@ h1, h2 {
   min-height: calc(100vh - 135px);
 }
 
-
 h4, h5 {
   text-transform:uppercase;
   color: black;
@@ -52,6 +51,10 @@ h1, h2 {
 h3 {
   text-transform: uppercase;
   margin-bottom: $margin;
+}
+
+a {
+  color: black;
 }
 
 .news, .jobs
