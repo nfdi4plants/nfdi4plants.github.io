@@ -1,4 +1,36 @@
 ---
 ---
-@import "bootstrap/bootstrap";
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(/assets/fonts/PTSans-Italic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(/assets/fonts/PTSans-BoldItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PT Sans'), local('PTSans-Regular'), url(/assets/fonts/PTSans-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(/assets/fonts/PTSans-Bold.ttf) format('truetype');
+}
+
+$font-family-sans-serif: 'PT Sans', sans-serif;
+
+@import 'bootstrap/bootstrap';
 @import "custom";
