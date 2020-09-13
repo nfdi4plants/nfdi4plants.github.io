@@ -1,0 +1,9 @@
+---
+layout: default
+title: News
+---
+
+{% for item in site.news %}
+  <h4><a href="{{item.url}}">{{ item.title }}</a></h4>
+  <p>{{ item.excerpt }}</p>
+{% endfor %}

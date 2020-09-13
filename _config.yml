@@ -19,9 +19,9 @@
 # in the templates via {{ site.myvariable }}.
 
 title: NFDI4Plants
-email: your-email@example.com
+email: your-email-TODO@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
+  TODO Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -32,6 +32,18 @@ github_username:  jekyll
 sass:
   sass_dir: assets/css
   style: compressed
+
+collections:
+  news:
+    layout: default
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "single"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

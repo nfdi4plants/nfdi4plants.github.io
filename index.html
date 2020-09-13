@@ -110,53 +110,32 @@ title: Home
   
 <!--- News -->
 
-<div class="container-md bg-yellow">
+<div id="jobs" class="container-md bg-yellow">
   <div class="row">
     <div class="col">
       <h4>News</h4>
     </div>
   </div>
   <div class="row">
-
+    {% assign news_items = site.news | sort: 'date' | reverse %}
+    {% for item in news_items limit:4 %}
     <div class="news">
       <div class="row">
         <div class="date">
-          <h2>06</h2>
-          <h4>Mar</h4>
+          <h2>{{ item.date | date: '%-d' }}</h2>
+          <h4>{{ item.date | date: '%b' }}</h4>
         </div>
         <div class="text">
-          <h6>Building infrastructure and service landscape</h6>
-          <p>Suspendisse cursus arcu sit amet nulla accumsan faucibus. Aliquam a risus vitae orci feugiat ultrices. Maecenas vitae mi quis lacus fringilla molestie. Pellentesque iaculis lacinia diam a imperdiet. Pellentesque sit amet euismod sem...
-          </p>
+          <a href="{{ item.url }}"><h6>{{ item.title }}</h6></a>
+          <p>{{ item.content | strip_html | truncatewords:50 }}</p>
+          <a class="btn-sm btn-secondary" href="{{ item.url }}">read more</a>
         </div>
       </div>
     </div>
-  
-    <div class="news">
-      <div class="row">
-        <div class="date">
-          <h2>24</h2>
-          <h4>Apr</h4>
-        </div>
-        <div class="text">
-          <h6>Building infrastructure and service landscape</h6>
-          <p>Vestibulum non orci lobortis, bibendum nunc non, rhoncus tortor. Integer placerat sollicitudin ligula eget hendrerit. Maecenas pharetra, libero luctus varius accumsan, erat odio laoreet ipsum, in fermentum massa elit eget tellus.</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="news">
-      <div class="row">
-        <div class="date">
-          <h2>19</h2>
-          <h4>Sep</h4>
-        </div>
-        <div class="text">
-          <h6>Building infrastructure and service landscape</h6>
-          <p>Duis eget ipsum purus. Aenean consectetur turpis metus, sit amet consequat quam volutpat quis. Duis imperdiet purus ac dignissim bibendum. Aliquam erat volutpat. Etiam pharetra, tellus ut finibus elementum, mauris dui molestie massa, lobortis molestie quam tortor vitae tortor.</p>
-        </div>
-      </div>
-    </div>
+    {% endfor %}
+  </div>
+  <div class="row justify-content-center">
+    <a href="/news.html" class="learn-more">more news</a>
   </div>
 </div>
 
