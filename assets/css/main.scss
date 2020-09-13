@@ -30,7 +30,10 @@
   src: local('PT Sans Bold'), local('PTSans-Bold'), url(/assets/fonts/PTSans-Bold.ttf) format('truetype');
 }
 
-$font-family-sans-serif: 'PT Sans', sans-serif;
+$fa-font-path: '/assets/fonts';
+@import 'font-awesome/font-awesome';
 
+$font-family-sans-serif: 'PT Sans', sans-serif;
 @import 'bootstrap/bootstrap';
-@import "custom";
+
+@import 'custom';
