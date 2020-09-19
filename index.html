@@ -112,7 +112,7 @@ title: Home
 <div class="container-md">
   <div class="row hero bg-yellow">
 
-    <div class="col-12 mt-1 mb-4 pl-2">
+    <div class="col-md-12">
       <h3>News</h3>
     </div>
 
@@ -124,7 +124,7 @@ title: Home
           <h2>{{ item.date | date: '%-d' }}</h2>
           <h4>{{ item.date | date: '%b' }}</h4>
         </div>
-        <div class="text col-10">
+        <div class="col-10">
           <a href="{{ item.url }}"><h6>{{ item.title }}</h6></a>
           <p>{{ item.content | strip_html | truncatewords:50 }}</p>
           <a class="btn-sm btn-secondary" href="{{ item.url }}">read more</a>

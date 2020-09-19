@@ -12,6 +12,8 @@ $yellow: #F9CD69;
 
 // COLORS
 
+.text-white { color: white; }
+
 .bg-mint { background: $mint; }
 .text-mint { color: $mint; }
 
@@ -38,27 +40,31 @@ h1, h2 {
   font-weight: bold;
 }
 
+h5, h6 {
+  font-weight: bold;
+}
+
 a.learn-more {
   text-align: center;
   @extend .btn, .mt-3, .px-5, .rounded-pill, .btn-outline-secondary;
-
-  // @extend .fa, .fa-heart;
 }
 
 a.learn-more:after {
   padding-left: 1rem;
   font: normal normal normal 14px/1 FontAwesome;
   content: '\f04b';
-  // @extend .fa, .fa-heart;
-  // font-family: "Font Awesome 5 Free";
-  // font-weight: 900;
 }
 
-// a.learn-more::after {
-//   padding-left: 1rem;
-//   font-size: 80%;
-//   content: "▶";
-// }
+a.ext::after {
+  // padding-left: .5em;
+  // font: normal normal normal 14px/1 FontAwesome;
+  // vertical-align: center;
+  // content: '\f08e';
+}
+
+.bg-white h3 {
+  border-color: $lightgray !important;
+}
 
 // MAIN CONTENT
 
@@ -81,10 +87,8 @@ a.learn-more:after {
     border-bottom: 5px solid white;
     display: inline-block;
   
-    margin-left: -$spacer;
-    padding-left: $spacer;
-    padding-right: $spacer;
-    padding-bottom: .3em;
+    @extend .mb-4, .mt-2, .px-3, .pb-1;
+    margin-left: -1.45rem;
   }
 
   .hero-content {

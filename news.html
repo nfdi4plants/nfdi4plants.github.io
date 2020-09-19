@@ -1,13 +1,16 @@
 ---
-layout: default
 title: News
+layout: default
+body-class: bg-yellow
 ---
 
 <div class="container-md">
-  <div class="row hero bg-yellow">
-    <div class="col-12">
-      <h2>DataPLANT News</h2>
+  <div class="row hero">
+    <div class="col-md-12">
+      <h3>DataPLANT News</h3>
     </div>
+  </div>
+  <div class="row hero bg-white rounded">
     {% assign news_items = site.news | sort: 'date' | reverse %}
     {% for item in news_items %}
     <div class="column-12 py-4" style="border-bottom: 1px dotted gray;">
