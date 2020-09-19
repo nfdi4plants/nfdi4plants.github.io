@@ -3,7 +3,27 @@ layout: default
 title: News
 ---
 
-{% for item in site.news %}
-  <h4><a href="{{item.url}}">{{ item.title }}</a></h4>
-  <p>{{ item.excerpt }}</p>
-{% endfor %}
+<div class="container-md">
+  <div class="row hero bg-yellow">
+    <div class="col-12">
+      <h2>DataPLANT News</h2>
+    </div>
+    {% assign news_items = site.news | sort: 'date' | reverse %}
+    {% for item in news_items %}
+    <div class="column-12 py-4" style="border-bottom: 1px dotted gray;">
+      <div class="row align-items-start mt-2">
+        <div class="col-2" style="text-align: right;">
+          <h2>{{ item.date | date: '%-d' }}</h2>
+          <h5>{{ item.date | date: '%b' }}</h5>
+          <h5>{{ item.date | date: '%Y' }}</h5>
+        </div>
+        <div class="col-10">
+          <a href="{{ item.url }}"><h6>{{ item.title }}</h6></a>
+            <p>{{ item.excerpt | strip_html }}</p>
+            <a class="btn btn-sm btn-outline-secondary" href="{{ item.url }}">read more</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+</div>

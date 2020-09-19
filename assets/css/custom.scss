@@ -9,15 +9,8 @@ $lightblue: #4FB3D9;
 $lightgray: #ECEBEB;
 $yellow: #F9CD69;
 
-h4, h5 {
-  text-transform:uppercase;
-  color: black;
-}
 
-h1, h2 {
-  font-weight: bold;
-  color: black;
-}
+// COLORS
 
 .bg-mint { background: $mint; }
 .text-mint { color: $mint; }
@@ -33,31 +26,86 @@ h1, h2 {
 
 .bg-yellow { background: $yellow; }
 
-#content {
-  padding-top: 5rem; 
-  min-height: calc(100vh - 135px);
+a {
+  color: black;
 }
 
-h4, h5 {
-  text-transform:uppercase;
+h1, h2, h3, h4, h5, h6 {
   color: black;
 }
 
 h1, h2 {
   font-weight: bold;
-  color: black;
 }
 
-h3 {
-  text-transform: uppercase;
-  margin-bottom: $margin;
+a.learn-more {
+  text-align: center;
+  @extend .btn, .mt-3, .px-5, .rounded-pill, .btn-outline-secondary;
+
+  // @extend .fa, .fa-heart;
 }
 
-a {
-  color: black;
+a.learn-more:after {
+  padding-left: 1rem;
+  font: normal normal normal 14px/1 FontAwesome;
+  content: '\f04b';
+  // @extend .fa, .fa-heart;
+  // font-family: "Font Awesome 5 Free";
+  // font-weight: 900;
 }
 
-.news, .jobs
+// a.learn-more::after {
+//   padding-left: 1rem;
+//   font-size: 80%;
+//   content: "▶";
+// }
+
+// MAIN CONTENT
+
+#content {
+  padding-top: 5rem; 
+  min-height: calc(100vh - 135px);
+}
+
+// HERO BOX
+
+.hero {
+
+  @extend .rounded-lg, .my-md-3, .py-3, .px-2;
+
+  h3, h4, h5 {
+    text-transform:uppercase;
+  }
+
+  h3 {
+    border-bottom: 5px solid white;
+    display: inline-block;
+  
+    margin-left: -$spacer;
+    padding-left: $spacer;
+    padding-right: $spacer;
+    padding-bottom: .3em;
+  }
+
+  .hero-content {
+    @extend .col-md-7, .align-self-center, .my-3;
+  }
+
+  .hero-image {
+    @extend .col-md-5, .align-self-center, .my-3;
+    img {
+      max-height: 18rem;
+    }
+  }
+
+  .news-item {
+    @extend .col-md-6, .mb-5;
+  }
+}
+
+// JOBS
+
+.jobs
 {
   .date {
     text-align: right;
@@ -72,61 +120,42 @@ a {
   }
 }
 
-.container-md {
-  @extend .rounded-lg, .my-md-3, .py-3;
+// .container-md {
+//   @extend .rounded-lg, .my-md-3, .py-3;
 
-  .col > h4 {
-    border-bottom: 5px solid white;
-    display: inline-block;
+  // .col > h4 {
+  //   border-bottom: 5px solid white;
+  //   display: inline-block;
   
-    margin-left: -$spacer;
-    padding-left: $spacer;
-    padding-right: $spacer;
-    padding-bottom: .5em;
-  }
+  //   margin-left: -$spacer;
+  //   padding-left: $spacer;
+  //   padding-right: $spacer;
+  //   padding-bottom: .5em;
+  // }
 
-  .text {
-    @extend .col-md-7, .align-self-center, .my-3;
-  }
+  // .jobs {
+  //   @extend .col-md-6, .px-4;
 
-  .image {
-    @extend .col-md-5, .align-self-center, .my-3;
+  //   .text {
+  //     @extend .col-12;
+  //   }
+  // }
 
-    img {
-      max-height: 18rem;
-    }
-  }
 
-  .news {
-    @extend .col-md-6, .px-4;
+// }
 
-    .row {
-      @extend .align-items-start, .mx-2, .mt-2;
-    }
-    .date {
-      @extend .col-2, .mt-3;
-    }
+// NEWS
 
-    .text {
-      @extend .col-10;
-    }
-  }
+// .news .row {
+//   @extend .align-items-start, .rounded;
+//   background: $yellow;
+//   border: 1px solid red;
+// }
+//   .date {
+//     text-justify: right;
+//   }
 
-  .jobs {
-    @extend .col-md-6, .px-4;
-
-    .text {
-      @extend .col-12;
-    }
-  }
-
-  .learn-more {
-    @extend .btn, .mt-3, .px-5, .rounded-pill, .btn-outline-secondary;
-  }
-
-  a.learn-more::after {
-    padding-left: 1rem;
-    font-size: 80%;
-    content: "▶";
-  }
-}
+//   h5 {
+//     font-weight: bold;
+//   }
+// }

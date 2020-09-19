@@ -1,0 +1,12 @@
+---
+date: 2020-05-19
+title: 'Positive vote of the reviewer panel to the DataPLANT application'
+---
+
+Yesterday, on 18 May, the announced decision of the NFDI Selection Committee's panel of experts reached us. In this decision, which has yet to be confirmed by the GWK on June 26, DataPLANT was recommended for funding along with eight other consortia. We are pleased that we have been able to successfully follow our vision for RDM in fundamental plant research together with you and hope that we will master the last mile as well. Further feedback on the grant application is announced for August at the latest. As nine consortia are recommended to be funded in this round instead of the seven originally announced, it cannot yet be said whether this will have an impact on the planned budget. The planning will be accordingly cautious.
+
+The NFDI expert panel's advice is based in particular on the results of the evaluation and the applicant's comments on the evaluation results. In order to be able to adequately evaluate the applications reviewed in seven expert colloquia, the NFDI expert panel also paid special attention to the framework conditions for setting up the NFDI in a scientifically guided procedure.
+
+As a result of its selection process, the NFDI Expert Panel recommends the following nine consortia from the first round of calls for proposals to the Joint Science Conference (GWK) for funding: NFDI4Ing, NFDI4Health, NFDI4Biodiversity, NFDI4Culture, KonsortSWD, GHGA, NFDI4Cat, NFDI4Chem, and DataPLANT. A total of 22 consortia took part in the first round, with two further rounds to follow this year and next year. A total of up to 30 consortia are to be funded in the full development stage, with approximately 70 million euros available for direct project costs.
+
+In the meantime, this provisional website has been set up to promote the information of the community about our consortium and ongoing activities. Additionally, we have set up a Twitter account "@nfdi4plants" to tweet about upcoming events and activities. For the time being we continue to use the mailing list we set and subscribed all participants as a classic information channel. At the same time, we have entered into "cross-cutting activities" and are participating, for example, in the exchange on metadata in the NFDI at an event scheduled for the beginning of July.
