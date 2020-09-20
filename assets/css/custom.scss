@@ -32,44 +32,29 @@ a {
   color: black;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: black;
-}
-
-h1, h2 {
-  font-weight: bold;
-}
-
-h5, h6 {
-  font-weight: bold;
+.upcase {
+  text-transform: uppercase;
 }
 
 a.learn-more {
   text-align: center;
   @extend .btn, .mt-3, .px-5, .rounded-pill, .btn-outline-secondary;
-}
+}  
 
 a.learn-more:after {
   padding-left: 1rem;
   font: normal normal normal 14px/1 FontAwesome;
   content: '\f04b';
-}
-
-a.ext::after {
-  // padding-left: .5em;
-  // font: normal normal normal 14px/1 FontAwesome;
-  // vertical-align: center;
-  // content: '\f08e';
-}
+}  
 
 .bg-white h3 {
   border-color: $lightgray !important;
-}
+}  
 
 // MAIN CONTENT
 
 #content {
-  padding-top: 5rem; 
+  margin-top: 2.5rem; 
   min-height: calc(100vh - 135px);
 }
 
@@ -78,10 +63,6 @@ a.ext::after {
 .hero {
 
   @extend .rounded-lg, .my-md-3, .py-3, .px-2;
-
-  h3, h4, h5 {
-    text-transform:uppercase;
-  }
 
   h3 {
     border-bottom: 5px solid white;
@@ -113,14 +94,6 @@ a.ext::after {
 {
   .date {
     text-align: right;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    text-transform: unset;
-  }
-
-  h5, h6 {
-    font-weight: bold;
   }
 }
 

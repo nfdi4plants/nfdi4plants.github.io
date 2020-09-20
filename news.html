@@ -4,24 +4,27 @@ layout: default
 body-class: bg-yellow
 ---
 
-<div class="container-md">
-  <div class="row hero">
-    <div class="col-md-12">
-      <h3>DataPLANT News</h3>
+<div class="container-fluid">
+  <div class="container-md">
+    <div class="row hero">
+      <div class="col-md-12">
+        <h3 class="upcase">{{ page.title }}</h3>
+      </div>
     </div>
-  </div>
-  <div class="row hero bg-white rounded">
-    {% assign news_items = site.news | sort: 'date' | reverse %}
-    {% for item in news_items %}
-    <div class="column-12 py-4" style="border-bottom: 1px dotted gray;">
-      <div class="row align-items-start mt-2">
-        <div class="col-2" style="text-align: right;">
-          <h2>{{ item.date | date: '%-d' }}</h2>
-          <h5>{{ item.date | date: '%b' }}</h5>
-          <h5>{{ item.date | date: '%Y' }}</h5>
-        </div>
-        <div class="col-10">
-          <a href="{{ item.url }}"><h6>{{ item.title }}</h6></a>
+    <div class="row hero bg-white rounded">
+      {% assign news_items = site.news | sort: 'date' | reverse %}
+      {% for item in news_items %}
+      <div class="column-12 py-4" style="border-bottom: 1px dotted gray;">
+        <div class="row align-items-start mt-2">
+          <div class="col-2" style="text-align: right;">
+            <h2>{{ item.date | date: '%-d' }}</h2>
+            <h5>{{ item.date | date: '%b' }}</h5>
+            <h5>{{ item.date | date: '%Y' }}</h5>
+          </div>
+          <div class="col-10">
+            <a href="{{ item.url }}">
+              <h6><strong>{{ item.title }}</strong></h6>
+            </a>
             <p>{{ item.excerpt | strip_html }}</p>
             <a class="btn btn-sm btn-outline-secondary" href="{{ item.url }}">read more</a>
           </div>
@@ -29,4 +32,5 @@ body-class: bg-yellow
       </div>
       {% endfor %}
     </div>
+  </div>
 </div>

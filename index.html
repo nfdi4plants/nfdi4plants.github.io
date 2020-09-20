@@ -3,9 +3,9 @@ layout: default
 title: Home
 ---
 <!--- Jobs ALERT -->
-<div class="container">
+<div class="container-md py-3">
   <div class="row">
-    <div class="col-12">
+    <div class="col-12 mt-4">
     <div class="alert alert-success text-center" role="alert">
       DataPLANT is hiring! Check out our <a href="#jobs"><b>jobs listing</b></a>.
       </div>
@@ -14,7 +14,7 @@ title: Home
 </div>
 
 <!-- Title -->
-<div class="container pb-3">
+<div class="container-md pb-3">
   <div class="row justify-content-center">
     <div class="col-12 col-md-9 pb-5 pb-lg-0">
       <img src="assets/img/nfdi-hero.svg" alt="NFDI stylized overview" style="width: 100%; margin-bottom: -3rem;"/>
@@ -38,7 +38,7 @@ title: Home
     <div class="hero-content">
       <div class="card bg-white">
         <div class="card-body">
-          <h5 class="card-title text-mint">Mission</h5>
+          <h5 class="card-title text-mint upcase">Mission</h5>
           <h2 class="card-title">Driving the digital change in plant science</h2>
           <p class="card-text">DataPLANT will path the way from classical paper publication to pure data publication
             including the annotated research context.</p>
@@ -58,7 +58,7 @@ title: Home
     <div class="hero-content order-2 order-md-1">
       <div class="card bg-white">
         <div class="card-body">
-          <h5 class="text-darkblue card-title">Our Community</h5>
+          <h5 class="text-darkblue card-title upcase">Our Community</h5>
           <h2 class="card-title">Fundamental research in plant science</h2>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices placerat arcu. Sed sit amet diam sed odio lacinia vestibulum eu vel felis. Suspendisse ut consequat urna. Vestibulum pulvinar id mauris et convallis. Sed sit amet pharetra ante, sit amet iaculis dolor. Proin a mauris et mi ornare semper sit amet ut eros.</p>
           <a href="/community.html" class="learn-more">learn more</a>
@@ -77,7 +77,7 @@ title: Home
     <div class="hero-content">
       <div class="card bg-white">
         <div class="card-body">
-          <h5 class="text-lightblue card-title">Annotated Research Context</h5>
+          <h5 class="text-lightblue card-title upcase">Annotated Research Context</h5>
           <h2 class="card-title">Understanding ARC publication</h2>
           <p class="card-text">DataPLANT will path the way from classical paper publication to pure data publication
             including the annotated research context.</p>
@@ -97,7 +97,7 @@ title: Home
     <div class="hero-content order-2 order-md-1">
       <div class="card bg-white">
         <div class="card-body">
-          <h5 class="card-title">Service</h5>
+          <h5 class="card-title upcase">Service</h5>
           <h2 class="card-title">Building infrastructure and service landscape</h2>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices placerat arcu. Sed sit amet diam sed odio lacinia vestibulum eu vel felis. Suspendisse ut consequat urna. Vestibulum pulvinar id mauris et convallis. Sed sit amet pharetra ante, sit amet iaculis dolor. Proin a mauris et mi ornare semper sit amet ut eros.</p>
           <a href="/services.html" class="learn-more">learn more</a>
@@ -113,7 +113,7 @@ title: Home
   <div class="row hero bg-yellow">
 
     <div class="col-md-12">
-      <h3>News</h3>
+      <h3 class="upcase">News</h3>
     </div>
 
     {% assign news_items = site.news | sort: 'date' | reverse %}

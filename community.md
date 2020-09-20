@@ -1,5 +1,5 @@
 ---
-title: community
+title: Community
 layout: single
 
 body-class: bg-lightblue

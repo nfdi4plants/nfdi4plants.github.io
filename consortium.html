@@ -17,22 +17,22 @@ applicants:
       - Heinrich Heine University Düsseldorf
     url:   https://www.fz-juelich.de/ibg/ibg-2/EN/Staff/Cell_wall_quality/Usadel_Bjoern/Usadel.html
     role:  
-      - Task Area 1 Lead
       - Co-Speaker
+      - Task Area 1 Lead
   - name:  Dr. Jens Krüger
     affil: High Performance and Cloud Computing Group, IT Center
     inst:  Eberhard Karls University Tübingen
     url:   https://uni-tuebingen.de/en/facilities/zentrum-fuer-datenverarbeitung/the-zdv/wir-ueber-uns/mitarbeiter/jens-krueger/
     role:  
-      - Task Area 2 Lead
       - Co-Speaker
+      - Task Area 2 Lead
   - name:  Jun. Prof. Dr. Timo Mühlhaus
     affil: Computational Systems Biology
     inst:  Technical University of Kaiserslautern
     url:   https://www.bio.uni-kl.de/organisation/mitarbeiter/m-o/muehlhaus-timo/
     role:  
-    - Task Area 3 Lead
     - Co-Speaker
+    - Task Area 3 Lead
 participants:
   - name:  Prof. Dr. Rolf Backofen
     affil: Bioinformatics
@@ -151,7 +151,7 @@ participants:
 <div class="container-md">
   <div class="row hero">
     <div class="col-md-12">
-      <h3 class="text-lightgray">DataPLANT Consortium</h3>
+      <h3 class="text-white upcase">Consortium</h3>
     </div>
   </div>
 
@@ -174,7 +174,7 @@ participants:
   </div>
 
   <div class="row bg-white rounded my-4 px-3">
-    <div class="col-md-12 py-3">
+    <div class="col-md-12 py-4">
       <h4>Spokespersons</h4>      
     </div>
     {% for person in page.applicants %}
@@ -185,7 +185,7 @@ participants:
         {% endfor %}
       </p>
       <a href="{{ person.url }}" alt="{{ person.name }}">
-        <h6>{{ person.name }}</h6>
+        <strong>{{ person.name }}</strong>
       </a>
       <p>{{ person.affil }}</p>
       <p>
@@ -198,13 +198,15 @@ participants:
   </div>
 
   <div class="row bg-white rounded my-4 px-3">
-    <div class="col-md-12 py-3">
+    <div class="col-md-12 py-4">
       <h4>Participants</h4>      
     </div>
     {% for person in page.participants %}
     <div class="col-md-6 col-lg-3 mb-4 px-3">
       <h6>
-        <a class="ext" href="{{ person.url }}" alt="{{ person.name }}">{{ person.name }}</a>
+        <a class="ext" href="{{ person.url }}" alt="{{ person.name }}">
+          <strong>{{ person.name }}</strong>
+        </a>
       </h6>
       <p>{{ person.affil }}</p>
       <p>
