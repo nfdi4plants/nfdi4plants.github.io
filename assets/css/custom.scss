@@ -51,10 +51,14 @@ a.learn-more:after {
   border-color: $lightgray !important;
 }  
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
 // MAIN CONTENT
 
 #content {
   margin-top: 2.5rem; 
+  padding-top: 1rem;
   min-height: calc(100vh - 135px);
 }
 
