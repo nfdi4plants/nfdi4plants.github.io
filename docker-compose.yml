@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   site:
-    command: jekyll serve
+    command: jekyll serve --livereload
     image: jekyll/jekyll:latest
     volumes:
       - .:/srv/jekyll
