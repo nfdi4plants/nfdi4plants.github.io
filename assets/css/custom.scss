@@ -24,7 +24,7 @@ $mint-lighter-70: #bcede5;
 $mint-lighter-80: #d2f3ed;
 $mint-lighter-90: #e9f9f6;
 
-$lightbluetblue: #4FB3D9;
+$lightblue: #4FB3D9;
 
 $lightblue-darker-10: #47a1c3;
 $lightblue-darker-20: #3f8fae;
@@ -124,19 +124,66 @@ $black: #3A3A3A;
 
 .text-white { color: white; }
 
+//Background
+
 .bg-mint { background: $mint; }
+.bg-mint-light { background: $mint-lighter-50}
+.bg-mint-lighter { background: $mint-lighter-70}
+.bg-mint-dark { background: $mint-darker-50}
+.bg-mint-darker { background: $mint-darker-70}
+
+.bg-lightblue { background: $lightblue; }
+.bg-lightblue-light { background: $lightblue-lighter-50}
+.bg-lightblue-lighter { background: $lightblue-lighter-70}
+.bg-lightblue-dark { background: $lightblue-darker-50}
+.bg-lightblue-darker { background: $lightblue-darker-70}
+
+.bg-darkblue { background: $darkblue; }
+.bg-darkblue-light { background: $darkblue-lighter-50}
+.bg-darkblue-lighter { background: $darkblue-lighter-70}
+.bg-darkblue-dark { background: $darkblue-darker-50}
+.bg-darkblue-darker { background: $darkblue-darker-70}
+
+.bg-yellow { background: $yellow; }
+.bg-yellow-light { background: $yellow-lighter-50}
+.bg-yellow-lighter { background: $yellow-lighter-70}
+.bg-yellow-dark { background: $yellow-darker-50}
+.bg-yellow-darker { background: $yellow-darker-70}
+
+.bg-olive { background: $olive; }
+.bg-olive-light { background: $olive-lighter-50}
+.bg-olive-lighter { background: $olive-lighter-70}
+.bg-olive-dark { background: $olive-darker-50}
+.bg-olive-darker { background: $olive-darker-70}
 
 .bg-split-darkblue {background: linear-gradient($white 50%, $darkblue 50%)}
 .bg-split-darkblue-rev {background: linear-gradient($darkblue 50%, $white 50%)}
 
-.border-mint {border: 2px solid $mint}
+//Border
+.border-mint { border: 2px solid $mint; }
+.border-mint-light { border: 2px solid $mint-lighter-50}
+.border-mint-dark { border: 2px solid $mint-darker-50}
+
+.border-lightblue { border: 2px solid $lightblue; }
+.border-lightblue-light { border: 2px solid $lightblue-lighter-50}
+.border-lightblue-dark { border: 2px solid $lightblue-darker-50}
+
+.border-darkblue { border: 2px solid $darkblue; }
+.border-darkblue-light { border: 2px solid $darkblue-lighter-50}
+.border-darkblue-dark { border: 2px solid $darkblue-darker-50}
+
+.border-yellow { border: 2px solid $yellow; }
+.border-yellow-light { border: 2px solid $yellow-lighter-50}
+.border-yellow-dark { border: 2px solid $yellow-darker-50}
+
+.border-olive { border: 2px solid $olive; }
+.border-olive-light { border: 2px solid $olive-lighter-50}
+.border-olive-dark { border: 2px solid $olive-darker-50}
 
 .text-mint { color: $mint; }
 
-.bg-darkblue { background: $darkblue; }
 .text-darkblue { color: $darkblue; }
 
-.bg-lightblue { background: $lightblue; }
 .text-lightblue { color: $lightblue; }
 
 .bg-lightgray { background: $lightgray; }
