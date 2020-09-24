@@ -156,6 +156,12 @@ $black: #3A3A3A;
 .bg-olive-dark { background: $olive-darker-50}
 .bg-olive-darker { background: $olive-darker-70}
 
+.bg-split-top-mint{background: linear-gradient($white 20%, $mint 20%)}
+.bg-split-top-lightblue{background: linear-gradient($white 20%, $lightblue 20%)}
+.bg-split-top-darkblue{background: linear-gradient($white 20%, $darkblue 20%)}
+.bg-split-top-yellow{background: linear-gradient($white 20%, $yellow 20%)}
+.bg-split-top-olive{background: linear-gradient($white 20%, $olive 20%)}
+
 .bg-split-darkblue {background: linear-gradient($white 50%, $darkblue 50%)}
 .bg-split-darkblue-rev {background: linear-gradient($darkblue 50%, $white 50%)}
 
@@ -248,6 +254,10 @@ h1, h2, h3, h4, h5, h6 {
     img {
       max-height: 18rem;
     }
+  }
+
+  .vertical-spacer {
+    height:100px;
   }
 
   .news-item {
