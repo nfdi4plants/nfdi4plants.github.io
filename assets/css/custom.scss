@@ -1,26 +1,195 @@
 $margin: 12px;
 $corner-radius: 12px;
 
+//Base colors and shading
 $mint: #1FC2A7;
-$white: #FEFEFE;
-$black: #3A3A3A;
-$darkblue: #2D3E50;
+
+$mint-darker-10: #1caf96;
+$mint-darker-20: #199b86;
+$mint-darker-30: #168875;
+$mint-darker-40: #137464;
+$mint-darker-50: #106154;
+$mint-darker-60: #0c4e43;
+$mint-darker-70: #093a32;
+$mint-darker-80: #062721;
+$mint-darker-90: #031311;
+
+$mint-lighter-10: #35c8b0;
+$mint-lighter-20: #4cceb9;
+$mint-lighter-30: #62d4c1;
+$mint-lighter-40: #79daca;
+$mint-lighter-50: #8fe1d3;
+$mint-lighter-60: #a5e7dc;
+$mint-lighter-70: #bcede5;
+$mint-lighter-80: #d2f3ed;
+$mint-lighter-90: #e9f9f6;
+
 $lightblue: #4FB3D9;
-$lightgray: #ECEBEB;
+
+$lightblue-darker-10: #47a1c3;
+$lightblue-darker-20: #3f8fae;
+$lightblue-darker-30: #377d98;
+$lightblue-darker-40: #2f6b82;
+$lightblue-darker-50: #285a6d;
+$lightblue-darker-60: #204857;
+$lightblue-darker-70: #183641;
+$lightblue-darker-80: #10242b;
+$lightblue-darker-80: #081216;
+
+$lightblue-lighter-10: #61bbdd;
+$lightblue-lighter-20: #72c2e1;
+$lightblue-lighter-30: #84cae4;
+$lightblue-lighter-40: #95d1e8;
+$lightblue-lighter-50: #a7d9ec;
+$lightblue-lighter-60: #b9e1f0;
+$lightblue-lighter-70: #cae8f4;
+$lightblue-lighter-80: #dcf0f7;
+$lightblue-lighter-90: #edf7fb;
+
+$darkblue: #2D3E50;
+
+$darkblue-darker-10: #293848;
+$darkblue-darker-20: #243240;
+$darkblue-darker-30: #1f2b38;
+$darkblue-darker-40: #1b2530;
+$darkblue-darker-50: #171f28;
+$darkblue-darker-60: #121920;
+$darkblue-darker-70: #0d1318;
+$darkblue-darker-80: #090c10;
+$darkblue-darker-90: #040608;
+
+$darkblue-lighter-10: #425162;
+$darkblue-lighter-20: #576573;
+$darkblue-lighter-30: #6c7885;
+$darkblue-lighter-40: #818b96;
+$darkblue-lighter-50: #969fa8;
+$darkblue-lighter-60: #abb2b9;
+$darkblue-lighter-70: #c0c5cb;
+$darkblue-lighter-80: #d5d8dc;
+$darkblue-lighter-90: #eaecee;
+
 $yellow: #F9CD69;
+
+$yellow-darker-10: #e6ad00;
+$yellow-darker-20: #cc9a00;
+$yellow-darker-30: #b38600;
+$yellow-darker-40: #997300;
+$yellow-darker-50: #806000;
+$yellow-darker-60: #664d00;
+$yellow-darker-70: #4c3a00;
+$yellow-darker-80: #332600;
+$yellow-darker-90: #191300;
+
+$yellow-lighter-10: #ffc61a;
+$yellow-lighter-20: #ffcd33;
+$yellow-lighter-30: #ffd34d;
+$yellow-lighter-40: #ffd966;
+$yellow-lighter-50: #ffe080;
+$yellow-lighter-60: #ffe699;
+$yellow-lighter-70: #ffecb3;
+$yellow-lighter-80: #fff2cc;
+$yellow-lighter-90: #fff9e6;
+
+$olive: #b4ce82;
+
+$olive-darker-10: #a2b975;
+$olive-darker-20: #90a568;
+$olive-darker-30: #7e905b;
+$olive-darker-40: #6c7c4e;
+$olive-darker-50: #5a6741;
+$olive-darker-60: #485234;
+$olive-darker-70: #363e27;
+$olive-darker-80: #24291a;
+$olive-darker-90: #12150d;
+
+$olive-lighter-10: #bcd38f;
+$olive-lighter-20: #c3d89b;
+$olive-lighter-30: #cbdda8;
+$olive-lighter-40: #d2e2b4;
+$olive-lighter-50: #dae7c1;
+$olive-lighter-60: #e1ebcd;
+$olive-lighter-70: #e9f0da;
+$olive-lighter-80: #f0f5e6;
+$olive-lighter-90: #f8faf3;
+
+$lightgray: #ECEBEB;
+
+$white: #FEFEFE;
+
+$black: #3A3A3A;
+
 
 
 // COLORS
 
 .text-white { color: white; }
 
-.bg-mint { background: $mint; }
-.text-mint { color: $mint; }
+//Background
 
-.bg-darkblue { background: $darkblue; }
-.text-darkblue { color: $darkblue; }
+.bg-mint { background: $mint; }
+.bg-mint-light { background: $mint-lighter-50}
+.bg-mint-lighter { background: $mint-lighter-70}
+.bg-mint-dark { background: $mint-darker-50}
+.bg-mint-darker { background: $mint-darker-70}
 
 .bg-lightblue { background: $lightblue; }
+.bg-lightblue-light { background: $lightblue-lighter-50}
+.bg-lightblue-lighter { background: $lightblue-lighter-70}
+.bg-lightblue-dark { background: $lightblue-darker-50}
+.bg-lightblue-darker { background: $lightblue-darker-70}
+
+.bg-darkblue { background: $darkblue; }
+.bg-darkblue-light { background: $darkblue-lighter-50}
+.bg-darkblue-lighter { background: $darkblue-lighter-70}
+.bg-darkblue-dark { background: $darkblue-darker-50}
+.bg-darkblue-darker { background: $darkblue-darker-70}
+
+.bg-yellow { background: $yellow; }
+.bg-yellow-light { background: $yellow-lighter-50}
+.bg-yellow-lighter { background: $yellow-lighter-70}
+.bg-yellow-dark { background: $yellow-darker-50}
+.bg-yellow-darker { background: $yellow-darker-70}
+
+.bg-olive { background: $olive; }
+.bg-olive-light { background: $olive-lighter-50}
+.bg-olive-lighter { background: $olive-lighter-70}
+.bg-olive-dark { background: $olive-darker-50}
+.bg-olive-darker { background: $olive-darker-70}
+
+.bg-split-top-mint{background: linear-gradient($white 20%, $mint 20%)}
+.bg-split-top-lightblue{background: linear-gradient($white 20%, $lightblue 20%)}
+.bg-split-top-darkblue{background: linear-gradient($white 20%, $darkblue 20%)}
+.bg-split-top-yellow{background: linear-gradient($white 20%, $yellow 20%)}
+.bg-split-top-olive{background: linear-gradient($white 20%, $olive 20%)}
+
+.bg-split-darkblue {background: linear-gradient($white 50%, $darkblue 50%)}
+.bg-split-darkblue-rev {background: linear-gradient($darkblue 50%, $white 50%)}
+
+//Border
+.border-mint { border: 2px solid $mint; }
+.border-mint-light { border: 2px solid $mint-lighter-50}
+.border-mint-dark { border: 2px solid $mint-darker-50}
+
+.border-lightblue { border: 2px solid $lightblue; }
+.border-lightblue-light { border: 2px solid $lightblue-lighter-50}
+.border-lightblue-dark { border: 2px solid $lightblue-darker-50}
+
+.border-darkblue { border: 2px solid $darkblue; }
+.border-darkblue-light { border: 2px solid $darkblue-lighter-50}
+.border-darkblue-dark { border: 2px solid $darkblue-darker-50}
+
+.border-yellow { border: 2px solid $yellow; }
+.border-yellow-light { border: 2px solid $yellow-lighter-50}
+.border-yellow-dark { border: 2px solid $yellow-darker-50}
+
+.border-olive { border: 2px solid $olive; }
+.border-olive-light { border: 2px solid $olive-lighter-50}
+.border-olive-dark { border: 2px solid $olive-darker-50}
+
+.text-mint { color: $mint; }
+
+.text-darkblue { color: $darkblue; }
+
 .text-lightblue { color: $lightblue; }
 
 .bg-lightgray { background: $lightgray; }
@@ -85,6 +254,10 @@ h1, h2, h3, h4, h5, h6 {
     img {
       max-height: 18rem;
     }
+  }
+
+  .vertical-spacer {
+    height:100px;
   }
 
   .news-item {
