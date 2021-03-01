@@ -2,6 +2,7 @@
 #if !FORNAX
 #load "../loaders/pageloader.fsx"
 #load "../loaders/globalloader.fsx"
+#load "../loaders/newsloader.fsx"
 #endif
 
 open Html
