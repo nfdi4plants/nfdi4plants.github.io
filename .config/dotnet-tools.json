@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "fornax": {
+      "version": "0.13.1",
+      "commands": [
+        "fornax"
+      ]
+    },
+    "excubo.webcompiler": {
+      "version": "2.6.5",
+      "commands": [
+        "webcompiler"
+      ]
+    }
+  }
+}

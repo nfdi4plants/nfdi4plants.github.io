@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+$mint       : #1fc2a7;
+$lightblue  : #4FB3D9;
+$darkblue   : #2D3E50;
+$olive      : #b4ce82;
+$yellow     : #F9CD69;
+$red        : #c21f3a;
+
+@mixin is($color) {
+    color: $color !important;
+}
+
+@mixin has-bg($color) {
+    background-color: $color !important;
+}
+
+.is-mint      {@include is($mint)}
+.is-lightblue {@include is($lightblue)}
+.is-darkblue  {@include is($darkblue)}
+.is-olive     {@include is($olive)}
+.is-yellow    {@include is($yellow)}
+.is-red       {@include is($red)}
+
+.has-bg-mint      {@include has-bg($mint)}
+.has-bg-lightblue {@include has-bg($lightblue)}
+.has-bg-darkblue  {@include has-bg($darkblue)}
+.has-bg-olive     {@include has-bg($olive)}
+.has-bg-yellow    {@include has-bg($yellow)}
+.has-bg-red       {@include has-bg($red)}
+
+@import "./bulma-0.9.1/bulma.sass"
