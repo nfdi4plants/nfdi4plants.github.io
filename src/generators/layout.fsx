@@ -1,4 +1,5 @@
 #r "../_lib/Fornax.Core.dll"
+#load "../globals.fsx"
 #if !FORNAX
 #load "../loaders/pageloader.fsx"
 #load "../loaders/globalloader.fsx"
@@ -6,6 +7,7 @@
 #endif
 
 open Html
+open Globals.HTMLComponents
 
 let injectWebsocketCode (webpage:string) =
     let websocketScript =
@@ -67,7 +69,7 @@ let layout (ctx : SiteContents) active bodyCnt =
             nav [Class "navbar is-fixed-top"] [
                 div [Class "navbar-brand"] [
                     a [Class "navbar-item"; Href "/"] [
-                        img [Class "is-32x32"; Src ("/images/logo.svg"); Alt "Logo"]
+                        img [Src ("/images/logo.svg"); Alt "Logo"; Width "32"; Height "32"]
                     ]
                     a [
                         Class "navbar-burger"; 
@@ -81,7 +83,14 @@ let layout (ctx : SiteContents) active bodyCnt =
                         span [HtmlProperties.Custom ("aria-hidden","true")] []
                     ]
                 ]
-                div [Id "navMenu"; Class "navbar-menu"] menuEntries
+                div [Id "navMenu"; Class "navbar-menu"] [
+                    div [Class "navbar-start"] menuEntries
+                    div [Class "navbar-end"] [
+                        a [Class "navbar-item"; Href "https://twitter.com/nfdi4plants"] [icon "fab fa-twitter"]
+                        a [Class "navbar-item"; Href "https://github.com/nfdi4plants"] [icon "fab fa-github"]
+                        a [Class "navbar-item"; Href "https://zenodo.org/communities/nfdi4plants?page=1&size=20"; HtmlProperties.Style [FontWeight "bold"]] [!! "Z"]
+                    ]
+                ]
             ]
             yield! bodyCnt
         ]

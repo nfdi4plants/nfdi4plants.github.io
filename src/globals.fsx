@@ -4,6 +4,21 @@
 open System.IO
 open Markdig
 
+module HTMLComponents =
+
+    open Html
+
+    let icon iconClass = 
+        span [Class"icon"] [
+            i [Class iconClass][]
+        ]
+
+    let iconText iconClass text = 
+        span [Class "icon-text"][
+            icon iconClass
+            span [] [!!text]
+        ]
+
 module MarkdownProcessing =
 
     let markdownPipeline =
