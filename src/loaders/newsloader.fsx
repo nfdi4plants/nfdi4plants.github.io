@@ -24,14 +24,20 @@ type NewsItem = {
         let config = MarkdownProcessing.getFrontMatter text
         let content = MarkdownProcessing.getMarkdownContent text
 
+        printfn "Rootdir: %s" rootDir
+
         let chopLength =
             if rootDir.EndsWith("\\") then rootDir.Length
             else rootDir.Length + 1
 
+        printfn "dirname: %s"  (newsMarkdownPath |> Path.GetDirectoryName)
+
         let dirPart =
             newsMarkdownPath
             |> Path.GetDirectoryName
-            |> fun x -> x.[chopLength .. ]
+            |> fun x -> x.[rootDir.Length .. ]
+
+        printfn "dirpart: %s" dirPart
 
         let file = Path.Combine(dirPart, (newsMarkdownPath |> Path.GetFileNameWithoutExtension) + ".md").Replace("\\", "/")
 

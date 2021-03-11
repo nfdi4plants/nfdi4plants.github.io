@@ -118,7 +118,7 @@ let layout (ctx : SiteContents) active bodyCnt =
                     div [Class "column is-4 m-4"] [
                         block [ h3 [Class "subtitle is-white"] [!!"Social"]]
                         block [ a [Href "https://twitter.com/nfdi4plants"] [iconTextRight "fab fa-twitter" "DataPLANT on Twitter"]]
-                        block [ a [Href "https://github.com/nfdi4plants"] [iconTextRight "fab fa-github" "DataPLANT opewn source projects on Github"]]
+                        block [ a [Href "https://github.com/nfdi4plants"] [iconTextRight "fab fa-github" "DataPLANT open source projects on GitHub"]]
                         block [ h3 [Class "subtitle is-white"] [!!"Legal"]]
                         block [ a [Href ""] [!!"Imprint"]]
                         block [ a [Href ""] [!!"Privacy"]]
