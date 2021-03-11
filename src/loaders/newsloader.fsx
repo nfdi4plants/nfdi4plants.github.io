@@ -17,34 +17,34 @@ type NewsItem = {
             File = file
             Link = link
         }
+    static member fromFile (rootDir:string) (newsMarkdownPath:string) =
+        
+        let text = System.IO.File.ReadAllText newsMarkdownPath
+
+        let config = MarkdownProcessing.getFrontMatter text
+        let content = MarkdownProcessing.getMarkdownContent text
+
+        let chopLength =
+            if rootDir.EndsWith("\\") then rootDir.Length
+            else rootDir.Length + 1
+
+        let dirPart =
+            newsMarkdownPath
+            |> Path.GetDirectoryName
+            |> fun x -> x.[chopLength .. ]
+
+        let file = Path.Combine(dirPart, (newsMarkdownPath |> Path.GetFileNameWithoutExtension) + ".md").Replace("\\", "/")
+
+        let link = "/" + Path.Combine(dirPart, (newsMarkdownPath |> Path.GetFileNameWithoutExtension) + ".html").Replace("\\", "/")
+            
+        let title = config |> Map.find "title" |> MarkdownProcessing.trimString
+        let date = config |> Map.find "date" |>  MarkdownProcessing.trimString |> System.DateTime.Parse
+        let body = content
+
+        NewsItem.create date title body file link
+
 
 let contentDir = "content/news"
-
-let loadFile (rootDir:string) (newsMarkdownPath:string) =
-    let text = System.IO.File.ReadAllText newsMarkdownPath
-
-    let config = MarkdownProcessing.getFrontMatter text
-    let content = MarkdownProcessing.getMarkdownContent text
-
-    let chopLength =
-        if rootDir.EndsWith("\\") then rootDir.Length
-        else rootDir.Length + 1
-
-    let dirPart =
-        newsMarkdownPath
-        |> Path.GetDirectoryName
-        |> fun x -> x.[chopLength .. ]
-
-    let file = Path.Combine(dirPart, (newsMarkdownPath |> Path.GetFileNameWithoutExtension) + ".md").Replace("\\", "/")
-    
-    printfn "%s" file    
-    let link = "/" + Path.Combine(dirPart, (newsMarkdownPath |> Path.GetFileNameWithoutExtension) + ".html").Replace("\\", "/")
-        
-    let title = config |> Map.find "title" |> MarkdownProcessing.trimString
-    let date = config |> Map.find "date" |>  MarkdownProcessing.trimString |> System.DateTime.Parse
-    let body = content
-
-    NewsItem.create date title body file link
 
 let loader (projectRoot: string) (siteContent: SiteContents) =
     let newsPath = System.IO.Path.Combine(projectRoot, contentDir)
@@ -53,9 +53,9 @@ let loader (projectRoot: string) (siteContent: SiteContents) =
     |> Array.iter (fun path ->
         try 
             printfn "[News-Loader]: Adding news item at %s" path
-            siteContent.Add (loadFile projectRoot path)
+            siteContent.Add (NewsItem.fromFile projectRoot path)
         with e as exn -> 
-            siteContent.AddError {Path = path; Message = (sprintf "Uable to load news item %s. \n%s" path e.Message); Phase = Loading}
+            siteContent.AddError {Path = path; Message = (sprintf "Unable to load news item %s. \n%s" path e.Message); Phase = Loading}
     )
     printfn "[News-Loader]: Done loading news items"
     siteContent

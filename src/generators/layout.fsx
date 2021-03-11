@@ -4,6 +4,7 @@
 #load "../loaders/pageloader.fsx"
 #load "../loaders/globalloader.fsx"
 #load "../loaders/newsloader.fsx"
+#load "../loaders/mainpagecardloader.fsx"
 #endif
 
 open Html
@@ -66,7 +67,7 @@ let layout (ctx : SiteContents) active bodyCnt =
             script [ Src "/js/navbar.js"][]
         ]
         body [] [
-            nav [Class "navbar is-fixed-top"] [
+            nav [Class "navbar is-fixed-top has-bg-darkblue"] [
                 div [Class "navbar-brand"] [
                     a [Class "navbar-item"; Href "/"] [
                         img [Src ("/images/logo.svg"); Alt "Logo"; Width "32"; Height "32"]
@@ -84,18 +85,30 @@ let layout (ctx : SiteContents) active bodyCnt =
                     ]
                 ]
                 div [Id "navMenu"; Class "navbar-menu"] [
-                    div [Class "navbar-start"] menuEntries
+                    div [Class "navbar-start is-justify-content-center is-flex-grow-1"] menuEntries
                     div [Class "navbar-end"] [
                         a [Class "navbar-item"; Href "https://twitter.com/nfdi4plants"] [icon "fab fa-twitter"]
                         a [Class "navbar-item"; Href "https://github.com/nfdi4plants"] [icon "fab fa-github"]
+                        a [Class "navbar-item"; Href "https://github.com/nfdi4plants"] [icon "fas fa-paper-plane"]
                         a [Class "navbar-item"; Href "https://zenodo.org/communities/nfdi4plants?page=1&size=20"; HtmlProperties.Style [FontWeight "bold"]] [!! "Z"]
+                    
                     ]
                 ]
             ]
             yield! bodyCnt
         ]
-        footer [Class "footer"] [ 
-
+        footer [Class "footer has-bg-darkblue-lighter-20"] [ 
+            div [Class "container"] [
+                div [Class "columns"] [
+                    div [Class "column is-4 m-4"] [
+                        block [ h3 [Class "subtitle is-white"] [!!"DataPLANT - Democratization of plant research made easy."]]
+                        block [ p [] [!!"DataPLANT is part of "; a [Href "https://www.nfdi.de/"] [!!"NFDI"]]]
+                        block [ p [] [!!"This website is developed and maintained by "; a [] [!!"members of DataPLANT "]]]
+                    ]
+                    div [Class "column is-4 m-4"] [!!"A"]
+                    div [Class "column is-4 m-4"] [!!"A"]
+                ]
+            ]
         ]
             
     ]

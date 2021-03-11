@@ -1,6 +1,9 @@
 @charset "utf-8";
 @import "./constants.scss";
 
+$white: white;
+$black: black;
+
 $mint                   : #1fc2a7;
 
 $mint-darker-10         : #1caf96;
@@ -179,9 +182,19 @@ $red-lighter-90         : #F8E8EB;
     color: choose-contrast-color($color) !important;
 }
 
+@mixin has-bg-split($color,$percentage){
+    background-color: $color;
+    color: choose-contrast-color($color);
+    @media screen and (min-width: 1024px) {
+        background: linear-gradient(rgba(0,0,0,0) percentage($percentage), $color percentage($percentage));
+    }
+}
+
 /**
 * sets the elements color
 */
+.is-white                  {@include is($white)}
+.is-black                  {@include is($black)}
 
 .is-mint                   {@include is($mint                   )}
 
@@ -319,6 +332,9 @@ $red-lighter-90         : #F8E8EB;
 * sets the background color with the correct contrast color for text
 */
 
+.has-bg-white                  {@include has-bg($white)}
+.has-bg-black                  {@include has-bg($black)}
+
 .has-bg-mint                   {@include has-bg($mint                   )}
 
 .has-bg-mint-darker-10         {@include has-bg($mint-darker-10         )}
@@ -450,5 +466,24 @@ $red-lighter-90         : #F8E8EB;
 .has-bg-red-lighter-70         {@include has-bg($red-lighter-70         )}
 .has-bg-red-lighter-80         {@include has-bg($red-lighter-80         )}
 .has-bg-red-lighter-90         {@include has-bg($red-lighter-90         )}
+
+
+.has-bg-split-10-mint       {@include has-bg-split($mint, 0.1)}
+.has-bg-split-10-lightblue  {@include has-bg-split($lightblue, 0.1)}
+.has-bg-split-10-darkblue   {@include has-bg-split($darkblue, 0.1)}
+.has-bg-split-10-olive      {@include has-bg-split($olive, 0.1)}
+
+// Bulma overwrites
+$navbar-item-hover-background-color: $darkblue-lighter-20;
+$navbar-item-color: white;
+$navbar-item-hover-color: $lightblue;
+$navbar-item-active-color: white;
+
+.pt-10 {
+    padding-top: 10% !important
+}
+.pb-10 {
+    padding-bottom: 10% !important
+}
 
 @import "./bulma-0.9.1/bulma.sass"
