@@ -6,30 +6,9 @@ open Globals
 open Globals.HTMLComponents
 open Html
 
-let createNewsItemPreview (newsItem:Newsloader.NewsItem) =
-    div [Class "columns"] [
-        div [Class "column is-2"] [
-            h4 [Class "subtitle is-4"] [!! (sprintf "%i %s" newsItem.Date.Day (newsItem.Date.Month |> News.getStringForMonth))]
-        ]
-        div [Class "column is-10"] [
-            h4 [Class "title is-4"] [!!newsItem.Title]
-            newsItem.Body.Split(" ")
-            |> fun n ->
-                if n.Length > 50 then 
-                    n |> Array.take 50
-                    |> String.concat " "
-                    |> sprintf "%s ..."
-                else 
-                    n
-                    |> String.concat " "
-            |> (!!)
-            div [Class "control mt-4"] [
-                a [Class "button is-small has-bg-darkblue-lighter-20"; Href newsItem.Link] [!!"Read more"]
-            ]
-        ]
-    ]
+open Newsloader
 
-let createLatestNewsPreview (newsItems: Newsloader.NewsItem []) =
+let createLatestNewsPreview (newsItems: NewsItem []) =
     match newsItems.Length with
     | 0 -> []
     | 1 -> []
@@ -42,18 +21,18 @@ let createLatestNewsPreview (newsItems: Newsloader.NewsItem []) =
         [
             div [Class "columns"] [
                 div [Class "column"] [
-                    n1 |> createNewsItemPreview
+                    n1 |> NewsItem.createPreviewElement 50
                 ]
                 div [Class "column"] [
-                    n2 |> createNewsItemPreview
+                    n2 |> NewsItem.createPreviewElement 50
                 ]
             ]
             div [Class "columns"] [
                 div [Class "column"] [
-                    n3 |> createNewsItemPreview
+                    n3 |> NewsItem.createPreviewElement 50
                 ]
                 div [Class "column"] [
-                    n4 |> createNewsItemPreview
+                    n4 |> NewsItem.createPreviewElement 50
                 ]
             ]
         ]

@@ -1,5 +1,7 @@
 #load "../globals.fsx"
+
 open Globals
+open Html
 open System.IO
 
 type NewsItem = {
@@ -48,6 +50,29 @@ type NewsItem = {
         let body = content
 
         NewsItem.create date title body file link
+
+    static member createPreviewElement (wordCutOff:int) (newsItem:NewsItem) =
+        div [Class "columns"] [
+            div [Class "column is-2"] [
+                h4 [Class "subtitle is-4"] [!! (sprintf "%i %s" newsItem.Date.Day (newsItem.Date.Month |> News.getStringForMonth))]
+            ]
+            div [Class "column is-10"] [
+                h4 [Class "title is-4"] [!!newsItem.Title]
+                newsItem.Body.Split(" ")
+                |> fun n ->
+                    if n.Length > wordCutOff then 
+                        n |> Array.take wordCutOff
+                        |> String.concat " "
+                        |> sprintf "%s ..."
+                    else 
+                        n
+                        |> String.concat " "
+                |> (!!)
+                div [Class "control mt-4"] [
+                    a [Class "button is-small has-bg-darkblue-lighter-20"; Href newsItem.Link] [!!"Read more"]
+                ]
+            ]
+        ]
 
 
 let contentDir = "content/news"
