@@ -51,10 +51,15 @@ type NewsItem = {
 
         NewsItem.create date title body file link
 
-    static member createPreviewElement (wordCutOff:int) (newsItem:NewsItem) =
+    static member createPreviewElement (wordCutOff:int) (showYear:bool) (newsItem:NewsItem) =
         div [Class "columns"] [
             div [Class "column is-2"] [
-                h4 [Class "subtitle is-4"] [!! (sprintf "%i %s" newsItem.Date.Day (newsItem.Date.Month |> News.getStringForMonth))]
+                h4 [Class "subtitle is-4"] [
+                    if showYear then
+                        !! (sprintf "%i %s %i" newsItem.Date.Day (newsItem.Date.Month |> News.getStringForMonth) newsItem.Date.Year)
+                    else
+                        !! (sprintf "%i %s" newsItem.Date.Day (newsItem.Date.Month |> News.getStringForMonth))
+                ]
             ]
             div [Class "column is-10"] [
                 h4 [Class "title is-4"] [!!newsItem.Title]

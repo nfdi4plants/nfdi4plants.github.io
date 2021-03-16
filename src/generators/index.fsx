@@ -21,40 +21,41 @@ let createLatestNewsPreview (newsItems: NewsItem []) =
         [
             div [Class "columns"] [
                 div [Class "column"] [
-                    n1 |> NewsItem.createPreviewElement 50
+                    n1 |> NewsItem.createPreviewElement 50 false
                 ]
                 div [Class "column"] [
-                    n2 |> NewsItem.createPreviewElement 50
+                    n2 |> NewsItem.createPreviewElement 50 false
                 ]
             ]
             div [Class "columns"] [
                 div [Class "column"] [
-                    n3 |> NewsItem.createPreviewElement 50
+                    n3 |> NewsItem.createPreviewElement 50 false
                 ]
                 div [Class "column"] [
-                    n4 |> NewsItem.createPreviewElement 50
+                    n4 |> NewsItem.createPreviewElement 50 false
                 ]
             ]
         ]
 
 let createMainPageCard (mainPageCard: Mainpagecardloader.MainPageCard) = 
 
-    let containerBG = Colors.hasBgColor mainPageCard.ContainerBg
+    let containerBG = Colors.hasBgSplitColor 20 mainPageCard.ContainerBg
+    let bgColor = Colors.hasBgColor  mainPageCard.ContainerBg
     let cardBG = Colors.hasBgColor mainPageCard.CardBg
     let emphasisColor = Colors.isColor mainPageCard.EmphasisColor
 
     section [Class "section"] [
-        div [Class (sprintf "Container box p-4 %s" containerBG)] [ 
+        div [Class (sprintf "Container p-4 has-rounded-border %s" containerBG)] [ 
             div [Class "columns"] ([
-                div [Class "column pb-10"] [
+                div [Class "column align-items-top pb-10"] [
                     div [Class (sprintf "container box %s m-4" cardBG)] [
                         h1 [Class (sprintf "title %s is-uppercase has-text-weight-light" emphasisColor)] [!!mainPageCard.Heading]
                         h1 [Class "title"] [!!mainPageCard.Title]
                         div [Class "content"] [!!mainPageCard.Body]
-                        a [Class (sprintf "button is-rounded %s" containerBG); Href mainPageCard.LearnMoreLink] [!!"Learn more"]
+                        a [Class (sprintf "button is-rounded %s" bgColor); Href mainPageCard.LearnMoreLink] [!!"Learn more"]
                     ]
                 ]
-                div [Class "column pt-10"] [
+                div [Class "column align-items-bottom pt-10"] [
                     div [Class "container m-4"] [
                         figure [Class "image is-4by3"] [
                             img [Src mainPageCard.Image]

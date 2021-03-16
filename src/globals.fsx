@@ -139,9 +139,9 @@ module Colors =
             sprintf "is-%s" cName
         else failwithf "%s is not a valid color from the NFDI color palette." cName
 
-    let hasBgSplit10Color cName = 
+    let hasBgSplitColor (percentage:int) cName = 
         if isValidNFDIColorName cName then
-            sprintf "has-bg-split-10-%s" cName
+            sprintf "has-bg-split-%i-%s" percentage cName
         else failwithf "%s is not a valid color from the NFDI color palette." cName
 
 module HTMLComponents =

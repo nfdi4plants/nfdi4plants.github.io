@@ -25,7 +25,7 @@ let generate' (ctx : SiteContents) (page: string) =
             news
 
             |> Seq.map (fun newsItem ->
-                div [Class "Container box p-4 is-rounded has-bg-yellow-lighter-90"] [NewsItem.createPreviewElement 75 newsItem]
+                div [Class "Container box p-4 is-rounded"] [NewsItem.createPreviewElement 75 true newsItem]
             )
             |> List.ofSeq
         )
