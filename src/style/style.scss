@@ -182,6 +182,10 @@ $red-lighter-90         : #F8E8EB;
     color: choose-contrast-color($color) !important;
 }
 
+@mixin has-border-color($color){
+    border-color: $color !important;
+}
+
 @mixin has-bg-split($color,$percentage){
     background-color: $color;
     color: choose-contrast-color($color);
@@ -466,6 +470,146 @@ $red-lighter-90         : #F8E8EB;
 .has-bg-red-lighter-70         {@include has-bg($red-lighter-70         )}
 .has-bg-red-lighter-80         {@include has-bg($red-lighter-80         )}
 .has-bg-red-lighter-90         {@include has-bg($red-lighter-90         )}
+
+
+/**
+* sets the border color
+*/
+
+.has-border-color-white                  {@include has-border-color($white)}
+.has-border-color-black                  {@include has-border-color($black)}
+
+.has-border-color-mint                   {@include has-border-color($mint                   )}
+
+.has-border-color-mint-darker-10         {@include has-border-color($mint-darker-10         )}
+.has-border-color-mint-darker-20         {@include has-border-color($mint-darker-20         )}
+.has-border-color-mint-darker-30         {@include has-border-color($mint-darker-30         )}
+.has-border-color-mint-darker-40         {@include has-border-color($mint-darker-40         )}
+.has-border-color-mint-darker-50         {@include has-border-color($mint-darker-50         )}
+.has-border-color-mint-darker-60         {@include has-border-color($mint-darker-60         )}
+.has-border-color-mint-darker-70         {@include has-border-color($mint-darker-70         )}
+.has-border-color-mint-darker-80         {@include has-border-color($mint-darker-80         )}
+.has-border-color-mint-darker-90         {@include has-border-color($mint-darker-90         )}
+
+.has-border-color-mint-lighter-10        {@include has-border-color($mint-lighter-10        )}
+.has-border-color-mint-lighter-20        {@include has-border-color($mint-lighter-20        )}
+.has-border-color-mint-lighter-30        {@include has-border-color($mint-lighter-30        )}
+.has-border-color-mint-lighter-40        {@include has-border-color($mint-lighter-40        )}
+.has-border-color-mint-lighter-50        {@include has-border-color($mint-lighter-50        )}
+.has-border-color-mint-lighter-60        {@include has-border-color($mint-lighter-60        )}
+.has-border-color-mint-lighter-70        {@include has-border-color($mint-lighter-70        )}
+.has-border-color-mint-lighter-80        {@include has-border-color($mint-lighter-80        )}
+.has-border-color-mint-lighter-90        {@include has-border-color($mint-lighter-90        )}
+
+.has-border-color-lightblue              {@include has-border-color($lightblue              )}
+
+.has-border-color-lightblue-darker-10    {@include has-border-color($lightblue-darker-10    )}
+.has-border-color-lightblue-darker-20    {@include has-border-color($lightblue-darker-20    )}
+.has-border-color-lightblue-darker-30    {@include has-border-color($lightblue-darker-30    )}
+.has-border-color-lightblue-darker-40    {@include has-border-color($lightblue-darker-40    )}
+.has-border-color-lightblue-darker-50    {@include has-border-color($lightblue-darker-50    )}
+.has-border-color-lightblue-darker-60    {@include has-border-color($lightblue-darker-60    )}
+.has-border-color-lightblue-darker-70    {@include has-border-color($lightblue-darker-70    )}
+.has-border-color-lightblue-darker-80    {@include has-border-color($lightblue-darker-80    )}
+.has-border-color-lightblue-darker-80    {@include has-border-color($lightblue-darker-80    )}
+
+.has-border-color-lightblue-lighter-10   {@include has-border-color($lightblue-lighter-10   )}
+.has-border-color-lightblue-lighter-20   {@include has-border-color($lightblue-lighter-20   )}
+.has-border-color-lightblue-lighter-30   {@include has-border-color($lightblue-lighter-30   )}
+.has-border-color-lightblue-lighter-40   {@include has-border-color($lightblue-lighter-40   )}
+.has-border-color-lightblue-lighter-50   {@include has-border-color($lightblue-lighter-50   )}
+.has-border-color-lightblue-lighter-60   {@include has-border-color($lightblue-lighter-60   )}
+.has-border-color-lightblue-lighter-70   {@include has-border-color($lightblue-lighter-70   )}
+.has-border-color-lightblue-lighter-80   {@include has-border-color($lightblue-lighter-80   )}
+.has-border-color-lightblue-lighter-90   {@include has-border-color($lightblue-lighter-90   )}
+
+.has-border-color-darkblue               {@include has-border-color($darkblue               )}
+
+.has-border-color-darkblue-darker-10     {@include has-border-color($darkblue-darker-10     )}
+.has-border-color-darkblue-darker-20     {@include has-border-color($darkblue-darker-20     )}
+.has-border-color-darkblue-darker-30     {@include has-border-color($darkblue-darker-30     )}
+.has-border-color-darkblue-darker-40     {@include has-border-color($darkblue-darker-40     )}
+.has-border-color-darkblue-darker-50     {@include has-border-color($darkblue-darker-50     )}
+.has-border-color-darkblue-darker-60     {@include has-border-color($darkblue-darker-60     )}
+.has-border-color-darkblue-darker-70     {@include has-border-color($darkblue-darker-70     )}
+.has-border-color-darkblue-darker-80     {@include has-border-color($darkblue-darker-80     )}
+.has-border-color-darkblue-darker-90     {@include has-border-color($darkblue-darker-90     )}
+
+.has-border-color-darkblue-lighter-10    {@include has-border-color($darkblue-lighter-10    )}
+.has-border-color-darkblue-lighter-20    {@include has-border-color($darkblue-lighter-20    )}
+.has-border-color-darkblue-lighter-30    {@include has-border-color($darkblue-lighter-30    )}
+.has-border-color-darkblue-lighter-40    {@include has-border-color($darkblue-lighter-40    )}
+.has-border-color-darkblue-lighter-50    {@include has-border-color($darkblue-lighter-50    )}
+.has-border-color-darkblue-lighter-60    {@include has-border-color($darkblue-lighter-60    )}
+.has-border-color-darkblue-lighter-70    {@include has-border-color($darkblue-lighter-70    )}
+.has-border-color-darkblue-lighter-80    {@include has-border-color($darkblue-lighter-80    )}
+.has-border-color-darkblue-lighter-90    {@include has-border-color($darkblue-lighter-90    )}
+
+.has-border-color-yellow                 {@include has-border-color($yellow                 )}
+
+.has-border-color-yellow-darker-10       {@include has-border-color($yellow-darker-10       )}
+.has-border-color-yellow-darker-20       {@include has-border-color($yellow-darker-20       )}
+.has-border-color-yellow-darker-30       {@include has-border-color($yellow-darker-30       )}
+.has-border-color-yellow-darker-40       {@include has-border-color($yellow-darker-40       )}
+.has-border-color-yellow-darker-50       {@include has-border-color($yellow-darker-50       )}
+.has-border-color-yellow-darker-60       {@include has-border-color($yellow-darker-60       )}
+.has-border-color-yellow-darker-70       {@include has-border-color($yellow-darker-70       )}
+.has-border-color-yellow-darker-80       {@include has-border-color($yellow-darker-80       )}
+.has-border-color-yellow-darker-90       {@include has-border-color($yellow-darker-90       )}
+
+.has-border-color-yellow-lighter-10      {@include has-border-color($yellow-lighter-10      )}
+.has-border-color-yellow-lighter-20      {@include has-border-color($yellow-lighter-20      )}
+.has-border-color-yellow-lighter-30      {@include has-border-color($yellow-lighter-30      )}
+.has-border-color-yellow-lighter-40      {@include has-border-color($yellow-lighter-40      )}
+.has-border-color-yellow-lighter-50      {@include has-border-color($yellow-lighter-50      )}
+.has-border-color-yellow-lighter-60      {@include has-border-color($yellow-lighter-60      )}
+.has-border-color-yellow-lighter-70      {@include has-border-color($yellow-lighter-70      )}
+.has-border-color-yellow-lighter-80      {@include has-border-color($yellow-lighter-80      )}
+.has-border-color-yellow-lighter-90      {@include has-border-color($yellow-lighter-90      )}
+
+.has-border-color-olive                  {@include has-border-color($olive                  )}
+
+.has-border-color-olive-darker-10        {@include has-border-color($olive-darker-10        )}
+.has-border-color-olive-darker-20        {@include has-border-color($olive-darker-20        )}
+.has-border-color-olive-darker-30        {@include has-border-color($olive-darker-30        )}
+.has-border-color-olive-darker-40        {@include has-border-color($olive-darker-40        )}
+.has-border-color-olive-darker-50        {@include has-border-color($olive-darker-50        )}
+.has-border-color-olive-darker-60        {@include has-border-color($olive-darker-60        )}
+.has-border-color-olive-darker-70        {@include has-border-color($olive-darker-70        )}
+.has-border-color-olive-darker-80        {@include has-border-color($olive-darker-80        )}
+.has-border-color-olive-darker-90        {@include has-border-color($olive-darker-90        )}
+
+.has-border-color-olive-lighter-10       {@include has-border-color($olive-lighter-10       )}
+.has-border-color-olive-lighter-20       {@include has-border-color($olive-lighter-20       )}
+.has-border-color-olive-lighter-30       {@include has-border-color($olive-lighter-30       )}
+.has-border-color-olive-lighter-40       {@include has-border-color($olive-lighter-40       )}
+.has-border-color-olive-lighter-50       {@include has-border-color($olive-lighter-50       )}
+.has-border-color-olive-lighter-60       {@include has-border-color($olive-lighter-60       )}
+.has-border-color-olive-lighter-70       {@include has-border-color($olive-lighter-70       )}
+.has-border-color-olive-lighter-80       {@include has-border-color($olive-lighter-80       )}
+.has-border-color-olive-lighter-90       {@include has-border-color($olive-lighter-90       )}
+
+.has-border-color-red                    {@include has-border-color($red                    )}
+
+.has-border-color-red-darker-10          {@include has-border-color($red-darker-10          )}
+.has-border-color-red-darker-20          {@include has-border-color($red-darker-20          )}
+.has-border-color-red-darker-30          {@include has-border-color($red-darker-30          )}
+.has-border-color-red-darker-40          {@include has-border-color($red-darker-40          )}
+.has-border-color-red-darker-50          {@include has-border-color($red-darker-50          )}
+.has-border-color-red-darker-60          {@include has-border-color($red-darker-60          )}
+.has-border-color-red-darker-70          {@include has-border-color($red-darker-70          )}
+.has-border-color-red-darker-80          {@include has-border-color($red-darker-80          )}
+.has-border-color-red-darker-90          {@include has-border-color($red-darker-90          )}
+
+.has-border-color-red-lighter-10         {@include has-border-color($red-lighter-10         )}
+.has-border-color-red-lighter-20         {@include has-border-color($red-lighter-20         )}
+.has-border-color-red-lighter-30         {@include has-border-color($red-lighter-30         )}
+.has-border-color-red-lighter-40         {@include has-border-color($red-lighter-40         )}
+.has-border-color-red-lighter-50         {@include has-border-color($red-lighter-50         )}
+.has-border-color-red-lighter-60         {@include has-border-color($red-lighter-60         )}
+.has-border-color-red-lighter-70         {@include has-border-color($red-lighter-70         )}
+.has-border-color-red-lighter-80         {@include has-border-color($red-lighter-80         )}
+.has-border-color-red-lighter-90         {@include has-border-color($red-lighter-90         )}
 
 
 .has-bg-split-10-mint       {@include has-bg-split($mint, 0.1)}
