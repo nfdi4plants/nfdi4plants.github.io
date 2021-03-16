@@ -134,6 +134,11 @@ module Colors =
             sprintf "has-bg-%s" cName
         else failwithf "%s is not a valid color from the NFDI color palette." cName
 
+    let hasBorderColor cName = 
+        if isValidNFDIColorName cName then
+            sprintf "has-border-color-%s" cName
+        else failwithf "%s is not a valid color from the NFDI color palette." cName
+
     let isColor cName = 
         if isValidNFDIColorName cName then
             sprintf "is-%s" cName
@@ -230,6 +235,15 @@ module MarkdownProcessing =
 
 module Predicates =
         
+    let learnMoreHeroPredicate (projectRoot: string, page: string) =
+        let fileName = Path.GetFileNameWithoutExtension page
+        let ext = Path.GetExtension page
+        page.Contains("learn-more")
+        && fileName = "hero"
+        && ext = ".md"
+
+    let isLearnMoreHero f = learnMoreHeroPredicate("",f)
+
     let markdownPredicate (projectRoot: string, page: string) =
         let ext = Path.GetExtension page
         let fileName = Path.GetFileNameWithoutExtension page
@@ -286,3 +300,8 @@ module News =
         | 11 -> "Nov"
         | 12 -> "Dec"
         | _ -> failwithf "%i is not a valid month number" m
+
+module LearnMore =
+
+    let createLernMorePageName (heroPath:string) =
+        heroPath.Replace("/hero.md",".html")

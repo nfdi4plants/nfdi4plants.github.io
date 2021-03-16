@@ -183,6 +183,7 @@ $red-lighter-90         : #F8E8EB;
 }
 
 @mixin has-border-color($color){
+    border: 3px solid;
     border-color: $color !important;
 }
 

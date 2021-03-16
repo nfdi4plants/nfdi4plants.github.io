@@ -9,7 +9,7 @@ let generate' (ctx : SiteContents) (page: string) =
     let siteInfo = ctx.TryGetValue<Globalloader.SiteInfo> ()
     let news = ctx.TryGetValues<Newsloader.NewsItem>() |> Option.defaultValue Seq.empty
 
-    printfn "trying to map news site for %s" page
+    printfn "[NewsItem-Generator] mapping news site for %s" page
 
     let currentNewsItem = news |> Seq.tryFind (fun n -> n.File = page.Replace("_public",""))
 
@@ -36,7 +36,7 @@ let generate' (ctx : SiteContents) (page: string) =
                 ]
             ]
         | _ -> 
-            printfn "cannot find item %A in %A" page news
+            printfn "[NewsItem-Generator] cannot find item %A in %A" page news
             div [] []
     ]
 

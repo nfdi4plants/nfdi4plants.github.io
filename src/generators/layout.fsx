@@ -5,6 +5,7 @@
 #load "../loaders/globalloader.fsx"
 #load "../loaders/newsloader.fsx"
 #load "../loaders/mainpagecardloader.fsx"
+#load "../loaders/learnmoreloader.fsx"
 #endif
 
 open Html

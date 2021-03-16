@@ -6,7 +6,7 @@ card-bg: white
 container-bg: olive
 emphasis-color: olive
 image: /images/service.svg
-learn-more-link:
+learn-more-link: content/learn-more/service.html
 text-position: right
 
 ---

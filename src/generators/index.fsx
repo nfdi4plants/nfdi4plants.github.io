@@ -83,7 +83,7 @@ let generate' (ctx : SiteContents) (_: string) =
 
     Layout.layout ctx "Home" [
         section [Class "hero is-medium"] [
-          div [Class "hero-body"] [
+            div [Class "hero-body"] [
                 div [Class "container has-text-centered"] [
                     figure [Class "image"] [
                         img [Src "images/nfdi-hero.svg"]
@@ -110,5 +110,5 @@ let generate' (ctx : SiteContents) (_: string) =
     ]
 
 let generate (ctx : SiteContents) (projectRoot: string) (page: string) =
-  generate' ctx page
-  |> Layout.render ctx
+    generate' ctx page
+    |> Layout.render ctx

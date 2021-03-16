@@ -6,7 +6,7 @@ card-bg: white
 container-bg: darkblue
 emphasis-color: darkblue
 image: /images/funding-map.svg
-learn-more-link:
+learn-more-link: content/learn-more/the-community.html
 text-position: right
 
 ---
