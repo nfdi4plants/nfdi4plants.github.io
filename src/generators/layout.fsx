@@ -84,7 +84,7 @@ let layout (ctx : SiteContents) active bodyCnt =
                         span [HtmlProperties.Custom ("aria-hidden","true")] []
                     ]
                 ]
-                div [Id "navMenu"; Class "navbar-menu"] [
+                div [Id "navMenu"; Class "navbar-menu has-bg-darkblue"] [
                     div [Class "navbar-start is-justify-content-center is-flex-grow-1"] menuEntries
                     div [Class "navbar-end"] [
                         a [Class "navbar-item"; Href "https://twitter.com/nfdi4plants"] [icon "fab fa-twitter"]
