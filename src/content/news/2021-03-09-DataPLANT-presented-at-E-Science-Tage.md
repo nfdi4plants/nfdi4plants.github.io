@@ -1,14 +1,14 @@
 ---
 date: 2021-03-09
 title: DataPLANT presented at E-Science-Tage
-preview-text: Once again, the E-Science Days were acomplete success. In addition to the other fortunate consortia that have successfully mastered the first round of funding, we were also present with numerous contributions.
+preview-text: Once again, the E-Science Days were acomplete success. In addition to the other fortunate consortia that have successfully mastered the first round of funding, we were also present with numerous contributions. Benedikt Venn used his poster to explain what an ARC (Annotated Research Context) actually is. Jens Krüger, one of the co-speakers of DataPLANT went in his tech talk into more detail about the Metadata ToolChain, which is offered by DataPLANT up to now. Furthermore, our speaker Dirk ...
 ---
 
-Once again, the E-Science Days were acomplete success. In addition to the other fortunate consortia that have successfully mastered the first round of funding, we were also present with numerous contributions. Benedikt Venn [@BenediktVenn](https://twitter.com/BenediktVenn) used his poster to explain what an ARC (Annotated Research Context)  actuall is. 
+Once again, the E-Science Days were acomplete success. In addition to the other fortunate consortia that have successfully mastered the first round of funding, we were also present with numerous contributions. Benedikt Venn [@BenediktVenn](https://twitter.com/BenediktVenn) used his poster to explain what an ARC (Annotated Research Context) actually is. 
 
 [![Annotated Research Context](../../images/News-Items/DataPLANT-ARC-EST-kl.png "Annotated Research Context"){width=60%}](https://heibox.uni-heidelberg.de/d/0be3b8d9bda24aa09629/files/?p=%2FPoster%2FFostering%20the%20democratization%20of%20research%20data%20by%20using%20the%20Annotated%20Research%20Context%20(ARC)%20as%20practical%20implementation.pdf)
 
-Jens Krüger, one of the co-speakers of DataOLANT went in his tech talk into more detail about the Metadata ToolChain, which is offered by DataPLANT up to now.
+Jens Krüger, one of the co-speakers of DataPLANT went in his tech talk into more detail about the Metadata ToolChain, which is offered by DataPLANT up to now.
 
 ![Metadata Toolchain](../../images/News-Items/Metadata-Toolchain.png "Metadata Toolchain"){width=60%}
 

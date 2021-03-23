@@ -1,7 +1,7 @@
 ---
 date: 2021-03-02
 title: DataPLANT presented at NFDI-Talks online series
-preview-text: DataPLANT presented in the second event of the NFDI Talks online series on considerations on project sustainability and community expansion as the total number of researchers covered by the NFDI in Germany should be steadily expanded in the course of the formation process.
+preview-text: DataPLANT presented in the second event of the NFDI Talks online series on considerations on project sustainability and community expansion as the total number of researchers covered by the NFDI in Germany should be steadily expanded in the course of the formation process. Additionally the consortia should provide concepts for a long-term perspective after the first funding phase. The ongoing procedures for the formation of new consortia as well as the activities within the already funded ...
 ---
 
 📣 [Find the recordings here](https://www.youtube.com/watch?v=VTGhtQmn2p4)
@@ -11,7 +11,7 @@ DataPLANT presented in the second event of the NFDI Talks online series on consi
 
 In addition, a long-term perspective of financial sustainability should be developed. This can be achieved in part through the design of future funding. A complementary path lies in greater involvement of the entire scientific community through the application process for DFG funding and the joint design of data management plans. Consultation with the NFDI could ensure that new projects work according to current workflows, with modern tools and jointly established standards, and that this is supported in the project process by the NFDI. Such support should function independently of the concrete funding progress of the individual NFDI consortia and the initial group of co-applicants and participants. For practical implementation, this could be realized, for example, through a co-applicant role of the respective technical consortium. This avoids questions about potential VAT liability of the supporting consortium through personnel and infrastructural contributions. (DFG: "As far as the financial side is concerned, the point to be clarified in particular is the extent to which consortia can offer services in return for payment without becoming liable to VAT and thus losing their non-profit status.")
 
-[![Onboarding Strategy](../../images/News-Items/DataPLANT-presented-at-NFDI-Talks-online-series.png "Onboarding Strategy"){width=100%}](https://www.youtube.com/watch?v=VTGhtQmn2p4)
+[![Onboarding Strategy](../../images/News-Items/Onboarding-Strategy.svg "Onboarding Strategy"){width=100%}](https://www.youtube.com/watch?v=VTGhtQmn2p4)
 
 Strategic considerations of sustainable development include recommendations and guidelines that should be given to future research and collaborative projects. Specialized science projects in virtually all disciplines typically require advice and support in the various aspects of data management, handling tools and workflows, and technical infrastructure. To be able to respond flexibly in this regard, a significant amount of staff should be allocated to support these communities through data stewards. This support for the co-applicants is already arranged by the DataPLANT consortium according to their needs, but in addition, research groups joining later should also benefit from the NFDI. Therefore, it needs to be discussed what conditions and commitment should be attached to inclusion and, in particular, how the human and infrastructural resources needed to support the new groups can be generated.
 

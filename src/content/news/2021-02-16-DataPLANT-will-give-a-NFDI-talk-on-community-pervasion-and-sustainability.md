@@ -1,7 +1,7 @@
 ---
 date: 2021-02-16
 title: DataPLANT will give a NFDI talk on community pervasion and sustainability
-preview-text: At the following NFDI talk on March 1, 4 p.m., the speaker of DataPLANT will give a presentation on the current state of the discussion on "Community Pervasion and Sustainability". This contribution addresses the cross-cutting topic of further NFDI development and integrates key aspects discussed since the beginning of the project in September 2020, such as in the speaker jour fix, the exchange with the DFG in mid-January 2021 and the NFDI directorate in February.
+preview-text: At the following NFDI talk on March 1, 4 p.m., the speaker of DataPLANT will give a presentation on the current state of the discussion on "Community Pervasion and Sustainability". This contribution addresses the cross-cutting topic of further NFDI development and integrates key aspects discussed since the beginning of the project in September 2020, such as in the speaker jour fix, the exchange with the DFG in mid-January 2021 and the NFDI directorate in February. One of the main goals of each ... 
 ---
 
 At the following NFDI talk on March 1, 4 p.m., the speaker of DataPLANT will give a presentation on the current state of the discussion on "Community Pervasion and Sustainability". This contribution addresses the cross-cutting topic of further NFDI development and integrates key aspects discussed since the beginning of the project in September 2020, such as in the speaker jour fix, the exchange with the DFG in mid-January 2021 and the NFDI directorate in February.
