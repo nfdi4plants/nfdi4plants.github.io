@@ -1,5 +1,5 @@
 ---
-date: 02/03/2021
+date: 2021-03-02
 title: DataPLANT presented at NFDI-Talks online series
 preview-text: DataPLANT presented in the second event of the NFDI Talks online series on considerations on project sustainability and community expansion as the total number of researchers covered by the NFDI in Germany should be steadily expanded in the course of the formation process.
 ---

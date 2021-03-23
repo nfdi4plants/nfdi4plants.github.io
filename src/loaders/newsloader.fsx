@@ -44,7 +44,7 @@ type NewsItem = {
         let link = "/" + Path.Combine(dirPart, (newsMarkdownPath |> Path.GetFileNameWithoutExtension) + ".html").Replace("\\", "/")
             
         let title = config |> Map.find "title" |> MarkdownProcessing.trimString
-        let date = config |> Map.find "date" |>  MarkdownProcessing.trimString |> System.DateTime.Parse
+        let date = config |> Map.find "date" |>  MarkdownProcessing.trimString |> fun s -> System.DateTime.ParseExact(s,"yyyy-MM-dd",System.Globalization.CultureInfo.InvariantCulture)
         let body = content
 
         NewsItem.create date title body preview file link

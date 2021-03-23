@@ -1,5 +1,5 @@
 ---
-date: 17/12/2020
+date: 2020-12-17
 title: Participation in the virtual HeFDI-Plenary at Philipps-University Marburg
 preview-text: The Hessian Research Data Infrastructures HeFDI hosted its first virtual Plenary on December 17 last year, and DataPLANT was on board.
 ---

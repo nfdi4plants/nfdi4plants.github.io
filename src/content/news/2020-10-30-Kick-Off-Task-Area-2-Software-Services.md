@@ -1,5 +1,5 @@
 ---
-date: 30/10/2020
+date: 2020-10-30
 title: Kick-Off Task Area 2 "Software/Services"
 preview-text: On October, 30th the participants in Task Area 2 gathered to discuss and define the direction of the developments in software, services and infrastructure.
 ---

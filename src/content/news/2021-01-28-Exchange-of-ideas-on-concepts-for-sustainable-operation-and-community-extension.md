@@ -1,5 +1,5 @@
 ---
-date: 28/01/2021
+date: 2021-01-28
 title: Exchange of ideas on concepts for sustainable operation and community extension
 preview-text: The project coordinator and speaker of DataPLANT had an online meeting with the NFDI representative of the DFG regarding further community involvment and sustainable development of the consortium and the NFDI.
 ---

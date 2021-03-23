@@ -1,5 +1,5 @@
 ---
-date: 18/01/2021
+date: 2021-01-18
 title: Virtual exchange between NFDI4BioDiversity and DataPLANT
 preview-text: Envisioning the collaboration within all NFDI-consortia, members NFDI4BioDiversity and DataPLANT met at the behinning of the new year for a virtual exchange to discuss cross-cutting issues such as standardization, teaching and qualification, common base level infrastructure, the role of data experts and support in research data management, sustainable financing and consortia extension strategies and common strategies of life sciences-related NFDI consortia.
 ---

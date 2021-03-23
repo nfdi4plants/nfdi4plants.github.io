@@ -1,5 +1,5 @@
 ---
-date: 11/12/2020
+date: 2020-12-11
 title: Gitlab and large files - data sharing and versioning for the DataPLANT community
 preview-text: DataPLANT needs a solid technical base for collaboration within projects and between (inter)national research groups. This can be achieved through a framework which supports data versioning and sharing.
 ---

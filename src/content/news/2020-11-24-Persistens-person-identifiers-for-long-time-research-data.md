@@ -1,5 +1,5 @@
 ---
-date: 24/11/2020
+date: 2020-11-24
 title: Persistent person identifiers for long time research data
 preview-text: In a significantly networked and highly collaborative scientific field such as plant research, the goal is to jointly use and federate services for data management.
 ---

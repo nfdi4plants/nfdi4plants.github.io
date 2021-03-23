@@ -19,7 +19,7 @@ News items are referenced in 3 places of the website:
 
 The following metadata must be provided:
 
-- `date`: The date of the news article in the format of MM/DD/YYYY
+- `date`: The date of the news article in the format of yyyy-MM-dd
 - `title`: The title of the article
 - `preview-text`: A really short summary of the article that will be displayed in the newsitem preview on the landing and news pages.
 
@@ -27,7 +27,7 @@ The following metadata must be provided:
 
 ```
 ---
-date: 03/17/2021
+date: 2021-03-17
 title: EIL
 preview-text: NEWSFLASH!!!
 ---

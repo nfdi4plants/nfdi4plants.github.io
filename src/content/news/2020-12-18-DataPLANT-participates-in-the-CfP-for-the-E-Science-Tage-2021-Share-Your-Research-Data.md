@@ -1,5 +1,5 @@
 ---
-date: 18/12/2020
+date: 2020-12-18
 title: DataPLANT participates in the CfP for the ''E-ScienceTage 2021 - Share Your Research Data''
 preview-text: 'DataPLANT submitted three proposals following the Call for Papers of the E-Science-Tage 2021: Share Your Research Data scheduled for beginning of March in Heidelberg.'
 ---

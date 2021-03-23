@@ -1,5 +1,5 @@
 ---
-date: 16/11/2020
+date: 2020-11-16
 title: State of the backend storage infrastructure is evolving
 preview-text: The storage system bwSFS (Storage-for-Science) forms the geo-redundant distributed technical backbone for basic storage services, research data management and sharing of data.
 ---

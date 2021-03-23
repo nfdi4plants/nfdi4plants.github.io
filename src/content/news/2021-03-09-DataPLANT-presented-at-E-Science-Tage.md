@@ -1,5 +1,5 @@
 ---
-date: 09/03/2021
+date: 2021-03-09
 title: DataPLANT presented at E-Science-Tage
 preview-text: Once again, the E-Science Days were acomplete success. In addition to the other fortunate consortia that have successfully mastered the first round of funding, we were also present with numerous contributions.
 ---
