@@ -153,6 +153,11 @@ module HTMLComponents =
 
     open Html
 
+    let whiteIcon iconClass = 
+        span [Class"icon is-white"] [
+            i [Class iconClass][]
+        ]
+
     let icon iconClass = 
         span [Class"icon"] [
             i [Class iconClass][]

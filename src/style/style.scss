@@ -651,8 +651,9 @@ $link: $lightblue;
 
 $navbar-item-hover-background-color: $darkblue-lighter-20;
 $navbar-item-color: white;
-$navbar-item-hover-color: $lightblue;
-$navbar-item-active-color: white;
+$navbar-item-hover-color: $white;
+$navbar-item-active-color: $lightblue;
+$navbar-item-active-background-color:$darkblue-lighter-20;
 
 
 @import "../../node_modules/bulma/bulma.sass";

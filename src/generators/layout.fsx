@@ -90,6 +90,7 @@ let layout (ctx : SiteContents) active bodyCnt =
                     div [Class "navbar-end"] [
                         a [Class "navbar-item"; Href "https://twitter.com/nfdi4plants"] [icon "fab fa-twitter"]
                         a [Class "navbar-item"; Href "https://github.com/nfdi4plants"] [icon "fab fa-github"]
+                        a [Class "navbar-item"; Href "https://www.youtube.com/channel/UCrTBwQWOa0-aWYkwoY104Wg"] [icon "fab fa-youtube"]
                         a [Class "navbar-item"; Href "https://github.com/nfdi4plants"] [icon "fas fa-paper-plane"]
                         a [Class "navbar-item"; Href "https://zenodo.org/communities/nfdi4plants?page=1&size=20"; HtmlProperties.Style [FontWeight "bold"]] [!! "Z"]
                     
@@ -118,8 +119,9 @@ let layout (ctx : SiteContents) active bodyCnt =
                     ]
                     div [Class "column is-4 m-4"] [
                         block [ h3 [Class "subtitle is-white"] [!!"Social"]]
-                        block [ a [Href "https://twitter.com/nfdi4plants"] [iconTextRight "fab fa-twitter" "DataPLANT on Twitter"]]
-                        block [ a [Href "https://github.com/nfdi4plants"] [iconTextRight "fab fa-github" "DataPLANT open source projects on GitHub"]]
+                        block [ whiteIcon "fab fa-twitter"; a [Href "https://twitter.com/nfdi4plants"] [!!"DataPLANT on Twitter"]]
+                        block [ whiteIcon "fab fa-github"; a [Href "https://github.com/nfdi4plants"] [!!"DataPLANT open source projects on GitHub"]]
+                        block [ whiteIcon "fab fa-youtube"; a [Href "https://www.youtube.com/channel/UCrTBwQWOa0-aWYkwoY104Wg"] [!!"DataPLANT video resources on youtube"]]
                         block [ h3 [Class "subtitle is-white"] [!!"Legal"]]
                         block [ a [Href ""] [!!"Imprint"]]
                         block [ a [Href ""] [!!"Privacy"]]
