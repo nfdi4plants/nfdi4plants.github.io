@@ -8,14 +8,16 @@ type NewsItem = {
     Date: System.DateTime
     Title: string
     Body: string
+    PreviewText: string
     File: string
     Link: string
 } with
-    static member create date title body file link =
+    static member create date title body preview file link =
         {
             Date = date
             Title = title
             Body = body
+            PreviewText = preview
             File = file
             Link = link
         }
@@ -35,6 +37,8 @@ type NewsItem = {
             |> Path.GetDirectoryName
             |> fun x -> x.[rootDir.Length .. ]
             
+        let preview = config |> Map.find "preview-text" |> MarkdownProcessing.trimString
+
         let file = Path.Combine(dirPart, (newsMarkdownPath |> Path.GetFileNameWithoutExtension) + ".md").Replace("\\", "/")
 
         let link = "/" + Path.Combine(dirPart, (newsMarkdownPath |> Path.GetFileNameWithoutExtension) + ".html").Replace("\\", "/")
@@ -43,9 +47,9 @@ type NewsItem = {
         let date = config |> Map.find "date" |>  MarkdownProcessing.trimString |> System.DateTime.Parse
         let body = content
 
-        NewsItem.create date title body file link
+        NewsItem.create date title body preview file link
 
-    static member createPreviewElement (wordCutOff:int) (showYear:bool) (newsItem:NewsItem) =
+    static member createPreviewElement (showYear:bool) (newsItem:NewsItem) =
         div [Class "columns"] [
             div [Class "column is-2"] [
                 h4 [Class "subtitle is-4"] [
@@ -57,16 +61,7 @@ type NewsItem = {
             ]
             div [Class "column is-10"] [
                 h4 [Class "title is-4"] [!!newsItem.Title]
-                newsItem.Body.Split(" ")
-                |> fun n ->
-                    if n.Length > wordCutOff then 
-                        n |> Array.take wordCutOff
-                        |> String.concat " "
-                        |> sprintf "%s ..."
-                    else 
-                        n
-                        |> String.concat " "
-                |> (!!)
+                !! newsItem.PreviewText
                 div [Class "control mt-4"] [
                     a [Class "button is-small has-bg-darkblue-lighter-20"; Href newsItem.Link] [!!"Read more"]
                 ]

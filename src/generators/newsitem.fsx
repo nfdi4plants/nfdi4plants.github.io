@@ -36,7 +36,7 @@ let generate' (ctx : SiteContents) (page: string) =
                 ]
             ]
         | _ -> 
-            printfn "[NewsItem-Generator] cannot find item %A in %A" page news
+            printfn "[NewsItem-Generator] cannot find item %A in %A" page (news |> Seq.map (fun n -> n.File) |> String.concat "\r\n")
             div [] []
     ]
 

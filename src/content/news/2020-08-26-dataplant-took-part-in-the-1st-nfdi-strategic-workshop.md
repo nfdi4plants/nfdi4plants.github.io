@@ -1,6 +1,7 @@
 ---
 date: 2020-08-26
 title: DataPLANT took part in the 1st NFDI strategic workshop
+preview-text: DataPLANT participated in the first NFDI strategy workshop initiated and coordinated by the NFDI directorate.
 ---
 
 DataPLANT participated in the first NFDI strategy workshop initiated and coordinated by the NFDI directorate. The workshop intended to find joint solutions and to tackle the further development of the NFDI focusing on cross-cutting topics. Not every cross-cutting issue is necessarily dealt with to the same extent by all consortia. DataPLANT e.g. indicated to cooperate on Research Data Commons (Infrastructures), (Meta)Data, findability, provenance, quality management and assurance as well as legal aspects. Further fields of common interest are user-driven developments, training and education and how to stimulate cultural change. DataPLANT plans to foster the cultural change towards the wide acceptance of data publications. In the upcoming phase the governance and sustainibility, internationalisation, policy advice and consultation will be jointly developed. Furthermore suggestions were taken up, according to which there should be a discussion on how best to integrate the consortia of the next round and whether tools/methods/filetypes might be suitable as an additional cross-cutting theme.

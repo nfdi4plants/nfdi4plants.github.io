@@ -1,6 +1,9 @@
 ---
 date: 2020-09-21
 title: DataPLANT: First General Assembly
+preview-text: On 21st September the DataPLANT participants gathered online to
+officially meet for the First General Assembly of the consortium. More
+then 40 people participated and discussed in the two hours session.
 ---
 
 On 21st September the DataPLANT participants gathered online to

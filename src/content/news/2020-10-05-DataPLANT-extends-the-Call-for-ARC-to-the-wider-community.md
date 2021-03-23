@@ -1,6 +1,10 @@
 ---
 date: 2020-10-05
 title: DataPLANT extends the Call-for-ARC to the wider community
+preview-text: The Annotated Research Context (ARC) is a conceptual combination of
+experimental data with associated annotation, metadata and description
+of computational workflows.
+
 ---
 
 The Annotated Research Context (ARC) is a conceptual combination of

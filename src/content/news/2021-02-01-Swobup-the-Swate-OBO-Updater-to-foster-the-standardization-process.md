@@ -1,6 +1,7 @@
 ---
 date: 01/02/2021
 title: Swobup - the Swate OBO Updater to foster the standardization process
+preview-text: Joint efforts of TaskArea 1 (standardization), TaskArea 2 (technical infrastructure) and TaskArea 3 (data stewards, community support) focusing on the optimization of digital workflows in plant sciences, have enabled one of our developers from Freiburg to implement a tool that facilitates the use of the Swate tool.
 ---
 
 Joint efforts of TaskArea 1 (standardization), TaskArea 2 (technical infrastructure) and TaskArea 3 (data stewards, community support) focusing on the optimization of digital workflows in plant sciences, have enabled one of our developers from Freiburg to implement a tool that facilitates the use of the Swate tool. The tool operates in the background on the Swate Database hosted at the DataPLANT site in Tübingen.

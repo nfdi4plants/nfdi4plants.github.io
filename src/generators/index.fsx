@@ -21,18 +21,18 @@ let createLatestNewsPreview (newsItems: NewsItem []) =
         [
             div [Class "columns"] [
                 div [Class "column"] [
-                    n1 |> NewsItem.createPreviewElement 50 false
+                    n1 |> NewsItem.createPreviewElement false
                 ]
                 div [Class "column"] [
-                    n2 |> NewsItem.createPreviewElement 50 false
+                    n2 |> NewsItem.createPreviewElement false
                 ]
             ]
             div [Class "columns"] [
                 div [Class "column"] [
-                    n3 |> NewsItem.createPreviewElement 50 false
+                    n3 |> NewsItem.createPreviewElement false
                 ]
                 div [Class "column"] [
-                    n4 |> NewsItem.createPreviewElement 50 false
+                    n4 |> NewsItem.createPreviewElement false
                 ]
             ]
         ]

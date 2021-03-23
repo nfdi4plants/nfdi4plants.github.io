@@ -1,6 +1,7 @@
 ---
 date: 2019-12-09
 title: DataPLANT NFDI application defended in Bonn
+preview-text: DataPLANT was initiated by BioDATEN in Baden-Wuerttemberg and DaPLUS of  Kaiserslautern and Jülich to create a NFDI consortium on fundamental plant  research. It took part in the next round together with other consortia like  NFDI4AGRI, NFDI4Earth and NFDI4BioDiversity.
 ---
 
 DataPLANT was initiated by BioDATEN in Baden-Wuerttemberg and DaPLUS of  Kaiserslautern and Jülich to create a NFDI consortium on fundamental plant  research. It took part in the next round together with other consortia like  NFDI4AGRI, NFDI4Earth and NFDI4BioDiversity.

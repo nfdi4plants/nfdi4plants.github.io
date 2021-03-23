@@ -21,6 +21,7 @@ The following metadata must be provided:
 
 - `date`: The date of the news article in the format of MM/DD/YYYY
 - `title`: The title of the article
+- `preview-text`: A really short summary of the article that will be displayed in the newsitem preview on the landing and news pages.
 
 ## Example
 
@@ -28,6 +29,7 @@ The following metadata must be provided:
 ---
 date: 03/17/2021
 title: EIL
+preview-text: NEWSFLASH!!!
 ---
 
 # Newsflash

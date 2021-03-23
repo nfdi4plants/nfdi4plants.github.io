@@ -1,6 +1,8 @@
 ---
 date: 2020-10-21
 title: DataPLANT participates in Second NFDI strategy workshops
+preview-text: The second NFDI strategy workshop focused on vision, values, mission as
+well as on the technical architecture of the NFDI.
 ---
 
 The second NFDI strategy workshop focused on vision, values, mission as

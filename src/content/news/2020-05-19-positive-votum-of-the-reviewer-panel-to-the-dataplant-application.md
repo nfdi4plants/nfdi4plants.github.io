@@ -1,6 +1,7 @@
 ---
 date: 2020-05-19
 title: Positive vote of the reviewer panel to the DataPLANT application
+preview-text: Yesterday, on 18 May, the announced decision of the NFDI Selection Committee's panel of experts reached us. In this decision, which has yet to be confirmed by the GWK on June 26, DataPLANT was recommended for funding along with eight other consortia.
 ---
 
 Yesterday, on 18 May, the announced decision of the NFDI Selection Committee's panel of experts reached us. In this decision, which has yet to be confirmed by the GWK on June 26, DataPLANT was recommended for funding along with eight other consortia. We are pleased that we have been able to successfully follow our vision for RDM in fundamental plant research together with you and hope that we will master the last mile as well. Further feedback on the grant application is announced for August at the latest. As nine consortia are recommended to be funded in this round instead of the seven originally announced, it cannot yet be said whether this will have an impact on the planned budget. The planning will be accordingly cautious.

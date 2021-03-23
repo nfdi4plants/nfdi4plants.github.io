@@ -1,6 +1,9 @@
 ---
 date: 2020-10-22
 title: DataPLANT is happy to annouce a project coordinator
+preview-text: The DataPLANT NFDI was able to convince Cristina, a highly skilled
+person about to graduate in fundamental plant research as a project
+coordinator.
 ---
 
 The DataPLANT NFDI was able to convince Cristina, a highly skilled
