@@ -1,0 +1,12 @@
+---
+date: 2019-08-30
+title: Participation in the NFDI governance workshop in Bonn
+---
+
+ A colleague from Freiburg took part in the NFDI Governance workshop hosted by the DFG in Bonn. The objectives of the workshop were the discussion of possible legal forms for the NFDI structure and giving an overview of the steps up to the application date of 15th October 2019. In the morning there was a presentation by a consulting law firm, which was mandated by the DFG to examine possible paths of governance and legal models. In the afternoon, questions were discussed under moderation by DFG representatives, which should be taken into account for the proposals. Fundamental questions arose, which were taken up by the DFG. 
+
+  From DataPLANT's perspective, a number of questions need to be clarified regarding governance in the NFDI. These range from the role of discipline-specific sub-NFDIs in the overall context to the provision of certain basic and extended services and their billing. Comprehensive services such as training or infrastructure could be provided jointly, e.g. via a common training portal or defined interfaces for data provision and search. There will be a certain compulsion for standardisation, which should be moderated by the NFDI. 
+
+ Future operating and business models will have to be defined, clarifying the rights and roles of science and providers in discipline-specific sub-NFDIs. In the same way, commitment is to be established, for example through SLAs. It should be defined how billing models or refinancing of common (basic) infrastructures such as storage and compute could look like. The legal situation and role of the provider with regard to a sustainable assurance of operation should be defined. Further objectives of the workshop were to identify problem areas and topics as well as relevant fields of action and assign them to the various actors (DFG, consortia, the superordinate NFDI governance structure). 
+
+ The establishment of the NFDI is breaking new ground in many respects: It will provide a networked structure under the provisions of the law on grants, it requires cooperation and control components for support. Through the NFDI a professionalization of research data management is intended and it should provide appropriate services, taking into account tax law requirements. The insights of the workshop will get included into the section on the structure and governance part of the consortium in the grant application. 
