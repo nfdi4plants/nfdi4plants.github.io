@@ -1,22 +1,11 @@
 ---
 date: 2020-09-21
 title: DataPLANT: First General Assembly
-preview-text: On 21st September the DataPLANT participants gathered online to
-officially meet for the First General Assembly of the consortium. More
-then 40 people participated and discussed in the two hours session.
+preview-text: On 21st September the DataPLANT participants gathered online to officially meet for the First General Assembly of the consortium. More then 40 people participated and discussed in the two hours session. At the beginning the DataPLANT mission got refined and explained and how it fits into the NFDI general objectives. The NFDI intends to build a national, sustainable data infrastructure for disciplinary sciences. All successful consortia will enjoy a funding for five years initially. After a successful...
 ---
 
-On 21st September the DataPLANT participants gathered online to
-officially meet for the First General Assembly of the consortium. More
-then 40 people participated and discussed in the two hours session. At
-the beginning the DataPLANT mission got refined and explained and how it
-fits into the NFDI general objectives. The NFDI intends to build a
-national, sustainable data infrastructure for disciplinary sciences. All
-successful consortia will enjoy a funding for five years initially.
-After a successful interim evaluation it would be possible to extend the
-activities for another five years. DataPLANT intends to gain a
-significant coverage of researchers and groups in the field of
-fundamental plant research and to establish a sustainable funding scheme
+On 21st September the DataPLANT participants gathered online to officially meet for the First General Assembly of the consortium. More then 40 people participated and discussed in the two hours session. At
+the beginning the DataPLANT mission got refined and explained and how it fits into the NFDI general objectives. The NFDI intends to build a national, sustainable data infrastructure for disciplinary sciences. All successful consortia will enjoy a funding for five years initially. After a successful interim evaluation it would be possible to extend the activities for another five years. DataPLANT intends to gain a significant coverage of researchers and groups in the field of fundamental plant research and to establish a sustainable funding scheme
 during this time. The NFDI consortia should help, advise and support
 "their disciplines" in standardization and research data management. To
 achieve that objective DataPLANT puts the so called Annotated Research

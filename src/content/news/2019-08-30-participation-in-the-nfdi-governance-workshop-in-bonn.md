@@ -1,7 +1,7 @@
 ---
 date: 2019-08-30
 title: Participation in the NFDI governance workshop in Bonn
-preview-text: A colleague from Freiburg took part in the NFDI Governance workshop hosted by the DFG in Bonn. The objectives of the workshop were the discussion of possible legal forms for the NFDI structure and giving an overview of the steps up to the application date of 15th October 2019.
+preview-text: A colleague from Freiburg took part in the NFDI Governance workshop hosted by the DFG in Bonn. The objectives of the workshop were the discussion of possible legal forms for the NFDI structure and giving an overview of the steps up to the application date of 15th October 2019. In the morning there was a presentation by a consulting law firm, which was mandated by the DFG to examine possible paths of governance and legal models. In the afternoon, questions were discussed under moderation by DFG ...
 ---
 
 A colleague from Freiburg took part in the NFDI Governance workshop hosted by the DFG in Bonn. The objectives of the workshop were the discussion of possible legal forms for the NFDI structure and giving an overview of the steps up to the application date of 15th October 2019. In the morning there was a presentation by a consulting law firm, which was mandated by the DFG to examine possible paths of governance and legal models. In the afternoon, questions were discussed under moderation by DFG representatives, which should be taken into account for the proposals. Fundamental questions arose, which were taken up by the DFG. 

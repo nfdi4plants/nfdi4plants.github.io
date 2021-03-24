@@ -1,7 +1,7 @@
 ---
 date: 2021-02-25
 title: Participation of DataPLANT at the E-Science-Tage
-preview-text: DataPLANT focusing on fundamental plant research presents itself in multiple fashion at the upcoming EST. We will give an overview on the Annotated Research Context (ARC), ongoing technical developments for a first set of annotation tools and our concept for the use of  Data Stewards. We are also participating in the NFDI workshop and one of our infrastructure partners, bwSFS - Storage-for-Science, will also be along with a poster.
+preview-text: DataPLANT focusing on fundamental plant research presents itself in multiple fashion at the upcoming EST. We will give an overview on the Annotated Research Context (ARC), ongoing technical developments for a first set of annotation tools and our concept for the use of  Data Stewards. We are also participating in the NFDI workshop and one of our infrastructure partners, bwSFS - Storage-for-Science, will also be along with a poster ...
 ---
 
 DataPLANT focusing on fundamental plant research presents itself in multiple fashion at the upcoming [EST](https://e-science-tage.de/). We will give an overview on the **Annotated Research Context (ARC)**, ongoing technical developments for a first set of **annotation tools** and our concept for the use of **Data Stewards**. We are also participating in the NFDI workshop and one of our infrastructure partners, **bwSFS - Storage-for-Science**, will also be along with a poster.
