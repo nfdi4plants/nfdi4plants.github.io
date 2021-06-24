@@ -1,11 +1,11 @@
 ---
-heading: annotated research context
+heading: Annotated Research Context
 title: Making your research digital 
 bg-color: lightblue
-emphasis-color: lightblue
-image: /images/arc.svg
-layout: text-only
+emphasis-color: darkblue
+image: ../../images/arc.svg
+layout: text-left-image-right
 
 ---
 
-From notes to knowledge by increasing the level of annotation at the source, tracking provenance using community standards. This will maximize data discoverability and reuse following the FAIR data principles.
+ARCs build the generic interface for **F**indable**A**ccesible**I**nteroperable**R**eusable compute, storage, sharing and publication
