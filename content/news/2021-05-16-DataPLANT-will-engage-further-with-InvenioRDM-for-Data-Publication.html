@@ -26,7 +26,7 @@
       </div>
       <div id="navMenu" class="navbar-menu has-bg-darkblue">
         <div class="navbar-start is-justify-content-center is-flex-grow-1">
-          <a class="navbar-item" href="/">
+          <a class="navbar-item is-active smooth-hover" href="/">
             Home
           </a>
           <a class="navbar-item" href="/news.html">
@@ -69,54 +69,29 @@
         </div>
       </div>
     </nav>
-    <section class="hero is-medium has-bg-lightblue">
+    <section class="hero is-medium is-dark has-bg-lightblue">
       <div class="hero-body">
-        <div class="container">
-          <div class="columns">
-            <div class="column">
-              <h1 class="title is-darkblue is-uppercase has-text-weight-light">
-                Annotated Research Context
-              </h1>
-              <h1 class="title">
-                Making your research digital
-              </h1>
-              <div class="content">
-                <p>ARCs build the generic interface for <strong>F</strong>indable<strong>A</strong>ccesible<strong>I</strong>nteroperable<strong>R</strong>eusable compute, storage, sharing and publication</p>
-
-              </div>
-            </div>
-            <div class="column">
-              <figure class="image is-4by3">
-                <img src="../../images/arc.svg"/>
-              </figure>
-            </div>
-          </div>
+        <div class="container has-text-centered">
+          <h1 class="title">
+            static webpages with nfdi4plants branding created with fornax and bulma sass
+          </h1>
         </div>
       </div>
     </section>
     <section class="section">
-      <div class="container box has-bg-lightblue has-border-color-lightblue">
-        <div class="container">
-          <h1 class="title is-lightblue">
-            First
-          </h1>
-          <div class="content">
-            <p>First</p>
+      <div class="container p-4">
+        <h1 class="title is-1">
+          DataPLANT will engage further with InvenioRDM for Data Publication
+        </h1>
+        <h2 class="subtitle is-2">
+          16 May 2021
+        </h2>
+        <div class="content">
+          <p>DataPLANT envisions a much stronger role of data publications in the future. To provide the possibility of data publication, DataPLANT prepares to use InvenioRDM, a modern state-of-the-art framework. <a href="https://inveniosoftware.org/">InvenioRDM</a> is funded primarily through CERN’s using both structural funding as well as grant money. Invenio is a partners driven endeavor to answer data publication needs, and collaborating on InvenioRDM helps with a cheaper and better product. Collaboration-wise InvenioRDM works as an open collaboration without formal project agreements between partners. Instead, it relies on a governance and code of conduct as the basis for the collaboration. Legally, it requires that the source code is open source licensed and that contributors retain their copyright. Invenio is open to onboard new partners. DataPLANT plans to become a partner through Freiburg university and will commit resources to Invenio in form of two person-months focusing on testing, documentation, publication metadata, and outreach into the plant community. That <a href="https://datacite.org/">DataCite</a> metadata schema is the core basis for the metadata model. Additionally, extensions for scientific metadata are possible.</p>
+<p><img src="../../images/News-Items/Invenio.svg" width="60%" alt="Invenio" title="Invenio" /></p>
+<p>In the momentarily state of development Invenio includes a comfortable user interface and the OAI-PMH interface for indexing and exchange of metadata with other systems. Invenio includes already necessary interfaces to <a href="https://orcid.org/">ORCID</a> authentication and DOI/DataCite. It will utilize the bwSFS Storage for Science service as the storage backend. The system is distributed over four geographically distributed locations of the in DataPLANT participating computer centers in Tübingen and Freiburg. For the storage of the actual datasets (the envisioned annotated research context), InvenioRDM natively supports the S3 protocol and thus allows the connection to the object storage infrastructure of bwSFS. In its implementation, Invenio takes advantage of S3 and acts as a broker. The system hands out pre-signed URLs during data transfers to allow a direct connection between clients and object storage. This directly leverages the high availability and performance of the underlying bwSFS infrastructure.</p>
+<p>The extensive REST API of InvenioRDM offers additional possibilities for integration with third-party systems like e.g. ORCID for further workflows which are in discussion at the moment. Initial workflows have been already been evaluated, such as the automatic creation of publication drafts from different systems. These include code versioning platforms such as <a href="https://about.gitlab.com/de-de/">GitLab</a> or <a href="https://github.com/about">GitHub</a> for new code releases, other compute environments such as HPC or Galaxy after completion of jobs, or the envisioned science gateway in the form of the DataPLANT Hub. For the allocation of digital object identifiers (DOI) in Invenio, established services of the participating university libraries will be leveraged.</p>
 
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container box has-bg-lightblue has-border-color-lightblue">
-        <div class="container">
-          <h1 class="title is-lightblue">
-            Second
-          </h1>
-          <div class="content">
-            <p>Second</p>
-
-          </div>
         </div>
       </div>
     </section>
