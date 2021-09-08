@@ -1,11 +1,11 @@
 ---
 heading: Annotated Research Context
-title: Making your research digital 
+title: ARCs are FAIR digital Objects (FDOs)
 bg-color: lightblue
-emphasis-color: darkblue
-image: ../../images/arc.svg
-layout: text-left-image-right
+emphasis-color: white
+image: ../../images/learn-more/arc/FDOs.svg
+layout: text-top-image-bottom
 
 ---
 
-ARCs build the generic interface for **F**indable**A**ccesible**I**nteroperable**R**eusable compute, storage, sharing and publication
+As such, they come along with metadata, code for operations, and a persistent identifier. ARCs are compliant to the FAIR Principles since they are​

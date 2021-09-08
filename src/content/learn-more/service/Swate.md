@@ -14,4 +14,4 @@ Swate is an add-in that allows the user to easily annotate their data according 
 *To install Swate, follow [these](https://github.com/nfdi4plants/Swate#installuse) instructions.*  
 *If you are new to Swate, read the [Tutorials](https://github.com/nfdi4plants/Swate/wiki/Tutorials-for-Swate) to learn how to use it.*  
 *If you prefer watching videos, check out the [YouTube Playlist](https://www.youtube.com/playlist?list=PLi6d1LSow4XDPWlwggHuVQ3ynww1MA4Xz)* *[![Swate on Youtube](../../images/Emojis/Youtube-red.svg "Swate on Youtube"){width=3%}](https://www.youtube.com/playlist?list=PLi6d1LSow4XDPWlwggHuVQ3ynww1MA4Xz)*  
-*For furtehr Information visit the [Swate Github Page](https://github.com/nfdi4plants/Swate)* [![Swate Github Page](../../images/Emojis/Github-black.svg "Templates"){width=2.5%}](https://github.com/nfdi4plants/Swate) 
+*For further Information visit the [Swate Github Page](https://github.com/nfdi4plants/Swate)* [![Swate Github Page](../../images/Emojis/Github-black.svg "Templates"){width=2.5%}](https://github.com/nfdi4plants/Swate) 
