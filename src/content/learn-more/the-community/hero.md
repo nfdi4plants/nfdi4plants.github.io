@@ -1,11 +1,12 @@
 ---
-heading: annotated research context
-title: Making your research digital 
-bg-color: lightblue
-emphasis-color: lightblue
-image: /images/arc.svg
-layout: text-only
+heading: The Community
+title: In DataPLANT the researcher is in the center
+bg-color: mint-lighter-70
+emphasis-color: white
+image: ../../images/Learn-more/Community/Researchercore.svg
+layout: text-top-image-bottom
 
 ---
 
-From notes to knowledge by increasing the level of annotation at the source, tracking provenance using community standards. This will  maximize data discoverability and reuse following the FAIR data principles.
+DataPLANT will path the way from classical paper publication to pure data publication including the Annotated Research Context.
+<span style="color:darkblue">A</span>nnotated <span style="color:darkblue">R</span>esearch <span style="color:darkblue">C</span>ontext.
