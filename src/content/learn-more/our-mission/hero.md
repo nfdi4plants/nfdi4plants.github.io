@@ -3,7 +3,7 @@ heading: our mission
 title: Making your research digital 
 bg-color: mint
 emphasis-color: darkblue
-image: ../../images/Learn-more/mission/Mission.svg
+image: ../../images/Learn-more/Mission/Mission.svg
 layout: text-top-image-bottom
 
 ---

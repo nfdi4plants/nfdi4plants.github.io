@@ -91,7 +91,7 @@ let layout (ctx : SiteContents) active bodyCnt =
                         a [Class "navbar-item"; Href "https://twitter.com/nfdi4plants"] [icon "fab fa-twitter"]
                         a [Class "navbar-item"; Href "https://github.com/nfdi4plants"] [icon "fab fa-github"]
                         a [Class "navbar-item"; Href "https://www.youtube.com/channel/UCrTBwQWOa0-aWYkwoY104Wg"] [icon "fab fa-youtube"]
-                        a [Class "navbar-item"; Href "https://github.com/nfdi4plants"] [icon "fas fa-paper-plane"]
+                        a [Class "navbar-item"; Href "mailto:dataplant@uni-kl.de"] [icon "fas fa-paper-plane"]
                         a [Class "navbar-item"; Href "https://zenodo.org/communities/nfdi4plants?page=1&size=20"; HtmlProperties.Style [FontWeight "bold"]] [!! "Z"]
                     
                     ]

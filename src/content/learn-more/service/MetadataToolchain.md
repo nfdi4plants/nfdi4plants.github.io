@@ -3,7 +3,7 @@ title: Metadata Tool Chain
 bg-color: yellow-lighter-70
 border-color: yellow-lighter-70
 emphasis-color: yellow
-image: ../../images/Learn-more/service/MetadataToolchain.svg
+image: ../../images/Learn-more/Service/MetadataToolchain.svg
 layout: text-top-image-bottom
 index: 1
 
