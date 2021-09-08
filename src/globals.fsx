@@ -246,6 +246,12 @@ module Predicates =
         page.Contains("learn-more")
         && fileName = "hero"
         && ext = ".md"
+        
+    let learnMorePredicate (projectRoot: string, page: string) =
+        let fileName = Path.GetFileNameWithoutExtension page
+        let ext = Path.GetExtension page
+        page.Contains("learn-more")
+        && ext = ".md"
 
     let isLearnMoreHero f = learnMoreHeroPredicate("",f)
 

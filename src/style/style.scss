@@ -661,3 +661,21 @@ $navbar-item-active-background-color:$darkblue-lighter-20;
 body {
     background-color: $white-bis;
 }
+
+.code-example {
+    display: block;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: $darkblue;
+    color: $white !important;
+}
+
+.details-card p{
+    font-size: 1.5 em !important;
+    margin-bottom: 0.5em!important;
+}
+
+.card-container {
+    max-width: 70%;
+    margin: 0 auto;
+}
