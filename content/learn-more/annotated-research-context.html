@@ -72,22 +72,132 @@
     <section class="hero is-medium has-bg-lightblue">
       <div class="hero-body">
         <div class="container">
+          <h1 class="title is-white is-uppercase has-text-weight-light">
+            Annotated Research Context
+          </h1>
+          <h1 class="title">
+            ARCs are FAIR digital Objects (FDOs)
+          </h1>
+          <div class="content">
+            <p>As such, they come along with metadata, code for operations, and a persistent identifier. ARCs are compliant to the FAIR Principles since they are​</p>
+
+          </div>
+          <figure class="image is-3by1">
+            <img src="../../images/learn-more/arc/FDOs.svg"/>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-mint-lighter-70 has-border-color-mint-lighter-70">
+        <div class="container">
+          <h1 class="title is-white">
+            Real-world ARC
+          </h1>
+          <div class="content">
+            <p><span style="color:lightblue-darker-10">An ARC is intended to capture complete (meta)data, including raw and processed data, but also workflow descriptions as well as essential external files. ARCs cover scenarios ranging from single experimental setups to complex experimental designs. The full ARC-specifications are provided <a href="https://github.com/nfdi4plants/ARC-specfication" title="ARC-specification">here</a>.</span></p>
+
+          </div>
+          <figure class="image is-3by1">
+            <img src="../../images/learn-more/arc/real-world-arc.svg"/>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-white has-border-color-white">
+        <div class="container">
+          <h1 class="title is-mint">
+            Multiple exits out of the ARC
+          </h1>
+          <div class="content">
+            
+          </div>
+          <figure class="image is-3by1">
+            <img src="../../images/learn-more/arc/multiple-exits.svg"/>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-mint-lighter-70 has-border-color-mint-lighter-70">
+        <div class="container">
+          <h1 class="title is-white">
+            Tools for creating ISA model coherent ARCs
+          </h1>
+          <div class="content">
+            <p>Although ARCs can be generated completely manually, we encourage you to use our convenient tools that assist you in the process.<br />
+text-top-image-bottom
+The <a href="https://github.com/nfdi4plants/arcCommander" title="Arc Commander">ARC Commander</a> offers machine-aided creation and completion of the ARC folder and file structure.</p>
+<p><a href="https://github.com/nfdi4plants/Swate" title="Swate">SWATE</a> and our templates assists you in the process of creating your assay files.</p>
+
+          </div>
+          <figure class="image is-3by1">
+            <img src="../../images/learn-more/arc/tools.svg"/>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-white has-border-color-white">
+        <div class="container">
           <div class="columns">
             <div class="column">
-              <h1 class="title is-darkblue is-uppercase has-text-weight-light">
-                Annotated Research Context
-              </h1>
-              <h1 class="title">
-                Making your research digital
+              <figure class="image is-4by3">
+                <img src="../../images/learn-more/arc/investigationfile.svg"/>
+              </figure>
+            </div>
+            <div class="column">
+              <h1 class="title is-mint">
+                ISA investigation file
               </h1>
               <div class="content">
-                <p>ARCs build the generic interface for <strong>F</strong>indable<strong>A</strong>ccesible<strong>I</strong>nteroperable<strong>R</strong>eusable compute, storage, sharing and publication</p>
+                <p>A mandatory central registry for studies, assays, persons, … saved in a XLSX format, which follows the ISA model specification (v1.0).</p>
+<p>Using the ARC Commander allows you to automatically fill and update the investigation file.</p>
+<p>Every worksheet needs to contain one table object storing the metadata.  Comments or additional information can be stored alongside with table objects in a worksheet.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-mint-lighter-70 has-border-color-mint-lighter-70">
+        <div class="container">
+          <figure class="image is-3by1">
+            <img src="../../images/learn-more/arc/assayfile.svg"/>
+          </figure>
+          <h1 class="title is-white">
+            Isa Assay file
+          </h1>
+          <div class="content">
+            <p>Assay metadata must be annotated in the file isa.assay.xlsx at the root of the assay's subdirectory.  This workbook must contain a single assay organized in one or many worksheets.
+A worksheet named “assay” must store the <a href="https://github.com/nfdi4plants/ARC-specfication/blob/main/ARC%20specification.md#assay-data-and-metadata" title="Study Assay">STUDY ASSAYS</a> section of the ISA model and is not required in the isa.investigation.xlsx. Additional worksheets must contain a table object organized on a per-row basis with the first row as column headers.
+Table objects must contain at least one source. Source sample relations must follow a unique path in a directed acyclic graph. Sources must be indicated by the column header Source Name, Samples accordingly by the header Sample Name.</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-darkblue has-border-color-darkblue">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <h1 class="title is-white">
+                Assays
+              </h1>
+              <div class="content">
+                <p>Each assay is a collection of files stored in a single directory, including a mandatory metadata file in ISA-XLSX format.</p>
+<p>Assay data files as well as protocols must be placed in a subdirectory individually.</p>
+<p>We advise you to use SWATE for completing the metadata files, as it comes along with a broad range of prepared templates and as it assists you in following the <a href="http://www.nfdi4plants.de/AnnotationPrinciples/" title="Annotation Principles">annotation principles</a>.</p>
 
               </div>
             </div>
             <div class="column">
               <figure class="image is-4by3">
-                <img src="../../images/arc.svg"/>
+                <img src="../../images/learn-more/arc/assays.svg"/>
               </figure>
             </div>
           </div>
@@ -97,25 +207,70 @@
     <section class="section">
       <div class="container box has-bg-lightblue has-border-color-lightblue">
         <div class="container">
-          <h1 class="title is-lightblue">
-            First
-          </h1>
-          <div class="content">
-            <p>First</p>
+          <div class="columns">
+            <div class="column">
+              <h1 class="title is-white">
+                Runs
+              </h1>
+              <div class="content">
+                <p>Runs in an ARC represent all artefacts that derive from computations on assay and external data. Plots, tables, or similar results need to be saved in one or more subdirectories of the top-level runs directory.</p>
+<p>A run.cwl (v1.2 or higher) is mandatory for each of these subdirectories to cover workflow description and reproducibility. These files need to be executable without additional payload files or files outside the ARC.</p>
+<p>A parameter file run.yml is optional to specify input parameters.</p>
 
+              </div>
+            </div>
+            <div class="column">
+              <figure class="image is-4by3">
+                <img src="../../images/learn-more/arc/runs.svg"/>
+              </figure>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="section">
-      <div class="container box has-bg-lightblue has-border-color-lightblue">
+      <div class="container box has-bg-white has-border-color-white">
         <div class="container">
-          <h1 class="title is-lightblue">
-            Second
-          </h1>
-          <div class="content">
-            <p>Second</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image is-4by3">
+                <img src="../../images/learn-more/arc/workflows.svg"/>
+              </figure>
+            </div>
+            <div class="column">
+              <h1 class="title is-darkblue">
+                Workflows
+              </h1>
+              <div class="content">
+                <p>Workflows in ARCs represent processing steps used in computational analyses and other data transformations of an ARC's assays to generate run results. They are a collection of files stored in a single directory under the top-level workflows subdirectory.</p>
+<p>A per-workflow executable CWL description (v1.2 or higher) is stored in a mandatory workflow.cwl. This can either contain a CWL tool or workflow description.</p>
+<p>We highly recommend to include a reproducible execution environment description in form of a Docker container description for tool descriptions.</p>
 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-white has-border-color-white">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <figure class="image is-4by3">
+                <img src="../../images/learn-more/arc/externals.svg"/>
+              </figure>
+            </div>
+            <div class="column">
+              <h1 class="title is-lightblue">
+                Externals
+              </h1>
+              <div class="content">
+                <p>External data or knowledge files refer to data that is neither originating within the investigation/study scope of the ARC nor can be referenced externally. Yet, these files are required to ensure reproducibility. Examples include early use of ontologies, mapping files, gene information, and so on. All corresponding files need to be stored in the ARC’s top-level externals directory.</p>
+<p>Together these external data form a virtual assay. To follow the metadata requirements of assays, a metadata file in ISA-XLSX format is mandatory for each external file, located under the top-level externals directory.</p>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
