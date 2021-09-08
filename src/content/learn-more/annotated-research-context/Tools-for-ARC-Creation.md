@@ -3,7 +3,7 @@ title: Tools for creating ISA model coherent ARCs
 bg-color: mint-lighter-70
 border-color: mint-lighter-70
 emphasis-color: white
-image: ../../images/learn-more/arc/tools.svg
+image: ../../images/Learn-more/ARC/tools.svg
 layout: text-top-image-bottom
 index: 3
 ---

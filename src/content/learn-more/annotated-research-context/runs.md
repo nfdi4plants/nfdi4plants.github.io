@@ -3,7 +3,7 @@ title: Runs
 bg-color: lightblue
 border-color: lightblue
 emphasis-color: white
-image: ../../images/learn-more/arc/runs.svg
+image: ../../images/Learn-more/ARC/runs.svg
 layout: text-left-image-right
 index: 7
 ---

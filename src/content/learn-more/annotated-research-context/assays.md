@@ -3,7 +3,7 @@ title: Assays
 bg-color: darkblue
 border-color: darkblue
 emphasis-color: white
-image: ../../images/learn-more/arc/assays.svg
+image: ../../images/Learn-more/ARC/assays.svg
 layout: text-left-image-right
 index: 6
 
