@@ -1,5 +1,5 @@
 ---
-date: 2021-06-22
+date: 2021-09-08
 title: First ever ARC Hackathon
 preview-text: From 6th to 8th September DataPLANT scientists of the different Task Areas came together at Villa Denis in Frankenstein to continue their work on improving DataPLANTs solution for FAIR data. the Annotated Research Context and its associated tools and services. During the three-day event, the data experts tackled four essential topics.  ...
 ---
