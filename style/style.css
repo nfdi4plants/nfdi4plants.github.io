@@ -11983,4 +11983,22 @@ body {
   background-color: #fafafa;
 }
 
-/*# sourceMappingURL=tmpTLsTpB.tmp.map */
+.code-example {
+  display: block;
+  padding: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2D3E50;
+  color: white !important;
+}
+
+.details-card p {
+  font-size: 1.5 em !important;
+  margin-bottom: 0.5em !important;
+}
+
+.card-container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=tmp7nAeq9.tmp.map */

@@ -1,0 +1,496 @@
+<html class="has-navbar-fixed-top">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <title>
+      nfdi4plants static site template
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-collapsible@1.0.4/dist/css/bulma-collapsible.min.css"/>
+    <script defer="true" src="https://kit.fontawesome.com/0d3e0ea7a6.js" crossOrigin="anonymous"></script>
+    <script src="/js/navbar.js"></script>
+  </head>
+  <body>
+    <nav class="navbar is-fixed-top has-bg-darkblue">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="/images/logo.svg" alt="Logo" width="32" height="32"/>
+        </a>
+        <a class="navbar-burger" data-target="navMenu" aria-label="menu" role="button" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navMenu" class="navbar-menu has-bg-darkblue">
+        <div class="navbar-start is-justify-content-center is-flex-grow-1">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/news.html">
+            News
+          </a>
+          <a class="navbar-item" href="/">
+            DataHub
+          </a>
+          <a class="navbar-item" href="/">
+            Resources
+          </a>
+          <a class="navbar-item" href="/">
+            About
+          </a>
+        </div>
+        <div class="navbar-end">
+          <a class="navbar-item" href="https://twitter.com/nfdi4plants">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+          <a class="navbar-item" href="https://github.com/nfdi4plants">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
+          <a class="navbar-item" href="https://www.youtube.com/channel/UCrTBwQWOa0-aWYkwoY104Wg">
+            <span class="icon">
+              <i class="fab fa-youtube"></i>
+            </span>
+          </a>
+          <a class="navbar-item" href="mailto:dataplant@uni-kl.de">
+            <span class="icon">
+              <i class="fas fa-paper-plane"></i>
+            </span>
+          </a>
+          <a class="navbar-item" href="https://zenodo.org/communities/nfdi4plants?page=1&size=20" style="font-weight: bold;">
+            Z
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="section">
+      <section class="section">
+        <div class="container box has-bg-white has-border-color-white">
+          <div class="container details-card">
+            <h1 class="title is-lightblue">
+              Creating ARCs using ​the ARC Commander
+            </h1>
+            <div class="columns">
+              <div class="column is-4 is-hidden-mobile">
+                <figure class="image">
+                  <img src="/images/details/arc-structure.svg"/>
+                </figure>
+              </div>
+              <div class="column is-8">
+                <p>
+                  After this basic usage instruction, you will know​:
+                </p>
+                <ul>
+                  <li>
+                    <p>
+                      - the general command line structure​
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      - the most important commands to create and validate your ARCs.​
+                    </p>
+                  </li>
+                </ul>
+                <p>
+                  To download the newest version of the ARC Commander, please click 
+                  <a href="">
+                    here
+                  </a>
+                </p>
+                <p>
+                  Although using the Commander will support you immensely in the creation of ARCs, it is optional and the ISA-TAB excel sheets can still be filled out manually.​
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container box has-bg-mint has-border-color-mint">
+          <div class="container details-card">
+            <div class="card-container">
+              <h1 class="title is-darkblue">
+                General command line structure
+              </h1>
+              <code class="is-darkblue code-example">
+                arc &lt;object&gt; &lt;subcommand-verb&gt; &lt;subcommand-verb-args&gt;
+              </code>
+              where 
+              <i class="is-darkblue">
+                object
+              </i>
+              is either:​
+              <ul>
+                <li>
+                  <p>
+                    <em class="is-darkblue">
+                      - &lt;investigation&gt; or its sub-objects​
+                    </em>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <em class="is-darkblue">
+                      - &lt;study&gt; or its sub-objects​
+                    </em>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <em class="is-darkblue">
+                      - &lt;assay&gt;
+                    </em>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <em class="is-darkblue">
+                      - &lt;configuration&gt;
+                    </em>
+                  </p>
+                </li>
+              </ul>
+              <p>
+                and 
+              </p>
+              <i class="is-darkblue">
+                subcommand-verb
+              </i>
+              models what to do with the object.​
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container box has-bg-white has-border-color-white">
+          <div class="container details-card">
+            <div class="card-container">
+              <h1 class="title is-darkblue">
+                Initialize ARC​
+              </h1>
+              <p>
+                Navigate to a folder in which you want to initialize an ARC. Open the a Command Prompt (via typing search for 'cmd' on windows or 'Terminal on MacOS') in the folder address and press Enter. Use
+              </p>
+              <code class="code-example">
+                arc init
+              </code>
+              <p>
+                to create the basic 
+                <em class="is-darkblue">
+                  ARC folder structure.
+                </em>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container box has-bg-lightblue has-border-color-lightblue">
+          <div class="container details-card">
+            <div class="card-container">
+              <h1 class="title is-darkblue">
+                Creating investigations
+              </h1>
+              <p>
+                Each ARC includes an isa.investigation file that serves as central information registry.
+              </p>
+              <p>
+                To generate such a file use
+              </p>
+              <code class="code-example">
+                arc i create
+              </code>
+              <p>
+                This will open an editor asking for basic investigation information to create an ISA-TAB conform Excel file. Each investigation file MUST have a unique Identifier.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container box has-bg-white has-border-color-white">
+          <div class="container details-card">
+            <div class="card-container">
+              <h1 class="title is-darkblue">
+                Registering ARC​ objects
+              </h1>
+              <p>
+                To register persons, publications, factors, protocols, … use  arc &lt;object&gt; register:
+              </p>
+              <code class="code-example">
+                arc investigation (i) person register
+              </code>
+              <code class="code-example">
+                arc i publication register
+              </code>
+              <code class="code-example">
+                arc study (s) factor register
+              </code>
+              <code class="code-example">
+                arc s protocol register
+              </code>
+              <p>
+                This transports information directly into the isa.investigation.xlsx file
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container box has-bg-darkblue has-border-color-darkblue">
+          <div class="container details-card">
+            <div class="card-container">
+              <h1 class="title is-lightblue">
+                Adding objects to an ARC​
+              </h1>
+              <code class="code-example">
+                arc &lt;object&gt; add
+              </code>
+              <p>
+                The command arc add lets you combine
+                <em>
+                  arc init and arc register.
+                </em>
+                It will create a new &lt;object&gt; in the ARC and subsequently register it with the passed arguments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container box has-bg-white has-border-color-white">
+          <div class="container details-card">
+            <div class="card-container">
+              <h1 class="title is-darkblue">
+                Removing objects from an ARC
+              </h1>
+              <code class="code-example">
+                arc &lt;object&gt; remove
+              </code>
+              <p>
+                The command arc remove results in the exact opposite! It lets you combine arc unregister and arc delete, deleting the &lt;object&gt; from the ARC file structure and the ARC’s registry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container box has-bg-white has-border-color-white">
+          <div class="container details-card">
+            <div class="card-container">
+              <h1 class="title is-darkblue">
+                Initialize ARC​
+              </h1>
+              <p>
+                Navigate to a folder in which you want to initialize an ARC. Open the a Command Prompt (via typing search for 'cmd' on windows or 'Terminal on MacOS') in the folder address and press Enter. Use
+              </p>
+              <code class="code-example">
+                arc init
+              </code>
+              <p>
+                to create the basic 
+                <em class="is-darkblue">
+                  ARC folder structure.
+                </em>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container box has-bg-lightblue has-border-color-lightblue">
+          <div class="container details-card">
+            <div class="card-container">
+              <h1 class="title is-white">
+                Editing and updating ARC​ objects
+              </h1>
+              <p>
+                Edit &lt;objects&gt; using
+              </p>
+              <code class="code-example">
+                arc &lt;object&gt; &lt;sub-object&gt; edit
+              </code>
+              <p>
+                e.g.
+                <em class="is-white">
+                  arc i person edit
+                </em>
+                Without further arguments an editor opens that asks for the person that should be edited. If the person exists, another editor opens to edit the information.
+              </p>
+              <br/>
+              <code class="code-example">
+                arc &lt;object&gt; &lt;sub-object&gt; update
+              </code>
+              <p>
+                To avoid editor pop ups, also the command 
+                <code class="code-example">
+                  arc &lt;object&gt; &lt;sub-object&gt; update
+                </code>
+                can be used, e. g. 
+                <em class="is-white">
+                  arc i person edit
+                </em>
+                <code class="code-example">
+                  arc i person update –l Doe –f John
+                </code>
+                <code class="code-example">
+                  --address 'Musterstraße 1, 12345 Musterstadt'
+                </code>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container box has-bg-white has-border-color-white">
+          <div class="container details-card">
+            <div class="card-container">
+              <h1 class="title is-darkblue">
+                Listing ARC​ contents
+              </h1>
+              <p>
+                To list registered &lt;objects&gt;, use
+              </p>
+              <code class="code-example">
+                arc &lt;object&gt; list
+              </code>
+              <p>
+                This will show you registered
+                <em class="is-darkblue">
+                  persons, publications, assays, … 
+                </em>
+                of an investigation or a study. For a detailed usage instruction, please click here.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+  <footer class="footer has-bg-darkblue-lighter-20">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-4 m-4">
+          <div class="block">
+            <h3 class="subtitle is-white">
+              DataPLANT - Democratization of plant research made easy.
+            </h3>
+          </div>
+          <div class="block">
+            <p>
+              DataPLANT is part of 
+              <a href="https://www.nfdi.de/">
+                NFDI
+              </a>
+            </p>
+          </div>
+          <div class="block">
+            <p>
+              This website is developed and maintained by 
+              <a>
+                members of DataPLANT 
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="column is-4 m-4">
+          <div class="block">
+            <h3 class="subtitle is-white">
+              Navigation
+            </h3>
+          </div>
+          <ul>
+            <div class="block">
+              <li>
+                <a href="/">
+                  Home
+                </a>
+              </li>
+            </div>
+            <div class="block">
+              <li>
+                <a href="/">
+                  News
+                </a>
+              </li>
+            </div>
+            <div class="block">
+              <li>
+                <a href="/">
+                  DataHub
+                </a>
+              </li>
+            </div>
+            <div class="block">
+              <li>
+                <a href="/">
+                  Resources
+                </a>
+              </li>
+            </div>
+            <div class="block">
+              <li>
+                <a href="/">
+                  About
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="column is-4 m-4">
+          <div class="block">
+            <h3 class="subtitle is-white">
+              Social
+            </h3>
+          </div>
+          <div class="block">
+            <span class="icon is-white">
+              <i class="fab fa-twitter"></i>
+            </span>
+            <a href="https://twitter.com/nfdi4plants">
+              DataPLANT on Twitter
+            </a>
+          </div>
+          <div class="block">
+            <span class="icon is-white">
+              <i class="fab fa-github"></i>
+            </span>
+            <a href="https://github.com/nfdi4plants">
+              DataPLANT open source projects on GitHub
+            </a>
+          </div>
+          <div class="block">
+            <span class="icon is-white">
+              <i class="fab fa-youtube"></i>
+            </span>
+            <a href="https://www.youtube.com/channel/UCrTBwQWOa0-aWYkwoY104Wg">
+              DataPLANT video resources on youtube
+            </a>
+          </div>
+          <div class="block">
+            <h3 class="subtitle is-white">
+              Legal
+            </h3>
+          </div>
+          <div class="block">
+            <a href="">
+              Imprint
+            </a>
+          </div>
+          <div class="block">
+            <a href="">
+              Privacy
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
