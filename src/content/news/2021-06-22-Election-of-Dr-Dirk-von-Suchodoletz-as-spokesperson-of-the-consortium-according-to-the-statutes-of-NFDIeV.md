@@ -10,6 +10,7 @@ We are already very excited about the further development of the NFDI associatio
 
 *You are interested in participating in the NFDI Association yourself or want to learn more about it. Find more information by following this link:*
 
+[![NFDI-Verein](../../images/Emojis/NFDI.svg "Infratalk"){width=5%}](https://www.nfdi.de/verein/)[ *e.V.*](https://www.nfdi.de/verein/)
 
 
 
