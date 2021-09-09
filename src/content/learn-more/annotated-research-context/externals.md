@@ -3,7 +3,7 @@ title: Externals
 bg-color: white
 border-color: white
 emphasis-color: lightblue
-image: ../../images/learn-more/arc/externals.svg
+image: ../../images/Learn-more/ARC/externals.svg
 layout: text-right-image-left
 index: 8
 ---

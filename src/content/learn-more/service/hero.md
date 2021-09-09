@@ -3,7 +3,7 @@ heading: Service
 title: Tools and Services to structure the Data Jungle for plant researchers 
 bg-color: olive
 emphasis-color: darkblue
-image: ../../images/Learn-more/service/Service.svg
+image: ../../images/Learn-more/Service/Service.svg
 layout: text-top-image-bottom
 
 ---
