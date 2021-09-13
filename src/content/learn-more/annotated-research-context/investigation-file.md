@@ -5,7 +5,7 @@ border-color: white
 emphasis-color: mint
 image: ../../images/Learn-more/ARC/investigationfile.svg
 layout: text-right-image-left
-index: 4
+index: 5
 ---
 
 A mandatory central registry for studies, assays, persons, … saved in a XLSX format, which follows the ISA model specification (v1.0). 

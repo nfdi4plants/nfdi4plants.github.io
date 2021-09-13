@@ -5,7 +5,7 @@ border-color: lightblue
 emphasis-color: white
 image: ../../images/Learn-more/ARC/runs.svg
 layout: text-left-image-right
-index: 7
+index: 10
 ---
 
 Runs in an ARC represent all artefacts that derive from computations on assay and external data. Plots, tables, or similar results need to be saved in one or more subdirectories of the top-level runs directory. 

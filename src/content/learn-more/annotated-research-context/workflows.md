@@ -5,7 +5,7 @@ border-color: white
 emphasis-color: darkblue
 image: ../../images/Learn-more/ARC/workflows.svg
 layout: text-right-image-left
-index: 7
+index: 8
 ---
 
 Workflows in ARCs represent processing steps used in computational analyses and other data transformations of an ARC's assays to generate run results. They are a collection of files stored in a single directory under the top-level workflows subdirectory. 
