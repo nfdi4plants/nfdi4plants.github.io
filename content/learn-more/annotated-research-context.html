@@ -105,17 +105,26 @@
       </div>
     </section>
     <section class="section">
-      <div class="container box has-bg-white has-border-color-white">
+      <div class="container box has-bg-darkblue has-border-color-darkblue">
         <div class="container">
-          <h1 class="title is-mint">
-            Multiple exits out of the ARC
-          </h1>
-          <div class="content">
-            
+          <div class="columns">
+            <div class="column">
+              <h1 class="title is-white">
+                ARCs are RO-Crate certified
+              </h1>
+              <div class="content">
+                <p>ARCs are a profile implementation of RO-Crates for basic plant research.</p>
+<p>The ARC is packaged with its digital object identifier and its RO Metadata File (ro-crate-metadata.json).</p>
+<p>This RO metadata file is automatically generated using a converter, which is able to read and transport information out of the ARC.</p>
+
+              </div>
+            </div>
+            <div class="column">
+              <figure class="image is-4by3">
+                <img src="../../images/Learn-more/ARC/ROC.svg"/>
+              </figure>
+            </div>
           </div>
-          <figure class="image is-3by1">
-            <img src="../../images/Learn-more/ARC/multiple-exits.svg"/>
-          </figure>
         </div>
       </div>
     </section>
@@ -134,6 +143,21 @@ The <a href="https://github.com/nfdi4plants/arcCommander" title="Arc Commander">
           </div>
           <figure class="image is-3by1">
             <img src="../../images/Learn-more/ARC/tools.svg"/>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-white has-border-color-white">
+        <div class="container">
+          <h1 class="title is-darkblue">
+            ARCs offer a single point of entry logic for data management and computation
+          </h1>
+          <div class="content">
+            
+          </div>
+          <figure class="image is-3by1">
+            <img src="../../images/Learn-more/ARC/multiple-exits.svg"/>
           </figure>
         </div>
       </div>
@@ -163,13 +187,13 @@ The <a href="https://github.com/nfdi4plants/arcCommander" title="Arc Commander">
       </div>
     </section>
     <section class="section">
-      <div class="container box has-bg-mint-lighter-70 has-border-color-mint-lighter-70">
+      <div class="container box has-bg-mint-lighter-40 has-border-color-mint-lighter-40">
         <div class="container">
           <figure class="image is-3by1">
             <img src="../../images/Learn-more/ARC/assayfile.svg"/>
           </figure>
           <h1 class="title is-white">
-            Isa Assay file
+            Isa assay file
           </h1>
           <div class="content">
             <p>Assay metadata must be annotated in the file isa.assay.xlsx at the root of the assay's subdirectory.  This workbook must contain a single assay organized in one or many worksheets.
@@ -205,24 +229,23 @@ Table objects must contain at least one source. Source sample relations must fol
       </div>
     </section>
     <section class="section">
-      <div class="container box has-bg-lightblue has-border-color-lightblue">
+      <div class="container box has-bg-white has-border-color-white">
         <div class="container">
           <div class="columns">
             <div class="column">
-              <h1 class="title is-white">
-                Runs
-              </h1>
-              <div class="content">
-                <p>Runs in an ARC represent all artefacts that derive from computations on assay and external data. Plots, tables, or similar results need to be saved in one or more subdirectories of the top-level runs directory.</p>
-<p>A run.cwl (v1.2 or higher) is mandatory for each of these subdirectories to cover workflow description and reproducibility. These files need to be executable without additional payload files or files outside the ARC.</p>
-<p>A parameter file run.yml is optional to specify input parameters.</p>
-
-              </div>
+              <figure class="image is-4by3">
+                <img src="../../images/Learn-more/ARC/externals.svg"/>
+              </figure>
             </div>
             <div class="column">
-              <figure class="image is-4by3">
-                <img src="../../images/Learn-more/ARC/runs.svg"/>
-              </figure>
+              <h1 class="title is-lightblue">
+                Externals
+              </h1>
+              <div class="content">
+                <p>External data or knowledge files refer to data that is neither originating within the investigation/study scope of the ARC nor can be referenced externally. Yet, these files are required to ensure reproducibility. Examples include early use of ontologies, mapping files, gene information, and so on. All corresponding files need to be stored in the ARC’s top-level externals directory.</p>
+<p>Together these external data form a virtual assay. To follow the metadata requirements of assays, a metadata file in ISA-XLSX format is mandatory for each external file, located under the top-level externals directory.</p>
+
+              </div>
             </div>
           </div>
         </div>
@@ -253,23 +276,24 @@ Table objects must contain at least one source. Source sample relations must fol
       </div>
     </section>
     <section class="section">
-      <div class="container box has-bg-white has-border-color-white">
+      <div class="container box has-bg-lightblue has-border-color-lightblue">
         <div class="container">
           <div class="columns">
             <div class="column">
-              <figure class="image is-4by3">
-                <img src="../../images/Learn-more/ARC/externals.svg"/>
-              </figure>
-            </div>
-            <div class="column">
-              <h1 class="title is-lightblue">
-                Externals
+              <h1 class="title is-white">
+                Runs
               </h1>
               <div class="content">
-                <p>External data or knowledge files refer to data that is neither originating within the investigation/study scope of the ARC nor can be referenced externally. Yet, these files are required to ensure reproducibility. Examples include early use of ontologies, mapping files, gene information, and so on. All corresponding files need to be stored in the ARC’s top-level externals directory.</p>
-<p>Together these external data form a virtual assay. To follow the metadata requirements of assays, a metadata file in ISA-XLSX format is mandatory for each external file, located under the top-level externals directory.</p>
+                <p>Runs in an ARC represent all artefacts that derive from computations on assay and external data. Plots, tables, or similar results need to be saved in one or more subdirectories of the top-level runs directory.</p>
+<p>A run.cwl (v1.2 or higher) is mandatory for each of these subdirectories to cover workflow description and reproducibility. These files need to be executable without additional payload files or files outside the ARC.</p>
+<p>A parameter file run.yml is optional to specify input parameters.</p>
 
               </div>
+            </div>
+            <div class="column">
+              <figure class="image is-4by3">
+                <img src="../../images/Learn-more/ARC/runs.svg"/>
+              </figure>
             </div>
           </div>
         </div>
