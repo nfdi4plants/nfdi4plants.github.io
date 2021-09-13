@@ -90,6 +90,7 @@ let generate' (ctx : SiteContents) (_: string) =
                     ]
                     p [Class "title"] [!!"Democratization of plant research"]
                     p [Class "title"] [!!"Made easy."]
+                    p [Class "Container p-4 has-bg-red"] [!!"This is a temporary page for DataPLANT. Currently we have an ongoing maintenance of the underlying infrastructure which may last till the 2021-09-17. For the time being DataPLANT services are not available."]
                     // a [Class "button is-rounded has-bg-lightblue"] [iconTextLeft "fas fa-caret-right" "Become a member"]
                 ]
             ]
