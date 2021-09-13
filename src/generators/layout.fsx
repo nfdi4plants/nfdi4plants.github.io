@@ -112,6 +112,7 @@ let layout (ctx : SiteContents) active bodyCnt =
                         ul [] [
                             block [li [] [a [Href "/"] [!!"Home"]]]
                             block [li [] [a [Href "/"] [!!"News"]]]
+                            block [li [] [a [Href "/"] [!!"Service"]]]
                             block [li [] [a [Href "/"] [!!"About"]]]
                         ]
                     ]
