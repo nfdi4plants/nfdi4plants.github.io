@@ -5,7 +5,7 @@ border-color: darkblue
 emphasis-color: white
 image: ../../images/Learn-more/ARC/assays.svg
 layout: text-left-image-right
-index: 6
+index: 7
 
 ---
 
