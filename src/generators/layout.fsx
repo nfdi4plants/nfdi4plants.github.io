@@ -6,6 +6,7 @@
 #load "../loaders/newsloader.fsx"
 #load "../loaders/mainpagecardloader.fsx"
 #load "../loaders/learnmoreloader.fsx"
+#load "../loaders/aboutloader.fsx"
 #endif
 
 open Html
@@ -111,9 +112,9 @@ let layout (ctx : SiteContents) active bodyCnt =
                         block [ h3 [Class "subtitle is-white"] [!!"Navigation"]]
                         ul [] [
                             block [li [] [a [Href "/"] [!!"Home"]]]
-                            block [li [] [a [Href "/"] [!!"News"]]]
-                            block [li [] [a [Href "/"] [!!"Service"]]]
-                            block [li [] [a [Href "/"] [!!"About"]]]
+                            block [li [] [a [Href "/news.html"] [!!"News"]]]
+                            block [li [] [a [Href "/content/learn-more/service.html"] [!!"Service"]]]
+                            block [li [] [a [Href "/content/about.html"] [!!"About"]]]
                         ]
                     ]
                     div [Class "column is-4 m-4"] [

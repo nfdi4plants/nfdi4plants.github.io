@@ -9,6 +9,7 @@ module Colors =
     let validNFDIColorNames = 
         [
             "black"
+            "grey"
             "white"
             "mint"                 
             "mint-darker-10"   
@@ -272,6 +273,21 @@ module Predicates =
 
     let isNewsFile f = newsPredicate("",f)
 
+    let AboutHeroPredicate (projectRoot: string, page: string) =
+        let fileName = Path.GetFileNameWithoutExtension page
+        let ext = Path.GetExtension page
+        page.Contains("about")
+        && fileName = "hero"
+        && ext = ".md"
+        
+    let AboutPredicate (projectRoot: string, page: string) =
+        let fileName = Path.GetFileNameWithoutExtension page
+        let ext = Path.GetExtension page
+        page.Contains("about")
+        && ext = ".md"
+
+    let isAboutHero f = AboutHeroPredicate("",f)
+
     let staticPredicate (projectRoot: string, page: string) =
         let ext = Path.GetExtension page
         if page.Contains "_public" ||
@@ -315,4 +331,9 @@ module News =
 module LearnMore =
 
     let createLernMorePageName (heroPath:string) =
+        heroPath.Replace("/hero.md",".html")
+
+module About =
+
+    let createAboutPageName (heroPath:string) =
         heroPath.Replace("/hero.md",".html")
