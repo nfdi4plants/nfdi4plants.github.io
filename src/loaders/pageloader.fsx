@@ -9,5 +9,5 @@ let loader (projectRoot: string) (siteContent: SiteContents) =
     siteContent.Add({title = "Home"; link = "/"})
     siteContent.Add({title = "News"; link = "/news.html"})
     siteContent.Add({title = "Service"; link = "/content/learn-more/service.html"})
-    siteContent.Add({title = "About"; link = "/"})
+    siteContent.Add({title = "About"; link = "/content/about.html"})
     siteContent
