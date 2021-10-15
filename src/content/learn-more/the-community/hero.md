@@ -9,4 +9,3 @@ layout: text-top-image-bottom
 ---
 
 DataPLANT will path the way from classical paper publication to pure data publication including the Annotated Research Context.
-<span style="color:darkblue">A</span>nnotated <span style="color:darkblue">R</span>esearch <span style="color:darkblue">C</span>ontext.

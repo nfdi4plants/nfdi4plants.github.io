@@ -288,6 +288,36 @@ module Predicates =
 
     let isAboutHero f = AboutHeroPredicate("",f)
 
+    let ImprintHeroPredicate (projectRoot: string, page: string) =
+        let fileName = Path.GetFileNameWithoutExtension page
+        let ext = Path.GetExtension page
+        page.Contains("imprint")
+        && fileName = "hero"
+        && ext = ".md"
+        
+    let ImprintPredicate (projectRoot: string, page: string) =
+        let fileName = Path.GetFileNameWithoutExtension page
+        let ext = Path.GetExtension page
+        page.Contains("imprint")
+        && ext = ".md"
+
+    let isImprintHero f = ImprintHeroPredicate("",f)
+
+    let PrivacyHeroPredicate (projectRoot: string, page: string) =
+        let fileName = Path.GetFileNameWithoutExtension page
+        let ext = Path.GetExtension page
+        page.Contains("privacy")
+        && fileName = "hero"
+        && ext = ".md"
+        
+    let PrivacyPredicate (projectRoot: string, page: string) =
+        let fileName = Path.GetFileNameWithoutExtension page
+        let ext = Path.GetExtension page
+        page.Contains("privacy")
+        && ext = ".md"
+
+    let isPrivacyHero f = PrivacyHeroPredicate("",f)
+
     let staticPredicate (projectRoot: string, page: string) =
         let ext = Path.GetExtension page
         if page.Contains "_public" ||
@@ -336,4 +366,14 @@ module LearnMore =
 module About =
 
     let createAboutPageName (heroPath:string) =
+        heroPath.Replace("/hero.md",".html")
+
+module Imprint =
+
+    let createImprintPageName (heroPath:string) =
+        heroPath.Replace("/hero.md",".html")
+
+module Privacy =
+
+    let createPrivacyPageName (heroPath:string) =
         heroPath.Replace("/hero.md",".html")

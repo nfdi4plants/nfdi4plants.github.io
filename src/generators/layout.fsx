@@ -7,6 +7,8 @@
 #load "../loaders/mainpagecardloader.fsx"
 #load "../loaders/learnmoreloader.fsx"
 #load "../loaders/aboutloader.fsx"
+#load "../loaders/imprintloader.fsx"
+#load "../loaders/privacyloader.fsx"
 #endif
 
 open Html
@@ -123,8 +125,8 @@ let layout (ctx : SiteContents) active bodyCnt =
                         block [ whiteIcon "fab fa-github"; a [Href "https://github.com/nfdi4plants"] [!!"DataPLANT open source projects on GitHub"]]
                         block [ whiteIcon "fab fa-youtube"; a [Href "https://www.youtube.com/channel/UCrTBwQWOa0-aWYkwoY104Wg"] [!!"DataPLANT video resources on youtube"]]
                         block [ h3 [Class "subtitle is-white"] [!!"Legal"]]
-                        block [ a [Href ""] [!!"Imprint"]]
-                        block [ a [Href ""] [!!"Privacy"]]
+                        block [ a [Href "/content/imprint.html"] [!!"Imprint"]]
+                        block [ a [Href "/content/privacy.html"] [!!"Privacy"]]
                     ]
                 ]
             ]
