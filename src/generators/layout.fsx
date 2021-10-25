@@ -108,7 +108,7 @@ let layout (ctx : SiteContents) active bodyCnt =
                     div [Class "column is-4 m-4"] [
                         block [ h3 [Class "subtitle is-white"] [!!"DataPLANT - Democratization of plant research made easy."]]
                         block [ p [] [!!"DataPLANT is part of "; a [Href "https://www.nfdi.de/"] [!!"NFDI"]]]
-                        block [ p [] [!!"This website is developed and maintained by "; a [] [!!"members of DataPLANT "]]]
+                        block [ p [] [!!"This website is developed and maintained by members of DataPLANT"]]
                     ]
                     div [Class "column is-4 m-4"] [
                         block [ h3 [Class "subtitle is-white"] [!!"Navigation"]]
