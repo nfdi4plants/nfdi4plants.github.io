@@ -45,7 +45,7 @@ let generate' (ctx : SiteContents) (_: string) =
                             li [] [p [] [!! "- the general command line structure​"]]
                             li [] [p [] [!! "- the most important commands to create and validate your ARCs.​"]]
                         ]
-                        p [] [!!"To download the newest version of the ARC Commander, please click "; a [Href ""] [!!"here"]]
+                        p [] [!!"To download the newest version of the ARC Commander, please click "; a [Href "https://github.com/nfdi4plants/arcCommander/releases/download/v0.0.4-win.x64/arc.exe"] [!!"here"]]
                         p [] [!!"Although using the Commander will support you immensely in the creation of ARCs, it is optional and the ISA-TAB excel sheets can still be filled out manually.​"]
                     ]
                 ]
