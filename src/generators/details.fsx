@@ -36,7 +36,7 @@ let generate' (ctx : SiteContents) (_: string) =
                 div [Class "columns"] [
                     div [Class "column is-4 is-hidden-mobile"] [
                         figure [Class "image"] [
-                            img [Src "/images/details/arc-structure.svg"]
+                            img [Src "/images/details/Real-world-ARC.svg"]
                         ]
                     ]
                     div [Class "column is-8"] [
@@ -45,7 +45,8 @@ let generate' (ctx : SiteContents) (_: string) =
                             li [] [p [] [!! "- the general command line structure​"]]
                             li [] [p [] [!! "- the most important commands to create and validate your ARCs.​"]]
                         ]
-                        p [] [!!"To download the newest version of the ARC Commander, please click "; a [Href "https://github.com/nfdi4plants/arcCommander/releases/download/v0.0.4-win.x64/arc.exe"] [!!"here"]]
+                        p [] [!!"To find the latest release of the ARC Commander, please click "; a [Href "https://github.com/nfdi4plants/arcCommander/releases"] [!!"here"]]
+                        p [] [!!"For further Information visit the "; a [Href "https://github.com/nfdi4plants/arcCommander"] [!!"ARC Commander Github Page"]]
                         p [] [!!"Although using the Commander will support you immensely in the creation of ARCs, it is optional and the ISA-TAB excel sheets can still be filled out manually.​"]
                     ]
                 ]
