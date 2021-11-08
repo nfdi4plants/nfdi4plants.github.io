@@ -90,6 +90,6 @@ Promise.all([
     allowHTML: true,
     theme: 'custom',
     delay: [100, 1500],
-    boundary: ""
+    boundary: "window"
     })
 })
