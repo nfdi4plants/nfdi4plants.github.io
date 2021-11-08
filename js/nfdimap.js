@@ -84,7 +84,7 @@ Promise.all([
     .attr('data-place-type', d => d.type)
 
   tippy(placesnodes.nodes(), {
-    //appendTo: document.body,
+    appendTo: parent,
     interactive: true,
     maxWidth: 'none',
     allowHTML: true,
