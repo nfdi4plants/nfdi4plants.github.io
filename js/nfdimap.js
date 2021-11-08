@@ -1,6 +1,6 @@
 Promise.all([
-  d3.json("/data/nfdimap/germany.json"), 
-  d3.buffer("/data/nfdimap/participants.xlsx")
+  d3.json("data/nfdimap/germany.json"), 
+  d3.buffer("data/nfdimap/participants.xlsx")
 ]).then( ([germany, buffer]) => {
 
   const tmp = XLSX.read(buffer, { type: 'array'})
@@ -84,12 +84,11 @@ Promise.all([
     .attr('data-place-type', d => d.type)
 
   tippy(placesnodes.nodes(), {
-    appendTo: "parent",
+    appendTo: (reference) => document.querySelector('#dataplant-map'),
     interactive: true,
     maxWidth: 'none',
     allowHTML: true,
     theme: 'custom',
-    delay: [100, 1500],
-    //boundary: "window"
+    delay: [100, 1500]
     })
 })
