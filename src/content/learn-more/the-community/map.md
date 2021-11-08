@@ -1,13 +1,15 @@
 ---
-title: DataPLANT participants
-bg-color: yellow-lighter-70
-border-color: yellow-lighter-70
-emphasis-color: yellow
+title: DataPLANT Participants
+bg-color: white
+border-color: white
+emphasis-color: mint-darker-40
 image:
 layout: text-only
 index: 1
 
 ---
+
+Testtext
 
 <style type="text/css">
     a {
