@@ -16,9 +16,17 @@ You are interested in finding out who is already involved? Please take a look at
 If you would prefer to get all the names at a glance, please have a look at the [GEPRIS entry](https://gepris.dfg.de/gepris/projekt/442077441 "GEPRIS: DataPLANT-Daten in Pflanzen-Grundlagenforschung") or the [proposal](https://zenodo.org/record/4836395#.YYlE6WDMLZs "Proposal: DataPLANT - NFDI Consortium for Fundamental Plant Research") of DataPLANT.
 
 <style type="text/css">
-    a {
-            color: #C2E5CD;
-        }
+    a:link {
+        color: #C2E5CD;
+    }
+
+    a:hover {
+        color: #1FC2A7;
+    }
+      
+    a:visited {
+        color: #1FC2A7;
+    }
 
     #dataplant-map {
         margin: 0 auto;
