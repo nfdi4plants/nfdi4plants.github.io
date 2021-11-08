@@ -84,11 +84,12 @@ Promise.all([
     .attr('data-place-type', d => d.type)
 
   tippy(placesnodes.nodes(), {
-    appendTo: document.body,
+    //appendTo: document.body,
     interactive: true,
     maxWidth: 'none',
     allowHTML: true,
     theme: 'custom',
-    delay: [100, 1500]
+    delay: [100, 1500],
+    boundary: ""
     })
 })
