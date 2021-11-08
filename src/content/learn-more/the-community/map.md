@@ -9,7 +9,11 @@ index: 1
 
 ---
 
-Testtext
+Already in the application phase, some research groups from the field of plant research decided to collaborate with DataPLANT. Now we are working to successively identify and cover the needs of the entire research landscape.  
+
+You are interested in finding out who is already involved? Please take a look at the map below.
+
+If you would prefer to get all the names at a glance, please have a look at the [GEPRIS entry](https://gepris.dfg.de/gepris/projekt/442077441 "GEPRIS: DataPLANT-Daten in Pflanzen-Grundlagenforschung") or the [proposal](https://zenodo.org/record/4836395#.YYlE6WDMLZs "Proposal: DataPLANT - NFDI Consortium for Fundamental Plant Research") of DataPLANT.
 
 <style type="text/css">
     a {
