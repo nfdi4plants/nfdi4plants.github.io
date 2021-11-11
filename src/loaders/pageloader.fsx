@@ -10,4 +10,5 @@ let loader (projectRoot: string) (siteContent: SiteContents) =
     siteContent.Add({title = "News"; link = "/news.html"})
     siteContent.Add({title = "Service"; link = "/content/learn-more/service.html"})
     siteContent.Add({title = "About"; link = "/content/about.html"})
+    siteContent.Add({title = "DataHUB"; link = "https://gitlab.nfdi4plants.de/"})
     siteContent
