@@ -288,6 +288,21 @@ module Predicates =
 
     let isAboutHero f = AboutHeroPredicate("",f)
 
+    let JobsHeroPredicate (projectRoot: string, page: string) =
+        let fileName = Path.GetFileNameWithoutExtension page
+        let ext = Path.GetExtension page
+        page.Contains("jobs")
+        && fileName = "hero"
+        && ext = ".md"
+        
+    let JobsPredicate (projectRoot: string, page: string) =
+        let fileName = Path.GetFileNameWithoutExtension page
+        let ext = Path.GetExtension page
+        page.Contains("jobs")
+        && ext = ".md"
+
+    let isJobsHero f = JobsHeroPredicate("",f)
+
     let ImprintHeroPredicate (projectRoot: string, page: string) =
         let fileName = Path.GetFileNameWithoutExtension page
         let ext = Path.GetExtension page
@@ -366,6 +381,11 @@ module LearnMore =
 module About =
 
     let createAboutPageName (heroPath:string) =
+        heroPath.Replace("/hero.md",".html")
+
+module Jobs =
+
+    let createJobsPageName (heroPath:string) =
         heroPath.Replace("/hero.md",".html")
 
 module Imprint =
