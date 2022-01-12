@@ -19,6 +19,13 @@ On this page you will find an overview of the current job opportunities in DataP
     <td><br><b>Profile</b></td>
 </tr>
 <tr>
+    <td>Postdoc Bioinformatik</td>
+    <td><a href="https://www.uni-marburg.de/de">Philipps-Universität Marburg</a></td>
+    <td>Cell Biolog of Plants<br><a href="http://madland.science/">MAdLand Program</a></td>
+    <td>Marburg</td>
+    <td><a href="https://www.uni-marburg.de/de/universitaet/administration/verwaltung/dezernat2/personalabteilung/bewerber/stellen/wissenschaftliche-stellen/fb17-0002-wmz-210122.pdf">Further information</a></td>
+</tr>
+<tr>
     <td>PhD Position from the field of Data analysis and annotation</td>
     <td><a href="https://fz-juelich.de/portal/DE/Home/home_node.html;jsessionid=22D52EF73DCF685AFEDE01855B133834">Forschungszentrum Jülich</a></td>
     <td>Institute of Bio- and Geosciences<br><a href="https://fz-juelich.de/ibg/ibg-4/EN/Home/home_node.html;jsessionid=22D52EF73DCF685AFEDE01855B133834">Bioinformatics (IBG-4)</a></td>
