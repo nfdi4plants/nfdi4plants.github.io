@@ -237,16 +237,17 @@ Table objects must contain at least one source. Source sample relations must fol
           <div class="columns">
             <div class="column">
               <figure class="image is-4by3">
-                <img src="../../images/Learn-more/ARC/externals.svg"/>
+                <img src="../../images/Learn-more/ARC/workflows.svg"/>
               </figure>
             </div>
             <div class="column">
-              <h1 class="title is-lightblue">
-                Externals
+              <h1 class="title is-darkblue">
+                Workflows
               </h1>
               <div class="content">
-                <p>External data or knowledge files refer to data that is neither originating within the investigation/study scope of the ARC nor can be referenced externally. Yet, these files are required to ensure reproducibility. Examples include early use of ontologies, mapping files, gene information, and so on. All corresponding files need to be stored in the ARC’s top-level externals directory.</p>
-<p>Together these external data form a virtual assay. To follow the metadata requirements of assays, a metadata file in ISA-XLSX format is mandatory for each external file, located under the top-level externals directory.</p>
+                <p>Workflows in ARCs represent processing steps used in computational analyses and other data transformations of an ARC's assays to generate run results. They are a collection of files stored in a single directory under the top-level workflows subdirectory.</p>
+<p>A per-workflow executable CWL description (v1.2 or higher) is stored in a mandatory workflow.cwl. This can either contain a CWL tool or workflow description.</p>
+<p>We highly recommend to include a reproducible execution environment description in form of a Docker container description for tool descriptions.</p>
 
               </div>
             </div>
@@ -260,17 +261,16 @@ Table objects must contain at least one source. Source sample relations must fol
           <div class="columns">
             <div class="column">
               <figure class="image is-4by3">
-                <img src="../../images/Learn-more/ARC/workflows.svg"/>
+                <img src="../../images/Learn-more/ARC/externals.svg"/>
               </figure>
             </div>
             <div class="column">
-              <h1 class="title is-darkblue">
-                Workflows
+              <h1 class="title is-lightblue">
+                Externals
               </h1>
               <div class="content">
-                <p>Workflows in ARCs represent processing steps used in computational analyses and other data transformations of an ARC's assays to generate run results. They are a collection of files stored in a single directory under the top-level workflows subdirectory.</p>
-<p>A per-workflow executable CWL description (v1.2 or higher) is stored in a mandatory workflow.cwl. This can either contain a CWL tool or workflow description.</p>
-<p>We highly recommend to include a reproducible execution environment description in form of a Docker container description for tool descriptions.</p>
+                <p>External data or knowledge files refer to data that is neither originating within the investigation/study scope of the ARC nor can be referenced externally. Yet, these files are required to ensure reproducibility. Examples include early use of ontologies, mapping files, gene information, and so on. All corresponding files need to be stored in the ARC’s top-level externals directory.</p>
+<p>Together these external data form a virtual assay. To follow the metadata requirements of assays, a metadata file in ISA-XLSX format is mandatory for each external file, located under the top-level externals directory.</p>
 
               </div>
             </div>
