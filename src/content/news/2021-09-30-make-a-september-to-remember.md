@@ -9,7 +9,7 @@ This September has been a busy month for the DataPLANT team. It started with a t
 
 [![Chlamy 2020+1](../../images/News-Items/Chlamy2021.svg "Chlamy 2020+1"){width=60%}](https://twitter.com/nfdi4plants/status/1434876008038027270)
 
-Back in Germany, the following week already brought joint work on DataPLANT Services as part of our 1st ARC Hackathon. Together we worked on the following topics:
+Back in Germany, the following week already brought joint work on DataPLANT Services as part of our 1st ARC Hackathon. Together we worked on the following topics
 * Creation of sample ARCs
 * Ontology
 * Raw data parser
