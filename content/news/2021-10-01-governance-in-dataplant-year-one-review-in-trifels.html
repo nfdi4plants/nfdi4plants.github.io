@@ -1,0 +1,229 @@
+<html class="has-navbar-fixed-top">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <title>
+      nfdi4plants
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-collapsible@1.0.4/dist/css/bulma-collapsible.min.css"/>
+    <script defer="true" src="https://kit.fontawesome.com/0d3e0ea7a6.js" crossOrigin="anonymous"></script>
+    <script src="/js/navbar.js"></script>
+  </head>
+  <body>
+    <nav class="navbar is-fixed-top has-bg-darkblue">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="/images/logo.svg" alt="Logo" width="32" height="32"/>
+        </a>
+        <a class="navbar-burger" data-target="navMenu" aria-label="menu" role="button" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navMenu" class="navbar-menu has-bg-darkblue">
+        <div class="navbar-start is-justify-content-center is-flex-grow-1">
+          <a class="navbar-item is-active smooth-hover" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/news.html">
+            News
+          </a>
+          <a class="navbar-item" href="/content/learn-more/service.html">
+            Service
+          </a>
+          <a class="navbar-item" href="/content/about.html">
+            About
+          </a>
+          <a class="navbar-item" href="/content/jobs.html">
+            Jobs
+          </a>
+          <a class="navbar-item" href="https://gitlab.nfdi4plants.de/">
+            DataHUB
+          </a>
+        </div>
+        <div class="navbar-end">
+          <a class="navbar-item" href="https://twitter.com/nfdi4plants">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+          <a class="navbar-item" href="https://github.com/nfdi4plants">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
+          <a class="navbar-item" href="https://www.youtube.com/channel/UCrTBwQWOa0-aWYkwoY104Wg">
+            <span class="icon">
+              <i class="fab fa-youtube"></i>
+            </span>
+          </a>
+          <a class="navbar-item" href="mailto:dataplant@uni-kl.de">
+            <span class="icon">
+              <i class="fas fa-paper-plane"></i>
+            </span>
+          </a>
+          <a class="navbar-item" href="https://zenodo.org/communities/nfdi4plants?page=1&size=20" style="font-weight: bold;">
+            Z
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-medium is-dark has-bg-lightblue">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            DataPLANT News
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container p-4">
+        <h1 class="title is-1">
+          Governance in DataPLANT - Year one review in Trifels
+        </h1>
+        <h2 class="subtitle is-2">
+          1 Oct 2021
+        </h2>
+        <div class="content">
+          <p>Fortunately the pandemic situation allowed for a three day in-person meeting for a review of DataPLANT after year one. As other consortia we were not able to completely staff all posts by then and needed to review the work plan to adapt to ongoing developments and insights gathered over the first year. Thus we reviewed of basic infrastructure considerations and adhered to the feedback from the Senior Management Board meeting to emphasize the priority of community services. In terms of the project's mid-term review we decided to focus on the specific assets and highlights of the project. First working tools and services evolved around metadata annotation and DataPLANT ontology development through Swate and Swobup. The tools around SWATE/Swobup need a stable infrastructure when promotion of the services to the community picks up speed. The ARC specification is under way and GitLab is getting thoroughly tested. Insights regarding typical workflows in the community were gathered and applied to storage and processing of data (to offer both local, on-premise and cloud storage).</p>
+<p>Further considerations regarding further development focused the to be maintained compatibility with the NFDI regarding AAI and common platforms (and basic services). This means that DataPLANT does not necessarly sets up own large infrastructures in a monolithic form, but prefers microservices and an agile approach. The services should be as easy to maintain as possible as well as being potentially interchangeable. Regarding the software base DataPLANT will rely on broadly deployed, established base software used by many other scientific communities like GitLab or Invenio. It takes the considerations on the sometimes tight staffing situation as well as the qualifications of the existing personnel into account. In general we aim to avoidance too complex structures that are difficult to integrate later on and ensure reliable operation.</p>
+<p>A major task is the finalization of the ARC specification including its relation to Research Object Crates (RO-Crate) and FAIR digital objects (FDO). The final review uses the GitHub pull-request mechanism and the resulting first version will be presented to the relevant boards, at the same time dissemination to the key participants.</p>
+<p>Regarding decision-making processes it was clarified that the task areas
+1 and 2 primarily focus on the &quot;how&quot; and to concentrate in the regular meetings on respective task area cores. The task area 3 aims on the facilitation between &quot;what do you want&quot; (community wishes and input) to the &quot;how&quot;?</p>
+<p>GitLab is getting focused on for versioning and sharing as it is an established tool where much expertise already exists and as a way to complement existing project repositories and services at GitHub. It well get established as a central tool with many functions of an intended science gateway plus further services, like static website, data backend for Swate. It will partially offer the functionality of a science gateway for DataPLANT from which a range of services will be accessible.
+The future infrastructure will rely on a fixed (regarding service host names), stable entry point but allowing the inclusion or alternative of local resources. The envisioned model can incorporate different clouds or similar resources and dynamically handle states of unavailability.
+The persistence is achieved through professional backend storage systems.</p>
+
+        </div>
+      </div>
+    </section>
+  </body>
+  <footer class="footer has-bg-darkblue-lighter-20">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-4 m-4">
+          <div class="block">
+            <h3 class="subtitle is-white">
+              DataPLANT - Democratization of plant research made easy.
+            </h3>
+          </div>
+          <div class="block">
+            <p>
+              DataPLANT is part of 
+              <a href="https://www.nfdi.de/">
+                NFDI
+              </a>
+            </p>
+          </div>
+          <div class="block">
+            <p>
+              This website is developed and maintained by members of DataPLANT
+            </p>
+          </div>
+        </div>
+        <div class="column is-4 m-4">
+          <div class="block">
+            <h3 class="subtitle is-white">
+              Navigation
+            </h3>
+          </div>
+          <ul>
+            <div class="block">
+              <li>
+                <a href="/">
+                  Home
+                </a>
+              </li>
+            </div>
+            <div class="block">
+              <li>
+                <a href="/news.html">
+                  News
+                </a>
+              </li>
+            </div>
+            <div class="block">
+              <li>
+                <a href="/content/learn-more/service.html">
+                  Service
+                </a>
+              </li>
+            </div>
+            <div class="block">
+              <li>
+                <a href="/content/about.html">
+                  About
+                </a>
+              </li>
+            </div>
+            <div class="block">
+              <li>
+                <a href="/content/jobs.html">
+                  Jobs
+                </a>
+              </li>
+            </div>
+            <div class="block">
+              <li>
+                <a href="https://gitlab.nfdi4plants.de/">
+                  DataHUB
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="column is-4 m-4">
+          <div class="block">
+            <h3 class="subtitle is-white">
+              Social
+            </h3>
+          </div>
+          <div class="block">
+            <span class="icon is-white">
+              <i class="fab fa-twitter"></i>
+            </span>
+            <a href="https://twitter.com/nfdi4plants">
+              DataPLANT on Twitter
+            </a>
+          </div>
+          <div class="block">
+            <span class="icon is-white">
+              <i class="fab fa-github"></i>
+            </span>
+            <a href="https://github.com/nfdi4plants">
+              DataPLANT open source projects on GitHub
+            </a>
+          </div>
+          <div class="block">
+            <span class="icon is-white">
+              <i class="fab fa-youtube"></i>
+            </span>
+            <a href="https://www.youtube.com/channel/UCrTBwQWOa0-aWYkwoY104Wg">
+              DataPLANT video resources on youtube
+            </a>
+          </div>
+          <div class="block">
+            <h3 class="subtitle is-white">
+              Legal
+            </h3>
+          </div>
+          <div class="block">
+            <a href="/content/imprint.html">
+              Imprint
+            </a>
+          </div>
+          <div class="block">
+            <a href="/content/privacy.html">
+              Privacy
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

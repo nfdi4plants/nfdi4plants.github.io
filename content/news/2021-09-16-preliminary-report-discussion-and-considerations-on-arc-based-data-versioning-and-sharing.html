@@ -1,0 +1,234 @@
+<html class="has-navbar-fixed-top">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <title>
+      nfdi4plants
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-collapsible@1.0.4/dist/css/bulma-collapsible.min.css"/>
+    <script defer="true" src="https://kit.fontawesome.com/0d3e0ea7a6.js" crossOrigin="anonymous"></script>
+    <script src="/js/navbar.js"></script>
+  </head>
+  <body>
+    <nav class="navbar is-fixed-top has-bg-darkblue">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="/images/logo.svg" alt="Logo" width="32" height="32"/>
+        </a>
+        <a class="navbar-burger" data-target="navMenu" aria-label="menu" role="button" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navMenu" class="navbar-menu has-bg-darkblue">
+        <div class="navbar-start is-justify-content-center is-flex-grow-1">
+          <a class="navbar-item is-active smooth-hover" href="/">
+            Home
+          </a>
+          <a class="navbar-item" href="/news.html">
+            News
+          </a>
+          <a class="navbar-item" href="/content/learn-more/service.html">
+            Service
+          </a>
+          <a class="navbar-item" href="/content/about.html">
+            About
+          </a>
+          <a class="navbar-item" href="/content/jobs.html">
+            Jobs
+          </a>
+          <a class="navbar-item" href="https://gitlab.nfdi4plants.de/">
+            DataHUB
+          </a>
+        </div>
+        <div class="navbar-end">
+          <a class="navbar-item" href="https://twitter.com/nfdi4plants">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+          <a class="navbar-item" href="https://github.com/nfdi4plants">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
+          <a class="navbar-item" href="https://www.youtube.com/channel/UCrTBwQWOa0-aWYkwoY104Wg">
+            <span class="icon">
+              <i class="fab fa-youtube"></i>
+            </span>
+          </a>
+          <a class="navbar-item" href="mailto:dataplant@uni-kl.de">
+            <span class="icon">
+              <i class="fas fa-paper-plane"></i>
+            </span>
+          </a>
+          <a class="navbar-item" href="https://zenodo.org/communities/nfdi4plants?page=1&size=20" style="font-weight: bold;">
+            Z
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-medium is-dark has-bg-lightblue">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            DataPLANT News
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container p-4">
+        <h1 class="title is-1">
+          Preliminary report - Discussion and considerations on ARC based data versioning and sharing
+        </h1>
+        <h2 class="subtitle is-2">
+          16 Sep 2021
+        </h2>
+        <div class="content">
+          <p>In DataPLANT a working group formed to define a specification of the Annotated Research Context (ARC) and the necessary backend infrastructure for actual data versioning and sharing. This group looks into code repositories as typical processes found in software development align well to the goals of research data management (RDM).</p>
+<p>Following examples in other disciplines DataPLANT explores the adaptation of Git in an RDM context. This news item provides a short outline of the current discussion on and status of the efforts of the DataPLANT consortium, within the framework of the National Research Data Infrastructure, to provide the technical basis for implementing corresponding backend infrastructure for the plant research community.
+The approach focuses not only the raw data gathered during experiments, but also considers analysis routines and derived data products within the context of RDM.</p>
+<p>In DataPLANT ARCs are Git repositories, plus extras. The ARC builds on and implements existing standards like ISA for administrative and experimental metadata and CWL for analysis and workflow metadata. They are designed to represent digital objects that fulfill all FAIR principles and are therefore referred to as <a href="https://fairdo.org"
+title="FAIR Digital Objects Forum">FAIR Digital Objects (FDO)</a>.
+To simplify the use of the versioning framework Git for non software developers the ARC Commander (an end user tool developed within the context of DataPLANT) wraps the repository interaction.</p>
+<p>The <a href="https://github.com/nfdi4plants/arcCommander" title="Code repository for the ARC Commander">ArcCommander is CLI tool</a> for ARC operations which integrates Git operations, metadata maintenance and workflow ease-of-use: <em>arc init </em>implies <em>git init</em> plus extra ease-of-use defaults (it creates default files and folders like <em>assays/</em>, <em>workflows/</em>, <em>runs/</em>, <em>isa.*.xlsx</em>). <em>arc push/pull</em> equivalents to <em>git push/pull</em> and initiates an explicit up/download of local changes.
+<em>arc update</em> is the equivalent to the commands: <em>[git lfs track +] git add + git commit</em>. It auto-detects large files and auto-adds files and implements ARC structure sanity checks and some semi-automatic commit messages.</p>
+<p>The ARC Commander sticks with the “Git repository + convenience layer”
+approach and reuses Git mechanisms where reasonable: <em>git config</em>, git hooks (e.g. sanity check in pre-commit-hook), <em>.gitattributes</em> for repository-level metadata, <em>git tag</em> for releases etc. <br /> <br />The Git mechanisms for collaboration and reuse discussed are: <em>git-submodule</em>, <em>git-subtree</em>, <em>git-subrepo</em>, <em>datalad</em>, ... (there are more approaches out there) for re-using assays and workflows. The design choices follow the principles of compatibility (play well with other Git-based tools), Robustness (avoid “I can’t work because someone else screwed up.”) and &quot;make the lives of the operators harder rather than users&quot;.</p>
+<p>For DataPLANT's purpose Git submodules and Git subtree have the wrong granularity as they include entire repositories as subdirs (not only parts, workaround could be sparse checkouts + symlinking), require continued cleverness in maintaining repository structure (need to account for existence of submodules in basically all Git commands). It is most Git-like and maximally decentralized, but also very hard to understand dependencies and ensure completeness. Another option would be <a href="https://www.datalad.org" title="DataLad provides joint management of analysis code and data."><em>datalad</em></a> to manage tree of nested Git repositories which is based on git-annex. It is very powerful, but also brittle. Nothing could be done without the datalad tool. The approach is in principle decentralized, but requires central registry to work well to ensure data persistence, archiving and indexing. There is typically one registry per community (e.g. <a href="https://gin.g-node.org/" title="Modern Research Data Management for Neuroscience">GIN</a>, <a href="https://nfdi-neuro.de/" title="NFDI Neuroscience">NFDI Neuroscience</a>, ...)</p>
+<p>Thus DataPLANT opts for a modified git-subrepo approach: An import fetches and adds imported subdir to local repository (“copy”) which is easily implemented using git-plumbing commands (git filter-branch and similar). For export the history of subdir is isolated and graft on original history done. I requires low-level Git object manipulation, but acts otherwise straightforward. It enables push/pull style collaboration, while avoiding complexity for users and retaining compatibility with the standard tools and keeping history easy to understand. The primary usecase are the (large) data files in assays/ When applying same design choices as before: git-lfs comes out as the
+(initial) choice. It offers minimal complexity, is well-supported and widely used. From the implementation perspective LFS just works and &quot;git lfs track&quot; can be automated during <em>arc update</em>. There is zero config needed against GitLab/GitHub/Gitea, SourceTree/VS Code/gitk. It is well-supported in UIs and thus adds to general transparency as well as data is kept joined with metadata. A couple of preliminary experiments were run and will be extended at the moment to gather more (performance and usability) experience. The results run on the test and production instances of the Git repositories in Freiburg (with suboptimal hardware setup) and Tübingen look promising, but a couple of issues are still to be tackled. To track provenance and complete history the workflow results (runs) will be committed via git into the ARC.</p>
+
+        </div>
+      </div>
+    </section>
+  </body>
+  <footer class="footer has-bg-darkblue-lighter-20">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-4 m-4">
+          <div class="block">
+            <h3 class="subtitle is-white">
+              DataPLANT - Democratization of plant research made easy.
+            </h3>
+          </div>
+          <div class="block">
+            <p>
+              DataPLANT is part of 
+              <a href="https://www.nfdi.de/">
+                NFDI
+              </a>
+            </p>
+          </div>
+          <div class="block">
+            <p>
+              This website is developed and maintained by members of DataPLANT
+            </p>
+          </div>
+        </div>
+        <div class="column is-4 m-4">
+          <div class="block">
+            <h3 class="subtitle is-white">
+              Navigation
+            </h3>
+          </div>
+          <ul>
+            <div class="block">
+              <li>
+                <a href="/">
+                  Home
+                </a>
+              </li>
+            </div>
+            <div class="block">
+              <li>
+                <a href="/news.html">
+                  News
+                </a>
+              </li>
+            </div>
+            <div class="block">
+              <li>
+                <a href="/content/learn-more/service.html">
+                  Service
+                </a>
+              </li>
+            </div>
+            <div class="block">
+              <li>
+                <a href="/content/about.html">
+                  About
+                </a>
+              </li>
+            </div>
+            <div class="block">
+              <li>
+                <a href="/content/jobs.html">
+                  Jobs
+                </a>
+              </li>
+            </div>
+            <div class="block">
+              <li>
+                <a href="https://gitlab.nfdi4plants.de/">
+                  DataHUB
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="column is-4 m-4">
+          <div class="block">
+            <h3 class="subtitle is-white">
+              Social
+            </h3>
+          </div>
+          <div class="block">
+            <span class="icon is-white">
+              <i class="fab fa-twitter"></i>
+            </span>
+            <a href="https://twitter.com/nfdi4plants">
+              DataPLANT on Twitter
+            </a>
+          </div>
+          <div class="block">
+            <span class="icon is-white">
+              <i class="fab fa-github"></i>
+            </span>
+            <a href="https://github.com/nfdi4plants">
+              DataPLANT open source projects on GitHub
+            </a>
+          </div>
+          <div class="block">
+            <span class="icon is-white">
+              <i class="fab fa-youtube"></i>
+            </span>
+            <a href="https://www.youtube.com/channel/UCrTBwQWOa0-aWYkwoY104Wg">
+              DataPLANT video resources on youtube
+            </a>
+          </div>
+          <div class="block">
+            <h3 class="subtitle is-white">
+              Legal
+            </h3>
+          </div>
+          <div class="block">
+            <a href="/content/imprint.html">
+              Imprint
+            </a>
+          </div>
+          <div class="block">
+            <a href="/content/privacy.html">
+              Privacy
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
