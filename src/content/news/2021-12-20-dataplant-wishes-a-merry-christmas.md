@@ -4,4 +4,4 @@ title: DataPLANT wishes a Merry Christmas
 preview-text: 
 ---
 
-![DataPLANT wishes a Merry Christmas](../../images/News-Items/Weihnachtsgrüße-DataPLANT_2021.svg "DataPLANT wishes a Merry Christmas"){width=80%}
+![DataPLANT wishes a Merry Christmas](../../images/News-Items/christmas2021.png "DataPLANT wishes a Merry Christmas"){width=50%}
