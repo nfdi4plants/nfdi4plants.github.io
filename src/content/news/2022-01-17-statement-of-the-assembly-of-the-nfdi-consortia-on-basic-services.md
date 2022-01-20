@@ -6,7 +6,7 @@ preview-text: At the consortium meeting of the National Research Data Infrastruc
 
 At the consortium meeting of the National Research Data Infrastructure (NFDI) association on January 14, DataPLANT among the consortia represented therein approved the publication of a joint statement on the relevance and success criteria of basic services. Basic service may develop into one of the pillars of the future joint scientific infrastructure for research data management overarching various fields in science.
 
-https://www.nfdi.de/nfdi-konsortien-veroeffentlichen-gemeinsame-stellungnahme-zu-basisdiensten/
+[Statement of the NFDI consortia on basic services](https://www.nfdi.de/wp-content/uploads/2022/01/Stellungnahme-Basisdienste-NFDI-Konsortien_2022.pdf)
 
 The background to this is that the DFG's expert panel for the third round of calls for proposals has also allowed basic services consortia to apply. In December, the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) published an updated timetable that governs the further procedure for applying for basic service consortia. The timeline was discussed internally at the NFDI. At the end of 2021, an internal voting process was underway, during which the statement now published was drafted. It reflects the position of the current 19 consortia on the subject of basic service consortia. The statement was approved without any dissenting votes.
 

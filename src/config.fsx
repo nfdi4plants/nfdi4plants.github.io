@@ -11,8 +11,9 @@ let config = {
         {Script = "index.fsx"; Trigger = Once; OutputFile = NewFileName "index.html" }
         {Script = "news.fsx"; Trigger = Once; OutputFile = NewFileName "news.html" }
         {Script = "newsitem.fsx"; Trigger = OnFilePredicate Predicates.newsPredicate; OutputFile = ChangeExtension ".html"}
-        {Script = "learnmore.fsx"; Trigger = OnFilePredicate Predicates.learnMoreHeroPredicate; OutputFile = Custom LearnMore.createLernMorePageName}
-        {Script = "details.fsx"; Trigger = Once; OutputFile = NewFileName "content/learn-more/service/arccommander.html"}
+        {Script = "learnmore.fsx"; Trigger = OnFilePredicate Predicates.learnMoreHeroPredicate; OutputFile = Custom LearnMore.createLearnMorePageName}
+        {Script = "service.fsx"; Trigger = OnFilePredicate Predicates.ServiceHeroPredicate; OutputFile = Custom Service.createServicePageName}
+        {Script = "details.fsx"; Trigger = Once; OutputFile = NewFileName "content/service/arccommander.html"}
         {Script = "jobs.fsx"; Trigger = OnFilePredicate Predicates.JobsHeroPredicate; OutputFile = Custom Jobs.createJobsPageName}
         {Script = "about.fsx"; Trigger = OnFilePredicate Predicates.AboutHeroPredicate; OutputFile = Custom About.createAboutPageName}
         {Script = "imprint.fsx"; Trigger = OnFilePredicate Predicates.ImprintHeroPredicate; OutputFile = Custom Imprint.createImprintPageName}

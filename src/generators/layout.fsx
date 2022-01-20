@@ -10,6 +10,7 @@
 #load "../loaders/imprintloader.fsx"
 #load "../loaders/privacyloader.fsx"
 #load "../loaders/jobsloader.fsx"
+#load "../loaders/serviceloader.fsx"
 #endif
 
 open Html
@@ -116,7 +117,7 @@ let layout (ctx : SiteContents) active bodyCnt =
                         ul [] [
                             block [li [] [a [Href "/"] [!!"Home"]]]
                             block [li [] [a [Href "/news.html"] [!!"News"]]]
-                            block [li [] [a [Href "/content/learn-more/service.html"] [!!"Service"]]]
+                            block [li [] [a [Href "/content/service.html"] [!!"Service"]]]
                             block [li [] [a [Href "/content/about.html"] [!!"About"]]]
                             block [li [] [a [Href "/content/jobs.html"] [!!"Jobs"]]]
                             block [li [] [a [Href "https://gitlab.nfdi4plants.de/"] [!!"DataHUB"]]]
