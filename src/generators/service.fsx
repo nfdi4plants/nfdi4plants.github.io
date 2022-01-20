@@ -3,10 +3,10 @@
 #load "../globals.fsx"
 
 open Globals
-open Learnmoreloader
+open Serviceloader
 open Html
 
-let createHero (hero:Learnmoreloader.LearnMoreHero) =
+let createHero (hero:Serviceloader.ServiceHero) =
 
     let heroBG = Colors.hasBgColor hero.BgColor
     let emphasisColor = Colors.isColor hero.EmphasisColor
@@ -81,7 +81,7 @@ let createHero (hero:Learnmoreloader.LearnMoreHero) =
         ]
     ]
 
-let createCard (card:Learnmoreloader.LearnMoreCard) =
+let createCard (card:Serviceloader.ServiceCard) =
 
     let cardBG = Colors.hasBgColor card.BgColor
     let cardBorder = Colors.hasBorderColor card.BorderColor
@@ -150,19 +150,19 @@ let createCard (card:Learnmoreloader.LearnMoreCard) =
     ]
 
 let generate' (ctx : SiteContents) (page: string) =
-    let learnMorePages = ctx.TryGetValues<Learnmoreloader.LearnMorePage>() |> Option.defaultValue Seq.empty
+    let ServicePages = ctx.TryGetValues<Serviceloader.ServicePage>() |> Option.defaultValue Seq.empty
 
-    printfn "[LearnMore-Generator] mapping learn more page for %s" (page.Replace("/hero.md",""))
+    printfn "[Service-Generator] mapping service page for %s" (page.Replace("/hero.md",""))
     
-    let currentLearnMorePage =
-        learnMorePages
+    let currentServicePage =
+        ServicePages
         |> Seq.tryFind (fun lmp ->
             lmp.OutputName = System.IO.DirectoryInfo(page.Replace("/hero.md","")).Name
         )
 
-    match currentLearnMorePage with
+    match currentServicePage with
     | Some page ->
-        Layout.layout ctx "Home" [
+        Layout.layout ctx "Service" [
             createHero page.Hero
             yield! 
                 page.Cards
@@ -170,7 +170,7 @@ let generate' (ctx : SiteContents) (page: string) =
                 |> Array.map createCard
         ]
     | None -> 
-        printfn "[LearnMore-Generator] No learn more page found for %s" page
+        printfn "[Service-Generator] No service page found for %s" page
         div [] []
      
 
