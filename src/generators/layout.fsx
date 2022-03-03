@@ -120,7 +120,7 @@ let layout (ctx : SiteContents) active bodyCnt =
                             block [li [] [a [Href "/content/service.html"] [!!"Service"]]]
                             block [li [] [a [Href "/content/about.html"] [!!"About"]]]
                             block [li [] [a [Href "/content/jobs.html"] [!!"Jobs"]]]
-                            block [li [] [a [Href "https://gitlab.nfdi4plants.de/"] [!!"DataHUB"]]]
+                            block [li [] [a [Href "https://git.nfdi4plants.org/"] [!!"DataHUB"]]]
                         ]
                     ]
                     div [Class "column is-4 m-4"] [
