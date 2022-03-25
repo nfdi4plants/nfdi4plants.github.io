@@ -3,7 +3,7 @@ title: ARC Commander
 bg-color: olive-lighter-70
 border-color: olive-lighter-70
 emphasis-color: olive
-image: ../../images/Learn-more/Service/ArcCommander.svg
+image: ../../images/Learn-more/Service/ARC.svg
 layout: text-left-image-right 
 index: 4
 learn-more-link: content/service/ArcCommander/arccommander.html

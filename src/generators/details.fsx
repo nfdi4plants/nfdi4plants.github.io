@@ -36,7 +36,7 @@ let generate' (ctx : SiteContents) (_: string) =
                 div [Class "columns"] [
                     div [Class "column is-4 is-hidden-mobile"] [
                         figure [Class "image"] [
-                            img [Src "/images/details/Real-world-ARC.svg"]
+                            img [Src "/images/details/Real-world-ARC2.svg"]
                         ]
                     ]
                     div [Class "column is-8"] [

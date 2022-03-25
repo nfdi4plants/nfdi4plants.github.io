@@ -93,10 +93,11 @@ let layout (ctx : SiteContents) active bodyCnt =
                 div [Id "navMenu"; Class "navbar-menu has-bg-darkblue"] [
                     div [Class "navbar-start is-justify-content-center is-flex-grow-1"] menuEntries
                     div [Class "navbar-end"] [
-                        a [Class "navbar-item"; Href "https://twitter.com/nfdi4plants"] [icon "fab fa-twitter"]
+                        a [Class "navbar-item"; Href "https://helpdesk.nfdi4plants.org/"] [icon "fas fa-headphones-alt"]
+                        a [Class "navbar-item"; Href "mailto:info@nfdi4plants.org"] [icon "fas fa-paper-plane"]
+                        a [Class "navbar-item"; Href "https://twitter.com/nfdi4plants"] [icon "fab fa-twitter"]                        
                         a [Class "navbar-item"; Href "https://github.com/nfdi4plants"] [icon "fab fa-github"]
                         a [Class "navbar-item"; Href "https://www.youtube.com/channel/UCrTBwQWOa0-aWYkwoY104Wg"] [icon "fab fa-youtube"]
-                        a [Class "navbar-item"; Href "mailto:dataplant@uni-kl.de"] [icon "fas fa-paper-plane"]
                         a [Class "navbar-item"; Href "https://zenodo.org/communities/nfdi4plants?page=1&size=20"; HtmlProperties.Style [FontWeight "bold"]] [!! "Z"]
                     
                     ]
@@ -124,6 +125,9 @@ let layout (ctx : SiteContents) active bodyCnt =
                         ]
                     ]
                     div [Class "column is-4 m-4"] [
+                        block [ h3 [Class "subtitle is-white"] [!!"Help"]]
+                        block [ whiteIcon "fas fa-headphones-alt"; a [Href "https://helpdesk.nfdi4plants.org/"] [!!"DataPLANT Helpdesk"]]
+                        block [ whiteIcon "fas fa-paper-plane"; a [Href "mailto:info@nfdi4plants.org"] [!!"DataPLANT Info Point"]]
                         block [ h3 [Class "subtitle is-white"] [!!"Social"]]
                         block [ whiteIcon "fab fa-twitter"; a [Href "https://twitter.com/nfdi4plants"] [!!"DataPLANT on Twitter"]]
                         block [ whiteIcon "fab fa-github"; a [Href "https://github.com/nfdi4plants"] [!!"DataPLANT open source projects on GitHub"]]
