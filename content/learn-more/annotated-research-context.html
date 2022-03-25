@@ -46,6 +46,16 @@
           </a>
         </div>
         <div class="navbar-end">
+          <a class="navbar-item" href="https://helpdesk.nfdi4plants.org/">
+            <span class="icon">
+              <i class="fas fa-headphones-alt"></i>
+            </span>
+          </a>
+          <a class="navbar-item" href="mailto:info@nfdi4plants.org">
+            <span class="icon">
+              <i class="fas fa-paper-plane"></i>
+            </span>
+          </a>
           <a class="navbar-item" href="https://twitter.com/nfdi4plants">
             <span class="icon">
               <i class="fab fa-twitter"></i>
@@ -59,11 +69,6 @@
           <a class="navbar-item" href="https://www.youtube.com/channel/UCrTBwQWOa0-aWYkwoY104Wg">
             <span class="icon">
               <i class="fab fa-youtube"></i>
-            </span>
-          </a>
-          <a class="navbar-item" href="mailto:dataplant@uni-kl.de">
-            <span class="icon">
-              <i class="fas fa-paper-plane"></i>
             </span>
           </a>
           <a class="navbar-item" href="https://zenodo.org/communities/nfdi4plants?page=1&size=20" style="font-weight: bold;">
@@ -92,9 +97,9 @@
       </div>
     </section>
     <section class="section">
-      <div class="container box has-bg-mint-lighter-70 has-border-color-mint-lighter-70">
+      <div class="container box has-bg-white has-border-color-white">
         <div class="container">
-          <h1 class="title is-white">
+          <h1 class="title is-lightblue">
             Real-world ARC
           </h1>
           <div class="content">
@@ -208,23 +213,23 @@ Table objects must contain at least one source. Source sample relations must fol
       </div>
     </section>
     <section class="section">
-      <div class="container box has-bg-darkblue has-border-color-darkblue">
+      <div class="container box has-bg-white has-border-color-white">
         <div class="container">
           <div class="columns">
             <div class="column">
-              <h1 class="title is-white">
+              <h1 class="title is-yellow">
                 Assays
               </h1>
               <div class="content">
-                <p>Each assay is a collection of files stored in a single directory, including a mandatory metadata file in ISA-XLSX format.</p>
-<p>Assay data files as well as protocols must be placed in a subdirectory individually.</p>
-<p>We advise you to use SWATE for completing the metadata files, as it comes along with a broad range of prepared templates and as it assists you in following the <a href="http://www.nfdi4plants.de/AnnotationPrinciples/" title="Annotation Principles">annotation principles</a>.</p>
+                <p>Assays correspond to outcomes of experimental assays or analytical measurements and are treated as immutable data. Each assay is a collection of files stored in a single directory, including a mandatory metadata file in ISA-XLSX format.</p>
+<p>Assay data files, as well as protocols, must be placed in a subdirectory individually.</p>
+<p>We advise you to use SWATE for completing the study and assay metadata files, as it assists you in following the <a href="http://www.nfdi4plants.de/AnnotationPrinciples/" title="Annotation Principles">annotation principles</a> and comes along with a broad range of prepared templates.</p>
 
               </div>
             </div>
             <div class="column">
               <figure class="image is-4by3">
-                <img src="../../images/Learn-more/ARC/assays.svg"/>
+                <img src="../../images/Learn-more/ARC/Assays.svg"/>
               </figure>
             </div>
           </div>
@@ -235,68 +240,70 @@ Table objects must contain at least one source. Source sample relations must fol
       <div class="container box has-bg-white has-border-color-white">
         <div class="container">
           <div class="columns">
-            <div class="column">
-              <figure class="image is-4by3">
-                <img src="../../images/Learn-more/ARC/externals.svg"/>
-              </figure>
-            </div>
             <div class="column">
               <h1 class="title is-lightblue">
-                Externals
-              </h1>
-              <div class="content">
-                <p>External data or knowledge files refer to data that is neither originating within the investigation/study scope of the ARC nor can be referenced externally. Yet, these files are required to ensure reproducibility. Examples include early use of ontologies, mapping files, gene information, and so on. All corresponding files need to be stored in the ARC’s top-level externals directory.</p>
-<p>Together these external data form a virtual assay. To follow the metadata requirements of assays, a metadata file in ISA-XLSX format is mandatory for each external file, located under the top-level externals directory.</p>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container box has-bg-white has-border-color-white">
-        <div class="container">
-          <div class="columns">
-            <div class="column">
-              <figure class="image is-4by3">
-                <img src="../../images/Learn-more/ARC/workflows.svg"/>
-              </figure>
-            </div>
-            <div class="column">
-              <h1 class="title is-darkblue">
                 Workflows
               </h1>
               <div class="content">
-                <p>Workflows in ARCs represent processing steps used in computational analyses and other data transformations of an ARC's assays to generate run results. They are a collection of files stored in a single directory under the top-level workflows subdirectory.</p>
-<p>A per-workflow executable CWL description (v1.2 or higher) is stored in a mandatory workflow.cwl. This can either contain a CWL tool or workflow description.</p>
+                <p>Workflows in ARCs represent processing steps used in computational analyses and other data transformations of assays to generate run results. Typical examples include data cleaning and preprocessing, computational analysis, or visualization.</p>
+<p>All files belonging to a specific workflow need to be stored in a single sub-directory.
+This also includes a mandatory per-workflow executable CWL description (v1.2 or higher),which can contain a tool or workflow description.</p>
 <p>We highly recommend to include a reproducible execution environment description in form of a Docker container description for tool descriptions.</p>
 
               </div>
             </div>
+            <div class="column">
+              <figure class="image is-4by3">
+                <img src="../../images/Learn-more/ARC/Workflows.svg"/>
+              </figure>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="section">
-      <div class="container box has-bg-lightblue has-border-color-lightblue">
+      <div class="container box has-bg-white has-border-color-white">
         <div class="container">
           <div class="columns">
             <div class="column">
-              <h1 class="title is-white">
-                Runs
+              <figure class="image is-4by3">
+                <img src="../../images/Learn-more/ARC/Studies.svg"/>
+              </figure>
+            </div>
+            <div class="column">
+              <h1 class="title is-olive">
+                Studies
               </h1>
               <div class="content">
-                <p>Runs in an ARC represent all artefacts that derive from computations on assay and external data. Plots, tables, or similar results need to be saved in one or more subdirectories of the top-level runs directory.</p>
-<p>A run.cwl (v1.2 or higher) is mandatory for each of these subdirectories to cover workflow description and reproducibility. These files need to be executable without additional payload files or files outside the ARC.</p>
-<p>A parameter file run.yml is optional to specify input parameters.</p>
+                <p>Studies are collections of material and resources used within the investigation.
+You need to place each study in a unique subdirectory. Material or experimental samples, as well as external data files, can be stored as virtual sample files (containing unique identifiers) in the resources directory. To describe the sample or material creation process, you can store protocols in the designated sub-folder.</p>
+<p>For each study, an isa.study.xlsx file following the ISA study model needs to be present to specify the characteristics of all material and resources, such as a certain strain. Resources might include external data (e.g., knowledge files or result files) that need to be included and cannot be referenced due to external limitations. Resources described in a study file can be the input for one or multiple assays.</p>
 
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-white has-border-color-white">
+        <div class="container">
+          <div class="columns">
             <div class="column">
               <figure class="image is-4by3">
-                <img src="../../images/Learn-more/ARC/runs.svg"/>
+                <img src="../../images/Learn-more/ARC/Runs.svg"/>
               </figure>
+            </div>
+            <div class="column">
+              <h1 class="title is-grey">
+                Runs
+              </h1>
+              <div class="content">
+                <p>Runs in an ARC represent all artefacts that derive from computations on assay and external data. Plots, tables, or similar results, specific to certain run need to be saved in a subdirectory of the top-level runs directory.</p>
+<p>A run.cwl (v1.2 or higher) is mandatory for each of these subdirectories to cover workflow description and reproducibility. These files need to be executable without additional payload files or files outside the ARC.</p>
+<p>You can speficy input parameters for each run with a run.yml parameter file.</p>
+
+              </div>
             </div>
           </div>
         </div>
@@ -378,6 +385,27 @@ Table objects must contain at least one source. Source sample relations must fol
           </ul>
         </div>
         <div class="column is-4 m-4">
+          <div class="block">
+            <h3 class="subtitle is-white">
+              Help
+            </h3>
+          </div>
+          <div class="block">
+            <span class="icon is-white">
+              <i class="fas fa-headphones-alt"></i>
+            </span>
+            <a href="https://helpdesk.nfdi4plants.org/">
+              DataPLANT Helpdesk
+            </a>
+          </div>
+          <div class="block">
+            <span class="icon is-white">
+              <i class="fas fa-paper-plane"></i>
+            </span>
+            <a href="mailto:info@nfdi4plants.org">
+              DataPLANT Info Point
+            </a>
+          </div>
           <div class="block">
             <h3 class="subtitle is-white">
               Social
