@@ -14,4 +14,4 @@ No idea how to create an ARC?
 Use our "4 steps to your ARC" guide!
 
 *No idea how to create an ARC?*   
-*Use our [4 steps to create your ARC](https://github.com/nfdi4plants/arcCommander) guide!* [![ARC-Guide](../../images/Emojis/ARCblue.svg "ARC-Guide"){width=2.5%}](https://github.com/nfdi4plants/arcCommander) 
+*Read trough our [ArcCommander Wiki](https://github.com/nfdi4plants/arcCommander/wiki)!* [![ARC-Guide](../../images/Emojis/ARCblue.svg "ARC-Guide"){width=2.5%}](https://github.com/nfdi4plants/arcCommander/wiki) 

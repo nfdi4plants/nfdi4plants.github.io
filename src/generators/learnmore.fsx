@@ -162,7 +162,7 @@ let generate' (ctx : SiteContents) (page: string) =
 
     match currentLearnMorePage with
     | Some page ->
-        Layout.layout ctx "" [
+        Layout.layout ctx "Home" [
             createHero page.Hero
             yield! 
                 page.Cards

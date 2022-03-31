@@ -18,7 +18,7 @@ let generate' (ctx : SiteContents) (page: string) =
         |> Option.map (fun si -> si.description)
         |> Option.defaultValue ""
 
-    Layout.layout ctx "Home" [
+    Layout.layout ctx "News" [
         match currentNewsItem with
         | Some currentNewsItem -> 
             section [Class "hero is-medium is-dark has-bg-lightblue"] [

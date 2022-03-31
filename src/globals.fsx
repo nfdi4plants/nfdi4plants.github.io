@@ -273,6 +273,21 @@ module Predicates =
 
     let isNewsFile f = newsPredicate("",f)
 
+    let ServiceHeroPredicate (projectRoot: string, page: string) =
+        let fileName = Path.GetFileNameWithoutExtension page
+        let ext = Path.GetExtension page
+        page.Contains("service")
+        && fileName = "hero"
+        && ext = ".md"
+        
+    let ServicePredicate (projectRoot: string, page: string) =
+        let fileName = Path.GetFileNameWithoutExtension page
+        let ext = Path.GetExtension page
+        page.Contains("service")
+        && ext = ".md"
+
+    let isServiceHero f = ServiceHeroPredicate("",f)
+
     let AboutHeroPredicate (projectRoot: string, page: string) =
         let fileName = Path.GetFileNameWithoutExtension page
         let ext = Path.GetExtension page
@@ -287,6 +302,21 @@ module Predicates =
         && ext = ".md"
 
     let isAboutHero f = AboutHeroPredicate("",f)
+
+    let JobsHeroPredicate (projectRoot: string, page: string) =
+        let fileName = Path.GetFileNameWithoutExtension page
+        let ext = Path.GetExtension page
+        page.Contains("jobs")
+        && fileName = "hero"
+        && ext = ".md"
+        
+    let JobsPredicate (projectRoot: string, page: string) =
+        let fileName = Path.GetFileNameWithoutExtension page
+        let ext = Path.GetExtension page
+        page.Contains("jobs")
+        && ext = ".md"
+
+    let isJobsHero f = JobsHeroPredicate("",f)
 
     let ImprintHeroPredicate (projectRoot: string, page: string) =
         let fileName = Path.GetFileNameWithoutExtension page
@@ -360,12 +390,22 @@ module News =
 
 module LearnMore =
 
-    let createLernMorePageName (heroPath:string) =
+    let createLearnMorePageName (heroPath:string) =
+        heroPath.Replace("/hero.md",".html")
+
+module Service =
+
+    let createServicePageName (heroPath:string) =
         heroPath.Replace("/hero.md",".html")
 
 module About =
 
     let createAboutPageName (heroPath:string) =
+        heroPath.Replace("/hero.md",".html")
+
+module Jobs =
+
+    let createJobsPageName (heroPath:string) =
         heroPath.Replace("/hero.md",".html")
 
 module Imprint =
