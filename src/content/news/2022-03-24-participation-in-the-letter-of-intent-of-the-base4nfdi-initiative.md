@@ -1,5 +1,5 @@
 ---
-date: 2022-03-25
+date: 2022-03-24
 title: Participation in the Letter-of-Intent of the Base4NFDI initiative
 preview-text: DataPLANT joined beside the other NFDI consortia the Base4NFDI initiative on base services. It sees itself in  a potential role as an incubator for RDM tools and services motivated by the needs of the fundamental plant research community. In DataPLANT, requirement profiles are created in the form of usable prototypes that are further developed in an agile and interactive process in exchange with the professional community. The resulting focus of DataPLANT is on the joint design and development of these tools and services, with the following emphasis ...
 ---
