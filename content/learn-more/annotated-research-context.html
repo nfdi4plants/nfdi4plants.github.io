@@ -223,38 +223,13 @@ Table objects must contain at least one source. Source sample relations must fol
               <div class="content">
                 <p>Assays correspond to outcomes of experimental assays or analytical measurements and are treated as immutable data. Each assay is a collection of files stored in a single directory, including a mandatory metadata file in ISA-XLSX format.</p>
 <p>Assay data files, as well as protocols, must be placed in a subdirectory individually.</p>
-<p>We advise you to use SWATE for completing the study and assay metadata files, as it assists you in following the <a href="http://www.nfdi4plants.de/AnnotationPrinciples/" title="Annotation Principles">annotation principles</a> and comes along with a broad range of prepared templates.</p>
+<p>We advise you to use SWATE for completing the study and assay metadata files, as it assists you in following the <a href="http://www.nfdi4plants.org/AnnotationPrinciples/" title="Annotation Principles">annotation principles</a> and comes along with a broad range of prepared templates.</p>
 
               </div>
             </div>
             <div class="column">
               <figure class="image is-4by3">
                 <img src="../../images/Learn-more/ARC/assays.svg"/>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container box has-bg-white has-border-color-white">
-        <div class="container">
-          <div class="columns">
-            <div class="column">
-              <h1 class="title is-lightblue">
-                Workflows
-              </h1>
-              <div class="content">
-                <p>Workflows in ARCs represent processing steps used in computational analyses and other data transformations of assays to generate run results. Typical examples include data cleaning and preprocessing, computational analysis, or visualization.</p>
-<p>All files belonging to a specific workflow need to be stored in a single sub-directory.
-This also includes a mandatory per-workflow executable CWL description (v1.2 or higher), which can contain a tool or workflow description.</p>
-<p>We highly recommend to include a reproducible execution environment description in form of a Docker container description for tool descriptions.</p>
-
-              </div>
-            </div>
-            <div class="column">
-              <figure class="image is-4by3">
-                <img src="../../images/Learn-more/ARC/workflows.svg"/>
               </figure>
             </div>
           </div>
@@ -280,6 +255,31 @@ You need to place each study in a unique subdirectory. Material or experimental 
 <p>For each study, an isa.study.xlsx file following the ISA study model needs to be present to specify the characteristics of all material and resources, such as a certain strain. Resources might include external data (e.g., knowledge files or result files) that need to be included and cannot be referenced due to external limitations. Resources described in a study file can be the input for one or multiple assays.</p>
 
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-white has-border-color-white">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <h1 class="title is-lightblue">
+                Workflows
+              </h1>
+              <div class="content">
+                <p>Workflows in ARCs represent processing steps used in computational analyses and other data transformations of assays to generate run results. Typical examples include data cleaning and preprocessing, computational analysis, or visualization.</p>
+<p>All files belonging to a specific workflow need to be stored in a single sub-directory.
+This also includes a mandatory per-workflow executable CWL description (v1.2 or higher), which can contain a tool or workflow description.</p>
+<p>We highly recommend to include a reproducible execution environment description in form of a Docker container description for tool descriptions.</p>
+
+              </div>
+            </div>
+            <div class="column">
+              <figure class="image is-4by3">
+                <img src="../../images/Learn-more/ARC/workflows.svg"/>
+              </figure>
             </div>
           </div>
         </div>
