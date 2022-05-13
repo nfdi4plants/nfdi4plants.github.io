@@ -156,23 +156,23 @@ module HTMLComponents =
 
     let whiteIcon iconClass = 
         span [Class"icon is-white"] [
-            i [Class iconClass][]
+            i [Class iconClass] []
         ]
 
     let icon iconClass = 
         span [Class"icon"] [
-            i [Class iconClass][]
+            i [Class iconClass] []
         ]
 
     let iconTextRight iconClass text = 
-        span [Class "icon-text"][
+        span [Class "icon-text"] [
             icon iconClass
             span [] [!!text]
         ]
 
     let iconTextLeft iconClass text = 
-        span [Class "icon-text"][
-            span [] [!!text]
+        span [Class "icon-text"] [
+            span []  [!!text]
             icon iconClass
         ]
 

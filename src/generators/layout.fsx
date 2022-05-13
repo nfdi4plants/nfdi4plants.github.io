@@ -69,77 +69,14 @@ let layout (ctx : SiteContents) active bodyCnt =
             link [Rel "stylesheet"; Type "text/css"; Href ("/style/style.css")]
             link [Rel "stylesheet"; Type "text/css"; Href "https://cdn.jsdelivr.net/npm/@creativebulma/bulma-collapsible@1.0.4/dist/css/bulma-collapsible.min.css"]
             
-            script [ Defer true; Src "https://kit.fontawesome.com/0d3e0ea7a6.js"; CrossOrigin "anonymous"][]
-            script [ Src "/js/navbar.js"][]
+            script [ Defer true; Src "https://kit.fontawesome.com/0d3e0ea7a6.js"; CrossOrigin "anonymous"] []
+            script [ Type "module"; Src "/js/bundle.js"] []
         ]
+        custom "nfdi-navbar" [] []
         body [] [
-            nav [Class "navbar is-fixed-top has-bg-darkblue"] [
-                div [Class "navbar-brand"] [
-                    a [Class "navbar-item"; Href "/"] [
-                        img [Src ("/images/logo.svg"); Alt "Logo"; Width "32"; Height "32"]
-                    ]
-                    a [
-                        Class "navbar-burger"; 
-                        Custom ("data-target", "navMenu"); 
-                        Custom ("aria-label", "menu"); 
-                        HtmlProperties.Role "button"
-                        Custom ("aria-expanded", "false")
-                    ] [
-                        span [HtmlProperties.Custom ("aria-hidden","true")] []
-                        span [HtmlProperties.Custom ("aria-hidden","true")] []
-                        span [HtmlProperties.Custom ("aria-hidden","true")] []
-                    ]
-                ]
-                div [Id "navMenu"; Class "navbar-menu has-bg-darkblue"] [
-                    div [Class "navbar-start is-justify-content-center is-flex-grow-1"] menuEntries
-                    div [Class "navbar-end"] [
-                        a [Class "navbar-item"; Href "https://helpdesk.nfdi4plants.org/"] [icon "fas fa-headphones-alt"]
-                        a [Class "navbar-item"; Href "mailto:info@nfdi4plants.org"] [icon "fas fa-paper-plane"]
-                        a [Class "navbar-item"; Href "https://twitter.com/nfdi4plants"] [icon "fab fa-twitter"]                        
-                        a [Class "navbar-item"; Href "https://github.com/nfdi4plants"] [icon "fab fa-github"]
-                        a [Class "navbar-item"; Href "https://www.youtube.com/channel/UCrTBwQWOa0-aWYkwoY104Wg"] [icon "fab fa-youtube"]
-                        a [Class "navbar-item"; Href "https://zenodo.org/communities/nfdi4plants?page=1&size=20"; HtmlProperties.Style [FontWeight "bold"]] [!! "Z"]
-                    
-                    ]
-                ]
-            ]
             yield! bodyCnt
         ]
-        footer [Class "footer has-bg-darkblue-lighter-20"] [ 
-            div [Class "container"] [
-                div [Class "columns"] [
-                    div [Class "column is-4 m-4"] [
-                        block [ h3 [Class "subtitle is-white"] [!!"DataPLANT - Democratization of plant research made easy."]]
-                        block [ p [] [!!"DataPLANT is part of "; a [Href "https://www.nfdi.de/"] [!!"NFDI"]]]
-                        block [ p [] [!!"This website is developed and maintained by members of DataPLANT"]]
-                    ]
-                    div [Class "column is-4 m-4"] [
-                        block [ h3 [Class "subtitle is-white"] [!!"Navigation"]]
-                        ul [] [
-                            block [li [] [a [Href "/"] [!!"Home"]]]
-                            block [li [] [a [Href "/news.html"] [!!"News"]]]
-                            block [li [] [a [Href "/content/service.html"] [!!"Service"]]]
-                            block [li [] [a [Href "/content/about.html"] [!!"About"]]]
-                            block [li [] [a [Href "/content/jobs.html"] [!!"Jobs"]]]
-                            block [li [] [a [Href "https://git.nfdi4plants.org/"] [!!"DataHUB"]]]
-                        ]
-                    ]
-                    div [Class "column is-4 m-4"] [
-                        block [ h3 [Class "subtitle is-white"] [!!"Help"]]
-                        block [ whiteIcon "fas fa-headphones-alt"; a [Href "https://helpdesk.nfdi4plants.org/"] [!!"DataPLANT Helpdesk"]]
-                        block [ whiteIcon "fas fa-paper-plane"; a [Href "mailto:info@nfdi4plants.org"] [!!"DataPLANT Info Point"]]
-                        block [ h3 [Class "subtitle is-white"] [!!"Social"]]
-                        block [ whiteIcon "fab fa-twitter"; a [Href "https://twitter.com/nfdi4plants"] [!!"DataPLANT on Twitter"]]
-                        block [ whiteIcon "fab fa-github"; a [Href "https://github.com/nfdi4plants"] [!!"DataPLANT open source projects on GitHub"]]
-                        block [ whiteIcon "fab fa-youtube"; a [Href "https://www.youtube.com/channel/UCrTBwQWOa0-aWYkwoY104Wg"] [!!"DataPLANT video resources on youtube"]]
-                        block [ h3 [Class "subtitle is-white"] [!!"Legal"]]
-                        block [ a [Href "/content/imprint.html"] [!!"Imprint"]]
-                        block [ a [Href "/content/privacy.html"] [!!"Privacy"]]
-                    ]
-                ]
-            ]
-        ]
-            
+        custom "nfdi-footer" [] []          
     ]
 
 let render (ctx : SiteContents) cnt =
