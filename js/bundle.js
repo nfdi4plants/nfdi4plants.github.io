@@ -10875,14 +10875,14 @@ let Navbar = class extends s {
               DataHUB
             </a>
             <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link" href="${mainPageBaseUrl}">
+                <a class="navbar-link" href="${mainPageBaseUrl}content/docs/ResearchDataManagement.html">
                 Knowledge Base
                 </a>
                 <div class="navbar-dropdown is-active smooth-hover">
-                  <a class=${this.url == "${mainPageBaseUrl}content/docs/research-data-management.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/docs/research-data-management.html">
+                  <a class=${this.url == "${mainPageBaseUrl}content/docs/ResearchDataManagement.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/docs/ResearchDataManagement.html">
                     Fundamentals
                   </a>
-                  <a class=${this.url == "${mainPageBaseUrl}content/docs/annotated-research-context.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/docs/annotated-research-context.html">
+                  <a class=${this.url == "${mainPageBaseUrl}content/docs/AnnotatedResearchContext.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/docs/AnnotatedResearchContext.html">
                     Integration within DataPLANT
                   </a>
                 </div>
