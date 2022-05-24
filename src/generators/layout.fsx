@@ -106,11 +106,11 @@ let layout (ctx : SiteContents) active bodyCnt =
                 """
             ]
         ]
+        custom "nfdi-navbar" [] []
         body [] [
-            custom "nfdi-navbar" [] []
             yield! bodyCnt
-            custom "nfdi-footer" [] []          
         ]
+        custom "nfdi-footer" [] []          
     ]
 
 let render (ctx : SiteContents) cnt =
