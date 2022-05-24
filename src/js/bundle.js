@@ -5,26 +5,26 @@
  * Copyright 2019 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const t$1=window.ShadowRoot&&(void 0===window.ShadyCSS||window.ShadyCSS.nativeShadow)&&"adoptedStyleSheets"in Document.prototype&&"replace"in CSSStyleSheet.prototype,e$3=Symbol(),n$5=new Map;class s$3{constructor(t,n){if(this._$cssResult$=!0,n!==e$3)throw Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");this.cssText=t;}get styleSheet(){let e=n$5.get(this.cssText);return t$1&&void 0===e&&(n$5.set(this.cssText,e=new CSSStyleSheet),e.replaceSync(this.cssText)),e}toString(){return this.cssText}}const o$3=t=>new s$3("string"==typeof t?t:t+"",e$3),r$2=(t,...n)=>{const o=1===t.length?t[0]:n.reduce(((e,n,s)=>e+(t=>{if(!0===t._$cssResult$)return t.cssText;if("number"==typeof t)return t;throw Error("Value passed to 'css' function must be a 'css' function result: "+t+". Use 'unsafeCSS' to pass non-literal values, but take care to ensure page security.")})(n)+t[s+1]),t[0]);return new s$3(o,e$3)},i$2=(e,n)=>{t$1?e.adoptedStyleSheets=n.map((t=>t instanceof CSSStyleSheet?t:t.styleSheet)):n.forEach((t=>{const n=document.createElement("style"),s=window.litNonce;void 0!==s&&n.setAttribute("nonce",s),n.textContent=t.cssText,e.appendChild(n);}));},S$1=t$1?t=>t:t=>t instanceof CSSStyleSheet?(t=>{let e="";for(const n of t.cssRules)e+=n.cssText;return o$3(e)})(t):t;
+const t$2=window.ShadowRoot&&(void 0===window.ShadyCSS||window.ShadyCSS.nativeShadow)&&"adoptedStyleSheets"in Document.prototype&&"replace"in CSSStyleSheet.prototype,e$5=Symbol(),n$5=new Map;class s$3{constructor(t,n){if(this._$cssResult$=!0,n!==e$5)throw Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");this.cssText=t;}get styleSheet(){let e=n$5.get(this.cssText);return t$2&&void 0===e&&(n$5.set(this.cssText,e=new CSSStyleSheet),e.replaceSync(this.cssText)),e}toString(){return this.cssText}}const o$5=t=>new s$3("string"==typeof t?t:t+"",e$5),r$2=(t,...n)=>{const o=1===t.length?t[0]:n.reduce(((e,n,s)=>e+(t=>{if(!0===t._$cssResult$)return t.cssText;if("number"==typeof t)return t;throw Error("Value passed to 'css' function must be a 'css' function result: "+t+". Use 'unsafeCSS' to pass non-literal values, but take care to ensure page security.")})(n)+t[s+1]),t[0]);return new s$3(o,e$5)},i$4=(e,n)=>{t$2?e.adoptedStyleSheets=n.map((t=>t instanceof CSSStyleSheet?t:t.styleSheet)):n.forEach((t=>{const n=document.createElement("style"),s=window.litNonce;void 0!==s&&n.setAttribute("nonce",s),n.textContent=t.cssText,e.appendChild(n);}));},S$1=t$2?t=>t:t=>t instanceof CSSStyleSheet?(t=>{let e="";for(const n of t.cssRules)e+=n.cssText;return o$5(e)})(t):t;
 
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */var s$2;const e$2=window.trustedTypes,r$1=e$2?e$2.emptyScript:"",h$1=window.reactiveElementPolyfillSupport,o$2={toAttribute(t,i){switch(i){case Boolean:t=t?r$1:null;break;case Object:case Array:t=null==t?t:JSON.stringify(t);}return t},fromAttribute(t,i){let s=t;switch(i){case Boolean:s=null!==t;break;case Number:s=null===t?null:Number(t);break;case Object:case Array:try{s=JSON.parse(t);}catch(t){s=null;}}return s}},n$4=(t,i)=>i!==t&&(i==i||t==t),l$2={attribute:!0,type:String,converter:o$2,reflect:!1,hasChanged:n$4};class a$1 extends HTMLElement{constructor(){super(),this._$Et=new Map,this.isUpdatePending=!1,this.hasUpdated=!1,this._$Ei=null,this.o();}static addInitializer(t){var i;null!==(i=this.l)&&void 0!==i||(this.l=[]),this.l.push(t);}static get observedAttributes(){this.finalize();const t=[];return this.elementProperties.forEach(((i,s)=>{const e=this._$Eh(s,i);void 0!==e&&(this._$Eu.set(e,s),t.push(e));})),t}static createProperty(t,i=l$2){if(i.state&&(i.attribute=!1),this.finalize(),this.elementProperties.set(t,i),!i.noAccessor&&!this.prototype.hasOwnProperty(t)){const s="symbol"==typeof t?Symbol():"__"+t,e=this.getPropertyDescriptor(t,s,i);void 0!==e&&Object.defineProperty(this.prototype,t,e);}}static getPropertyDescriptor(t,i,s){return {get(){return this[i]},set(e){const r=this[t];this[i]=e,this.requestUpdate(t,r,s);},configurable:!0,enumerable:!0}}static getPropertyOptions(t){return this.elementProperties.get(t)||l$2}static finalize(){if(this.hasOwnProperty("finalized"))return !1;this.finalized=!0;const t=Object.getPrototypeOf(this);if(t.finalize(),this.elementProperties=new Map(t.elementProperties),this._$Eu=new Map,this.hasOwnProperty("properties")){const t=this.properties,i=[...Object.getOwnPropertyNames(t),...Object.getOwnPropertySymbols(t)];for(const s of i)this.createProperty(s,t[s]);}return this.elementStyles=this.finalizeStyles(this.styles),!0}static finalizeStyles(i){const s=[];if(Array.isArray(i)){const e=new Set(i.flat(1/0).reverse());for(const i of e)s.unshift(S$1(i));}else void 0!==i&&s.push(S$1(i));return s}static _$Eh(t,i){const s=i.attribute;return !1===s?void 0:"string"==typeof s?s:"string"==typeof t?t.toLowerCase():void 0}o(){var t;this._$Ep=new Promise((t=>this.enableUpdating=t)),this._$AL=new Map,this._$Em(),this.requestUpdate(),null===(t=this.constructor.l)||void 0===t||t.forEach((t=>t(this)));}addController(t){var i,s;(null!==(i=this._$Eg)&&void 0!==i?i:this._$Eg=[]).push(t),void 0!==this.renderRoot&&this.isConnected&&(null===(s=t.hostConnected)||void 0===s||s.call(t));}removeController(t){var i;null===(i=this._$Eg)||void 0===i||i.splice(this._$Eg.indexOf(t)>>>0,1);}_$Em(){this.constructor.elementProperties.forEach(((t,i)=>{this.hasOwnProperty(i)&&(this._$Et.set(i,this[i]),delete this[i]);}));}createRenderRoot(){var t;const s=null!==(t=this.shadowRoot)&&void 0!==t?t:this.attachShadow(this.constructor.shadowRootOptions);return i$2(s,this.constructor.elementStyles),s}connectedCallback(){var t;void 0===this.renderRoot&&(this.renderRoot=this.createRenderRoot()),this.enableUpdating(!0),null===(t=this._$Eg)||void 0===t||t.forEach((t=>{var i;return null===(i=t.hostConnected)||void 0===i?void 0:i.call(t)}));}enableUpdating(t){}disconnectedCallback(){var t;null===(t=this._$Eg)||void 0===t||t.forEach((t=>{var i;return null===(i=t.hostDisconnected)||void 0===i?void 0:i.call(t)}));}attributeChangedCallback(t,i,s){this._$AK(t,s);}_$ES(t,i,s=l$2){var e,r;const h=this.constructor._$Eh(t,s);if(void 0!==h&&!0===s.reflect){const n=(null!==(r=null===(e=s.converter)||void 0===e?void 0:e.toAttribute)&&void 0!==r?r:o$2.toAttribute)(i,s.type);this._$Ei=t,null==n?this.removeAttribute(h):this.setAttribute(h,n),this._$Ei=null;}}_$AK(t,i){var s,e,r;const h=this.constructor,n=h._$Eu.get(t);if(void 0!==n&&this._$Ei!==n){const t=h.getPropertyOptions(n),l=t.converter,a=null!==(r=null!==(e=null===(s=l)||void 0===s?void 0:s.fromAttribute)&&void 0!==e?e:"function"==typeof l?l:null)&&void 0!==r?r:o$2.fromAttribute;this._$Ei=n,this[n]=a(i,t.type),this._$Ei=null;}}requestUpdate(t,i,s){let e=!0;void 0!==t&&(((s=s||this.constructor.getPropertyOptions(t)).hasChanged||n$4)(this[t],i)?(this._$AL.has(t)||this._$AL.set(t,i),!0===s.reflect&&this._$Ei!==t&&(void 0===this._$EC&&(this._$EC=new Map),this._$EC.set(t,s))):e=!1),!this.isUpdatePending&&e&&(this._$Ep=this._$E_());}async _$E_(){this.isUpdatePending=!0;try{await this._$Ep;}catch(t){Promise.reject(t);}const t=this.scheduleUpdate();return null!=t&&await t,!this.isUpdatePending}scheduleUpdate(){return this.performUpdate()}performUpdate(){var t;if(!this.isUpdatePending)return;this.hasUpdated,this._$Et&&(this._$Et.forEach(((t,i)=>this[i]=t)),this._$Et=void 0);let i=!1;const s=this._$AL;try{i=this.shouldUpdate(s),i?(this.willUpdate(s),null===(t=this._$Eg)||void 0===t||t.forEach((t=>{var i;return null===(i=t.hostUpdate)||void 0===i?void 0:i.call(t)})),this.update(s)):this._$EU();}catch(t){throw i=!1,this._$EU(),t}i&&this._$AE(s);}willUpdate(t){}_$AE(t){var i;null===(i=this._$Eg)||void 0===i||i.forEach((t=>{var i;return null===(i=t.hostUpdated)||void 0===i?void 0:i.call(t)})),this.hasUpdated||(this.hasUpdated=!0,this.firstUpdated(t)),this.updated(t);}_$EU(){this._$AL=new Map,this.isUpdatePending=!1;}get updateComplete(){return this.getUpdateComplete()}getUpdateComplete(){return this._$Ep}shouldUpdate(t){return !0}update(t){void 0!==this._$EC&&(this._$EC.forEach(((t,i)=>this._$ES(i,this[i],t))),this._$EC=void 0),this._$EU();}updated(t){}firstUpdated(t){}}a$1.finalized=!0,a$1.elementProperties=new Map,a$1.elementStyles=[],a$1.shadowRootOptions={mode:"open"},null==h$1||h$1({ReactiveElement:a$1}),(null!==(s$2=globalThis.reactiveElementVersions)&&void 0!==s$2?s$2:globalThis.reactiveElementVersions=[]).push("1.3.1");
+ */var s$2;const e$4=window.trustedTypes,r$1=e$4?e$4.emptyScript:"",h$1=window.reactiveElementPolyfillSupport,o$4={toAttribute(t,i){switch(i){case Boolean:t=t?r$1:null;break;case Object:case Array:t=null==t?t:JSON.stringify(t);}return t},fromAttribute(t,i){let s=t;switch(i){case Boolean:s=null!==t;break;case Number:s=null===t?null:Number(t);break;case Object:case Array:try{s=JSON.parse(t);}catch(t){s=null;}}return s}},n$4=(t,i)=>i!==t&&(i==i||t==t),l$3={attribute:!0,type:String,converter:o$4,reflect:!1,hasChanged:n$4};class a$2 extends HTMLElement{constructor(){super(),this._$Et=new Map,this.isUpdatePending=!1,this.hasUpdated=!1,this._$Ei=null,this.o();}static addInitializer(t){var i;null!==(i=this.l)&&void 0!==i||(this.l=[]),this.l.push(t);}static get observedAttributes(){this.finalize();const t=[];return this.elementProperties.forEach(((i,s)=>{const e=this._$Eh(s,i);void 0!==e&&(this._$Eu.set(e,s),t.push(e));})),t}static createProperty(t,i=l$3){if(i.state&&(i.attribute=!1),this.finalize(),this.elementProperties.set(t,i),!i.noAccessor&&!this.prototype.hasOwnProperty(t)){const s="symbol"==typeof t?Symbol():"__"+t,e=this.getPropertyDescriptor(t,s,i);void 0!==e&&Object.defineProperty(this.prototype,t,e);}}static getPropertyDescriptor(t,i,s){return {get(){return this[i]},set(e){const r=this[t];this[i]=e,this.requestUpdate(t,r,s);},configurable:!0,enumerable:!0}}static getPropertyOptions(t){return this.elementProperties.get(t)||l$3}static finalize(){if(this.hasOwnProperty("finalized"))return !1;this.finalized=!0;const t=Object.getPrototypeOf(this);if(t.finalize(),this.elementProperties=new Map(t.elementProperties),this._$Eu=new Map,this.hasOwnProperty("properties")){const t=this.properties,i=[...Object.getOwnPropertyNames(t),...Object.getOwnPropertySymbols(t)];for(const s of i)this.createProperty(s,t[s]);}return this.elementStyles=this.finalizeStyles(this.styles),!0}static finalizeStyles(i){const s=[];if(Array.isArray(i)){const e=new Set(i.flat(1/0).reverse());for(const i of e)s.unshift(S$1(i));}else void 0!==i&&s.push(S$1(i));return s}static _$Eh(t,i){const s=i.attribute;return !1===s?void 0:"string"==typeof s?s:"string"==typeof t?t.toLowerCase():void 0}o(){var t;this._$Ep=new Promise((t=>this.enableUpdating=t)),this._$AL=new Map,this._$Em(),this.requestUpdate(),null===(t=this.constructor.l)||void 0===t||t.forEach((t=>t(this)));}addController(t){var i,s;(null!==(i=this._$Eg)&&void 0!==i?i:this._$Eg=[]).push(t),void 0!==this.renderRoot&&this.isConnected&&(null===(s=t.hostConnected)||void 0===s||s.call(t));}removeController(t){var i;null===(i=this._$Eg)||void 0===i||i.splice(this._$Eg.indexOf(t)>>>0,1);}_$Em(){this.constructor.elementProperties.forEach(((t,i)=>{this.hasOwnProperty(i)&&(this._$Et.set(i,this[i]),delete this[i]);}));}createRenderRoot(){var t;const s=null!==(t=this.shadowRoot)&&void 0!==t?t:this.attachShadow(this.constructor.shadowRootOptions);return i$4(s,this.constructor.elementStyles),s}connectedCallback(){var t;void 0===this.renderRoot&&(this.renderRoot=this.createRenderRoot()),this.enableUpdating(!0),null===(t=this._$Eg)||void 0===t||t.forEach((t=>{var i;return null===(i=t.hostConnected)||void 0===i?void 0:i.call(t)}));}enableUpdating(t){}disconnectedCallback(){var t;null===(t=this._$Eg)||void 0===t||t.forEach((t=>{var i;return null===(i=t.hostDisconnected)||void 0===i?void 0:i.call(t)}));}attributeChangedCallback(t,i,s){this._$AK(t,s);}_$ES(t,i,s=l$3){var e,r;const h=this.constructor._$Eh(t,s);if(void 0!==h&&!0===s.reflect){const n=(null!==(r=null===(e=s.converter)||void 0===e?void 0:e.toAttribute)&&void 0!==r?r:o$4.toAttribute)(i,s.type);this._$Ei=t,null==n?this.removeAttribute(h):this.setAttribute(h,n),this._$Ei=null;}}_$AK(t,i){var s,e,r;const h=this.constructor,n=h._$Eu.get(t);if(void 0!==n&&this._$Ei!==n){const t=h.getPropertyOptions(n),l=t.converter,a=null!==(r=null!==(e=null===(s=l)||void 0===s?void 0:s.fromAttribute)&&void 0!==e?e:"function"==typeof l?l:null)&&void 0!==r?r:o$4.fromAttribute;this._$Ei=n,this[n]=a(i,t.type),this._$Ei=null;}}requestUpdate(t,i,s){let e=!0;void 0!==t&&(((s=s||this.constructor.getPropertyOptions(t)).hasChanged||n$4)(this[t],i)?(this._$AL.has(t)||this._$AL.set(t,i),!0===s.reflect&&this._$Ei!==t&&(void 0===this._$EC&&(this._$EC=new Map),this._$EC.set(t,s))):e=!1),!this.isUpdatePending&&e&&(this._$Ep=this._$E_());}async _$E_(){this.isUpdatePending=!0;try{await this._$Ep;}catch(t){Promise.reject(t);}const t=this.scheduleUpdate();return null!=t&&await t,!this.isUpdatePending}scheduleUpdate(){return this.performUpdate()}performUpdate(){var t;if(!this.isUpdatePending)return;this.hasUpdated,this._$Et&&(this._$Et.forEach(((t,i)=>this[i]=t)),this._$Et=void 0);let i=!1;const s=this._$AL;try{i=this.shouldUpdate(s),i?(this.willUpdate(s),null===(t=this._$Eg)||void 0===t||t.forEach((t=>{var i;return null===(i=t.hostUpdate)||void 0===i?void 0:i.call(t)})),this.update(s)):this._$EU();}catch(t){throw i=!1,this._$EU(),t}i&&this._$AE(s);}willUpdate(t){}_$AE(t){var i;null===(i=this._$Eg)||void 0===i||i.forEach((t=>{var i;return null===(i=t.hostUpdated)||void 0===i?void 0:i.call(t)})),this.hasUpdated||(this.hasUpdated=!0,this.firstUpdated(t)),this.updated(t);}_$EU(){this._$AL=new Map,this.isUpdatePending=!1;}get updateComplete(){return this.getUpdateComplete()}getUpdateComplete(){return this._$Ep}shouldUpdate(t){return !0}update(t){void 0!==this._$EC&&(this._$EC.forEach(((t,i)=>this._$ES(i,this[i],t))),this._$EC=void 0),this._$EU();}updated(t){}firstUpdated(t){}}a$2.finalized=!0,a$2.elementProperties=new Map,a$2.elementStyles=[],a$2.shadowRootOptions={mode:"open"},null==h$1||h$1({ReactiveElement:a$2}),(null!==(s$2=globalThis.reactiveElementVersions)&&void 0!==s$2?s$2:globalThis.reactiveElementVersions=[]).push("1.3.1");
 
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-var t;const i$1=globalThis.trustedTypes,s$1=i$1?i$1.createPolicy("lit-html",{createHTML:t=>t}):void 0,e$1=`lit$${(Math.random()+"").slice(9)}$`,o$1="?"+e$1,n$3=`<${o$1}>`,l$1=document,h=(t="")=>l$1.createComment(t),r=t=>null===t||"object"!=typeof t&&"function"!=typeof t,d=Array.isArray,u=t=>{var i;return d(t)||"function"==typeof(null===(i=t)||void 0===i?void 0:i[Symbol.iterator])},c=/<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g,v=/-->/g,a=/>/g,f=/>|[ 	\n\r](?:([^\s"'>=/]+)([ 	\n\r]*=[ 	\n\r]*(?:[^ 	\n\r"'`<>=]|("|')|))|$)/g,_=/'/g,m=/"/g,g=/^(?:script|style|textarea|title)$/i,p=t=>(i,...s)=>({_$litType$:t,strings:i,values:s}),$=p(1),b=Symbol.for("lit-noChange"),w=Symbol.for("lit-nothing"),T=new WeakMap,x=(t,i,s)=>{var e,o;const n=null!==(e=null==s?void 0:s.renderBefore)&&void 0!==e?e:i;let l=n._$litPart$;if(void 0===l){const t=null!==(o=null==s?void 0:s.renderBefore)&&void 0!==o?o:null;n._$litPart$=l=new N(i.insertBefore(h(),t),t,void 0,null!=s?s:{});}return l._$AI(t),l},A=l$1.createTreeWalker(l$1,129,null,!1),C=(t,i)=>{const o=t.length-1,l=[];let h,r=2===i?"<svg>":"",d=c;for(let i=0;i<o;i++){const s=t[i];let o,u,p=-1,$=0;for(;$<s.length&&(d.lastIndex=$,u=d.exec(s),null!==u);)$=d.lastIndex,d===c?"!--"===u[1]?d=v:void 0!==u[1]?d=a:void 0!==u[2]?(g.test(u[2])&&(h=RegExp("</"+u[2],"g")),d=f):void 0!==u[3]&&(d=f):d===f?">"===u[0]?(d=null!=h?h:c,p=-1):void 0===u[1]?p=-2:(p=d.lastIndex-u[2].length,o=u[1],d=void 0===u[3]?f:'"'===u[3]?m:_):d===m||d===_?d=f:d===v||d===a?d=c:(d=f,h=void 0);const y=d===f&&t[i+1].startsWith("/>")?" ":"";r+=d===c?s+n$3:p>=0?(l.push(o),s.slice(0,p)+"$lit$"+s.slice(p)+e$1+y):s+e$1+(-2===p?(l.push(void 0),i):y);}const u=r+(t[o]||"<?>")+(2===i?"</svg>":"");if(!Array.isArray(t)||!t.hasOwnProperty("raw"))throw Error("invalid template strings array");return [void 0!==s$1?s$1.createHTML(u):u,l]};class E{constructor({strings:t,_$litType$:s},n){let l;this.parts=[];let r=0,d=0;const u=t.length-1,c=this.parts,[v,a]=C(t,s);if(this.el=E.createElement(v,n),A.currentNode=this.el.content,2===s){const t=this.el.content,i=t.firstChild;i.remove(),t.append(...i.childNodes);}for(;null!==(l=A.nextNode())&&c.length<u;){if(1===l.nodeType){if(l.hasAttributes()){const t=[];for(const i of l.getAttributeNames())if(i.endsWith("$lit$")||i.startsWith(e$1)){const s=a[d++];if(t.push(i),void 0!==s){const t=l.getAttribute(s.toLowerCase()+"$lit$").split(e$1),i=/([.?@])?(.*)/.exec(s);c.push({type:1,index:r,name:i[2],strings:t,ctor:"."===i[1]?M:"?"===i[1]?H:"@"===i[1]?I:S});}else c.push({type:6,index:r});}for(const i of t)l.removeAttribute(i);}if(g.test(l.tagName)){const t=l.textContent.split(e$1),s=t.length-1;if(s>0){l.textContent=i$1?i$1.emptyScript:"";for(let i=0;i<s;i++)l.append(t[i],h()),A.nextNode(),c.push({type:2,index:++r});l.append(t[s],h());}}}else if(8===l.nodeType)if(l.data===o$1)c.push({type:2,index:r});else {let t=-1;for(;-1!==(t=l.data.indexOf(e$1,t+1));)c.push({type:7,index:r}),t+=e$1.length-1;}r++;}}static createElement(t,i){const s=l$1.createElement("template");return s.innerHTML=t,s}}function P(t,i,s=t,e){var o,n,l,h;if(i===b)return i;let d=void 0!==e?null===(o=s._$Cl)||void 0===o?void 0:o[e]:s._$Cu;const u=r(i)?void 0:i._$litDirective$;return (null==d?void 0:d.constructor)!==u&&(null===(n=null==d?void 0:d._$AO)||void 0===n||n.call(d,!1),void 0===u?d=void 0:(d=new u(t),d._$AT(t,s,e)),void 0!==e?(null!==(l=(h=s)._$Cl)&&void 0!==l?l:h._$Cl=[])[e]=d:s._$Cu=d),void 0!==d&&(i=P(t,d._$AS(t,i.values),d,e)),i}class V{constructor(t,i){this.v=[],this._$AN=void 0,this._$AD=t,this._$AM=i;}get parentNode(){return this._$AM.parentNode}get _$AU(){return this._$AM._$AU}p(t){var i;const{el:{content:s},parts:e}=this._$AD,o=(null!==(i=null==t?void 0:t.creationScope)&&void 0!==i?i:l$1).importNode(s,!0);A.currentNode=o;let n=A.nextNode(),h=0,r=0,d=e[0];for(;void 0!==d;){if(h===d.index){let i;2===d.type?i=new N(n,n.nextSibling,this,t):1===d.type?i=new d.ctor(n,d.name,d.strings,this,t):6===d.type&&(i=new L(n,this,t)),this.v.push(i),d=e[++r];}h!==(null==d?void 0:d.index)&&(n=A.nextNode(),h++);}return o}m(t){let i=0;for(const s of this.v)void 0!==s&&(void 0!==s.strings?(s._$AI(t,s,i),i+=s.strings.length-2):s._$AI(t[i])),i++;}}class N{constructor(t,i,s,e){var o;this.type=2,this._$AH=w,this._$AN=void 0,this._$AA=t,this._$AB=i,this._$AM=s,this.options=e,this._$Cg=null===(o=null==e?void 0:e.isConnected)||void 0===o||o;}get _$AU(){var t,i;return null!==(i=null===(t=this._$AM)||void 0===t?void 0:t._$AU)&&void 0!==i?i:this._$Cg}get parentNode(){let t=this._$AA.parentNode;const i=this._$AM;return void 0!==i&&11===t.nodeType&&(t=i.parentNode),t}get startNode(){return this._$AA}get endNode(){return this._$AB}_$AI(t,i=this){t=P(this,t,i),r(t)?t===w||null==t||""===t?(this._$AH!==w&&this._$AR(),this._$AH=w):t!==this._$AH&&t!==b&&this.$(t):void 0!==t._$litType$?this.T(t):void 0!==t.nodeType?this.k(t):u(t)?this.S(t):this.$(t);}A(t,i=this._$AB){return this._$AA.parentNode.insertBefore(t,i)}k(t){this._$AH!==t&&(this._$AR(),this._$AH=this.A(t));}$(t){this._$AH!==w&&r(this._$AH)?this._$AA.nextSibling.data=t:this.k(l$1.createTextNode(t)),this._$AH=t;}T(t){var i;const{values:s,_$litType$:e}=t,o="number"==typeof e?this._$AC(t):(void 0===e.el&&(e.el=E.createElement(e.h,this.options)),e);if((null===(i=this._$AH)||void 0===i?void 0:i._$AD)===o)this._$AH.m(s);else {const t=new V(o,this),i=t.p(this.options);t.m(s),this.k(i),this._$AH=t;}}_$AC(t){let i=T.get(t.strings);return void 0===i&&T.set(t.strings,i=new E(t)),i}S(t){d(this._$AH)||(this._$AH=[],this._$AR());const i=this._$AH;let s,e=0;for(const o of t)e===i.length?i.push(s=new N(this.A(h()),this.A(h()),this,this.options)):s=i[e],s._$AI(o),e++;e<i.length&&(this._$AR(s&&s._$AB.nextSibling,e),i.length=e);}_$AR(t=this._$AA.nextSibling,i){var s;for(null===(s=this._$AP)||void 0===s||s.call(this,!1,!0,i);t&&t!==this._$AB;){const i=t.nextSibling;t.remove(),t=i;}}setConnected(t){var i;void 0===this._$AM&&(this._$Cg=t,null===(i=this._$AP)||void 0===i||i.call(this,t));}}class S{constructor(t,i,s,e,o){this.type=1,this._$AH=w,this._$AN=void 0,this.element=t,this.name=i,this._$AM=e,this.options=o,s.length>2||""!==s[0]||""!==s[1]?(this._$AH=Array(s.length-1).fill(new String),this.strings=s):this._$AH=w;}get tagName(){return this.element.tagName}get _$AU(){return this._$AM._$AU}_$AI(t,i=this,s,e){const o=this.strings;let n=!1;if(void 0===o)t=P(this,t,i,0),n=!r(t)||t!==this._$AH&&t!==b,n&&(this._$AH=t);else {const e=t;let l,h;for(t=o[0],l=0;l<o.length-1;l++)h=P(this,e[s+l],i,l),h===b&&(h=this._$AH[l]),n||(n=!r(h)||h!==this._$AH[l]),h===w?t=w:t!==w&&(t+=(null!=h?h:"")+o[l+1]),this._$AH[l]=h;}n&&!e&&this.C(t);}C(t){t===w?this.element.removeAttribute(this.name):this.element.setAttribute(this.name,null!=t?t:"");}}class M extends S{constructor(){super(...arguments),this.type=3;}C(t){this.element[this.name]=t===w?void 0:t;}}const k=i$1?i$1.emptyScript:"";class H extends S{constructor(){super(...arguments),this.type=4;}C(t){t&&t!==w?this.element.setAttribute(this.name,k):this.element.removeAttribute(this.name);}}class I extends S{constructor(t,i,s,e,o){super(t,i,s,e,o),this.type=5;}_$AI(t,i=this){var s;if((t=null!==(s=P(this,t,i,0))&&void 0!==s?s:w)===b)return;const e=this._$AH,o=t===w&&e!==w||t.capture!==e.capture||t.once!==e.once||t.passive!==e.passive,n=t!==w&&(e===w||o);o&&this.element.removeEventListener(this.name,this,e),n&&this.element.addEventListener(this.name,this,t),this._$AH=t;}handleEvent(t){var i,s;"function"==typeof this._$AH?this._$AH.call(null!==(s=null===(i=this.options)||void 0===i?void 0:i.host)&&void 0!==s?s:this.element,t):this._$AH.handleEvent(t);}}class L{constructor(t,i,s){this.element=t,this.type=6,this._$AN=void 0,this._$AM=i,this.options=s;}get _$AU(){return this._$AM._$AU}_$AI(t){P(this,t);}}const z=window.litHtmlPolyfillSupport;null==z||z(E,N),(null!==(t=globalThis.litHtmlVersions)&&void 0!==t?t:globalThis.litHtmlVersions=[]).push("2.2.1");
+var t$1;const i$3=globalThis.trustedTypes,s$1=i$3?i$3.createPolicy("lit-html",{createHTML:t=>t}):void 0,e$3=`lit$${(Math.random()+"").slice(9)}$`,o$3="?"+e$3,n$3=`<${o$3}>`,l$2=document,h=(t="")=>l$2.createComment(t),r=t=>null===t||"object"!=typeof t&&"function"!=typeof t,d=Array.isArray,u=t=>{var i;return d(t)||"function"==typeof(null===(i=t)||void 0===i?void 0:i[Symbol.iterator])},c=/<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g,v=/-->/g,a$1=/>/g,f=/>|[ 	\n\r](?:([^\s"'>=/]+)([ 	\n\r]*=[ 	\n\r]*(?:[^ 	\n\r"'`<>=]|("|')|))|$)/g,_=/'/g,m=/"/g,g=/^(?:script|style|textarea|title)$/i,p=t=>(i,...s)=>({_$litType$:t,strings:i,values:s}),$=p(1),b=Symbol.for("lit-noChange"),w=Symbol.for("lit-nothing"),T=new WeakMap,x=(t,i,s)=>{var e,o;const n=null!==(e=null==s?void 0:s.renderBefore)&&void 0!==e?e:i;let l=n._$litPart$;if(void 0===l){const t=null!==(o=null==s?void 0:s.renderBefore)&&void 0!==o?o:null;n._$litPart$=l=new N(i.insertBefore(h(),t),t,void 0,null!=s?s:{});}return l._$AI(t),l},A=l$2.createTreeWalker(l$2,129,null,!1),C=(t,i)=>{const o=t.length-1,l=[];let h,r=2===i?"<svg>":"",d=c;for(let i=0;i<o;i++){const s=t[i];let o,u,p=-1,$=0;for(;$<s.length&&(d.lastIndex=$,u=d.exec(s),null!==u);)$=d.lastIndex,d===c?"!--"===u[1]?d=v:void 0!==u[1]?d=a$1:void 0!==u[2]?(g.test(u[2])&&(h=RegExp("</"+u[2],"g")),d=f):void 0!==u[3]&&(d=f):d===f?">"===u[0]?(d=null!=h?h:c,p=-1):void 0===u[1]?p=-2:(p=d.lastIndex-u[2].length,o=u[1],d=void 0===u[3]?f:'"'===u[3]?m:_):d===m||d===_?d=f:d===v||d===a$1?d=c:(d=f,h=void 0);const y=d===f&&t[i+1].startsWith("/>")?" ":"";r+=d===c?s+n$3:p>=0?(l.push(o),s.slice(0,p)+"$lit$"+s.slice(p)+e$3+y):s+e$3+(-2===p?(l.push(void 0),i):y);}const u=r+(t[o]||"<?>")+(2===i?"</svg>":"");if(!Array.isArray(t)||!t.hasOwnProperty("raw"))throw Error("invalid template strings array");return [void 0!==s$1?s$1.createHTML(u):u,l]};class E{constructor({strings:t,_$litType$:s},n){let l;this.parts=[];let r=0,d=0;const u=t.length-1,c=this.parts,[v,a]=C(t,s);if(this.el=E.createElement(v,n),A.currentNode=this.el.content,2===s){const t=this.el.content,i=t.firstChild;i.remove(),t.append(...i.childNodes);}for(;null!==(l=A.nextNode())&&c.length<u;){if(1===l.nodeType){if(l.hasAttributes()){const t=[];for(const i of l.getAttributeNames())if(i.endsWith("$lit$")||i.startsWith(e$3)){const s=a[d++];if(t.push(i),void 0!==s){const t=l.getAttribute(s.toLowerCase()+"$lit$").split(e$3),i=/([.?@])?(.*)/.exec(s);c.push({type:1,index:r,name:i[2],strings:t,ctor:"."===i[1]?M:"?"===i[1]?H:"@"===i[1]?I:S});}else c.push({type:6,index:r});}for(const i of t)l.removeAttribute(i);}if(g.test(l.tagName)){const t=l.textContent.split(e$3),s=t.length-1;if(s>0){l.textContent=i$3?i$3.emptyScript:"";for(let i=0;i<s;i++)l.append(t[i],h()),A.nextNode(),c.push({type:2,index:++r});l.append(t[s],h());}}}else if(8===l.nodeType)if(l.data===o$3)c.push({type:2,index:r});else {let t=-1;for(;-1!==(t=l.data.indexOf(e$3,t+1));)c.push({type:7,index:r}),t+=e$3.length-1;}r++;}}static createElement(t,i){const s=l$2.createElement("template");return s.innerHTML=t,s}}function P(t,i,s=t,e){var o,n,l,h;if(i===b)return i;let d=void 0!==e?null===(o=s._$Cl)||void 0===o?void 0:o[e]:s._$Cu;const u=r(i)?void 0:i._$litDirective$;return (null==d?void 0:d.constructor)!==u&&(null===(n=null==d?void 0:d._$AO)||void 0===n||n.call(d,!1),void 0===u?d=void 0:(d=new u(t),d._$AT(t,s,e)),void 0!==e?(null!==(l=(h=s)._$Cl)&&void 0!==l?l:h._$Cl=[])[e]=d:s._$Cu=d),void 0!==d&&(i=P(t,d._$AS(t,i.values),d,e)),i}class V{constructor(t,i){this.v=[],this._$AN=void 0,this._$AD=t,this._$AM=i;}get parentNode(){return this._$AM.parentNode}get _$AU(){return this._$AM._$AU}p(t){var i;const{el:{content:s},parts:e}=this._$AD,o=(null!==(i=null==t?void 0:t.creationScope)&&void 0!==i?i:l$2).importNode(s,!0);A.currentNode=o;let n=A.nextNode(),h=0,r=0,d=e[0];for(;void 0!==d;){if(h===d.index){let i;2===d.type?i=new N(n,n.nextSibling,this,t):1===d.type?i=new d.ctor(n,d.name,d.strings,this,t):6===d.type&&(i=new L(n,this,t)),this.v.push(i),d=e[++r];}h!==(null==d?void 0:d.index)&&(n=A.nextNode(),h++);}return o}m(t){let i=0;for(const s of this.v)void 0!==s&&(void 0!==s.strings?(s._$AI(t,s,i),i+=s.strings.length-2):s._$AI(t[i])),i++;}}class N{constructor(t,i,s,e){var o;this.type=2,this._$AH=w,this._$AN=void 0,this._$AA=t,this._$AB=i,this._$AM=s,this.options=e,this._$Cg=null===(o=null==e?void 0:e.isConnected)||void 0===o||o;}get _$AU(){var t,i;return null!==(i=null===(t=this._$AM)||void 0===t?void 0:t._$AU)&&void 0!==i?i:this._$Cg}get parentNode(){let t=this._$AA.parentNode;const i=this._$AM;return void 0!==i&&11===t.nodeType&&(t=i.parentNode),t}get startNode(){return this._$AA}get endNode(){return this._$AB}_$AI(t,i=this){t=P(this,t,i),r(t)?t===w||null==t||""===t?(this._$AH!==w&&this._$AR(),this._$AH=w):t!==this._$AH&&t!==b&&this.$(t):void 0!==t._$litType$?this.T(t):void 0!==t.nodeType?this.k(t):u(t)?this.S(t):this.$(t);}A(t,i=this._$AB){return this._$AA.parentNode.insertBefore(t,i)}k(t){this._$AH!==t&&(this._$AR(),this._$AH=this.A(t));}$(t){this._$AH!==w&&r(this._$AH)?this._$AA.nextSibling.data=t:this.k(l$2.createTextNode(t)),this._$AH=t;}T(t){var i;const{values:s,_$litType$:e}=t,o="number"==typeof e?this._$AC(t):(void 0===e.el&&(e.el=E.createElement(e.h,this.options)),e);if((null===(i=this._$AH)||void 0===i?void 0:i._$AD)===o)this._$AH.m(s);else {const t=new V(o,this),i=t.p(this.options);t.m(s),this.k(i),this._$AH=t;}}_$AC(t){let i=T.get(t.strings);return void 0===i&&T.set(t.strings,i=new E(t)),i}S(t){d(this._$AH)||(this._$AH=[],this._$AR());const i=this._$AH;let s,e=0;for(const o of t)e===i.length?i.push(s=new N(this.A(h()),this.A(h()),this,this.options)):s=i[e],s._$AI(o),e++;e<i.length&&(this._$AR(s&&s._$AB.nextSibling,e),i.length=e);}_$AR(t=this._$AA.nextSibling,i){var s;for(null===(s=this._$AP)||void 0===s||s.call(this,!1,!0,i);t&&t!==this._$AB;){const i=t.nextSibling;t.remove(),t=i;}}setConnected(t){var i;void 0===this._$AM&&(this._$Cg=t,null===(i=this._$AP)||void 0===i||i.call(this,t));}}class S{constructor(t,i,s,e,o){this.type=1,this._$AH=w,this._$AN=void 0,this.element=t,this.name=i,this._$AM=e,this.options=o,s.length>2||""!==s[0]||""!==s[1]?(this._$AH=Array(s.length-1).fill(new String),this.strings=s):this._$AH=w;}get tagName(){return this.element.tagName}get _$AU(){return this._$AM._$AU}_$AI(t,i=this,s,e){const o=this.strings;let n=!1;if(void 0===o)t=P(this,t,i,0),n=!r(t)||t!==this._$AH&&t!==b,n&&(this._$AH=t);else {const e=t;let l,h;for(t=o[0],l=0;l<o.length-1;l++)h=P(this,e[s+l],i,l),h===b&&(h=this._$AH[l]),n||(n=!r(h)||h!==this._$AH[l]),h===w?t=w:t!==w&&(t+=(null!=h?h:"")+o[l+1]),this._$AH[l]=h;}n&&!e&&this.C(t);}C(t){t===w?this.element.removeAttribute(this.name):this.element.setAttribute(this.name,null!=t?t:"");}}class M extends S{constructor(){super(...arguments),this.type=3;}C(t){this.element[this.name]=t===w?void 0:t;}}const k=i$3?i$3.emptyScript:"";class H extends S{constructor(){super(...arguments),this.type=4;}C(t){t&&t!==w?this.element.setAttribute(this.name,k):this.element.removeAttribute(this.name);}}class I extends S{constructor(t,i,s,e,o){super(t,i,s,e,o),this.type=5;}_$AI(t,i=this){var s;if((t=null!==(s=P(this,t,i,0))&&void 0!==s?s:w)===b)return;const e=this._$AH,o=t===w&&e!==w||t.capture!==e.capture||t.once!==e.once||t.passive!==e.passive,n=t!==w&&(e===w||o);o&&this.element.removeEventListener(this.name,this,e),n&&this.element.addEventListener(this.name,this,t),this._$AH=t;}handleEvent(t){var i,s;"function"==typeof this._$AH?this._$AH.call(null!==(s=null===(i=this.options)||void 0===i?void 0:i.host)&&void 0!==s?s:this.element,t):this._$AH.handleEvent(t);}}class L{constructor(t,i,s){this.element=t,this.type=6,this._$AN=void 0,this._$AM=i,this.options=s;}get _$AU(){return this._$AM._$AU}_$AI(t){P(this,t);}}const z=window.litHtmlPolyfillSupport;null==z||z(E,N),(null!==(t$1=globalThis.litHtmlVersions)&&void 0!==t$1?t$1:globalThis.litHtmlVersions=[]).push("2.2.1");
 
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */var l,o;class s extends a$1{constructor(){super(...arguments),this.renderOptions={host:this},this._$Dt=void 0;}createRenderRoot(){var t,e;const i=super.createRenderRoot();return null!==(t=(e=this.renderOptions).renderBefore)&&void 0!==t||(e.renderBefore=i.firstChild),i}update(t){const i=this.render();this.hasUpdated||(this.renderOptions.isConnected=this.isConnected),super.update(t),this._$Dt=x(i,this.renderRoot,this.renderOptions);}connectedCallback(){var t;super.connectedCallback(),null===(t=this._$Dt)||void 0===t||t.setConnected(!0);}disconnectedCallback(){var t;super.disconnectedCallback(),null===(t=this._$Dt)||void 0===t||t.setConnected(!1);}render(){return b}}s.finalized=!0,s._$litElement$=!0,null===(l=globalThis.litElementHydrateSupport)||void 0===l||l.call(globalThis,{LitElement:s});const n$2=globalThis.litElementPolyfillSupport;null==n$2||n$2({LitElement:s});(null!==(o=globalThis.litElementVersions)&&void 0!==o?o:globalThis.litElementVersions=[]).push("3.2.0");
+ */var l$1,o$2;class s extends a$2{constructor(){super(...arguments),this.renderOptions={host:this},this._$Dt=void 0;}createRenderRoot(){var t,e;const i=super.createRenderRoot();return null!==(t=(e=this.renderOptions).renderBefore)&&void 0!==t||(e.renderBefore=i.firstChild),i}update(t){const i=this.render();this.hasUpdated||(this.renderOptions.isConnected=this.isConnected),super.update(t),this._$Dt=x(i,this.renderRoot,this.renderOptions);}connectedCallback(){var t;super.connectedCallback(),null===(t=this._$Dt)||void 0===t||t.setConnected(!0);}disconnectedCallback(){var t;super.disconnectedCallback(),null===(t=this._$Dt)||void 0===t||t.setConnected(!1);}render(){return b}}s.finalized=!0,s._$litElement$=!0,null===(l$1=globalThis.litElementHydrateSupport)||void 0===l$1||l$1.call(globalThis,{LitElement:s});const n$2=globalThis.litElementPolyfillSupport;null==n$2||n$2({LitElement:s});(null!==(o$2=globalThis.litElementVersions)&&void 0!==o$2?o$2:globalThis.litElementVersions=[]).push("3.2.0");
 
 /**
  * @license
@@ -38,7 +38,7 @@ const n$1=n=>e=>"function"==typeof e?((n,e)=>(window.customElements.define(n,e),
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const i=(i,e)=>"method"===e.kind&&e.descriptor&&!("value"in e.descriptor)?{...e,finisher(n){n.createProperty(e.key,i);}}:{kind:"field",key:Symbol(),placement:"own",descriptor:{},originalKey:e.key,initializer(){"function"==typeof e.initializer&&(this[e.key]=e.initializer.call(this));},finisher(n){n.createProperty(e.key,i);}};function e(e){return (n,t)=>void 0!==t?((i,e,n)=>{e.constructor.createProperty(n,i);})(e,n,t):i(e,n)}
+const i$2=(i,e)=>"method"===e.kind&&e.descriptor&&!("value"in e.descriptor)?{...e,finisher(n){n.createProperty(e.key,i);}}:{kind:"field",key:Symbol(),placement:"own",descriptor:{},originalKey:e.key,initializer(){"function"==typeof e.initializer&&(this[e.key]=e.initializer.call(this));},finisher(n){n.createProperty(e.key,i);}};function e$2(e){return (n,t)=>void 0!==t?((i,e,n)=>{e.constructor.createProperty(n,i);})(e,n,t):i$2(e,n)}
 
 /**
  * @license
@@ -46,6 +46,37 @@ const i=(i,e)=>"method"===e.kind&&e.descriptor&&!("value"in e.descriptor)?{...e,
  * SPDX-License-Identifier: BSD-3-Clause
  */var n;null!=(null===(n=window.HTMLSlotElement)||void 0===n?void 0:n.prototype.assignedElements)?(o,n)=>o.assignedElements(n):(o,n)=>o.assignedNodes(n).filter((o=>o.nodeType===Node.ELEMENT_NODE));
 
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */const o$1=t=>({_$litStatic$:t}),i$1=new Map,a=t=>(e,...o)=>{var r;const a=o.length;let l,s;const n=[],u=[];let c,$=0,v=!1;for(;$<a;){for(c=e[$];$<a&&void 0!==(s=o[$],l=null===(r=s)||void 0===r?void 0:r._$litStatic$);)c+=l+e[++$],v=!0;u.push(s),n.push(c),$++;}if($===a&&n.push(e[a]),v){const t=n.join("$$lit$$");void 0===(e=i$1.get(t))&&(n.raw=n,i$1.set(t,e=n)),o=u;}return t(e,...o)},l=a($);
+
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+const t={ATTRIBUTE:1,CHILD:2,PROPERTY:3,BOOLEAN_ATTRIBUTE:4,EVENT:5,ELEMENT:6},e$1=t=>(...e)=>({_$litDirective$:t,values:e});class i{constructor(t){}get _$AU(){return this._$AM._$AU}_$AT(t,e,i){this._$Ct=t,this._$AM=e,this._$Ci=i;}_$AS(t,e){return this.update(t,e)}update(t,e){return this.render(...e)}}
+
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */class e extends i{constructor(i){if(super(i),this.it=w,i.type!==t.CHILD)throw Error(this.constructor.directiveName+"() can only be used in child bindings")}render(r){if(r===w||null==r)return this.ft=void 0,this.it=r;if(r===b)return r;if("string"!=typeof r)throw Error(this.constructor.directiveName+"() called with a non-string value");if(r===this.it)return this.ft;this.it=r;const s=[r];return s.raw=s,this.ft={_$litType$:this.constructor.resultType,strings:s,values:[]}}}e.directiveName="unsafeHTML",e.resultType=1;const o=e$1(e);
+
+const nfdiMint = r$2`#1FC2A7`;
+const nfdiMintDarker20 = r$2`#199b86`;
+const nfdiLightblue = r$2`#4FB3D9`;
+const nfdiDarkblue = r$2`#2D3E50`;
+const nfdiDarkblueLighter20 = r$2`#576573`;
+r$2`#FFC000`;
+r$2`#B4CE82`;
+const nfdiOliveLighter80 = r$2`#f0f5e6`;
+r$2`#C21F3A`;
+const nfdiBlack = r$2`#3A3A3A`;
+const nfdiWhite = r$2`#FEFEFE`;
+r$2`#ECEBEB`;
 const bulmaStyles = r$2`
 /**
 * Calculate the contrast ratio between two colors.
@@ -522,1292 +553,6 @@ const bulmaStyles = r$2`
   color: #F8E8EB !important;
 }
 
-/**
-* sets the background color with the correct contrast color for text
-*/
-.has-bg-white {
-  background-color: white !important;
-  color: black !important;
-}
-
-.has-bg-black {
-  background-color: black !important;
-  color: white !important;
-}
-
-.has-bg-mint {
-  background-color: #1fc2a7 !important;
-  color: black !important;
-}
-
-.has-bg-mint-darker-10 {
-  background-color: #1caf96 !important;
-  color: black !important;
-}
-
-.has-bg-mint-darker-20 {
-  background-color: #199b86 !important;
-  color: black !important;
-}
-
-.has-bg-mint-darker-30 {
-  background-color: #168875 !important;
-  color: black !important;
-}
-
-.has-bg-mint-darker-40 {
-  background-color: #137464 !important;
-  color: white !important;
-}
-
-.has-bg-mint-darker-50 {
-  background-color: #106154 !important;
-  color: white !important;
-}
-
-.has-bg-mint-darker-60 {
-  background-color: #0c4e43 !important;
-  color: white !important;
-}
-
-.has-bg-mint-darker-70 {
-  background-color: #093a32 !important;
-  color: white !important;
-}
-
-.has-bg-mint-darker-80 {
-  background-color: #062721 !important;
-  color: white !important;
-}
-
-.has-bg-mint-darker-90 {
-  background-color: #031311 !important;
-  color: white !important;
-}
-
-.has-bg-mint-lighter-10 {
-  background-color: #35c8b0 !important;
-  color: black !important;
-}
-
-.has-bg-mint-lighter-20 {
-  background-color: #4cceb9 !important;
-  color: black !important;
-}
-
-.has-bg-mint-lighter-30 {
-  background-color: #62d4c1 !important;
-  color: black !important;
-}
-
-.has-bg-mint-lighter-40 {
-  background-color: #79daca !important;
-  color: black !important;
-}
-
-.has-bg-mint-lighter-50 {
-  background-color: #8fe1d3 !important;
-  color: black !important;
-}
-
-.has-bg-mint-lighter-60 {
-  background-color: #a5e7dc !important;
-  color: black !important;
-}
-
-.has-bg-mint-lighter-70 {
-  background-color: #bcede5 !important;
-  color: black !important;
-}
-
-.has-bg-mint-lighter-80 {
-  background-color: #d2f3ed !important;
-  color: black !important;
-}
-
-.has-bg-mint-lighter-90 {
-  background-color: #e9f9f6 !important;
-  color: black !important;
-}
-
-.has-bg-lightblue {
-  background-color: #4FB3D9 !important;
-  color: black !important;
-}
-
-.has-bg-lightblue-darker-10 {
-  background-color: #47a1c3 !important;
-  color: black !important;
-}
-
-.has-bg-lightblue-darker-20 {
-  background-color: #3f8fae !important;
-  color: black !important;
-}
-
-.has-bg-lightblue-darker-30 {
-  background-color: #377d98 !important;
-  color: white !important;
-}
-
-.has-bg-lightblue-darker-40 {
-  background-color: #2f6b82 !important;
-  color: white !important;
-}
-
-.has-bg-lightblue-darker-50 {
-  background-color: #285a6d !important;
-  color: white !important;
-}
-
-.has-bg-lightblue-darker-60 {
-  background-color: #204857 !important;
-  color: white !important;
-}
-
-.has-bg-lightblue-darker-70 {
-  background-color: #183641 !important;
-  color: white !important;
-}
-
-.has-bg-lightblue-darker-80 {
-  background-color: #081216 !important;
-  color: white !important;
-}
-
-.has-bg-lightblue-darker-80 {
-  background-color: #081216 !important;
-  color: white !important;
-}
-
-.has-bg-lightblue-lighter-10 {
-  background-color: #61bbdd !important;
-  color: black !important;
-}
-
-.has-bg-lightblue-lighter-20 {
-  background-color: #72c2e1 !important;
-  color: black !important;
-}
-
-.has-bg-lightblue-lighter-30 {
-  background-color: #84cae4 !important;
-  color: black !important;
-}
-
-.has-bg-lightblue-lighter-40 {
-  background-color: #95d1e8 !important;
-  color: black !important;
-}
-
-.has-bg-lightblue-lighter-50 {
-  background-color: #a7d9ec !important;
-  color: black !important;
-}
-
-.has-bg-lightblue-lighter-60 {
-  background-color: #b9e1f0 !important;
-  color: black !important;
-}
-
-.has-bg-lightblue-lighter-70 {
-  background-color: #cae8f4 !important;
-  color: black !important;
-}
-
-.has-bg-lightblue-lighter-80 {
-  background-color: #dcf0f7 !important;
-  color: black !important;
-}
-
-.has-bg-lightblue-lighter-90 {
-  background-color: #edf7fb !important;
-  color: black !important;
-}
-
-.has-bg-darkblue {
-  background-color: #2D3E50 !important;
-  color: white !important;
-}
-
-.has-bg-darkblue-darker-10 {
-  background-color: #293848 !important;
-  color: white !important;
-}
-
-.has-bg-darkblue-darker-20 {
-  background-color: #243240 !important;
-  color: white !important;
-}
-
-.has-bg-darkblue-darker-30 {
-  background-color: #1f2b38 !important;
-  color: white !important;
-}
-
-.has-bg-darkblue-darker-40 {
-  background-color: #1b2530 !important;
-  color: white !important;
-}
-
-.has-bg-darkblue-darker-50 {
-  background-color: #171f28 !important;
-  color: white !important;
-}
-
-.has-bg-darkblue-darker-60 {
-  background-color: #121920 !important;
-  color: white !important;
-}
-
-.has-bg-darkblue-darker-70 {
-  background-color: #0d1318 !important;
-  color: white !important;
-}
-
-.has-bg-darkblue-darker-80 {
-  background-color: #090c10 !important;
-  color: white !important;
-}
-
-.has-bg-darkblue-darker-90 {
-  background-color: #040608 !important;
-  color: white !important;
-}
-
-.has-bg-darkblue-lighter-10 {
-  background-color: #425162 !important;
-  color: white !important;
-}
-
-.has-bg-darkblue-lighter-20 {
-  background-color: #576573 !important;
-  color: white !important;
-}
-
-.has-bg-darkblue-lighter-30 {
-  background-color: #6c7885 !important;
-  color: black !important;
-}
-
-.has-bg-darkblue-lighter-40 {
-  background-color: #818b96 !important;
-  color: black !important;
-}
-
-.has-bg-darkblue-lighter-50 {
-  background-color: #969fa8 !important;
-  color: black !important;
-}
-
-.has-bg-darkblue-lighter-60 {
-  background-color: #abb2b9 !important;
-  color: black !important;
-}
-
-.has-bg-darkblue-lighter-70 {
-  background-color: #c0c5cb !important;
-  color: black !important;
-}
-
-.has-bg-darkblue-lighter-80 {
-  background-color: #d5d8dc !important;
-  color: black !important;
-}
-
-.has-bg-darkblue-lighter-90 {
-  background-color: #eaecee !important;
-  color: black !important;
-}
-
-.has-bg-yellow {
-  background-color: #F9CD69 !important;
-  color: black !important;
-}
-
-.has-bg-yellow-darker-10 {
-  background-color: #e6ad00 !important;
-  color: black !important;
-}
-
-.has-bg-yellow-darker-20 {
-  background-color: #cc9a00 !important;
-  color: black !important;
-}
-
-.has-bg-yellow-darker-30 {
-  background-color: #b38600 !important;
-  color: black !important;
-}
-
-.has-bg-yellow-darker-40 {
-  background-color: #997300 !important;
-  color: black !important;
-}
-
-.has-bg-yellow-darker-50 {
-  background-color: #806000 !important;
-  color: white !important;
-}
-
-.has-bg-yellow-darker-60 {
-  background-color: #664d00 !important;
-  color: white !important;
-}
-
-.has-bg-yellow-darker-70 {
-  background-color: #4c3a00 !important;
-  color: white !important;
-}
-
-.has-bg-yellow-darker-80 {
-  background-color: #332600 !important;
-  color: white !important;
-}
-
-.has-bg-yellow-darker-90 {
-  background-color: #191300 !important;
-  color: white !important;
-}
-
-.has-bg-yellow-lighter-10 {
-  background-color: #ffc61a !important;
-  color: black !important;
-}
-
-.has-bg-yellow-lighter-20 {
-  background-color: #ffcd33 !important;
-  color: black !important;
-}
-
-.has-bg-yellow-lighter-30 {
-  background-color: #ffd34d !important;
-  color: black !important;
-}
-
-.has-bg-yellow-lighter-40 {
-  background-color: #ffd966 !important;
-  color: black !important;
-}
-
-.has-bg-yellow-lighter-50 {
-  background-color: #ffe080 !important;
-  color: black !important;
-}
-
-.has-bg-yellow-lighter-60 {
-  background-color: #ffe699 !important;
-  color: black !important;
-}
-
-.has-bg-yellow-lighter-70 {
-  background-color: #ffecb3 !important;
-  color: black !important;
-}
-
-.has-bg-yellow-lighter-80 {
-  background-color: #fff2cc !important;
-  color: black !important;
-}
-
-.has-bg-yellow-lighter-90 {
-  background-color: #fff9e6 !important;
-  color: black !important;
-}
-
-.has-bg-olive {
-  background-color: #b4ce82 !important;
-  color: black !important;
-}
-
-.has-bg-olive-darker-10 {
-  background-color: #a2b975 !important;
-  color: black !important;
-}
-
-.has-bg-olive-darker-20 {
-  background-color: #90a568 !important;
-  color: black !important;
-}
-
-.has-bg-olive-darker-30 {
-  background-color: #7e905b !important;
-  color: black !important;
-}
-
-.has-bg-olive-darker-40 {
-  background-color: #6c7c4e !important;
-  color: black !important;
-}
-
-.has-bg-olive-darker-50 {
-  background-color: #5a6741 !important;
-  color: white !important;
-}
-
-.has-bg-olive-darker-60 {
-  background-color: #485234 !important;
-  color: white !important;
-}
-
-.has-bg-olive-darker-70 {
-  background-color: #363e27 !important;
-  color: white !important;
-}
-
-.has-bg-olive-darker-80 {
-  background-color: #24291a !important;
-  color: white !important;
-}
-
-.has-bg-olive-darker-90 {
-  background-color: #12150d !important;
-  color: white !important;
-}
-
-.has-bg-olive-lighter-10 {
-  background-color: #bcd38f !important;
-  color: black !important;
-}
-
-.has-bg-olive-lighter-20 {
-  background-color: #c3d89b !important;
-  color: black !important;
-}
-
-.has-bg-olive-lighter-30 {
-  background-color: #cbdda8 !important;
-  color: black !important;
-}
-
-.has-bg-olive-lighter-40 {
-  background-color: #d2e2b4 !important;
-  color: black !important;
-}
-
-.has-bg-olive-lighter-50 {
-  background-color: #dae7c1 !important;
-  color: black !important;
-}
-
-.has-bg-olive-lighter-60 {
-  background-color: #e1ebcd !important;
-  color: black !important;
-}
-
-.has-bg-olive-lighter-70 {
-  background-color: #e9f0da !important;
-  color: black !important;
-}
-
-.has-bg-olive-lighter-80 {
-  background-color: #f0f5e6 !important;
-  color: black !important;
-}
-
-.has-bg-olive-lighter-90 {
-  background-color: #f8faf3 !important;
-  color: black !important;
-}
-
-.has-bg-red {
-  background-color: #c21f3a !important;
-  color: white !important;
-}
-
-.has-bg-red-darker-10 {
-  background-color: #AE1B34 !important;
-  color: white !important;
-}
-
-.has-bg-red-darker-20 {
-  background-color: #9B182E !important;
-  color: white !important;
-}
-
-.has-bg-red-darker-30 {
-  background-color: #871528 !important;
-  color: white !important;
-}
-
-.has-bg-red-darker-40 {
-  background-color: #741222 !important;
-  color: white !important;
-}
-
-.has-bg-red-darker-50 {
-  background-color: #600F1D !important;
-  color: white !important;
-}
-
-.has-bg-red-darker-60 {
-  background-color: #4D0C17 !important;
-  color: white !important;
-}
-
-.has-bg-red-darker-70 {
-  background-color: #3A0911 !important;
-  color: white !important;
-}
-
-.has-bg-red-darker-80 {
-  background-color: #26060B !important;
-  color: white !important;
-}
-
-.has-bg-red-darker-90 {
-  background-color: #130305 !important;
-  color: white !important;
-}
-
-.has-bg-red-lighter-10 {
-  background-color: #C8354D !important;
-  color: white !important;
-}
-
-.has-bg-red-lighter-20 {
-  background-color: #CE4B61 !important;
-  color: black !important;
-}
-
-.has-bg-red-lighter-30 {
-  background-color: #D46275 !important;
-  color: black !important;
-}
-
-.has-bg-red-lighter-40 {
-  background-color: #DA7888 !important;
-  color: black !important;
-}
-
-.has-bg-red-lighter-50 {
-  background-color: #E08F9C !important;
-  color: black !important;
-}
-
-.has-bg-red-lighter-60 {
-  background-color: #E6A5B0 !important;
-  color: black !important;
-}
-
-.has-bg-red-lighter-70 {
-  background-color: #ECBBC3 !important;
-  color: black !important;
-}
-
-.has-bg-red-lighter-80 {
-  background-color: #F2D2D7 !important;
-  color: black !important;
-}
-
-.has-bg-red-lighter-90 {
-  background-color: #F8E8EB !important;
-  color: black !important;
-}
-
-/**
-* sets the border color
-*/
-.has-border-color-white {
-  border: 3px solid;
-  border-color: white !important;
-}
-
-.has-border-color-black {
-  border: 3px solid;
-  border-color: black !important;
-}
-
-.has-border-color-mint {
-  border: 3px solid;
-  border-color: #1fc2a7 !important;
-}
-
-.has-border-color-mint-darker-10 {
-  border: 3px solid;
-  border-color: #1caf96 !important;
-}
-
-.has-border-color-mint-darker-20 {
-  border: 3px solid;
-  border-color: #199b86 !important;
-}
-
-.has-border-color-mint-darker-30 {
-  border: 3px solid;
-  border-color: #168875 !important;
-}
-
-.has-border-color-mint-darker-40 {
-  border: 3px solid;
-  border-color: #137464 !important;
-}
-
-.has-border-color-mint-darker-50 {
-  border: 3px solid;
-  border-color: #106154 !important;
-}
-
-.has-border-color-mint-darker-60 {
-  border: 3px solid;
-  border-color: #0c4e43 !important;
-}
-
-.has-border-color-mint-darker-70 {
-  border: 3px solid;
-  border-color: #093a32 !important;
-}
-
-.has-border-color-mint-darker-80 {
-  border: 3px solid;
-  border-color: #062721 !important;
-}
-
-.has-border-color-mint-darker-90 {
-  border: 3px solid;
-  border-color: #031311 !important;
-}
-
-.has-border-color-mint-lighter-10 {
-  border: 3px solid;
-  border-color: #35c8b0 !important;
-}
-
-.has-border-color-mint-lighter-20 {
-  border: 3px solid;
-  border-color: #4cceb9 !important;
-}
-
-.has-border-color-mint-lighter-30 {
-  border: 3px solid;
-  border-color: #62d4c1 !important;
-}
-
-.has-border-color-mint-lighter-40 {
-  border: 3px solid;
-  border-color: #79daca !important;
-}
-
-.has-border-color-mint-lighter-50 {
-  border: 3px solid;
-  border-color: #8fe1d3 !important;
-}
-
-.has-border-color-mint-lighter-60 {
-  border: 3px solid;
-  border-color: #a5e7dc !important;
-}
-
-.has-border-color-mint-lighter-70 {
-  border: 3px solid;
-  border-color: #bcede5 !important;
-}
-
-.has-border-color-mint-lighter-80 {
-  border: 3px solid;
-  border-color: #d2f3ed !important;
-}
-
-.has-border-color-mint-lighter-90 {
-  border: 3px solid;
-  border-color: #e9f9f6 !important;
-}
-
-.has-border-color-lightblue {
-  border: 3px solid;
-  border-color: #4FB3D9 !important;
-}
-
-.has-border-color-lightblue-darker-10 {
-  border: 3px solid;
-  border-color: #47a1c3 !important;
-}
-
-.has-border-color-lightblue-darker-20 {
-  border: 3px solid;
-  border-color: #3f8fae !important;
-}
-
-.has-border-color-lightblue-darker-30 {
-  border: 3px solid;
-  border-color: #377d98 !important;
-}
-
-.has-border-color-lightblue-darker-40 {
-  border: 3px solid;
-  border-color: #2f6b82 !important;
-}
-
-.has-border-color-lightblue-darker-50 {
-  border: 3px solid;
-  border-color: #285a6d !important;
-}
-
-.has-border-color-lightblue-darker-60 {
-  border: 3px solid;
-  border-color: #204857 !important;
-}
-
-.has-border-color-lightblue-darker-70 {
-  border: 3px solid;
-  border-color: #183641 !important;
-}
-
-.has-border-color-lightblue-darker-80 {
-  border: 3px solid;
-  border-color: #081216 !important;
-}
-
-.has-border-color-lightblue-darker-80 {
-  border: 3px solid;
-  border-color: #081216 !important;
-}
-
-.has-border-color-lightblue-lighter-10 {
-  border: 3px solid;
-  border-color: #61bbdd !important;
-}
-
-.has-border-color-lightblue-lighter-20 {
-  border: 3px solid;
-  border-color: #72c2e1 !important;
-}
-
-.has-border-color-lightblue-lighter-30 {
-  border: 3px solid;
-  border-color: #84cae4 !important;
-}
-
-.has-border-color-lightblue-lighter-40 {
-  border: 3px solid;
-  border-color: #95d1e8 !important;
-}
-
-.has-border-color-lightblue-lighter-50 {
-  border: 3px solid;
-  border-color: #a7d9ec !important;
-}
-
-.has-border-color-lightblue-lighter-60 {
-  border: 3px solid;
-  border-color: #b9e1f0 !important;
-}
-
-.has-border-color-lightblue-lighter-70 {
-  border: 3px solid;
-  border-color: #cae8f4 !important;
-}
-
-.has-border-color-lightblue-lighter-80 {
-  border: 3px solid;
-  border-color: #dcf0f7 !important;
-}
-
-.has-border-color-lightblue-lighter-90 {
-  border: 3px solid;
-  border-color: #edf7fb !important;
-}
-
-.has-border-color-darkblue {
-  border: 3px solid;
-  border-color: #2D3E50 !important;
-}
-
-.has-border-color-darkblue-darker-10 {
-  border: 3px solid;
-  border-color: #293848 !important;
-}
-
-.has-border-color-darkblue-darker-20 {
-  border: 3px solid;
-  border-color: #243240 !important;
-}
-
-.has-border-color-darkblue-darker-30 {
-  border: 3px solid;
-  border-color: #1f2b38 !important;
-}
-
-.has-border-color-darkblue-darker-40 {
-  border: 3px solid;
-  border-color: #1b2530 !important;
-}
-
-.has-border-color-darkblue-darker-50 {
-  border: 3px solid;
-  border-color: #171f28 !important;
-}
-
-.has-border-color-darkblue-darker-60 {
-  border: 3px solid;
-  border-color: #121920 !important;
-}
-
-.has-border-color-darkblue-darker-70 {
-  border: 3px solid;
-  border-color: #0d1318 !important;
-}
-
-.has-border-color-darkblue-darker-80 {
-  border: 3px solid;
-  border-color: #090c10 !important;
-}
-
-.has-border-color-darkblue-darker-90 {
-  border: 3px solid;
-  border-color: #040608 !important;
-}
-
-.has-border-color-darkblue-lighter-10 {
-  border: 3px solid;
-  border-color: #425162 !important;
-}
-
-.has-border-color-darkblue-lighter-20 {
-  border: 3px solid;
-  border-color: #576573 !important;
-}
-
-.has-border-color-darkblue-lighter-30 {
-  border: 3px solid;
-  border-color: #6c7885 !important;
-}
-
-.has-border-color-darkblue-lighter-40 {
-  border: 3px solid;
-  border-color: #818b96 !important;
-}
-
-.has-border-color-darkblue-lighter-50 {
-  border: 3px solid;
-  border-color: #969fa8 !important;
-}
-
-.has-border-color-darkblue-lighter-60 {
-  border: 3px solid;
-  border-color: #abb2b9 !important;
-}
-
-.has-border-color-darkblue-lighter-70 {
-  border: 3px solid;
-  border-color: #c0c5cb !important;
-}
-
-.has-border-color-darkblue-lighter-80 {
-  border: 3px solid;
-  border-color: #d5d8dc !important;
-}
-
-.has-border-color-darkblue-lighter-90 {
-  border: 3px solid;
-  border-color: #eaecee !important;
-}
-
-.has-border-color-yellow {
-  border: 3px solid;
-  border-color: #F9CD69 !important;
-}
-
-.has-border-color-yellow-darker-10 {
-  border: 3px solid;
-  border-color: #e6ad00 !important;
-}
-
-.has-border-color-yellow-darker-20 {
-  border: 3px solid;
-  border-color: #cc9a00 !important;
-}
-
-.has-border-color-yellow-darker-30 {
-  border: 3px solid;
-  border-color: #b38600 !important;
-}
-
-.has-border-color-yellow-darker-40 {
-  border: 3px solid;
-  border-color: #997300 !important;
-}
-
-.has-border-color-yellow-darker-50 {
-  border: 3px solid;
-  border-color: #806000 !important;
-}
-
-.has-border-color-yellow-darker-60 {
-  border: 3px solid;
-  border-color: #664d00 !important;
-}
-
-.has-border-color-yellow-darker-70 {
-  border: 3px solid;
-  border-color: #4c3a00 !important;
-}
-
-.has-border-color-yellow-darker-80 {
-  border: 3px solid;
-  border-color: #332600 !important;
-}
-
-.has-border-color-yellow-darker-90 {
-  border: 3px solid;
-  border-color: #191300 !important;
-}
-
-.has-border-color-yellow-lighter-10 {
-  border: 3px solid;
-  border-color: #ffc61a !important;
-}
-
-.has-border-color-yellow-lighter-20 {
-  border: 3px solid;
-  border-color: #ffcd33 !important;
-}
-
-.has-border-color-yellow-lighter-30 {
-  border: 3px solid;
-  border-color: #ffd34d !important;
-}
-
-.has-border-color-yellow-lighter-40 {
-  border: 3px solid;
-  border-color: #ffd966 !important;
-}
-
-.has-border-color-yellow-lighter-50 {
-  border: 3px solid;
-  border-color: #ffe080 !important;
-}
-
-.has-border-color-yellow-lighter-60 {
-  border: 3px solid;
-  border-color: #ffe699 !important;
-}
-
-.has-border-color-yellow-lighter-70 {
-  border: 3px solid;
-  border-color: #ffecb3 !important;
-}
-
-.has-border-color-yellow-lighter-80 {
-  border: 3px solid;
-  border-color: #fff2cc !important;
-}
-
-.has-border-color-yellow-lighter-90 {
-  border: 3px solid;
-  border-color: #fff9e6 !important;
-}
-
-.has-border-color-olive {
-  border: 3px solid;
-  border-color: #b4ce82 !important;
-}
-
-.has-border-color-olive-darker-10 {
-  border: 3px solid;
-  border-color: #a2b975 !important;
-}
-
-.has-border-color-olive-darker-20 {
-  border: 3px solid;
-  border-color: #90a568 !important;
-}
-
-.has-border-color-olive-darker-30 {
-  border: 3px solid;
-  border-color: #7e905b !important;
-}
-
-.has-border-color-olive-darker-40 {
-  border: 3px solid;
-  border-color: #6c7c4e !important;
-}
-
-.has-border-color-olive-darker-50 {
-  border: 3px solid;
-  border-color: #5a6741 !important;
-}
-
-.has-border-color-olive-darker-60 {
-  border: 3px solid;
-  border-color: #485234 !important;
-}
-
-.has-border-color-olive-darker-70 {
-  border: 3px solid;
-  border-color: #363e27 !important;
-}
-
-.has-border-color-olive-darker-80 {
-  border: 3px solid;
-  border-color: #24291a !important;
-}
-
-.has-border-color-olive-darker-90 {
-  border: 3px solid;
-  border-color: #12150d !important;
-}
-
-.has-border-color-olive-lighter-10 {
-  border: 3px solid;
-  border-color: #bcd38f !important;
-}
-
-.has-border-color-olive-lighter-20 {
-  border: 3px solid;
-  border-color: #c3d89b !important;
-}
-
-.has-border-color-olive-lighter-30 {
-  border: 3px solid;
-  border-color: #cbdda8 !important;
-}
-
-.has-border-color-olive-lighter-40 {
-  border: 3px solid;
-  border-color: #d2e2b4 !important;
-}
-
-.has-border-color-olive-lighter-50 {
-  border: 3px solid;
-  border-color: #dae7c1 !important;
-}
-
-.has-border-color-olive-lighter-60 {
-  border: 3px solid;
-  border-color: #e1ebcd !important;
-}
-
-.has-border-color-olive-lighter-70 {
-  border: 3px solid;
-  border-color: #e9f0da !important;
-}
-
-.has-border-color-olive-lighter-80 {
-  border: 3px solid;
-  border-color: #f0f5e6 !important;
-}
-
-.has-border-color-olive-lighter-90 {
-  border: 3px solid;
-  border-color: #f8faf3 !important;
-}
-
-.has-border-color-red {
-  border: 3px solid;
-  border-color: #c21f3a !important;
-}
-
-.has-border-color-red-darker-10 {
-  border: 3px solid;
-  border-color: #AE1B34 !important;
-}
-
-.has-border-color-red-darker-20 {
-  border: 3px solid;
-  border-color: #9B182E !important;
-}
-
-.has-border-color-red-darker-30 {
-  border: 3px solid;
-  border-color: #871528 !important;
-}
-
-.has-border-color-red-darker-40 {
-  border: 3px solid;
-  border-color: #741222 !important;
-}
-
-.has-border-color-red-darker-50 {
-  border: 3px solid;
-  border-color: #600F1D !important;
-}
-
-.has-border-color-red-darker-60 {
-  border: 3px solid;
-  border-color: #4D0C17 !important;
-}
-
-.has-border-color-red-darker-70 {
-  border: 3px solid;
-  border-color: #3A0911 !important;
-}
-
-.has-border-color-red-darker-80 {
-  border: 3px solid;
-  border-color: #26060B !important;
-}
-
-.has-border-color-red-darker-90 {
-  border: 3px solid;
-  border-color: #130305 !important;
-}
-
-.has-border-color-red-lighter-10 {
-  border: 3px solid;
-  border-color: #C8354D !important;
-}
-
-.has-border-color-red-lighter-20 {
-  border: 3px solid;
-  border-color: #CE4B61 !important;
-}
-
-.has-border-color-red-lighter-30 {
-  border: 3px solid;
-  border-color: #D46275 !important;
-}
-
-.has-border-color-red-lighter-40 {
-  border: 3px solid;
-  border-color: #DA7888 !important;
-}
-
-.has-border-color-red-lighter-50 {
-  border: 3px solid;
-  border-color: #E08F9C !important;
-}
-
-.has-border-color-red-lighter-60 {
-  border: 3px solid;
-  border-color: #E6A5B0 !important;
-}
-
-.has-border-color-red-lighter-70 {
-  border: 3px solid;
-  border-color: #ECBBC3 !important;
-}
-
-.has-border-color-red-lighter-80 {
-  border: 3px solid;
-  border-color: #F2D2D7 !important;
-}
-
-.has-border-color-red-lighter-90 {
-  border: 3px solid;
-  border-color: #F8E8EB !important;
-}
-
-.has-bg-split-10-mint {
-  background-color: #1fc2a7;
-  color: black;
-}
-@media screen and (min-width: 1024px) {
-  .has-bg-split-10-mint {
-    background: linear-gradient(rgba(0, 0, 0, 0) 10%, #1fc2a7 10%);
-  }
-}
-
-.has-bg-split-20-mint {
-  background-color: #1fc2a7;
-  color: black;
-}
-@media screen and (min-width: 1024px) {
-  .has-bg-split-20-mint {
-    background: linear-gradient(rgba(0, 0, 0, 0) 20%, #1fc2a7 20%);
-  }
-}
-
-.has-bg-split-30-mint {
-  background-color: #1fc2a7;
-  color: black;
-}
-@media screen and (min-width: 1024px) {
-  .has-bg-split-30-mint {
-    background: linear-gradient(rgba(0, 0, 0, 0) 30%, #1fc2a7 30%);
-  }
-}
-
-.has-bg-split-10-lightblue {
-  background-color: #4FB3D9;
-  color: black;
-}
-@media screen and (min-width: 1024px) {
-  .has-bg-split-10-lightblue {
-    background: linear-gradient(rgba(0, 0, 0, 0) 10%, #4FB3D9 10%);
-  }
-}
-
-.has-bg-split-20-lightblue {
-  background-color: #4FB3D9;
-  color: black;
-}
-@media screen and (min-width: 1024px) {
-  .has-bg-split-20-lightblue {
-    background: linear-gradient(rgba(0, 0, 0, 0) 20%, #4FB3D9 20%);
-  }
-}
-
-.has-bg-split-30-lightblue {
-  background-color: #4FB3D9;
-  color: black;
-}
-@media screen and (min-width: 1024px) {
-  .has-bg-split-30-lightblue {
-    background: linear-gradient(rgba(0, 0, 0, 0) 30%, #4FB3D9 30%);
-  }
-}
-
-.has-bg-split-10-darkblue {
-  background-color: #2D3E50;
-  color: white;
-}
-@media screen and (min-width: 1024px) {
-  .has-bg-split-10-darkblue {
-    background: linear-gradient(rgba(0, 0, 0, 0) 10%, #2D3E50 10%);
-  }
-}
-
-.has-bg-split-20-darkblue {
-  background-color: #2D3E50;
-  color: white;
-}
-@media screen and (min-width: 1024px) {
-  .has-bg-split-20-darkblue {
-    background: linear-gradient(rgba(0, 0, 0, 0) 20%, #2D3E50 20%);
-  }
-}
-
-.has-bg-split-30-darkblue {
-  background-color: #2D3E50;
-  color: white;
-}
-@media screen and (min-width: 1024px) {
-  .has-bg-split-30-darkblue {
-    background: linear-gradient(rgba(0, 0, 0, 0) 30%, #2D3E50 30%);
-  }
-}
-
-.has-bg-split-10-olive {
-  background-color: #b4ce82;
-  color: black;
-}
-@media screen and (min-width: 1024px) {
-  .has-bg-split-10-olive {
-    background: linear-gradient(rgba(0, 0, 0, 0) 10%, #b4ce82 10%);
-  }
-}
-
-.has-bg-split-20-olive {
-  background-color: #b4ce82;
-  color: black;
-}
-@media screen and (min-width: 1024px) {
-  .has-bg-split-20-olive {
-    background: linear-gradient(rgba(0, 0, 0, 0) 20%, #b4ce82 20%);
-  }
-}
-
-.has-bg-split-30-olive {
-  background-color: #b4ce82;
-  color: black;
-}
-@media screen and (min-width: 1024px) {
-  .has-bg-split-30-olive {
-    background: linear-gradient(rgba(0, 0, 0, 0) 30%, #b4ce82 30%);
-  }
-}
-
 .has-rounded-border {
   border-radius: 6px;
 }
@@ -2059,7 +804,7 @@ h6 {
   padding: 0;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -2071,7 +816,7 @@ h6 {
 
 ul {
   list-style: none;
-}
+} */
 
 button,
 input,
@@ -2680,12 +1425,12 @@ a.box:active {
   color: #fff;
 }
 .button.is-primary {
-  background-color: #00d1b2;
+  background-color: ${nfdiMint};
   border-color: transparent;
   color: #fff;
 }
 .button.is-primary:hover, .button.is-primary.is-hovered {
-  background-color: #00c4a7;
+  background-color: ${nfdiMintDarker20};
   border-color: transparent;
   color: #fff;
 }
@@ -2700,15 +1445,15 @@ a.box:active {
   background-color: #00b89c;
   border-color: transparent;
   color: #fff;
-}
+} 
 .button.is-primary[disabled], fieldset[disabled] .button.is-primary {
-  background-color: #00d1b2;
+  background-color: ${nfdiMint};
   border-color: transparent;
   box-shadow: none;
 }
 .button.is-primary.is-inverted {
   background-color: #fff;
-  color: #00d1b2;
+  color: ${nfdiMint};
 }
 .button.is-primary.is-inverted:hover, .button.is-primary.is-inverted.is-hovered {
   background-color: #f2f2f2;
@@ -2717,32 +1462,32 @@ a.box:active {
   background-color: #fff;
   border-color: transparent;
   box-shadow: none;
-  color: #00d1b2;
+  color: ${nfdiMint};
 }
 .button.is-primary.is-loading::after {
   border-color: transparent transparent #fff #fff !important;
 }
 .button.is-primary.is-outlined {
   background-color: transparent;
-  border-color: #00d1b2;
-  color: #00d1b2;
+  border-color: ${nfdiMint};
+  color: ${nfdiMint};
 }
 .button.is-primary.is-outlined:hover, .button.is-primary.is-outlined.is-hovered, .button.is-primary.is-outlined:focus, .button.is-primary.is-outlined.is-focused {
-  background-color: #00d1b2;
-  border-color: #00d1b2;
+  background-color: ${nfdiMint};
+  border-color: ${nfdiMint};
   color: #fff;
 }
 .button.is-primary.is-outlined.is-loading::after {
-  border-color: transparent transparent #00d1b2 #00d1b2 !important;
+  border-color: transparent transparent ${nfdiMint} ${nfdiMint} !important;
 }
 .button.is-primary.is-outlined.is-loading:hover::after, .button.is-primary.is-outlined.is-loading.is-hovered::after, .button.is-primary.is-outlined.is-loading:focus::after, .button.is-primary.is-outlined.is-loading.is-focused::after {
   border-color: transparent transparent #fff #fff !important;
 }
 .button.is-primary.is-outlined[disabled], fieldset[disabled] .button.is-primary.is-outlined {
   background-color: transparent;
-  border-color: #00d1b2;
+  border-color: ${nfdiMint};
   box-shadow: none;
-  color: #00d1b2;
+  color: ${nfdiMint};
 }
 .button.is-primary.is-inverted.is-outlined {
   background-color: transparent;
@@ -2751,10 +1496,10 @@ a.box:active {
 }
 .button.is-primary.is-inverted.is-outlined:hover, .button.is-primary.is-inverted.is-outlined.is-hovered, .button.is-primary.is-inverted.is-outlined:focus, .button.is-primary.is-inverted.is-outlined.is-focused {
   background-color: #fff;
-  color: #00d1b2;
+  color: ${nfdiMint};
 }
 .button.is-primary.is-inverted.is-outlined.is-loading:hover::after, .button.is-primary.is-inverted.is-outlined.is-loading.is-hovered::after, .button.is-primary.is-inverted.is-outlined.is-loading:focus::after, .button.is-primary.is-inverted.is-outlined.is-loading.is-focused::after {
-  border-color: transparent transparent #00d1b2 #00d1b2 !important;
+  border-color: transparent transparent ${nfdiMint} ${nfdiMint} !important;
 }
 .button.is-primary.is-inverted.is-outlined[disabled], fieldset[disabled] .button.is-primary.is-inverted.is-outlined {
   background-color: transparent;
@@ -3782,7 +2527,7 @@ div.icon-text {
   color: #fff;
 }
 .notification.is-primary {
-  background-color: #00d1b2;
+  background-color: ${nfdiMint};
   color: #fff;
 }
 .notification.is-primary.is-light {
@@ -3903,16 +2648,16 @@ div.icon-text {
   background-image: linear-gradient(to right, #363636 30%, #ededed 30%);
 }
 .progress.is-primary::-webkit-progress-value {
-  background-color: #00d1b2;
+  background-color: ${nfdiMint};
 }
 .progress.is-primary::-moz-progress-bar {
-  background-color: #00d1b2;
+  background-color: ${nfdiMint};
 }
 .progress.is-primary::-ms-fill {
-  background-color: #00d1b2;
+  background-color: ${nfdiMint};
 }
 .progress.is-primary:indeterminate {
-  background-image: linear-gradient(to right, #00d1b2 30%, #ededed 30%);
+  background-image: linear-gradient(to right, ${nfdiMint} 30%, #ededed 30%);
 }
 .progress.is-link::-webkit-progress-value {
   background-color: #4FB3D9;
@@ -4049,8 +2794,8 @@ div.icon-text {
 }
 .table td.is-primary,
 .table th.is-primary {
-  background-color: #00d1b2;
-  border-color: #00d1b2;
+  background-color: ${nfdiMint};
+  border-color: ${nfdiMint};
   color: #fff;
 }
 .table td.is-link,
@@ -4090,7 +2835,7 @@ div.icon-text {
 }
 .table td.is-selected,
 .table th.is-selected {
-  background-color: #00d1b2;
+  background-color: ${nfdiMint};
   color: #fff;
 }
 .table td.is-selected a,
@@ -4110,7 +2855,7 @@ div.icon-text {
   text-align: inherit;
 }
 .table tr.is-selected {
-  background-color: #00d1b2;
+  background-color: ${nfdiMint};
   color: #fff;
 }
 .table tr.is-selected a,
@@ -4268,7 +3013,7 @@ div.icon-text {
   color: #fff;
 }
 .tag:not(body).is-primary {
-  background-color: #00d1b2;
+  background-color: ${nfdiMint};
   color: #fff;
 }
 .tag:not(body).is-primary.is-light {
@@ -4582,7 +3327,7 @@ a.tag:hover {
   box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25);
 }
 .is-primary.textarea, .is-primary.input {
-  border-color: #00d1b2;
+  border-color: ${nfdiMint};
 }
 .is-primary.textarea:focus, .is-primary.input:focus, .is-primary.is-focused.textarea, .is-primary.is-focused.input, .is-primary.textarea:active, .is-primary.input:active, .is-primary.is-active.textarea, .is-primary.is-active.input {
   box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25);
@@ -4783,10 +3528,10 @@ a.tag:hover {
   box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25);
 }
 .select.is-primary:not(:hover)::after {
-  border-color: #00d1b2;
+  border-color: ${nfdiMint};
 }
 .select.is-primary select {
-  border-color: #00d1b2;
+  border-color: ${nfdiMint};
 }
 .select.is-primary select:hover, .select.is-primary select.is-hovered {
   border-color: #00b89c;
@@ -4977,12 +3722,12 @@ a.tag:hover {
   color: #fff;
 }
 .file.is-primary .file-cta {
-  background-color: #00d1b2;
+  background-color: ${nfdiMint};
   border-color: transparent;
   color: #fff;
 }
 .file.is-primary:hover .file-cta, .file.is-primary.is-hovered .file-cta {
-  background-color: #00c4a7;
+  background-color: ${nfdiMintDarker20};
   border-color: transparent;
   color: #fff;
 }
@@ -5289,7 +4034,7 @@ a.tag:hover {
   color: #363636;
 }
 .help.is-primary {
-  color: #00d1b2;
+  color: ${nfdiMint};
 }
 .help.is-link {
   color: #4FB3D9;
@@ -5651,11 +4396,21 @@ a.tag:hover {
 }
 
 .card-header-icon {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  padding: 0.75rem 1rem;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: 0 0;
+    border: none;
+    color: currentColor;
+    font-family: inherit;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: .75rem 1rem;
 }
 
 .card-image {
@@ -6043,11 +4798,11 @@ button.dropdown-item.is-active {
   background-color: #ebfffc;
 }
 .message.is-primary .message-header {
-  background-color: #00d1b2;
+  background-color: ${nfdiMint};
   color: #fff;
 }
 .message.is-primary .message-body {
-  border-color: #00d1b2;
+  border-color: ${nfdiMint};
   color: #00947e;
 }
 .message.is-link {
@@ -6470,7 +5225,7 @@ button.dropdown-item.is-active {
   }
 }
 .navbar.is-primary {
-  background-color: #00d1b2;
+  background-color: ${nfdiMint};
   color: #fff;
 }
 .navbar.is-primary .navbar-brand > .navbar-item,
@@ -6521,7 +5276,7 @@ button.dropdown-item.is-active {
     color: #fff;
   }
   .navbar.is-primary .navbar-dropdown a.navbar-item.is-active {
-    background-color: #00d1b2;
+    background-color: ${nfdiMint};
     color: #fff;
   }
 }
@@ -7454,14 +6209,14 @@ body.has-spaced-navbar-fixed-bottom {
   color: #363636;
 }
 .panel.is-primary .panel-heading {
-  background-color: #00d1b2;
+  background-color: ${nfdiMint};
   color: #fff;
 }
 .panel.is-primary .panel-tabs a.is-active {
-  border-bottom-color: #00d1b2;
+  border-bottom-color: ${nfdiMint};
 }
 .panel.is-primary .panel-block.is-active .panel-icon {
-  color: #00d1b2;
+  color: ${nfdiMint};
 }
 .panel.is-link .panel-heading {
   background-color: #4FB3D9;
@@ -9525,7 +8280,7 @@ a.has-text-dark:hover, a.has-text-dark:focus {
 }
 
 .has-text-primary {
-  color: #00d1b2 !important;
+  color: ${nfdiMint} !important;
 }
 
 a.has-text-primary:hover, a.has-text-primary:focus {
@@ -9533,7 +8288,7 @@ a.has-text-primary:hover, a.has-text-primary:focus {
 }
 
 .has-background-primary {
-  background-color: #00d1b2 !important;
+  background-color: ${nfdiMint} !important;
 }
 
 .has-text-primary-light {
@@ -11561,7 +10316,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   }
 }
 .hero.is-primary {
-  background-color: #00d1b2;
+  background-color: ${nfdiMint};
   color: #fff;
 }
 .hero.is-primary a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
@@ -11580,7 +10335,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 @media screen and (max-width: 1023px) {
   .hero.is-primary .navbar-menu {
-    background-color: #00d1b2;
+    background-color: ${nfdiMint};
   }
 }
 .hero.is-primary .navbar-item,
@@ -11612,14 +10367,14 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .hero.is-primary .tabs.is-boxed li.is-active a, .hero.is-primary .tabs.is-boxed li.is-active a:hover, .hero.is-primary .tabs.is-toggle li.is-active a, .hero.is-primary .tabs.is-toggle li.is-active a:hover {
   background-color: #fff;
   border-color: #fff;
-  color: #00d1b2;
+  color: ${nfdiMint};
 }
 .hero.is-primary.is-bold {
-  background-image: linear-gradient(141deg, #009e6c 0%, #00d1b2 71%, #00e7eb 100%);
+  background-image: linear-gradient(141deg, #009e6c 0%, ${nfdiMint} 71%, #00e7eb 100%);
 }
 @media screen and (max-width: 768px) {
   .hero.is-primary.is-bold .navbar-menu {
-    background-image: linear-gradient(141deg, #009e6c 0%, #00d1b2 71%, #00e7eb 100%);
+    background-image: linear-gradient(141deg, #009e6c 0%, ${nfdiMint} 71%, #00e7eb 100%);
   }
 }
 .hero.is-link {
@@ -12054,17 +10809,17 @@ body {
 }
 
 `;
-let mainPageBaseUrl = "https://nfdi4plants.org";
-let gitlabBaseUrl = "https://git.nfdi4plants.org/";
-var __defProp$1 = Object.defineProperty;
-var __getOwnPropDesc$1 = Object.getOwnPropertyDescriptor;
-var __decorateClass$1 = (decorators, target, key, kind) => {
-  var result = kind > 1 ? void 0 : kind ? __getOwnPropDesc$1(target, key) : target;
+const mainPageBaseUrl = "https://nfdi4plants.org/";
+const gitlabBaseUrl = "https://git.nfdi4plants.org/";
+var __defProp$8 = Object.defineProperty;
+var __getOwnPropDesc$8 = Object.getOwnPropertyDescriptor;
+var __decorateClass$8 = (decorators, target, key, kind) => {
+  var result = kind > 1 ? void 0 : kind ? __getOwnPropDesc$8(target, key) : target;
   for (var i = decorators.length - 1, decorator; i >= 0; i--)
     if (decorator = decorators[i])
       result = (kind ? decorator(target, key, result) : decorator(result)) || result;
   if (kind && result)
-    __defProp$1(target, key, result);
+    __defProp$8(target, key, result);
   return result;
 };
 let Navbar = class extends s {
@@ -12075,7 +10830,7 @@ let Navbar = class extends s {
   }
   render() {
     return $`
-      <nav class="navbar is-fixed-top has-bg-darkblue">
+      <nav class="navbar is-fixed-top variable-colors" style="border-bottom: 1px solid">
         <div class="navbar-brand">
           <a class="navbar-item" href="${mainPageBaseUrl}">
             <img src="https://nfdi4plants.org/images/logo.svg" alt="Logo" width="32" height="32">
@@ -12086,52 +10841,52 @@ let Navbar = class extends s {
             <span aria-hidden="true"></span>
           </div>
         </div>
-        <div id="navMenu" class=${this.navbarIsActive ? "navbar-menu has-bg-darkblue is-active" : "navbar-menu has-bg-darkblue"}>
+        <div id="navMenu" class=${this.navbarIsActive ? "navbar-menu is-active" : "navbar-menu"}>
           <div class="navbar-start is-justify-content-center is-flex-grow-1">
-            <a class=${this.url == mainPageBaseUrl ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}">
-              Home
-            </a>
               <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
-                Learn More
+                <a class="navbar-link" href="${mainPageBaseUrl}">
+                Home
                 </a>
-                <div class="navbar-dropdown has-bg-darkblue is-active smooth-hover">
-                  <a class=${this.url == "${mainPageBaseUrl}/content/learn-more/our-mission.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}/content/learn-more/our-mission.html">
+                <div class="navbar-dropdown is-active smooth-hover">
+                  <a class=${this.url == "${mainPageBaseUrl}content/learn-more/our-mission.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/learn-more/our-mission.html">
                     Our Mission
                   </a>
-                  <a class=${this.url == "${mainPageBaseUrl}/content/learn-more/the-community.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}/content/learn-more/the-community.html">
+                  <a class=${this.url == "${mainPageBaseUrl}content/learn-more/the-community.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/learn-more/the-community.html">
                     The Community
                   </a>
-                  <a class=${this.url == "${mainPageBaseUrl}/content/learn-more/annotated-research-context.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}/content/learn-more/annotated-research-context.html">
+                  <a class=${this.url == "${mainPageBaseUrl}content/learn-more/annotated-research-context.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/learn-more/annotated-research-context.html">
                     Annotated Research Context
                   </a>
-                  <a class=${this.url == "${mainPageBaseUrl}/content/service.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}/content/service.html">
+                  <a class=${this.url == "${mainPageBaseUrl}content/service.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/service.html">
                     Service
                   </a>
-                  <hr class="navbar-divider">
-                  <!-- http://www.email-obfuscator.com -->
-                  <a class="navbar-item" href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">
-                    <span style="margin-right: 1rem">Something missing? Write us!</span> 
-                    <span style="float: right">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" aria-hidden="true" focusable="false" viewBox="0 0 512 512" >
-                        <path fill="currentColor" d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/>
-                      </svg>
-                    </span>
+                  <a class=${this.url == "${mainPageBaseUrl}content/about.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/about.html">
+                    Consortium
                   </a>
                 </div>
               </div>
-            <a class=${this.url == "${mainPageBaseUrl}/news.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}/news.html">
+            <a class=${this.url == "${mainPageBaseUrl}news.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}news.html">
               News
             </a>
-            <a class=${this.url == "${mainPageBaseUrl}/content/about.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}/content/about.html">
-              About
-            </a>
-            <a class=${this.url == "${mainPageBaseUrl}/content/jobs.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}/content/jobs.html">
+            <a class=${this.url == "${mainPageBaseUrl}content/jobs.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/jobs.html">
               Jobs
             </a>
             <a class=${this.url == gitlabBaseUrl ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${gitlabBaseUrl}">
               DataHUB
             </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="${mainPageBaseUrl}">
+                Knowledge Base
+                </a>
+                <div class="navbar-dropdown is-active smooth-hover">
+                  <a class=${this.url == "${mainPageBaseUrl}content/docs/research-data-management.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/docs/research-data-management.html">
+                    Fundamentals
+                  </a>
+                  <a class=${this.url == "${mainPageBaseUrl}content/docs/annotated-research-context.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/docs/annotated-research-context.html">
+                    Integration within DataPlANT
+                  </a>
+                </div>
+              </div>
           </div>
           <div class="navbar-end">
             <a class="navbar-item" href="https://helpdesk.nfdi4plants.org/" title="Helpdesk">
@@ -12145,7 +10900,7 @@ let Navbar = class extends s {
                 <path fill="currentColor" d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/>
               </svg>
             </a>
-            <p class="navbar-item is-lightblue">
+            <p id="navbar-v-divide" class="navbar-item is-lightblue">
               |
             </p>
             <a class="navbar-item" href="https://twitter.com/nfdi4plants" title="Twitter">
@@ -12163,6 +10918,7 @@ let Navbar = class extends s {
               <svg xmlns="http://www.w3.org/2000/svg" class="icon" aria-hidden="true" focusable="false" viewBox="0 0 576 512">
                 <path fill="currentColor" d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"/>
               </svg>
+            </a>
             <a class="navbar-item" href="https://zenodo.org/communities/nfdi4plants?page=1&amp;size=20" style="font-weight: bold;" title="Zenodo">
               Z
             </a>
@@ -12178,46 +10934,61 @@ let Navbar = class extends s {
 Navbar.styles = [
   bulmaStyles,
   r$2`
-      :host {
-        position: fixed;
-        z-index: 30
-      }
+        :host {
+            position: fixed;
+            z-index: 30;
+            width: 100%;
+        }
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -.125em;
+        }
+        .variable-colors, .navbar-item, .navbar-link, .navbar-dropdown {
+            background-color: var(--element-background-color, ${nfdiDarkblue});
+            color: var(--element-text-color, white);
+            border-color: var(--element-text-color, white);
+        }
+        .navbar-divider {
+            background-color: var(--element-text-color, white);
+        }
 
-      .icon {
-        width: 1em;
-        height: 1em;
-        vertical-align: -.125em;
-    }`
+        @media only screen and (max-width: 1023px) {
+            #navbar-v-divide {
+                display: none
+            }
+        }
+    `
 ];
-__decorateClass$1([
-  e({ type: Boolean })
+__decorateClass$8([
+  e$2({ type: Boolean })
 ], Navbar.prototype, "navbarIsActive", 2);
-__decorateClass$1([
-  e()
+__decorateClass$8([
+  e$2()
 ], Navbar.prototype, "url", 2);
-Navbar = __decorateClass$1([
+Navbar = __decorateClass$8([
   n$1("nfdi-navbar")
 ], Navbar);
-var __defProp = Object.defineProperty;
-var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-var __decorateClass = (decorators, target, key, kind) => {
-  var result = kind > 1 ? void 0 : kind ? __getOwnPropDesc(target, key) : target;
+var __defProp$7 = Object.defineProperty;
+var __getOwnPropDesc$7 = Object.getOwnPropertyDescriptor;
+var __decorateClass$7 = (decorators, target, key, kind) => {
+  var result = kind > 1 ? void 0 : kind ? __getOwnPropDesc$7(target, key) : target;
   for (var i = decorators.length - 1, decorator; i >= 0; i--)
     if (decorator = decorators[i])
       result = (kind ? decorator(target, key, result) : decorator(result)) || result;
   if (kind && result)
-    __defProp(target, key, result);
+    __defProp$7(target, key, result);
   return result;
 };
 let Footer = class extends s {
   render() {
     return $`
-            <footer class="footer has-bg-darkblue-lighter-20">
+            <footer class="footer variable-colors">
                 <div class="container">
                 <div class="columns">
                     <div class="column is-4 m-4">
                     <div class="block">
-                        <h3 class="subtitle is-white">
+                        <h3 class="subtitle headerColor">
                         DataPLANT - Democratization of plant research made easy.
                         </h3>
                     </div>
@@ -12235,24 +11006,24 @@ let Footer = class extends s {
                         </p>
                     </div>
                     <div class="block">
-                        <h3 class="subtitle is-white">
+                        <h3 class="subtitle headerColor">
                         Legal
                         </h3>
                     </div>
                     <div class="block">
-                        <a href="${mainPageBaseUrl}/content/imprint.html">
+                        <a href="${mainPageBaseUrl}content/imprint.html">
                         Imprint
                         </a>
                     </div>
                     <div class="block">
-                        <a href="${mainPageBaseUrl}/content/privacy.html">
+                        <a href="${mainPageBaseUrl}content/privacy.html">
                         Privacy
                         </a>
                     </div>
                     </div>
                     <div class="column is-4 m-4">
                     <div class="block">
-                        <h3 class="subtitle is-white">
+                        <h3 class="subtitle headerColor">
                         Navigation
                         </h3>
                     </div>
@@ -12266,28 +11037,14 @@ let Footer = class extends s {
                         </div>
                         <div class="block">
                         <li>
-                            <a href="${mainPageBaseUrl}/news.html">
+                            <a href="${mainPageBaseUrl}news.html">
                             News
                             </a>
                         </li>
                         </div>
                         <div class="block">
                         <li>
-                            <a href="${mainPageBaseUrl}/content/service.html">
-                            Service
-                            </a>
-                        </li>
-                        </div>
-                        <div class="block">
-                        <li>
-                            <a href="${mainPageBaseUrl}/content/about.html">
-                            About
-                            </a>
-                        </li>
-                        </div>
-                        <div class="block">
-                        <li>
-                            <a href="${mainPageBaseUrl}/content/jobs.html">
+                            <a href="${mainPageBaseUrl}content/jobs.html">
                             Jobs
                             </a>
                         </li>
@@ -12299,11 +11056,18 @@ let Footer = class extends s {
                             </a>
                         </li>
                         </div>
+                        <div class="block">
+                        <li>
+                            <a href="${mainPageBaseUrl}content/docs/research-data-management.html">
+                            Knowledge Base
+                            </a>
+                        </li>
+                        </div>
                     </ul>
                     </div>
                     <div class="column is-4 m-4">
                     <div class="block">
-                        <h3 class="subtitle is-white">
+                        <h3 class="subtitle headerColor">
                         Help
                         </h3>
                     </div>
@@ -12325,7 +11089,7 @@ let Footer = class extends s {
                         </a>
                     </div>
                     <div class="block">
-                        <h3 class="subtitle is-white">
+                        <h3 class="subtitle headerColor">
                         Social
                         </h3>
                     </div>
@@ -12363,13 +11127,1165 @@ let Footer = class extends s {
 Footer.styles = [
   bulmaStyles,
   r$2`
+            :host{
+                display: block;
+                clear: both;
+                overflow: auto
+            }
+            
             .icon {
                 width: 1em;
                 height: 1em;
                 vertical-align: -.125em;
             }
+
+            .variable-colors {
+                background-color: var(--element-background-color, ${nfdiDarkblueLighter20});
+                color: var(--element-text-color, ${nfdiWhite});
+                border-color: var(--element-text-color, ${nfdiWhite})
+            }
+
+            a {
+                color: var(--link-color, ${nfdiLightblue})
+            }
+
+            a:hover {
+                color:var(--link-hover-color, ${nfdiBlack})
+            }
+
+            .headerColor {
+                color: var(--header-color, ${nfdiWhite});
+            }
         `
 ];
-Footer = __decorateClass([
+Footer = __decorateClass$7([
   n$1("nfdi-footer")
 ], Footer);
+var __defProp$6 = Object.defineProperty;
+var __getOwnPropDesc$6 = Object.getOwnPropertyDescriptor;
+var __decorateClass$6 = (decorators, target, key, kind) => {
+  var result = kind > 1 ? void 0 : kind ? __getOwnPropDesc$6(target, key) : target;
+  for (var i = decorators.length - 1, decorator; i >= 0; i--)
+    if (decorator = decorators[i])
+      result = (kind ? decorator(target, key, result) : decorator(result)) || result;
+  if (kind && result)
+    __defProp$6(target, key, result);
+  return result;
+};
+let Sidebar = class extends s {
+  constructor() {
+    super(...arguments);
+    this.navbarIsActive = false;
+  }
+  render() {
+    return $`
+            <footer class="fixed-footer">
+                <button class="button is-ghost" @click=${this._toggleSidebar}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" class="icon" height=16 width=16><path fill="currentcolor" d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"/></svg>
+                </button>
+            </footer>
+            <div class="main">
+                <div class="wrapper">
+                    <div class=${this.navbarIsActive ? "inner-wrapper is-active" : "inner-wrapper"}>
+                        <button class="button is-ghost close-sidebar-button" @click=${this._toggleSidebar}>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon" height=16 width=16><path fill="currentcolor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+                        </button>
+                        <slot></slot>
+                    </div>    
+                </div>
+            </div>
+        `;
+  }
+  _toggleSidebar() {
+    this.navbarIsActive = !this.navbarIsActive;
+  }
+};
+Sidebar.styles = [
+  bulmaStyles,
+  r$2`
+            .inner-wrapper {
+                position: sticky;
+                top: 71px;
+                max-height: 90%;
+                scrollbar-color: var(--element-background-color, ${nfdiWhite}) var(--accent-text-color, ${nfdiBlack});
+                background-color: var(--sidebar-background-color, transparent);
+                padding: 1rem;
+                border-radius: 10px;
+                overscroll-behavior: contain;
+                overflow-y: auto;
+                width: 300px;
+            }
+
+            .inner-wrapper::-webkit-scrollbar {
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                width: 5px;
+                height: 0px;
+            }
+
+            .inner-wrapper::-webkit-scrollbar-track { /* Background */
+                background-color: var(--element-background-color, ${nfdiWhite});
+            }
+
+            .inner-wrapper::-webkit-scrollbar-thumb { /* Foreground */
+                background-color: var(--accent-text-color, ${nfdiBlack});
+            }
+
+            ::slotted(*) {
+                margin-bottom: 1rem;
+                display: block;
+                background: none;
+                color: var(--element-text-color, ${nfdiBlack});
+                border-color: var(--element-text-color, ${nfdiBlack});
+                overflow: hidden
+            }
+            
+            .fixed-footer {
+                position: fixed;
+                display: none;
+                left: 0;
+                bottom: 0;
+                z-index: 10000;
+                width: 100%;
+                border-top: .5px solid var(--element-text-color, ${nfdiBlack});
+                background-color: var(--element-background-color, ${nfdiDarkblue});
+                justify-content: center;
+                padding: .5rem;
+            }
+
+            .close-sidebar-button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 10001;
+                display: none;
+            }
+
+            @media only screen and (min-width: 1024px) {
+                .main {
+                    display: grid; 
+                    height: 100%;
+                    grid-template-columns: 1fr; grid-template-rows: 1fr;
+                }
+
+                .wrapper {
+                    display: inline-block;
+                    grid-column: 1 / span 1; 
+                    grid-row: 1 / span 1;
+                }
+            }
+
+            @media only screen and (max-width: 1023px) {
+                .inner-wrapper {
+                    position: fixed;
+                    height: 100%;
+                    top: 0;
+                    left: -320px;
+                    border-right: .5px solid var(--element-text-color, ${nfdiBlack});
+                    border-bottom: .5px solid var(--element-text-color, ${nfdiBlack});
+                    border-top: .5px solid var(--element-text-color, ${nfdiBlack});
+                    background-color: var(--sidebar-background-color, ${nfdiWhite});
+                    border-radius: 0;
+                    z-index: 10000;
+                    width: 320px;
+                    transition: left .5s;
+                    padding: 1rem;
+                    max-height: 100%;
+                    max-width: 100%;
+                    overflow: scroll;
+                }
+                
+                .close-sidebar-button {
+                    display: block;
+                }
+
+                .is-active {
+                    left: 0
+                }
+
+                :host {
+                    display: inline
+                }
+
+                .fixed-footer {
+                    display: flex
+                }
+            }
+        `
+];
+__decorateClass$6([
+  e$2({ type: Boolean })
+], Sidebar.prototype, "navbarIsActive", 2);
+Sidebar = __decorateClass$6([
+  n$1("nfdi-sidebar")
+], Sidebar);
+var __defProp$5 = Object.defineProperty;
+var __getOwnPropDesc$5 = Object.getOwnPropertyDescriptor;
+var __decorateClass$5 = (decorators, target, key, kind) => {
+  var result = kind > 1 ? void 0 : kind ? __getOwnPropDesc$5(target, key) : target;
+  for (var i = decorators.length - 1, decorator; i >= 0; i--)
+    if (decorator = decorators[i])
+      result = (kind ? decorator(target, key, result) : decorator(result)) || result;
+  if (kind && result)
+    __defProp$5(target, key, result);
+  return result;
+};
+let Content = class extends s {
+  render() {
+    return $`
+            <div class="box"><slot></slot></div>
+        `;
+  }
+};
+Content.styles = [
+  bulmaStyles,
+  r$2`
+            ::slotted(p) {
+                text-align: justify;
+            }
+
+            ::slotted(blockquote) {
+                text-align: justify;
+                background-color: var(--element-background-color, ${nfdiWhite}) !important;
+                border-color: var(--element-text-color, ${nfdiBlack});
+            }
+
+            .box {
+                padding: 1.25rem 2rem;
+                background-color: var(--element-background-color, ${nfdiWhite});
+                color: var(--element-text-color, ${nfdiBlack}) !important;
+                border-color: var(--element-text-color, ${nfdiBlack});
+                border: 1px solid;
+                /* box-shadow: unset */
+            }
+
+            ::slotted(nfdi-h1), ::slotted(nfdi-h2), ::slotted(nfdi-h3), ::slotted(nfdi-h4), ::slotted(nfdi-h5), ::slotted(nfdi-h6) {
+                color: var(--header-color, ${nfdiBlack}) !important;
+            }
+
+            ::slotted(*) {
+                min-width: 0 !important;
+            }
+
+            @media only screen and (max-width: 1023px) {
+                .box {
+                   border: none;
+                   border-radius: 0;
+                }
+            }
+
+            @media only screen and (max-width: 599px) {
+                .box {  
+                    border-radius: 0;
+                    padding: 1rem;
+                    border: unset
+                }
+            }
+
+        `
+];
+Content = __decorateClass$5([
+  n$1("nfdi-content")
+], Content);
+var __defProp$4 = Object.defineProperty;
+var __getOwnPropDesc$4 = Object.getOwnPropertyDescriptor;
+var __decorateClass$4 = (decorators, target, key, kind) => {
+  var result = kind > 1 ? void 0 : kind ? __getOwnPropDesc$4(target, key) : target;
+  for (var i = decorators.length - 1, decorator; i >= 0; i--)
+    if (decorator = decorators[i])
+      result = (kind ? decorator(target, key, result) : decorator(result)) || result;
+  if (kind && result)
+    __defProp$4(target, key, result);
+  return result;
+};
+const sidebar = $`
+    <div class="column is-narrow sidebar-column">
+        <nfdi-sidebar>
+            <slot name="sidebar"></slot>
+        </nfdi-sidebar>
+    </div>
+`;
+let Body = class extends s {
+  constructor() {
+    super(...arguments);
+    this.hasSidebar = false;
+  }
+  render() {
+    return $`
+        <div class="variable-colors">
+            <div class="container" style="padding: 2vh 0">
+                <div class="columns">
+                    ${this.hasSidebar ? sidebar : $``}
+                    <div class="column">
+                        <nfdi-content>  
+                            <slot></slot>
+                        </nfdi-content>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
+  }
+};
+Body.styles = [
+  bulmaStyles,
+  r$2`
+            .variable-colors {
+                background-color: var(--outside-background-color, ${nfdiOliveLighter80});
+                color: var(--element-text-color, ${nfdiBlack});
+                border-color: var(--element-text-color, ${nfdiBlack})
+            }
+
+            @media screen and (min-width: 1216px) {
+                .container:not(.is-max-desktop) {
+                    max-width: 1152px !important;
+                }
+            }
+
+            @media only screen and (max-width: 1023px) {
+                .sidebar-column {
+                    padding: 0
+                }
+
+                .columns {
+                    padding: 0
+                }
+
+                .variable-colors {
+                    border: none
+                }
+
+                .container {
+                    padding: 0 !important;
+                    border-radius: 0 !important
+                }
+            }
+        `
+];
+__decorateClass$4([
+  e$2({ type: Boolean })
+], Body.prototype, "hasSidebar", 2);
+Body = __decorateClass$4([
+  n$1("nfdi-body")
+], Body);
+var __defProp$3 = Object.defineProperty;
+var __getOwnPropDesc$3 = Object.getOwnPropertyDescriptor;
+var __decorateClass$3 = (decorators, target, key, kind) => {
+  var result = kind > 1 ? void 0 : kind ? __getOwnPropDesc$3(target, key) : target;
+  for (var i = decorators.length - 1, decorator; i >= 0; i--)
+    if (decorator = decorators[i])
+      result = (kind ? decorator(target, key, result) : decorator(result)) || result;
+  if (kind && result)
+    __defProp$3(target, key, result);
+  return result;
+};
+const headerstyles = r$2`
+
+    :host {
+        scroll-margin-top: 100px
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        display: block; 
+        width: 100%;
+        line-height: 1.2;
+        padding: 0.5rem 0rem 0.75rem;
+    }
+
+    h1:hover .anchor, h2:hover .anchor, h3:hover .anchor, h4:hover .anchor, h5:hover .anchor, h6:hover .anchor {
+        visibility: visible;
+    }
+
+    .anchor {
+        float: left;
+        padding-right: 4px;
+        margin-left: -20px;
+        line-height: 1;
+        visibility: hidden;
+    }
+
+    .anchor-icon {
+        display: inline-block;
+        overflow: visible !important;
+        vertical-align: middle;
+        text-size-adjust: 100%;
+        width: 16px;
+        height: 16px;
+    }
+
+    a {
+        color: var(--link-color, ${nfdiLightblue})
+    }
+
+    a:hover {
+        color:var(--link-hover-color, ${nfdiBlack})
+    }
+
+`;
+const headerTemplate = (h, textId, text) => l`
+    <${h}>
+        <a href=${textId} class="anchor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="anchor-icon" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" fill="currentColor" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"/>
+            </svg>
+        </a>
+        ${o(text)}
+    </${h}>
+`;
+function toInDOMHref(href) {
+  if (href !== void 0) {
+    return "#" + href;
+  }
+  {
+    return "#";
+  }
+}
+const removeSpecialCharRegex = /[^a-zA-Z0-9\s]/g;
+function createInPageLinkText(innerHtml) {
+  const lightDOMText = innerHtml.trim();
+  return lightDOMText.toLowerCase().replace(removeSpecialCharRegex, "").replace(/\s/g, "-");
+}
+let H1 = class extends s {
+  render() {
+    return headerTemplate(o$1("h1"), toInDOMHref(this.textId), this.text);
+  }
+  connectedCallback() {
+    super.connectedCallback();
+    setTimeout(() => {
+      let lightDOMText = this.innerHTML.trim();
+      this.text = lightDOMText;
+      let id = createInPageLinkText(lightDOMText);
+      this.id = id;
+      this.textId = id;
+    });
+  }
+};
+H1.styles = [
+  bulmaStyles,
+  headerstyles
+];
+__decorateClass$3([
+  e$2()
+], H1.prototype, "text", 2);
+__decorateClass$3([
+  e$2()
+], H1.prototype, "textId", 2);
+H1 = __decorateClass$3([
+  n$1("nfdi-h1")
+], H1);
+let H2 = class extends s {
+  render() {
+    return headerTemplate(o$1("h2"), toInDOMHref(this.textId), this.text);
+  }
+  connectedCallback() {
+    super.connectedCallback();
+    setTimeout(() => {
+      let lightDOMText = this.innerHTML.trim();
+      this.text = lightDOMText;
+      let id = lightDOMText.toLowerCase().replace(removeSpecialCharRegex, "").replace(/\s/g, "-");
+      this.id = id;
+      this.textId = id;
+    });
+  }
+};
+H2.styles = [
+  bulmaStyles,
+  headerstyles
+];
+__decorateClass$3([
+  e$2()
+], H2.prototype, "text", 2);
+__decorateClass$3([
+  e$2()
+], H2.prototype, "textId", 2);
+H2 = __decorateClass$3([
+  n$1("nfdi-h2")
+], H2);
+let H3 = class extends s {
+  render() {
+    return headerTemplate(o$1("h3"), toInDOMHref(this.textId), this.text);
+  }
+  connectedCallback() {
+    super.connectedCallback();
+    setTimeout(() => {
+      let lightDOMText = this.innerHTML.trim();
+      this.text = lightDOMText;
+      let id = lightDOMText.toLowerCase().replace(removeSpecialCharRegex, "").replace(/\s/g, "-");
+      this.id = id;
+      this.textId = id;
+    });
+  }
+};
+H3.styles = [
+  bulmaStyles,
+  headerstyles
+];
+__decorateClass$3([
+  e$2()
+], H3.prototype, "text", 2);
+__decorateClass$3([
+  e$2()
+], H3.prototype, "textId", 2);
+H3 = __decorateClass$3([
+  n$1("nfdi-h3")
+], H3);
+let H4 = class extends s {
+  render() {
+    return headerTemplate(o$1("h4"), toInDOMHref(this.textId), this.text);
+  }
+  connectedCallback() {
+    super.connectedCallback();
+    setTimeout(() => {
+      let lightDOMText = this.innerHTML.trim();
+      this.text = lightDOMText;
+      let id = lightDOMText.toLowerCase().replace(removeSpecialCharRegex, "").replace(/\s/g, "-");
+      this.id = id;
+      this.textId = id;
+    });
+  }
+};
+H4.styles = [
+  bulmaStyles,
+  headerstyles
+];
+__decorateClass$3([
+  e$2()
+], H4.prototype, "text", 2);
+__decorateClass$3([
+  e$2()
+], H4.prototype, "textId", 2);
+H4 = __decorateClass$3([
+  n$1("nfdi-h4")
+], H4);
+let H5 = class extends s {
+  render() {
+    return headerTemplate(o$1("h5"), toInDOMHref(this.textId), this.text);
+  }
+  connectedCallback() {
+    super.connectedCallback();
+    setTimeout(() => {
+      let lightDOMText = this.innerHTML.trim();
+      this.text = lightDOMText;
+      let id = lightDOMText.toLowerCase().replace(removeSpecialCharRegex, "").replace(/\s/g, "-");
+      this.id = id;
+      this.textId = id;
+    });
+  }
+};
+H5.styles = [
+  bulmaStyles,
+  headerstyles
+];
+__decorateClass$3([
+  e$2()
+], H5.prototype, "text", 2);
+__decorateClass$3([
+  e$2()
+], H5.prototype, "textId", 2);
+H5 = __decorateClass$3([
+  n$1("nfdi-h5")
+], H5);
+let H6 = class extends s {
+  render() {
+    return headerTemplate(o$1("h6"), toInDOMHref(this.textId), this.text);
+  }
+  connectedCallback() {
+    super.connectedCallback();
+    setTimeout(() => {
+      let lightDOMText = this.innerHTML.trim();
+      this.text = lightDOMText;
+      let id = lightDOMText.toLowerCase().replace(removeSpecialCharRegex, "").replace(/\s/g, "-");
+      this.id = id;
+      this.textId = id;
+    });
+  }
+};
+H6.styles = [
+  bulmaStyles,
+  headerstyles
+];
+__decorateClass$3([
+  e$2()
+], H6.prototype, "text", 2);
+__decorateClass$3([
+  e$2()
+], H6.prototype, "textId", 2);
+H6 = __decorateClass$3([
+  n$1("nfdi-h6")
+], H6);
+function isLight(color) {
+  color = color.trim();
+  const colors = {
+    aliceblue: "#F0F8FF",
+    antiquewhite: "#FAEBD7",
+    aqua: "#00FFFF",
+    aquamarine: "#7FFFD4",
+    azure: "#F0FFFF",
+    beige: "#F5F5DC",
+    bisque: "#FFE4C4",
+    black: "#000000",
+    blanchedalmond: "#FFEBCD",
+    blue: "#0000FF",
+    blueviolet: "#8A2BE2",
+    brown: "#A52A2A",
+    burlywood: "#DEB887",
+    cadetblue: "#5F9EA0",
+    chartreuse: "#7FFF00",
+    chocolate: "#D2691E",
+    coral: "#FF7F50",
+    cornflowerblue: "#6495ED",
+    cornsilk: "#FFF8DC",
+    crimson: "#DC143C",
+    cyan: "#00FFFF",
+    darkblue: "#00008B",
+    darkcyan: "#008B8B",
+    darkgoldenrod: "#B8860B",
+    darkgray: "#A9A9A9",
+    darkgrey: "#A9A9A9",
+    darkgreen: "#006400",
+    darkkhaki: "#BDB76B",
+    darkmagenta: "#8B008B",
+    darkolivegreen: "#556B2F",
+    darkorange: "#FF8C00",
+    darkorchid: "#9932CC",
+    darkred: "#8B0000",
+    darksalmon: "#E9967A",
+    darkseagreen: "#8FBC8F",
+    darkslateblue: "#483D8B",
+    darkslategray: "#2F4F4F",
+    darkslategrey: "#2F4F4F",
+    darkturquoise: "#00CED1",
+    darkviolet: "#9400D3",
+    deeppink: "#FF1493",
+    deepskyblue: "#00BFFF",
+    dimgray: "#696969",
+    dimgrey: "#696969",
+    dodgerblue: "#1E90FF",
+    firebrick: "#B22222",
+    floralwhite: "#FFFAF0",
+    forestgreen: "#228B22",
+    fuchsia: "#FF00FF",
+    gainsboro: "#DCDCDC",
+    ghostwhite: "#F8F8FF",
+    gold: "#FFD700",
+    goldenrod: "#DAA520",
+    gray: "#808080",
+    grey: "#808080",
+    green: "#008000",
+    greenyellow: "#ADFF2F",
+    honeydew: "#F0FFF0",
+    hotpink: "#FF69B4",
+    indianred: "#CD5C5C",
+    indigo: "#4B0082",
+    ivory: "#FFFFF0",
+    khaki: "#F0E68C",
+    lavender: "#E6E6FA",
+    lavenderblush: "#FFF0F5",
+    lawngreen: "#7CFC00",
+    lemonchiffon: "#FFFACD",
+    lightblue: "#ADD8E6",
+    lightcoral: "#F08080",
+    lightcyan: "#E0FFFF",
+    lightgoldenrodyellow: "#FAFAD2",
+    lightgray: "#D3D3D3",
+    lightgrey: "#D3D3D3",
+    lightgreen: "#90EE90",
+    lightpink: "#FFB6C1",
+    lightsalmon: "#FFA07A",
+    lightseagreen: "#20B2AA",
+    lightskyblue: "#87CEFA",
+    lightslategray: "#778899",
+    lightslategrey: "#778899",
+    lightsteelblue: "#B0C4DE",
+    lightyellow: "#FFFFE0",
+    lime: "#00FF00",
+    limegreen: "#32CD32",
+    linen: "#FAF0E6",
+    magenta: "#FF00FF",
+    maroon: "#800000",
+    mediumaquamarine: "#66CDAA",
+    mediumblue: "#0000CD",
+    mediumorchid: "#BA55D3",
+    mediumpurple: "#9370DB",
+    mediumseagreen: "#3CB371",
+    mediumslateblue: "#7B68EE",
+    mediumspringgreen: "#00FA9A",
+    mediumturquoise: "#48D1CC",
+    mediumvioletred: "#C71585",
+    midnightblue: "#191970",
+    mintcream: "#F5FFFA",
+    mistyrose: "#FFE4E1",
+    moccasin: "#FFE4B5",
+    navajowhite: "#FFDEAD",
+    navy: "#000080",
+    oldlace: "#FDF5E6",
+    olive: "#808000",
+    olivedrab: "#6B8E23",
+    orange: "#FFA500",
+    orangered: "#FF4500",
+    orchid: "#DA70D6",
+    palegoldenrod: "#EEE8AA",
+    palegreen: "#98FB98",
+    paleturquoise: "#AFEEEE",
+    palevioletred: "#DB7093",
+    papayawhip: "#FFEFD5",
+    peachpuff: "#FFDAB9",
+    peru: "#CD853F",
+    pink: "#FFC0CB",
+    plum: "#DDA0DD",
+    powderblue: "#B0E0E6",
+    purple: "#800080",
+    rebeccapurple: "#663399",
+    red: "#FF0000",
+    rosybrown: "#BC8F8F",
+    royalblue: "#4169E1",
+    saddlebrown: "#8B4513",
+    salmon: "#FA8072",
+    sandybrown: "#F4A460",
+    seagreen: "#2E8B57",
+    seashell: "#FFF5EE",
+    sienna: "#A0522D",
+    silver: "#C0C0C0",
+    skyblue: "#87CEEB",
+    slateblue: "#6A5ACD",
+    slategray: "#708090",
+    slategrey: "#708090",
+    snow: "#FFFAFA",
+    springgreen: "#00FF7F",
+    steelblue: "#4682B4",
+    tan: "#D2B48C",
+    teal: "#008080",
+    thistle: "#D8BFD8",
+    tomato: "#FF6347",
+    turquoise: "#40E0D0",
+    violet: "#EE82EE",
+    wheat: "#F5DEB3",
+    white: "#FFFFFF",
+    whitesmoke: "#F5F5F5",
+    yellow: "#FFFF00",
+    yellowgreen: "#9ACD32"
+  };
+  var r, g, b, hsp;
+  let c = colors[color.toLowerCase()];
+  if (color.match(/^rgb/)) {
+    color = color.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/);
+    r = color[1];
+    g = color[2];
+    b = color[3];
+  } else if (typeof c != "undefined") {
+    color = c;
+    color = +("0x" + color.slice(1).replace(color.length < 5 && /./g, "$&$&"));
+    r = color >> 16;
+    g = color >> 8 & 255;
+    b = color & 255;
+  } else {
+    color = +("0x" + color.slice(1).replace(color.length < 5 && /./g, "$&$&"));
+    r = color >> 16;
+    g = color >> 8 & 255;
+    b = color & 255;
+  }
+  hsp = Math.sqrt(0.299 * (r * r) + 0.587 * (g * g) + 0.114 * (b * b));
+  if (hsp > 127.5) {
+    return true;
+  } else {
+    return false;
+  }
+}
+var __defProp$2 = Object.defineProperty;
+var __getOwnPropDesc$2 = Object.getOwnPropertyDescriptor;
+var __decorateClass$2 = (decorators, target, key, kind) => {
+  var result = kind > 1 ? void 0 : kind ? __getOwnPropDesc$2(target, key) : target;
+  for (var i = decorators.length - 1, decorator; i >= 0; i--)
+    if (decorator = decorators[i])
+      result = (kind ? decorator(target, key, result) : decorator(result)) || result;
+  if (kind && result)
+    __defProp$2(target, key, result);
+  return result;
+};
+let Code = class extends s {
+  render() {
+    return $`
+            <pre id="code"><button class="button is-small copybutton is-ghost" @click=${this._copyTextToClipboard}>copy</button><code><slot></slot></code></pre>
+        `;
+  }
+  fallbackCopyTextToClipboard(text) {
+    const textArea = document.createElement("textarea");
+    textArea.hidden = true;
+    textArea.style.top = "0";
+    textArea.style.left = "0";
+    textArea.style.position = "fixed";
+    textArea.value = text;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    textArea.remove();
+  }
+  _copyTextToClipboard() {
+    let text = this.innerHTML;
+    if (!navigator.clipboard) {
+      this.fallbackCopyTextToClipboard(!text ? "" : text);
+      return;
+    }
+    navigator.clipboard.writeText(!text ? "" : text).then(function() {
+      console.log("Async: Copying to clipboard was successful!");
+    }, function(err) {
+      console.error("Async: Could not copy text: ", err);
+    });
+  }
+  connectedCallback() {
+    super.connectedCallback();
+    setTimeout(() => {
+      var _a;
+      let customBGC = getComputedStyle(this).getPropertyValue("--outside-background-color");
+      let customCTC = getComputedStyle(this).getPropertyValue("--code-text-color");
+      if (customBGC !== "" && customCTC == "") {
+        const newC = isLight(customBGC) ? "black" : "white";
+        this.style.setProperty("--code-text-color", newC);
+      }
+      let c = (_a = this.shadowRoot) == null ? void 0 : _a.getElementById("code");
+      if (c != void 0 && customBGC !== "") {
+        const newC = isLight(customBGC) ? "black" : "white";
+        c.style.color = newC;
+      }
+      this.requestUpdate();
+    });
+  }
+};
+Code.styles = [
+  bulmaStyles,
+  r$2`
+            pre {
+                background-color: var(--outside-background-color,#F8F8FF);
+                border: 1px solid #ddd;
+                border-left: 3px solid var(--accent-text-color,${nfdiLightblue});
+                color: ${nfdiBlack};
+                page-break-inside: avoid;
+                font-family: monospace;
+                font-size: 15px;
+                line-height: 1.6;
+                margin-bottom: 1.6em;
+                max-width: 100%;
+                overflow: auto;
+                padding: 1em 1.5em;
+                display: block;
+                word-wrap: break-word;
+                position: relative
+            }
+
+            .copybutton {
+                position: absolute;
+                right: 0;
+                top: 0;
+                border-left: 1px solid var(--element-text-color,#F8F8FF) !important;
+                border-bottom: 1px solid var(--element-text-color,#F8F8FF) !important;
+            }
+
+            .copybutton:active {
+                box-shadow: -1 1 0 1px var(--element-text-color,#F8F8FF) !important;
+            }
+        `
+];
+Code = __decorateClass$2([
+  n$1("nfdi-code")
+], Code);
+function findlowestLevelHeader(headers) {
+  const min = Math.min(...headers.map((h) => h.depth));
+  return headers.filter((x_2) => x_2.depth === min);
+}
+function nest(currentHeaders) {
+  const currentLevelHeader = findlowestLevelHeader(currentHeaders);
+  return currentLevelHeader.map(function(h, i) {
+    const headerIndex = currentHeaders.findIndex((x) => x == h) | 0;
+    let nextIndex;
+    const next = currentLevelHeader[i + 1];
+    nextIndex = next == null ? currentHeaders.length : currentHeaders.findIndex((x_1) => x_1 == next);
+    const children = currentHeaders.slice(headerIndex + 1, nextIndex - 1 + 1);
+    const updatedH = { depth: h.depth, text: h.text, id: h.id, children: children.length === 0 ? [] : nest(children) };
+    return updatedH;
+  });
+}
+var __defProp$1 = Object.defineProperty;
+var __getOwnPropDesc$1 = Object.getOwnPropertyDescriptor;
+var __decorateClass$1 = (decorators, target, key, kind) => {
+  var result = kind > 1 ? void 0 : kind ? __getOwnPropDesc$1(target, key) : target;
+  for (var i = decorators.length - 1, decorator; i >= 0; i--)
+    if (decorator = decorators[i])
+      result = (kind ? decorator(target, key, result) : decorator(result)) || result;
+  if (kind && result)
+    __defProp$1(target, key, result);
+  return result;
+};
+function headerToHtml(header) {
+  const nextHtml = header.children.length !== 0 ? $`
+                    <li>
+                        <a href=${"#" + header.id}>${header.text}</a>
+                        <ul>
+                            ${header.children.map(headerToHtml)}
+                        </ul>   
+                    </li>
+                ` : $`
+                <li>
+                    <a href=${"#" + header.id}>${o(header.text)}</a>
+                </li>
+            `;
+  return nextHtml;
+}
+let TOC = class extends s {
+  constructor() {
+    super(...arguments);
+    this.foundHeaders = [];
+    this.lowestDepth = 1;
+  }
+  render() {
+    return $`
+            <div class="content" style="margin-bottom: 1rem">
+                <ul>
+                    ${this.foundHeaders.map((item) => headerToHtml(item))}
+                </ul>
+            </div>
+        `;
+  }
+  connectedCallback() {
+    super.connectedCallback();
+    setTimeout(() => {
+      let headers = document.querySelectorAll("nfdi-h1, nfdi-h2, nfdi-h3, nfdi-h4, nfdi-h5, nfdi-h6");
+      headers.forEach((element) => {
+        const depth = element.tagName.replace(/[^0-9]/g, "");
+        this.foundHeaders.push({ depth: parseInt(depth), text: element.innerHTML, id: element.id, children: [] });
+      });
+      this.foundHeaders = nest(this.foundHeaders);
+      this.requestUpdate();
+    });
+  }
+};
+TOC.styles = [
+  bulmaStyles,
+  r$2`
+            li>ul {
+                margin: 0.1em 1em !important
+            }
+
+            li a {
+                color: var(--link-color, ${nfdiLightblue})
+            }
+
+            li a:hover {
+                color:var(--link-hover-color, ${nfdiBlack})
+            }
+
+            :host {
+                color: var(--element-text-color, ${nfdiBlack}) !important
+            }
+        `
+];
+__decorateClass$1([
+  e$2({ type: Array })
+], TOC.prototype, "foundHeaders", 2);
+__decorateClass$1([
+  e$2({ type: Number })
+], TOC.prototype, "lowestDepth", 2);
+TOC = __decorateClass$1([
+  n$1("nfdi-toc")
+], TOC);
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __decorateClass = (decorators, target, key, kind) => {
+  var result = kind > 1 ? void 0 : kind ? __getOwnPropDesc(target, key) : target;
+  for (var i = decorators.length - 1, decorator; i >= 0; i--)
+    if (decorator = decorators[i])
+      result = (kind ? decorator(target, key, result) : decorator(result)) || result;
+  if (kind && result)
+    __defProp(target, key, result);
+  return result;
+};
+let SidebarTitle = class extends s {
+  constructor() {
+    super(...arguments);
+    this.isActive = false;
+  }
+  render() {
+    return $`
+            <div id="slot-container">
+                <slot></slot>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width=1rem height=1rem class="${this.isActive ? `myIcon isActive` : `myIcon`}">
+                    <path fill="currentColor" d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"/>
+                </svg>
+            </div>
+            `;
+  }
+};
+SidebarTitle.styles = [
+  bulmaStyles,
+  r$2`
+            .myIcon {
+                position: absolute;
+                right: -1.5rem;
+                top: 0.5rem;
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                color: var(--accent-text-color, ${nfdiBlack}) !important;
+                transition: transform 0.1s ease-in-out;
+            }
+
+            .myIcon.isActive { 
+                transform: rotate(90deg);
+            }
+
+            ::slotted(*) {
+                display: inline-block
+            }
+
+            #slot-container {
+                position: relative;
+                width: fit-content;
+                text-align: left;
+            }
+        `
+];
+__decorateClass([
+  e$2({ type: Boolean })
+], SidebarTitle.prototype, "isActive", 2);
+SidebarTitle = __decorateClass([
+  n$1("nfdi-sidebar-title")
+], SidebarTitle);
+let SidebarElement = class extends s {
+  constructor() {
+    super(...arguments);
+    this.isActive = false;
+  }
+  render() {
+    return $`
+            <div class="container">
+                <button @click=${this._toggleActive}><nfdi-sidebar-title ?isactive=${this.isActive}><slot name="title"></slot></nfdi-sidebar-title></button>
+                <div class="${this.isActive ? `inner-wrapper is-active` : `inner-wrapper`}">
+                    <slot name="inner"></slot>
+                </div>
+            </div>
+        `;
+  }
+  _toggleActive() {
+    this.isActive = !this.isActive;
+  }
+  connectedCallback() {
+    super.connectedCallback();
+    setTimeout(() => {
+      const customSBGC = getComputedStyle(this).getPropertyValue("--sidebar-background-color");
+      const customSTC = getComputedStyle(this).getPropertyValue("--sidebar-text-color");
+      if (customSBGC !== "" && customSTC == "") {
+        const newC = isLight(customSBGC) ? "black" : "white";
+        this.style.setProperty("--sidebar-text-color", newC);
+      }
+      const currentPage = window.location.pathname;
+      const currentUrl = window.location.href;
+      const children = Array.from(this.children);
+      const anchoredChildren = children.map((child) => {
+        if (child.hasAttribute("slot") && child.getAttribute("slot") === "title") {
+          child.innerHTML = child.innerHTML;
+          return child;
+        } else {
+          let hasHref = child.hasAttribute("href");
+          let url = hasHref ? child.getAttribute("href") : "";
+          let href = `href="${url}" `;
+          if (url == currentPage || url == currentUrl) {
+            child.classList.add("active-sub-page");
+          }
+          child.innerHTML = `<a ${href}style="color: unset !important">${child.innerHTML}</a>`;
+          return child;
+        }
+      });
+      this.replaceChildren(...anchoredChildren);
+      this.requestUpdate();
+    });
+  }
+};
+SidebarElement.styles = [
+  bulmaStyles,
+  r$2`
+
+            :host {
+                min-width: 0;
+            }
+            
+            button {
+                width: 90%;
+                padding: 0rem;
+                border: none;
+                background: none;
+                cursor: pointer;
+            }
+
+            button ::slotted(*) {
+                font-weight: bold;
+                color: var(--accent-text-color, ${nfdiBlack}) !important;
+                font-size: 1.4rem;
+                margin-bottom: 0.2rem;
+            }
+
+            button:hover ::slotted(h1,h2,h3) {
+                text-decoration: underline !important;
+            }
+            
+            .inner-wrapper {
+                margin-left: -2px;
+                display: none
+            }
+
+            .inner-wrapper ::slotted(*:nth-child(n+3)) {
+                margin-top: 0.3rem !important
+            }
+            
+            .inner-wrapper ::slotted(*:hover) {
+                text-decoration: underline !important;
+            }
+            
+            .inner-wrapper ::slotted(h1) {
+                font-size: 0.9rem !important;
+                color: var(--sidebar-text-color, ${nfdiBlack}) !important;
+                color: ${nfdiBlack};
+                padding: 2px !important;
+                margin: 0 !important;
+                cursor: pointer;
+            }
+
+            .inner-wrapper ::slotted(h2) {
+                font-size: 0.9rem !important;
+                color: var(--sidebar-text-color, ${nfdiBlack}) !important;
+                padding: 2px !important;
+                margin: 0 0 0 1rem !important;
+                cursor: pointer;
+            }
+
+            .inner-wrapper ::slotted(h3) {
+                font-size: 0.9rem !important;
+                color: var(--sidebar-text-color, ${nfdiBlack}) !important;
+                padding: 2px !important;
+                margin: 0 0 0 2rem !important;
+                cursor: pointer;
+            }
+
+            ::slotted(.active-sub-page) {
+                font-weight: bold !important;
+                text-decoration: underline !important;
+                /* border-radius: 2px !important; */
+                /* background-color: lightgrey; */
+                /* border-radius: 0; */
+            }
+
+            .is-active { 
+                display: block !important
+            }
+
+            .container {
+                padding: 3px
+            }
+
+        `
+];
+__decorateClass([
+  e$2({ type: Boolean })
+], SidebarElement.prototype, "isActive", 2);
+SidebarElement = __decorateClass([
+  n$1("nfdi-sidebar-element")
+], SidebarElement);

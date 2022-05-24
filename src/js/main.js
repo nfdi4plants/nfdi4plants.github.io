@@ -1,1 +1,1 @@
-import {Navbar, Footer} from "@nfdi4plants/web-components";
+import * as nfdi_component from "@nfdi4plants/web-components";

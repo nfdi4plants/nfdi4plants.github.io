@@ -350,25 +350,48 @@ module Predicates =
 
     let staticPredicate (projectRoot: string, page: string) =
         let ext = Path.GetExtension page
-        if page.Contains "_public" ||
-           page.Contains "_bin" ||
-           page.Contains "content" ||
-           page.Contains "_lib" ||
-           page.Contains "_data" ||
-           page.Contains "_settings" ||
-           page.Contains "_config.yml" ||
-           page.Contains ".sass-cache" ||
-           page.Contains ".git" ||
-           page.Contains ".ionide" ||
-           page.Contains "configuration" ||
-           page.Contains "bulma-0.9.1" ||
-           page.Contains "style_src" ||
-           ext = ".fsx" ||
-           ext = ".scss"
-        then
-            false
+        // if page.Contains "_public" ||
+        //    page.Contains "_bin" ||
+        //    page.Contains "content" ||
+        //    page.Contains "_lib" ||
+        //    page.Contains "_data" ||
+        //    page.Contains "_settings" ||
+        //    page.Contains "_config.yml" ||
+        //    page.Contains ".sass-cache" ||
+        //    page.Contains ".git" ||
+        //    page.Contains ".ionide" ||
+        //    page.Contains "configuration" ||
+        //    page.Contains "bulma-0.9.1" ||
+        //    page.Contains "style_src" ||
+        //    ext = ".fsx" ||
+        //    ext = ".scss"
+        // then
+        //     false
+        // else
+        //     true
+        let fileShouldBeExcluded =
+            ext = ".fsx" ||
+            ext = ".md"  ||
+            page.Contains "_public" ||
+            page.Contains "_bin" ||
+            page.Contains "_lib" ||
+            page.Contains "_data" ||
+            page.Contains "_settings" ||
+            page.Contains "_config.yml" ||
+            page.Contains ".sass-cache" ||
+            page.Contains ".git" ||
+            page.Contains ".ionide"
+        fileShouldBeExcluded |> not
+
+    let DocsPredicate (projectRoot: string, page: string) =
+        let fileName = Path.Combine(projectRoot,page)
+        let ext = Path.GetExtension page
+        if ext = ".md" then
+            let ctn = File.ReadAllText fileName
+            page.Contains("_public") |> not
+            && ctn.Contains("layout: docs")
         else
-            true
+            false
 
 module News =
         

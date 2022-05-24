@@ -8,6 +8,7 @@
 #load "../loaders/learnmoreloader.fsx"
 #load "../loaders/aboutloader.fsx"
 #load "../loaders/imprintloader.fsx"
+#load "../loaders/docsloader.fsx"
 #load "../loaders/privacyloader.fsx"
 #load "../loaders/jobsloader.fsx"
 #load "../loaders/serviceloader.fsx"
@@ -55,7 +56,7 @@ let layout (ctx : SiteContents) active bodyCnt =
         )
         |> Seq.toList
 
-    html [Class "has-navbar-fixed-top"] [
+    html [Class "has-navbar-fixed-top"; HtmlProperties.Style [CSSProperties.Custom("scroll-behavior", "smooth")]] [
         head [] [
             meta [CharSet "utf-8"]
             meta [Name "viewport"; Content "width=device-width, initial-scale=1"]
@@ -71,6 +72,39 @@ let layout (ctx : SiteContents) active bodyCnt =
             
             script [ Defer true; Src "https://kit.fontawesome.com/0d3e0ea7a6.js"; CrossOrigin "anonymous"] []
             script [ Type "module"; Src "/js/bundle.js"] []
+            style [] [
+                !! """
+                    body {
+                    margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                    color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                    color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+                    thead {
+                    font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --element-background-color: #ffffff;
+                        --element-text-color: #0E1116;
+                        --header-color: rgb(10, 12, 16);
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+
+                """
+            ]
         ]
         custom "nfdi-navbar" [] []
         body [] [

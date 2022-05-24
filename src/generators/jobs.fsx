@@ -151,7 +151,7 @@ let createCard (card:Jobsloader.JobsCard) =
 
 let generate' (ctx : SiteContents) (page: string) =
     let JobsPages = ctx.TryGetValues<Jobsloader.JobsPage>() |> Option.defaultValue Seq.empty
-
+    printfn "N of jobs: %A" (Seq.length JobsPages)
     printfn "[Jobs-Generator] mapping jobs page for %s" (page.Replace("/hero.md",""))
     
     let currentJobsPage =
