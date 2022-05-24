@@ -12001,4 +12001,9 @@ body {
   margin: 0 auto;
 }
 
-/*# sourceMappingURL=tmpxjYuPG.tmp.map */
+.front-header {
+  color: var(--header-color) !important;
+  font-weight: 700 !important;
+}
+
+/*# sourceMappingURL=tmpLEVXjR.tmp.map */
