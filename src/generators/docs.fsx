@@ -13,9 +13,17 @@ let docsLayout (docs: Docsloader.Docs) =
                     div [HtmlProperties.Custom ("slot", "title")] [!! sidebarEle.Title]
                     !! sidebarEle.Content
                 ]
-        custom "nfdi-h1" [] [!! docs.title]
+        h1 [Class "front-header"] [!! docs.title]
+        
         if docs.add_toc then custom "nfdi-toc" [] []
         !! docs.content
+        // Edit this page link
+        div [] [
+            a [
+                Href $"https://github.com/nfdi4plants/nfdi4plants.github.io/tree/main/src/{docs.file}"; 
+                HtmlProperties.Style [MarginLeft "auto"; Display "block"; CSSProperties.Width "130px"]
+            ] [!! "✏️ Edit this page"]
+        ]
     ]
 
 let generate' (ctx : SiteContents) (page: string) =
