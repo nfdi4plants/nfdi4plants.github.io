@@ -4,7 +4,7 @@ title: FAIR Principles
 published: 2022-05-19
 Author: Martin Kuhl
 add toc: false
-add sidebar: sidebars\mainSidebar.md
+add sidebar: sidebars/mainSidebar.md
 Article Status: Ready
 To-Dos: 
     - 

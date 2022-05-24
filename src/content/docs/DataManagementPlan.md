@@ -4,7 +4,7 @@ title: Data Management Plan
 published: 2022-05-19
 Author: Martin Kuhl
 add toc: true
-add sidebar: sidebars\mainSidebar.md
+add sidebar: sidebars/mainSidebar.md
 Article Status: Ready
 To-Dos: 
     - 
