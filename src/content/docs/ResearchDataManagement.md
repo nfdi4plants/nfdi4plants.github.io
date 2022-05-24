@@ -19,7 +19,7 @@ Research Data Management (RDM) combines conceptual, organizational, and technica
 ## Research Data Life Cycles
 For plant sciences, we would like to complement the concept of the data life cycle with the aspect of multiple conncections between and iterations within the cycle. These additions mirror the evolution of data, as research data are not static, can build on each other, and sometimes might call for a re-evaluation. In some scenarios you might need to jump back to data collection after you made a breakthrough during your analyses. In another case, you might think that it would be helpful to process older data with different tools or a distinct focus as your results gave you new insights.
 
-![Research Data Management Lifecycles](Lifecycle.jpg)
+![Research Data Management Lifecycles](img/Lifecycle.jpg)
 
 ### Planning
 Data management planning represents the phase of defining your strategy for managing data and documentation generated within the project. In this phase you try to anticipate the best ways to avoid problems and setting the conditions for your research data to achieve the highest possible impact in science, even after project completion. This can, e.g., involve standards or best practices. The outcomes of your planning, including aspects of the data management process  before, during, and after the end of a project, is usually formalised in a [Data Management Plan](DataManagementPlan.md) (DMP), which is often required by research organisations and funders.

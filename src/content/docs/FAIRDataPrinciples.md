@@ -40,7 +40,7 @@ The ultimate goal of FAIR (data) is to drive science and the production of new d
   - [R1.3. (Meta)data meet domain-relevant community standards](#<ins>**R1.3.-(Meta)data-meet-domain-relevant-community-standards**)
 
 
-![FAIR Data Principles](FAIR.jpg)
+![FAIR Data Principles](img/FAIR.jpg)
 
 ## Extensive explanation
 ### Findable

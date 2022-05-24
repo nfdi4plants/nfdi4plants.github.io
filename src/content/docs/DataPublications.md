@@ -33,7 +33,7 @@ There are a several criteria to consider during publication of your dataset:
 4. If the publisher validates your data, your metadata annotation is reviewed to ensure comprehensibility.
 There is also the possibility for publishing a data paper about the dataset, which may be published as a preprint, in a journal, or in a data journal that is dedicated to supporting data papers. The data may be hosted by the journal or hosted separately in a data repository. For more information see [data papers & data journals](#Data-papers-&-data-journals)
 
-![Data publishing](DataPublication.jpg)
+![Data publishing](img/DataPublication.jpg)
 
 **Figure 1:** During publication, datasets are typically deposited in a repository to make them available, documented to support reproduction and reuse, and assigned an identifier to facilitate citation. Some, but not all, publishers review datasets to validate them.
 

@@ -9,5 +9,5 @@ To-Dos:
 # Research Data Management:/content/docs/ResearchDataManagement.html
 # FAIR Data Principles:/content/docs/FAIRDataPrinciples.html
 # Data Publications:/content/docs/DataPublications.html
-# Data Management Plant:/content/docs/DataManagementPlant.html
+# Data Management Plant:/content/docs/DataManagementPlan.html
 ```
