@@ -10845,7 +10845,7 @@ let Navbar = class extends s {
           <div class="navbar-start is-justify-content-center is-flex-grow-1">
               <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link" href="${mainPageBaseUrl}">
-                Home
+                About
                 </a>
                 <div class="navbar-dropdown is-active smooth-hover">
                   <a class=${this.url == "${mainPageBaseUrl}content/learn-more/our-mission.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/learn-more/our-mission.html">
@@ -10861,7 +10861,7 @@ let Navbar = class extends s {
                     Service
                   </a>
                   <a class=${this.url == "${mainPageBaseUrl}content/about.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/about.html">
-                    Consortium
+                    The Consortium
                   </a>
                 </div>
               </div>
@@ -10883,7 +10883,7 @@ let Navbar = class extends s {
                     Fundamentals
                   </a>
                   <a class=${this.url == "${mainPageBaseUrl}content/docs/annotated-research-context.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/docs/annotated-research-context.html">
-                    Integration within DataPlANT
+                    Integration within DataPLANT
                   </a>
                 </div>
               </div>
