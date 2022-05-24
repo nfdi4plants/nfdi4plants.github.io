@@ -27,13 +27,13 @@ DataPLANT focusing on fundamental plant research presents itself in multiple fas
 
 🌱 **Data Stewards**
 
-*[Poster](https://e-science-tage.virtual-venue.io/poster/22) by Benedikt Venn (Dirk von Suchodoletz (Session 3 - 04.03.21 | 13:55-14:15)*
+*[Poster](https://e-science-tage.virtual-venue.io/poster/22) by Dirk von Suchodoletz (Session 3 - 04.03.21 | 13:55-14:15)*
 
 Data stewards are a core element of our strategy of fostering a good scientific practice and for dissemination of common standards, concepts of research data management and workflow services. Data stewards play a special hinge role between service providers, individual researchers, groups and the wider community. They also help bridging the gap between researchers and technical systems. Project groups and individual researchers will profit from direct support in their daily tasks ranging from data organization to the selection of the proper tools, workflows and standards. DataPLANT invests a significant amount of its budget into data stewards and defines an explicit dispatch model that focuses both on the major research groups as well as core and future participants in the consortium.
 
 🌱 **bwSFS - Storage-for-Science**
 
-*[Poster](https://e-science-tage.virtual-venue.io/poster/22) by Benedikt Venn (Dirk von Suchodoletz (Session 3 - 04.03.21 | 13:55-14:15)*
+*[Poster](https://e-science-tage.virtual-venue.io/poster/22) by Dirk von Suchodoletz (Session 3 - 04.03.21 | 13:55-14:15)*
 
 The storage system bwSFS (Storage-for-Science) is one of the major technical infrastructures for the NFDI consortium DataPLANT and further as well as the Science Data Center BioDATEN. It forms the geo-redundant distributed technical platform for basic storage services, research data management and sharing of data both during ongoing research and through data publication in the various project phases. The system providing traditional SMB/NFS as well as object storage has a solid hardware base with modern monitoring and various redundancies, some of which extend beyond the site boundaries.
 
