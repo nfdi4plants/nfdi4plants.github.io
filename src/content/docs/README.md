@@ -69,7 +69,7 @@ To add a sidebar element to the page, use the codeblock syntax:
 
 - Literature / information references: additional bibliography block below
 - External links (tools, sites, platforms): as hyper-link
-- Knowledgebase cross-references: relative path to *.md document
+- Knowledgebase cross-references: relative path to *.md document, **BUT** replace the `.md` file extension with `.html`, as the markdown files are parsed to html.
 
 ## Structure
 

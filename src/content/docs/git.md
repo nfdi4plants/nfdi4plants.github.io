@@ -50,10 +50,10 @@ Besides these technical solutions, DataPLANT supports you with community-engaged
 
 <!-- Knowledgebase Cross-references -->
 
-[KB-FAIR](./FAIRDataPrinciples.md)
-[KB-Metadata](./metadata.md)
-[KB-RDM](./ResearchDataManagement.md)
-[KB-DataSharing](./datasharing.md)
+[KB-FAIR](./FAIRDataPrinciples.html)
+[KB-Metadata](./metadata.html)
+[KB-RDM](./ResearchDataManagement.html)
+[KB-DataSharing](./datasharing.html)
 
 <!-- DataPLANT web links -->
 

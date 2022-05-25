@@ -90,9 +90,9 @@ Besides these technical solutions, DataPLANT supports you with community-engaged
 <!-- Knowledgebase Cross-references -->
 
 - [KB-ISA]: Link to knowledgeable article "ISA Model"
-[KB-FAIR](./FAIRDataPrinciples.md)
-[KB-DataSharing](./datasharing.md)
-[KB-Repositories](./repositories.md)
+[KB-FAIR](./FAIRDataPrinciples.html)
+[KB-DataSharing](./datasharing.html)
+[KB-Repositories](./repositories.html)
 
 <!-- DataPLANT weblinks -->
 

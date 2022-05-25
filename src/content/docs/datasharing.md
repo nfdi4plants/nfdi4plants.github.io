@@ -51,14 +51,14 @@ Besides these technical solutions, DataPLANT supports you with community-engaged
 
 <!-- Knowledgebase Cross-references -->
 
-[KB-FAIR](./FAIRDataPrinciples.md)
-[KB-Metadata](./metadata.md)
-[KB-RDM](./ResearchDataManagement.md)
-[KB-DataPublication](./datapublication.md)
-[KB-DataSharing](./datasharing.md)
-[KB-git](./git.md)
-[KB-pid](./pids.md)
-[KB-Repositories](./repositories.md)
+[KB-FAIR](./FAIRDataPrinciples.html)
+[KB-Metadata](./metadata.html)
+[KB-RDM](./ResearchDataManagement.html)
+[KB-DataPublication](./datapublication.html)
+[KB-DataSharing](./datasharing.html)
+[KB-git](./git.html)
+[KB-pid](./pids.html)
+[KB-Repositories](./repositories.html)
 
 <!-- Reference links -->
 [DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"

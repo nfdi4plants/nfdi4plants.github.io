@@ -66,8 +66,8 @@ Besides these technical solutions, DataPLANT supports you with community-engaged
 
 <!-- Knowledgebase Cross-references -->
 
-[KB-FAIR](./FAIRDataPrinciples.md)
-[KB-Metadata](./metadata.md)
+[KB-FAIR](./FAIRDataPrinciples.html)
+[KB-Metadata](./metadata.html)
 
 <!-- Reference links -->
 [DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"

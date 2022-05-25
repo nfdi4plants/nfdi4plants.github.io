@@ -50,17 +50,17 @@ Besides these technical solutions, DataPLANT supports you with community-engaged
 
 <!-- Knowledgebase cross-references -->
 
-[KB-FAIR](./FAIRDataPrinciples.md)
-[KB-Metadata](./metadata.md)
-[KB-RDM](./ResearchDataManagement.md)
-[KB-DataPublication](./datapublication.md)
-[KB-DataSharing](./datasharing.md)
-[KB-git](./git.md)
-[KB-pid](./pids.md)
-[KB-Repositories](./repositories.md)
-- [KB-WMS](./WMS.md)
-- [KB-arccommander](./arccommander.md)
-- [KB-ARC](./AnnotatedResearchContext.md)
+[KB-FAIR](./FAIRDataPrinciples.html)
+[KB-Metadata](./metadata.html)
+[KB-RDM](./ResearchDataManagement.html)
+[KB-DataPublication](./datapublication.html)
+[KB-DataSharing](./datasharing.html)
+[KB-git](./git.html)
+[KB-pid](./pids.html)
+[KB-Repositories](./repositories.html)
+- [KB-WMS](./WMS.html)
+- [KB-arccommander](./arccommander.html)
+- [KB-ARC](./AnnotatedResearchContext.html)
 
 <!-- DataPLANT web links -->
 

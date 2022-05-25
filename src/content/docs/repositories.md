@@ -81,10 +81,10 @@ Besides these technical solutions, DataPLANT supports you with community-engaged
 
 <!-- Knowledgebase cross-references -->
 
-[KB-DataPublication](./datapublication.md)
-[KB-FAIR](./FAIRDataPrinciples.md)
-[KB-Metadata](./metadata.md)
-[KB-pid](./pids.md)
+[KB-DataPublication](./datapublication.html)
+[KB-FAIR](./FAIRDataPrinciples.html)
+[KB-Metadata](./metadata.html)
+[KB-pid](./pids.html)
 - [KB-DataFormats]: Link to data formats article
 
 <!-- DataPLANT web links -->

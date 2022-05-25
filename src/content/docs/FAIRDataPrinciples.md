@@ -14,7 +14,7 @@ todo:
 - [DataPLANT Support](#dataplant-support)
 - [Sources and further information](#sources-and-further-information)
 
-The FAIR Principles were published in 2016 to serve as guidelines for improving the **F**indability, **A**ccessibility, **I**nteroperability, and **R**eusability of scientific data. Albeit data can only be FAIR when provided with [metadata](metadata.md), researchers rely on infrastructures to set a framework. Hence, FAIR(ness) addresses both stakeholders publishing data and those providing infrastructures, such as repositories.
+The FAIR Principles were published in 2016 to serve as guidelines for improving the **F**indability, **A**ccessibility, **I**nteroperability, and **R**eusability of scientific data. Albeit data can only be FAIR when provided with [metadata](metadata.html), researchers rely on infrastructures to set a framework. Hence, FAIR(ness) addresses both stakeholders publishing data and those providing infrastructures, such as repositories.
 
 The ultimate goal of FAIR (data) is to drive science and the production of new datasets, as it allows researchers to build on existing comprehensively annotated studies. In plant biology, this, e.g., can accelerate the innovation process of generating new crop species that provide a higher nutritional content or show a superior heat tolerance, regarding global warming. Submitting your proteomics dataset for such a new species in a standardized file format to a repository, e.g. [PRIDE](https://www.ebi.ac.uk/pride/archive/), would be one implementation of the FAIR Principles. While researchers need to be able to find and understand published datasets, computers need to handle (big) data depending on the intended use case. Thus, the FAIR principles also aim to improve the machine-readability of datasets for autonomous processing, while preserving human-readability.
 
@@ -55,7 +55,7 @@ The first step in (re)using data is to find them. Metadata and data should be ea
 
 #### F1. (Meta)data are assigned a globally unique and persistent identifier
 
-A [persistent identifier](PIDs.md) (PID) is a long-lasting reference, typically used in the context of digital resources accessible over the internet, in this case your dataset. Globally unique and persistent identifiers allow finding your data in the first place. Continuous availability of the digital object is guaranteed by registry providers, which maintain the link to the actual dataset.
+A [persistent identifier](PIDs.html) (PID) is a long-lasting reference, typically used in the context of digital resources accessible over the internet, in this case your dataset. Globally unique and persistent identifiers allow finding your data in the first place. Continuous availability of the digital object is guaranteed by registry providers, which maintain the link to the actual dataset.
 
 A PID you have probably already heard of as most biological journals assign them to manuscripts, is the Digital Object Identifier ([DOI](https://www.doi.org/hb.html)). Your personal 16-digit ORCID (iD) or the accession number of your RNASeq dataset on GEO also represent examples for PIDs. An overview which scientific repositories assign which type of PID can be found at the registry of research data repositories ([re3data.org](https://www.re3data.org/)).
 
@@ -87,7 +87,7 @@ Infrastructure providers should use free (no-cost), open-source protocols. Thus,
 
 At this point it is very important to differentiate between "accessible" and "open" data. The "A" in FAIR does not imply that you are required to grant free access for everyone to your data, but rather to specify conditions under which the data are accessible. Even protected data are FAIR, if requirements were defined on how the data can be retrieved. These must be processable automatically by a system, e.g. a repository, and can be especially necessary for sensitive data.
 
-An example for this case is a private and thereby, non-visible repository on [GitLab](datahub.md), accessible only to defined users. As owner of the GitLab repository, you can select these users and researchers simply identify using the GitLab sign-in. Accordingly, the mechanism to allow users to identify themselves, belongs to the responsibility of the infrastructure provider.
+An example for this case is a private and thereby, non-visible repository on [GitLab](datahub.html), accessible only to defined users. As owner of the GitLab repository, you can select these users and researchers simply identify using the GitLab sign-in. Accordingly, the mechanism to allow users to identify themselves, belongs to the responsibility of the infrastructure provider.
 
 #### A2. Metadata are accessible, even when the data are no longer available
 
@@ -147,10 +147,10 @@ The following table gives an overview about DataPLANT tools and services support
 
 Name | Type | Tasks on metadata
 ----------------|-----------|------------------
-**[ARC](AnnotatedResearchContext.md)**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
-**[Swate](Swate.md)** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
-**[ArcCommander](ArcCommander.md)** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
-**[DataHUB](DataHUB.md)** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+**[ARC](AnnotatedResearchContext.html)**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
+**[Swate](Swate.html)** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
+**[ArcCommander](ArcCommander.html)** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
+**[DataHUB](DataHUB.html)** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 **[Invenio]()** | Service under construction | **Share:** <ul><li>Assign a DOI to an ARC</li></ul>
 **[Metadata registry]()** | Service under construction | **Share:** <ul><li>Find ARC (meta)data</li></ul>
 **[Converters]()** | Tool under construction | **Curate:** <ul><li>Harmonize and migrate between metadata schema
