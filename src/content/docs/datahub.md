@@ -5,10 +5,10 @@ published: 2022-05-12
 date: 2022-05-12
 author: Dominik Brilhaus <https://orcid.org/0000-0001-9021-3197>
 add toc: true
-add sidebar: sidebars\mainSidebar.md
+add sidebar: sidebars/mainSidebar.md
 article status: draft
 todo:
-  - paragraph branches
+  - paragraph branches    
 ---
 
 The DataPLANT's DataHUB[DataHUB] is the platform where several strings of DataPLANT's [research data management][KB-RDM] run together (converge). Here you can upload your research data as an annotated research context (ARC[KB-ARC]), to document its changes (via [git][KB-git]-based version control) and share[KB-DataSharing] it with collaborators. Metadata[KB-Metadata] associated with your ARC feeds into the metadata registry to make your research findable. From there, you can analyse your data using external workflows[KB-WMS], publish it to specific data repositories[KB-Repositories] or data publications[KB-DataPublication].
