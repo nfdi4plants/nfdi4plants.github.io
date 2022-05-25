@@ -46,7 +46,8 @@ In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and se
 
 ### DataPLANT Support
 
-Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our [helpdesk](https://support.nfdi4plants.org) or by contacting us <a href="mailto:dataplant@uni-kl.de?subject=Knowledgebase%20DataHUB">directly</a>.
+## DataPLANT Support
+Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our [helpdesk](https://support.nfdi4plants.org) or by contacting <a href="mailto:info@nfdi4plants.org">directly</a>.
 
 <!-- Knowledgebase cross-references -->
 
