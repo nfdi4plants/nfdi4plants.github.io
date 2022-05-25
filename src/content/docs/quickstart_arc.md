@@ -279,10 +279,6 @@ Fill the cells beneath each building block with ontology terms to note the respe
 
 > Note: More information on how to use SWATE can be found [here](https://github.com/nfdi4plants/Swate/wiki/Docs05-Templates).
 
-## DataPLANT Support
-
-For further assistance, feel free to reach out via our [helpdesk](https://support.nfdi4plants.org) or by contacting us <a href="mailto:info@nfdi4plants.org?subject=ARC%20QuickStart">directly</a>.
-
 <div style="page-break-after: always;"></div>
 
 ## The Minimalist's ARC-QuickStart

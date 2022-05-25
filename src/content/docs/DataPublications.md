@@ -60,9 +60,6 @@ Name | Type | Tasks on metadata
 **[Metadata registry]()** | Service under construction | **Share:** <ul><li>Find ARC (meta)data</li></ul>
 **[Converters]()** | Tool under construction | **Curate:** <ul><li>Harmonize and migrate between metadata schema
 
-## DataPLANT Support
-Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our [helpdesk](https://support.nfdi4plants.org) or by contacting us <a href="mailto:info@nfdi4plants.org">directly</a>.
-
 ## Sources and further information
 
 - [Data publication: towards a database of everything](https://doi.org/10.1186/1756-0500-2-113)
