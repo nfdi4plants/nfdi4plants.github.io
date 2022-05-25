@@ -4,7 +4,7 @@ title: Metadata
 published: 2022-05-20
 Author: [Dominik Brilhaus, <https://orcid.org/0000-0001-9021-3197>]
 add toc: true
-add sidebar: sidebars\mainSidebar.md
+add sidebar: sidebars/mainSidebar.md
 Article Status: Ready
 To-Dos:
 ---
