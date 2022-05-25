@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Repositories
+title: Public data repositories
 published: 2022-05-09
 Author: Dominik Brilhaus <https://orcid.org/0000-0001-9021-3197>
 add toc: true
@@ -9,21 +9,6 @@ Article Status: Curation
 To-Dos: 
     - Update links to other KB articles
 ---
-
-
-<!-- 
-# export all .md files in current dir to .docx via pandoc 
-for f in *.md; do pandoc -s -o "${f%.md}.docx" "$f"; done
--->
-
-# Public data repositories
-
-<!-- TOC -->
-
-[What are data repositories?](#what-are-data-repositories)  
-[How does DataPLANT support me in submitting to public data repositories?](#how-does-dataplant-support-me-in-submitting-to-public-data-repositories)  
-
-<!-- /TOC -->
 
 ## What are data repositories?
 
@@ -49,7 +34,7 @@ NCBI-SRA | Sequence Read Archive | genome / transcriptome sequences | <https://w
 
 ### General-purpose repositories
 
-In cases where no suitable domain-specific repository exists, general-purpose repositories are an option to publicly deposit research data and receive a [PID][KB-PID]. A benefit of general-purpose repositories is that they allow deposition of virtually any data type. Also research data packages with mixes of data types and computational workflows can be deposited, which aligns well with typical plant science investigations. However, since these repositories can only foster compliance with metadata standards at a very generic level (e.g. bibliographic or technical, see [metadata][KB-Metadata]), they limit the capacity for [FAIR][KB-FAIR] reuse of data.  
+In cases where no suitable domain-specific repository exists, general-purpose repositories are an option to publicly deposit research data and receive a [PID][KB-pid]. A benefit of general-purpose repositories is that they allow deposition of virtually any data type. Also research data packages with mixes of data types and computational workflows can be deposited, which aligns well with typical plant science investigations. However, since these repositories can only foster compliance with metadata standards at a very generic level (e.g. bibliographic or technical, see [metadata][KB-Metadata]), they limit the capacity for [FAIR][KB-FAIR] reuse of data.  
 
 Examples for general-purpose repositories include
 
@@ -94,14 +79,18 @@ Name | Type | Tasks on metadata
 
 Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our [helpdesk](https://support.nfdi4plants.org). or by contacting us <a href="mailto:dataplant@uni-kl.de?subject=DataPLANT%20Repositories">directly</a>.
 
-<div style="page-break-after: always;"></div>
+<!-- Knowledgebase cross-references -->
 
-<!-- Knowledgebase Cross-references -->
-1. [KB-DataPublication]: link to article data publication
-1. [KB-Metadata]: link to article metadata
-1. [KB-FAIR]: Link to knowledgebase article "FAIR principles"
-1. [KB-PID]: Link to knowledgebase article PIDs
-2. [KB-DataFormats]: Link to data formats article
+[KB-DataPublication](./datapublication.md)
+[KB-FAIR](./FAIRDataPrinciples.md)
+[KB-Metadata](./metadata.md)
+[KB-pid](./pids.md)
+- [KB-DataFormats]: Link to data formats article
+
+<!-- DataPLANT web links -->
+
+
+<!-- Reference web links -->
 
 <!-- EBI-EMPIAR |   | imaging, microscopy | https://www.ebi.ac.uk/pdbe/emdb/empiar/
 EBI-BioModels |   | models | https://www.ebi.ac.uk/biomodels/

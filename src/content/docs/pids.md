@@ -52,13 +52,13 @@ On the other hand, you, as a researcher, need to request an ORCID (once). ORCIDs
 - Research Organization Registry (ROR, <https://ror.org>)
 - Global Research Identifier Database (GRID, <https://grid.ac>)
 
-## How does DataPLANT support me in using PIDs?
+<!-- ## How does DataPLANT support me in using PIDs?
 
 The following table gives an overview about DataPLANT tools and services related to sharing data. Follow the link in the first column for details.
 
 Name | Type | Tasks on metadata 
 ----------------|-----------|------------------ 
-- invenio
+- invenio -->
 
 
 ### DataPLANT Support
@@ -67,8 +67,8 @@ Besides these technical solutions, DataPLANT supports you with community-engaged
 
 <!-- Knowledgebase Cross-references -->
 
-1. [KB-FAIR]: Link to knowledgebase article "FAIR principles"
-1. [KB-Metadata]: link to article metadata
+[KB-FAIR](./FAIRDataPrinciples.md)
+[KB-Metadata](./metadata.md)
 
 <!-- Reference links -->
 [DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
@@ -80,35 +80,3 @@ Besides these technical solutions, DataPLANT supports you with community-engaged
 ## Sources and further information
 
 - https://www.doi.org/faq.html
-
-
-
-<!-- - Globally unique: One URI should never refer to two different concepts at the same time, even ones that may seem equivalent.
-- Persistent: A URI should continue to resolve for the forseeable future. The URI should survive between website re-engineering exercises, for example.
-- Stable: A URI should never be re-used for different things between data releases, even if the original is deleted.
-- Resolvable (dereferenceable): Simply, when a user clicks on a URI in their browser, we want them to be redirected to a suitable document. That doesn’t necessarily mean it should be capable of returning RDF content.
-
-Source: https://www.ebi.ac.uk/rdf/documentation/good_practice_uri/ (16.02.2022) -->
-
-
-<!-- 
-### isn't this just a hyperlink / URL?
-
-1. url = resolves to a location, PID = resolves to the content, e.g. a digital object, dataset, publication
-2. PIDs are actively curated and managed
-  - preventing link rot (https://en.wikipedia.org/wiki/Link_rot), i.e. broken or dead links
-  - changed location of a resource
-  - The persistence is not technically inherent, but socially implemented.
-
-- globally unique -> solved technically through http / internet
-    - without elaborating the details behind PURLs and handles, it is important to note that 
-    - url = resolves to a location, PID = resolves to the content, e.g. a digital object, dataset, publication
-  - persistent and stable (into foreseeable future) -> solved socially / policy / institutionally through registration services -->
-
-
-<!-- Other daily example: 
-- SWIFT-BIC (business identifier code) allows to identify financial institutions
-- SWIFT (Society for Worldwide Interbank Financial Telecommunication) = registration authority for BIC 
-- VIN (Vehicle identification number)
-- Lot number
--->
