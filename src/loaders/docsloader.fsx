@@ -142,7 +142,7 @@ let loadFile (rootDir: string) (filePath: string) =
     let addToc = config |> Map.tryFind "add toc" |> Option.map (trimString >> System.Boolean.Parse) |> Option.defaultValue true
     let addSidebar = 
         let docsPath = Path.Combine(rootDir, contentDir)
-        config |> Map.tryFind "add sidebar" |> Option.map (trimString >> fun x -> Path.Combine(docsPath, x)) //.Replace('\\','/')
+        config |> Map.tryFind "add sidebar" |> Option.map (trimString >> fun x -> Path.Combine(docsPath, x.Replace('\\','/'))) 
 
     let content = getContent text
     let sidebar = addSidebar |> Option.map getSidebar 
