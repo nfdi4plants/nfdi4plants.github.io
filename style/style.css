@@ -12004,6 +12004,7 @@ body {
 .front-header {
   color: var(--header-color) !important;
   font-weight: 700 !important;
+  margin-bottom: unset !important;
 }
 
-/*# sourceMappingURL=tmpyAT7u3.tmp.map */
+/*# sourceMappingURL=tmptNdcFv.tmp.map */

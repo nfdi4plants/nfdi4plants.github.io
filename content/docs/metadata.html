@@ -74,6 +74,9 @@
       <h1 class="front-header">
         Metadata
       </h1>
+      <i class="help">
+        last updated at 2022-05-20
+      </i>
       <nfdi-toc></nfdi-toc>
       <nfdi-h2 id="what-is-metadata">What is metadata?</nfdi-h2>
 <p>Metadata is &quot;data that provides information about other data&quot;<a href="https://www.merriam-webster.com/dictionary/metadata" title="Merriam Webster definition of metadata">^1</a>. In order to put some (plant) life into this web dictionary explanation, let us explore metadata with a plant biology example:</p>
@@ -97,7 +100,7 @@ This simple example already illustrates many different types and granular levels
 </ul>
 <p>The different types of metadata are collected from various analog and digital sources, including project grants, electronic lab notebooks, machines used for data acquisition, software used for data analysis. And they are provided by different contributors (stakeholders) including wet-lab biologists, core facilities, computational biologists, librarians or infrastructure providers.</p>
 <nfdi-h2 id="why-do-i-benefit-from-metadata">Why do I benefit from metadata?</nfdi-h2>
-<p>Before going any deeper into the what and how, let us understand why we benefit from annotating our data with rich metadata. For this it helps to recap along the [FAIR principles][KB-FAIR] how metadata makes your data comprehensible and utilizable for yourself and your peers.</p>
+<p>Before going any deeper into the what and how, let us understand why we benefit from annotating our data with rich metadata. For this it helps to recap along the <a href="./FAIRDataPrinciples.html">FAIR principles</a> how metadata makes your data comprehensible and utilizable for yourself and your peers.</p>
 <ul>
 <li><strong>Findable</strong>:  As metadata names the content of the data (e.g., what was examined, for what purpose, with what method), it is the basis for search engines and ideally makes it categorizable for people and machines and thus easier to search for and find.</li>
 <li><strong>Accessible</strong>: Metadata provides information about the origin (e.g., persons, institutions) and the location of storage (e.g., repository) as well as access rights.</li>
@@ -116,10 +119,10 @@ The metadata standards can be regarded as &quot;checklists&quot;, which, when fo
 Furthermore, the librarian, the computer scientist and the plant biologist would probably have a very different approach to collect and represent the required metadata according to the intuition or conventions of their respective domain.
 Two technical solutions, schema and ontologies, help to overcome these ambiguities. Briefly, schema are structured documents that formulate a clear representation of the (metadata) information, thereby making it both human-readable and machine-processable. Ontologies are controlled vocabularies or thesauri with defined relations between the vocables that can be used to fill the schema. In this way, schema define where to find the information and ontologies interpret the information.
 The use of schema combined with ontologies is well-established for bibliographic and administrative metadata, where high-level and often generic metadata relevant to most scientific domains is described. In fact, the two examples of <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">DublinCore</a> and <a href="https://schema.datacite.org">DataCite</a> are not just checklists, but well-defined metadata schema. In more specialized scientific domains the use of schema is much less established.
-However, the metadata schema ISA (for investigation – study – assay) can be employed for the most versatile data types relevant in plant sciences. ISA allows intuitive, flexible and yet structured and conclusive data annotation with biological as well as bibliographic and administrative metadata. For more details, see [ISA][KB-ISA].</p>
+However, the metadata schema ISA (for investigation – study – assay) can be employed for the most versatile data types relevant in plant sciences. ISA allows intuitive, flexible and yet structured and conclusive data annotation with biological as well as bibliographic and administrative metadata. For more details, see <a href="./placeholder.html" title="ISA Model">ISA</a>.</p>
 <nfdi-h3 id="sharing-and-curation">Sharing and curation</nfdi-h3>
 <p>In order to make your data FAIR, it needs to be packaged with metadata and shared in a findable and accessible repository.
-There are cases where metadata needs to be made accessible independently of the annotated data, e.g. for legal reasons such as dual-use, intellectual property rights or simply since the data is not yet published. In any case, there are at least as many routines for sharing or publishing metadata as there are for data. For more information please see [DataSharing][KB-DataSharing] and [Repositories][KB-Repositories].
+There are cases where metadata needs to be made accessible independently of the annotated data, e.g. for legal reasons such as dual-use, intellectual property rights or simply since the data is not yet published. In any case, there are at least as many routines for sharing or publishing metadata as there are for data. For more information please see <a href="./datasharing.html">DataSharing</a> and <a href="./repositories.html">Repositories</a>.
 During project lifetime data and metadata continuously develops and requires adaptations and updates. Proper versioning helps to keep an overview of the different stakeholders and tasks acting on metadata. Easy and traceable documentation of these processes can be achieved with general-purpose version control through [git][git].
 As data and metadata develops the need to harmonize between metadata outputs may occur. If metadata is properly collected in a schema, converters can help to migrate between different metadata schema or securely export information from one schema to the other.</p>
 <nfdi-h2 id="how-does-dataplant-support-me-in-metadata-annotation">How does DataPLANT support me in metadata annotation?</nfdi-h2>
@@ -157,20 +160,26 @@ As data and metadata develops the need to harmonize between metadata outputs may
 </table>
 <!-- ~~Converter~~ | Tool under construction | **Curate:** <ul><li>Harmonize and migrate between metadata schema</li><li>Manage who can view or access your ARC</li></ul> -->
 <!-- **Metadata registry** | Service | **Share:** <ul><li>Find ARC (meta)data</li></ul> -->
-<nfdi-h2 id="dataplant-support">DataPLANT Support</nfdi-h2>
-<p>Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our <a href="https://support.nfdi4plants.org">helpdesk</a> or by contacting us <a href="mailto:info@nfdi4plants.org">directly</a>.</p>
 <!-- Knowledgebase Cross-references -->
-<ul>
-<li>[KB-ISA]: Link to knowledgeable article &quot;ISA Model&quot;
-<a href="./FAIRDataPrinciples.html">KB-FAIR</a>
-<a href="./datasharing.html">KB-DataSharing</a>
-<a href="./repositories.html">KB-Repositories</a></li>
-</ul>
 <!-- DataPLANT weblinks -->
 <!-- Reference weblinks -->
 <!-- [EMBL-EBI]: https://www.ebi.ac.uk/services/all "EMBL-EBI repositories"
 [NCBI]: https://www.ncbi.nlm.nih.gov/guide/sitemap/ "NCBI repositories" -->
 
+      <h3>
+        Dataplant Support
+      </h3>
+      <div>
+        Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our 
+        <a href="https://support.nfdi4plants.org">
+          helpdesk
+        </a>
+         or by contacting us 
+        <a href="mailto:info@nfdi4plants.org">
+          directly
+        </a>
+        .
+      </div>
       <div>
         <a href="https://github.com/nfdi4plants/nfdi4plants.github.io/tree/main/src/content/docs/metadata.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
