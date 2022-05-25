@@ -45,7 +45,7 @@ The process of data preservation represents a series of activities necessary to 
 
 ### Sharing
 
-Sharing is not limited to publishing your data to share it with the global research community. This can also mean to send your data to collaboration partners in the context of a collaborative research project.It is important to know that data sharing is not equal to open data or public data, as you can also choose to share your data with defiend access rights. You can share your data at any time during the research data life cycle but the data should be available at the time of a publication of articles that use the corresponding data to make scientific conclusions. For more information see also [Data Sharing](datasharing.md).
+Sharing is not limited to publishing your data to share it with the global research community. This can also mean to send your data to collaboration partners in the context of a collaborative research project.It is important to know that data sharing is not equal to open data or public data, as you can also choose to share your data with defined access rights. You can share your data at any time during the research data life cycle but the data should be available at the time of a publication of articles that use the corresponding data to make scientific conclusions. For more information see also [Data Sharing](datasharing.md).
 
 ### Reusing
 

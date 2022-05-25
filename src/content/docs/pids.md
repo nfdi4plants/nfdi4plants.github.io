@@ -60,7 +60,6 @@ Name | Type | Tasks on metadata
 ----------------|-----------|------------------ 
 - invenio -->
 
-
 ### DataPLANT Support
 
 Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our [helpdesk](https://support.nfdi4plants.org) or by contacting us <a href="mailto:dataplant@uni-kl.de?subject=DataPLANT%20Data%20Sharing">directly</a>.
