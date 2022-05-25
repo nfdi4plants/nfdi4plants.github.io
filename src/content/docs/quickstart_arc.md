@@ -1,4 +1,14 @@
-# DataPLANT’s QuickStart on ARCs
+---
+layout: docs
+title: DataPLANT's QuickStart on ARCs
+published: 2022-05-25
+author: Martin Kuhl
+add toc: false
+add sidebar: sidebars/mainSidebar.md
+article status: Ready
+todo:
+---
+
 
 > V1.3
 > May 2022
