@@ -16,3 +16,8 @@ To-Dos:
 # Repositories:/content/docs/repositories.html
 # Persistent Identifiers:/content/docs/pids.html
 ```
+
+```Integration within DataPLANT
+# Annotated Research Context:/content/docs/AnnotatedResearchContext.html
+## ARC QuickStart:/content/docs/quickstart_arc.html
+```
