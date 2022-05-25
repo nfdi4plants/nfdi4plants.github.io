@@ -12,7 +12,7 @@
 
 ## Images
 
-- simple markdown logic (not HTML): ![name_of_image](path_to_image.png)
+- simple markdown logic (not HTML): `![name_of_image](path_to_image.png)`
 
 ## Addressing readers
 
