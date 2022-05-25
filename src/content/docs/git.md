@@ -2,13 +2,12 @@
 layout: docs
 title: Version control
 published: 2022-05-09
-Author: Dominik Brilhaus <https://orcid.org/0000-0001-9021-3197>
+author: Dominik Brilhaus <https://orcid.org/0000-0001-9021-3197>
 add toc: true
 add sidebar: sidebars/mainSidebar.md
-Article Status: draft
-To-Dos:
-  - write
-  - paragraph branches    
+article status: draft
+todo:
+  - paragraph branches
 ---
 
 ## Scientific iteration and versioning

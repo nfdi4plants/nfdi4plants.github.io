@@ -2,11 +2,11 @@
 layout: docs
 title: Persistent identifiers (PIDs)
 published: 2022-05-09
-Author: Dominik Brilhaus <https://orcid.org/0000-0001-9021-3197>
+author: Dominik Brilhaus <https://orcid.org/0000-0001-9021-3197>
 add toc: true
 add sidebar: sidebars/mainSidebar.md
-Article Status: Curation
-To-Dos: 
+article status: Curation
+todo: 
     - Update links to other KB articles
 ---
 
@@ -59,7 +59,6 @@ The following table gives an overview about DataPLANT tools and services related
 Name | Type | Tasks on metadata 
 ----------------|-----------|------------------ 
 - invenio -->
-
 
 ### DataPLANT Support
 
