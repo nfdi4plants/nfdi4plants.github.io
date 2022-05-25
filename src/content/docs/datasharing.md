@@ -38,8 +38,8 @@ The following table gives an overview about DataPLANT tools and services related
 
 Name | Type | Tasks on data sharing
 ----------------|-----------|------------------
-**[ARC][ARC]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata in a defined format</li></ul>
-**[DataHUB][DataHUB]** | Service | **Share:** <ul><li>Infrastructure-as-code: on-premise solution</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+**[ARC](AnnotatedResearchContext.html)**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata in a defined format</li></ul>
+**[DataHUB](datahub.html)** | Service | **Share:** <ul><li>Infrastructure-as-code: on-premise solution</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 
 ### Register with DataPLANT
 
