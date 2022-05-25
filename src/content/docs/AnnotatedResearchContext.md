@@ -7,7 +7,7 @@ add toc: true
 add sidebar: sidebars\mainSidebar.md
 Article Status: published
 To-Dos: 
-    - Technical implementations
+    - Technical implementations (machine-readability)
 ---
 
 
