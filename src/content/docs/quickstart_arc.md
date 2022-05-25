@@ -132,7 +132,7 @@ arc a add -s QuickStartStudy -a QuickStartAssay
 
 In case you are not a member of DataPLANT yet, please visit <https://register.nfdi4plants.org> to register. Afterwards, you will be granted access to DataPLANT’s DataHUB, available under <https://git.nfdi4plants.org>. The DataHUB allows you to share your ARCs with registered lab or project partners.
 
-!(img/dataplant_registration.png)
+![](img/dataplant_registration.png)
 
 After successful registration, create and set an access token for ARC Commander synchronization using
 
@@ -200,7 +200,7 @@ Briefly:
 - *Developers:* The choice for most people you want to invite to your ARC. Developers have read and write access, but cannot maintain the project on the DataHUB, e.g. inviting others.  
 - *Maintainers:* Gives the person the same rights as you have (except of removing you from your own project). This is recommended for inviting PIs or group leaders allowing them to add their group members for data upload or analysis to the project as well.
 
-!(img/datahub_members.png)
+![](img/datahub_members.png)
 
 > Note: A detailed usage instruction for the ARC Commander can be found [here](https://github.com/nfdi4plants/arcCommander/wiki/Detailed-usage-instruction).
 
@@ -239,7 +239,7 @@ Briefly:
 
 4. If you could not find a fitting term, you can use the Advanced Term Search with the blue links above the *Add building block* button. If you still could not find a fitting term, use free text input.  
 
-!(img/swate_addBuildingBlock.png)
+![](img/swate_addBuildingBlock.png)
 
 5. For more information on customizing your annotation table click [here](https://github.com/nfdi4plants/Swate/wiki/Docs03-Building-Blocks).
 
