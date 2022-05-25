@@ -88,10 +88,11 @@ Name | Type | Tasks on metadata
 Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our [helpdesk](https://support.nfdi4plants.org) or by contacting us <a href="mailto:dataplant@uni-kl.de?subject=DataPLANT%20Metadata">directly</a>.
 
 <!-- Knowledgebase Cross-references -->
-1. [KB-FAIR]: Link to knowledgebase article "FAIR principles"
-2. [KB-ISA]: Link to knowledgeable article "ISA Model"
-3. [KB-Repositories]: link to article repositories
-4. [KB-DataSharing]: link to article Data Sharing
+
+- [KB-ISA]: Link to knowledgeable article "ISA Model"
+[KB-FAIR](./FAIRDataPrinciples.md)
+[KB-DataSharing](./datasharing.md)
+[KB-Repositories](./repositories.md)
 
 <!-- DataPLANT weblinks -->
 
