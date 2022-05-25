@@ -2,12 +2,11 @@
 layout: docs
 title: Data Publications
 published: 2022-05-19
-Author: Martin Kuhl
+author: Martin Kuhl
 add toc: true
 add sidebar: sidebars/mainSidebar.md
-Article Status: Ready
-To-Dos: 
-    - 
+article status: Ready
+todo:
 ---
 
 

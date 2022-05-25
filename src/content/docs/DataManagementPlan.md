@@ -2,12 +2,11 @@
 layout: docs
 title: Data Management Plan
 published: 2022-05-19
-Author: Martin Kuhl
+author: Martin Kuhl
 add toc: true
 add sidebar: sidebars/mainSidebar.md
-Article Status: Ready
-To-Dos: 
-    - 
+article status: Ready
+todo:
 ---
 
 A data management plan (DMP) structures the handling of research data in a scientific project and describes how to deal with the data during and after the end of the project. Many third-party funders, such as DFG, Horizon Europe, or BMBF expect you to provide information on the handling of research data as part of your funding application. Not only is a DMP by now mandatory for a DFG funding in plant sciences, it is always beneficial for your work on a research project. 

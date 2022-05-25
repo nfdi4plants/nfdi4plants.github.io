@@ -2,12 +2,11 @@
 layout: docs
 title: FAIR Principles
 published: 2022-05-19
-Author: Martin Kuhl
+author: Martin Kuhl
 add toc: false
 add sidebar: sidebars/mainSidebar.md
-Article Status: Ready
-To-Dos: 
-    - 
+article status: Ready
+todo:
 ---
 
 - [Detailed explanation](#detailed-explanation)
