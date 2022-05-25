@@ -6,17 +6,17 @@ date: 2022-05-12
 author: Dominik Brilhaus <https://orcid.org/0000-0001-9021-3197>
 add toc: true
 add sidebar: sidebars/mainSidebar.md
-article status: draft
+article status: Publishable
 todo:
   - paragraph branches    
 ---
 
-The DataPLANT's DataHUB[DataHUB] is the platform where several strings of DataPLANT's [research data management][KB-RDM] run together (converge). Here you can upload your research data as an annotated research context (ARC[KB-ARC]), to document its changes (via [git][KB-git]-based version control) and share[KB-DataSharing] it with collaborators. Metadata[KB-Metadata] associated with your ARC feeds into the metadata registry to make your research findable. From there, you can analyse your data using external workflows[KB-WMS], publish it to specific data repositories[KB-Repositories] or data publications[KB-DataPublication].
+The DataPLANT's DataHUB[DataHUB] is the platform where several strings of DataPLANT's [research data management][KB-RDM] run together. Here you can upload your research data as an annotated research context (ARC[KB-ARC]), to document its changes (via [git][KB-git]-based version control) and share[KB-DataSharing] it with collaborators. Metadata[KB-Metadata] associated with your ARC feeds into the metadata registry to make your research findable. From there, you can analyse your data using external workflows[KB-WMS], publish it to specific data repositories[KB-Repositories] or data publications[KB-DataPublication].
 
 ## Data management: DataHUB In-and-out
 
 ARCs[KB-ARC] are the core units managed in the DataHUB, which technically is a DataPLANT-tailored GitLab (see [KB-git]). The DataHUB is more than a cloud service to share your ARCs with other researchers. It already helps you individually to stay synced and on track between multiple locations where you produce or process your research data. For instance, you might design an experiment on your office desktop, collect experiment data using an instrument in the lab and afterwards analyse the data on a workstation or remote server. All you need is internet access on these computers and you can smoothly develop your ARC from multiple locations, without loosing any information.
-There are different options to upload data into the DataHUB. DataPLANT's [arcCommander][KB-arccommander] supports you in easy ARC creation and management (synchronization) between your local computers and the DataHUB. For small changes to your ARC, you can directly use the tools offered in the DataHUB (via your web browser). Here you can create new files and directories in your ARC or edit, upload and download individual files or directories. (Online editing is however currently limited to simple text-based files.) Finally, as the DataHUB is based on GitLab, you can also interact with it via your usual git-routines. This also comes in handy, if you would like to transfer data for analyses via computational workflows to an external platform such as [galaxy][galaxy], and *vice versa* import the results into your ARC in the DataHUB (see also [KB-WMS]). Once you wish to share and collaborate on your ARC, the DataHUB allows you to invite other researchers.
+There are different options to upload data into the DataHUB. DataPLANT's [arcCommander][KB-arccommander] supports you in easy ARC creation and management between your local computers and the DataHUB. For small changes to your ARC, you can directly use the tools offered in the DataHUB (via your web browser). Here you can create new files and directories in your ARC or edit, upload and download individual files or directories. Online editing is however currently limited to simple text-based files. Finally, as the DataHUB is based on GitLab, you can also interact with it via your usual git-routines. This also comes in handy, if you would like to transfer data for analyses via computational workflows to an external platform such as [galaxy][galaxy], and *vice versa* import the results into your ARC in the DataHUB (see also [KB-WMS]). Once you wish to share and collaborate on your ARC, the DataHUB allows you to invite other researchers.
 
 ## Access management: Sharing data the good way
 
