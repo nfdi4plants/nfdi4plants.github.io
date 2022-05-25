@@ -35,12 +35,11 @@ Yes, although we spare the technical details here, Git at first glance is comple
 
 The following table gives an overview about DataPLANT tools and services related to sharing data. Follow the link in the first column for details.
 
-Name | Type | Tasks on data sharing
+Name | Type | Tasks on metadata
 ----------------|-----------|------------------
-
-**[ArcCommander][KB-arccommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
-**[ARC][KB-ARC]**  <br> (Annotated Research Context) | Standard | <ul><li>ARCs are git repositories</li><li>Package data with metadata in a defined format</li></ul>
-**[DataHUB][DataHUB]** | Service | <ul><li>DataPLANT-customized GitLab instance</li><li>Infrastructure-as-code: on-premise solution</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+**[ARC](AnnotatedResearchContext.html)**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>ARCs are git repositories</li><li>Package data with metadata</li></ul>
+**ArcCommander** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
+**[DataHUB](datahub.html)** | Service | **Share:** <ul><li>DataPLANT-customized GitLab instance</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li><li>Infrastructure-as-code: on-premise solution</li></ul>
 
 
 ### Register with DataPLANT
