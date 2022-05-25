@@ -1,5 +1,3 @@
-<img src="media/dataplant_logo.png" alt="DataPLANT Logo" width="200"/>
-
 # DataPLANT’s QuickStart on ARCs
 
 > V1.3
@@ -36,7 +34,7 @@ This document is work in progress. If you experience any inconsistencies, have q
 - Most of this Quickstart (especially the section [ARC initialization](#arc-initialization)) is based on the command line (Windows: powershell; Linux and Mac: terminal).
 - The following picture shows exemplarily how to open a powershell on windows by entering *powershell* into the explorer path:  
 
-!(img/windows_powershell.png)
+![Windows Powershell](img/windows_powershell.png)
 
 - Text formatted as code blocks represents commands to copy/paste into the command line:
 
@@ -64,7 +62,7 @@ arc --version
 arc --help
 ```
 
-!(img/arcCommander_help.png)
+![ARC Commander help menu](img/arcCommander_help.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -85,7 +83,7 @@ arc init
 
 3. This will create the general ARC folder structure:
 
-!(img/arcCommander_init.png)
+![arc init](img/arcCommander_init.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -120,7 +118,7 @@ arc a add -s QuickStartStudy -a QuickStartAssay
 - The ARC Commander will add a subdirectories to the *studies* and *assays* folder. Your ARC should
     look similar to this now:  
 
-!(img/arc_studies_assays.jpg)
+![subdirectories](img/arc_studies_assays.jpg)
 
 - These steps can be repeated to add as many studies and assays as needed. Accordingly, more subdirectories will be added. Multiple assays can be grouped in a study when the same StudyIdentifier is used.
 
@@ -144,7 +142,7 @@ arc remote accesstoken get -s https://git.nfdi4plants.org
 
 A window within your browser will open, asking for your DataPLANT Log In. In case you are already logged in, the browser will directly display a Success message to you:
 
-!(img/arcCommander_AccessToken.png)
+![](img/arcCommander_AccessToken.png)
 
 ### ARC synchronization
 
@@ -171,7 +169,7 @@ arc sync -r https://git.nfdi4plants.org/martinkuhl/QuickStart
 arc sync -f
 ```
 
-!(img/arcCommander_syncForce.png)
+![](img/arcCommander_syncForce.png)
 
 5. Check if the upload was successful by visiting your ARC at the respective URL in your browser.
 
@@ -221,7 +219,7 @@ DataPLANT provides the Excel Add-In SWATE to support you in data annotation.
 
 - Use the *create annotation table* button in the yellow pop-up box (this only appears if you start SWATE on an Excel worksheet without an existing annotation table). An annotation table with the building blocks *Source Name* and *Sample Name* will be generated.  
 
-!(img/swate_createAnnotationTable.png)
+![](img/swate_createAnnotationTable.png)
 
 - Annotate your table with help of the [annotation principles](https://nfdi4plants.github.io/AnnotationPrinciples/).  
 Briefly:
@@ -249,7 +247,7 @@ Briefly:
 
 Alternatively, you can also use one of DataPLANT’s [SWATE templates](https://github.com/nfdi4plants/Swate/wiki/Docs05-Templates). You can find them under the *Protocol Insert* tab in SWATE.  
 
-!(img/swate_templateDatabase.png)
+![](img/swate_templateDatabase.png)
 
 #### Annotate your samples and data
 
@@ -266,7 +264,7 @@ Fill the cells beneath each building block with ontology terms to note the respe
 
 3. If you could not find a fitting term, use free text input.
 
-!(img/swate_ontologyTermSearch2.png)
+![](img/swate_ontologyTermSearch2.png)
 
 
 > Note: More information on how to use SWATE can be found [here](https://github.com/nfdi4plants/Swate/wiki/Docs05-Templates).
