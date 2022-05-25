@@ -38,26 +38,23 @@ The following table gives an overview about DataPLANT tools and services related
 
 Name | Type | Tasks on data sharing
 ----------------|-----------|------------------
-**[ARC][ARC]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata in a defined format</li></ul>
-**[DataHUB][DataHUB]** | Service | **Share:** <ul><li>Infrastructure-as-code: on-premise solution</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+**[ARC](AnnotatedResearchContext.html)**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata in a defined format</li></ul>
+**[DataHUB](datahub.html)** | Service | **Share:** <ul><li>Infrastructure-as-code: on-premise solution</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 
 ### Register with DataPLANT
 
 In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and services, please [sign up][Registration] with DataPLANT.  
 
-## DataPLANT Support
-Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our [helpdesk](https://support.nfdi4plants.org) or by contacting us <a href="mailto:info@nfdi4plants.org">directly</a>.
-
 <!-- Knowledgebase Cross-references -->
 
-[KB-FAIR](./FAIRDataPrinciples.html)
-[KB-Metadata](./metadata.html)
-[KB-RDM](./ResearchDataManagement.html)
-[KB-DataPublication](./datapublication.html)
-[KB-DataSharing](./datasharing.html)
-[KB-git](./git.html)
-[KB-pid](./pids.html)
-[KB-Repositories](./repositories.html)
+[KB-FAIR]: ./FAIRDataPrinciples.html
+[KB-Metadata]: ./metadata.html
+[KB-RDM]: ./ResearchDataManagement.html
+[KB-DataPublication]: ./datapublication.html
+[KB-DataSharing]: ./datasharing.html
+[KB-git]: ./git.html
+[KB-pid]: ./pids.html
+[KB-Repositories]: ./repositories.html
 
 <!-- Reference links -->
 [DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"

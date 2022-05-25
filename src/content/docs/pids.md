@@ -60,13 +60,10 @@ Name | Type | Tasks on metadata
 ----------------|-----------|------------------ 
 - invenio -->
 
-## DataPLANT Support
-Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our [helpdesk](https://support.nfdi4plants.org) or by contacting us <a href="mailto:info@nfdi4plants.org">directly</a>.
-
 <!-- Knowledgebase Cross-references -->
 
-[KB-FAIR](./FAIRDataPrinciples.html)
-[KB-Metadata](./metadata.html)
+[KB-FAIR]: ./FAIRDataPrinciples.html
+[KB-Metadata]: ./metadata.html
 
 <!-- Reference links -->
 [DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"

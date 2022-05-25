@@ -68,6 +68,7 @@ The following table gives an overview about DataPLANT tools and services related
 
 Name | Type | Tasks on metadata 
 ----------------|-----------|------------------ 
+
 **[ARC][KB-ARC]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
 **[Swate][KB-SWATE]** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
 **[ArcCommander][KB-arccommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
@@ -75,19 +76,16 @@ Name | Type | Tasks on metadata
 <!-- ~~Converter~~ | Tool under construction | **Curate:** <ul><li>Harmonize and migrate between metadata schema</li><li>Manage who can view or access your ARC</li></ul>
 **Metadata registry** | Service | **Share:** <ul><li>Find ARC (meta)data</li></ul> -->
 
-## DataPLANT Support
-Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our [helpdesk](https://support.nfdi4plants.org) or by contacting us <a href="mailto:info@nfdi4plants.org?subject=DataPLANT%20Repositories">directly</a>.
-
 <!-- Knowledgebase cross-references -->
 
-[KB-DataPublication](./datapublication.html)
-[KB-FAIR](./FAIRDataPrinciples.html)
-[KB-Metadata](./metadata.html)
-[KB-pid](./pids.html)
-- [KB-DataFormats]: Link to data formats article
-- [KB-arccommander](./arccommander.html)
-- [KB-SWATE]
-[KB-ARC](./AnnotatedResearchContext.html)
+[KB-DataPublication]: ./datapublication.html
+[KB-FAIR]: ./FAIRDataPrinciples.html
+[KB-Metadata]: ./metadata.html
+[KB-pid]: ./pids.html
+[KB-DataFormats]: placeholder.html "Link to data formats article"
+[KB-arccommander]: ./arccommander.html
+[KB-SWATE]: placeholder.html
+[KB-ARC]: ./AnnotatedResearchContext.html
 
 <!-- DataPLANT web links -->
 

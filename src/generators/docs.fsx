@@ -6,6 +6,7 @@ open Docsloader
 open Html
 
 let docsLayout (docs: Docsloader.Docs) =
+    let publishedDate = docs.published.Value.ToString("yyyy-MM-dd")
     custom "nfdi-body" [Class "content"; if Array.isEmpty docs.sidebar |> not then HtmlProperties.Custom("hasSidebar", "true")] [
         if Array.isEmpty docs.sidebar |> not then 
             for sidebarEle in docs.sidebar do
@@ -13,10 +14,23 @@ let docsLayout (docs: Docsloader.Docs) =
                     div [HtmlProperties.Custom ("slot", "title")] [!! sidebarEle.Title]
                     !! sidebarEle.Content
                 ]
+
         h1 [Class "front-header"] [!! docs.title]
+        i [Class "help" ] [!! $"last updated at {publishedDate}" ]
         
         if docs.add_toc then custom "nfdi-toc" [] []
         !! docs.content
+
+        // support contact
+        h3 [] [!! "Dataplant Support"]
+        div [] [
+            !! "Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our "
+            a [Href "https://support.nfdi4plants.org"] [!! "helpdesk"]
+            !! " or by contacting us " 
+            a [Href "mailto:info@nfdi4plants.org"] [!! "directly"]
+            !! "."
+        ]
+        
         // Edit this page link
         div [] [
             a [

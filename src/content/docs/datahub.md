@@ -44,24 +44,19 @@ A plant biologist's day-to-day routines circle around more than just data and co
 
 In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and services, please [sign up][Registration] with DataPLANT.  
 
-### DataPLANT Support
-
-## DataPLANT Support
-Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our [helpdesk](https://support.nfdi4plants.org) or by contacting us <a href="mailto:info@nfdi4plants.org">directly</a>.
-
 <!-- Knowledgebase cross-references -->
 
-[KB-FAIR](./FAIRDataPrinciples.html)
-[KB-Metadata](./metadata.html)
-[KB-RDM](./ResearchDataManagement.html)
-[KB-DataPublication](./datapublication.html)
-[KB-DataSharing](./datasharing.html)
-[KB-git](./git.html)
-[KB-pid](./pids.html)
-[KB-Repositories](./repositories.html)
-- [KB-WMS](./WMS.html)
-- [KB-arccommander](./arccommander.html)
-- [KB-ARC](./AnnotatedResearchContext.html)
+[KB-FAIR]: ./FAIRDataPrinciples.html
+[KB-Metadata]: ./metadata.html
+[KB-RDM]: ./ResearchDataManagement.html
+[KB-DataPublication]: ./datapublication.html
+[KB-DataSharing]: ./datasharing.html
+[KB-git]: ./git.html
+[KB-pid]: ./pids.html
+[KB-Repositories]: ./repositories.html
+[KB-WMS]: ./WMS.html
+[KB-arccommander]: ./arccommander.html
+[KB-ARC]: ./AnnotatedResearchContext.html
 
 <!-- DataPLANT web links -->
 

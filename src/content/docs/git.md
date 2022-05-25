@@ -17,7 +17,8 @@ There are different options to keep track of these versions. The seemingly simpl
 
 ## Git
 
-A more sophisticated approach addressing the versioning needs in more complex projects originates from the field of software engineering. Software development builds on iterative design-test-repeat cycles, in which multiple versions of files (code, inputs and outputs) or directory structures emerge plus changing dependencies within (e.g. files) and outside (e.g. other softwares) of the project. So-called "distributed version control systems" (sometimes termed "source control" or "revision control") help software developers to keep track of project changes, guaranteeing stable integrity of the software, ideally before it is rolled-out to the public. The most prominent and vastly established distributed version control system is called **[Git]**.  
+A more sophisticated approach addressing the versioning needs in more complex projects originates from the field of software engineering. Software development builds on iterative design-test-repeat cycles, in which multiple versions of files (code, inputs and outputs) or directory structures emerge plus changing dependencies within (e.g. files) and outside (e.g. other softwares) of the project. So-called "distributed version control systems" (sometimes termed "source control" or "revision control") help software developers to keep track of project changes, guaranteeing stable integrity of the software, ideally before it is rolled-out to the public. The most prominent and vastly established distributed version control system is called [Git][Git].  
+
 By taking chronological snapshots of a complete project (termed "git repository") rather than single files, Git allows the user to "go back in time" to an earlier version of that project, e.g. when the software was properly functioning. This is further supported by options to make changes to multiple files at once in parallel, safe copies of the project (termed "branch" or "fork") without breaking the original version. In contrast to the versioning of cloud services, active control over these snapshots lies in the user's hand, allowing to evolve a project with a well-documented version history paralleling the iterative steps.
 
 ## Git platforms: GitHub and GitLab
@@ -36,18 +37,18 @@ The following table gives an overview about DataPLANT tools and services related
 
 Name | Type | Tasks on data sharing
 ----------------|-----------|------------------
+
 **[ArcCommander][KB-arccommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
 **[ARC][KB-ARC]**  <br> (Annotated Research Context) | Standard | <ul><li>ARCs are git repositories</li><li>Package data with metadata in a defined format</li></ul>
 **[DataHUB][DataHUB]** | Service | <ul><li>DataPLANT-customized GitLab instance</li><li>Infrastructure-as-code: on-premise solution</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+
 
 ### Register with DataPLANT
 
 In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and services, please [sign up][Registration] with DataPLANT.  
 
-## DataPLANT Support
-Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our [helpdesk](https://support.nfdi4plants.org) or by contacting us <a href="mailto:info@nfdi4plants.org">directly</a>.
-
 <!-- Knowledgebase Cross-references -->
+
 
 [KB-FAIR](./FAIRDataPrinciples.html)
 [KB-Metadata](./metadata.html)
@@ -55,6 +56,14 @@ Besides these technical solutions, DataPLANT supports you with community-engaged
 [KB-DataSharing](./datasharing.html)
 - [KB-arccommander](./arccommander.html)
 - [KB-ARC](./AnnotatedResearchContext.html)
+
+[KB-FAIR]: <./FAIRDataPrinciples.html>
+[KB-Metadata]: <./metadata.html>
+[KB-RDM]: <./ResearchDataManagement.html>
+[KB-DataSharing]: <./datasharing.html>
+[KB-arccommander]: ./arccommander.html
+[KB-ARC]: ./AnnotatedResearchContext.html
+
 
 <!-- DataPLANT web links -->
 
