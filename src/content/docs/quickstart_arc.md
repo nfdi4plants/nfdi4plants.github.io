@@ -229,7 +229,7 @@ DataPLANT provides the Excel Add-In SWATE to support you in data annotation.
 
 - Use the *create annotation table* button in the yellow pop-up box (this only appears if you start SWATE on an Excel worksheet without an existing annotation table). An annotation table with the building blocks *Source Name* and *Sample Name* will be generated.  
 
-![](img/swate_createAnnotationTable.png)
+![](https://raw.githubusercontent.com/wiki/nfdi4plants/Swate/images/UserDocs/Swate-CreateAnnotationTable-Exp.jpg)
 
 - Annotate your table with help of the [annotation principles](https://nfdi4plants.github.io/AnnotationPrinciples/).  
 Briefly:
@@ -249,7 +249,7 @@ Briefly:
 
 4. If you could not find a fitting term, you can use the Advanced Term Search with the blue links above the *Add building block* button. If you still could not find a fitting term, use free text input.  
 
-![](img/swate_addBuildingBlock.png)
+![](https://raw.githubusercontent.com/wiki/nfdi4plants/Swate/images/UserDocs/Swate-AddBuildingBlock-Exp.jpg)
 
 5. For more information on customizing your annotation table click [here](https://github.com/nfdi4plants/Swate/wiki/Docs03-Building-Blocks).
 
@@ -257,7 +257,7 @@ Briefly:
 
 Alternatively, you can also use one of DataPLANT’s [SWATE templates](https://github.com/nfdi4plants/Swate/wiki/Docs05-Templates). You can find them under the *Protocol Insert* tab in SWATE.  
 
-![](img/swate_templateDatabase.png)
+![](https://user-images.githubusercontent.com/39732517/128495178-cc14690a-fc8a-4a3c-b591-365176ea2b00.png)
 
 #### Annotate your samples and data
 
