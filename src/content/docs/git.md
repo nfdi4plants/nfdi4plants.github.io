@@ -37,9 +37,9 @@ The following table gives an overview about DataPLANT tools and services related
 
 Name | Type | Tasks on data sharing
 ----------------|-----------|------------------
-**[ArcCommander][KB-arccommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
-**[ARC][KB-ARC]**  <br> (Annotated Research Context) | Standard | <ul><li>ARCs are git repositories</li><li>Package data with metadata in a defined format</li></ul>
-**[DataHUB][DataHUB]** | Service | <ul><li>DataPLANT-customized GitLab instance</li><li>Infrastructure-as-code: on-premise solution</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+**ArcCommander** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
+**[ARC][KB-ARC]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>ARCs are git repositories</li><li>Package data with metadata in a defined format</li></ul>
+**[DataHUB](datahub.html)** | Service | **Share:** <ul><li>DataPLANT-customized GitLab instance</li><li>Infrastructure-as-code: on-premise solution</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 
 
 ### Register with DataPLANT
@@ -48,21 +48,13 @@ In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and se
 
 <!-- Knowledgebase Cross-references -->
 
-
-[KB-FAIR](./FAIRDataPrinciples.html)
-[KB-Metadata](./metadata.html)
-[KB-RDM](./ResearchDataManagement.html)
-[KB-DataSharing](./datasharing.html)
-- [KB-arccommander](./arccommander.html)
-- [KB-ARC](./AnnotatedResearchContext.html)
-
-[KB-FAIR]: <./FAIRDataPrinciples.html>
-[KB-Metadata]: <./metadata.html>
-[KB-RDM]: <./ResearchDataManagement.html>
-[KB-DataSharing]: <./datasharing.html>
+[KB-FAIR]: ./FAIRDataPrinciples.html
+[KB-Metadata]: ./metadata.html
+[KB-RDM]: ./ResearchDataManagement.html
+[KB-DataSharing]: ./datasharing.html
 [KB-arccommander]: ./arccommander.html
 [KB-ARC]: ./AnnotatedResearchContext.html
-
+[KB-FAIR]: ./FAIRDataPrinciples.html
 
 <!-- DataPLANT web links -->
 
@@ -73,3 +65,4 @@ In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and se
 [Git]: <https://git-scm.com> "Git"
 [GitLab]: <https://gitlab.com> "GitLab"
 [GitHub]: <https://github.com> "GitHub"
+[Registration]: <https://register.nfdi4plants.org/> "DataPLANT Registration"

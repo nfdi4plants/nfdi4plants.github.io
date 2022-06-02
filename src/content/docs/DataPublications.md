@@ -32,7 +32,7 @@ There are a several criteria to consider during publication of your dataset:
 
 1. Of course, your data needs to be hosted in a repository to make it available for everyone. Various [repositories](repositories.html) exist, which have been developed to support data publication, e.g. [Zenodo](https://zenodo.org/), including general, but also domain-specific data repositories exist.
 2. Your dataset needs to be well annotated, allowing other researchs to understand and reuse your data (see also [metadata](metadata.html)).
-3. Your dataset needs to be assigned a [persistent identifier](PIDsmd) (PID), such as a DOI. This can be assigned directly on the repository or with the help of a publication service, such as [Invenio](https://inveniosoftware.org/products/rdm/). The identifier will others to cite your dataset.
+3. Your dataset needs to be assigned a [persistent identifier](pids.html) (PID), such as a DOI. This can be assigned directly on the repository or with the help of a publication service, such as [Invenio](https://inveniosoftware.org/products/rdm/). The identifier will others to cite your dataset.
 4. If the publisher validates your data, your metadata annotation is reviewed to ensure comprehensibility.
 There is also the possibility for publishing a data paper about the dataset, which may be published as a preprint, in a journal, or in a data journal that is dedicated to supporting data papers. The data may be hosted by the journal or hosted separately in a data repository. For more information see [data papers & data journals](#Data-papers-&-data-journals)
 
@@ -44,7 +44,7 @@ There is also the possibility for publishing a data paper about the dataset, whi
 
 Data papers or data articles are “scholarly publications of a searchable metadata document describing a particular on-line accessible dataset, or a group of datasets, published in accordance to the standard academic practices”. The intent of a data paper is to offer a descriptive information on the related dataset(s) focusing on data collection and distinguishing features, rather than on data processing and analysis. Thereby, their aim is answering questions like “What data was published?”, “How was the data collected?”, or “Who collected the data?”. As data papers are considered academic publications, just as other types of papers, they allow scientists sharing data to receive credit and thus, upgrading the value of data sharing. This provides not only an additional incentive to share data, but also increases metadata quality and reusability of the shared data.
 
-Data papers are supported by a variety of journals, of which some are “true” data journals, i.e. they are dedicated to publishing data papers only, while the majority are mixed journals meaning they publish a number of article types, including data papers. A comprehensive list of data journals for different domains can be found [here](https://www.researchdata.uni-jena.de/en/information/data-publication)
+Data papers are supported by a variety of journals, of which some are “true” data journals, i.e. they are dedicated to publishing data papers only, while the majority are mixed journals meaning they publish a number of article types, including data papers. A comprehensive list of data journals for different domains can be found [here](https://www.researchdata.uni-jena.de/en/information/data-publication).
 
 ## How does DataPLANT support me in Data publication?
 

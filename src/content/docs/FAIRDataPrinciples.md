@@ -20,30 +20,30 @@ The ultimate goal of FAIR (data) is to drive science and the production of new d
 
 ### Findable
 
-- [F1. (Meta)data are assigned a globally unique and persistent identifier](#<ins>**F1.-(Meta)data-are-assigned-a-globally-unique-and-persistent-identifier**)
-- [F2. Data are described with rich metadata (defined by R1 below)](#<ins>**F2.-Data-are-described-with-rich-metadata-(defined-by-R1-below)**)
-- [F3. Metadata clearly and explicitly include the identifier of the data they describe](#<ins>**F3.-Metadata-clearly-and-explicitly-include-the-identifier-of-the-data-they-describe**)
-- [F4. (Meta)data are registered or indexed in a searchable resource](#<ins>**F4.-(Meta)data-are-registered-or-indexed-in-a-searchable-resource**)
+- [F1. (Meta)data are assigned a globally unique and persistent identifier](#f1-metadata-are-assigned-a-globally-unique-and-persistent-identifier)
+- [F2. Data are described with rich metadata (defined by R1 below)](#f2-data-are-described-with-rich-metadata-defined-by-r1-below)
+- [F3. Metadata clearly and explicitly include the identifier of the data they describe](#f3-metadata-clearly-and-explicitly-include-the-identifier-of-the-data-they-describe)
+- [F4. (Meta)data are registered or indexed in a searchable resource](#f4-metadata-are-registered-or-indexed-in-a-searchable-resource)
 
 ### Accessible
 
-- [A1. (Meta)data are retrievable by their identifier using a standardised communications protocol](#<ins>**A1.-(Meta)data-are-retrievable-by-their-identifier-using-a-standardised-communications-protocol**)
-  - [A1.1 The protocol is open, free, and universally implementable](#<ins>**A1.1-The-protocol-is-open,-free,-and-universally-implementable**)
-  - [A1.2 The protocol allows for an authentication and authorisation procedure, where necessary](#<ins>**A1.2-The-protocol-allows-for-an-authentication-and-authorisation-procedure,-where-necessary**)
-- [A2. Metadata are accessible, even when the data are no longer available](#<ins>**A2.-Metadata-are-accessible,-even-when-the-data-are-no-longer-available**)
+- [A1. (Meta)data are retrievable by their identifier using a standardised communications protocol](#a1-metadata-are-retrievable-by-their-identifier-using-a-standardised-communications-protocol)
+  - [A1.1 The protocol is open, free, and universally implementable](#a11-the-protocol-is-open-free-and-universally-implementable)
+  - [A1.2 The protocol allows for an authentication and authorisation procedure, where necessary](#a12-the-protocol-allows-for-an-authentication-and-authorisation-procedure-where-necessary)
+- [A2. Metadata are accessible, even when the data are no longer available](#a2-metadata-are-accessible-even-when-the-data-are-no-longer-available)
 
 ### Interoperable
 
-- [I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation](#<ins>**I1.-(Meta)data-use-a-formal,-accessible,-shared,-and-broadly-applicable-language-for-knowledge-representation**)
-- [I2. (Meta)data use vocabularies that follow FAIR principles](#<ins>**I2.-(Meta)data-use-vocabularies-that-follow-FAIR-principles**)
-- [I3. (Meta)data include qualified references to other (meta)data](#<ins>**I3.-(Meta)data-include-qualified-references-to-other-(meta)data**)
+- [I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation](#i1-metadata-use-a-formal-accessible-shared-and-broadly-applicable-language-for-knowledge-representation)
+- [I2. (Meta)data use vocabularies that follow FAIR principles](#i2-metadata-use-vocabularies-that-follow-fair-principles)
+- [I3. (Meta)data include qualified references to other (meta)data](#i3-metadata-include-qualified-references-to-other-metadata)
 
 ### Reusable
 
-- [R1. (Meta)data are richly described with a plurality of accurate and relevant attributes](#<ins>**R1.-(Meta)data-are-richly-described-with-a-plurality-of-accurate-and-relevant-attributes**)
-  - [R1.1. (Meta)data are released with a clear and accessible data usage license](#<ins>**R1.1.-(Meta)data-are-released-with-a-clear-and-accessible-data-usage-license**)
-  - [R1.2. (Meta)data are associated with detailed provenance](#<ins>**R1.2.-(Meta)data-are-associated-with-detailed-provenance**)
-  - [R1.3. (Meta)data meet domain-relevant community standards](#<ins>**R1.3.-(Meta)data-meet-domain-relevant-community-standards**)
+- [R1. (Meta)data are richly described with a plurality of accurate and relevant attributes](#r1-metadata-are-richly-described-with-a-plurality-of-accurate-and-relevant-attributes)
+  - [R1.1. (Meta)data are released with a clear and accessible data usage license](#r11-metadata-are-released-with-a-clear-and-accessible-data-usage-license)
+  - [R1.2. (Meta)data are associated with detailed provenance](#r12-metadata-are-associated-with-detailed-provenance)
+  - [R1.3. (Meta)data meet domain-relevant community standards](#r13-metadata-meet-domainrelevant-community-standards)
 
 ![FAIR Data Principles](img/FAIR.jpg)
 
