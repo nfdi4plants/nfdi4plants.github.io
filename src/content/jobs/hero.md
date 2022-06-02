@@ -6,7 +6,7 @@ emphasis-color: darkblue
 image:
 layout: text-only
 # You can find the notification if no jobs are available. under "src/generators/jobs.fsx". Look for "noJobOffersMsg".
-open-job-offers: true
+open-job-offers: false
 --- 
 
 
