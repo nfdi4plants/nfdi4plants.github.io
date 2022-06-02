@@ -22,8 +22,24 @@ let createHero (hero:Jobsloader.JobsHero) =
     let titleComponent = 
         h1 [Class "title"] [!!hero.Title]
 
+    
+    let noJobOffersMsg = 
+        [
+            p [Class "subtitle"] [!!"Currently no open positions are available!"]
+            p [] [
+                !!"Please do not hesitate to "
+                // http://www.email-obfuscator.com
+                a [Href "javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0"] [!!"contact us"]
+                !!" if you are interested in joining the DataPLANT team or in cooperating with us!"
+            ] 
+        ]
+
     let bodyComponent =
-        div [Class "content"] [!!hero.Body]
+        match hero.OpenJobOffers with
+        | true ->
+            div [Class "content"] [!!hero.Body]
+        | false ->
+            div [Class "content"] noJobOffersMsg
 
     section [Class (sprintf "hero is-medium %s" heroBG)] [
         div [Class "hero-body"] [
@@ -31,8 +47,16 @@ let createHero (hero:Jobsloader.JobsHero) =
             | TextOnly              -> 
                 div [Class "container"] [
                     headingComponent
-                    titleComponent
-                    bodyComponent
+                    div [Class "content"] [ 
+                        titleComponent
+                        // this part breaks with previous maintanence standards by not using "bodyComponent". but for "TextOnly" it is 
+                        // better to have title and body in Class "content".
+                        match hero.OpenJobOffers with
+                        | true ->
+                            !!hero.Body
+                        | false ->
+                            yield! noJobOffersMsg
+                    ]
                 ]
             | ImageOnly             -> 
                 div [Class "container"] [
@@ -173,9 +197,6 @@ let generate' (ctx : SiteContents) (page: string) =
         printfn "[Jobs-Generator] No jobs page found for %s" page
         div [] []
      
-
-
-
 let generate (ctx : SiteContents) (projectRoot: string) (page: string) =
   generate' ctx page
   |> Layout.render ctx
