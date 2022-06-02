@@ -36,22 +36,22 @@ On the other hand, you, as a researcher, need to request an ORCID (once). ORCIDs
 
 ### People
 
-- Open Researcher and Contributor ID (ORCID, <https://orcid.org/>)
+- Open Researcher and Contributor ID ([ORCID](<https://orcid.org/>))
 
 ### Digital objects and publications
 
-- Digital Object Identifier (DOI, <https://www.doi.org>)
-- ePIC consortium <https://www.pidconsortium.net>
-- Pubmed ID (PMID, <https://pubmed.ncbi.nlm.nih.gov>)
+- Digital Object Identifier ([DOI](<https://www.doi.org>))
+- Persistent Identifiers for eResearch ([ePIC consortium](<https://www.pidconsortium.net>))
+- Pubmed ID ([PMID](<https://pubmed.ncbi.nlm.nih.gov>))
 
 ### Samples and Resources
 
-- Research Resource Identifiers (RRIDs) <http://scicrunch.org/resources>
+- Research Resource Identifiers ([RRIDs](<http://scicrunch.org/resources>))
 
 ### Institutions
 
-- Research Organization Registry (ROR, <https://ror.org>)
-- Global Research Identifier Database (GRID, <https://grid.ac>)
+- Research Organization Registry ([ROR](<https://ror.org>))
+- Global Research Identifier Database ([GRID](<https://grid.ac>))
 
 <!-- ## How does DataPLANT support me in using PIDs?
 
@@ -75,4 +75,4 @@ Name | Type | Tasks on metadata
 
 ## Sources and further information
 
-- https://www.doi.org/faq.html
+- [Frequently Asked Questions about the DOI® System](<https://www.doi.org/faq.html>)

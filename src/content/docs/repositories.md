@@ -20,17 +20,17 @@ We differentiate between domain-specific and general-purpose repositories.
 Domain-specific data repositories are well-established in a domain or community specialized on a certain data type. They frequently co-develop or foster compliance with metadata standards (see [metadata][KB-Metadata]) and oftentimes curate data. Data deposition at these repositories is recommended.  
 The following table lists examples of relevant endpoint repositories (ER) for data produced by DataPLANT participants. Check the links below for additional repositories.
 
-ER Name | ER description | Biological data domain | Link ER | DataPLANT templates available
+Repository | Description | Biological data domain | DataPLANT Templates available
 -- | -- | -- | -- | -- |
-EBI-ENA | European Nucleotide Archive | genome / transcriptome sequences | <https://www.ebi.ac.uk/ena/> | :white_check_mark:
-EBI-ArrayExpress | Archive of Functional Genomics Data | transcriptome | <https://www.ebi.ac.uk/arrayexpress/>
-EBI-MetaboLights |   | metabolome | <https://www.ebi.ac.uk/metabolights/> | :white_check_mark:
-EBI-PRIDE | PRoteomics IDEntifications Database | proteome | <https://www.ebi.ac.uk/pride/> | :white_check_mark:
-EBI-BioImage Archive |   | imaging, microscopy | <https://www.ebi.ac.uk/bioimage-archive/>
-e!DAL-PGP | Plant Genomics & Phenomics Research Data Repository | phenome | <https://edal.ipk-gatersleben.de/index.html>
-NCBI-GEO | Gene Expression Omnibus | transcriptome | <https://www.ncbi.nlm.nih.gov/geo/> | :white_check_mark:
-NCBI-GenBank |   | genome | <https://www.ncbi.nlm.nih.gov/genbank/> | :white_check_mark:
-NCBI-SRA | Sequence Read Archive | genome / transcriptome sequences | <https://www.ncbi.nlm.nih.gov/sra/> | :white_check_mark:
+[EBI-ENA](<https://www.ebi.ac.uk/ena/>) | European Nucleotide Archive | genome / transcriptome sequences | :white_check_mark:
+[EBI-ArrayExpress](<https://www.ebi.ac.uk/arrayexpress/>) | Archive of Functional Genomics Data | transcriptome  
+[EBI-MetaboLights](<https://www.ebi.ac.uk/metabolights/>) | Database of Metabolomics | metabolome | :white_check_mark:
+[EBI-PRIDE](<https://www.ebi.ac.uk/pride/>) | PRoteomics IDEntifications Database | proteome | :white_check_mark:
+[EBI-BioImage Archive](<https://www.ebi.ac.uk/bioimage-archive/>) | Stores and distributes biological images | imaging, microscopy | 
+[e!DAL-PGP](<https://edal.ipk-gatersleben.de/index.html>) | Plant Genomics & Phenomics Research Data Repository | phenome | 
+[NCBI-GEO](<https://www.ncbi.nlm.nih.gov/geo/>) | Gene Expression Omnibus | transcriptome | :white_check_mark:
+[NCBI-GenBank](<https://www.ncbi.nlm.nih.gov/genbank/>) | Genetic Sequence Database | genome | :white_check_mark:
+[NCBI-SRA](<https://www.ncbi.nlm.nih.gov/sra/>) | Sequence Read Archive | genome / transcriptome sequences | :white_check_mark:
 
 ### General-purpose repositories
 
@@ -53,7 +53,7 @@ The following resources provide good starting points to seek a suitable reposito
 
 ## Submitting data to a public data repository
 
-Depositing research data at a public data repository can be tedious. Especially the domain-specific repositories require compliance with specific data submission routines (a) in terms of format and content and (b) for both "raw data" and "metadata". Only data types relevant for the respective domain are accepted and need to be provided in proper [data formats][KB-DataFormats]. In order to guarantee that the information required to properly describe the data is present, they require adherence to domain-specific [metadata][KB-Metadata] standards, represented in the proper format and oftentimes require the use of controlled vocabularies and ontologies. And finally the mere technicalities of how to collect and submit the (meta)data varies greatly between repositories, ranging from the use of pure upload via file transfers (e.g. FTP), APIs, online web forms or specialized software requiring local installation. The large repository providers invest a lot to harmonize their formats and submission routines. Still, there is a long way to go and we are currently far away from the unified way where "If you know one, you know them all."
+Depositing research data at a public data repository can be tedious. Especially the domain-specific repositories require compliance with specific data submission routines (a) in terms of format and content and (b) for both "raw data" and "metadata". Only data types relevant for the respective domain are accepted and need to be provided in proper data formats. In order to guarantee that the information required to properly describe the data is present, they require adherence to domain-specific [metadata][KB-Metadata] standards, represented in the proper format and oftentimes require the use of controlled vocabularies and ontologies. And finally the mere technicalities of how to collect and submit the (meta)data varies greatly between repositories, ranging from the use of pure upload via file transfers (e.g. FTP), APIs, online web forms or specialized software requiring local installation. The large repository providers invest a lot to harmonize their formats and submission routines. Still, there is a long way to go and we are currently far away from the unified way where "If you know one, you know them all."
 
 <!-- 
 - no fun 
@@ -69,9 +69,9 @@ The following table gives an overview about DataPLANT tools and services related
 Name | Type | Tasks on metadata 
 ----------------|-----------|------------------ 
 **[ARC][KB-ARC]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
-**[Swate][KB-SWATE]** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
-**[ArcCommander][KB-arccommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
-**[DataHUB][DataHUB]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+**Swate** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
+**ArcCommander** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
+**[DataHUB](datahub.html)** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 <!-- ~~Converter~~ | Tool under construction | **Curate:** <ul><li>Harmonize and migrate between metadata schema</li><li>Manage who can view or access your ARC</li></ul>
 **Metadata registry** | Service | **Share:** <ul><li>Find ARC (meta)data</li></ul> -->
 
