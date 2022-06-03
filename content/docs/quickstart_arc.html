@@ -83,7 +83,7 @@
 May 2022</p>
 </blockquote>
 <p>We are very happy that you chose our tools and infrastructure to create and share your own ARCs. In this QuickStart we focus on how to use the &quot;ARC Commander&quot; to store your data and &quot;SWATE&quot; to enrich it with metadata.</p>
-<p>This document is work in progress. If you experience any inconsistencies, have questions or would like to suggest additions, please feel free to send a message to: <a href="mailto:info@nfdi4plants.org?subject=ARC%20QuickStart">info[at]nfdi4plants.org</a> or open in issue at <a href="https://github.com/nfdi4plants/quickstart">https://github.com/nfdi4plants/quickstart</a>.</p>
+<p>This document is work in progress. If you experience any inconsistencies, have questions or would like to suggest additions, please feel free to <a href="mailto:info@nfdi4plants.org?subject=ARC%20QuickStart">contact us</a> or open in issue in our <a href="https://github.com/nfdi4plants/quickstart">Helpdesk</a>.</p>
 <ul>
 <li><a href="#environment-and-setup">Environment and setup</a>
 <ul>
@@ -207,7 +207,7 @@ look similar to this now:</li>
 <div style="page-break-after: always;"></div>
 <nfdi-h2 id="sharing-your-arc">Sharing your ARC</nfdi-h2>
 <nfdi-h3 id="dataplant-registration-and-access">DataPLANT registration and access</nfdi-h3>
-<p>In case you are not a member of DataPLANT yet, please visit <a href="https://register.nfdi4plants.org">https://register.nfdi4plants.org</a> to register. Afterwards, you will be granted access to DataPLANT’s DataHUB, available under <a href="https://git.nfdi4plants.org">https://git.nfdi4plants.org</a>. The DataHUB allows you to share your ARCs with registered lab or project partners.</p>
+<p>In case you are not a member of DataPLANT yet, please visit <a href="https://register.nfdi4plants.org">sign up</a>. Afterwards, you will be granted access to DataPLANT’s <a href="https://git.nfdi4plants.org">DataHUB</a>. The DataHUB allows you to share your ARCs with registered lab or project partners.</p>
 <p><img src="img/dataplant_registration.png" alt="" /></p>
 <p>After successful registration, create and set an access token for ARC Commander synchronization using</p>
 <pre><code class="language-bash">arc remote accesstoken get -s https://git.nfdi4plants.org
@@ -239,12 +239,12 @@ look similar to this now:</li>
 <ol start="5">
 <li>Check if the upload was successful by visiting your ARC at the respective URL in your browser.</li>
 </ol>
-<p>!(img/datahub_repository.png)</p>
+<p><img src="img/datahub_repository.png" alt="" /></p>
 <blockquote>
 <p>Note: Alternatively, you can first create a new blank repository in the <a href="https://git.nfdi4plants.org">DataHUB</a> by clicking &quot;New project/repository&quot; in the plus drop down menu of the navigation bar on top. Afterwards, you can sync your local ARC to the respective repository by adapting the URL to the newly generated one.</p>
 </blockquote>
 <nfdi-h3 id="setting-a-git-user">Setting a git user</nfdi-h3>
-<p>Some users might want to use different signatures for different repositories, e.g. for developing software on GitHub and working on ARCs on <a href="htttps://git.nfdi4plants.org">DataPLANT's DataHUB</a>. Besides your global git configuration, you can store the information you want to use for editing ARCs within the ARC Commander config:</p>
+<p>Some users might want to use different signatures for different repositories, e.g. for developing software on GitHub and working on ARCs on <a href="https://git.nfdi4plants.org">DataPLANT's DataHUB</a>. Besides your global git configuration, you can store the information you want to use for editing ARCs within the ARC Commander config:</p>
 <pre><code class="language-bash">arc config set -g -n &quot;general.gitname&quot; -v &quot;Name of choice&quot;
 arc config set -g -n &quot;general.gitemail&quot; -v &quot;Email of choice&quot;
 </code></pre>
@@ -324,7 +324,7 @@ header.</p>
 </ol>
 <p><img src="img/swate_ontologyTermSearch2.png" alt="" /></p>
 <blockquote>
-<p>Note: More information on how to use SWATE can be found <a href="https://github.com/nfdi4plants/Swate/wiki/Docs05-Templates">here</a>.</p>
+<p>Note: More information on how to use SWATE can be found <a href="https://github.com/nfdi4plants/Swate/wiki">here</a>.</p>
 </blockquote>
 <div style="page-break-after: always;"></div>
 <nfdi-h2 id="the-minimalists-arc-quickstart">The Minimalist's ARC-QuickStart</nfdi-h2>

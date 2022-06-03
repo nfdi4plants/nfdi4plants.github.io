@@ -1982,8 +1982,7 @@ fieldset[disabled] .file-name, fieldset[disabled] .select select, .select fields
   top: 0;
 }
 
-/* Bulma Base */
-/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+/* Bulma Base */ /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,
 p,
@@ -6949,17 +6948,14 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   .navbar > .container {
     display: block;
   }
-
   .navbar-brand .navbar-item,
 .navbar-tabs .navbar-item {
     align-items: center;
     display: flex;
   }
-
   .navbar-link::after {
     display: none;
   }
-
   .navbar-menu {
     background-color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -6968,7 +6964,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   .navbar-menu.is-active {
     display: block;
   }
-
   .navbar.is-fixed-bottom-touch, .navbar.is-fixed-top-touch {
     left: 0;
     position: fixed;
@@ -6989,7 +6984,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     max-height: calc(100vh - 3.25rem);
     overflow: auto;
   }
-
   html.has-navbar-fixed-top-touch,
 body.has-navbar-fixed-top-touch {
     padding-top: 3.25rem;
@@ -7007,7 +7001,6 @@ body.has-navbar-fixed-bottom-touch {
     align-items: stretch;
     display: flex;
   }
-
   .navbar {
     min-height: 3.25rem;
   }
@@ -7039,17 +7032,14 @@ body.has-navbar-fixed-bottom-touch {
     background-color: hsl(0deg, 0%, 96%);
     color: #4FB3D9;
   }
-
   .navbar-burger {
     display: none;
   }
-
   .navbar-item,
 .navbar-link {
     align-items: center;
     display: flex;
   }
-
   .navbar-item.has-dropdown {
     align-items: stretch;
   }
@@ -7072,22 +7062,18 @@ body.has-navbar-fixed-bottom-touch {
     pointer-events: auto;
     transform: translateY(0);
   }
-
   .navbar-menu {
     flex-grow: 1;
     flex-shrink: 0;
   }
-
   .navbar-start {
     justify-content: flex-start;
     margin-right: auto;
   }
-
   .navbar-end {
     justify-content: flex-end;
     margin-left: auto;
   }
-
   .navbar-dropdown {
     background-color: white;
     border-bottom-left-radius: 6px;
@@ -7133,11 +7119,9 @@ body.has-navbar-fixed-bottom-touch {
     left: auto;
     right: 0;
   }
-
   .navbar-divider {
     display: block;
   }
-
   .navbar > .container .navbar-brand,
 .container > .navbar .navbar-brand {
     margin-left: -0.75rem;
@@ -7146,7 +7130,6 @@ body.has-navbar-fixed-bottom-touch {
 .container > .navbar .navbar-menu {
     margin-right: -0.75rem;
   }
-
   .navbar.is-fixed-bottom-desktop, .navbar.is-fixed-top-desktop {
     left: 0;
     position: fixed;
@@ -7162,7 +7145,6 @@ body.has-navbar-fixed-bottom-touch {
   .navbar.is-fixed-top-desktop {
     top: 0;
   }
-
   html.has-navbar-fixed-top-desktop,
 body.has-navbar-fixed-top-desktop {
     padding-top: 3.25rem;
@@ -7179,7 +7161,6 @@ body.has-spaced-navbar-fixed-top {
 body.has-spaced-navbar-fixed-bottom {
     padding-bottom: 5.25rem;
   }
-
   a.navbar-item.is-active,
 .navbar-link.is-active {
     color: #4FB3D9;
@@ -7188,7 +7169,6 @@ body.has-spaced-navbar-fixed-bottom {
 .navbar-link.is-active:not(:focus):not(:hover) {
     background-color: #576573;
   }
-
   .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link {
     background-color: #576573;
   }
@@ -7302,13 +7282,11 @@ body.has-spaced-navbar-fixed-bottom {
   .pagination {
     flex-wrap: wrap;
   }
-
   .pagination-previous,
 .pagination-next {
     flex-grow: 1;
     flex-shrink: 1;
   }
-
   .pagination-list li {
     flex-grow: 1;
     flex-shrink: 1;
@@ -7321,15 +7299,12 @@ body.has-spaced-navbar-fixed-bottom {
     justify-content: flex-start;
     order: 1;
   }
-
   .pagination-previous {
     order: 2;
   }
-
   .pagination-next {
     order: 3;
   }
-
   .pagination {
     justify-content: space-between;
   }
@@ -10472,27 +10447,21 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .is-size-1-mobile {
     font-size: 3rem !important;
   }
-
   .is-size-2-mobile {
     font-size: 2.5rem !important;
   }
-
   .is-size-3-mobile {
     font-size: 2rem !important;
   }
-
   .is-size-4-mobile {
     font-size: 1.5rem !important;
   }
-
   .is-size-5-mobile {
     font-size: 1.25rem !important;
   }
-
   .is-size-6-mobile {
     font-size: 1rem !important;
   }
-
   .is-size-7-mobile {
     font-size: 0.75rem !important;
   }
@@ -10501,27 +10470,21 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .is-size-1-tablet {
     font-size: 3rem !important;
   }
-
   .is-size-2-tablet {
     font-size: 2.5rem !important;
   }
-
   .is-size-3-tablet {
     font-size: 2rem !important;
   }
-
   .is-size-4-tablet {
     font-size: 1.5rem !important;
   }
-
   .is-size-5-tablet {
     font-size: 1.25rem !important;
   }
-
   .is-size-6-tablet {
     font-size: 1rem !important;
   }
-
   .is-size-7-tablet {
     font-size: 0.75rem !important;
   }
@@ -10530,27 +10493,21 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .is-size-1-touch {
     font-size: 3rem !important;
   }
-
   .is-size-2-touch {
     font-size: 2.5rem !important;
   }
-
   .is-size-3-touch {
     font-size: 2rem !important;
   }
-
   .is-size-4-touch {
     font-size: 1.5rem !important;
   }
-
   .is-size-5-touch {
     font-size: 1.25rem !important;
   }
-
   .is-size-6-touch {
     font-size: 1rem !important;
   }
-
   .is-size-7-touch {
     font-size: 0.75rem !important;
   }
@@ -10559,27 +10516,21 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .is-size-1-desktop {
     font-size: 3rem !important;
   }
-
   .is-size-2-desktop {
     font-size: 2.5rem !important;
   }
-
   .is-size-3-desktop {
     font-size: 2rem !important;
   }
-
   .is-size-4-desktop {
     font-size: 1.5rem !important;
   }
-
   .is-size-5-desktop {
     font-size: 1.25rem !important;
   }
-
   .is-size-6-desktop {
     font-size: 1rem !important;
   }
-
   .is-size-7-desktop {
     font-size: 0.75rem !important;
   }
@@ -10588,27 +10539,21 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .is-size-1-widescreen {
     font-size: 3rem !important;
   }
-
   .is-size-2-widescreen {
     font-size: 2.5rem !important;
   }
-
   .is-size-3-widescreen {
     font-size: 2rem !important;
   }
-
   .is-size-4-widescreen {
     font-size: 1.5rem !important;
   }
-
   .is-size-5-widescreen {
     font-size: 1.25rem !important;
   }
-
   .is-size-6-widescreen {
     font-size: 1rem !important;
   }
-
   .is-size-7-widescreen {
     font-size: 0.75rem !important;
   }
@@ -10617,27 +10562,21 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .is-size-1-fullhd {
     font-size: 3rem !important;
   }
-
   .is-size-2-fullhd {
     font-size: 2.5rem !important;
   }
-
   .is-size-3-fullhd {
     font-size: 2rem !important;
   }
-
   .is-size-4-fullhd {
     font-size: 1.5rem !important;
   }
-
   .is-size-5-fullhd {
     font-size: 1.25rem !important;
   }
-
   .is-size-6-fullhd {
     font-size: 1rem !important;
   }
-
   .is-size-7-fullhd {
     font-size: 0.75rem !important;
   }
@@ -12007,4 +11946,4 @@ body {
   margin-bottom: unset !important;
 }
 
-/*# sourceMappingURL=tmpqfmWDg.tmp.map */
+/*# sourceMappingURL=tmpku5LrU.tmp.map */
