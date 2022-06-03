@@ -7,22 +7,23 @@ add toc: true
 add sidebar: sidebars/mainSidebar.md
 article status: Curation
 todo: 
-    - Update links to other KB articles
 ---
 
 ## What are PIDs?
 
-Persistent identifiers (PIDs) &ndash; as the name suggests &ndash; enable to persistently identify a resource (an entity).
-This may sound complicated, but consider a (common) daily life example for PIDs: the International Standard Book Number (ISBN). The 13-digit ISBN code allows to unambiguously identify a book without having to specify book author, title or any other detail. Just as the ISBN alone helps to find and order a book at a local retailer, PIDs enable to easily find different entities or resources relevant to (plant) sciences. This can include publications, methods, samples or other experimental materials, software, and the datasets they produce or your contributions to the earlier.
+Persistent identifiers (PIDs) &ndash; as the name suggests &ndash; enable to persistently identify a resource.
+This may sound complicated, but consider a daily life example for PIDs: the International Standard Book Number (ISBN). The 13-digit ISBN code allows to unambiguously identify a book without having to specify book author, title or any other detail. Just as the ISBN alone helps you to find and order a book at a local retailer, PIDs enable you to easily find different entities or resources relevant to plant sciences. This can include publications, methods, samples or other experimental materials, software, and the datasets they produce or your contributions to the earlier.
 
 ## Globally unique and persistent
 
-Two major requirements of PIDs are the reason they contribute to virtually all aspects of [FAIR][KB-FAIR] data management. PIDs need to be **globally unique** and **persistent**, i.e. they stably resolve to identify the respective resource, also in the (foreseeable) future. Global uniqueness is nowadays technically achieved through use of the internet. In simple words: no web address may exist more than once. However, it is good to know that standard URLs (uniform resource locators, "web addresses") cannot be considered PIDs. Sparing the technical details behind PIDs (see [PURLs] and [Handles]), consider the homepage of an institute where a publication was originally stored at the URL `https://plant-science-institute.com/research/publications/publication` and after homepage restructuring moved to `https://plant-science-institute.com/about/outputs/publication`. The earlier URL becomes a "dead link", impossible to be properly resolved and identify the linked publication, a phenomenon known as "link rot".
+Two major requirements of PIDs are the reason they contribute to virtually all aspects of [FAIR][KB-FAIR] data management. PIDs need to be **globally unique** and **persistent**, i.e. they stably resolve to identify the respective resource, also in the (foreseeable) future. Global uniqueness is nowadays technically achieved through use of the internet. In simple words: no web address may exist more than once. However, it is good to know that standard URLs (uniform resource locators, "web addresses") cannot be considered PIDs. Sparing the technical details behind PIDs (see [PURLs] and [Handles]), consider the homepage of an institute where a publication was originally stored at the URL  
+`https://plant-science-institute.com/research/publications/publication` and after homepage restructuring moved to  
+`https://plant-science-institute.com/about/outputs/publication`. The earlier URL becomes a "dead link", impossible to be properly resolved and identify the linked publication, a phenomenon known as "link rot".
 Although many PIDs resolve to a URL, taking the user to the proper location, they more importantly resolve to the content of the linked digital object (e.g. a dataset or publication). The example shows that the technical layer alone (global uniqueness through web addresses) is not enough to guarantee persistence and prevent "link rot". This is achieved socially through defined policies and institutions: PIDs are actively curated and managed through registration services overseeing that the linked digital object is properly located.
 
-## What can I reference with a PID? How do I assign a PID? And why do I benefit from PIDs?
+## What can I reference with a PID and why do I benefit from PIDs?
 
-Although basically any imaginable &ndash; both analog and digital &ndash; entity can be assigned a PID, we mostly focus on PIDs that identify digital objects or resources. However these digital resources themselves may be descriptors of analog entities such as items at museums, samples from a collection, artistic or musical outputs. The exact benefit and how a resource is assigned a PID depends on the context: what type of entity is referenced with a PID.
+Although basically any imaginable &ndash; both analog and digital &ndash; entity can be assigned a PID, we mostly focus on PIDs that identify digital objects or resources. However these digital resources themselves may be descriptors of analog entities such as items at museums, samples from a collection, artistic or musical outputs. The exact benefit and how a PID is assigned to a resource depends on the context: what type of entity is referenced with a PID.
 
 The two best known examples for PIDs used in science are **DOI** (Digital Object Identifier) and **ORCID** (Open Researcher and Contributor ID).
 The most established use of DOIs is to identify publications. Similar to an ISBN for a book, a DOI alone suffices to persistently link and refer to a publication, without naming the title, authors or journal. Usually DOIs are not actively requested by standard users, e.g. the authors submitting a manuscript to a journal or data to a repository, but they are assigned during the publication process, e.g. by the journal or data repository acting as the PID registration service.
@@ -35,22 +36,22 @@ On the other hand, you, as a researcher, need to request an ORCID (once). ORCIDs
 
 ### People
 
-- Open Researcher and Contributor ID (ORCID, <https://orcid.org/>)
+- Open Researcher and Contributor ID ([ORCID](<https://orcid.org/>))
 
 ### Digital objects and publications
 
-- Digital Object Identifier (DOI, <https://www.doi.org>)
-- ePIC consortium <https://www.pidconsortium.net>
-- Pubmed ID (PMID, <https://pubmed.ncbi.nlm.nih.gov>)
+- Digital Object Identifier ([DOI](<https://www.doi.org>))
+- Persistent Identifiers for eResearch ([ePIC consortium](<https://www.pidconsortium.net>))
+- Pubmed ID ([PMID](<https://pubmed.ncbi.nlm.nih.gov>))
 
 ### Samples and Resources
 
-- Research Resource Identifiers (RRIDs) <http://scicrunch.org/resources>
+- Research Resource Identifiers ([RRIDs](<http://scicrunch.org/resources>))
 
 ### Institutions
 
-- Research Organization Registry (ROR, <https://ror.org>)
-- Global Research Identifier Database (GRID, <https://grid.ac>)
+- Research Organization Registry ([ROR](<https://ror.org>))
+- Global Research Identifier Database ([GRID](<https://grid.ac>))
 
 <!-- ## How does DataPLANT support me in using PIDs?
 
@@ -74,4 +75,4 @@ Name | Type | Tasks on metadata
 
 ## Sources and further information
 
-- https://www.doi.org/faq.html
+- [Frequently Asked Questions about the DOI® System](<https://www.doi.org/faq.html>)

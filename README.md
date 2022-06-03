@@ -11,7 +11,7 @@ Please refer to [this guide](./src/content/README.md) on how to create content f
 ### Prerequisites
 
 - Node.js
-- .NET SDK >= 3.1
+- .NET SDK >= 5.0
 - global installation of sass via npm
 
 ### Installation

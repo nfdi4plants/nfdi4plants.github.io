@@ -11,7 +11,7 @@ todo:
 
 ## What is metadata?
 
-Metadata is "data that provides information about other data"[^1][Merriam]. In order to put some (plant) life into this web dictionary explanation, let us explore metadata with a plant biology example:
+Metadata is "data that provides information about other data" ([Merriam Webster][Merriam]). In order to put some plant life into this web dictionary explanation, let us explore metadata with a plant biology example:
 
 > Viola investigates the effect of the plant circadian clock on sugar metabolism in *W. mirabilis*. For her PhD project, which is part of an EU-funded consortium in Prof. Beetroot's lab, she acquires seeds from a South-African botanical society. Viola grows the plants under different light regimes, harvests leaves from a two-day time series experiment, extracts polar metabolites as well as RNA and submits the samples to nearby core facilities for metabolomics and transcriptomics measurements, respectively. After a few weeks of iterative consultation with the facilities' heads as well as technicians and computational biologists involved, Viola receives back a wealth of raw and processed data. From the data she produces figures and wraps everything up to publish the results in the *Journal of Wonderful Plant Sciences*.
 

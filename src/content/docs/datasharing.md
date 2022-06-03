@@ -14,7 +14,7 @@ todo:
 
 Research is a collaborative endeavour that builds on the interaction and efficient knowledge exchange between different researchers. We share research data to get input from peers and elaborate, initiate or expand putative or existing collaborations. Data sharing allows us to save time and resources, e.g., by finding partners to plan or perform investigations together, sharing common pipelines for data analysis or prevent redundant or overlapping investigations, simply by knowing what other peers might already investigate. Sharing research data is thus the key to every successful research project.
 
-However, sharing data is frequently hindered even between researchers of close surroundings. There may be legal reasons, including unclear policies from funding agencies or institutions: *"Who am I allowed to share my data with?", "How do I handle data requiring specific precautions for data security or intellectual property rights?"*. Social or emotional reasons might occur, if researchers might not know about peers interested in their own data: *"How do I know, who would like to see my data, if they do not know it exists?"* or are afraid to "lose" their data: *"Once I share my data, someone else will publish and get credit for it"*. Recent developments of open science have boosted scientific advancements. However, it is a common misconception of the [FAIR][KB-FAIR] principles of data stewardship that accessible data equals public and openly accessible data.
+However, sharing data is frequently hindered even between researchers of close surroundings. There may be legal reasons, including unclear policies from funding agencies or institutions: *"Who am I allowed to share my data with?", "How do I handle data requiring specific precautions for data security or intellectual property rights?"*. Social or emotional reasons might occur, if researchers might not know about peers interested in their own data: *"How do I know, who would like to see my data, if they do not know it exists?"* or are afraid to "lose" their data: *"Once I share my data, someone else will publish and get credit for it"*. Recent developments of open science have boosted scientific advancements. However, it is a common misconception of the [FAIR principles][KB-FAIR] of data stewardship that accessible data equals public and openly accessible data.
 
 Most researchers however want to share their data and are very aware what data to share with whom, but face technical or even financial issues: *"Where and how can I securely share and integrate research data of multiple types, originating from multiple sources?".* The sheer amounts of data and data types produced during complex multi-party investigations can easily become overwhelming to handle, costly to store, or limited by storage capacities, especially when proper data protection mechanisms are employed.
 
@@ -50,7 +50,7 @@ In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and se
 [KB-FAIR]: ./FAIRDataPrinciples.html
 [KB-Metadata]: ./metadata.html
 [KB-RDM]: ./ResearchDataManagement.html
-[KB-DataPublication]: ./datapublication.html
+[KB-DataPublication]: ./DataPublications.html
 [KB-DataSharing]: ./datasharing.html
 [KB-git]: ./git.html
 [KB-pid]: ./pids.html
@@ -61,4 +61,4 @@ In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and se
 [ARC]: <https://github.com/nfdi4plants/ARC> "ARC specifications"
 [Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
 [omero]: <https://www.openmicroscopy.org/omero/> "Omero"
-[galaxy]: https://plants.usegalaxy.eu/ "Galaxy Plants"
+[galaxy]: <https://plants.usegalaxy.eu/> "Galaxy Plants"
