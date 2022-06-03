@@ -15,7 +15,7 @@ todo:
 
 We are very happy that you chose our tools and infrastructure to create and share your own ARCs. In this QuickStart we focus on how to use the "ARC Commander" to store your data and "SWATE" to enrich it with metadata.
 
-This document is work in progress. If you experience any inconsistencies, have questions or would like to suggest additions, please [send a mail](mailto:info@nfdi4plants.org?subject=ARC%20QuickStart) or open an issue [here](https://github.com/nfdi4plants/quickstart).
+This document is work in progress. If you experience any inconsistencies, have questions or would like to suggest additions, please feel free to [contact us](mailto:info@nfdi4plants.org?subject=ARC%20QuickStart) or open in issue in our [Helpdesk](<https://github.com/nfdi4plants/quickstart>).
 
 - [Environment and setup](#environment-and-setup)
   - [The command line](#the-command-line)
@@ -140,7 +140,7 @@ arc a add -s QuickStartStudy -a QuickStartAssay
 
 ### DataPLANT registration and access
 
-In case you are not a member of DataPLANT yet, please visit <https://register.nfdi4plants.org> to register. Afterwards, you will be granted access to DataPLANT’s DataHUB, available under <https://git.nfdi4plants.org>. The DataHUB allows you to share your ARCs with registered lab or project partners.
+In case you are not a member of DataPLANT yet, please visit [sign up](<https://register.nfdi4plants.org>). Afterwards, you will be granted access to DataPLANT’s [DataHUB](<https://git.nfdi4plants.org>). The DataHUB allows you to share your ARCs with registered lab or project partners.
 
 ![](img/dataplant_registration.png)
 
@@ -183,13 +183,13 @@ arc sync -f
 
 5. Check if the upload was successful by visiting your ARC at the respective URL in your browser.
 
-!(img/datahub_repository.png)
+![](img/datahub_repository.png)
 
 >Note: Alternatively, you can first create a new blank repository in the [DataHUB](https://git.nfdi4plants.org) by clicking "New project/repository" in the plus drop down menu of the navigation bar on top. Afterwards, you can sync your local ARC to the respective repository by adapting the URL to the newly generated one. 
 
 ### Setting a git user
 
-Some users might want to use different signatures for different repositories, e.g. for developing software on GitHub and working on ARCs on [DataPLANT's DataHUB](htttps://git.nfdi4plants.org). Besides your global git configuration, you can store the information you want to use for editing ARCs within the ARC Commander config:
+Some users might want to use different signatures for different repositories, e.g. for developing software on GitHub and working on ARCs on [DataPLANT's DataHUB](https://git.nfdi4plants.org). Besides your global git configuration, you can store the information you want to use for editing ARCs within the ARC Commander config:
 
 ```bash
 arc config set -g -n "general.gitname" -v "Name of choice"
@@ -277,7 +277,7 @@ Fill the cells beneath each building block with ontology terms to note the respe
 ![](img/swate_ontologyTermSearch2.png)
 
 
-> Note: More information on how to use SWATE can be found [here](https://github.com/nfdi4plants/Swate/wiki/Docs05-Templates).
+> Note: More information on how to use SWATE can be found [here](https://github.com/nfdi4plants/Swate/wiki).
 
 <div style="page-break-after: always;"></div>
 
