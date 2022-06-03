@@ -15,7 +15,7 @@ todo:
 
 We are very happy that you chose our tools and infrastructure to create and share your own ARCs. In this QuickStart we focus on how to use the "ARC Commander" to store your data and "SWATE" to enrich it with metadata.
 
-This document is work in progress. If you experience any inconsistencies, have questions or would like to suggest additions, please feel free to [contact us](mailto:info@nfdi4plants.org?subject=ARC%20QuickStart) or open in issue in our [Helpdesk](<https://github.com/nfdi4plants/quickstart>).
+This document is work in progress. If you experience any inconsistencies, have questions or would like to suggest additions, please feel free to [contact us](mailto:info@nfdi4plants.org?subject=ARC%20QuickStart) or open an issue in our [Helpdesk](<https://github.com/nfdi4plants/quickstart>).
 
 - [Environment and setup](#environment-and-setup)
   - [The command line](#the-command-line)
