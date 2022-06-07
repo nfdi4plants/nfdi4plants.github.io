@@ -12,7 +12,7 @@ todo:
 
 ## What are data repositories?
 
-Public data repositories are one option to [publish your research data][KB-DataPublication]. They usually focus on the data &ndash; as opposed to other research outputs such as manuscripts. Data repositories assign [persistent identifiers][KB-PID] (e.g. a DOI) to your dataset and by that comply with requirements of most publication journals.  
+Public data repositories are one option to [publish your research data][KB-DataPublications]. They usually focus on the data &ndash; as opposed to other research outputs such as manuscripts. Data repositories assign [persistent identifiers][KB-PID] (e.g. a DOI) to your dataset and by that comply with requirements of most publication journals.  
 We differentiate between domain-specific and general-purpose repositories.
 
 ### Domain-specific data repositories
@@ -55,7 +55,8 @@ The following resources provide good starting points to seek a suitable reposito
 
 Depositing research data at a public data repository can be tedious. Especially the domain-specific repositories require compliance with specific data submission routines (a) in terms of format and content and (b) for both "raw data" and "metadata". Only data types relevant for the respective domain are accepted and need to be provided in proper data formats. In order to guarantee that the information required to properly describe the data is present, they require adherence to domain-specific [metadata][KB-Metadata] standards, represented in the proper format and oftentimes require the use of controlled vocabularies and ontologies. And finally the mere technicalities of how to collect and submit the (meta)data varies greatly between repositories, ranging from the use of pure upload via file transfers (e.g. FTP), APIs, online web forms or specialized software requiring local installation. The large repository providers invest a lot to harmonize their formats and submission routines. Still, there is a long way to go and we are currently far away from the unified way where "If you know one, you know them all."
 
-<!-- 
+<!-- TODO: add section on 
+
 - no fun 
 - always different
 - lots of metadata required
@@ -68,25 +69,40 @@ The following table gives an overview about DataPLANT tools and services related
 
 Name | Type | Tasks on metadata 
 ----------------|-----------|------------------ 
-**[ARC](AnnotatedResearchContext.html)**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
-**Swate** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
-**ArcCommander** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
-**[DataHUB](datahub.html)** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+**[ARC][KB-ARC]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
+**[Swate][Swate]** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
+**[ArcCommander][ArcCommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
+**[DataHUB][KB-datahub]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 <!-- ~~Converter~~ | Tool under construction | **Curate:** <ul><li>Harmonize and migrate between metadata schema</li><li>Manage who can view or access your ARC</li></ul>
 **Metadata registry** | Service | **Share:** <ul><li>Find ARC (meta)data</li></ul> -->
 
+<!-- TODOs
+
+- Replace SWATE link with KB link (once available)
+- Replace arcCommander link with KB link (once available)
+- Add KB-converter link (once available)
+- Add KB-metadata_registry link (once available)
+- reference KB-DataFormats and link to it 
+-->
+
+
 <!-- Knowledgebase cross-references -->
 
-[KB-DataPublication]: ./datapublication.html
-[KB-FAIR]: ./FAIRDataPrinciples.html
-[KB-Metadata]: ./metadata.html
-[KB-pid]: ./pids.html
-[KB-DataFormats]: placeholder.html "Link to data formats article"
-[KB-arccommander]: ./arccommander.html
-[KB-SWATE]: placeholder.html
-[KB-ARC]: ./AnnotatedResearchContext.html
+[KB-DataPublications]: ./datapublications.html "Data Publication"
+[KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
+[KB-Metadata]: ./metadata.html "Metadata"
+[KB-pid]: ./pids.html  "Persistent Identifiers"
+<!-- [KB-arccommander]: ./arccommander.html "arcCommander" -->
+[KB-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[KB-datahub]: ./datahub.html "DataPLANT DataHUB"
 
 <!-- DataPLANT web links -->
+
+[Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
+[DataHUB]: <https://git.nfdi4plants.org> "DataHUB"
+[ARCspecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
+[Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
+[ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
 
 
 <!-- Reference web links -->

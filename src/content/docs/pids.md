@@ -27,7 +27,7 @@ Although basically any imaginable &ndash; both analog and digital &ndash; entity
 
 The two best known examples for PIDs used in science are **DOI** (Digital Object Identifier) and **ORCID** (Open Researcher and Contributor ID).
 The most established use of DOIs is to identify publications. Similar to an ISBN for a book, a DOI alone suffices to persistently link and refer to a publication, without naming the title, authors or journal. Usually DOIs are not actively requested by standard users, e.g. the authors submitting a manuscript to a journal or data to a repository, but they are assigned during the publication process, e.g. by the journal or data repository acting as the PID registration service.
-<!-- As scientists, we benefit from DOI-referenced publications by better findability and more concise referencing (see also [KB-DataPublication]) -->
+<!-- As scientists, we benefit from DOI-referenced publications by better findability and more concise referencing (see also [KB-DataPublications]) -->
 On the other hand, you, as a researcher, need to request an ORCID (once). ORCIDs concisely identify researchers independent of identical names between multiple researchers or name changes (e.g. due to wedding). They can actively be curated, e.g. to link and present all publication or other digital outputs.
 
 <!-- In summary, PIDs help making data FAIR. A dataset that is persistently linked via a PID will be findable and accesible and thereby  -->
@@ -53,13 +53,18 @@ On the other hand, you, as a researcher, need to request an ORCID (once). ORCIDs
 - Research Organization Registry ([ROR](<https://ror.org>))
 - Global Research Identifier Database ([GRID](<https://grid.ac>))
 
-<!-- ## How does DataPLANT support me in using PIDs?
+<!-- TODO ## How does DataPLANT support me in using PIDs?
 
 The following table gives an overview about DataPLANT tools and services related to sharing data. Follow the link in the first column for details.
 
 Name | Type | Tasks on metadata 
 ----------------|-----------|------------------ 
 - invenio -->
+
+
+## Sources and further information
+
+- [Frequently Asked Questions about the DOI® System](<https://www.doi.org/faq.html>)
 
 <!-- Knowledgebase Cross-references -->
 
@@ -68,11 +73,7 @@ Name | Type | Tasks on metadata
 
 <!-- Reference links -->
 [DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
-[ARC]: <https://github.com/nfdi4plants/ARC> "ARC specifications"
+[ARCspecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 
-[PURLs]: https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator
-[Handles]: https://en.wikipedia.org/wiki/Handle_System
-
-## Sources and further information
-
-- [Frequently Asked Questions about the DOI® System](<https://www.doi.org/faq.html>)
+[PURLs]: https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator "Wikipedia PURLs"
+[Handles]: https://en.wikipedia.org/wiki/Handle_System "Wikipedia Handles"

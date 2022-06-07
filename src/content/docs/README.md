@@ -103,3 +103,49 @@ Besides these technical solutions, DataPLANT supports you with community-engaged
 ## Sources and further information
 ```
 
+# Link collection
+
+> Note: This is just a link collection for recurrent use in KB articles
+> Nothing automatised. Just copy/paste.
+
+<!-- Knowledgebase cross-references -->
+
+[KB-DataPublications]: ./datapublications.html "Data Publication"
+[KB-dmp]: ./DataManagementPlan.html "Data Management Plan"
+[KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
+[KB-Metadata]: ./metadata.html "Metadata"
+[KB-pid]: ./pids.html  "Persistent Identifiers"
+[KB-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[KB-datahub]: ./datahub.html "DataPLANT DataHUB"
+[KB-RDM]: ./ResearchDataManagement.html "Research Data Management"
+[KB-DataSharing]: ./datasharing.html "Data Sharing"
+[KB-git]: ./git.html "Git"
+[KB-Repositories]: ./repositories.html "Repositories"
+[quickstart-arc]: ./quickstart_arc.html "Quickstart ARC"
+<!-- [KB-arccommander]: ./arccommander.html "arcCommander" -->
+<!-- [KB-WMS]: ./WMS.html -->
+
+<!-- DataPLANT web links -->
+
+[Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
+[DataHUB]: <https://git.nfdi4plants.org> "DataHUB"
+[ARCspecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
+[ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
+[Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
+
+<!-- Reference web links -->
+
+[galaxy]: <https://plants.usegalaxy.eu/> "Galaxy Plants"
+[omero]: <https://www.openmicroscopy.org/omero/> "Omero"
+[zenodo]: <https://zenodo.org/> "Zenodo"
+[invenio]: <https://inveniosoftware.org/products/rdm/> "Invenio"
+[data-journals]: https://www.researchdata.uni-jena.de/en/information/data-publication "RDM Jena Data Journals"
+
+[EBI-PRIDE]: https://www.ebi.ac.uk/pride/ "EBI PRIDE"
+[re3data]: https://www.re3data.org/ "re3data.org"
+[doi]: https://www.doi.org/ "Digital Object Identifier"
+[orcid]: https://www.orcid.org/ "ORCID"
+[CC-licenses]: https://creativecommons.org/ "Creative Commons"
+[DublinCore]: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/> "DublinCore"
+[DataCite]: <https://schema.datacite.org>  "DataCite"
+[fairsharing.org]: https://fairsharing.org/search?fairsharingRegistry=Standard "Standards at fairsharing.org"

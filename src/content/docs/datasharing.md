@@ -6,8 +6,6 @@ author: Dominik Brilhaus <https://orcid.org/0000-0001-9021-3197>
 add toc: true
 add sidebar: sidebars/mainSidebar.md
 article status: draft
-todo:
-  - paragraph branches
 ---
 
 ## The merits of data sharing
@@ -20,7 +18,7 @@ Most researchers however want to share their data and are very aware what data t
 
 ## The one-stop-shop does not exist
 
-Today many options for sharing and collaborating on data are available and often consciously or incidentally integrated into daily research routines. These include prominent open source or commercial cloud platforms like nextcloud, google drive, dropbox, onedrive and many more. While these are great for synchronous collaboration on typical office data, text files, presentations or simple calculations, they offer limited capacities for data analyses, especially those required for large-scale or complex scientific data. Other solutions specifically designed to accommodate scientific data include electronic lab notebooks to document daily lab routines or platforms like [galaxy][galaxy] and [omero] to analyze and share data from omics or imaging experiments, respectively.
+Today many options for sharing and collaborating on data are available and often consciously or incidentally integrated into daily research routines. These include prominent open source or commercial cloud platforms like nextcloud, google drive, dropbox, onedrive and many more. While these are great for synchronous collaboration on typical office data, text files, presentations or simple calculations, they offer limited capacities for data analyses, especially those required for large-scale or complex scientific data. Other solutions specifically designed to accommodate scientific data include electronic lab notebooks to document daily lab routines or platforms like [galaxy][galaxy] and [omero][omero] to analyze and share data from omics or imaging experiments, respectively.
 
 To varying extents, these platforms offer a mix of options for local and remote, asynchronous and synchronous collaboration, often supported by automated version-control to track file version history. Different modes and control of access to the data and different solutions for storage sites exist to suit various aspects of data security and property rights.
 
@@ -30,7 +28,7 @@ For research individuals or groups the data sharing dilemma often lies in the fr
 
 Trying to find the tool or platform most suitable for the project or data to be shared always depends on the context and is innately erroneous, leading to increased fragmentation. Now, how can the data fragmentation be resolved without siloing everything in one place, i.e. yet another platform? In order to set loose from platform dependency, one could flip the data sharing habits inside-out and switch from the tool perspective towards a data-centric perspective. Instead of trying to enforce the use of a specific platform for data sharing, one could use a data format suitable to and migratable between a wide range of tools and purposes.
 
-In order to support [FAIR][KB-FAIR] data sharing, such a data format requires high flexibility to be adoptable to many data types and sources, long-term persistency through independence of (i.e. extension or conversion to) specific data formats and scalability to increasing data amounts. Federated data storage and access allows secure, trusted data sharing with involved parties from different locations across institute borders. Data protection is further granted through geo-redundant backup mechanisms. In combination with a version-control system to follow file change history, the federated authentication and authorization system allows to control data access and contribution for proper crediting and provenance tracking. Data sharing is enabled throughout project lifetime &ndash; from idea to unpublished data to publication &ndash;, by structuring the data in a defined format packaged with descriptive metadata and licenses to provide technically and legally clear terms of data (re-)use. From there, [data publication][KB-DataPublication] comes with as little effort as assigning a [persistent identifier][KB-pid] without any need to adapt the data once the associated manuscript is published.
+In order to support [FAIR][KB-FAIR] data sharing, such a data format requires high flexibility to be adoptable to many data types and sources, long-term persistency through independence of (i.e. extension or conversion to) specific data formats and scalability to increasing data amounts. Federated data storage and access allows secure, trusted data sharing with involved parties from different locations across institute borders. Data protection is further granted through geo-redundant backup mechanisms. In combination with a version-control system to follow file change history, the federated authentication and authorization system allows to control data access and contribution for proper crediting and provenance tracking. Data sharing is enabled throughout project lifetime &ndash; from idea to unpublished data to publication &ndash;, by structuring the data in a defined format packaged with descriptive metadata and licenses to provide technically and legally clear terms of data (re-)use. From there, [data publication][KB-DataPublications] comes with as little effort as assigning a [persistent identifier][KB-pid] without any need to adapt the data once the associated manuscript is published.
 
 ## How does DataPLANT support me in data sharing?
 
@@ -38,27 +36,22 @@ The following table gives an overview about DataPLANT tools and services related
 
 Name | Type | Tasks on data sharing
 ----------------|-----------|------------------
-**[ARC](AnnotatedResearchContext.html)**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata in a defined format</li></ul>
-**[DataHUB](datahub.html)** | Service | **Share:** <ul><li>Infrastructure-as-code: on-premise solution</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+**[ARC][KB-ARC]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata in a defined format</li></ul>
+**[DataHUB][KB-datahub]** | Service | **Share:** <ul><li>Infrastructure-as-code: on-premise solution</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 
 ### Register with DataPLANT
 
-In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and services, please [sign up][Registration] with DataPLANT.  
+In order to use the [DataHUB][KB-datahub] and other DataPLANT infrastructure and services, please [sign up][Registration] with DataPLANT.  
 
 <!-- Knowledgebase Cross-references -->
 
-[KB-FAIR]: ./FAIRDataPrinciples.html
-[KB-Metadata]: ./metadata.html
-[KB-RDM]: ./ResearchDataManagement.html
-[KB-DataPublication]: ./DataPublications.html
-[KB-DataSharing]: ./datasharing.html
-[KB-git]: ./git.html
-[KB-pid]: ./pids.html
-[KB-Repositories]: ./repositories.html
+[KB-DataPublications]: ./datapublications.html "Data Publication"
+[KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
+[KB-pid]: ./pids.html  "Persistent Identifiers"
+[KB-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[KB-datahub]: ./datahub.html "DataPLANT DataHUB"
 
 <!-- Reference links -->
-[DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
-[ARC]: <https://github.com/nfdi4plants/ARC> "ARC specifications"
 [Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
 [omero]: <https://www.openmicroscopy.org/omero/> "Omero"
 [galaxy]: <https://plants.usegalaxy.eu/> "Galaxy Plants"
