@@ -34,6 +34,7 @@ let docsLayout (docs: Docsloader.Docs) =
         // Edit this page link
         div [] [
             a [
+                Target "_blank"
                 Href $"https://github.com/nfdi4plants/nfdi4plants.github.io/tree/main/src/{docs.file}"; 
                 HtmlProperties.Style [MarginLeft "auto"; Display "block"; CSSProperties.Width "130px"]
             ] [!! "✏️ Edit this page"]
