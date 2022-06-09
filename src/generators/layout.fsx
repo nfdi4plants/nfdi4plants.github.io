@@ -40,21 +40,17 @@ let injectWebsocketCode (webpage:string) =
     let index = webpage.IndexOf head
     webpage.Insert ( (index + head.Length + 1),websocketScript)
     
-let layout (ctx : SiteContents) active bodyCnt =
-    let pages = ctx.TryGetValues<Pageloader.Page> () |> Option.defaultValue Seq.empty
+let layout (ctx : SiteContents) (activePageTitle: string) bodyCnt =
     let siteInfo = ctx.TryGetValue<Globalloader.SiteInfo> ()
     let ttl =
         siteInfo
-        |> Option.map (fun si -> si.title)
-        |> Option.defaultValue ""
-
-    let menuEntries =
-        pages
-        |> Seq.map (fun p ->
-            let cls = if p.title = active then "navbar-item is-active smooth-hover" else "navbar-item"
-            a [Class cls; Href p.link] [!! p.title ]
+        |> Option.map (fun si ->
+            if activePageTitle <> "" then
+                si.title + " - " + activePageTitle
+            else
+                si.title
         )
-        |> Seq.toList
+        |> Option.defaultValue ""
 
     html [Class "has-navbar-fixed-top"; HtmlProperties.Style [CSSProperties.Custom("scroll-behavior", "smooth")]] [
         head [] [

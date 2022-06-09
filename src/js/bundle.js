@@ -11539,7 +11539,7 @@ function toInDOMHref(href) {
     return "#";
   }
 }
-const removeSpecialCharRegex = /[^a-zA-Z0-9\s]/g;
+const removeSpecialCharRegex = /[^a-zA-Z0-9\s\-]/g;
 function createInPageLinkText(innerHtml) {
   const lightDOMText = innerHtml.trim();
   return lightDOMText.toLowerCase().replace(removeSpecialCharRegex, "").replace(/\s/g, "-");
@@ -11954,7 +11954,7 @@ Code.styles = [
   bulmaStyles,
   r$2`
             pre {
-                background-color: var(--outside-background-color,#F8F8FF);
+                background-color: var(--outside-background-color,${nfdiWhite});
                 border: 1px solid #ddd;
                 border-left: 3px solid var(--accent-text-color,${nfdiLightblue});
                 color: ${nfdiBlack};
@@ -11975,12 +11975,12 @@ Code.styles = [
                 position: absolute;
                 right: 0;
                 top: 0;
-                border-left: 1px solid var(--element-text-color,#F8F8FF) !important;
-                border-bottom: 1px solid var(--element-text-color,#F8F8FF) !important;
+                border-left: 1px solid var(--element-text-color,${nfdiWhite}) !important;
+                border-bottom: 1px solid var(--element-text-color,${nfdiWhite}) !important;
             }
 
             .copybutton:active {
-                box-shadow: -1 1 0 1px var(--element-text-color,#F8F8FF) !important;
+                box-shadow: -1 1 0 1px var(--element-text-color,${nfdiWhite}) !important;
             }
         `
 ];
@@ -12178,17 +12178,54 @@ let SidebarElement = class extends s {
         this.style.setProperty("--sidebar-text-color", newC);
       }
       const currentPage = window.location.pathname;
-      const currentUrl = window.location.href;
       const children = Array.from(this.children);
+      function getHrefURL(ele) {
+        const sidebarHref = ele.getAttribute("href");
+        const sidebarURL = new URL(sidebarHref, window.location.href);
+        return sidebarURL;
+      }
+      function isInnerAndHref(element) {
+        return element.hasAttribute("slot") && element.getAttribute("slot") != "title" && element.hasAttribute("href");
+      }
+      function isOnPathAndHasHash(element) {
+        const sidebarURL = getHrefURL(element);
+        return sidebarURL.origin == window.location.origin && sidebarURL.pathname == currentPage && sidebarURL.hash != "";
+      }
+      const filteredChildren = children.filter(isInnerAndHref).filter(isOnPathAndHasHash);
+      function filterExistingNFDIHeaders(nfdiHeader) {
+        let sidebarHrefHashs = filteredChildren.map((child) => getHrefURL(child).hash);
+        return sidebarHrefHashs.includes("#" + nfdiHeader.id);
+      }
+      const headers = Array.from(document.querySelectorAll("nfdi-body nfdi-h1, nfdi-body nfdi-h2, nfdi-body nfdi-h3"));
+      if (filteredChildren.length > 0 && headers.length > 0) {
+        window.addEventListener("scroll", () => {
+          let current = "";
+          headers.filter(filterExistingNFDIHeaders).forEach((header0) => {
+            const header = header0;
+            const distanceTopHeader = header.offsetTop;
+            if (scrollY + 50 >= distanceTopHeader) {
+              current = "#" + header.id;
+            }
+          });
+          filteredChildren.forEach((sideBarHeader) => {
+            sideBarHeader.classList.remove("active-page-scroll");
+            const sidebarHref = sideBarHeader.getAttribute("href");
+            const sidebarURL = new URL(sidebarHref, window.location.href);
+            if (sidebarURL.hash == current) {
+              sideBarHeader.classList.add("active-page-scroll");
+            }
+          });
+        });
+      }
       const anchoredChildren = children.map((child) => {
         if (child.hasAttribute("slot") && child.getAttribute("slot") === "title") {
           child.innerHTML = child.innerHTML;
           return child;
         } else {
           let hasHref = child.hasAttribute("href");
-          let url = hasHref ? child.getAttribute("href") : "";
-          let href = `href="${url}" `;
-          if (url == currentPage || url == currentUrl) {
+          let sidebarHref = hasHref ? child.getAttribute("href") : "";
+          let href = `href="${sidebarHref}" `;
+          if (sidebarHref == currentPage) {
             child.classList.add("active-sub-page");
           }
           child.innerHTML = `<a ${href}style="color: unset !important">${child.innerHTML}</a>`;
@@ -12266,6 +12303,14 @@ SidebarElement.styles = [
             }
 
             ::slotted(.active-sub-page) {
+                font-weight: bold !important;
+                text-decoration: underline !important;
+                /* border-radius: 2px !important; */
+                /* background-color: lightgrey; */
+                /* border-radius: 0; */
+            }
+
+            ::slotted(.active-page-scroll) {
                 font-weight: bold !important;
                 text-decoration: underline !important;
                 /* border-radius: 2px !important; */
