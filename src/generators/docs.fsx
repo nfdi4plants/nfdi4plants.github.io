@@ -2,7 +2,6 @@
 #load "layout.fsx"
 
 open Globals
-open Docsloader
 open Html
 
 let docsLayout (docs: Docsloader.Docs) =
