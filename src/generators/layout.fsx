@@ -8,7 +8,6 @@
 #load "../loaders/learnmoreloader.fsx"
 #load "../loaders/aboutloader.fsx"
 #load "../loaders/imprintloader.fsx"
-#load "../loaders/docsloader.fsx"
 #load "../loaders/privacyloader.fsx"
 #load "../loaders/jobsloader.fsx"
 #load "../loaders/serviceloader.fsx"

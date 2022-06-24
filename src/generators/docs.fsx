@@ -1,8 +1,11 @@
 #r "../_lib/Fornax.Core.dll"
 #load "layout.fsx"
+#if !FORNAX
+#load "../loaders/docsloader.fsx"
+#endif
 
-open Globals
 open Html
+open Docsloader
 
 let docsLayout (docs: Docsloader.Docs) =
     let publishedDate = docs.published.Value.ToString("yyyy-MM-dd")
