@@ -1,6 +1,4 @@
-#r "../_lib/Fornax.Core.dll"
-#r "../_lib/Markdig.dll"
-#load "../../.paket/load/net5.0/main.group.fsx"
+#load "../../.paket/load/main.group.fsx"
 
 open System.IO
 open Fornax.Nfdi4Plants

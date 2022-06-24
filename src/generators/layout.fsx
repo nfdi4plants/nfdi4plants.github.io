@@ -1,4 +1,3 @@
-#r "../_lib/Fornax.Core.dll"
 #load "../globals.fsx"
 #if !FORNAX
 #load "../loaders/pageloader.fsx"

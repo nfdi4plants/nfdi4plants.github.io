@@ -1,8 +1,5 @@
-#r "../_lib/Fornax.Core.dll"
 #load "layout.fsx"
-#if !FORNAX
-#load "../loaders/docsloader.fsx"
-#endif
+#load "../../.paket/load/main.group.fsx"
 
 
 open Html
