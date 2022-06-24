@@ -355,3 +355,4 @@ src/style/bulma-0.9.1
 .vscode/
 .vscode/settings.json
 .DS_Store
+.paket/

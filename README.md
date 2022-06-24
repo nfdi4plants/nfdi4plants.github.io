@@ -18,11 +18,11 @@ Please refer to [this guide](./src/content/README.md) on how to create content f
 
 in the root run once:
 
-- `npm install`
-- `dotnet tool restore`
+1. Download repo.
+2. Run `dotnet tool restore` in root directory.
+3. Run `dotnet paket install` in root directory.
+4. Run `npm install` in root directory.
 
-### live development
+### Live development
 
-in `./src`, run:
-
-`dotnet fornax watch`
+Run `dotnet fornax watch` in `\src` folder.

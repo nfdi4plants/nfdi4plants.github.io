@@ -11,11 +11,13 @@
 #load "../loaders/privacyloader.fsx"
 #load "../loaders/jobsloader.fsx"
 #load "../loaders/serviceloader.fsx"
-#load "../loaders/docsloader.fsx"
 #endif
 
 open Html
 open Globals.HTMLComponents
+
+[<Literal>]
+let baseUrl = "https://github.com/nfdi4plants/nfdi4plants.github.io/tree/main/src/"
 
 let injectWebsocketCode (webpage:string) =
     let websocketScript =

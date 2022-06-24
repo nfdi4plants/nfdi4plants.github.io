@@ -1,11 +1,15 @@
 #r "../_lib/Fornax.Core.dll"
 #load "layout.fsx"
+#if !FORNAX
+#load "../loaders/docsloader.fsx"
+#endif
+
 
 open Html
-open Docsloader
+open Fornax.Nfdi4Plants
 open Layout
 
-let docsLayout (docs: Docs) =
+let docsLayout (docs: DocsData) =
     let publishedDate = docs.published.Value.ToString("yyyy-MM-dd")
     custom "nfdi-body" [Class "content"; if Array.isEmpty docs.sidebar |> not then HtmlProperties.Custom("hasSidebar", "true")] [
         if Array.isEmpty docs.sidebar |> not then 
@@ -42,18 +46,17 @@ let docsLayout (docs: Docs) =
     ]
 
 let generate' (ctx : SiteContents) (page: string) =
-    let docsPages : seq<Docs> = ctx.TryGetValues<Docs>() |> Option.defaultValue Seq.empty
-    printfn "[Docs-Generator] mapping docs page for %s" page
-    
-    let currentDocsPage : option<Docs> =
-        docsPages
-        |> Seq.tryFind (fun lmp ->
+    let doc : option<DocsData> = 
+        ctx.TryGetValues<DocsData>() 
+        |> Option.defaultValue Seq.empty
+        |> Seq.tryFindBack (fun lmp ->
             lmp.file = page
-        )
+        ) 
 
-    match currentDocsPage with
+    match doc with
     | Some page ->
          Layout.layout ctx page.title [
+            Components.docsLayout baseUrl page
             docsLayout page
         ]
     | None -> 
