@@ -66,7 +66,8 @@ const t={ATTRIBUTE:1,CHILD:2,PROPERTY:3,BOOLEAN_ATTRIBUTE:4,EVENT:5,ELEMENT:6},e
  */class e extends i{constructor(i){if(super(i),this.it=w,i.type!==t.CHILD)throw Error(this.constructor.directiveName+"() can only be used in child bindings")}render(r){if(r===w||null==r)return this.ft=void 0,this.it=r;if(r===b)return r;if("string"!=typeof r)throw Error(this.constructor.directiveName+"() called with a non-string value");if(r===this.it)return this.ft;this.it=r;const s=[r];return s.raw=s,this.ft={_$litType$:this.constructor.resultType,strings:s,values:[]}}}e.directiveName="unsafeHTML",e.resultType=1;const o=e$1(e);
 
 const nfdiMint = r$2`#1FC2A7`;
-const nfdiMintDarker20$1 = r$2`#199b86`;
+const nfdiMintLighter20 = r$2`#4cceb9`;
+const nfdiMintDarker20 = r$2`#199b86`;
 const nfdiLightblue = r$2`#4FB3D9`;
 const nfdiDarkblue = r$2`#2D3E50`;
 const nfdiDarkblueLighter20 = r$2`#576573`;
@@ -1430,7 +1431,7 @@ a.box:active {
   color: #fff;
 }
 .button.is-primary:hover, .button.is-primary.is-hovered {
-  background-color: ${nfdiMintDarker20$1};
+  background-color: ${nfdiMintDarker20};
   border-color: transparent;
   color: #fff;
 }
@@ -3727,7 +3728,7 @@ a.tag:hover {
   color: #fff;
 }
 .file.is-primary:hover .file-cta, .file.is-primary.is-hovered .file-cta {
-  background-color: ${nfdiMintDarker20$1};
+  background-color: ${nfdiMintDarker20};
   border-color: transparent;
   color: #fff;
 }
@@ -11895,18 +11896,27 @@ function isLight(color) {
     return false;
   }
 }
-let cssString0 = `
+let cssString0 = r$2`
 code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shadow:0 1px #fff;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}
 `;
-const prismTokenString = "#690";
-const prismTokenClassName = "#dd4a68";
-const prismTokenPunctuation = "#999";
-const prismTokenImportant = "#e90";
-const nfdiRedDarker30 = "#871528";
-const nfdiMintDarker20 = "#199b86";
-const nfdiYellowDarker20 = "#cc9a00";
-let cssString = cssString0.replace(prismTokenString, nfdiRedDarker30).replace(prismTokenClassName, nfdiMintDarker20).replace(prismTokenPunctuation, nfdiYellowDarker20).replace(prismTokenImportant, nfdiYellowDarker20);
-const prismStyles = r$2`${o$5(cssString)}`;
+const prismStyles = r$2`
+    
+    ${cssString0}
+
+    .token.attr-name { color: ${nfdiLightblue} }
+
+    .token.attr-value, .token.string { color: #C3723B }
+
+    .token.tag { color: #569CD6 }
+
+    .token.class-name { color: ${nfdiMint} }
+
+    .token.number { color: ${nfdiMintLighter20} }
+
+    .token.property { color: ${nfdiLightblue} }
+
+    .token.operator { color: unset; background-color: unset }
+`;
 var commonjsGlobal = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
 var prism = { exports: {} };
 (function(module) {
@@ -13849,6 +13859,102 @@ Prism.languages.python = {
 };
 Prism.languages.python["string-interpolation"].inside["interpolation"].inside.rest = Prism.languages.python;
 Prism.languages.py = Prism.languages.python;
+Prism.languages.json = {
+  "property": {
+    pattern: /(^|[^\\])"(?:\\.|[^\\"\r\n])*"(?=\s*:)/,
+    lookbehind: true,
+    greedy: true
+  },
+  "string": {
+    pattern: /(^|[^\\])"(?:\\.|[^\\"\r\n])*"(?!\s*:)/,
+    lookbehind: true,
+    greedy: true
+  },
+  "comment": {
+    pattern: /\/\/.*|\/\*[\s\S]*?(?:\*\/|$)/,
+    greedy: true
+  },
+  "number": /-?\b\d+(?:\.\d+)?(?:e[+-]?\d+)?\b/i,
+  "punctuation": /[{}[\],]/,
+  "operator": /:/,
+  "boolean": /\b(?:false|true)\b/,
+  "null": {
+    pattern: /\bnull\b/,
+    alias: "keyword"
+  }
+};
+Prism.languages.webmanifest = Prism.languages.json;
+(function(Prism2) {
+  var anchorOrAlias = /[*&][^\s[\]{},]+/;
+  var tag = /!(?:<[\w\-%#;/?:@&=+$,.!~*'()[\]]+>|(?:[a-zA-Z\d-]*!)?[\w\-%#;/?:@&=+$.~*'()]+)?/;
+  var properties = "(?:" + tag.source + "(?:[ 	]+" + anchorOrAlias.source + ")?|" + anchorOrAlias.source + "(?:[ 	]+" + tag.source + ")?)";
+  var plainKey = /(?:[^\s\x00-\x08\x0e-\x1f!"#%&'*,\-:>?@[\]`{|}\x7f-\x84\x86-\x9f\ud800-\udfff\ufffe\uffff]|[?:-]<PLAIN>)(?:[ \t]*(?:(?![#:])<PLAIN>|:<PLAIN>))*/.source.replace(/<PLAIN>/g, function() {
+    return /[^\s\x00-\x08\x0e-\x1f,[\]{}\x7f-\x84\x86-\x9f\ud800-\udfff\ufffe\uffff]/.source;
+  });
+  var string = /"(?:[^"\\\r\n]|\\.)*"|'(?:[^'\\\r\n]|\\.)*'/.source;
+  function createValuePattern(value, flags) {
+    flags = (flags || "").replace(/m/g, "") + "m";
+    var pattern = /([:\-,[{]\s*(?:\s<<prop>>[ \t]+)?)(?:<<value>>)(?=[ \t]*(?:$|,|\]|\}|(?:[\r\n]\s*)?#))/.source.replace(/<<prop>>/g, function() {
+      return properties;
+    }).replace(/<<value>>/g, function() {
+      return value;
+    });
+    return RegExp(pattern, flags);
+  }
+  Prism2.languages.yaml = {
+    "scalar": {
+      pattern: RegExp(/([\-:]\s*(?:\s<<prop>>[ \t]+)?[|>])[ \t]*(?:((?:\r?\n|\r)[ \t]+)\S[^\r\n]*(?:\2[^\r\n]+)*)/.source.replace(/<<prop>>/g, function() {
+        return properties;
+      })),
+      lookbehind: true,
+      alias: "string"
+    },
+    "comment": /#.*/,
+    "key": {
+      pattern: RegExp(/((?:^|[:\-,[{\r\n?])[ \t]*(?:<<prop>>[ \t]+)?)<<key>>(?=\s*:\s)/.source.replace(/<<prop>>/g, function() {
+        return properties;
+      }).replace(/<<key>>/g, function() {
+        return "(?:" + plainKey + "|" + string + ")";
+      })),
+      lookbehind: true,
+      greedy: true,
+      alias: "atrule"
+    },
+    "directive": {
+      pattern: /(^[ \t]*)%.+/m,
+      lookbehind: true,
+      alias: "important"
+    },
+    "datetime": {
+      pattern: createValuePattern(/\d{4}-\d\d?-\d\d?(?:[tT]|[ \t]+)\d\d?:\d{2}:\d{2}(?:\.\d*)?(?:[ \t]*(?:Z|[-+]\d\d?(?::\d{2})?))?|\d{4}-\d{2}-\d{2}|\d\d?:\d{2}(?::\d{2}(?:\.\d*)?)?/.source),
+      lookbehind: true,
+      alias: "number"
+    },
+    "boolean": {
+      pattern: createValuePattern(/false|true/.source, "i"),
+      lookbehind: true,
+      alias: "important"
+    },
+    "null": {
+      pattern: createValuePattern(/null|~/.source, "i"),
+      lookbehind: true,
+      alias: "important"
+    },
+    "string": {
+      pattern: createValuePattern(string),
+      lookbehind: true,
+      greedy: true
+    },
+    "number": {
+      pattern: createValuePattern(/[+-]?(?:0x[\da-f]+|0o[0-7]+|(?:\d+(?:\.\d*)?|\.\d+)(?:e[+-]?\d+)?|\.inf|\.nan)/.source, "i"),
+      lookbehind: true
+    },
+    "tag": tag,
+    "important": anchorOrAlias,
+    "punctuation": /---|[:[\]{}\-,|>?]|\.\.\./
+  };
+  Prism2.languages.yml = Prism2.languages.yaml;
+})(Prism);
 var __defProp$2 = Object.defineProperty;
 var __getOwnPropDesc$2 = Object.getOwnPropertyDescriptor;
 var __decorateClass$2 = (decorators, target, key, kind) => {
@@ -14084,7 +14190,7 @@ let TOC = class extends s$1 {
       let headers = document.querySelectorAll("nfdi-h1, nfdi-h2, nfdi-h3, nfdi-h4, nfdi-h5, nfdi-h6");
       headers.forEach((element) => {
         const depth = element.tagName.replace(/[^0-9]/g, "");
-        this.foundHeaders.push({ depth: parseInt(depth), text: element.innerHTML, id: element.id, children: [] });
+        this.foundHeaders.push({ depth: parseInt(depth), text: element.innerHTML.replace("&amp;", "&"), id: element.id, children: [] });
       });
       this.foundHeaders = nest(this.foundHeaders);
       this.requestUpdate();
