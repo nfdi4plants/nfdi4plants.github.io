@@ -5,52 +5,52 @@
  * Copyright 2019 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const t$2=window.ShadowRoot&&(void 0===window.ShadyCSS||window.ShadyCSS.nativeShadow)&&"adoptedStyleSheets"in Document.prototype&&"replace"in CSSStyleSheet.prototype,e$5=Symbol(),n$5=new Map;class s$3{constructor(t,n){if(this._$cssResult$=!0,n!==e$5)throw Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");this.cssText=t;}get styleSheet(){let e=n$5.get(this.cssText);return t$2&&void 0===e&&(n$5.set(this.cssText,e=new CSSStyleSheet),e.replaceSync(this.cssText)),e}toString(){return this.cssText}}const o$5=t=>new s$3("string"==typeof t?t:t+"",e$5),r$2=(t,...n)=>{const o=1===t.length?t[0]:n.reduce(((e,n,s)=>e+(t=>{if(!0===t._$cssResult$)return t.cssText;if("number"==typeof t)return t;throw Error("Value passed to 'css' function must be a 'css' function result: "+t+". Use 'unsafeCSS' to pass non-literal values, but take care to ensure page security.")})(n)+t[s+1]),t[0]);return new s$3(o,e$5)},i$4=(e,n)=>{t$2?e.adoptedStyleSheets=n.map((t=>t instanceof CSSStyleSheet?t:t.styleSheet)):n.forEach((t=>{const n=document.createElement("style"),s=window.litNonce;void 0!==s&&n.setAttribute("nonce",s),n.textContent=t.cssText,e.appendChild(n);}));},S$1=t$2?t=>t:t=>t instanceof CSSStyleSheet?(t=>{let e="";for(const n of t.cssRules)e+=n.cssText;return o$5(e)})(t):t;
+const t$2=window.ShadowRoot&&(void 0===window.ShadyCSS||window.ShadyCSS.nativeShadow)&&"adoptedStyleSheets"in Document.prototype&&"replace"in CSSStyleSheet.prototype,e$6=Symbol(),n$6=new Map;class s$4{constructor(t,n){if(this._$cssResult$=!0,n!==e$6)throw Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");this.cssText=t;}get styleSheet(){let e=n$6.get(this.cssText);return t$2&&void 0===e&&(n$6.set(this.cssText,e=new CSSStyleSheet),e.replaceSync(this.cssText)),e}toString(){return this.cssText}}const o$5=t=>new s$4("string"==typeof t?t:t+"",e$6),r$2=(t,...n)=>{const o=1===t.length?t[0]:n.reduce(((e,n,s)=>e+(t=>{if(!0===t._$cssResult$)return t.cssText;if("number"==typeof t)return t;throw Error("Value passed to 'css' function must be a 'css' function result: "+t+". Use 'unsafeCSS' to pass non-literal values, but take care to ensure page security.")})(n)+t[s+1]),t[0]);return new s$4(o,e$6)},i$4=(e,n)=>{t$2?e.adoptedStyleSheets=n.map((t=>t instanceof CSSStyleSheet?t:t.styleSheet)):n.forEach((t=>{const n=document.createElement("style"),s=window.litNonce;void 0!==s&&n.setAttribute("nonce",s),n.textContent=t.cssText,e.appendChild(n);}));},S$1=t$2?t=>t:t=>t instanceof CSSStyleSheet?(t=>{let e="";for(const n of t.cssRules)e+=n.cssText;return o$5(e)})(t):t;
 
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */var s$2;const e$4=window.trustedTypes,r$1=e$4?e$4.emptyScript:"",h$1=window.reactiveElementPolyfillSupport,o$4={toAttribute(t,i){switch(i){case Boolean:t=t?r$1:null;break;case Object:case Array:t=null==t?t:JSON.stringify(t);}return t},fromAttribute(t,i){let s=t;switch(i){case Boolean:s=null!==t;break;case Number:s=null===t?null:Number(t);break;case Object:case Array:try{s=JSON.parse(t);}catch(t){s=null;}}return s}},n$4=(t,i)=>i!==t&&(i==i||t==t),l$3={attribute:!0,type:String,converter:o$4,reflect:!1,hasChanged:n$4};class a$2 extends HTMLElement{constructor(){super(),this._$Et=new Map,this.isUpdatePending=!1,this.hasUpdated=!1,this._$Ei=null,this.o();}static addInitializer(t){var i;null!==(i=this.l)&&void 0!==i||(this.l=[]),this.l.push(t);}static get observedAttributes(){this.finalize();const t=[];return this.elementProperties.forEach(((i,s)=>{const e=this._$Eh(s,i);void 0!==e&&(this._$Eu.set(e,s),t.push(e));})),t}static createProperty(t,i=l$3){if(i.state&&(i.attribute=!1),this.finalize(),this.elementProperties.set(t,i),!i.noAccessor&&!this.prototype.hasOwnProperty(t)){const s="symbol"==typeof t?Symbol():"__"+t,e=this.getPropertyDescriptor(t,s,i);void 0!==e&&Object.defineProperty(this.prototype,t,e);}}static getPropertyDescriptor(t,i,s){return {get(){return this[i]},set(e){const r=this[t];this[i]=e,this.requestUpdate(t,r,s);},configurable:!0,enumerable:!0}}static getPropertyOptions(t){return this.elementProperties.get(t)||l$3}static finalize(){if(this.hasOwnProperty("finalized"))return !1;this.finalized=!0;const t=Object.getPrototypeOf(this);if(t.finalize(),this.elementProperties=new Map(t.elementProperties),this._$Eu=new Map,this.hasOwnProperty("properties")){const t=this.properties,i=[...Object.getOwnPropertyNames(t),...Object.getOwnPropertySymbols(t)];for(const s of i)this.createProperty(s,t[s]);}return this.elementStyles=this.finalizeStyles(this.styles),!0}static finalizeStyles(i){const s=[];if(Array.isArray(i)){const e=new Set(i.flat(1/0).reverse());for(const i of e)s.unshift(S$1(i));}else void 0!==i&&s.push(S$1(i));return s}static _$Eh(t,i){const s=i.attribute;return !1===s?void 0:"string"==typeof s?s:"string"==typeof t?t.toLowerCase():void 0}o(){var t;this._$Ep=new Promise((t=>this.enableUpdating=t)),this._$AL=new Map,this._$Em(),this.requestUpdate(),null===(t=this.constructor.l)||void 0===t||t.forEach((t=>t(this)));}addController(t){var i,s;(null!==(i=this._$Eg)&&void 0!==i?i:this._$Eg=[]).push(t),void 0!==this.renderRoot&&this.isConnected&&(null===(s=t.hostConnected)||void 0===s||s.call(t));}removeController(t){var i;null===(i=this._$Eg)||void 0===i||i.splice(this._$Eg.indexOf(t)>>>0,1);}_$Em(){this.constructor.elementProperties.forEach(((t,i)=>{this.hasOwnProperty(i)&&(this._$Et.set(i,this[i]),delete this[i]);}));}createRenderRoot(){var t;const s=null!==(t=this.shadowRoot)&&void 0!==t?t:this.attachShadow(this.constructor.shadowRootOptions);return i$4(s,this.constructor.elementStyles),s}connectedCallback(){var t;void 0===this.renderRoot&&(this.renderRoot=this.createRenderRoot()),this.enableUpdating(!0),null===(t=this._$Eg)||void 0===t||t.forEach((t=>{var i;return null===(i=t.hostConnected)||void 0===i?void 0:i.call(t)}));}enableUpdating(t){}disconnectedCallback(){var t;null===(t=this._$Eg)||void 0===t||t.forEach((t=>{var i;return null===(i=t.hostDisconnected)||void 0===i?void 0:i.call(t)}));}attributeChangedCallback(t,i,s){this._$AK(t,s);}_$ES(t,i,s=l$3){var e,r;const h=this.constructor._$Eh(t,s);if(void 0!==h&&!0===s.reflect){const n=(null!==(r=null===(e=s.converter)||void 0===e?void 0:e.toAttribute)&&void 0!==r?r:o$4.toAttribute)(i,s.type);this._$Ei=t,null==n?this.removeAttribute(h):this.setAttribute(h,n),this._$Ei=null;}}_$AK(t,i){var s,e,r;const h=this.constructor,n=h._$Eu.get(t);if(void 0!==n&&this._$Ei!==n){const t=h.getPropertyOptions(n),l=t.converter,a=null!==(r=null!==(e=null===(s=l)||void 0===s?void 0:s.fromAttribute)&&void 0!==e?e:"function"==typeof l?l:null)&&void 0!==r?r:o$4.fromAttribute;this._$Ei=n,this[n]=a(i,t.type),this._$Ei=null;}}requestUpdate(t,i,s){let e=!0;void 0!==t&&(((s=s||this.constructor.getPropertyOptions(t)).hasChanged||n$4)(this[t],i)?(this._$AL.has(t)||this._$AL.set(t,i),!0===s.reflect&&this._$Ei!==t&&(void 0===this._$EC&&(this._$EC=new Map),this._$EC.set(t,s))):e=!1),!this.isUpdatePending&&e&&(this._$Ep=this._$E_());}async _$E_(){this.isUpdatePending=!0;try{await this._$Ep;}catch(t){Promise.reject(t);}const t=this.scheduleUpdate();return null!=t&&await t,!this.isUpdatePending}scheduleUpdate(){return this.performUpdate()}performUpdate(){var t;if(!this.isUpdatePending)return;this.hasUpdated,this._$Et&&(this._$Et.forEach(((t,i)=>this[i]=t)),this._$Et=void 0);let i=!1;const s=this._$AL;try{i=this.shouldUpdate(s),i?(this.willUpdate(s),null===(t=this._$Eg)||void 0===t||t.forEach((t=>{var i;return null===(i=t.hostUpdate)||void 0===i?void 0:i.call(t)})),this.update(s)):this._$EU();}catch(t){throw i=!1,this._$EU(),t}i&&this._$AE(s);}willUpdate(t){}_$AE(t){var i;null===(i=this._$Eg)||void 0===i||i.forEach((t=>{var i;return null===(i=t.hostUpdated)||void 0===i?void 0:i.call(t)})),this.hasUpdated||(this.hasUpdated=!0,this.firstUpdated(t)),this.updated(t);}_$EU(){this._$AL=new Map,this.isUpdatePending=!1;}get updateComplete(){return this.getUpdateComplete()}getUpdateComplete(){return this._$Ep}shouldUpdate(t){return !0}update(t){void 0!==this._$EC&&(this._$EC.forEach(((t,i)=>this._$ES(i,this[i],t))),this._$EC=void 0),this._$EU();}updated(t){}firstUpdated(t){}}a$2.finalized=!0,a$2.elementProperties=new Map,a$2.elementStyles=[],a$2.shadowRootOptions={mode:"open"},null==h$1||h$1({ReactiveElement:a$2}),(null!==(s$2=globalThis.reactiveElementVersions)&&void 0!==s$2?s$2:globalThis.reactiveElementVersions=[]).push("1.3.1");
-
-/**
- * @license
- * Copyright 2017 Google LLC
- * SPDX-License-Identifier: BSD-3-Clause
- */
-var t$1;const i$3=globalThis.trustedTypes,s$1=i$3?i$3.createPolicy("lit-html",{createHTML:t=>t}):void 0,e$3=`lit$${(Math.random()+"").slice(9)}$`,o$3="?"+e$3,n$3=`<${o$3}>`,l$2=document,h=(t="")=>l$2.createComment(t),r=t=>null===t||"object"!=typeof t&&"function"!=typeof t,d=Array.isArray,u=t=>{var i;return d(t)||"function"==typeof(null===(i=t)||void 0===i?void 0:i[Symbol.iterator])},c=/<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g,v=/-->/g,a$1=/>/g,f=/>|[ 	\n\r](?:([^\s"'>=/]+)([ 	\n\r]*=[ 	\n\r]*(?:[^ 	\n\r"'`<>=]|("|')|))|$)/g,_=/'/g,m=/"/g,g=/^(?:script|style|textarea|title)$/i,p=t=>(i,...s)=>({_$litType$:t,strings:i,values:s}),$=p(1),b=Symbol.for("lit-noChange"),w=Symbol.for("lit-nothing"),T=new WeakMap,x=(t,i,s)=>{var e,o;const n=null!==(e=null==s?void 0:s.renderBefore)&&void 0!==e?e:i;let l=n._$litPart$;if(void 0===l){const t=null!==(o=null==s?void 0:s.renderBefore)&&void 0!==o?o:null;n._$litPart$=l=new N(i.insertBefore(h(),t),t,void 0,null!=s?s:{});}return l._$AI(t),l},A=l$2.createTreeWalker(l$2,129,null,!1),C=(t,i)=>{const o=t.length-1,l=[];let h,r=2===i?"<svg>":"",d=c;for(let i=0;i<o;i++){const s=t[i];let o,u,p=-1,$=0;for(;$<s.length&&(d.lastIndex=$,u=d.exec(s),null!==u);)$=d.lastIndex,d===c?"!--"===u[1]?d=v:void 0!==u[1]?d=a$1:void 0!==u[2]?(g.test(u[2])&&(h=RegExp("</"+u[2],"g")),d=f):void 0!==u[3]&&(d=f):d===f?">"===u[0]?(d=null!=h?h:c,p=-1):void 0===u[1]?p=-2:(p=d.lastIndex-u[2].length,o=u[1],d=void 0===u[3]?f:'"'===u[3]?m:_):d===m||d===_?d=f:d===v||d===a$1?d=c:(d=f,h=void 0);const y=d===f&&t[i+1].startsWith("/>")?" ":"";r+=d===c?s+n$3:p>=0?(l.push(o),s.slice(0,p)+"$lit$"+s.slice(p)+e$3+y):s+e$3+(-2===p?(l.push(void 0),i):y);}const u=r+(t[o]||"<?>")+(2===i?"</svg>":"");if(!Array.isArray(t)||!t.hasOwnProperty("raw"))throw Error("invalid template strings array");return [void 0!==s$1?s$1.createHTML(u):u,l]};class E{constructor({strings:t,_$litType$:s},n){let l;this.parts=[];let r=0,d=0;const u=t.length-1,c=this.parts,[v,a]=C(t,s);if(this.el=E.createElement(v,n),A.currentNode=this.el.content,2===s){const t=this.el.content,i=t.firstChild;i.remove(),t.append(...i.childNodes);}for(;null!==(l=A.nextNode())&&c.length<u;){if(1===l.nodeType){if(l.hasAttributes()){const t=[];for(const i of l.getAttributeNames())if(i.endsWith("$lit$")||i.startsWith(e$3)){const s=a[d++];if(t.push(i),void 0!==s){const t=l.getAttribute(s.toLowerCase()+"$lit$").split(e$3),i=/([.?@])?(.*)/.exec(s);c.push({type:1,index:r,name:i[2],strings:t,ctor:"."===i[1]?M:"?"===i[1]?H:"@"===i[1]?I:S});}else c.push({type:6,index:r});}for(const i of t)l.removeAttribute(i);}if(g.test(l.tagName)){const t=l.textContent.split(e$3),s=t.length-1;if(s>0){l.textContent=i$3?i$3.emptyScript:"";for(let i=0;i<s;i++)l.append(t[i],h()),A.nextNode(),c.push({type:2,index:++r});l.append(t[s],h());}}}else if(8===l.nodeType)if(l.data===o$3)c.push({type:2,index:r});else {let t=-1;for(;-1!==(t=l.data.indexOf(e$3,t+1));)c.push({type:7,index:r}),t+=e$3.length-1;}r++;}}static createElement(t,i){const s=l$2.createElement("template");return s.innerHTML=t,s}}function P(t,i,s=t,e){var o,n,l,h;if(i===b)return i;let d=void 0!==e?null===(o=s._$Cl)||void 0===o?void 0:o[e]:s._$Cu;const u=r(i)?void 0:i._$litDirective$;return (null==d?void 0:d.constructor)!==u&&(null===(n=null==d?void 0:d._$AO)||void 0===n||n.call(d,!1),void 0===u?d=void 0:(d=new u(t),d._$AT(t,s,e)),void 0!==e?(null!==(l=(h=s)._$Cl)&&void 0!==l?l:h._$Cl=[])[e]=d:s._$Cu=d),void 0!==d&&(i=P(t,d._$AS(t,i.values),d,e)),i}class V{constructor(t,i){this.v=[],this._$AN=void 0,this._$AD=t,this._$AM=i;}get parentNode(){return this._$AM.parentNode}get _$AU(){return this._$AM._$AU}p(t){var i;const{el:{content:s},parts:e}=this._$AD,o=(null!==(i=null==t?void 0:t.creationScope)&&void 0!==i?i:l$2).importNode(s,!0);A.currentNode=o;let n=A.nextNode(),h=0,r=0,d=e[0];for(;void 0!==d;){if(h===d.index){let i;2===d.type?i=new N(n,n.nextSibling,this,t):1===d.type?i=new d.ctor(n,d.name,d.strings,this,t):6===d.type&&(i=new L(n,this,t)),this.v.push(i),d=e[++r];}h!==(null==d?void 0:d.index)&&(n=A.nextNode(),h++);}return o}m(t){let i=0;for(const s of this.v)void 0!==s&&(void 0!==s.strings?(s._$AI(t,s,i),i+=s.strings.length-2):s._$AI(t[i])),i++;}}class N{constructor(t,i,s,e){var o;this.type=2,this._$AH=w,this._$AN=void 0,this._$AA=t,this._$AB=i,this._$AM=s,this.options=e,this._$Cg=null===(o=null==e?void 0:e.isConnected)||void 0===o||o;}get _$AU(){var t,i;return null!==(i=null===(t=this._$AM)||void 0===t?void 0:t._$AU)&&void 0!==i?i:this._$Cg}get parentNode(){let t=this._$AA.parentNode;const i=this._$AM;return void 0!==i&&11===t.nodeType&&(t=i.parentNode),t}get startNode(){return this._$AA}get endNode(){return this._$AB}_$AI(t,i=this){t=P(this,t,i),r(t)?t===w||null==t||""===t?(this._$AH!==w&&this._$AR(),this._$AH=w):t!==this._$AH&&t!==b&&this.$(t):void 0!==t._$litType$?this.T(t):void 0!==t.nodeType?this.k(t):u(t)?this.S(t):this.$(t);}A(t,i=this._$AB){return this._$AA.parentNode.insertBefore(t,i)}k(t){this._$AH!==t&&(this._$AR(),this._$AH=this.A(t));}$(t){this._$AH!==w&&r(this._$AH)?this._$AA.nextSibling.data=t:this.k(l$2.createTextNode(t)),this._$AH=t;}T(t){var i;const{values:s,_$litType$:e}=t,o="number"==typeof e?this._$AC(t):(void 0===e.el&&(e.el=E.createElement(e.h,this.options)),e);if((null===(i=this._$AH)||void 0===i?void 0:i._$AD)===o)this._$AH.m(s);else {const t=new V(o,this),i=t.p(this.options);t.m(s),this.k(i),this._$AH=t;}}_$AC(t){let i=T.get(t.strings);return void 0===i&&T.set(t.strings,i=new E(t)),i}S(t){d(this._$AH)||(this._$AH=[],this._$AR());const i=this._$AH;let s,e=0;for(const o of t)e===i.length?i.push(s=new N(this.A(h()),this.A(h()),this,this.options)):s=i[e],s._$AI(o),e++;e<i.length&&(this._$AR(s&&s._$AB.nextSibling,e),i.length=e);}_$AR(t=this._$AA.nextSibling,i){var s;for(null===(s=this._$AP)||void 0===s||s.call(this,!1,!0,i);t&&t!==this._$AB;){const i=t.nextSibling;t.remove(),t=i;}}setConnected(t){var i;void 0===this._$AM&&(this._$Cg=t,null===(i=this._$AP)||void 0===i||i.call(this,t));}}class S{constructor(t,i,s,e,o){this.type=1,this._$AH=w,this._$AN=void 0,this.element=t,this.name=i,this._$AM=e,this.options=o,s.length>2||""!==s[0]||""!==s[1]?(this._$AH=Array(s.length-1).fill(new String),this.strings=s):this._$AH=w;}get tagName(){return this.element.tagName}get _$AU(){return this._$AM._$AU}_$AI(t,i=this,s,e){const o=this.strings;let n=!1;if(void 0===o)t=P(this,t,i,0),n=!r(t)||t!==this._$AH&&t!==b,n&&(this._$AH=t);else {const e=t;let l,h;for(t=o[0],l=0;l<o.length-1;l++)h=P(this,e[s+l],i,l),h===b&&(h=this._$AH[l]),n||(n=!r(h)||h!==this._$AH[l]),h===w?t=w:t!==w&&(t+=(null!=h?h:"")+o[l+1]),this._$AH[l]=h;}n&&!e&&this.C(t);}C(t){t===w?this.element.removeAttribute(this.name):this.element.setAttribute(this.name,null!=t?t:"");}}class M extends S{constructor(){super(...arguments),this.type=3;}C(t){this.element[this.name]=t===w?void 0:t;}}const k=i$3?i$3.emptyScript:"";class H extends S{constructor(){super(...arguments),this.type=4;}C(t){t&&t!==w?this.element.setAttribute(this.name,k):this.element.removeAttribute(this.name);}}class I extends S{constructor(t,i,s,e,o){super(t,i,s,e,o),this.type=5;}_$AI(t,i=this){var s;if((t=null!==(s=P(this,t,i,0))&&void 0!==s?s:w)===b)return;const e=this._$AH,o=t===w&&e!==w||t.capture!==e.capture||t.once!==e.once||t.passive!==e.passive,n=t!==w&&(e===w||o);o&&this.element.removeEventListener(this.name,this,e),n&&this.element.addEventListener(this.name,this,t),this._$AH=t;}handleEvent(t){var i,s;"function"==typeof this._$AH?this._$AH.call(null!==(s=null===(i=this.options)||void 0===i?void 0:i.host)&&void 0!==s?s:this.element,t):this._$AH.handleEvent(t);}}class L{constructor(t,i,s){this.element=t,this.type=6,this._$AN=void 0,this._$AM=i,this.options=s;}get _$AU(){return this._$AM._$AU}_$AI(t){P(this,t);}}const z=window.litHtmlPolyfillSupport;null==z||z(E,N),(null!==(t$1=globalThis.litHtmlVersions)&&void 0!==t$1?t$1:globalThis.litHtmlVersions=[]).push("2.2.1");
-
-/**
- * @license
- * Copyright 2017 Google LLC
- * SPDX-License-Identifier: BSD-3-Clause
- */var l$1,o$2;class s extends a$2{constructor(){super(...arguments),this.renderOptions={host:this},this._$Dt=void 0;}createRenderRoot(){var t,e;const i=super.createRenderRoot();return null!==(t=(e=this.renderOptions).renderBefore)&&void 0!==t||(e.renderBefore=i.firstChild),i}update(t){const i=this.render();this.hasUpdated||(this.renderOptions.isConnected=this.isConnected),super.update(t),this._$Dt=x(i,this.renderRoot,this.renderOptions);}connectedCallback(){var t;super.connectedCallback(),null===(t=this._$Dt)||void 0===t||t.setConnected(!0);}disconnectedCallback(){var t;super.disconnectedCallback(),null===(t=this._$Dt)||void 0===t||t.setConnected(!1);}render(){return b}}s.finalized=!0,s._$litElement$=!0,null===(l$1=globalThis.litElementHydrateSupport)||void 0===l$1||l$1.call(globalThis,{LitElement:s});const n$2=globalThis.litElementPolyfillSupport;null==n$2||n$2({LitElement:s});(null!==(o$2=globalThis.litElementVersions)&&void 0!==o$2?o$2:globalThis.litElementVersions=[]).push("3.2.0");
+ */var s$3;const e$5=window.trustedTypes,r$1=e$5?e$5.emptyScript:"",h$1=window.reactiveElementPolyfillSupport,o$4={toAttribute(t,i){switch(i){case Boolean:t=t?r$1:null;break;case Object:case Array:t=null==t?t:JSON.stringify(t);}return t},fromAttribute(t,i){let s=t;switch(i){case Boolean:s=null!==t;break;case Number:s=null===t?null:Number(t);break;case Object:case Array:try{s=JSON.parse(t);}catch(t){s=null;}}return s}},n$5=(t,i)=>i!==t&&(i==i||t==t),l$2={attribute:!0,type:String,converter:o$4,reflect:!1,hasChanged:n$5};class a$2 extends HTMLElement{constructor(){super(),this._$Et=new Map,this.isUpdatePending=!1,this.hasUpdated=!1,this._$Ei=null,this.o();}static addInitializer(t){var i;null!==(i=this.l)&&void 0!==i||(this.l=[]),this.l.push(t);}static get observedAttributes(){this.finalize();const t=[];return this.elementProperties.forEach(((i,s)=>{const e=this._$Eh(s,i);void 0!==e&&(this._$Eu.set(e,s),t.push(e));})),t}static createProperty(t,i=l$2){if(i.state&&(i.attribute=!1),this.finalize(),this.elementProperties.set(t,i),!i.noAccessor&&!this.prototype.hasOwnProperty(t)){const s="symbol"==typeof t?Symbol():"__"+t,e=this.getPropertyDescriptor(t,s,i);void 0!==e&&Object.defineProperty(this.prototype,t,e);}}static getPropertyDescriptor(t,i,s){return {get(){return this[i]},set(e){const r=this[t];this[i]=e,this.requestUpdate(t,r,s);},configurable:!0,enumerable:!0}}static getPropertyOptions(t){return this.elementProperties.get(t)||l$2}static finalize(){if(this.hasOwnProperty("finalized"))return !1;this.finalized=!0;const t=Object.getPrototypeOf(this);if(t.finalize(),this.elementProperties=new Map(t.elementProperties),this._$Eu=new Map,this.hasOwnProperty("properties")){const t=this.properties,i=[...Object.getOwnPropertyNames(t),...Object.getOwnPropertySymbols(t)];for(const s of i)this.createProperty(s,t[s]);}return this.elementStyles=this.finalizeStyles(this.styles),!0}static finalizeStyles(i){const s=[];if(Array.isArray(i)){const e=new Set(i.flat(1/0).reverse());for(const i of e)s.unshift(S$1(i));}else void 0!==i&&s.push(S$1(i));return s}static _$Eh(t,i){const s=i.attribute;return !1===s?void 0:"string"==typeof s?s:"string"==typeof t?t.toLowerCase():void 0}o(){var t;this._$Ep=new Promise((t=>this.enableUpdating=t)),this._$AL=new Map,this._$Em(),this.requestUpdate(),null===(t=this.constructor.l)||void 0===t||t.forEach((t=>t(this)));}addController(t){var i,s;(null!==(i=this._$Eg)&&void 0!==i?i:this._$Eg=[]).push(t),void 0!==this.renderRoot&&this.isConnected&&(null===(s=t.hostConnected)||void 0===s||s.call(t));}removeController(t){var i;null===(i=this._$Eg)||void 0===i||i.splice(this._$Eg.indexOf(t)>>>0,1);}_$Em(){this.constructor.elementProperties.forEach(((t,i)=>{this.hasOwnProperty(i)&&(this._$Et.set(i,this[i]),delete this[i]);}));}createRenderRoot(){var t;const s=null!==(t=this.shadowRoot)&&void 0!==t?t:this.attachShadow(this.constructor.shadowRootOptions);return i$4(s,this.constructor.elementStyles),s}connectedCallback(){var t;void 0===this.renderRoot&&(this.renderRoot=this.createRenderRoot()),this.enableUpdating(!0),null===(t=this._$Eg)||void 0===t||t.forEach((t=>{var i;return null===(i=t.hostConnected)||void 0===i?void 0:i.call(t)}));}enableUpdating(t){}disconnectedCallback(){var t;null===(t=this._$Eg)||void 0===t||t.forEach((t=>{var i;return null===(i=t.hostDisconnected)||void 0===i?void 0:i.call(t)}));}attributeChangedCallback(t,i,s){this._$AK(t,s);}_$ES(t,i,s=l$2){var e,r;const h=this.constructor._$Eh(t,s);if(void 0!==h&&!0===s.reflect){const n=(null!==(r=null===(e=s.converter)||void 0===e?void 0:e.toAttribute)&&void 0!==r?r:o$4.toAttribute)(i,s.type);this._$Ei=t,null==n?this.removeAttribute(h):this.setAttribute(h,n),this._$Ei=null;}}_$AK(t,i){var s,e,r;const h=this.constructor,n=h._$Eu.get(t);if(void 0!==n&&this._$Ei!==n){const t=h.getPropertyOptions(n),l=t.converter,a=null!==(r=null!==(e=null===(s=l)||void 0===s?void 0:s.fromAttribute)&&void 0!==e?e:"function"==typeof l?l:null)&&void 0!==r?r:o$4.fromAttribute;this._$Ei=n,this[n]=a(i,t.type),this._$Ei=null;}}requestUpdate(t,i,s){let e=!0;void 0!==t&&(((s=s||this.constructor.getPropertyOptions(t)).hasChanged||n$5)(this[t],i)?(this._$AL.has(t)||this._$AL.set(t,i),!0===s.reflect&&this._$Ei!==t&&(void 0===this._$EC&&(this._$EC=new Map),this._$EC.set(t,s))):e=!1),!this.isUpdatePending&&e&&(this._$Ep=this._$E_());}async _$E_(){this.isUpdatePending=!0;try{await this._$Ep;}catch(t){Promise.reject(t);}const t=this.scheduleUpdate();return null!=t&&await t,!this.isUpdatePending}scheduleUpdate(){return this.performUpdate()}performUpdate(){var t;if(!this.isUpdatePending)return;this.hasUpdated,this._$Et&&(this._$Et.forEach(((t,i)=>this[i]=t)),this._$Et=void 0);let i=!1;const s=this._$AL;try{i=this.shouldUpdate(s),i?(this.willUpdate(s),null===(t=this._$Eg)||void 0===t||t.forEach((t=>{var i;return null===(i=t.hostUpdate)||void 0===i?void 0:i.call(t)})),this.update(s)):this._$EU();}catch(t){throw i=!1,this._$EU(),t}i&&this._$AE(s);}willUpdate(t){}_$AE(t){var i;null===(i=this._$Eg)||void 0===i||i.forEach((t=>{var i;return null===(i=t.hostUpdated)||void 0===i?void 0:i.call(t)})),this.hasUpdated||(this.hasUpdated=!0,this.firstUpdated(t)),this.updated(t);}_$EU(){this._$AL=new Map,this.isUpdatePending=!1;}get updateComplete(){return this.getUpdateComplete()}getUpdateComplete(){return this._$Ep}shouldUpdate(t){return !0}update(t){void 0!==this._$EC&&(this._$EC.forEach(((t,i)=>this._$ES(i,this[i],t))),this._$EC=void 0),this._$EU();}updated(t){}firstUpdated(t){}}a$2.finalized=!0,a$2.elementProperties=new Map,a$2.elementStyles=[],a$2.shadowRootOptions={mode:"open"},null==h$1||h$1({ReactiveElement:a$2}),(null!==(s$3=globalThis.reactiveElementVersions)&&void 0!==s$3?s$3:globalThis.reactiveElementVersions=[]).push("1.3.2");
 
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const n$1=n=>e=>"function"==typeof e?((n,e)=>(window.customElements.define(n,e),e))(n,e):((n,e)=>{const{kind:t,elements:i}=e;return {kind:t,elements:i,finisher(e){window.customElements.define(n,e);}}})(n,e);
+var t$1;const i$3=globalThis.trustedTypes,s$2=i$3?i$3.createPolicy("lit-html",{createHTML:t=>t}):void 0,e$4=`lit$${(Math.random()+"").slice(9)}$`,o$3="?"+e$4,n$4=`<${o$3}>`,l$1=document,h=(t="")=>l$1.createComment(t),r=t=>null===t||"object"!=typeof t&&"function"!=typeof t,d=Array.isArray,u=t=>{var i;return d(t)||"function"==typeof(null===(i=t)||void 0===i?void 0:i[Symbol.iterator])},c=/<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g,v=/-->/g,a$1=/>/g,f=/>|[ 	\n\r](?:([^\s"'>=/]+)([ 	\n\r]*=[ 	\n\r]*(?:[^ 	\n\r"'`<>=]|("|')|))|$)/g,_=/'/g,m=/"/g,g=/^(?:script|style|textarea|title)$/i,p=t=>(i,...s)=>({_$litType$:t,strings:i,values:s}),$=p(1),b=Symbol.for("lit-noChange"),w=Symbol.for("lit-nothing"),T=new WeakMap,x=(t,i,s)=>{var e,o;const n=null!==(e=null==s?void 0:s.renderBefore)&&void 0!==e?e:i;let l=n._$litPart$;if(void 0===l){const t=null!==(o=null==s?void 0:s.renderBefore)&&void 0!==o?o:null;n._$litPart$=l=new N(i.insertBefore(h(),t),t,void 0,null!=s?s:{});}return l._$AI(t),l},A=l$1.createTreeWalker(l$1,129,null,!1),C=(t,i)=>{const o=t.length-1,l=[];let h,r=2===i?"<svg>":"",d=c;for(let i=0;i<o;i++){const s=t[i];let o,u,p=-1,$=0;for(;$<s.length&&(d.lastIndex=$,u=d.exec(s),null!==u);)$=d.lastIndex,d===c?"!--"===u[1]?d=v:void 0!==u[1]?d=a$1:void 0!==u[2]?(g.test(u[2])&&(h=RegExp("</"+u[2],"g")),d=f):void 0!==u[3]&&(d=f):d===f?">"===u[0]?(d=null!=h?h:c,p=-1):void 0===u[1]?p=-2:(p=d.lastIndex-u[2].length,o=u[1],d=void 0===u[3]?f:'"'===u[3]?m:_):d===m||d===_?d=f:d===v||d===a$1?d=c:(d=f,h=void 0);const y=d===f&&t[i+1].startsWith("/>")?" ":"";r+=d===c?s+n$4:p>=0?(l.push(o),s.slice(0,p)+"$lit$"+s.slice(p)+e$4+y):s+e$4+(-2===p?(l.push(void 0),i):y);}const u=r+(t[o]||"<?>")+(2===i?"</svg>":"");if(!Array.isArray(t)||!t.hasOwnProperty("raw"))throw Error("invalid template strings array");return [void 0!==s$2?s$2.createHTML(u):u,l]};class E{constructor({strings:t,_$litType$:s},n){let l;this.parts=[];let r=0,d=0;const u=t.length-1,c=this.parts,[v,a]=C(t,s);if(this.el=E.createElement(v,n),A.currentNode=this.el.content,2===s){const t=this.el.content,i=t.firstChild;i.remove(),t.append(...i.childNodes);}for(;null!==(l=A.nextNode())&&c.length<u;){if(1===l.nodeType){if(l.hasAttributes()){const t=[];for(const i of l.getAttributeNames())if(i.endsWith("$lit$")||i.startsWith(e$4)){const s=a[d++];if(t.push(i),void 0!==s){const t=l.getAttribute(s.toLowerCase()+"$lit$").split(e$4),i=/([.?@])?(.*)/.exec(s);c.push({type:1,index:r,name:i[2],strings:t,ctor:"."===i[1]?M:"?"===i[1]?H:"@"===i[1]?I:S});}else c.push({type:6,index:r});}for(const i of t)l.removeAttribute(i);}if(g.test(l.tagName)){const t=l.textContent.split(e$4),s=t.length-1;if(s>0){l.textContent=i$3?i$3.emptyScript:"";for(let i=0;i<s;i++)l.append(t[i],h()),A.nextNode(),c.push({type:2,index:++r});l.append(t[s],h());}}}else if(8===l.nodeType)if(l.data===o$3)c.push({type:2,index:r});else {let t=-1;for(;-1!==(t=l.data.indexOf(e$4,t+1));)c.push({type:7,index:r}),t+=e$4.length-1;}r++;}}static createElement(t,i){const s=l$1.createElement("template");return s.innerHTML=t,s}}function P(t,i,s=t,e){var o,n,l,h;if(i===b)return i;let d=void 0!==e?null===(o=s._$Cl)||void 0===o?void 0:o[e]:s._$Cu;const u=r(i)?void 0:i._$litDirective$;return (null==d?void 0:d.constructor)!==u&&(null===(n=null==d?void 0:d._$AO)||void 0===n||n.call(d,!1),void 0===u?d=void 0:(d=new u(t),d._$AT(t,s,e)),void 0!==e?(null!==(l=(h=s)._$Cl)&&void 0!==l?l:h._$Cl=[])[e]=d:s._$Cu=d),void 0!==d&&(i=P(t,d._$AS(t,i.values),d,e)),i}class V{constructor(t,i){this.v=[],this._$AN=void 0,this._$AD=t,this._$AM=i;}get parentNode(){return this._$AM.parentNode}get _$AU(){return this._$AM._$AU}p(t){var i;const{el:{content:s},parts:e}=this._$AD,o=(null!==(i=null==t?void 0:t.creationScope)&&void 0!==i?i:l$1).importNode(s,!0);A.currentNode=o;let n=A.nextNode(),h=0,r=0,d=e[0];for(;void 0!==d;){if(h===d.index){let i;2===d.type?i=new N(n,n.nextSibling,this,t):1===d.type?i=new d.ctor(n,d.name,d.strings,this,t):6===d.type&&(i=new L(n,this,t)),this.v.push(i),d=e[++r];}h!==(null==d?void 0:d.index)&&(n=A.nextNode(),h++);}return o}m(t){let i=0;for(const s of this.v)void 0!==s&&(void 0!==s.strings?(s._$AI(t,s,i),i+=s.strings.length-2):s._$AI(t[i])),i++;}}class N{constructor(t,i,s,e){var o;this.type=2,this._$AH=w,this._$AN=void 0,this._$AA=t,this._$AB=i,this._$AM=s,this.options=e,this._$Cg=null===(o=null==e?void 0:e.isConnected)||void 0===o||o;}get _$AU(){var t,i;return null!==(i=null===(t=this._$AM)||void 0===t?void 0:t._$AU)&&void 0!==i?i:this._$Cg}get parentNode(){let t=this._$AA.parentNode;const i=this._$AM;return void 0!==i&&11===t.nodeType&&(t=i.parentNode),t}get startNode(){return this._$AA}get endNode(){return this._$AB}_$AI(t,i=this){t=P(this,t,i),r(t)?t===w||null==t||""===t?(this._$AH!==w&&this._$AR(),this._$AH=w):t!==this._$AH&&t!==b&&this.$(t):void 0!==t._$litType$?this.T(t):void 0!==t.nodeType?this.k(t):u(t)?this.S(t):this.$(t);}M(t,i=this._$AB){return this._$AA.parentNode.insertBefore(t,i)}k(t){this._$AH!==t&&(this._$AR(),this._$AH=this.M(t));}$(t){this._$AH!==w&&r(this._$AH)?this._$AA.nextSibling.data=t:this.k(l$1.createTextNode(t)),this._$AH=t;}T(t){var i;const{values:s,_$litType$:e}=t,o="number"==typeof e?this._$AC(t):(void 0===e.el&&(e.el=E.createElement(e.h,this.options)),e);if((null===(i=this._$AH)||void 0===i?void 0:i._$AD)===o)this._$AH.m(s);else {const t=new V(o,this),i=t.p(this.options);t.m(s),this.k(i),this._$AH=t;}}_$AC(t){let i=T.get(t.strings);return void 0===i&&T.set(t.strings,i=new E(t)),i}S(t){d(this._$AH)||(this._$AH=[],this._$AR());const i=this._$AH;let s,e=0;for(const o of t)e===i.length?i.push(s=new N(this.M(h()),this.M(h()),this,this.options)):s=i[e],s._$AI(o),e++;e<i.length&&(this._$AR(s&&s._$AB.nextSibling,e),i.length=e);}_$AR(t=this._$AA.nextSibling,i){var s;for(null===(s=this._$AP)||void 0===s||s.call(this,!1,!0,i);t&&t!==this._$AB;){const i=t.nextSibling;t.remove(),t=i;}}setConnected(t){var i;void 0===this._$AM&&(this._$Cg=t,null===(i=this._$AP)||void 0===i||i.call(this,t));}}class S{constructor(t,i,s,e,o){this.type=1,this._$AH=w,this._$AN=void 0,this.element=t,this.name=i,this._$AM=e,this.options=o,s.length>2||""!==s[0]||""!==s[1]?(this._$AH=Array(s.length-1).fill(new String),this.strings=s):this._$AH=w;}get tagName(){return this.element.tagName}get _$AU(){return this._$AM._$AU}_$AI(t,i=this,s,e){const o=this.strings;let n=!1;if(void 0===o)t=P(this,t,i,0),n=!r(t)||t!==this._$AH&&t!==b,n&&(this._$AH=t);else {const e=t;let l,h;for(t=o[0],l=0;l<o.length-1;l++)h=P(this,e[s+l],i,l),h===b&&(h=this._$AH[l]),n||(n=!r(h)||h!==this._$AH[l]),h===w?t=w:t!==w&&(t+=(null!=h?h:"")+o[l+1]),this._$AH[l]=h;}n&&!e&&this.C(t);}C(t){t===w?this.element.removeAttribute(this.name):this.element.setAttribute(this.name,null!=t?t:"");}}class M extends S{constructor(){super(...arguments),this.type=3;}C(t){this.element[this.name]=t===w?void 0:t;}}const k=i$3?i$3.emptyScript:"";class H extends S{constructor(){super(...arguments),this.type=4;}C(t){t&&t!==w?this.element.setAttribute(this.name,k):this.element.removeAttribute(this.name);}}class I extends S{constructor(t,i,s,e,o){super(t,i,s,e,o),this.type=5;}_$AI(t,i=this){var s;if((t=null!==(s=P(this,t,i,0))&&void 0!==s?s:w)===b)return;const e=this._$AH,o=t===w&&e!==w||t.capture!==e.capture||t.once!==e.once||t.passive!==e.passive,n=t!==w&&(e===w||o);o&&this.element.removeEventListener(this.name,this,e),n&&this.element.addEventListener(this.name,this,t),this._$AH=t;}handleEvent(t){var i,s;"function"==typeof this._$AH?this._$AH.call(null!==(s=null===(i=this.options)||void 0===i?void 0:i.host)&&void 0!==s?s:this.element,t):this._$AH.handleEvent(t);}}class L{constructor(t,i,s){this.element=t,this.type=6,this._$AN=void 0,this._$AM=i,this.options=s;}get _$AU(){return this._$AM._$AU}_$AI(t){P(this,t);}}const z=window.litHtmlPolyfillSupport;null==z||z(E,N),(null!==(t$1=globalThis.litHtmlVersions)&&void 0!==t$1?t$1:globalThis.litHtmlVersions=[]).push("2.2.6");
+
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */var l,o$2;class s$1 extends a$2{constructor(){super(...arguments),this.renderOptions={host:this},this._$Dt=void 0;}createRenderRoot(){var t,e;const i=super.createRenderRoot();return null!==(t=(e=this.renderOptions).renderBefore)&&void 0!==t||(e.renderBefore=i.firstChild),i}update(t){const i=this.render();this.hasUpdated||(this.renderOptions.isConnected=this.isConnected),super.update(t),this._$Dt=x(i,this.renderRoot,this.renderOptions);}connectedCallback(){var t;super.connectedCallback(),null===(t=this._$Dt)||void 0===t||t.setConnected(!0);}disconnectedCallback(){var t;super.disconnectedCallback(),null===(t=this._$Dt)||void 0===t||t.setConnected(!1);}render(){return b}}s$1.finalized=!0,s$1._$litElement$=!0,null===(l=globalThis.litElementHydrateSupport)||void 0===l||l.call(globalThis,{LitElement:s$1});const n$3=globalThis.litElementPolyfillSupport;null==n$3||n$3({LitElement:s$1});(null!==(o$2=globalThis.litElementVersions)&&void 0!==o$2?o$2:globalThis.litElementVersions=[]).push("3.2.0");
 
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const i$2=(i,e)=>"method"===e.kind&&e.descriptor&&!("value"in e.descriptor)?{...e,finisher(n){n.createProperty(e.key,i);}}:{kind:"field",key:Symbol(),placement:"own",descriptor:{},originalKey:e.key,initializer(){"function"==typeof e.initializer&&(this[e.key]=e.initializer.call(this));},finisher(n){n.createProperty(e.key,i);}};function e$2(e){return (n,t)=>void 0!==t?((i,e,n)=>{e.constructor.createProperty(n,i);})(e,n,t):i$2(e,n)}
+const n$2=n=>e=>"function"==typeof e?((n,e)=>(window.customElements.define(n,e),e))(n,e):((n,e)=>{const{kind:t,elements:i}=e;return {kind:t,elements:i,finisher(e){window.customElements.define(n,e);}}})(n,e);
+
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+const i$2=(i,e)=>"method"===e.kind&&e.descriptor&&!("value"in e.descriptor)?{...e,finisher(n){n.createProperty(e.key,i);}}:{kind:"field",key:Symbol(),placement:"own",descriptor:{},originalKey:e.key,initializer(){"function"==typeof e.initializer&&(this[e.key]=e.initializer.call(this));},finisher(n){n.createProperty(e.key,i);}};function e$3(e){return (n,t)=>void 0!==t?((i,e,n)=>{e.constructor.createProperty(n,i);})(e,n,t):i$2(e,n)}
 
 /**
  * @license
  * Copyright 2021 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */var n;null!=(null===(n=window.HTMLSlotElement)||void 0===n?void 0:n.prototype.assignedElements)?(o,n)=>o.assignedElements(n):(o,n)=>o.assignedNodes(n).filter((o=>o.nodeType===Node.ELEMENT_NODE));
+ */var n$1;null!=(null===(n$1=window.HTMLSlotElement)||void 0===n$1?void 0:n$1.prototype.assignedElements)?(o,n)=>o.assignedElements(n):(o,n)=>o.assignedNodes(n).filter((o=>o.nodeType===Node.ELEMENT_NODE));
 
 /**
  * @license
  * Copyright 2020 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */const o$1=t=>({_$litStatic$:t}),i$1=new Map,a=t=>(e,...o)=>{var r;const a=o.length;let l,s;const n=[],u=[];let c,$=0,v=!1;for(;$<a;){for(c=e[$];$<a&&void 0!==(s=o[$],l=null===(r=s)||void 0===r?void 0:r._$litStatic$);)c+=l+e[++$],v=!0;u.push(s),n.push(c),$++;}if($===a&&n.push(e[a]),v){const t=n.join("$$lit$$");void 0===(e=i$1.get(t))&&(n.raw=n,i$1.set(t,e=n)),o=u;}return t(e,...o)},l=a($);
+ */const o$1=Symbol.for(""),e$2=t=>{var r,e;if((null===(r=t)||void 0===r?void 0:r.r)===o$1)return null===(e=t)||void 0===e?void 0:e._$litStatic$},i$1=t=>({_$litStatic$:t,r:o$1}),a=new Map,s=t=>(r,...o)=>{const i=o.length;let l,s;const n=[],u=[];let c,v=0,$=!1;for(;v<i;){for(c=r[v];v<i&&void 0!==(s=o[v],l=e$2(s));)c+=l+r[++v],$=!0;u.push(s),n.push(c),v++;}if(v===i&&n.push(r[i]),$){const t=n.join("$$lit$$");void 0===(r=a.get(t))&&(n.raw=n,a.set(t,r=n)),o=u;}return t(r,...o)},n=s($);
 
 /**
  * @license
@@ -66,6 +66,7 @@ const t={ATTRIBUTE:1,CHILD:2,PROPERTY:3,BOOLEAN_ATTRIBUTE:4,EVENT:5,ELEMENT:6},e
  */class e extends i{constructor(i){if(super(i),this.it=w,i.type!==t.CHILD)throw Error(this.constructor.directiveName+"() can only be used in child bindings")}render(r){if(r===w||null==r)return this.ft=void 0,this.it=r;if(r===b)return r;if("string"!=typeof r)throw Error(this.constructor.directiveName+"() called with a non-string value");if(r===this.it)return this.ft;this.it=r;const s=[r];return s.raw=s,this.ft={_$litType$:this.constructor.resultType,strings:s,values:[]}}}e.directiveName="unsafeHTML",e.resultType=1;const o=e$1(e);
 
 const nfdiMint = r$2`#1FC2A7`;
+const nfdiMintLighter20 = r$2`#4cceb9`;
 const nfdiMintDarker20 = r$2`#199b86`;
 const nfdiLightblue = r$2`#4FB3D9`;
 const nfdiDarkblue = r$2`#2D3E50`;
@@ -3234,7 +3235,7 @@ a.tag:hover {
   max-width: 100%;
 }
 
-.number {
+/* .number {
   align-items: center;
   background-color: whitesmoke;
   border-radius: 290486px;
@@ -3247,7 +3248,7 @@ a.tag:hover {
   padding: 0.25rem 0.5rem;
   text-align: center;
   vertical-align: top;
-}
+} */
 
 /* Bulma Form */
 .select select, .textarea, .input {
@@ -10822,7 +10823,7 @@ var __decorateClass$8 = (decorators, target, key, kind) => {
     __defProp$8(target, key, result);
   return result;
 };
-let Navbar = class extends s {
+let Navbar = class extends s$1 {
   constructor() {
     super(...arguments);
     this.navbarIsActive = false;
@@ -10961,13 +10962,13 @@ Navbar.styles = [
     `
 ];
 __decorateClass$8([
-  e$2({ type: Boolean })
+  e$3({ type: Boolean })
 ], Navbar.prototype, "navbarIsActive", 2);
 __decorateClass$8([
-  e$2()
+  e$3()
 ], Navbar.prototype, "url", 2);
 Navbar = __decorateClass$8([
-  n$1("nfdi-navbar")
+  n$2("nfdi-navbar")
 ], Navbar);
 var __defProp$7 = Object.defineProperty;
 var __getOwnPropDesc$7 = Object.getOwnPropertyDescriptor;
@@ -10980,7 +10981,7 @@ var __decorateClass$7 = (decorators, target, key, kind) => {
     __defProp$7(target, key, result);
   return result;
 };
-let Footer = class extends s {
+let Footer = class extends s$1 {
   render() {
     return $`
             <footer class="footer variable-colors">
@@ -11058,7 +11059,7 @@ let Footer = class extends s {
                         </div>
                         <div class="block">
                         <li>
-                            <a href="${mainPageBaseUrl}content/docs/research-data-management.html">
+                            <a href="${mainPageBaseUrl}content/docs/ResearchDataManagement.html">
                             Knowledge Base
                             </a>
                         </li>
@@ -11159,7 +11160,7 @@ Footer.styles = [
         `
 ];
 Footer = __decorateClass$7([
-  n$1("nfdi-footer")
+  n$2("nfdi-footer")
 ], Footer);
 var __defProp$6 = Object.defineProperty;
 var __getOwnPropDesc$6 = Object.getOwnPropertyDescriptor;
@@ -11172,7 +11173,7 @@ var __decorateClass$6 = (decorators, target, key, kind) => {
     __defProp$6(target, key, result);
   return result;
 };
-let Sidebar = class extends s {
+let Sidebar = class extends s$1 {
   constructor() {
     super(...arguments);
     this.navbarIsActive = false;
@@ -11313,10 +11314,10 @@ Sidebar.styles = [
         `
 ];
 __decorateClass$6([
-  e$2({ type: Boolean })
+  e$3({ type: Boolean })
 ], Sidebar.prototype, "navbarIsActive", 2);
 Sidebar = __decorateClass$6([
-  n$1("nfdi-sidebar")
+  n$2("nfdi-sidebar")
 ], Sidebar);
 var __defProp$5 = Object.defineProperty;
 var __getOwnPropDesc$5 = Object.getOwnPropertyDescriptor;
@@ -11329,7 +11330,7 @@ var __decorateClass$5 = (decorators, target, key, kind) => {
     __defProp$5(target, key, result);
   return result;
 };
-let Content = class extends s {
+let Content = class extends s$1 {
   render() {
     return $`
             <div class="box"><slot></slot></div>
@@ -11384,7 +11385,7 @@ Content.styles = [
         `
 ];
 Content = __decorateClass$5([
-  n$1("nfdi-content")
+  n$2("nfdi-content")
 ], Content);
 var __defProp$4 = Object.defineProperty;
 var __getOwnPropDesc$4 = Object.getOwnPropertyDescriptor;
@@ -11404,7 +11405,7 @@ const sidebar = $`
         </nfdi-sidebar>
     </div>
 `;
-let Body = class extends s {
+let Body = class extends s$1 {
   constructor() {
     super(...arguments);
     this.hasSidebar = false;
@@ -11467,10 +11468,10 @@ Body.styles = [
         `
 ];
 __decorateClass$4([
-  e$2({ type: Boolean })
+  e$3({ type: Boolean })
 ], Body.prototype, "hasSidebar", 2);
 Body = __decorateClass$4([
-  n$1("nfdi-body")
+  n$2("nfdi-body")
 ], Body);
 var __defProp$3 = Object.defineProperty;
 var __getOwnPropDesc$3 = Object.getOwnPropertyDescriptor;
@@ -11526,7 +11527,7 @@ const headerstyles = r$2`
     }
 
 `;
-const headerTemplate = (h, textId, text) => l`
+const headerTemplate = (h, textId, text) => n`
     <${h}>
         <a href=${textId} class="anchor">
             <svg xmlns="http://www.w3.org/2000/svg" class="anchor-icon" viewBox="0 0 16 16">
@@ -11545,20 +11546,20 @@ function toInDOMHref(href) {
   }
 }
 const removeSpecialCharRegex = /[^a-zA-Z0-9\s\-]/g;
-function createInPageLinkText(innerHtml) {
+function createInPageId(innerHtml) {
   const lightDOMText = innerHtml.trim();
   return lightDOMText.toLowerCase().replace(removeSpecialCharRegex, "").replace(/\s/g, "-");
 }
-let H1 = class extends s {
+let H1 = class extends s$1 {
   render() {
-    return headerTemplate(o$1("h1"), toInDOMHref(this.textId), this.text);
+    return headerTemplate(i$1("h1"), toInDOMHref(this.textId), this.text);
   }
   connectedCallback() {
     super.connectedCallback();
     setTimeout(() => {
       let lightDOMText = this.innerHTML.trim();
       this.text = lightDOMText;
-      let id = createInPageLinkText(lightDOMText);
+      let id = createInPageId(lightDOMText);
       this.id = id;
       this.textId = id;
     });
@@ -11569,24 +11570,24 @@ H1.styles = [
   headerstyles
 ];
 __decorateClass$3([
-  e$2()
+  e$3()
 ], H1.prototype, "text", 2);
 __decorateClass$3([
-  e$2()
+  e$3()
 ], H1.prototype, "textId", 2);
 H1 = __decorateClass$3([
-  n$1("nfdi-h1")
+  n$2("nfdi-h1")
 ], H1);
-let H2 = class extends s {
+let H2 = class extends s$1 {
   render() {
-    return headerTemplate(o$1("h2"), toInDOMHref(this.textId), this.text);
+    return headerTemplate(i$1("h2"), toInDOMHref(this.textId), this.text);
   }
   connectedCallback() {
     super.connectedCallback();
     setTimeout(() => {
       let lightDOMText = this.innerHTML.trim();
       this.text = lightDOMText;
-      let id = lightDOMText.toLowerCase().replace(removeSpecialCharRegex, "").replace(/\s/g, "-");
+      let id = createInPageId(lightDOMText);
       this.id = id;
       this.textId = id;
     });
@@ -11597,24 +11598,24 @@ H2.styles = [
   headerstyles
 ];
 __decorateClass$3([
-  e$2()
+  e$3()
 ], H2.prototype, "text", 2);
 __decorateClass$3([
-  e$2()
+  e$3()
 ], H2.prototype, "textId", 2);
 H2 = __decorateClass$3([
-  n$1("nfdi-h2")
+  n$2("nfdi-h2")
 ], H2);
-let H3 = class extends s {
+let H3 = class extends s$1 {
   render() {
-    return headerTemplate(o$1("h3"), toInDOMHref(this.textId), this.text);
+    return headerTemplate(i$1("h3"), toInDOMHref(this.textId), this.text);
   }
   connectedCallback() {
     super.connectedCallback();
     setTimeout(() => {
       let lightDOMText = this.innerHTML.trim();
       this.text = lightDOMText;
-      let id = lightDOMText.toLowerCase().replace(removeSpecialCharRegex, "").replace(/\s/g, "-");
+      let id = createInPageId(lightDOMText);
       this.id = id;
       this.textId = id;
     });
@@ -11625,24 +11626,24 @@ H3.styles = [
   headerstyles
 ];
 __decorateClass$3([
-  e$2()
+  e$3()
 ], H3.prototype, "text", 2);
 __decorateClass$3([
-  e$2()
+  e$3()
 ], H3.prototype, "textId", 2);
 H3 = __decorateClass$3([
-  n$1("nfdi-h3")
+  n$2("nfdi-h3")
 ], H3);
-let H4 = class extends s {
+let H4 = class extends s$1 {
   render() {
-    return headerTemplate(o$1("h4"), toInDOMHref(this.textId), this.text);
+    return headerTemplate(i$1("h4"), toInDOMHref(this.textId), this.text);
   }
   connectedCallback() {
     super.connectedCallback();
     setTimeout(() => {
       let lightDOMText = this.innerHTML.trim();
       this.text = lightDOMText;
-      let id = lightDOMText.toLowerCase().replace(removeSpecialCharRegex, "").replace(/\s/g, "-");
+      let id = createInPageId(lightDOMText);
       this.id = id;
       this.textId = id;
     });
@@ -11653,24 +11654,24 @@ H4.styles = [
   headerstyles
 ];
 __decorateClass$3([
-  e$2()
+  e$3()
 ], H4.prototype, "text", 2);
 __decorateClass$3([
-  e$2()
+  e$3()
 ], H4.prototype, "textId", 2);
 H4 = __decorateClass$3([
-  n$1("nfdi-h4")
+  n$2("nfdi-h4")
 ], H4);
-let H5 = class extends s {
+let H5 = class extends s$1 {
   render() {
-    return headerTemplate(o$1("h5"), toInDOMHref(this.textId), this.text);
+    return headerTemplate(i$1("h5"), toInDOMHref(this.textId), this.text);
   }
   connectedCallback() {
     super.connectedCallback();
     setTimeout(() => {
       let lightDOMText = this.innerHTML.trim();
       this.text = lightDOMText;
-      let id = lightDOMText.toLowerCase().replace(removeSpecialCharRegex, "").replace(/\s/g, "-");
+      let id = createInPageId(lightDOMText);
       this.id = id;
       this.textId = id;
     });
@@ -11681,24 +11682,24 @@ H5.styles = [
   headerstyles
 ];
 __decorateClass$3([
-  e$2()
+  e$3()
 ], H5.prototype, "text", 2);
 __decorateClass$3([
-  e$2()
+  e$3()
 ], H5.prototype, "textId", 2);
 H5 = __decorateClass$3([
-  n$1("nfdi-h5")
+  n$2("nfdi-h5")
 ], H5);
-let H6 = class extends s {
+let H6 = class extends s$1 {
   render() {
-    return headerTemplate(o$1("h6"), toInDOMHref(this.textId), this.text);
+    return headerTemplate(i$1("h6"), toInDOMHref(this.textId), this.text);
   }
   connectedCallback() {
     super.connectedCallback();
     setTimeout(() => {
       let lightDOMText = this.innerHTML.trim();
       this.text = lightDOMText;
-      let id = lightDOMText.toLowerCase().replace(removeSpecialCharRegex, "").replace(/\s/g, "-");
+      let id = createInPageId(lightDOMText);
       this.id = id;
       this.textId = id;
     });
@@ -11709,13 +11710,13 @@ H6.styles = [
   headerstyles
 ];
 __decorateClass$3([
-  e$2()
+  e$3()
 ], H6.prototype, "text", 2);
 __decorateClass$3([
-  e$2()
+  e$3()
 ], H6.prototype, "textId", 2);
 H6 = __decorateClass$3([
-  n$1("nfdi-h6")
+  n$2("nfdi-h6")
 ], H6);
 function isLight(color) {
   color = color.trim();
@@ -11895,10 +11896,26 @@ function isLight(color) {
     return false;
   }
 }
-const prismStyles = r$2`
+let cssString0 = r$2`
 code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shadow:0 1px #fff;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}
-pre[class*=language-].line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}pre[class*=language-].line-numbers>code{position:relative;white-space:inherit}.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:0;font-size:100%;left:-3.8em;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.line-numbers-rows>span{display:block;counter-increment:linenumber}.line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}
-.token a{color:inherit}
+`;
+const prismStyles = r$2`
+    
+    ${cssString0}
+
+    .token.attr-name { color: ${nfdiLightblue} }
+
+    .token.attr-value, .token.string { color: #C3723B }
+
+    .token.tag { color: #569CD6 }
+
+    .token.class-name { color: ${nfdiMint} }
+
+    .token.number { color: ${nfdiMintLighter20} }
+
+    .token.property { color: ${nfdiLightblue} }
+
+    .token.operator { color: unset; background-color: unset }
 `;
 var commonjsGlobal = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
 var prism = { exports: {} };
@@ -13780,6 +13797,164 @@ Prism.languages.insertBefore("fsharp", "string", {
   });
   Prism2.languages.dotnet = Prism2.languages.cs = Prism2.languages.csharp;
 })(Prism);
+Prism.languages.python = {
+  "comment": {
+    pattern: /(^|[^\\])#.*/,
+    lookbehind: true,
+    greedy: true
+  },
+  "string-interpolation": {
+    pattern: /(?:f|fr|rf)(?:("""|''')[\s\S]*?\1|("|')(?:\\.|(?!\2)[^\\\r\n])*\2)/i,
+    greedy: true,
+    inside: {
+      "interpolation": {
+        pattern: /((?:^|[^{])(?:\{\{)*)\{(?!\{)(?:[^{}]|\{(?!\{)(?:[^{}]|\{(?!\{)(?:[^{}])+\})+\})+\}/,
+        lookbehind: true,
+        inside: {
+          "format-spec": {
+            pattern: /(:)[^:(){}]+(?=\}$)/,
+            lookbehind: true
+          },
+          "conversion-option": {
+            pattern: /![sra](?=[:}]$)/,
+            alias: "punctuation"
+          },
+          rest: null
+        }
+      },
+      "string": /[\s\S]+/
+    }
+  },
+  "triple-quoted-string": {
+    pattern: /(?:[rub]|br|rb)?("""|''')[\s\S]*?\1/i,
+    greedy: true,
+    alias: "string"
+  },
+  "string": {
+    pattern: /(?:[rub]|br|rb)?("|')(?:\\.|(?!\1)[^\\\r\n])*\1/i,
+    greedy: true
+  },
+  "function": {
+    pattern: /((?:^|\s)def[ \t]+)[a-zA-Z_]\w*(?=\s*\()/g,
+    lookbehind: true
+  },
+  "class-name": {
+    pattern: /(\bclass\s+)\w+/i,
+    lookbehind: true
+  },
+  "decorator": {
+    pattern: /(^[\t ]*)@\w+(?:\.\w+)*/m,
+    lookbehind: true,
+    alias: ["annotation", "punctuation"],
+    inside: {
+      "punctuation": /\./
+    }
+  },
+  "keyword": /\b(?:_(?=\s*:)|and|as|assert|async|await|break|case|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|match|nonlocal|not|or|pass|print|raise|return|try|while|with|yield)\b/,
+  "builtin": /\b(?:__import__|abs|all|any|apply|ascii|basestring|bin|bool|buffer|bytearray|bytes|callable|chr|classmethod|cmp|coerce|compile|complex|delattr|dict|dir|divmod|enumerate|eval|execfile|file|filter|float|format|frozenset|getattr|globals|hasattr|hash|help|hex|id|input|int|intern|isinstance|issubclass|iter|len|list|locals|long|map|max|memoryview|min|next|object|oct|open|ord|pow|property|range|raw_input|reduce|reload|repr|reversed|round|set|setattr|slice|sorted|staticmethod|str|sum|super|tuple|type|unichr|unicode|vars|xrange|zip)\b/,
+  "boolean": /\b(?:False|None|True)\b/,
+  "number": /\b0(?:b(?:_?[01])+|o(?:_?[0-7])+|x(?:_?[a-f0-9])+)\b|(?:\b\d+(?:_\d+)*(?:\.(?:\d+(?:_\d+)*)?)?|\B\.\d+(?:_\d+)*)(?:e[+-]?\d+(?:_\d+)*)?j?(?!\w)/i,
+  "operator": /[-+%=]=?|!=|:=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]/,
+  "punctuation": /[{}[\];(),.:]/
+};
+Prism.languages.python["string-interpolation"].inside["interpolation"].inside.rest = Prism.languages.python;
+Prism.languages.py = Prism.languages.python;
+Prism.languages.json = {
+  "property": {
+    pattern: /(^|[^\\])"(?:\\.|[^\\"\r\n])*"(?=\s*:)/,
+    lookbehind: true,
+    greedy: true
+  },
+  "string": {
+    pattern: /(^|[^\\])"(?:\\.|[^\\"\r\n])*"(?!\s*:)/,
+    lookbehind: true,
+    greedy: true
+  },
+  "comment": {
+    pattern: /\/\/.*|\/\*[\s\S]*?(?:\*\/|$)/,
+    greedy: true
+  },
+  "number": /-?\b\d+(?:\.\d+)?(?:e[+-]?\d+)?\b/i,
+  "punctuation": /[{}[\],]/,
+  "operator": /:/,
+  "boolean": /\b(?:false|true)\b/,
+  "null": {
+    pattern: /\bnull\b/,
+    alias: "keyword"
+  }
+};
+Prism.languages.webmanifest = Prism.languages.json;
+(function(Prism2) {
+  var anchorOrAlias = /[*&][^\s[\]{},]+/;
+  var tag = /!(?:<[\w\-%#;/?:@&=+$,.!~*'()[\]]+>|(?:[a-zA-Z\d-]*!)?[\w\-%#;/?:@&=+$.~*'()]+)?/;
+  var properties = "(?:" + tag.source + "(?:[ 	]+" + anchorOrAlias.source + ")?|" + anchorOrAlias.source + "(?:[ 	]+" + tag.source + ")?)";
+  var plainKey = /(?:[^\s\x00-\x08\x0e-\x1f!"#%&'*,\-:>?@[\]`{|}\x7f-\x84\x86-\x9f\ud800-\udfff\ufffe\uffff]|[?:-]<PLAIN>)(?:[ \t]*(?:(?![#:])<PLAIN>|:<PLAIN>))*/.source.replace(/<PLAIN>/g, function() {
+    return /[^\s\x00-\x08\x0e-\x1f,[\]{}\x7f-\x84\x86-\x9f\ud800-\udfff\ufffe\uffff]/.source;
+  });
+  var string = /"(?:[^"\\\r\n]|\\.)*"|'(?:[^'\\\r\n]|\\.)*'/.source;
+  function createValuePattern(value, flags) {
+    flags = (flags || "").replace(/m/g, "") + "m";
+    var pattern = /([:\-,[{]\s*(?:\s<<prop>>[ \t]+)?)(?:<<value>>)(?=[ \t]*(?:$|,|\]|\}|(?:[\r\n]\s*)?#))/.source.replace(/<<prop>>/g, function() {
+      return properties;
+    }).replace(/<<value>>/g, function() {
+      return value;
+    });
+    return RegExp(pattern, flags);
+  }
+  Prism2.languages.yaml = {
+    "scalar": {
+      pattern: RegExp(/([\-:]\s*(?:\s<<prop>>[ \t]+)?[|>])[ \t]*(?:((?:\r?\n|\r)[ \t]+)\S[^\r\n]*(?:\2[^\r\n]+)*)/.source.replace(/<<prop>>/g, function() {
+        return properties;
+      })),
+      lookbehind: true,
+      alias: "string"
+    },
+    "comment": /#.*/,
+    "key": {
+      pattern: RegExp(/((?:^|[:\-,[{\r\n?])[ \t]*(?:<<prop>>[ \t]+)?)<<key>>(?=\s*:\s)/.source.replace(/<<prop>>/g, function() {
+        return properties;
+      }).replace(/<<key>>/g, function() {
+        return "(?:" + plainKey + "|" + string + ")";
+      })),
+      lookbehind: true,
+      greedy: true,
+      alias: "atrule"
+    },
+    "directive": {
+      pattern: /(^[ \t]*)%.+/m,
+      lookbehind: true,
+      alias: "important"
+    },
+    "datetime": {
+      pattern: createValuePattern(/\d{4}-\d\d?-\d\d?(?:[tT]|[ \t]+)\d\d?:\d{2}:\d{2}(?:\.\d*)?(?:[ \t]*(?:Z|[-+]\d\d?(?::\d{2})?))?|\d{4}-\d{2}-\d{2}|\d\d?:\d{2}(?::\d{2}(?:\.\d*)?)?/.source),
+      lookbehind: true,
+      alias: "number"
+    },
+    "boolean": {
+      pattern: createValuePattern(/false|true/.source, "i"),
+      lookbehind: true,
+      alias: "important"
+    },
+    "null": {
+      pattern: createValuePattern(/null|~/.source, "i"),
+      lookbehind: true,
+      alias: "important"
+    },
+    "string": {
+      pattern: createValuePattern(string),
+      lookbehind: true,
+      greedy: true
+    },
+    "number": {
+      pattern: createValuePattern(/[+-]?(?:0x[\da-f]+|0o[0-7]+|(?:\d+(?:\.\d*)?|\.\d+)(?:e[+-]?\d+)?|\.inf|\.nan)/.source, "i"),
+      lookbehind: true
+    },
+    "tag": tag,
+    "important": anchorOrAlias,
+    "punctuation": /---|[:[\]{}\-,|>?]|\.\.\./
+  };
+  Prism2.languages.yml = Prism2.languages.yaml;
+})(Prism);
 var __defProp$2 = Object.defineProperty;
 var __getOwnPropDesc$2 = Object.getOwnPropertyDescriptor;
 var __decorateClass$2 = (decorators, target, key, kind) => {
@@ -13791,26 +13966,21 @@ var __decorateClass$2 = (decorators, target, key, kind) => {
     __defProp$2(target, key, result);
   return result;
 };
-const NEW_LINE_EXP = /\n(?!$)/g;
-let lineNumbersWrapper;
-prism.exports.hooks.add("after-tokenize", function(env) {
-  const match = env.code.match(NEW_LINE_EXP);
-  const linesNum = match ? match.length + 1 : 1;
-  const lines = new Array(linesNum + 1).join("<span></span>");
-  lineNumbersWrapper = `<span aria-hidden="true" class="line-numbers-rows">${lines}</span>`;
-});
 function suggestedHighlight(code, language) {
   if (prism.exports.languages[language]) {
-    return prism.exports.highlight(code, prism.exports.languages[language], language) + lineNumbersWrapper;
+    return prism.exports.highlight(code, prism.exports.languages[language], language);
   } else {
     console.log("grammar not found");
-    return prism.exports.util.encode(code).toString() + lineNumbersWrapper;
+    return prism.exports.util.encode(code).toString();
   }
 }
-let Code = class extends s {
+let Code = class extends s$1 {
   render() {
     return $`
-            <pre id="code" class="line-numbers"><button class="button is-small copybutton is-ghost" @click=${this._copyTextToClipboard}>copy</button><code>${o(this.highlightedCode)}<slot></slot></code></pre>
+            <div>
+                <button class="button is-small copybutton is-ghost" @click=${this._copyTextToClipboard}>copy</button>
+                <pre id="code" class="line-numbers"><code>${o(this.highlightedCode)}<slot></slot></code></pre>
+            </div>
         `;
   }
   fallbackCopyTextToClipboard(text) {
@@ -13848,23 +14018,28 @@ let Code = class extends s {
         this.style.setProperty("--code-text-color", newC);
       }
       const languageArr = this.className.match(/language-[a-z]+/);
-      const language = languageArr[0];
+      const language = languageArr ? languageArr[0] : "language-";
       let c = (_a = this.shadowRoot) == null ? void 0 : _a.getElementById("code");
       c == null ? void 0 : c.classList.add(language);
       if (c != void 0 && customBGC !== "") {
         const newC = isLight(customBGC) ? "black" : "white";
         c.style.color = newC;
       }
-      this.highlightedCode = suggestedHighlight(this.innerHTML, "fsharp");
+      const start = '<script type="text/plain">';
+      const end = "<\/script>";
+      function trimCode(code) {
+        const trimStart = code.startsWith(start) ? code.slice(start.length) : code;
+        return trimStart.endsWith(end) ? trimStart.slice(0, trimStart.length - end.length) : trimStart;
+      }
+      this.highlightedCode = suggestedHighlight(trimCode(this.innerHTML), language.replace("language-", ""));
       this.requestUpdate();
     });
   }
 };
 Code.styles = [
-  bulmaStyles,
   prismStyles,
   r$2`
-            pre {
+            div {
                 background-color: var(--outside-background-color,${nfdiWhite});
                 border: 1px solid #ddd;
                 border-left: 3px solid var(--accent-text-color,${nfdiLightblue});
@@ -13876,10 +14051,57 @@ Code.styles = [
                 margin-bottom: 1.6em;
                 max-width: 100%;
                 overflow: auto;
-                padding: 1em 1.5em;
                 display: block;
                 word-wrap: break-word;
                 position: relative
+            }
+
+            /* from bulma except: remove border-radius */
+            .button {
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                align-items: center;
+                border: 1px solid transparent;
+                box-shadow: none;
+                display: inline-flex;
+                font-size: 1rem;
+                height: 2.5em;
+                justify-content: flex-start;
+                line-height: 1.5;
+                padding-bottom: calc(0.5em - 1px);
+                padding-left: calc(0.75em - 1px);
+                padding-right: calc(0.75em - 1px);
+                padding-top: calc(0.5em - 1px);
+                position: relative;
+                vertical-align: top;
+            }
+
+            .button.is-small {
+                font-size: 0.75rem;
+            }
+
+            .button:focus, .button.is-focused {
+                border-color: #3273dc;
+                color: #363636;
+            }
+            .button:focus:not(:active), .button.is-focused:not(:active) {
+                box-shadow: 0 0 0 0.125em rgba(79, 179, 217, 0.25);
+            }
+            .button:active, .button.is-active {
+                border-color: #4a4a4a;
+                color: #363636;
+            }
+
+            .button.is-ghost {
+                background: none;
+                border-color: transparent;
+                color: #4FB3D9;
+                text-decoration: none;
+            }
+
+            .button.is-ghost:hover, .button.is-ghost.is-hovered {
+                color: #4FB3D9;
+                text-decoration: underline;
             }
 
             .copybutton {
@@ -13900,10 +14122,10 @@ Code.styles = [
         `
 ];
 __decorateClass$2([
-  e$2()
+  e$3()
 ], Code.prototype, "highlightedCode", 2);
 Code = __decorateClass$2([
-  n$1("nfdi-code")
+  n$2("nfdi-code")
 ], Code);
 function findlowestLevelHeader(headers) {
   const min = Math.min(...headers.map((h) => h.depth));
@@ -13947,7 +14169,7 @@ function headerToHtml(header) {
             `;
   return nextHtml;
 }
-let TOC = class extends s {
+let TOC = class extends s$1 {
   constructor() {
     super(...arguments);
     this.foundHeaders = [];
@@ -13968,7 +14190,7 @@ let TOC = class extends s {
       let headers = document.querySelectorAll("nfdi-h1, nfdi-h2, nfdi-h3, nfdi-h4, nfdi-h5, nfdi-h6");
       headers.forEach((element) => {
         const depth = element.tagName.replace(/[^0-9]/g, "");
-        this.foundHeaders.push({ depth: parseInt(depth), text: element.innerHTML, id: element.id, children: [] });
+        this.foundHeaders.push({ depth: parseInt(depth), text: element.innerHTML.replace("&amp;", "&"), id: element.id, children: [] });
       });
       this.foundHeaders = nest(this.foundHeaders);
       this.requestUpdate();
@@ -13996,13 +14218,13 @@ TOC.styles = [
         `
 ];
 __decorateClass$1([
-  e$2({ type: Array })
+  e$3({ type: Array })
 ], TOC.prototype, "foundHeaders", 2);
 __decorateClass$1([
-  e$2({ type: Number })
+  e$3({ type: Number })
 ], TOC.prototype, "lowestDepth", 2);
 TOC = __decorateClass$1([
-  n$1("nfdi-toc")
+  n$2("nfdi-toc")
 ], TOC);
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -14015,7 +14237,7 @@ var __decorateClass = (decorators, target, key, kind) => {
     __defProp(target, key, result);
   return result;
 };
-let SidebarTitle = class extends s {
+let SidebarTitle = class extends s$1 {
   constructor() {
     super(...arguments);
     this.isActive = false;
@@ -14063,12 +14285,12 @@ SidebarTitle.styles = [
         `
 ];
 __decorateClass([
-  e$2({ type: Boolean })
+  e$3({ type: Boolean })
 ], SidebarTitle.prototype, "isActive", 2);
 SidebarTitle = __decorateClass([
-  n$1("nfdi-sidebar-title")
+  n$2("nfdi-sidebar-title")
 ], SidebarTitle);
-let SidebarElement = class extends s {
+let SidebarElement = class extends s$1 {
   constructor() {
     super(...arguments);
     this.isActive = false;
@@ -14121,7 +14343,7 @@ let SidebarElement = class extends s {
           headers.filter(filterExistingNFDIHeaders).forEach((header0) => {
             const header = header0;
             const distanceTopHeader = header.offsetTop;
-            if (scrollY + 50 >= distanceTopHeader) {
+            if (scrollY + 200 >= distanceTopHeader) {
               current = "#" + header.id;
             }
           });
@@ -14247,8 +14469,8 @@ SidebarElement.styles = [
         `
 ];
 __decorateClass([
-  e$2({ type: Boolean })
+  e$3({ type: Boolean })
 ], SidebarElement.prototype, "isActive", 2);
 SidebarElement = __decorateClass([
-  n$1("nfdi-sidebar-element")
+  n$2("nfdi-sidebar-element")
 ], SidebarElement);
