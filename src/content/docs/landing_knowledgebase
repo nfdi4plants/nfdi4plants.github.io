@@ -1,0 +1,24 @@
+---
+layout: docs
+title: Knowledgebase
+# published: 2022-05-12
+author: Dominik Brilhaus <https://orcid.org/0000-0001-9021-3197>
+add sidebar: sidebars/mainSidebar.md
+todo:
+---
+
+Welcome to the DataPLANT Knowledgebase. 
+In the section fundamentals, we will provide 
+Here we will be providing articles on 
+
+> Note. Our knwoledgebase 
+
+
+- Fundamentals of FAIR research data mangement (RDM) 
+- Integration with DataPLANT
+  - how we integrate RDM in DataPLANT
+- Training materials
+  - Quickstart (how to use DataPLANT tools)
+  - How-to (do other things related)
+
+
