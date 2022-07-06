@@ -67,8 +67,8 @@ todo:
 To add a sidebar element to the page, use the codeblock syntax:
 
 <pre><code>```Data Management Plan
-# Data Management Plan:/docs/DataManagementPlan.html
-# DataPLANT's Data Management Plan Generator:/docs/DataManagementPlan.html#dataplants-data-management-plan-generator
+# Data Management Plan:/docs/dmp.html
+# DataPLANT's Data Management Plan Generator:/docs/dmp.html#dataplants-data-management-plan-generator
 ```</code></pre>
 
 - All text after the opening "```" will be parsed to the element title.
@@ -122,7 +122,7 @@ Besides these technical solutions, DataPLANT supports you with community-engaged
 <!-- Knowledgebase cross-references -->
 
 [KB-DataPublications]: ./datapublications.html "Data Publication"
-[KB-dmp]: ./DataManagementPlan.html "Data Management Plan"
+[KB-dmp]: ./dmp.html "Data Management Plan"
 [KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
 [KB-Metadata]: ./metadata.html "Metadata"
 [KB-pid]: ./pids.html  "Persistent Identifiers"

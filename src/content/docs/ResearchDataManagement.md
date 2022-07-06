@@ -81,7 +81,7 @@ Name | Type | Tasks on metadata
 <!-- Knowledgebase cross-references -->
 
 [KB-DataPublications]: ./datapublications.html "Data Publication"
-[KB-dmp]: ./DataManagementPlan.html "Data Management Plan"
+[KB-dmp]: ./dmp.html "Data Management Plan"
 [KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
 [KB-Metadata]: ./metadata.html "Metadata"
 [KB-pid]: ./pids.html  "Persistent Identifiers"

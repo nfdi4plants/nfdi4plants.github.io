@@ -11,7 +11,7 @@ todo:
 # Metadata:/content/docs/metadata.html
 # Data Sharing:/content/docs/datasharing.html
 # Data Publications:/content/docs/DataPublications.html
-# Data Management Plan:/content/docs/DataManagementPlan.html
+# Data Management Plan:/content/docs/dmp.html
 # Git:/content/docs/git.html
 # Repositories:/content/docs/repositories.html
 # Persistent Identifiers:/content/docs/pids.html
