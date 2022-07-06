@@ -91,7 +91,7 @@ Name | Type | Tasks on metadata
 <!-- Knowledgebase cross-references -->
 
 [KB-datapublications]: ./datapublications.html "Data Publication"
-[KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
+[KB-FAIR]: ./fair.html "FAIR Data principles"
 [KB-Metadata]: ./metadata.html "Metadata"
 [KB-pid]: ./pids.html  "Persistent Identifiers"
 <!-- [KB-arccommander]: ./arccommander.html "arcCommander" -->

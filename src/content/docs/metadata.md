@@ -96,7 +96,7 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledgebase Cross-references -->
 
-[KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
+[KB-FAIR]: ./fair.html "FAIR Data principles"
 [KB-DataSharing]: ./datasharing.html "Data Sharing"
 [KB-Repositories]: ./repositories.html "Repositories"
 [KB-datahub]: ./datahub.html "DataPLANT DataHUB"

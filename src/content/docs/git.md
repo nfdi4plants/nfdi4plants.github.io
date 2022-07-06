@@ -50,7 +50,7 @@ In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and se
 
 <!-- Knowledgebase Cross-references -->
 
-[KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
+[KB-FAIR]: ./fair.html "FAIR Data principles"
 [KB-Metadata]: ./metadata.html "Metadata"
 [KB-ARC]: ./arc.html "Annotated Research Context"
 [KB-RDM]: ./ResearchDataManagement.html "Research Data Management"

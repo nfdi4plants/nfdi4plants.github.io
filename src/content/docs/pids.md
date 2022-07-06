@@ -70,7 +70,7 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledgebase Cross-references -->
 
-[KB-FAIR]: ./FAIRDataPrinciples.html
+[KB-FAIR]: ./fair.html
 [KB-Metadata]: ./metadata.html
 
 <!-- Reference links -->

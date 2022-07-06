@@ -107,7 +107,7 @@ Name | Type | Tasks on metadata
 
 [KB-git]: ./git.html "Git"
 [KB-datahub]: ./datahub.html "DataPLANT DataHUB"
-[KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
+[KB-FAIR]: ./fair.html "FAIR Data principles"
 [quickstart-arc]: ./quickstart_arc.html "Quickstart ARC"
 [KB-Repositories]: ./repositories.html "Repositories"
 [KB-RDM]: ./ResearchDataManagement.html "Research Data Management"

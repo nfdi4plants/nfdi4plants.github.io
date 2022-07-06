@@ -48,7 +48,7 @@ In order to use the [DataHUB][KB-datahub] and other DataPLANT infrastructure and
 <!-- Knowledgebase Cross-references -->
 
 [KB-datapublications]: ./datapublications.html "Data Publication"
-[KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
+[KB-FAIR]: ./fair.html "FAIR Data principles"
 [KB-pid]: ./pids.html  "Persistent Identifiers"
 [KB-ARC]: ./arc.html "Annotated Research Context"
 [KB-datahub]: ./datahub.html "DataPLANT DataHUB"

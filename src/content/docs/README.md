@@ -123,7 +123,7 @@ Besides these technical solutions, DataPLANT supports you with community-engaged
 
 [KB-datapublications]: ./datapublications.html "Data Publication"
 [KB-dmp]: ./dmp.html "Data Management Plan"
-[KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
+[KB-FAIR]: ./fair.html "FAIR Data principles"
 [KB-Metadata]: ./metadata.html "Metadata"
 [KB-pid]: ./pids.html  "Persistent Identifiers"
 [KB-ARC]: ./arc.html "Annotated Research Context"
