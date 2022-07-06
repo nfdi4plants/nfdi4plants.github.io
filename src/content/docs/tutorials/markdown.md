@@ -7,7 +7,7 @@ author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
 add toc: true
 add sidebar: sidebars/mainSidebar.md
-article status: not published
+article_status: not published
 ---
 
 ## What is Markdown?

@@ -5,7 +5,7 @@ published: 2022-05-09
 author: Dominik Brilhaus <https://orcid.org/0000-0001-9021-3197>
 add toc: true
 add sidebar: sidebars/mainSidebar.md
-article status: Curation
+article_status: Curation
 todo: 
     - Update links to other KB articles
 ---

@@ -5,7 +5,7 @@ published: 2022-05-19
 author: Martin Kuhl
 add toc: false
 add sidebar: sidebars/mainSidebar.md
-article status: Ready
+article_status: published
 todo:
 ---
 

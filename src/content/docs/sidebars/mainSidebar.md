@@ -1,7 +1,7 @@
 ---
 published: 2022-05-24
-Article Status: Publishable
-To-Dos: 
+article_status: published
+todo:
     - Update links to other KB articles
 ---
 

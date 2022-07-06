@@ -55,7 +55,7 @@ author_orcid: https://orcid.org/0000-0001-9021-3197
 author_github: brilator
 add toc: true
 add sidebar: sidebars\mainSidebar.md
-article status: published
+article_status: published
 TODOs: 
     - Update links to other KB articles
 ---
@@ -71,6 +71,8 @@ TODOs:
   - Will be used to name the generated webpage.
 - MUST contain `published: yyyy-MM-dd`.
 - MAY contain `author: xxxx`.
+- MAY contain `author_github: xxxx`.
+  - This helps authoring and reviewing content. 
 - MAY contain `add toc: true`.
   - Will add automated table of contents from all found headers in content.
 - MAY contain `add sidebar: realtive\path\to\sidebar.md` to add the sidebar element to the page.
@@ -83,8 +85,8 @@ Sidebar files MAY be in ANY **subdirectory** of `\src\docs`. Sidebar markdown fi
 ```yml
 ---
 published: 2022-05-09
-Article Status: Publishable
-To-Dos: 
+article_status: published
+todo:
     - Update links to other KB articles
 ---
 ```

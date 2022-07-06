@@ -2,11 +2,11 @@
 layout: docs
 title: Annotated Research Context
 published: 2022-05-25
-Author: Martin Kuhl
+author: Martin Kuhl
 add toc: true
 add sidebar: sidebars\mainSidebar.md
-Article Status: published
-To-Dos: 
+article_status: published
+todo:
     - Technical implementations (machine-readability)
 ---
 

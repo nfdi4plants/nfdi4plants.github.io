@@ -6,7 +6,7 @@ date: 2022-05-12
 author: Dominik Brilhaus <https://orcid.org/0000-0001-9021-3197>
 add toc: true
 add sidebar: sidebars/mainSidebar.md
-article status: Publishable
+article_status: published
 todo:
 ---
 
