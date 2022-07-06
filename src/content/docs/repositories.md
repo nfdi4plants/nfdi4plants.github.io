@@ -14,7 +14,7 @@ todo:
 
 ## What are data repositories?
 
-Public data repositories are one option to [publish your research data][KB-DataPublications]. They usually focus on the data &ndash; as opposed to other research outputs such as manuscripts. Data repositories assign [persistent identifiers][KB-PID] (e.g. a DOI) to your dataset and by that comply with requirements of most publication journals.  
+Public data repositories are one option to [publish your research data][KB-datapublications]. They usually focus on the data &ndash; as opposed to other research outputs such as manuscripts. Data repositories assign [persistent identifiers][KB-PID] (e.g. a DOI) to your dataset and by that comply with requirements of most publication journals.  
 We differentiate between domain-specific and general-purpose repositories.
 
 ### Domain-specific data repositories
@@ -90,7 +90,7 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledgebase cross-references -->
 
-[KB-DataPublications]: ./datapublications.html "Data Publication"
+[KB-datapublications]: ./datapublications.html "Data Publication"
 [KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
 [KB-Metadata]: ./metadata.html "Metadata"
 [KB-pid]: ./pids.html  "Persistent Identifiers"

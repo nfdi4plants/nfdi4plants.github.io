@@ -12,7 +12,7 @@ article_status: published
 todo:
 ---
 
-The DataPLANT [DataHUB][DataHUB] is the platform where several strings of DataPLANT's [research data management][KB-RDM] run together. Here you can upload your research data as an annotated research context ([ARC][KB-ARC]), to document its changes (via [git][KB-git]-based version control) and [share][KB-DataSharing] it with collaborators. [Metadata][KB-Metadata] associated with your ARC feeds into the metadata registry to make your research findable. From there, you can analyse your data using external workflows, publish it to specific [data repositories][KB-Repositories] or [data publications][KB-DataPublications].
+The DataPLANT [DataHUB][DataHUB] is the platform where several strings of DataPLANT's [research data management][KB-RDM] run together. Here you can upload your research data as an annotated research context ([ARC][KB-ARC]), to document its changes (via [git][KB-git]-based version control) and [share][KB-DataSharing] it with collaborators. [Metadata][KB-Metadata] associated with your ARC feeds into the metadata registry to make your research findable. From there, you can analyse your data using external workflows, publish it to specific [data repositories][KB-Repositories] or [data publications][KB-datapublications].
 <!-- TODO_ link to wms -->
 
 ## Data management: DataHUB In-and-out
@@ -25,7 +25,7 @@ Once you wish to share and collaborate on your ARC, the DataHUB allows you to in
 
 The DataHUB is connected to a login system (single sign-on solution) that allows researchers to register independent of their institutional affiliation. Different options allow you to adapt the scope of sharing your ARC. You can define, (i) with whom you want to share  &ndash; individual researchers or group of members such as your research consortium &ndash;, (ii) the member rights &ndash; granting permissions to read from, write to or manage the ARC &ndash; and (iii) for how long you want to grant these permissions. In this way, the DataHUB enables you to discuss your research data at different stages of the project and with varying collaborators. No matter if you just designed an experiment, already sampled your plants, ran the experiment or are in the middle of data wrangling or preparing a manuscript. For example, you can communicate metadata about your samples directly from the ARC with a core facility before submitting the samples for measurement to that facility and receive back measurement data and metadata directly into your ARC. Likewise, you could exchange assay data with a data scientist or computational biologist and receive back the results together with the documented workflow they employed. And everything without the need to download the data and finding a proper routine to share it.
 The additional layer of access management on top of the ARC-stored research datasets enables you to keep track of contributions: what was done, why, when, and by whom. This transparent exchange not only spikes fruitful and targeted discussions. It also facilitates properly crediting individual contributions to the project, also persistently in the future as user accounts can be connected to ORCIDs (see [persistent identifiers][KB-pid]).
-Once your research project is ready for publication, you can either make the whole ARC publicly accessible directly via the DataHUB (with above-mentioned scopes) or publish a current snapshot of your ARC via the invenio RDM service to retrieve a [persistent identifier][KB-pid] to make it citable in [publications][KB-DataPublications].
+Once your research project is ready for publication, you can either make the whole ARC publicly accessible directly via the DataHUB (with above-mentioned scopes) or publish a current snapshot of your ARC via the invenio RDM service to retrieve a [persistent identifier][KB-pid] to make it citable in [publications][KB-datapublications].
 <!-- TODO: add link to invenio -->
 
 ## Project management: More than version-control and data
@@ -50,7 +50,7 @@ In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and se
 
 <!-- Knowledgebase cross-references -->
 
-[KB-DataPublications]: ./datapublications.html "Data Publication"
+[KB-datapublications]: ./datapublications.html "Data Publication"
 [KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
 [KB-Metadata]: ./metadata.html "Metadata"
 [KB-pid]: ./pids.html  "Persistent Identifiers"

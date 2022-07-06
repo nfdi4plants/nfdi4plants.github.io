@@ -29,7 +29,7 @@ Although basically any imaginable &ndash; both analog and digital &ndash; entity
 
 The two best known examples for PIDs used in science are **DOI** (Digital Object Identifier) and **ORCID** (Open Researcher and Contributor ID).
 The most established use of DOIs is to identify publications. Similar to an ISBN for a book, a DOI alone suffices to persistently link and refer to a publication, without naming the title, authors or journal. Usually DOIs are not actively requested by standard users, e.g. the authors submitting a manuscript to a journal or data to a repository, but they are assigned during the publication process, e.g. by the journal or data repository acting as the PID registration service.
-<!-- As scientists, we benefit from DOI-referenced publications by better findability and more concise referencing (see also [KB-DataPublications]) -->
+<!-- As scientists, we benefit from DOI-referenced publications by better findability and more concise referencing (see also [KB-datapublications]) -->
 On the other hand, you, as a researcher, need to request an ORCID (once). ORCIDs concisely identify researchers independent of identical names between multiple researchers or name changes (e.g. due to wedding). They can actively be curated, e.g. to link and present all publication or other digital outputs.
 
 <!-- In summary, PIDs help making data FAIR. A dataset that is persistently linked via a PID will be findable and accesible and thereby  -->

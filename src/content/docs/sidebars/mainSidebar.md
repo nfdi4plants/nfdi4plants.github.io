@@ -10,7 +10,7 @@ todo:
 # FAIR Data Principles:/content/docs/FAIRDataPrinciples.html
 # Metadata:/content/docs/metadata.html
 # Data Sharing:/content/docs/datasharing.html
-# Data Publications:/content/docs/DataPublications.html
+# Data Publications:/content/docs/datapublications.html
 # Data Management Plan:/content/docs/dmp.html
 # Git:/content/docs/git.html
 # Repositories:/content/docs/repositories.html

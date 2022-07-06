@@ -80,7 +80,7 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledgebase cross-references -->
 
-[KB-DataPublications]: ./datapublications.html "Data Publication"
+[KB-datapublications]: ./datapublications.html "Data Publication"
 [KB-dmp]: ./dmp.html "Data Management Plan"
 [KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
 [KB-Metadata]: ./metadata.html "Metadata"
