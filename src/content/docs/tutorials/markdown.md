@@ -280,10 +280,9 @@ You can nest them:
 
 ### Code Blocks
 
-  ```
-  This is a code block
-  ```
-
+<pre><code>```
+This is a code block
+```</code></pre>
 
 ### Horizontal Rules
 
