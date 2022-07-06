@@ -31,9 +31,9 @@ The motivations for publishing data may range from a desire to make research mor
 
 There are a several criteria to consider during publication of your dataset:
 
-1. Of course, your data needs to be hosted in a repository to make it available for everyone. Various [repositories][KB-Repositories] exist, which have been developed to support data publication, e.g. [Zenodo][zenodo], including general, but also domain-specific data repositories exist.
-2. Your dataset needs to be well annotated, allowing other researchers to understand and reuse your data (see also [metadata][KB-Metadata]).
-3. Your dataset needs to be assigned a [persistent identifier][KB-pid] (PID), such as a DOI. This can be assigned directly on the repository or with the help of a publication service, such as [Invenio][invenio]. The identifier will others to cite your dataset.
+1. Of course, your data needs to be hosted in a repository to make it available for everyone. Various [repositories][kb-Repositories] exist, which have been developed to support data publication, e.g. [Zenodo][zenodo], including general, but also domain-specific data repositories exist.
+2. Your dataset needs to be well annotated, allowing other researchers to understand and reuse your data (see also [metadata][kb-Metadata]).
+3. Your dataset needs to be assigned a [persistent identifier][kb-pid] (PID), such as a DOI. This can be assigned directly on the repository or with the help of a publication service, such as [Invenio][invenio]. The identifier will others to cite your dataset.
 4. If the publisher validates your data, your metadata annotation is reviewed to ensure comprehensibility.
 There is also the possibility for publishing a data paper about the dataset, which may be published as a preprint, in a journal, or in a data journal that is dedicated to supporting data papers. The data may be hosted by the journal or hosted separately in a data repository.
 
@@ -60,7 +60,7 @@ The following table gives an overview about DataPLANT tools and services support
 
 Name | Type | Tasks on metadata
 ----------------|-----------|------------------
-**[DataHUB][KB-datahub]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+**[DataHUB][kb-datahub]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 **Invenio** | Service under construction | **Share:** <ul><li>Assign a DOI to an ARC</li></ul>
 **Metadata registry** | Service under construction | **Share:** <ul><li>Find ARC (meta)data</li></ul>
 **Converters** | Tool under construction | **Curate:** <ul><li>Harmonize and migrate between metadata schema
@@ -75,10 +75,10 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledge base cross-references -->
 
-[KB-Metadata]: ./metadata.html "Metadata"
-[KB-pid]: ./pids.html  "Persistent Identifiers"
-[KB-datahub]: ./datahub.html "DataPLANT DataHUB"
-[KB-Repositories]: ./repositories.html "Repositories"
+[kb-Metadata]: ./metadata.html "Metadata"
+[kb-pid]: ./pids.html  "Persistent Identifiers"
+[kb-datahub]: ./datahub.html "DataPLANT DataHUB"
+[kb-Repositories]: ./repositories.html "Repositories"
 
 <!-- DataPLANT web links -->
 
