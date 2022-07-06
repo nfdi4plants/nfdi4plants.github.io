@@ -53,7 +53,7 @@ In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and se
 [KB-FAIR]: ./fair.html "FAIR Data principles"
 [KB-Metadata]: ./metadata.html "Metadata"
 [KB-ARC]: ./arc.html "Annotated Research Context"
-[KB-RDM]: ./ResearchDataManagement.html "Research Data Management"
+[KB-RDM]: ./rdm.html "Research Data Management"
 [KB-DataSharing]: ./datasharing.html "Data Sharing"
 [KB-datahub]: ./datahub.html "DataPLANT DataHUB"
 

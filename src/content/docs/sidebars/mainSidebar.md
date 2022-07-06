@@ -6,7 +6,7 @@ todo:
 ---
 
 ```Fundamentals
-# Research Data Management:/content/docs/ResearchDataManagement.html
+# Research Data Management:/content/docs/rdm.html
 # FAIR Data Principles:/content/docs/fair.html
 # Metadata:/content/docs/metadata.html
 # Data Sharing:/content/docs/datasharing.html

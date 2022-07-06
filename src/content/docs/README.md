@@ -128,7 +128,7 @@ Besides these technical solutions, DataPLANT supports you with community-engaged
 [KB-pid]: ./pids.html  "Persistent Identifiers"
 [KB-ARC]: ./arc.html "Annotated Research Context"
 [KB-datahub]: ./datahub.html "DataPLANT DataHUB"
-[KB-RDM]: ./ResearchDataManagement.html "Research Data Management"
+[KB-RDM]: ./rdm.html "Research Data Management"
 [KB-DataSharing]: ./datasharing.html "Data Sharing"
 [KB-git]: ./git.html "Git"
 [KB-Repositories]: ./repositories.html "Repositories"

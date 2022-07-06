@@ -110,7 +110,7 @@ Name | Type | Tasks on metadata
 [KB-FAIR]: ./fair.html "FAIR Data principles"
 [quickstart-arc]: ./quickstart_arc.html "Quickstart ARC"
 [KB-Repositories]: ./repositories.html "Repositories"
-[KB-RDM]: ./ResearchDataManagement.html "Research Data Management"
+[KB-RDM]: ./rdm.html "Research Data Management"
 [KB-DataSharing]: ./datasharing.html "Data Sharing"
 
 <!-- DataPLANT web links -->
