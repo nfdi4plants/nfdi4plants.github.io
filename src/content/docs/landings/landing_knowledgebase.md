@@ -11,7 +11,7 @@ Here we will be providing articles on...
 > Note, our knowledge base is continuously updated to represent the current developments within DataPLANT.
 
 - Fundamentals of FAIR research data management (RDM)
-- Integration with DataPLANT
+- Implementation with DataPLANT
   - how we integrate RDM in DataPLANT
 - Training materials
   - Quickstart (how to use DataPLANT tools)

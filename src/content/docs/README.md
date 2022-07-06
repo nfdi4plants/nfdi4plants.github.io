@@ -1,4 +1,4 @@
-# How-to "Knowledge base"
+# How-to "knowledge base"
 
 ## Introduction
 
@@ -26,7 +26,7 @@ add toc: true
 add sidebar: sidebars\mainSidebar.md
 article_status: published
 todo:
-    - Update links to other KB articles
+    - update to include changes in latest tool version
 ---
 ```
 
@@ -49,14 +49,12 @@ todo:
 
 ### Sidebar
 
-Sidebar files MAY be in ANY **subdirectory** of `\src\docs`. Sidebar markdown files must start with a metadata block:
+Sidebar files MAY be in ANY **subdirectory** of `/src/docs`. Sidebar markdown files must start with a metadata block:
 
 ```yml
 ---
 published: 2022-05-09
 article_status: published
-todo:
-    - Update links to other KB articles
 ---
 ```
 
@@ -71,7 +69,7 @@ To add a sidebar element to the page, use the codeblock syntax:
 
 - All text after the opening "```" will be parsed to the element title.
 - Inner text MUST only contain heading lines.
-    - Only headers up to `###` are parsed. All header with more depth are parsed to `###`.
+  - Only headers up to `###` are parsed. All header with more depth are parsed to `###`.
 - Tries to match active browser url to referenced ``href`` of any element to set active page.
 
 ## References
@@ -88,31 +86,25 @@ To add a sidebar element to the page, use the codeblock syntax:
 
 - simple markdown logic (not HTML): `![name_of_image](path_to_image.png)`
 
-## Addressing readers
-
-- direct address ("you can", not "user can" or "one can...")
-
-## Language
-
-British English (?)
-
 ## File naming
 
 - no special characters
 - preferably all lowercase to ease cross-references
 
-## Default Final Blocks
 
-```markdown
-## How does DataPLANT support me in ...
+## Content
 
-## DataPLANT support
-Besides these technical solutions, DataPLANT supports you with community-engaged data stewardship. For further assistance, feel free to reach out via our [helpdesk](https://support.nfdi4plants.org)
+### Addressing readers
 
-## Sources and further information
-```
+- direct address ("you can", not "user can" or "one can...")
 
-# Link collection
+### Language
+
+British English (?)
+
+
+
+## Link collection
 
 > Note: This is just a link collection for recurrent use in KB articles
 > Nothing automatised. Just copy/paste.

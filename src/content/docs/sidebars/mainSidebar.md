@@ -1,8 +1,5 @@
 ---
-published: 2022-05-24
-article_status: published
-todo:
-    - Update links to other KB articles
+
 ---
 
 ```Fundamentals
@@ -17,7 +14,13 @@ todo:
 # Persistent Identifiers:/content/docs/pids.html
 ```
 
-```Integration within DataPLANT
+```Implementation within DataPLANT
+# Annotated Research Context:/content/docs/arc.html
+## ARC QuickStart:/content/docs/quickstart_arc.html
+# DataHUB:/content/docs/datahub.html
+```
+
+```Training & Tutorials
 # Annotated Research Context:/content/docs/arc.html
 ## ARC QuickStart:/content/docs/quickstart_arc.html
 # DataHUB:/content/docs/datahub.html

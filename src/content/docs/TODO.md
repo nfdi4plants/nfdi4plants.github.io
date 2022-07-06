@@ -13,11 +13,12 @@
   - no author, etc. (do not parse)
   - MAY contain TOC
   - MAY contain sidebar
+- make `sidebar` a layout
+  - no need for yaml metadata
 
 - yaml header: change "published" to "date"
   - things may be created, but not visibly published
 - make final block "dataplant support" optional via something like add_support: true
-
 
 ## How to
 
