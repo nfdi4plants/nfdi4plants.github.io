@@ -3,16 +3,12 @@ layout: docs
 title: FAIR Principles
 published: 2022-05-19
 author: Martin Kuhl
+author_github: martin-kuhl
 add toc: false
 add sidebar: sidebars/mainSidebar.md
 article_status: published
 todo:
 ---
-
-- [Detailed explanation](#detailed-explanation)
-- [How does DataPLANT support me in the creation of FAIR data?](#how-does-dataplant-support-me-in-the-creation-of-fair-data)
-- [DataPLANT Support](#dataplant-support)
-- [Sources and further information](#sources-and-further-information)
 
 The FAIR Principles were published in 2016 to serve as guidelines for improving the **F**indability, **A**ccessibility, **I**nteroperability, and **R**eusability of scientific data. Albeit data can only be FAIR when provided with [metadata][KB-Metadata], researchers rely on infrastructures to set a framework. Hence, FAIR(ness) addresses both stakeholders publishing data and those providing infrastructures, such as repositories.
 

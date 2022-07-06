@@ -3,7 +3,9 @@ layout: docs
 title: DataPLANT DataHUB
 published: 2022-05-12
 date: 2022-05-12
-author: Dominik Brilhaus <https://orcid.org/0000-0001-9021-3197>
+author: Dominik Brilhaus
+author_orcid: https://orcid.org/0000-0001-9021-3197
+author_github: brilator
 add toc: true
 add sidebar: sidebars/mainSidebar.md
 article_status: published

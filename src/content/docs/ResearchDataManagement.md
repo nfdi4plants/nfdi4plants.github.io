@@ -3,6 +3,7 @@ layout: docs
 title: Research Data Management
 published: 2022-05-19
 author: Martin Kuhl
+author_github: martin-kuhl
 add toc: true
 add sidebar: sidebars/mainSidebar.md
 article_status: published

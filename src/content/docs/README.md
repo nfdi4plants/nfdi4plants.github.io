@@ -1,43 +1,14 @@
-# TODOs
-
-## web components
-
-- de-couple knowledgebase from static page
-- structure content, e.g.
-  - docs
-  - training
-  - tutorial
-
-- create layout `landing`
-
-## How to
-
-- author (new) content
-- edit / suggest changes to existing content
-  - pull request
-  - assign article author to review changes
-  - yaml key: github username
-- test before push
-
-## github mechanisms
-
-- pull request template
-
-## others
-
-- commenting in documents
-  - public, but not visible
-- "public" vs. visible  
-
-
-
-# How-to Knowledgebase
+# How-to "Knowledge base"
 
 ## Introduction
 
-The Knowledgebase is built on [nfdi-web-components](https://nfdi4plants.github.io/web-components-docs/) and will fit all **markdown** content into this "framework".
+The DataPLANT knowledge base is built on [nfdi-web-components](https://nfdi4plants.github.io/web-components-docs/) and will fit all **markdown** content into this "framework".
 
-For a general introduction to writing markdown, see: 
+For a general introduction to writing markdown, see: [Markdown tutorial](tutorials/markdown.md) and references therein.
+
+The knowledge base is structured into three sections.
+
+
 
 
 ### Authoring content
@@ -56,7 +27,7 @@ author_github: brilator
 add toc: true
 add sidebar: sidebars\mainSidebar.md
 article_status: published
-TODOs: 
+todo:
     - Update links to other KB articles
 ---
 ```

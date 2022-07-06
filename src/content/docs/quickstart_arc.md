@@ -3,6 +3,7 @@ layout: docs
 title: DataPLANT's QuickStart on ARCs
 published: 2022-05-25
 author: Martin Kuhl
+author_github: martin-kuhl
 add toc: false
 add sidebar: sidebars/mainSidebar.md
 article_status: published
@@ -31,9 +32,6 @@ This document is work in progress. If you experience any inconsistencies, have q
   - [Invite collaborators](#invite-collaborators)
 - [Data annotation](#data-annotation)
   - [SWATE](#swate)
-    - [Customize your table by adding building blocks](#customize-your-table-by-adding-building-blocks)
-    - [Use templates](#use-templates)
-    - [Annotate your samples and data](#annotate-your-samples-and-data)
 - [The Minimalist's ARC-QuickStart](#the-minimalists-arc-quickstart)
 
 ## Environment and setup

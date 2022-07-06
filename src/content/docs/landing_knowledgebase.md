@@ -1,8 +1,6 @@
 ---
-layout: docs
+layout: landing
 title: kb landing page
-published: 2022-05-09
-add toc: false
 add sidebar: sidebars\mainSidebar.md
 ---
 
