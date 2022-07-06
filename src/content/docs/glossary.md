@@ -9,9 +9,9 @@ add sidebar: sidebars/mainSidebar
 
 ## General
 
-Abbreviation | Meaning |
+Abbreviation | Meaning | Details
 ---------|----------|---------
-DMP
+DMP | Data Management Plan | 
 FAIR
 GIT
 PID
@@ -19,4 +19,6 @@ RDM
 
 ## DataPLANT
 
-ARC
+Abbreviation | Meaning | Details
+---------|----------|---------
+ARC | Annotated Research Context |  

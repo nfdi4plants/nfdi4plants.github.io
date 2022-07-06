@@ -56,7 +56,7 @@ DataPLANT helps the community by providing a Data Management Plan Generator on t
 - [Elements of a DMP](https://www.icpsr.umich.edu/web/pages/datamanagement/dmp/elements.html)
 
 
-<!-- Knowledgebase cross-references -->
+<!-- Knowledge base cross-references -->
 
 [KB-FAIR]: ./fair.html "FAIR Data principles"
 

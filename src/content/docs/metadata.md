@@ -94,7 +94,7 @@ Name | Type | Tasks on metadata
 
 
 
-<!-- Knowledgebase Cross-references -->
+<!-- Knowledge base Cross-references -->
 
 [KB-FAIR]: ./fair.html "FAIR Data principles"
 [KB-DataSharing]: ./datasharing.html "Data Sharing"

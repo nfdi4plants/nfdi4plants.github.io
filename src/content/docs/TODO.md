@@ -2,7 +2,7 @@
 
 ## web components (Issues Kevin)
 
-- de-couple knowledgebase from static page
+- de-couple knowledge base from static page
 - structure content, e.g.
   - docs
   - training
@@ -16,8 +16,7 @@
 
 - yaml header: change "published" to "date"
   - things may be created, but not visibly published
-
-
+- make final block "dataplant support" optional via something like add_support: true
 
 
 ## How to

@@ -68,7 +68,7 @@ Name | Type | Tasks on metadata
 
 - [Frequently Asked Questions about the DOI® System](<https://www.doi.org/faq.html>)
 
-<!-- Knowledgebase Cross-references -->
+<!-- Knowledge base Cross-references -->
 
 [KB-FAIR]: ./fair.html
 [KB-Metadata]: ./metadata.html

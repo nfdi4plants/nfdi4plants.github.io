@@ -168,7 +168,7 @@ Name | Type | Tasks on metadata
 - [FAIR Principles](https://www.go-fair.org/fair-principles/)
 - [The FAIR Guiding Principles for scientific data management and stewardship](https://www.nature.com/articles/sdata201618)
 
-<!-- Knowledgebase cross-references -->
+<!-- Knowledge base cross-references -->
 
 [KB-Metadata]: ./metadata.html "Metadata"
 [KB-pid]: ./pids.html  "Persistent Identifiers"

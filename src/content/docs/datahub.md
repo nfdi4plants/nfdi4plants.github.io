@@ -48,7 +48,7 @@ A plant biologist's day-to-day routines circle around more than just data and co
 
 In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and services, please [sign up][Registration] with DataPLANT.  
 
-<!-- Knowledgebase cross-references -->
+<!-- Knowledge base cross-references -->
 
 [KB-datapublications]: ./datapublications.html "Data Publication"
 [KB-FAIR]: ./fair.html "FAIR Data principles"

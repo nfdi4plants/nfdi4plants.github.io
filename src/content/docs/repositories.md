@@ -88,7 +88,7 @@ Name | Type | Tasks on metadata
 -->
 
 
-<!-- Knowledgebase cross-references -->
+<!-- Knowledge base cross-references -->
 
 [KB-datapublications]: ./datapublications.html "Data Publication"
 [KB-FAIR]: ./fair.html "FAIR Data principles"

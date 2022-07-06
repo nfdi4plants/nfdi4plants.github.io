@@ -45,7 +45,7 @@ Name | Type | Tasks on data sharing
 
 In order to use the [DataHUB][KB-datahub] and other DataPLANT infrastructure and services, please [sign up][Registration] with DataPLANT.  
 
-<!-- Knowledgebase Cross-references -->
+<!-- Knowledge base Cross-references -->
 
 [KB-datapublications]: ./datapublications.html "Data Publication"
 [KB-FAIR]: ./fair.html "FAIR Data principles"

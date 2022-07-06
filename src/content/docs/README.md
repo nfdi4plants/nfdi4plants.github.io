@@ -9,8 +9,6 @@ For a general introduction to writing markdown, see: [Markdown tutorial](tutoria
 The knowledge base is structured into three sections.
 
 
-
-
 ### Authoring content
 
 To add more documentation, add a markdown file to `\src\docs`. The file MUST start with a metadata block:
@@ -80,7 +78,7 @@ To add a sidebar element to the page, use the codeblock syntax:
 
 - Literature / information references: additional bibliography block below
 - External links (tools, sites, platforms): as hyper-link
-- Knowledgebase cross-references: relative path to *.md document, **BUT** replace the `.md` file extension with `.html`, as the markdown files are parsed to html.
+- Knowledge base cross-references: relative path to *.md document, **BUT** replace the `.md` file extension with `.html`, as the markdown files are parsed to html.
 
 ## Structure
 
@@ -101,7 +99,7 @@ British English (?)
 ## File naming
 
 - no special characters
-- lowercase (?), camelcase (?)
+- preferably all lowercase to ease cross-references
 
 ## Default Final Blocks
 
@@ -119,7 +117,7 @@ Besides these technical solutions, DataPLANT supports you with community-engaged
 > Note: This is just a link collection for recurrent use in KB articles
 > Nothing automatised. Just copy/paste.
 
-<!-- Knowledgebase cross-references -->
+<!-- Knowledge base cross-references -->
 
 [KB-datapublications]: ./datapublications.html "Data Publication"
 [KB-dmp]: ./dmp.html "Data Management Plan"

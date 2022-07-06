@@ -73,7 +73,7 @@ Name | Type | Tasks on metadata
 - [Making Data a First Class Scientific Output](https://doi.org/10.2218/ijdc.v7i1.218)
 - [The data paper](https://dx.doi.org/10.1186%2F1471-2105-12-S15-S2)
 
-<!-- Knowledgebase cross-references -->
+<!-- Knowledge base cross-references -->
 
 [KB-Metadata]: ./metadata.html "Metadata"
 [KB-pid]: ./pids.html  "Persistent Identifiers"

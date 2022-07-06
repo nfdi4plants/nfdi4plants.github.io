@@ -78,7 +78,7 @@ Name | Type | Tasks on metadata
 
 - [RDMkit](https://rdmkit.elixir-europe.org/index)
 
-<!-- Knowledgebase cross-references -->
+<!-- Knowledge base cross-references -->
 
 [KB-datapublications]: ./datapublications.html "Data Publication"
 [KB-dmp]: ./dmp.html "Data Management Plan"

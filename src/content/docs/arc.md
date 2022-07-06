@@ -103,7 +103,7 @@ Name | Type | Tasks on metadata
 - [Common Workflow Language](https://www.commonwl.org/)
 - [Research Object Crate](https://www.researchobject.org/ro-crate/)
 
-<!-- Knowledgebase cross-references -->
+<!-- Knowledge base cross-references -->
 
 [KB-git]: ./git.html "Git"
 [KB-datahub]: ./datahub.html "DataPLANT DataHUB"
