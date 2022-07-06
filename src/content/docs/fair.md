@@ -10,7 +10,7 @@ article_status: published
 todo:
 ---
 
-The FAIR Principles were published in 2016 to serve as guidelines for improving the **F**indability, **A**ccessibility, **I**nteroperability, and **R**eusability of scientific data. Albeit data can only be FAIR when provided with [metadata][KB-Metadata], researchers rely on infrastructures to set a framework. Hence, FAIR(ness) addresses both stakeholders publishing data and those providing infrastructures, such as repositories.
+The FAIR Principles were published in 2016 to serve as guidelines for improving the **F**indability, **A**ccessibility, **I**nteroperability, and **R**eusability of scientific data. Albeit data can only be FAIR when provided with [metadata][kb-Metadata], researchers rely on infrastructures to set a framework. Hence, FAIR(ness) addresses both stakeholders publishing data and those providing infrastructures, such as repositories.
 
 The ultimate goal of FAIR (data) is to drive science and the production of new datasets, as it allows researchers to build on existing comprehensively annotated studies. In plant biology, this, e.g., can accelerate the innovation process of generating new crop species that provide a higher nutritional content or show a superior heat tolerance, regarding global warming. Submitting your proteomics dataset for such a new species in a standardized file format to a repository, e.g. [PRIDE][EBI-PRIDE], would be one implementation of the FAIR Principles. While researchers need to be able to find and understand published datasets, computers need to handle (big) data depending on the intended use case. Thus, the FAIR principles also aim to improve the machine-readability of datasets for autonomous processing, while preserving human-readability.
 
@@ -51,7 +51,7 @@ The first step in (re)using data is to find them. Metadata and data should be ea
 
 #### F1. (Meta)data are assigned a globally unique and persistent identifier
 
-A [persistent identifier][KB-pid] (PID) is a long-lasting reference, typically used in the context of digital resources accessible over the internet, in this case your dataset. Globally unique and persistent identifiers allow finding your data in the first place. Continuous availability of the digital object is guaranteed by registry providers, which maintain the link to the actual dataset.
+A [persistent identifier][kb-pid] (PID) is a long-lasting reference, typically used in the context of digital resources accessible over the internet, in this case your dataset. Globally unique and persistent identifiers allow finding your data in the first place. Continuous availability of the digital object is guaranteed by registry providers, which maintain the link to the actual dataset.
 
 A PID you have probably already heard of as most biological journals assign them to manuscripts, is the Digital Object Identifier ([DOI][doi]). Your personal 16-digit [ORCID][orcid] or the accession number of your RNASeq dataset on GEO also represent examples for PIDs. An overview which scientific repositories assign which type of PID can be found at the registry of research data repositories ([re3data.org][re3data]).
 
@@ -83,7 +83,7 @@ Infrastructure providers should use free (no-cost), open-source protocols. Thus,
 
 At this point it is very important to differentiate between "accessible" and "open" data. The "A" in FAIR does not imply that you are required to grant free access for everyone to your data, but rather to specify conditions under which the data are accessible. Even protected data are FAIR, if requirements were defined on how the data can be retrieved. These must be processable automatically by a system, e.g. a repository, and can be especially necessary for sensitive data.
 
-An example for this case is a private and thereby, non-visible repository on [GitLab][KB-datahub], accessible only to defined users. As owner of the GitLab repository, you can select these users and researchers simply identify using the GitLab sign-in. Accordingly, the mechanism to allow users to identify themselves, belongs to the responsibility of the infrastructure provider.
+An example for this case is a private and thereby, non-visible repository on [GitLab][kb-datahub], accessible only to defined users. As owner of the GitLab repository, you can select these users and researchers simply identify using the GitLab sign-in. Accordingly, the mechanism to allow users to identify themselves, belongs to the responsibility of the infrastructure provider.
 
 #### A2. Metadata are accessible, even when the data are no longer available
 
@@ -137,7 +137,7 @@ Ultimately, this point means nothing more than "where does your (meta)data origi
 
 Researchers find it easiest to reuse data, if they are familiar with the type of data, file formats (well-established and sustainable), how the (meta)data is organized, and if commonly used vocabularies and ontologies are integrated.
 
-FAIR data should at least meet minimal information standards, such as MIAPPE, MIAME, or MIAPE (see also [metadata][KB-Metadata]). Other community standards may be less formal, but nevertheless, publishing (meta)data in a manner that increases its use(ability) for the community is the primary objective of FAIRness. DataPLANT aims at supporting FAIR data by providing a framework for the plant biology community.
+FAIR data should at least meet minimal information standards, such as MIAPPE, MIAME, or MIAPE (see also [metadata][kb-Metadata]). Other community standards may be less formal, but nevertheless, publishing (meta)data in a manner that increases its use(ability) for the community is the primary objective of FAIRness. DataPLANT aims at supporting FAIR data by providing a framework for the plant biology community.
 
 All of the above stated applies to data (or any digital object), metadata (information about that digital object), and infrastructure.
 
@@ -147,10 +147,10 @@ The following table gives an overview about DataPLANT tools and services support
 
 Name | Type | Tasks on metadata
 ----------------|-----------|------------------
-**[ARC][KB-ARC]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
+**[ARC][kb-ARC]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
 **[Swate][Swate]** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
 **[ArcCommander][ArcCommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
-**[DataHUB][KB-datahub]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+**[DataHUB][kb-datahub]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 **Invenio** | Service under construction | **Share:** <ul><li>Assign a DOI to an ARC</li></ul>
 **Metadata registry** | Service under construction | **Share:** <ul><li>Find ARC (meta)data</li></ul>
 **Converters** | Tool under construction | **Curate:** <ul><li>Harmonize and migrate between metadata schema
@@ -170,10 +170,10 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledge base cross-references -->
 
-[KB-Metadata]: ./metadata.html "Metadata"
-[KB-pid]: ./pids.html  "Persistent Identifiers"
-[KB-ARC]: ./arc.html "Annotated Research Context"
-[KB-datahub]: ./datahub.html "DataPLANT DataHUB"
+[kb-Metadata]: ./metadata.html "Metadata"
+[kb-pid]: ./pids.html  "Persistent Identifiers"
+[kb-ARC]: ./arc.html "Annotated Research Context"
+[kb-datahub]: ./datahub.html "DataPLANT DataHUB"
 
 <!-- DataPLANT web links -->
 

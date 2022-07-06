@@ -1,5 +1,4 @@
 ---
-
 ---
 
 ```Fundamentals
@@ -22,6 +21,4 @@
 
 ```Training & Tutorials
 # Annotated Research Context:/content/docs/arc.html
-## ARC QuickStart:/content/docs/quickstart_arc.html
-# DataHUB:/content/docs/datahub.html
 ```

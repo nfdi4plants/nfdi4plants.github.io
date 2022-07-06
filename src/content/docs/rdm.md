@@ -12,7 +12,7 @@ todo:
 
 ## What is Research Data Management?
 
-Research Data Management (RDM) combines conceptual, organizational, and technical measures and practices for handling your research data during its evolution in a way that other researchers can find, understand, and ultimately, reuse them. RDM strategies can greatly vary between domains or even data types. Hence, an approach for unification, ideally for all scenarios, would be highly desirable. For plant sciences, it is widely accepted to divide RDM into a data life cycle with different phases, i.e. planning, collecting, processing, analysing, preserving, sharing, and reusing your research data. This also includes how your data will be handled after a project has ended, e.g. long-term storage of and access rights to the data. DataPLANT, and this Knowledge Base, aims at supporting you during these phases and thereby, in the [FAIRification][KB-FAIR] of your data.
+Research Data Management (RDM) combines conceptual, organizational, and technical measures and practices for handling your research data during its evolution in a way that other researchers can find, understand, and ultimately, reuse them. RDM strategies can greatly vary between domains or even data types. Hence, an approach for unification, ideally for all scenarios, would be highly desirable. For plant sciences, it is widely accepted to divide RDM into a data life cycle with different phases, i.e. planning, collecting, processing, analysing, preserving, sharing, and reusing your research data. This also includes how your data will be handled after a project has ended, e.g. long-term storage of and access rights to the data. DataPLANT, and this Knowledge Base, aims at supporting you during these phases and thereby, in the [FAIRification][kb-FAIR] of your data.
 
 ## Research Data Life Cycles
 
@@ -22,7 +22,7 @@ For plant sciences, we would like to complement the concept of the data life cyc
 
 ### Planning
 
-Data management planning represents the phase of defining your strategy for managing data and documentation generated within the project. In this phase you try to anticipate the best ways to avoid problems and setting the conditions for your research data to achieve the highest possible impact in science, even after project completion. This can, e.g., involve standards or best practices. The outcomes of your planning, including aspects of the data management process  before, during, and after the end of a project, is usually formalised in a [Data Management Plan][KB-dmp] (DMP), which is often required by research organisations and funders.
+Data management planning represents the phase of defining your strategy for managing data and documentation generated within the project. In this phase you try to anticipate the best ways to avoid problems and setting the conditions for your research data to achieve the highest possible impact in science, even after project completion. This can, e.g., involve standards or best practices. The outcomes of your planning, including aspects of the data management process  before, during, and after the end of a project, is usually formalised in a [Data Management Plan][kb-dmp] (DMP), which is often required by research organisations and funders.
 
 ### Collecting
 
@@ -38,7 +38,7 @@ During this phase of your project, you convert your data into a desired format a
 
 Data analysis follows the (often automated, batch) data processing stage. It consists of exploring your data to identify or understand relationships between variables by applying mathematical formula (or models). Steps of the analysis workflow are oftentimes repeated several times to iteratively optimize the workflow for data exploration. Your data analysis methods will differ depending on the type of your data (quantitative or qualitative).
 
-The data analysis part of a project is often considered as central, as you generate new knowledge and information at this stage. Due to the relevance of the data analysis stage in research findings, it is essential that your analysis workflow complies with the [FAIR principles][KB-FAIR]. Precisely, this means that the workflow is reproducible by other researchers and scientists.
+The data analysis part of a project is often considered as central, as you generate new knowledge and information at this stage. Due to the relevance of the data analysis stage in research findings, it is essential that your analysis workflow complies with the [FAIR principles][kb-FAIR]. Precisely, this means that the workflow is reproducible by other researchers and scientists.
 
 ### Preserving
 
@@ -46,11 +46,11 @@ The process of data preservation represents a series of activities necessary to 
 
 ### Sharing
 
-Sharing is not limited to publishing your data to share it with the global research community. This can also mean to send your data to collaboration partners in the context of a collaborative research project.It is important to know that data sharing is not equal to open data or public data, as you can also choose to share your data with defined access rights. You can share your data at any time during the research data life cycle but the data should be available at the time of a publication of articles that use the corresponding data to make scientific conclusions. For more information see also [Data Sharing][KB-DataSharing].
+Sharing is not limited to publishing your data to share it with the global research community. This can also mean to send your data to collaboration partners in the context of a collaborative research project.It is important to know that data sharing is not equal to open data or public data, as you can also choose to share your data with defined access rights. You can share your data at any time during the research data life cycle but the data should be available at the time of a publication of articles that use the corresponding data to make scientific conclusions. For more information see also [Data Sharing][kb-DataSharing].
 
 ### Reusing
 
-Reuse of data is particularly important in science, as it  drives research by enabling different researchers (or yourself) to build upon the same data independently of one another resulting again in new, maybe unanticipated, uses for the data. Reusability is one key component of the [FAIR principles][KB-FAIR]. By reusing data you can also avoid doing unnecessary experiments for data that has already been published or verify reported findings as correct, laying a robust foundation for subsequent studies.
+Reuse of data is particularly important in science, as it  drives research by enabling different researchers (or yourself) to build upon the same data independently of one another resulting again in new, maybe unanticipated, uses for the data. Reusability is one key component of the [FAIR principles][kb-FAIR]. By reusing data you can also avoid doing unnecessary experiments for data that has already been published or verify reported findings as correct, laying a robust foundation for subsequent studies.
 
 ## How does DataPLANT support me in Research Data Management?
 
@@ -58,10 +58,10 @@ The following table gives an overview about DataPLANT tools and services for RDM
 
 Name | Type | Tasks on metadata
 ----------------|-----------|------------------
-**[ARC][KB-ARC]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
+**[ARC][kb-ARC]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
 **[Swate][Swate]** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
 **[ArcCommander][ArcCommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
-**[DataHUB][KB-datahub]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+**[DataHUB][kb-datahub]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 **Invenio** | Service under construction | **Share:** <ul><li>Assign a DOI to an ARC</li></ul>
 **Metadata registry** | Service under construction | **Share:** <ul><li>Find ARC (meta)data</li></ul>
 **Converters** | Tool under construction | **Curate:** <ul><li>Harmonize and migrate between metadata schema
@@ -80,17 +80,17 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledge base cross-references -->
 
-[KB-datapublications]: ./datapublications.html "Data Publication"
-[KB-dmp]: ./dmp.html "Data Management Plan"
-[KB-FAIR]: ./fair.html "FAIR Data principles"
-[KB-Metadata]: ./metadata.html "Metadata"
-[KB-pid]: ./pids.html  "Persistent Identifiers"
-[KB-ARC]: ./arc.html "Annotated Research Context"
-[KB-datahub]: ./datahub.html "DataPLANT DataHUB"
-[KB-RDM]: ./rdm.html "Research Data Management"
-[KB-DataSharing]: ./datasharing.html "Data Sharing"
-[KB-git]: ./git.html "Git"
-[KB-Repositories]: ./repositories.html "Repositories"
+[kb-datapublications]: ./datapublications.html "Data Publication"
+[kb-dmp]: ./dmp.html "Data Management Plan"
+[kb-FAIR]: ./fair.html "FAIR Data principles"
+[kb-Metadata]: ./metadata.html "Metadata"
+[kb-pid]: ./pids.html  "Persistent Identifiers"
+[kb-ARC]: ./arc.html "Annotated Research Context"
+[kb-datahub]: ./datahub.html "DataPLANT DataHUB"
+[kb-RDM]: ./rdm.html "Research Data Management"
+[kb-DataSharing]: ./datasharing.html "Data Sharing"
+[kb-git]: ./git.html "Git"
+[kb-Repositories]: ./repositories.html "Repositories"
 
 <!-- DataPLANT web links -->
 

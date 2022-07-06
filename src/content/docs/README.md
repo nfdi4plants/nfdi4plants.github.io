@@ -111,20 +111,20 @@ British English (?)
 
 <!-- Knowledge base cross-references -->
 
-[KB-datapublications]: ./datapublications.html "Data Publication"
-[KB-dmp]: ./dmp.html "Data Management Plan"
-[KB-FAIR]: ./fair.html "FAIR Data principles"
-[KB-Metadata]: ./metadata.html "Metadata"
-[KB-pid]: ./pids.html  "Persistent Identifiers"
-[KB-ARC]: ./arc.html "Annotated Research Context"
-[KB-datahub]: ./datahub.html "DataPLANT DataHUB"
-[KB-RDM]: ./rdm.html "Research Data Management"
-[KB-DataSharing]: ./datasharing.html "Data Sharing"
-[KB-git]: ./git.html "Git"
-[KB-Repositories]: ./repositories.html "Repositories"
+[kb-datapublications]: ./datapublications.html "Data Publication"
+[kb-dmp]: ./dmp.html "Data Management Plan"
+[kb-FAIR]: ./fair.html "FAIR Data principles"
+[kb-Metadata]: ./metadata.html "Metadata"
+[kb-pid]: ./pids.html  "Persistent Identifiers"
+[kb-ARC]: ./arc.html "Annotated Research Context"
+[kb-datahub]: ./datahub.html "DataPLANT DataHUB"
+[kb-RDM]: ./rdm.html "Research Data Management"
+[kb-DataSharing]: ./datasharing.html "Data Sharing"
+[kb-git]: ./git.html "Git"
+[kb-Repositories]: ./repositories.html "Repositories"
 [quickstart-arc]: ./quickstart_arc.html "Quickstart ARC"
-<!-- [KB-arccommander]: ./arccommander.html "arcCommander" -->
-<!-- [KB-WMS]: ./WMS.html -->
+<!-- [kb-arccommander]: ./arccommander.html "arcCommander" -->
+<!-- [kb-WMS]: ./WMS.html -->
 
 <!-- DataPLANT web links -->
 
