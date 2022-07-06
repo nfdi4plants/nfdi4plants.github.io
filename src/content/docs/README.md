@@ -1,10 +1,46 @@
-# How-to knowledgebase
+# TODOs
 
-## Usage
+## web components
 
-This template is built around nfdi-web-components and will fit all markdown based information into this "framework".
+- de-couple knowledgebase from static page
+- structure content, e.g.
+  - docs
+  - training
+  - tutorial
 
-### Docs
+- create layout `landing`
+
+## How to
+
+- author (new) content
+- edit / suggest changes to existing content
+  - pull request
+  - assign article author to review changes
+  - yaml key: github username
+- test before push
+
+## github mechanisms
+
+- pull request template
+
+## others
+
+- commenting in documents
+  - public, but not visible
+- "public" vs. visible  
+
+
+
+# How-to Knowledgebase
+
+## Introduction
+
+The Knowledgebase is built on [nfdi-web-components](https://nfdi4plants.github.io/web-components-docs/) and will fit all **markdown** content into this "framework".
+
+For a general introduction to writing markdown, see: 
+
+
+### Authoring content
 
 To add more documentation, add a markdown file to `\src\docs`. The file MUST start with a metadata block:
 
@@ -14,11 +50,13 @@ To add more documentation, add a markdown file to `\src\docs`. The file MUST sta
 layout: docs
 title: Metadata
 published: 2022-05-09
-Author: Dominik Brilhaus <https://orcid.org/0000-0001-9021-3197>
+author: Dominik Brilhaus
+author_orcid: https://orcid.org/0000-0001-9021-3197
+author_github: brilator
 add toc: true
 add sidebar: sidebars\mainSidebar.md
-Article Status: Publishable
-To-Dos: 
+article status: published
+TODOs: 
     - Update links to other KB articles
 ---
 ```
@@ -27,14 +65,14 @@ To-Dos:
 - All fields can be at ANY position.
 - MUST start and end with `---` .
 - MUST contain `layout: docs`.
-    - This triggers fornax parsing to html.
+  - This triggers fornax parsing to html.
 - MUST contain `title: xxxx`.
-    - Will be added as "# xxxx" to the html.
-    - Will be used to name the generated webpage.
+  - Will be added as "# xxxx" to the html.
+  - Will be used to name the generated webpage.
 - MUST contain `published: yyyy-MM-dd`.
-- MAY contain `Author: xxxx`.
+- MAY contain `author: xxxx`.
 - MAY contain `add toc: true`.
-    - Will add automated table of contents from all found headers in content.
+  - Will add automated table of contents from all found headers in content.
 - MAY contain `add sidebar: realtive\path\to\sidebar.md` to add the sidebar element to the page.
 - MAY contain **any** other metadata. The information will be read but will not affect the generated html.
 
