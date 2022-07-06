@@ -18,7 +18,7 @@ todo:
 ```
 
 ```Integration within DataPLANT
-# Annotated Research Context:/content/docs/AnnotatedResearchContext.html
+# Annotated Research Context:/content/docs/arc.html
 ## ARC QuickStart:/content/docs/quickstart_arc.html
 # DataHUB:/content/docs/datahub.html
 ```

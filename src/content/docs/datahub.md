@@ -55,7 +55,7 @@ In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and se
 [KB-Metadata]: ./metadata.html "Metadata"
 [KB-pid]: ./pids.html  "Persistent Identifiers"
 [KB-arccommander]: ./arccommander.html "arcCommander"
-[KB-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[KB-ARC]: ./arc.html "Annotated Research Context"
 [KB-RDM]: ./ResearchDataManagement.html "Research Data Management"
 [KB-DataSharing]: ./datasharing.html "Data Sharing"
 [KB-git]: ./git.html "Git"

@@ -172,7 +172,7 @@ Name | Type | Tasks on metadata
 
 [KB-Metadata]: ./metadata.html "Metadata"
 [KB-pid]: ./pids.html  "Persistent Identifiers"
-[KB-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[KB-ARC]: ./arc.html "Annotated Research Context"
 [KB-datahub]: ./datahub.html "DataPLANT DataHUB"
 
 <!-- DataPLANT web links -->

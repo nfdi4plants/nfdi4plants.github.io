@@ -126,7 +126,7 @@ Besides these technical solutions, DataPLANT supports you with community-engaged
 [KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
 [KB-Metadata]: ./metadata.html "Metadata"
 [KB-pid]: ./pids.html  "Persistent Identifiers"
-[KB-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[KB-ARC]: ./arc.html "Annotated Research Context"
 [KB-datahub]: ./datahub.html "DataPLANT DataHUB"
 [KB-RDM]: ./ResearchDataManagement.html "Research Data Management"
 [KB-DataSharing]: ./datasharing.html "Data Sharing"

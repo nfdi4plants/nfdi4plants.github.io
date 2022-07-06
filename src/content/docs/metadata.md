@@ -101,7 +101,7 @@ Name | Type | Tasks on metadata
 [KB-Repositories]: ./repositories.html "Repositories"
 [KB-datahub]: ./datahub.html "DataPLANT DataHUB"
 [KB-git]: ./git.html "Git"
-[KB-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[KB-ARC]: ./arc.html "Annotated Research Context"
 
 <!-- DataPLANT weblinks -->
 

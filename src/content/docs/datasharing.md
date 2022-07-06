@@ -50,7 +50,7 @@ In order to use the [DataHUB][KB-datahub] and other DataPLANT infrastructure and
 [KB-DataPublications]: ./datapublications.html "Data Publication"
 [KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
 [KB-pid]: ./pids.html  "Persistent Identifiers"
-[KB-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[KB-ARC]: ./arc.html "Annotated Research Context"
 [KB-datahub]: ./datahub.html "DataPLANT DataHUB"
 
 <!-- Reference links -->
