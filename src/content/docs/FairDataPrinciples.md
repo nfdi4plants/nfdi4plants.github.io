@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: FAIR Principles
+title: FAIR Data Principles
 published: 2022-05-19
 author: Martin Kuhl
 author_github: martin-kuhl
@@ -51,9 +51,9 @@ The first step in (re)using data is to find them. Metadata and data should be ea
 
 #### F1. (Meta)data are assigned a globally unique and persistent identifier
 
-A [persistent identifier][kb-pid] (PID) is a long-lasting reference, typically used in the context of digital resources accessible over the internet, in this case your dataset. Globally unique and persistent identifiers allow finding your data in the first place. Continuous availability of the digital object is guaranteed by registry providers, which maintain the link to the actual dataset.
+A [persistent identifier][kb-PersistentIdentifiers] (PID) is a long-lasting reference, typically used in the context of digital resources accessible over the internet, in this case your dataset. Globally unique and persistent identifiers allow finding your data in the first place. Continuous availability of the digital object is guaranteed by registry providers, which maintain the link to the actual dataset.
 
-A PID you have probably already heard of as most biological journals assign them to manuscripts, is the Digital Object Identifier ([DOI][doi]). Your personal 16-digit [ORCID][orcid] or the accession number of your RNASeq dataset on GEO also represent examples for PIDs. An overview which scientific repositories assign which type of PID can be found at the registry of research data repositories ([re3data.org][re3data]).
+A PID you have probably already heard of as most biological journals assign them to manuscripts, is the Digital Object Identifier ([DOI][doi]). Your personal 16-digit [ORCID][orcid] or the accession number of your RNASeq dataset on GEO also represent examples for PIDs. An overview which scientific repositories assign which type of PID can be found at the registry of research data repositories ([re3data.org][ext-re3data]).
 
 #### F2. Data are described with rich metadata (defined by R1 below)
 
@@ -83,7 +83,7 @@ Infrastructure providers should use free (no-cost), open-source protocols. Thus,
 
 At this point it is very important to differentiate between "accessible" and "open" data. The "A" in FAIR does not imply that you are required to grant free access for everyone to your data, but rather to specify conditions under which the data are accessible. Even protected data are FAIR, if requirements were defined on how the data can be retrieved. These must be processable automatically by a system, e.g. a repository, and can be especially necessary for sensitive data.
 
-An example for this case is a private and thereby, non-visible repository on [GitLab][kb-datahub], accessible only to defined users. As owner of the GitLab repository, you can select these users and researchers simply identify using the GitLab sign-in. Accordingly, the mechanism to allow users to identify themselves, belongs to the responsibility of the infrastructure provider.
+An example for this case is a private and thereby, non-visible repository on [GitLab][kb-DataHub], accessible only to defined users. As owner of the GitLab repository, you can select these users and researchers simply identify using the GitLab sign-in. Accordingly, the mechanism to allow users to identify themselves, belongs to the responsibility of the infrastructure provider.
 
 #### A2. Metadata are accessible, even when the data are no longer available
 
@@ -127,7 +127,7 @@ As author of your dataset you cannot expect other researchers to be familiar wit
 
 #### R1.1. (Meta)data are released with a clear and accessible data usage license
 
-You should clearly describe the usage rights for your data and include it in your metadata, as ambiguity could severely limit its reuse. Hence, the conditions under which the data can be used should be clear to machines and humans and can, e.g., be represented in form of a license. For scientific data, [Creative Commons licenses][CC-licenses] are commonly used.
+You should clearly describe the usage rights for your data and include it in your metadata, as ambiguity could severely limit its reuse. Hence, the conditions under which the data can be used should be clear to machines and humans and can, e.g., be represented in form of a license. For scientific data, [Creative Commons licenses][ext-CreativeCommons] are commonly used.
 
 #### R1.2. (Meta)data are associated with detailed provenance
 
@@ -147,10 +147,10 @@ The following table gives an overview about DataPLANT tools and services support
 
 Name | Type | Tasks on metadata
 ----------------|-----------|------------------
-**[ARC][kb-ARC]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
-**[Swate][Swate]** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
-**[ArcCommander][ArcCommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
-**[DataHUB][kb-datahub]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+**[ARC][kb-AnnotatedResearchContext]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
+**[Swate][gh-Swate]** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
+**[ArcCommander][gh-ArcCommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
+**[DataHUB][kb-DataHub]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 **Invenio** | Service under construction | **Share:** <ul><li>Assign a DOI to an ARC</li></ul>
 **Metadata registry** | Service under construction | **Share:** <ul><li>Find ARC (meta)data</li></ul>
 **Converters** | Tool under construction | **Curate:** <ul><li>Harmonize and migrate between metadata schema
@@ -171,19 +171,19 @@ Name | Type | Tasks on metadata
 <!-- Knowledge base cross-references -->
 
 [kb-Metadata]: ./Metadata.html "Metadata"
-[kb-pid]: ./PersistentIdentifiers.html  "Persistent Identifiers"
-[kb-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
-[kb-datahub]: ./DataHub.html "DataPLANT DataHUB"
+[kb-PersistentIdentifiers]: ./PersistentIdentifiers.html  "Persistent Identifiers"
+[kb-AnnotatedResearchContext]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
 
 <!-- DataPLANT web links -->
 
-[ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
-[Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
+[gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
+[gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
 
 <!-- Reference web links -->
 
-[EBI-PRIDE]: https://www.ebi.ac.uk/pride/ "EBI PRIDE"
-[re3data]: https://www.re3data.org/ "re3data.org"
+[ext-EBI-PRIDE]: https://www.ebi.ac.uk/pride/ "EBI PRIDE"
+[ext-re3data]: https://www.re3data.org/ "re3data.org"
 [doi]: https://www.doi.org/ "Digital Object Identifier"
 [orcid]: https://www.orcid.org/ "ORCID"
-[CC-licenses]: https://creativecommons.org/ "Creative Commons"
+[ext-CreativeCommons]: https://creativecommons.org/ "Creative Commons"

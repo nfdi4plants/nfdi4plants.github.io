@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Public data repositories
+title: Public Data Repositories
 published: 2022-05-09
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197
@@ -14,7 +14,7 @@ todo:
 
 ## What are data repositories?
 
-Public data repositories are one option to [publish your research data][kb-datapublications]. They usually focus on the data &ndash; as opposed to other research outputs such as manuscripts. Data repositories assign [persistent identifiers][kb-PID] (e.g. a DOI) to your dataset and by that comply with requirements of most publication journals.  
+Public data repositories are one option to [publish your research data][kb-DataPublications]. They usually focus on the data &ndash; as opposed to other research outputs such as manuscripts. Data repositories assign [persistent identifiers][kb-PersistentIdentifiers] (e.g. a DOI) to your dataset and by that comply with requirements of most publication journals.  
 We differentiate between domain-specific and general-purpose repositories.
 
 ### Domain-specific data repositories
@@ -36,7 +36,7 @@ Repository | Description | Biological data domain | DataPLANT Templates availabl
 
 ### General-purpose repositories
 
-In cases where no suitable domain-specific repository exists, general-purpose repositories are an option to publicly deposit research data and receive a [PID][kb-pid]. A benefit of general-purpose repositories is that they allow deposition of virtually any data type. Also research data packages with mixes of data types and computational workflows can be deposited, which aligns well with typical plant science investigations. However, since these repositories can only foster compliance with metadata standards at a very generic level (e.g. bibliographic or technical, see [metadata][kb-Metadata]), they limit the capacity for [FAIR][kb-FAIR] reuse of data.  
+In cases where no suitable domain-specific repository exists, general-purpose repositories are an option to publicly deposit research data and receive a [PID][kb-PersistentIdentifiers]. A benefit of general-purpose repositories is that they allow deposition of virtually any data type. Also research data packages with mixes of data types and computational workflows can be deposited, which aligns well with typical plant science investigations. However, since these repositories can only foster compliance with metadata standards at a very generic level (e.g. bibliographic or technical, see [metadata][kb-Metadata]), they limit the capacity for [FAIR][kb-FairDataPrinciples] reuse of data.  
 
 Examples for general-purpose repositories include
 
@@ -57,6 +57,8 @@ The following resources provide good starting points to seek a suitable reposito
 
 Depositing research data at a public data repository can be tedious. Especially the domain-specific repositories require compliance with specific data submission routines (a) in terms of format and content and (b) for both "raw data" and "metadata". Only data types relevant for the respective domain are accepted and need to be provided in proper data formats. In order to guarantee that the information required to properly describe the data is present, they require adherence to domain-specific [metadata][kb-Metadata] standards, represented in the proper format and oftentimes require the use of controlled vocabularies and ontologies. And finally the mere technicalities of how to collect and submit the (meta)data varies greatly between repositories, ranging from the use of pure upload via file transfers (e.g. FTP), APIs, online web forms or specialized software requiring local installation. The large repository providers invest a lot to harmonize their formats and submission routines. Still, there is a long way to go and we are currently far away from the unified way where "If you know one, you know them all."
 
+![Submitting to repositories](img/repositories_submission.png)
+
 <!-- TODO: add section on 
 
 - no fun 
@@ -71,10 +73,10 @@ The following table gives an overview about DataPLANT tools and services related
 
 Name | Type | Tasks on metadata 
 ----------------|-----------|------------------ 
-**[ARC][kb-ARC]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
-**[Swate][Swate]** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
-**[ArcCommander][ArcCommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
-**[DataHUB][kb-datahub]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+**[ARC][kb-AnnotatedResearchContext]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
+**[Swate][gh-Swate]** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
+**[ArcCommander][gh-ArcCommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
+**[DataHUB][kb-DataHub]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 <!-- ~~Converter~~ | Tool under construction | **Curate:** <ul><li>Harmonize and migrate between metadata schema</li><li>Manage who can view or access your ARC</li></ul>
 **Metadata registry** | Service | **Share:** <ul><li>Find ARC (meta)data</li></ul> -->
 
@@ -90,21 +92,21 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledge base cross-references -->
 
-[kb-datapublications]: ./DataPublications.html "Data Publication"
-[kb-FAIR]: ./FairDataPrinciples.html "FAIR Data principles"
+[kb-DataPublications]: ./DataPublications.html "Data Publication"
+[kb-FairDataPrinciples]: ./FairDataPrinciples.html "FAIR Data principles"
 [kb-Metadata]: ./Metadata.html "Metadata"
-[kb-pid]: ./PersistentIdentifiers.html  "Persistent Identifiers"
+[kb-PersistentIdentifiers]: ./PersistentIdentifiers.html  "Persistent Identifiers"
 <!-- [kb-arccommander]: ./ArcCommander.html "arcCommander" -->
-[kb-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
-[kb-datahub]: ./DataHub.html "DataPLANT DataHUB"
+[kb-AnnotatedResearchContext]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
 
 <!-- DataPLANT web links -->
 
-[Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
-[DataHUB]: <https://git.nfdi4plants.org> "DataHUB"
-[ARCspecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
-[Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
-[ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
+[hp-Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
+[hp-DataHUB]: <https://git.nfdi4plants.org> "DataHUB"
+[gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
+[gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
+[gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
 
 
 <!-- Reference web links -->

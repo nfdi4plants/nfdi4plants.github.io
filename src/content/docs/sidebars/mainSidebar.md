@@ -9,7 +9,7 @@
 # Data Publications:/content/docs/DataPublications.html
 # Data Management Plan:/content/docs/DataManagementPlan.html
 # Version Control & Git:/content/docs/VersionControlGit.html
-# Repositories:/content/docs/PublicDataRepositories.html
+# Public Data Repositories:/content/docs/PublicDataRepositories.html
 # Persistent Identifiers:/content/docs/PersistentIdentifiers.html
 ```
 
