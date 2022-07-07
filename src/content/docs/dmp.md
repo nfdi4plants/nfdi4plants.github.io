@@ -3,9 +3,10 @@ layout: docs
 title: Data Management Plan
 published: 2022-05-19
 author: Martin Kuhl
+author_github: martin-kuhl
 add toc: true
 add sidebar: sidebars/mainSidebar.md
-article status: Ready
+article_status: published
 todo:
 ---
 
@@ -13,7 +14,7 @@ A data management plan (DMP) structures the handling of research data in a scien
 
 ## Advantages of a DMP
 
-A DMP allows you to track the current status of data within your project throughout its entire lifecycle. Thus, it is also helpful for the administration and to keep an overview. Scientific practice shows that you generally profit from the effort spent on better structuring, documentation, and organization of your research data, if you [FAIRify][KB-FAIR] and thereby, lower the hurdles of reusing your datasets. Additional personnel, technical, or infrastructural resources required for compliance with your DMP can usually be claimed in third-party funding applications.
+A DMP allows you to track the current status of data within your project throughout its entire lifecycle. Thus, it is also helpful for the administration and to keep an overview. Scientific practice shows that you generally profit from the effort spent on better structuring, documentation, and organization of your research data, if you [FAIRify][kb-FAIR] and thereby, lower the hurdles of reusing your datasets. Additional personnel, technical, or infrastructural resources required for compliance with your DMP can usually be claimed in third-party funding applications.
 
 - Enables access to certain funding lines
 - Facilitates documentation for reporting requirements
@@ -55,9 +56,9 @@ DataPLANT helps the community by providing a Data Management Plan Generator on t
 - [Elements of a DMP](https://www.icpsr.umich.edu/web/pages/datamanagement/dmp/elements.html)
 
 
-<!-- Knowledgebase cross-references -->
+<!-- Knowledge base cross-references -->
 
-[KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
+[kb-FAIR]: ./fair.html "FAIR Data principles"
 
 <!-- DataPLANT web links -->
 

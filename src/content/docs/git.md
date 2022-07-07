@@ -1,19 +1,21 @@
 ---
 layout: docs
-title: Version control
+title: Version control & Git
 published: 2022-05-09
-author: Dominik Brilhaus <https://orcid.org/0000-0001-9021-3197>
+author: Dominik Brilhaus
+author_orcid: https://orcid.org/0000-0001-9021-3197
+author_github: brilator
 add toc: true
 add sidebar: sidebars/mainSidebar.md
-article status: draft
+article_status: draft
 todo:
   - paragraph branches
 ---
 
 ## Scientific iteration and versioning
 
-Science is highly iterative. Most outcomes along the data life cycle (between an initial idea and the final publication, see also [RDM][KB-RDM]) are iterated through multiple cycles of design-test-repeat (e.g. laboratory experiments) or draft-review-publish (e.g. manuscripts) and mixes thereof. During these iterations multiple versions of the different outcomes are produced.  
-There are different options to keep track of these versions. The seemingly simplest option is to duplicate a file and rename it by attaching a version, e.g. `manuscript.txt` &ndash; `manuscript_v2.txt` &ndash; `manuscript_final.txt`. Although this may work acceptably for individual use it quickly becomes confusing when sharing with other researchers. Cloud services offer options to keep track of changes (what was changed and by whom) within collaborative, multi-party projects (see also [Data Sharing][KB-DataSharing]). Here, versioning is usually taken care of automatically by the cloud service with little to no control by the user. However, these services are helpful only for version histories of typical office data (documents, presentations) or small datasets and within low-complexity projects.
+Science is highly iterative. Most outcomes along the data life cycle (between an initial idea and the final publication, see also [RDM][kb-RDM]) are iterated through multiple cycles of design-test-repeat (e.g. laboratory experiments) or draft-review-publish (e.g. manuscripts) and mixes thereof. During these iterations multiple versions of the different outcomes are produced.  
+There are different options to keep track of these versions. The seemingly simplest option is to duplicate a file and rename it by attaching a version, e.g. `manuscript.txt` &ndash; `manuscript_v2.txt` &ndash; `manuscript_final.txt`. Although this may work acceptably for individual use it quickly becomes confusing when sharing with other researchers. Cloud services offer options to keep track of changes (what was changed and by whom) within collaborative, multi-party projects (see also [Data Sharing][kb-DataSharing]). Here, versioning is usually taken care of automatically by the cloud service with little to no control by the user. However, these services are helpful only for version histories of typical office data (documents, presentations) or small datasets and within low-complexity projects.
 
 ## Git
 
@@ -38,22 +40,22 @@ The following table gives an overview about DataPLANT tools and services related
 Name | Type | Tasks on data sharing
 ----------------|-----------|------------------
 **[ArcCommander][ArcCommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
-**[ARC][KB-ARC]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>ARCs are git repositories</li><li>Package data with metadata in a defined format</li></ul>
-**[DataHUB][KB-datahub]** | Service | **Share:** <ul><li>DataPLANT-customized GitLab instance</li><li>Infrastructure-as-code: on-premise solution</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+**[ARC][kb-ARC]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>ARCs are git repositories</li><li>Package data with metadata in a defined format</li></ul>
+**[DataHUB][kb-datahub]** | Service | **Share:** <ul><li>DataPLANT-customized GitLab instance</li><li>Infrastructure-as-code: on-premise solution</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 <!-- - Replace arcCommander link with KB link (once available) -->
 
 ### Register with DataPLANT
 
 In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and services, please [sign up][Registration] with DataPLANT.  
 
-<!-- Knowledgebase Cross-references -->
+<!-- Knowledge base Cross-references -->
 
-[KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
-[KB-Metadata]: ./metadata.html "Metadata"
-[KB-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
-[KB-RDM]: ./ResearchDataManagement.html "Research Data Management"
-[KB-DataSharing]: ./datasharing.html "Data Sharing"
-[KB-datahub]: ./datahub.html "DataPLANT DataHUB"
+[kb-FAIR]: ./fair.html "FAIR Data principles"
+[kb-Metadata]: ./metadata.html "Metadata"
+[kb-ARC]: ./arc.html "Annotated Research Context"
+[kb-RDM]: ./rdm.html "Research Data Management"
+[kb-DataSharing]: ./datasharing.html "Data Sharing"
+[kb-datahub]: ./datahub.html "DataPLANT DataHUB"
 
 <!-- DataPLANT web links -->
 

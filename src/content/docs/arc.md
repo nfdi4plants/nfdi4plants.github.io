@@ -2,18 +2,19 @@
 layout: docs
 title: Annotated Research Context
 published: 2022-05-25
-Author: Martin Kuhl
+author: Martin Kuhl
+author_github: martin-kuhl
 add toc: true
 add sidebar: sidebars\mainSidebar.md
-Article Status: published
-To-Dos: 
+article_status: published
+todo:
     - Technical implementations (machine-readability)
 ---
 
 
 # Annotated Research Context
 
-The importance of [Research Data Management (RDM)][KB-RDM] systems steadily increases, as scientists and institutions generate big, heterogeneous data nowadays. According to the [FAIR principles][KB-FAIR] such data should be available in open, public archives, stored in contextualized, non-proprietary formats. With the **Annotated Research Context** (ARC), DataPLANT provides an RDM platform to answer these requirements and to support machine-readability, as the system is entirely based on established standards. ARCs will be tagged with a persistent and unique identifier and contain, besides raw data, the entire information (metadata, external files, and code for computations) needed to reproduce the mapped studies. These can range from a single publication up to a multi-lab, long-term project. Thus, ARCs are FAIR Digital Objects (FDOs) and drive FAIRification of research data for fundamental plant research.
+The importance of [Research Data Management (RDM)][kb-RDM] systems steadily increases, as scientists and institutions generate big, heterogeneous data nowadays. According to the [FAIR principles][kb-FAIR] such data should be available in open, public archives, stored in contextualized, non-proprietary formats. With the **Annotated Research Context** (ARC), DataPLANT provides an RDM platform to answer these requirements and to support machine-readability, as the system is entirely based on established standards. ARCs will be tagged with a persistent and unique identifier and contain, besides raw data, the entire information (metadata, external files, and code for computations) needed to reproduce the mapped studies. These can range from a single publication up to a multi-lab, long-term project. Thus, ARCs are FAIR Digital Objects (FDOs) and drive FAIRification of research data for fundamental plant research.
 
 ## Data centric approach
 
@@ -22,7 +23,7 @@ To realize such a data centric approach for RDM in fundamental plant research, w
 <!-- TODOs:
 - add links to fundamentals on ISA, CWL, ROC
  -->
-The ARC concept relies on a structure that partitions studies, assays, workflows, and runs for a granular reuse and development. Studies cover biological data, while assays cover experimental, and instrumental data, including their self-contained description using the ISA model. Similarly, workflows cover all computational steps of a study and contain application code, scripts, or any other executable description of an analysis ensuring highest flexibility for the scientists. To ensure persistence and reproducibility, these workflows comprise their own containerized running environment. The resulting data (runs) is linked to the workflows by a minimal Common Workflow Language file specifying the input and output of the process. The suggested structure for ARCs is a starting point for individual research projects and defines a framework for the organization, sharing, reuse, and evolution of research projects in a fashion familiar from open-source software development (see also [Data Sharing][KB-DataSharing]).
+The ARC concept relies on a structure that partitions studies, assays, workflows, and runs for a granular reuse and development. Studies cover biological data, while assays cover experimental, and instrumental data, including their self-contained description using the ISA model. Similarly, workflows cover all computational steps of a study and contain application code, scripts, or any other executable description of an analysis ensuring highest flexibility for the scientists. To ensure persistence and reproducibility, these workflows comprise their own containerized running environment. The resulting data (runs) is linked to the workflows by a minimal Common Workflow Language file specifying the input and output of the process. The suggested structure for ARCs is a starting point for individual research projects and defines a framework for the organization, sharing, reuse, and evolution of research projects in a fashion familiar from open-source software development (see also [Data Sharing][kb-DataSharing]).
 
 This results in standardized RDM procedures being process-oriented, meaning that each tool realizes or supports the researcher in a distinct task within the RDM cycle. As a consequence, this enables the desired mixed mode of application, in which both human and machine can operate processes simultaneously or asynchronously while avoiding technological barriers.
 
@@ -50,15 +51,15 @@ Detailed information can be found in the official [ARC Specification][ARCspecs].
  -->
 ### Collaborative work and versioning
 
-ARCs are based on the lightweight and decentralized version-control system [git][KB-git]. Thereby, every ARC contains its entire previous versions and is shipped together with them. Distribution and management of access rights is accomplished via DataPLANT’s GitLab instance functioning as [DataHUB][KB-datahub]. The git extension Git LFS takes care of files with a size of >100 Mb, as it stores the files in a separate location to avoid long synchronization times and creates a pointer file in the repository to establish a connection.
-Git (LFS) also ensures integrity of your data, as all objects in git are accessed using the SHA-1 hash function. Changing the content of a file thereby also results in a change of the checksum. This prevents corruption of files, as Git will return an error if some data cannot be found based on its checksum (see also [git][KB-git]).
+ARCs are based on the lightweight and decentralized version-control system [git][kb-git]. Thereby, every ARC contains its entire previous versions and is shipped together with them. Distribution and management of access rights is accomplished via DataPLANT’s GitLab instance functioning as [DataHUB][kb-datahub]. The git extension Git LFS takes care of files with a size of >100 Mb, as it stores the files in a separate location to avoid long synchronization times and creates a pointer file in the repository to establish a connection.
+Git (LFS) also ensures integrity of your data, as all objects in git are accessed using the SHA-1 hash function. Changing the content of a file thereby also results in a change of the checksum. This prevents corruption of files, as Git will return an error if some data cannot be found based on its checksum (see also [git][kb-git]).
 <!-- TODOs: move some git details to git article and rather link here -->
 
 ## ARC features & prospects
 
 ### Single point of entry logic
 
-Once an ARC is filled, it should be able to target and interact with multiple platforms and services for research data management and computation. ARCs are stored on DataPLANTs DataHUB (GitLab), which enables collaborative work and version control immediately after initiation. Currently developed converters will be able to extract, transform, and validate metadata within an ARC to established standards like the Research Object Crate (RO-Crate) and facilitate an automatic upload to desired domain-specific [endpoint repositories][KB-Repositories] (such as GEO, MetaboLights, or PRIDE). Reproducible and transparent analyses are furthermore supported by connectivity to the workflow management system Galaxy.  
+Once an ARC is filled, it should be able to target and interact with multiple platforms and services for research data management and computation. ARCs are stored on DataPLANTs DataHUB (GitLab), which enables collaborative work and version control immediately after initiation. Currently developed converters will be able to extract, transform, and validate metadata within an ARC to established standards like the Research Object Crate (RO-Crate) and facilitate an automatic upload to desired domain-specific [endpoint repositories][kb-Repositories] (such as GEO, MetaboLights, or PRIDE). Reproducible and transparent analyses are furthermore supported by connectivity to the workflow management system Galaxy.  
 
 ### Data provenance & integrity
 
@@ -102,15 +103,15 @@ Name | Type | Tasks on metadata
 - [Common Workflow Language](https://www.commonwl.org/)
 - [Research Object Crate](https://www.researchobject.org/ro-crate/)
 
-<!-- Knowledgebase cross-references -->
+<!-- Knowledge base cross-references -->
 
-[KB-git]: ./git.html "Git"
-[KB-datahub]: ./datahub.html "DataPLANT DataHUB"
-[KB-FAIR]: ./FAIRDataPrinciples.html "FAIR Data principles"
+[kb-git]: ./git.html "Git"
+[kb-datahub]: ./datahub.html "DataPLANT DataHUB"
+[kb-FAIR]: ./fair.html "FAIR Data principles"
 [quickstart-arc]: ./quickstart_arc.html "Quickstart ARC"
-[KB-Repositories]: ./repositories.html "Repositories"
-[KB-RDM]: ./ResearchDataManagement.html "Research Data Management"
-[KB-DataSharing]: ./datasharing.html "Data Sharing"
+[kb-Repositories]: ./repositories.html "Repositories"
+[kb-RDM]: ./rdm.html "Research Data Management"
+[kb-DataSharing]: ./datasharing.html "Data Sharing"
 
 <!-- DataPLANT web links -->
 

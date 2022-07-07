@@ -1,24 +1,25 @@
 ---
-published: 2022-05-24
-Article Status: Publishable
-To-Dos: 
-    - Update links to other KB articles
 ---
 
 ```Fundamentals
-# Research Data Management:/content/docs/ResearchDataManagement.html
-# FAIR Data Principles:/content/docs/FAIRDataPrinciples.html
+# Research Data Management:/content/docs/rdm.html
+# FAIR Data Principles:/content/docs/fair.html
 # Metadata:/content/docs/metadata.html
 # Data Sharing:/content/docs/datasharing.html
-# Data Publications:/content/docs/DataPublications.html
-# Data Management Plan:/content/docs/DataManagementPlan.html
-# Git:/content/docs/git.html
+# Data Publications:/content/docs/datapublications.html
+# Data Management Plan:/content/docs/dmp.html
+# Version Control & Git:/content/docs/git.html
 # Repositories:/content/docs/repositories.html
 # Persistent Identifiers:/content/docs/pids.html
 ```
 
-```Integration within DataPLANT
-# Annotated Research Context:/content/docs/AnnotatedResearchContext.html
+```Implementation within DataPLANT
+# Annotated Research Context:/content/docs/arc.html
 ## ARC QuickStart:/content/docs/quickstart_arc.html
 # DataHUB:/content/docs/datahub.html
 ```
+
+<!-- ```Training & Tutorials -->
+<!-- # Sync ARCs via GitHub Desktop:/content/docs/tutorials/github_desktop.html -->
+<!-- # Markdown:/content/docs/tutorials/markdown.html -->
+<!-- ``` -->
