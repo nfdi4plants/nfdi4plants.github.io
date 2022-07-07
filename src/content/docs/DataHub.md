@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: DataPLANT DataHUB
+title: DataHUB
 published: 2022-05-12
 date: 2022-05-12
 author: Dominik Brilhaus

@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: DataPLANT's QuickStart on ARCs
+title: ARC QuickStart
 published: 2022-05-25
 author: Martin Kuhl
 author_github: martin-kuhl
