@@ -1,17 +1,25 @@
 # How-to "knowledge base"
 
+
+
+
 ## Introduction
 
 The DataPLANT knowledge base is built on [nfdi-web-components](https://nfdi4plants.github.io/web-components-docs/) and will fit all **markdown** content into this "framework".
-
 For a general introduction to writing markdown, see: [Markdown tutorial](tutorials/markdown.md) and references therein.
 
-The knowledge base is structured into three sections.
+
+
+## Contribution: A community effort
+
+We 
+
+
 
 
 ### Authoring content
 
-To add more documentation, add a markdown file to `\src\docs`. The file MUST start with a metadata block:
+To add more documentation, add a markdown file to `/src/docs`. The file MUST start with a metadata block:
 
 <!--used yml here as code language for nice color syntax-->
 ```yml
