@@ -75,7 +75,7 @@ Name | Type | Tasks on metadata
 
 <!-- Reference links -->
 [DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
-[ARCspecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
+[gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 
 [PURLs]: https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator "Wikipedia PURLs"
 [Handles]: https://en.wikipedia.org/wiki/Handle_System "Wikipedia Handles"

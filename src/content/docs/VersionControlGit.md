@@ -43,14 +43,14 @@ The following table gives an overview about DataPLANT tools and services related
 
 Name | Type | Tasks on data sharing
 ----------------|-----------|------------------
-**[ArcCommander][ArcCommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
+**[ArcCommander][gh-ArcCommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
 **[ARC][kb-AnnotatedResearchContext]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>ARCs are git repositories</li><li>Package data with metadata in a defined format</li></ul>
 **[DataHUB][kb-DataHub]** | Service | **Share:** <ul><li>DataPLANT-customized GitLab instance</li><li>Infrastructure-as-code: on-premise solution</li><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 <!-- - Replace arcCommander link with KB link (once available) -->
 
 ### Register with DataPLANT
 
-In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and services, please [sign up][Registration] with DataPLANT.  
+In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and services, please [sign up][hp-registration]: with DataPLANT.  
 
 <!-- Knowledge base Cross-references -->
 
@@ -63,9 +63,9 @@ In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and se
 
 <!-- DataPLANT web links -->
 
-[Registration]: <https://register.nfdi4plants.org/> "DataPLANT Registration"
+[hp-registration]: <https://register.nfdi4plants.org/> "DataPLANT Registration"
 [DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
-[ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
+[gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
 
 <!-- Reference web links -->
 

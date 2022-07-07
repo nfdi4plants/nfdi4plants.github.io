@@ -149,28 +149,26 @@ British English (?)
 
 <!-- Knowledge base cross-references -->
 
-[kb-DataPublications]: ./DataPublications.html "Data Publication"
-[kb-DataManagementPlan]: ./DataManagementPlan.html "Data Management Plan"
-[kb-FairDataPrinciples]: ./FairDataPrinciples.html "FAIR Data principles"
-[kb-Metadata]: ./Metadata.html "Metadata"
-[kb-PersistentIdentifiers]: ./PersistentIdentifiers.html  "Persistent Identifiers"
 [kb-AnnotatedResearchContext]: ./AnnotatedResearchContext.html "Annotated Research Context"
 [kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
-[kb-ResearchDataManagement]: ./ResearchDataManagement.html "Research Data Management"
+[kb-DataManagementPlan]: ./DataManagementPlan.html "Data Management Plan"
+[kb-DataPublications]: ./DataPublications.html "Data Publication"
 [kb-DataSharing]: ./DataSharing.html "Data Sharing"
-[kb-VersionControlGit]: ./VersionControlGit.html "Git"
+[kb-FairDataPrinciples]: ./FairDataPrinciples.html "FAIR Data principles"
+[kb-Metadata]: ./Metadata.html "Metadata"
+[kb-PersistentIdentifiers]: ./PersistentIdentifiers.html "Persistent Identifiers"
 [kb-PublicDataRepositories]: ./PublicDataRepositories.html "Repositories"
 [kb-QuickStart_arc]: ./QuickStart_arc.html "Quickstart ARC"
-<!-- [kb-arccommander]: ./ArcCommander.html "arcCommander" -->
-<!-- [kb-WMS]: ./WMS.html -->
+[kb-ResearchDataManagement]: ./ResearchDataManagement.html "Research Data Management"
+[kb-VersionControlGit]: ./VersionControlGit.html "Git"
 
 <!-- DataPLANT web links -->
 
-[Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
+[hp-registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
 [DataHUB]: <https://git.nfdi4plants.org> "DataHUB"
-[ARCspecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
-[ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
-[Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
+[gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
+[gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
+[gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
 
 <!-- Reference web links -->
 

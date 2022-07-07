@@ -43,7 +43,7 @@ Name | Type | Tasks on data sharing
 
 ### Register with DataPLANT
 
-In order to use the [DataHUB][kb-DataHub] and other DataPLANT infrastructure and services, please [sign up][Registration] with DataPLANT.  
+In order to use the [DataHUB][kb-DataHub] and other DataPLANT infrastructure and services, please [sign up][hp-registration]: with DataPLANT.  
 
 <!-- Knowledge base Cross-references -->
 
@@ -54,6 +54,6 @@ In order to use the [DataHUB][kb-DataHub] and other DataPLANT infrastructure and
 [kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
 
 <!-- Reference links -->
-[Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
+[hp-registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
 [omero]: <https://www.openmicroscopy.org/omero/> "Omero"
 [galaxy]: <https://plants.usegalaxy.eu/> "Galaxy Plants"
