@@ -52,24 +52,28 @@
         <div slot="title">
           Fundamentals
         </div>
-        <h1 slot="inner" href="/content/docs/ResearchDataManagement.html">Research Data Management</h1>
-<h1 slot="inner" href="/content/docs/FAIRDataPrinciples.html">FAIR Data Principles</h1>
+        <h1 slot="inner" href="/content/docs/rdm.html">Research Data Management</h1>
+<h1 slot="inner" href="/content/docs/fair.html">FAIR Data Principles</h1>
 <h1 slot="inner" href="/content/docs/metadata.html">Metadata</h1>
 <h1 slot="inner" href="/content/docs/datasharing.html">Data Sharing</h1>
-<h1 slot="inner" href="/content/docs/DataPublications.html">Data Publications</h1>
-<h1 slot="inner" href="/content/docs/DataManagementPlan.html">Data Management Plan</h1>
-<h1 slot="inner" href="/content/docs/git.html">Git</h1>
+<h1 slot="inner" href="/content/docs/datapublications.html">Data Publications</h1>
+<h1 slot="inner" href="/content/docs/dmp.html">Data Management Plan</h1>
+<h1 slot="inner" href="/content/docs/git.html">Version Control & Git</h1>
 <h1 slot="inner" href="/content/docs/repositories.html">Repositories</h1>
 <h1 slot="inner" href="/content/docs/pids.html">Persistent Identifiers</h1>
 
       </nfdi-sidebar-element>
       <nfdi-sidebar-element slot="sidebar" isActive="true">
         <div slot="title">
-          Integration within DataPLANT
+          Implementation within DataPLANT
         </div>
-        <h1 slot="inner" href="/content/docs/AnnotatedResearchContext.html">Annotated Research Context</h1>
+        <h1 slot="inner" href="/content/docs/arc.html">Annotated Research Context</h1>
 <h2 slot="inner" href="/content/docs/quickstart_arc.html">ARC QuickStart</h2>
 <h1 slot="inner" href="/content/docs/datahub.html">DataHUB</h1>
+<!-- ```Training & Tutorials -->
+<!-- # Sync ARCs via GitHub Desktop:/content/docs/tutorials/github_desktop.html -->
+<!-- # Markdown:/content/docs/tutorials/markdown.html -->
+<!-- ``` -->
 
       </nfdi-sidebar-element>
       <h1 class="front-header">
@@ -79,11 +83,11 @@
         last updated at 2022-05-12
       </i>
       <nfdi-toc></nfdi-toc>
-      <p>The DataPLANT <a href="https://git.nfdi4plants.org" title="DataHUB">DataHUB</a> is the platform where several strings of DataPLANT's <a href="./ResearchDataManagement.html" title="Research Data Management">research data management</a> run together. Here you can upload your research data as an annotated research context (<a href="./AnnotatedResearchContext.html" title="Annotated Research Context">ARC</a>), to document its changes (via <a href="./git.html" title="Git">git</a>-based version control) and <a href="./datasharing.html" title="Data Sharing">share</a> it with collaborators. <a href="./metadata.html" title="Metadata">Metadata</a> associated with your ARC feeds into the metadata registry to make your research findable. From there, you can analyse your data using external workflows, publish it to specific <a href="./repositories.html" title="Repositories">data repositories</a> or <a href="./datapublications.html" title="Data Publication">data publications</a>.</p>
+      <p>The DataPLANT <a href="https://git.nfdi4plants.org" title="DataHUB">DataHUB</a> is the platform where several strings of DataPLANT's <a href="./rdm.html" title="Research Data Management">research data management</a> run together. Here you can upload your research data as an annotated research context (<a href="./arc.html" title="Annotated Research Context">ARC</a>), to document its changes (via <a href="./git.html" title="Git">git</a>-based version control) and <a href="./datasharing.html" title="Data Sharing">share</a> it with collaborators. <a href="./metadata.html" title="Metadata">Metadata</a> associated with your ARC feeds into the metadata registry to make your research findable. From there, you can analyse your data using external workflows, publish it to specific <a href="./repositories.html" title="Repositories">data repositories</a> or <a href="./datapublications.html" title="Data Publication">data publications</a>.</p>
 <!-- TODO_ link to wms -->
 <nfdi-h2 id="data-management-datahub-in-and-out">Data management: DataHUB In-and-out</nfdi-h2>
-<p><a href="./AnnotatedResearchContext.html" title="Annotated Research Context">ARCs</a> are the core units managed in the DataHUB, which technically is a DataPLANT-tailored GitLab (see <a href="./git.html" title="Git">Git</a>). The DataHUB is more than a cloud service to share your ARCs with other researchers. It already helps you individually to stay synced and on track between multiple locations where you produce or process your research data. For instance, you might design an experiment on your office desktop, collect experiment data using an instrument in the lab and afterwards analyse the data on a workstation or remote server. All you need is internet access on these computers and you can smoothly develop your ARC from multiple locations, without loosing any information.
-There are different options to upload data into the DataHUB. DataPLANT's <a href="https://github.com/nfdi4plants/arcCommander/wiki" title="ArcCommander Wiki">arcCommander</a> supports you in easy ARC creation and management between your local computers and the DataHUB. For small changes to your ARC, you can directly use the tools offered in the DataHUB (via your web browser). Here you can create new files and directories in your ARC or edit, upload and download individual files or directories. Online editing is however currently limited to simple text-based files. Finally, as the DataHUB is based on GitLab, you can also interact with it via your usual git-routines. This also comes in handy, if you would like to transfer data for analyses via computational workflows to an external platform such as <a href="https://plants.usegalaxy.eu/" title="Galaxy Plants">galaxy</a>, and <em>vice versa</em> import the results into your ARC in the DataHUB. <!-- TODO add link to wms (see also [][KB-WMS]).  -->
+<p><a href="./arc.html" title="Annotated Research Context">ARCs</a> are the core units managed in the DataHUB, which technically is a DataPLANT-tailored GitLab (see <a href="./git.html" title="Git">Git</a>). The DataHUB is more than a cloud service to share your ARCs with other researchers. It already helps you individually to stay synced and on track between multiple locations where you produce or process your research data. For instance, you might design an experiment on your office desktop, collect experiment data using an instrument in the lab and afterwards analyse the data on a workstation or remote server. All you need is internet access on these computers and you can smoothly develop your ARC from multiple locations, without loosing any information.
+There are different options to upload data into the DataHUB. DataPLANT's <a href="https://github.com/nfdi4plants/arcCommander/wiki" title="ArcCommander Wiki">arcCommander</a> supports you in easy ARC creation and management between your local computers and the DataHUB. For small changes to your ARC, you can directly use the tools offered in the DataHUB (via your web browser). Here you can create new files and directories in your ARC or edit, upload and download individual files or directories. Online editing is however currently limited to simple text-based files. Finally, as the DataHUB is based on GitLab, you can also interact with it via your usual git-routines. This also comes in handy, if you would like to transfer data for analyses via computational workflows to an external platform such as <a href="https://plants.usegalaxy.eu/" title="Galaxy Plants">galaxy</a>, and <em>vice versa</em> import the results into your ARC in the DataHUB. <!-- TODO add link to wms (see also [][kb-WMS]).  -->
 Once you wish to share and collaborate on your ARC, the DataHUB allows you to invite other researchers.</p>
 <nfdi-h2 id="access-management-sharing-data-the-good-way">Access management: Sharing data the good way</nfdi-h2>
 <p>The DataHUB is connected to a login system (single sign-on solution) that allows researchers to register independent of their institutional affiliation. Different options allow you to adapt the scope of sharing your ARC. You can define, (i) with whom you want to share  – individual researchers or group of members such as your research consortium –, (ii) the member rights – granting permissions to read from, write to or manage the ARC – and (iii) for how long you want to grant these permissions. In this way, the DataHUB enables you to discuss your research data at different stages of the project and with varying collaborators. No matter if you just designed an experiment, already sampled your plants, ran the experiment or are in the middle of data wrangling or preparing a manuscript. For example, you can communicate metadata about your samples directly from the ARC with a core facility before submitting the samples for measurement to that facility and receive back measurement data and metadata directly into your ARC. Likewise, you could exchange assay data with a data scientist or computational biologist and receive back the results together with the documented workflow they employed. And everything without the need to download the data and finding a proper routine to share it.
@@ -104,8 +108,8 @@ Once your research project is ready for publication, you can either make the who
   - take photo of lab work and add directly to your project -->
 <nfdi-h3 id="register-with-dataplant">Register with DataPLANT</nfdi-h3>
 <p>In order to use the <a href="https://git.nfdi4plants.org" title="DataHUB">DataHUB</a> and other DataPLANT infrastructure and services, please <a href="https://register.nfdi4plants.org/registration" title="DataPLANT Registration">sign up</a> with DataPLANT.</p>
-<!-- Knowledgebase cross-references -->
-<!-- [KB-WMS]: ./WMS.html -->
+<!-- Knowledge base cross-references -->
+<!-- [kb-WMS]: ./WMS.html -->
 <!-- DataPLANT web links -->
 <!-- Reference web links -->
 

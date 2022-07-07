@@ -52,24 +52,28 @@
         <div slot="title">
           Fundamentals
         </div>
-        <h1 slot="inner" href="/content/docs/ResearchDataManagement.html">Research Data Management</h1>
-<h1 slot="inner" href="/content/docs/FAIRDataPrinciples.html">FAIR Data Principles</h1>
+        <h1 slot="inner" href="/content/docs/rdm.html">Research Data Management</h1>
+<h1 slot="inner" href="/content/docs/fair.html">FAIR Data Principles</h1>
 <h1 slot="inner" href="/content/docs/metadata.html">Metadata</h1>
 <h1 slot="inner" href="/content/docs/datasharing.html">Data Sharing</h1>
-<h1 slot="inner" href="/content/docs/DataPublications.html">Data Publications</h1>
-<h1 slot="inner" href="/content/docs/DataManagementPlan.html">Data Management Plan</h1>
-<h1 slot="inner" href="/content/docs/git.html">Git</h1>
+<h1 slot="inner" href="/content/docs/datapublications.html">Data Publications</h1>
+<h1 slot="inner" href="/content/docs/dmp.html">Data Management Plan</h1>
+<h1 slot="inner" href="/content/docs/git.html">Version Control & Git</h1>
 <h1 slot="inner" href="/content/docs/repositories.html">Repositories</h1>
 <h1 slot="inner" href="/content/docs/pids.html">Persistent Identifiers</h1>
 
       </nfdi-sidebar-element>
       <nfdi-sidebar-element slot="sidebar" isActive="true">
         <div slot="title">
-          Integration within DataPLANT
+          Implementation within DataPLANT
         </div>
-        <h1 slot="inner" href="/content/docs/AnnotatedResearchContext.html">Annotated Research Context</h1>
+        <h1 slot="inner" href="/content/docs/arc.html">Annotated Research Context</h1>
 <h2 slot="inner" href="/content/docs/quickstart_arc.html">ARC QuickStart</h2>
 <h1 slot="inner" href="/content/docs/datahub.html">DataHUB</h1>
+<!-- ```Training & Tutorials -->
+<!-- # Sync ARCs via GitHub Desktop:/content/docs/tutorials/github_desktop.html -->
+<!-- # Markdown:/content/docs/tutorials/markdown.html -->
+<!-- ``` -->
 
       </nfdi-sidebar-element>
       <h1 class="front-header">
@@ -80,7 +84,7 @@
       </i>
       <nfdi-toc></nfdi-toc>
       <nfdi-h1 id="annotated-research-context">Annotated Research Context</nfdi-h1>
-<p>The importance of <a href="./ResearchDataManagement.html" title="Research Data Management">Research Data Management (RDM)</a> systems steadily increases, as scientists and institutions generate big, heterogeneous data nowadays. According to the <a href="./FAIRDataPrinciples.html" title="FAIR Data principles">FAIR principles</a> such data should be available in open, public archives, stored in contextualized, non-proprietary formats. With the <strong>Annotated Research Context</strong> (ARC), DataPLANT provides an RDM platform to answer these requirements and to support machine-readability, as the system is entirely based on established standards. ARCs will be tagged with a persistent and unique identifier and contain, besides raw data, the entire information (metadata, external files, and code for computations) needed to reproduce the mapped studies. These can range from a single publication up to a multi-lab, long-term project. Thus, ARCs are FAIR Digital Objects (FDOs) and drive FAIRification of research data for fundamental plant research.</p>
+<p>The importance of <a href="./rdm.html" title="Research Data Management">Research Data Management (RDM)</a> systems steadily increases, as scientists and institutions generate big, heterogeneous data nowadays. According to the <a href="./fair.html" title="FAIR Data principles">FAIR principles</a> such data should be available in open, public archives, stored in contextualized, non-proprietary formats. With the <strong>Annotated Research Context</strong> (ARC), DataPLANT provides an RDM platform to answer these requirements and to support machine-readability, as the system is entirely based on established standards. ARCs will be tagged with a persistent and unique identifier and contain, besides raw data, the entire information (metadata, external files, and code for computations) needed to reproduce the mapped studies. These can range from a single publication up to a multi-lab, long-term project. Thus, ARCs are FAIR Digital Objects (FDOs) and drive FAIRification of research data for fundamental plant research.</p>
 <nfdi-h2 id="data-centric-approach">Data centric approach</nfdi-h2>
 <p>The data-centric model is based on an architecture in which data is the primary and permanent asset and applications are interchangeable. Thus, the data model precedes the implementation of any given service and application, which are in a state of constant change to meet user requirements and experiences or functionality extensions.
 To realize such a data centric approach for RDM in fundamental plant research, we propose the Annotated Research Context to capture and structure the complete research cycle meeting the FAIR requirements with low friction for the individual researcher. ARCs are self-contained and include assay or measurement data, workflow and computation results accompanied by metadata in one package. Their structure allows full user control over all metadata and facilitates usability, access, publication and sharing of the research. Thereby, ARCs are a practical implementation of existing standards encompassing the benefits of the <strong>ISA model</strong>, <strong>Common Workflow Language (CWL)</strong>, and <strong>Research Object Crates (RO-Crate)</strong>.</p>
@@ -179,7 +183,7 @@ Git (LFS) also ensures integrity of your data, as all objects in git are accesse
 <li><a href="https://www.commonwl.org/">Common Workflow Language</a></li>
 <li><a href="https://www.researchobject.org/ro-crate/">Research Object Crate</a></li>
 </ul>
-<!-- Knowledgebase cross-references -->
+<!-- Knowledge base cross-references -->
 <!-- DataPLANT web links -->
 <!-- Reference web links -->
 
@@ -198,7 +202,7 @@ Git (LFS) also ensures integrity of your data, as all objects in git are accesse
         .
       </div>
       <div>
-        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.github.io/tree/main/src/content/docs/AnnotatedResearchContext.md" style="margin-left: auto; display: block; width: 130px;">
+        <a target="_blank" href="https://github.com/nfdi4plants/nfdi4plants.github.io/tree/main/src/content/docs/arc.md" style="margin-left: auto; display: block; width: 130px;">
           ✏️ Edit this page
         </a>
       </div>
