@@ -170,10 +170,10 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledge base cross-references -->
 
-[kb-Metadata]: ./metadata.html "Metadata"
-[kb-pid]: ./pids.html  "Persistent Identifiers"
-[kb-ARC]: ./arc.html "Annotated Research Context"
-[kb-datahub]: ./datahub.html "DataPLANT DataHUB"
+[kb-Metadata]: ./Metadata.html "Metadata"
+[kb-pid]: ./PersistentIdentifiers.html  "Persistent Identifiers"
+[kb-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[kb-datahub]: ./DataHub.html "DataPLANT DataHUB"
 
 <!-- DataPLANT web links -->
 

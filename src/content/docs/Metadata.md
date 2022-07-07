@@ -96,12 +96,12 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledge base Cross-references -->
 
-[kb-FAIR]: ./fair.html "FAIR Data principles"
-[kb-DataSharing]: ./datasharing.html "Data Sharing"
-[kb-Repositories]: ./repositories.html "Repositories"
-[kb-datahub]: ./datahub.html "DataPLANT DataHUB"
-[kb-git]: ./git.html "Git"
-[kb-ARC]: ./arc.html "Annotated Research Context"
+[kb-FAIR]: ./FairDataPrinciples.html "FAIR Data principles"
+[kb-DataSharing]: ./DataSharing.html "Data Sharing"
+[kb-Repositories]: ./PublicDataRepositories.html "Repositories"
+[kb-datahub]: ./DataHub.html "DataPLANT DataHUB"
+[kb-git]: ./VersionControlGit.html "Git"
+[kb-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
 
 <!-- DataPLANT weblinks -->
 

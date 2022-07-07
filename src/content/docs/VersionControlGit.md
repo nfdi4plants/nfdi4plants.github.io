@@ -50,12 +50,12 @@ In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and se
 
 <!-- Knowledge base Cross-references -->
 
-[kb-FAIR]: ./fair.html "FAIR Data principles"
-[kb-Metadata]: ./metadata.html "Metadata"
-[kb-ARC]: ./arc.html "Annotated Research Context"
-[kb-RDM]: ./rdm.html "Research Data Management"
-[kb-DataSharing]: ./datasharing.html "Data Sharing"
-[kb-datahub]: ./datahub.html "DataPLANT DataHUB"
+[kb-FAIR]: ./FairDataPrinciples.html "FAIR Data principles"
+[kb-Metadata]: ./Metadata.html "Metadata"
+[kb-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[kb-RDM]: ./ResearchDataManagement.html "Research Data Management"
+[kb-DataSharing]: ./DataSharing.html "Data Sharing"
+[kb-datahub]: ./DataHub.html "DataPLANT DataHUB"
 
 <!-- DataPLANT web links -->
 

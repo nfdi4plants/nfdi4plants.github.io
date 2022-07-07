@@ -50,16 +50,16 @@ In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and se
 
 <!-- Knowledge base cross-references -->
 
-[kb-datapublications]: ./datapublications.html "Data Publication"
-[kb-FAIR]: ./fair.html "FAIR Data principles"
-[kb-Metadata]: ./metadata.html "Metadata"
-[kb-pid]: ./pids.html  "Persistent Identifiers"
-[kb-arccommander]: ./arccommander.html "arcCommander"
-[kb-ARC]: ./arc.html "Annotated Research Context"
-[kb-RDM]: ./rdm.html "Research Data Management"
-[kb-DataSharing]: ./datasharing.html "Data Sharing"
-[kb-git]: ./git.html "Git"
-[kb-Repositories]: ./repositories.html "Repositories"
+[kb-datapublications]: ./DataPublications.html "Data Publication"
+[kb-FAIR]: ./FairDataPrinciples.html "FAIR Data principles"
+[kb-Metadata]: ./Metadata.html "Metadata"
+[kb-pid]: ./PersistentIdentifiers.html  "Persistent Identifiers"
+[kb-arccommander]: ./ArcCommander.html "arcCommander"
+[kb-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[kb-RDM]: ./ResearchDataManagement.html "Research Data Management"
+[kb-DataSharing]: ./DataSharing.html "Data Sharing"
+[kb-git]: ./VersionControlGit.html "Git"
+[kb-Repositories]: ./PublicDataRepositories.html "Repositories"
 <!-- [kb-WMS]: ./WMS.html -->
 
 <!-- DataPLANT web links -->

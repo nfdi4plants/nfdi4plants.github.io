@@ -47,11 +47,11 @@ In order to use the [DataHUB][kb-datahub] and other DataPLANT infrastructure and
 
 <!-- Knowledge base Cross-references -->
 
-[kb-datapublications]: ./datapublications.html "Data Publication"
-[kb-FAIR]: ./fair.html "FAIR Data principles"
-[kb-pid]: ./pids.html  "Persistent Identifiers"
-[kb-ARC]: ./arc.html "Annotated Research Context"
-[kb-datahub]: ./datahub.html "DataPLANT DataHUB"
+[kb-datapublications]: ./DataPublications.html "Data Publication"
+[kb-FAIR]: ./FairDataPrinciples.html "FAIR Data principles"
+[kb-pid]: ./PersistentIdentifiers.html  "Persistent Identifiers"
+[kb-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[kb-datahub]: ./DataHub.html "DataPLANT DataHUB"
 
 <!-- Reference links -->
 [Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"

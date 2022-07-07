@@ -1,20 +1,36 @@
 # How-to "knowledge base"
 
+Your contribution to the DataPLANT knowledge base is highly appreciated.
+This *How-To* is intended to guide you on contributing via on of three general ways:
 
+1. Raising an issue via Helpdesk or GitHub
+    - Recommend missing topics
+    - Minor inconsistencies
+    - Errors in training materials or tutorials
+2. Suggesting changes via GitHub fork and pull request
+    - Review and adapt parts of existing articles or tutorials
+3. Authoring new content
+    - Add new content to the knowledge base
+
+- [Introduction](#introduction)
+  - [Authoring content](#authoring-content)
+  - [Sidebar](#sidebar)
+- [Do not!](#do-not)
+- [(Live) Testing](#live-testing)
+- [References](#references)
+- [Structure and format](#structure-and-format)
+- [Images](#images)
+- [File naming](#file-naming)
+- [Content](#content)
+  - [Addressing readers](#addressing-readers)
+  - [Language](#language)
+- [Link collection](#link-collection)
 
 
 ## Introduction
 
 The DataPLANT knowledge base is built on [nfdi-web-components](https://nfdi4plants.github.io/web-components-docs/) and will fit all **markdown** content into this "framework".
 For a general introduction to writing markdown, see: [Markdown tutorial](tutorials/markdown.md) and references therein.
-
-
-
-## Contribution: A community effort
-
-We 
-
-
 
 
 ### Authoring content
@@ -71,8 +87,8 @@ article_status: published
 To add a sidebar element to the page, use the codeblock syntax:
 
 <pre><code>```Data Management Plan
-# Data Management Plan:/docs/dmp.html
-# DataPLANT's Data Management Plan Generator:/docs/dmp.html#dataplants-data-management-plan-generator
+# Data Management Plan:/docs/DataManagementPlan.html
+# DataPLANT's Data Management Plan Generator:/docs/DataManagementPlan.html#dataplants-data-management-plan-generator
 ```</code></pre>
 
 - All text after the opening "```" will be parsed to the element title.
@@ -133,19 +149,19 @@ British English (?)
 
 <!-- Knowledge base cross-references -->
 
-[kb-datapublications]: ./datapublications.html "Data Publication"
-[kb-dmp]: ./dmp.html "Data Management Plan"
-[kb-FAIR]: ./fair.html "FAIR Data principles"
-[kb-Metadata]: ./metadata.html "Metadata"
-[kb-pid]: ./pids.html  "Persistent Identifiers"
-[kb-ARC]: ./arc.html "Annotated Research Context"
-[kb-datahub]: ./datahub.html "DataPLANT DataHUB"
-[kb-RDM]: ./rdm.html "Research Data Management"
-[kb-DataSharing]: ./datasharing.html "Data Sharing"
-[kb-git]: ./git.html "Git"
-[kb-Repositories]: ./repositories.html "Repositories"
-[quickstart-arc]: ./quickstart_arc.html "Quickstart ARC"
-<!-- [kb-arccommander]: ./arccommander.html "arcCommander" -->
+[kb-datapublications]: ./DataPublications.html "Data Publication"
+[kb-dmp]: ./DataManagementPlan.html "Data Management Plan"
+[kb-FAIR]: ./FairDataPrinciples.html "FAIR Data principles"
+[kb-Metadata]: ./Metadata.html "Metadata"
+[kb-pid]: ./PersistentIdentifiers.html  "Persistent Identifiers"
+[kb-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[kb-datahub]: ./DataHub.html "DataPLANT DataHUB"
+[kb-RDM]: ./ResearchDataManagement.html "Research Data Management"
+[kb-DataSharing]: ./DataSharing.html "Data Sharing"
+[kb-git]: ./VersionControlGit.html "Git"
+[kb-Repositories]: ./PublicDataRepositories.html "Repositories"
+[quickstart-arc]: ./QuickStart_arc.html "Quickstart ARC"
+<!-- [kb-arccommander]: ./ArcCommander.html "arcCommander" -->
 <!-- [kb-WMS]: ./WMS.html -->
 
 <!-- DataPLANT web links -->

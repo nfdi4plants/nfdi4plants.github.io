@@ -2,21 +2,21 @@
 ---
 
 ```Fundamentals
-# Research Data Management:/content/docs/rdm.html
-# FAIR Data Principles:/content/docs/fair.html
-# Metadata:/content/docs/metadata.html
-# Data Sharing:/content/docs/datasharing.html
-# Data Publications:/content/docs/datapublications.html
-# Data Management Plan:/content/docs/dmp.html
-# Version Control & Git:/content/docs/git.html
-# Repositories:/content/docs/repositories.html
-# Persistent Identifiers:/content/docs/pids.html
+# Research Data Management:/content/docs/ResearchDataManagement.html
+# FAIR Data Principles:/content/docs/FairDataPrinciples.html
+# Metadata:/content/docs/Metadata.html
+# Data Sharing:/content/docs/DataSharing.html
+# Data Publications:/content/docs/DataPublications.html
+# Data Management Plan:/content/docs/DataManagementPlan.html
+# Version Control & Git:/content/docs/VersionControlGit.html
+# Repositories:/content/docs/PublicDataRepositories.html
+# Persistent Identifiers:/content/docs/PersistentIdentifiers.html
 ```
 
 ```Implementation within DataPLANT
-# Annotated Research Context:/content/docs/arc.html
-## ARC QuickStart:/content/docs/quickstart_arc.html
-# DataHUB:/content/docs/datahub.html
+# Annotated Research Context:/content/docs/AnnotatedResearchContext.html
+## ARC QuickStart:/content/docs/QuickStart_arc.html
+# DataHUB:/content/docs/DataHub.html
 ```
 
 <!-- ```Training & Tutorials -->

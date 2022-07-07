@@ -75,10 +75,10 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledge base cross-references -->
 
-[kb-Metadata]: ./metadata.html "Metadata"
-[kb-pid]: ./pids.html  "Persistent Identifiers"
-[kb-datahub]: ./datahub.html "DataPLANT DataHUB"
-[kb-Repositories]: ./repositories.html "Repositories"
+[kb-Metadata]: ./Metadata.html "Metadata"
+[kb-pid]: ./PersistentIdentifiers.html  "Persistent Identifiers"
+[kb-datahub]: ./DataHub.html "DataPLANT DataHUB"
+[kb-Repositories]: ./PublicDataRepositories.html "Repositories"
 
 <!-- DataPLANT web links -->
 
