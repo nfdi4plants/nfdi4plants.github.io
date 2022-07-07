@@ -72,13 +72,27 @@ To add a sidebar element to the page, use the codeblock syntax:
   - Only headers up to `###` are parsed. All header with more depth are parsed to `###`.
 - Tries to match active browser url to referenced ``href`` of any element to set active page.
 
+
+## Do not!
+
+- Store a markdown (.md, .markdown) file in the /docs folder, that is not supposed to be parsed. Fornax will look for the yaml header and break if it does not exist.
+
+
+## (Live) Testing
+
+- see 
+
+> Note: 
+
+
+
 ## References
 
 - Literature / information references: additional bibliography block below
 - External links (tools, sites, platforms): as hyper-link
 - Knowledge base cross-references: relative path to *.md document, **BUT** replace the `.md` file extension with `.html`, as the markdown files are parsed to html.
 
-## Structure
+## Structure and format
 
 - Max. 3 headline levels (## & ###)
 

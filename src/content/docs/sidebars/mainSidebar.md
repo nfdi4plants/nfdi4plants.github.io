@@ -20,5 +20,6 @@
 ```
 
 ```Training & Tutorials
-# Annotated Research Context:/content/docs/arc.html
+<!-- # Sync ARCs via GitHub Desktop:/content/docs/tutorials/github_desktop.html -->
+<!-- # Markdown:/content/docs/tutorials/markdown.html -->
 ```

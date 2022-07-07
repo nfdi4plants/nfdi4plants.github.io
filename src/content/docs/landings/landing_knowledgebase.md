@@ -1,5 +1,5 @@
 ---
-layout: landing
+layout: docs
 title: Welcome to the DataPLANT knowledge base
 add toc: false
 add sidebar: sidebars\mainSidebar.md
