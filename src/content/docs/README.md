@@ -1,20 +1,36 @@
 # How-to "knowledge base"
 
+Your contribution to the DataPLANT knowledge base is highly appreciated.
+This *How-To* is intended to guide you on contributing via on of three general ways:
 
+1. Raising an issue via Helpdesk or GitHub
+    - Recommend missing topics
+    - Minor inconsistencies
+    - Errors in training materials or tutorials
+2. Suggesting changes via GitHub fork and pull request
+    - Review and adapt parts of existing articles or tutorials
+3. Authoring new content
+    - Add new content to the knowledge base
+
+- [Introduction](#introduction)
+  - [Authoring content](#authoring-content)
+  - [Sidebar](#sidebar)
+- [Do not!](#do-not)
+- [(Live) Testing](#live-testing)
+- [References](#references)
+- [Structure and format](#structure-and-format)
+- [Images](#images)
+- [File naming](#file-naming)
+- [Content](#content)
+  - [Addressing readers](#addressing-readers)
+  - [Language](#language)
+- [Link collection](#link-collection)
 
 
 ## Introduction
 
 The DataPLANT knowledge base is built on [nfdi-web-components](https://nfdi4plants.github.io/web-components-docs/) and will fit all **markdown** content into this "framework".
 For a general introduction to writing markdown, see: [Markdown tutorial](tutorials/markdown.md) and references therein.
-
-
-
-## Contribution: A community effort
-
-We 
-
-
 
 
 ### Authoring content
