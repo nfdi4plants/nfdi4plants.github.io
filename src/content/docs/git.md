@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Version control
+title: Version control & Git
 published: 2022-05-09
 author: Dominik Brilhaus
 author_orcid: https://orcid.org/0000-0001-9021-3197

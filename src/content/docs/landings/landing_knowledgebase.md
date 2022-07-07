@@ -5,7 +5,7 @@ add toc: false
 add sidebar: sidebars\mainSidebar.md
 ---
 
-We are very happy that you are interested to learn more about the DataPLANT universe. Feel free to click through the sections on the left
+We are very happy that you are interested to learn more about DataPLANT. Feel free to click through the sections on the left
 
 - to learn more about the **fundamentals** of research data management (RDM)
 - to read about DataPLANT tools and services and how FAIR RDM is **implemented in DataPLANT**
