@@ -141,13 +141,12 @@ To add a sidebar element to the page, use the codeblock syntax:
 British English (?)
 
 
-
 ## Link collection
 
 > Note: This is just a link collection for recurrent use in KB articles
 > Nothing automatised. Just copy/paste.
 
-<!-- Knowledge base cross-references -->
+<!-- Links to DataPLANT knowledge base (kb-) -->
 
 [kb-AnnotatedResearchContext]: ./AnnotatedResearchContext.html "Annotated Research Context"
 [kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
@@ -162,27 +161,31 @@ British English (?)
 [kb-ResearchDataManagement]: ./ResearchDataManagement.html "Research Data Management"
 [kb-VersionControlGit]: ./VersionControlGit.html "Git"
 
-<!-- DataPLANT web links -->
+<!-- Links to DataPLANT Homepage (hp-) -->
 
-[hp-registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
-[DataHUB]: <https://git.nfdi4plants.org> "DataHUB"
+[hp-Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
+[hp-DataHUB]: <https://git.nfdi4plants.org> "DataPLANT DataHUB"
+[hp-HelpDesk]: <https://helpdesk.nfdi4plants.org> "DataPLANT Help Desk"
+
+<!-- Links to DataPLANT GitHub (gh-) -->
+
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
 
-<!-- Reference web links -->
+<!-- Links to external (ext-) sources -->
 
-[galaxy]: <https://plants.usegalaxy.eu/> "Galaxy Plants"
-[omero]: <https://www.openmicroscopy.org/omero/> "Omero"
-[zenodo]: <https://zenodo.org/> "Zenodo"
-[invenio]: <https://inveniosoftware.org/products/rdm/> "Invenio"
-[data-journals]: https://www.researchdata.uni-jena.de/en/information/data-publication "RDM Jena Data Journals"
+[ext-galaxy]: <https://plants.usegalaxy.eu/> "Galaxy Plants"
+[ext-omero]: <https://www.openmicroscopy.org/omero/> "Omero"
+[ext-zenodo]: <https://zenodo.org/> "Zenodo"
+[ext-invenio]: <https://inveniosoftware.org/products/rdm/> "Invenio"
+[ext-DataJournals]: https://www.researchdata.uni-jena.de/en/information/data-publication "RDM Jena Data Journals"
 
-[EBI-PRIDE]: https://www.ebi.ac.uk/pride/ "EBI PRIDE"
-[re3data]: https://www.re3data.org/ "re3data.org"
+[ext-EBI-PRIDE]: https://www.ebi.ac.uk/pride/ "EBI PRIDE"
+[ext-re3data]: https://www.re3data.org/ "re3data.org"
+[ext-CreativeCommons]: https://creativecommons.org/ "Creative Commons"
+[ext-DublinCore]: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/> "DublinCore"
+[ext-DataCite]: <https://schema.datacite.org>  "DataCite"
+[fairsharing.org]: https://fairsharing.org/search?fairsharingRegistry=Standard "Standards at fairsharing.org"
 [doi]: https://www.doi.org/ "Digital Object Identifier"
 [orcid]: https://www.orcid.org/ "ORCID"
-[CC-licenses]: https://creativecommons.org/ "Creative Commons"
-[DublinCore]: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/> "DublinCore"
-[DataCite]: <https://schema.datacite.org>  "DataCite"
-[fairsharing.org]: https://fairsharing.org/search?fairsharingRegistry=Standard "Standards at fairsharing.org"

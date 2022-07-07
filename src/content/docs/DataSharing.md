@@ -20,7 +20,7 @@ Most researchers however want to share their data and are very aware what data t
 
 ## The one-stop-shop does not exist
 
-Today many options for sharing and collaborating on data are available and often consciously or incidentally integrated into daily research routines. These include prominent open source or commercial cloud platforms like nextcloud, google drive, dropbox, onedrive and many more. While these are great for synchronous collaboration on typical office data, text files, presentations or simple calculations, they offer limited capacities for data analyses, especially those required for large-scale or complex scientific data. Other solutions specifically designed to accommodate scientific data include electronic lab notebooks to document daily lab routines or platforms like [galaxy][galaxy] and [omero][omero] to analyze and share data from omics or imaging experiments, respectively.
+Today many options for sharing and collaborating on data are available and often consciously or incidentally integrated into daily research routines. These include prominent open source or commercial cloud platforms like nextcloud, google drive, dropbox, onedrive and many more. While these are great for synchronous collaboration on typical office data, text files, presentations or simple calculations, they offer limited capacities for data analyses, especially those required for large-scale or complex scientific data. Other solutions specifically designed to accommodate scientific data include electronic lab notebooks to document daily lab routines or platforms like [galaxy][ext-galaxy] and [omero][ext-omero] to analyze and share data from omics or imaging experiments, respectively.
 
 To varying extents, these platforms offer a mix of options for local and remote, asynchronous and synchronous collaboration, often supported by automated version-control to track file version history. Different modes and control of access to the data and different solutions for storage sites exist to suit various aspects of data security and property rights.
 
@@ -43,7 +43,7 @@ Name | Type | Tasks on data sharing
 
 ### Register with DataPLANT
 
-In order to use the [DataHUB][kb-DataHub] and other DataPLANT infrastructure and services, please [sign up][hp-registration]: with DataPLANT.  
+In order to use the [DataHUB][kb-DataHub] and other DataPLANT infrastructure and services, please [sign up][hp-Registration]: with DataPLANT.  
 
 <!-- Knowledge base Cross-references -->
 
@@ -54,6 +54,6 @@ In order to use the [DataHUB][kb-DataHub] and other DataPLANT infrastructure and
 [kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
 
 <!-- Reference links -->
-[hp-registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
-[omero]: <https://www.openmicroscopy.org/omero/> "Omero"
-[galaxy]: <https://plants.usegalaxy.eu/> "Galaxy Plants"
+[hp-Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
+[ext-omero]: <https://www.openmicroscopy.org/omero/> "Omero"
+[ext-galaxy]: <https://plants.usegalaxy.eu/> "Galaxy Plants"

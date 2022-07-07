@@ -53,7 +53,7 @@ The first step in (re)using data is to find them. Metadata and data should be ea
 
 A [persistent identifier][kb-PersistentIdentifiers] (PID) is a long-lasting reference, typically used in the context of digital resources accessible over the internet, in this case your dataset. Globally unique and persistent identifiers allow finding your data in the first place. Continuous availability of the digital object is guaranteed by registry providers, which maintain the link to the actual dataset.
 
-A PID you have probably already heard of as most biological journals assign them to manuscripts, is the Digital Object Identifier ([DOI][doi]). Your personal 16-digit [ORCID][orcid] or the accession number of your RNASeq dataset on GEO also represent examples for PIDs. An overview which scientific repositories assign which type of PID can be found at the registry of research data repositories ([re3data.org][re3data]).
+A PID you have probably already heard of as most biological journals assign them to manuscripts, is the Digital Object Identifier ([DOI][doi]). Your personal 16-digit [ORCID][orcid] or the accession number of your RNASeq dataset on GEO also represent examples for PIDs. An overview which scientific repositories assign which type of PID can be found at the registry of research data repositories ([re3data.org][ext-re3data]).
 
 #### F2. Data are described with rich metadata (defined by R1 below)
 
@@ -127,7 +127,7 @@ As author of your dataset you cannot expect other researchers to be familiar wit
 
 #### R1.1. (Meta)data are released with a clear and accessible data usage license
 
-You should clearly describe the usage rights for your data and include it in your metadata, as ambiguity could severely limit its reuse. Hence, the conditions under which the data can be used should be clear to machines and humans and can, e.g., be represented in form of a license. For scientific data, [Creative Commons licenses][CC-licenses] are commonly used.
+You should clearly describe the usage rights for your data and include it in your metadata, as ambiguity could severely limit its reuse. Hence, the conditions under which the data can be used should be clear to machines and humans and can, e.g., be represented in form of a license. For scientific data, [Creative Commons licenses][ext-CreativeCommons] are commonly used.
 
 #### R1.2. (Meta)data are associated with detailed provenance
 
@@ -182,8 +182,8 @@ Name | Type | Tasks on metadata
 
 <!-- Reference web links -->
 
-[EBI-PRIDE]: https://www.ebi.ac.uk/pride/ "EBI PRIDE"
-[re3data]: https://www.re3data.org/ "re3data.org"
+[ext-EBI-PRIDE]: https://www.ebi.ac.uk/pride/ "EBI PRIDE"
+[ext-re3data]: https://www.re3data.org/ "re3data.org"
 [doi]: https://www.doi.org/ "Digital Object Identifier"
 [orcid]: https://www.orcid.org/ "ORCID"
-[CC-licenses]: https://creativecommons.org/ "Creative Commons"
+[ext-CreativeCommons]: https://creativecommons.org/ "Creative Commons"

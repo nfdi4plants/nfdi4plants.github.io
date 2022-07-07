@@ -54,7 +54,7 @@ The diversity of metadata types, sources and stakeholders highlights that collec
 Metadata stakeholders from different environments have different understandings of what metadata is required for comprehension of the annotated data. As plant biologists we probably agree that, when retrieving data from a public repository or publication, it is beneficial to know what type of measurement was performed on what species of plants. By contrast, a computational biologist and a librarian might emphasize the importance of the programming environment required to interpret a script or the contributing authors and licenses, respectively.  
 
 As plant biologists, we frequently experience how hard it is (if at all possible) to reproduce an experiment described with too little information in a publication. So, the more metadata the merrier &ndash; wouldn't it be great to capture *all* metadata about a project? Realistically we can only collect a portion of metadata. To guide users on what metadata is encouraged to collect, different domains of data experts have formulated these requirements into what is often referred to as "metadata standards" or "minimum information standards".
-Examples for bibliographic and administrative metadata standards include [DublinCore] and [DataCite]. Prominent standards to annotate data relevant to different plant science domains are grouped under the "Minimum Information for Biological and Biomedical Investigations" ([MIBBI]) and define e.g. minimum information about a high-throughput SEQuencing Experiment ([MINSEQE]), Proteomics Experiment ([MIAPE]) or a Plant Phenotyping Experiment ([MIAPPE]). There are many more metadata standards available which can be explored at [fairsharing.org].  
+Examples for bibliographic and administrative metadata standards include [DublinCore][ext-DublinCore] and [DataCite][ext-DataCite]. Prominent standards to annotate data relevant to different plant science domains are grouped under the "Minimum Information for Biological and Biomedical Investigations" ([MIBBI]) and define e.g. minimum information about a high-throughput SEQuencing Experiment ([MINSEQE]), Proteomics Experiment ([MIAPE]) or a Plant Phenotyping Experiment ([MIAPPE]). There are many more metadata standards available which can be explored at [fairsharing.org].  
 The metadata standards can be regarded as "checklists", which, when followed, provide that the data is annotated with the required metadata attributes to make it comprehensible at least in the current context.
 
 ### Structuring
@@ -62,7 +62,7 @@ The metadata standards can be regarded as "checklists", which, when followed, pr
 Comprehensibility also strongly depends on the use of language. And not just the spoken language &ndash; English, German, Swahili, etc. &ndash; itself, but also different meanings of chosen words. While for a librarian the "title" usually refers to a publication item (e.g. manuscript or book) with "contributors" being "authors", "title" in bio-laboratory routines may refer to the name of a funded project with multiple publications (and titles). In said project "contributors" could include authors, but also other experimenters or data analysts and more. Likewise, the processes coming to a plant biologist's mind thinking about "protocols" (growing plants, collecting material, extracting RNA) will be of little help to a computer scientist trying to retrieve data (via HTTP or FTP) from a database.
 Furthermore, the librarian, the computer scientist and the plant biologist would probably have a very different approach to collect and represent the required metadata according to the intuition or conventions of their respective domain.
 Two technical solutions, schema and ontologies, help to overcome these ambiguities. Briefly, schema are structured documents that formulate a clear representation of the (metadata) information, thereby making it both human-readable and machine-processable. Ontologies are controlled vocabularies or thesauri with defined relations between the vocables that can be used to fill the schema. In this way, schema define where to find the information and ontologies interpret the information.
-The use of schema combined with ontologies is well-established for bibliographic and administrative metadata, where high-level and often generic metadata relevant to most scientific domains is described. In fact, the two examples of [DublinCore] and [DataCite] are not just checklists, but well-defined metadata schema. In more specialized scientific domains the use of schema is much less established.
+The use of schema combined with ontologies is well-established for bibliographic and administrative metadata, where high-level and often generic metadata relevant to most scientific domains is described. In fact, the two examples of [DublinCore][ext-DublinCore] and [DataCite][ext-DataCite] are not just checklists, but well-defined metadata schema. In more specialized scientific domains the use of schema is much less established.
 However, the metadata schema ISA (for investigation &ndash; study &ndash; assay) can be employed for the most versatile data types relevant in plant sciences. ISA allows intuitive, flexible and yet structured and conclusive data annotation with biological as well as bibliographic and administrative metadata. For more details, see ISA. <!-- TODO: add link to KB-ISA -->
 
 ### Sharing and curation
@@ -105,15 +105,15 @@ Name | Type | Tasks on metadata
 
 <!-- DataPLANT weblinks -->
 
-[DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
+[hp-DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
 
 <!-- Reference weblinks -->
 [Merriam]: https://www.merriam-webster.com/dictionary/metadata "Merriam Webster definition of metadata"
-[DublinCore]: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/> "DublinCore"
-[DataCite]: <https://schema.datacite.org>  "DataCite"
+[ext-DublinCore]: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/> "DublinCore"
+[ext-DataCite]: <https://schema.datacite.org>  "DataCite"
 [MIBBI]: https://fairsharing.org/3518 "MIBBI"
 [fairsharing.org]: https://fairsharing.org/search?fairsharingRegistry=Standard "Standards at fairsharing.org"
 [MIAPPE]: https://www.miappe.org "MIAPPE"

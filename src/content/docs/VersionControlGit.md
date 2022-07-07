@@ -50,7 +50,7 @@ Name | Type | Tasks on data sharing
 
 ### Register with DataPLANT
 
-In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and services, please [sign up][hp-registration]: with DataPLANT.  
+In order to use the [DataHUB][hp-DataHUB] and other DataPLANT infrastructure and services, please [sign up][hp-Registration]: with DataPLANT.  
 
 <!-- Knowledge base Cross-references -->
 
@@ -63,8 +63,8 @@ In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and se
 
 <!-- DataPLANT web links -->
 
-[hp-registration]: <https://register.nfdi4plants.org/> "DataPLANT Registration"
-[DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
+[hp-Registration]: <https://register.nfdi4plants.org/> "DataPLANT Registration"
+[hp-DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
 [gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
 
 <!-- Reference web links -->

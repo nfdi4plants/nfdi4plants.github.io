@@ -74,7 +74,7 @@ Name | Type | Tasks on metadata
 [kb-Metadata]: ./Metadata.html
 
 <!-- Reference links -->
-[DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
+[hp-DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 
 [PURLs]: https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator "Wikipedia PURLs"

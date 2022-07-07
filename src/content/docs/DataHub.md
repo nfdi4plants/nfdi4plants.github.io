@@ -12,13 +12,13 @@ article_status: published
 todo:
 ---
 
-The DataPLANT [DataHUB][DataHUB] is the platform where several strings of DataPLANT's [research data management][kb-ResearchDataManagement] run together. Here you can upload your research data as an annotated research context ([ARC][kb-AnnotatedResearchContext]), to document its changes (via [git][kb-VersionControlGit]-based version control) and [share][kb-DataSharing] it with collaborators. [Metadata][kb-Metadata] associated with your ARC feeds into the metadata registry to make your research findable. From there, you can analyse your data using external workflows, publish it to specific [data repositories][kb-PublicDataRepositories] or [data publications][kb-DataPublications].
+The DataPLANT [DataHUB][hp-DataHUB] is the platform where several strings of DataPLANT's [research data management][kb-ResearchDataManagement] run together. Here you can upload your research data as an annotated research context ([ARC][kb-AnnotatedResearchContext]), to document its changes (via [git][kb-VersionControlGit]-based version control) and [share][kb-DataSharing] it with collaborators. [Metadata][kb-Metadata] associated with your ARC feeds into the metadata registry to make your research findable. From there, you can analyse your data using external workflows, publish it to specific [data repositories][kb-PublicDataRepositories] or [data publications][kb-DataPublications].
 <!-- TODO_ link to wms -->
 
 ## Data management: DataHUB In-and-out
 
 [ARCs][kb-AnnotatedResearchContext] are the core units managed in the DataHUB, which technically is a DataPLANT-tailored GitLab (see [Git][kb-VersionControlGit]). The DataHUB is more than a cloud service to share your ARCs with other researchers. It already helps you individually to stay synced and on track between multiple locations where you produce or process your research data. For instance, you might design an experiment on your office desktop, collect experiment data using an instrument in the lab and afterwards analyse the data on a workstation or remote server. All you need is internet access on these computers and you can smoothly develop your ARC from multiple locations, without loosing any information.
-There are different options to upload data into the DataHUB. DataPLANT's [arcCommander][gh-ArcCommander] supports you in easy ARC creation and management between your local computers and the DataHUB. For small changes to your ARC, you can directly use the tools offered in the DataHUB (via your web browser). Here you can create new files and directories in your ARC or edit, upload and download individual files or directories. Online editing is however currently limited to simple text-based files. Finally, as the DataHUB is based on GitLab, you can also interact with it via your usual git-routines. This also comes in handy, if you would like to transfer data for analyses via computational workflows to an external platform such as [galaxy][galaxy], and *vice versa* import the results into your ARC in the DataHUB. <!-- TODO add link to wms (see also [][kb-WMS]).  -->
+There are different options to upload data into the DataHUB. DataPLANT's [arcCommander][gh-ArcCommander] supports you in easy ARC creation and management between your local computers and the DataHUB. For small changes to your ARC, you can directly use the tools offered in the DataHUB (via your web browser). Here you can create new files and directories in your ARC or edit, upload and download individual files or directories. Online editing is however currently limited to simple text-based files. Finally, as the DataHUB is based on GitLab, you can also interact with it via your usual git-routines. This also comes in handy, if you would like to transfer data for analyses via computational workflows to an external platform such as [galaxy][ext-galaxy], and *vice versa* import the results into your ARC in the DataHUB. <!-- TODO add link to wms (see also [][kb-WMS]).  -->
 Once you wish to share and collaborate on your ARC, the DataHUB allows you to invite other researchers.
 
 ## Access management: Sharing data the good way
@@ -46,7 +46,7 @@ A plant biologist's day-to-day routines circle around more than just data and co
 
 ### Register with DataPLANT
 
-In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and services, please [sign up][hp-registration]: with DataPLANT.  
+In order to use the [DataHUB][hp-DataHUB] and other DataPLANT infrastructure and services, please [sign up][hp-Registration]: with DataPLANT.  
 
 <!-- Knowledge base cross-references -->
 
@@ -64,12 +64,12 @@ In order to use the [DataHUB][DataHUB] and other DataPLANT infrastructure and se
 
 <!-- DataPLANT web links -->
 
-[hp-registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
-[DataHUB]: <https://git.nfdi4plants.org> "DataHUB"
+[hp-Registration]: <https://register.nfdi4plants.org/registration> "DataPLANT Registration"
+[hp-DataHUB]: <https://git.nfdi4plants.org> "DataHUB"
 [gh-ArcSpecs]: <https://github.com/nfdi4plants/ARC-specification/> "ARC specifications"
 [gh-ArcCommander]: <https://github.com/nfdi4plants/arcCommander/wiki> "ArcCommander Wiki"
 [gh-Swate]: <https://github.com/nfdi4plants/Swate/wiki> "Swate Wiki"
 
 <!-- Reference web links -->
 
-[galaxy]: https://plants.usegalaxy.eu/ "Galaxy Plants"
+[ext-galaxy]: https://plants.usegalaxy.eu/ "Galaxy Plants"
