@@ -14,7 +14,7 @@ todo:
 
 ## What are data repositories?
 
-Public data repositories are one option to [publish your research data][kb-datapublications]. They usually focus on the data &ndash; as opposed to other research outputs such as manuscripts. Data repositories assign [persistent identifiers][kb-PID] (e.g. a DOI) to your dataset and by that comply with requirements of most publication journals.  
+Public data repositories are one option to [publish your research data][kb-DataPublications]. They usually focus on the data &ndash; as opposed to other research outputs such as manuscripts. Data repositories assign [persistent identifiers][kb-PersistentIdentifiers] (e.g. a DOI) to your dataset and by that comply with requirements of most publication journals.  
 We differentiate between domain-specific and general-purpose repositories.
 
 ### Domain-specific data repositories
@@ -36,7 +36,7 @@ Repository | Description | Biological data domain | DataPLANT Templates availabl
 
 ### General-purpose repositories
 
-In cases where no suitable domain-specific repository exists, general-purpose repositories are an option to publicly deposit research data and receive a [PID][kb-pid]. A benefit of general-purpose repositories is that they allow deposition of virtually any data type. Also research data packages with mixes of data types and computational workflows can be deposited, which aligns well with typical plant science investigations. However, since these repositories can only foster compliance with metadata standards at a very generic level (e.g. bibliographic or technical, see [metadata][kb-Metadata]), they limit the capacity for [FAIR][kb-FAIR] reuse of data.  
+In cases where no suitable domain-specific repository exists, general-purpose repositories are an option to publicly deposit research data and receive a [PID][kb-PersistentIdentifiers]. A benefit of general-purpose repositories is that they allow deposition of virtually any data type. Also research data packages with mixes of data types and computational workflows can be deposited, which aligns well with typical plant science investigations. However, since these repositories can only foster compliance with metadata standards at a very generic level (e.g. bibliographic or technical, see [metadata][kb-Metadata]), they limit the capacity for [FAIR][kb-FairDataPrinciples] reuse of data.  
 
 Examples for general-purpose repositories include
 
@@ -71,10 +71,10 @@ The following table gives an overview about DataPLANT tools and services related
 
 Name | Type | Tasks on metadata 
 ----------------|-----------|------------------ 
-**[ARC][kb-ARC]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
+**[ARC][kb-AnnotatedResearchContext]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
 **[Swate][Swate]** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
 **[ArcCommander][ArcCommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
-**[DataHUB][kb-datahub]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+**[DataHUB][kb-DataHub]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 <!-- ~~Converter~~ | Tool under construction | **Curate:** <ul><li>Harmonize and migrate between metadata schema</li><li>Manage who can view or access your ARC</li></ul>
 **Metadata registry** | Service | **Share:** <ul><li>Find ARC (meta)data</li></ul> -->
 
@@ -90,13 +90,13 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledge base cross-references -->
 
-[kb-datapublications]: ./DataPublications.html "Data Publication"
-[kb-FAIR]: ./FairDataPrinciples.html "FAIR Data principles"
+[kb-DataPublications]: ./DataPublications.html "Data Publication"
+[kb-FairDataPrinciples]: ./FairDataPrinciples.html "FAIR Data principles"
 [kb-Metadata]: ./Metadata.html "Metadata"
-[kb-pid]: ./PersistentIdentifiers.html  "Persistent Identifiers"
+[kb-PersistentIdentifiers]: ./PersistentIdentifiers.html  "Persistent Identifiers"
 <!-- [kb-arccommander]: ./ArcCommander.html "arcCommander" -->
-[kb-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
-[kb-datahub]: ./DataHub.html "DataPLANT DataHUB"
+[kb-AnnotatedResearchContext]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
 
 <!-- DataPLANT web links -->
 

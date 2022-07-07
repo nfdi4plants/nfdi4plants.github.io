@@ -38,7 +38,7 @@ The different types of metadata are collected from various analog and digital so
 
 ## Why do I benefit from metadata?
 
-Before going any deeper into the what and how, let us understand why we benefit from annotating our data with rich metadata. For this it helps to recap along the [FAIR principles][kb-FAIR] how metadata makes your data comprehensible and utilizable for yourself and your peers.
+Before going any deeper into the what and how, let us understand why we benefit from annotating our data with rich metadata. For this it helps to recap along the [FAIR principles][kb-FairDataPrinciples] how metadata makes your data comprehensible and utilizable for yourself and your peers.
 
 - **Findable**:  As metadata names the content of the data (e.g., what was examined, for what purpose, with what method), it is the basis for search engines and ideally makes it categorizable for people and machines and thus easier to search for and find.
 - **Accessible**: Metadata provides information about the origin (e.g., persons, institutions) and the location of storage (e.g., repository) as well as access rights.
@@ -68,8 +68,8 @@ However, the metadata schema ISA (for investigation &ndash; study &ndash; assay)
 ### Sharing and curation
 
 In order to make your data FAIR, it needs to be packaged with metadata and shared in a findable and accessible repository.
-There are cases where metadata needs to be made accessible independently of the annotated data, e.g. for legal reasons such as dual-use, intellectual property rights or simply since the data is not yet published. In any case, there are at least as many routines for sharing or publishing metadata as there are for data. For more information please see [DataSharing][kb-DataSharing] and [Repositories][kb-Repositories].
-During project lifetime data and metadata continuously develops and requires adaptations and updates. Proper versioning helps to keep an overview of the different stakeholders and tasks acting on metadata. Easy and traceable documentation of these processes can be achieved with general-purpose version control through [git][kb-git]. As data and metadata develops the need to harmonize between metadata outputs may occur. If metadata is properly collected in a schema, converters can help to migrate between different metadata schema or securely export information from one schema to the other.
+There are cases where metadata needs to be made accessible independently of the annotated data, e.g. for legal reasons such as dual-use, intellectual property rights or simply since the data is not yet published. In any case, there are at least as many routines for sharing or publishing metadata as there are for data. For more information please see [DataSharing][kb-DataSharing] and [Repositories][kb-PublicDataRepositories].
+During project lifetime data and metadata continuously develops and requires adaptations and updates. Proper versioning helps to keep an overview of the different stakeholders and tasks acting on metadata. Easy and traceable documentation of these processes can be achieved with general-purpose version control through [git][kb-VersionControlGit]. As data and metadata develops the need to harmonize between metadata outputs may occur. If metadata is properly collected in a schema, converters can help to migrate between different metadata schema or securely export information from one schema to the other.
 
 ## How does DataPLANT support me in metadata annotation?
 
@@ -77,10 +77,10 @@ The following table gives an overview about DataPLANT tools and services related
 
 Name | Type | Tasks on metadata 
 ----------------|-----------|------------------ 
-**[ARC][kb-ARC]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
+**[ARC][kb-AnnotatedResearchContext]**  <br> (Annotated Research Context) | Standard | **Structure:** <ul><li>Package data with metadata</li></ul>
 **[Swate][Swate]** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
 **[ArcCommander][ArcCommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
-**[DataHUB][kb-datahub]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+**[DataHUB][kb-DataHub]** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 <!-- ~~Converter~~ | Tool under construction | **Curate:** <ul><li>Harmonize and migrate between metadata schema</li><li>Manage who can view or access your ARC</li></ul> -->
 <!-- **Metadata registry** | Service | **Share:** <ul><li>Find ARC (meta)data</li></ul> -->
 
@@ -96,12 +96,12 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledge base Cross-references -->
 
-[kb-FAIR]: ./FairDataPrinciples.html "FAIR Data principles"
+[kb-FairDataPrinciples]: ./FairDataPrinciples.html "FAIR Data principles"
 [kb-DataSharing]: ./DataSharing.html "Data Sharing"
-[kb-Repositories]: ./PublicDataRepositories.html "Repositories"
-[kb-datahub]: ./DataHub.html "DataPLANT DataHUB"
-[kb-git]: ./VersionControlGit.html "Git"
-[kb-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[kb-PublicDataRepositories]: ./PublicDataRepositories.html "Repositories"
+[kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
+[kb-VersionControlGit]: ./VersionControlGit.html "Git"
+[kb-AnnotatedResearchContext]: ./AnnotatedResearchContext.html "Annotated Research Context"
 
 <!-- DataPLANT weblinks -->
 

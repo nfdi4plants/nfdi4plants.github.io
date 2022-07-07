@@ -149,18 +149,18 @@ British English (?)
 
 <!-- Knowledge base cross-references -->
 
-[kb-datapublications]: ./DataPublications.html "Data Publication"
-[kb-dmp]: ./DataManagementPlan.html "Data Management Plan"
-[kb-FAIR]: ./FairDataPrinciples.html "FAIR Data principles"
+[kb-DataPublications]: ./DataPublications.html "Data Publication"
+[kb-DataManagementPlan]: ./DataManagementPlan.html "Data Management Plan"
+[kb-FairDataPrinciples]: ./FairDataPrinciples.html "FAIR Data principles"
 [kb-Metadata]: ./Metadata.html "Metadata"
-[kb-pid]: ./PersistentIdentifiers.html  "Persistent Identifiers"
-[kb-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
-[kb-datahub]: ./DataHub.html "DataPLANT DataHUB"
-[kb-RDM]: ./ResearchDataManagement.html "Research Data Management"
+[kb-PersistentIdentifiers]: ./PersistentIdentifiers.html  "Persistent Identifiers"
+[kb-AnnotatedResearchContext]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
+[kb-ResearchDataManagement]: ./ResearchDataManagement.html "Research Data Management"
 [kb-DataSharing]: ./DataSharing.html "Data Sharing"
-[kb-git]: ./VersionControlGit.html "Git"
-[kb-Repositories]: ./PublicDataRepositories.html "Repositories"
-[quickstart-arc]: ./QuickStart_arc.html "Quickstart ARC"
+[kb-VersionControlGit]: ./VersionControlGit.html "Git"
+[kb-PublicDataRepositories]: ./PublicDataRepositories.html "Repositories"
+[kb-QuickStart_arc]: ./QuickStart_arc.html "Quickstart ARC"
 <!-- [kb-arccommander]: ./ArcCommander.html "arcCommander" -->
 <!-- [kb-WMS]: ./WMS.html -->
 

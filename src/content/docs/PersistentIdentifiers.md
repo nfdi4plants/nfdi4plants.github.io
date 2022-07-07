@@ -18,7 +18,7 @@ This may sound complicated, but consider a daily life example for PIDs: the Inte
 
 ## Globally unique and persistent
 
-Two major requirements of PIDs are the reason they contribute to virtually all aspects of [FAIR][kb-FAIR] data management. PIDs need to be **globally unique** and **persistent**, i.e. they stably resolve to identify the respective resource, also in the (foreseeable) future. Global uniqueness is nowadays technically achieved through use of the internet. In simple words: no web address may exist more than once. However, it is good to know that standard URLs (uniform resource locators, "web addresses") cannot be considered PIDs. Sparing the technical details behind PIDs (see [PURLs] and [Handles]), consider the homepage of an institute where a publication was originally stored at the URL  
+Two major requirements of PIDs are the reason they contribute to virtually all aspects of [FAIR][kb-FairDataPrinciples] data management. PIDs need to be **globally unique** and **persistent**, i.e. they stably resolve to identify the respective resource, also in the (foreseeable) future. Global uniqueness is nowadays technically achieved through use of the internet. In simple words: no web address may exist more than once. However, it is good to know that standard URLs (uniform resource locators, "web addresses") cannot be considered PIDs. Sparing the technical details behind PIDs (see [PURLs] and [Handles]), consider the homepage of an institute where a publication was originally stored at the URL  
 `https://plant-science-institute.com/research/publications/publication` and after homepage restructuring moved to  
 `https://plant-science-institute.com/about/outputs/publication`. The earlier URL becomes a "dead link", impossible to be properly resolved and identify the linked publication, a phenomenon known as "link rot".
 Although many PIDs resolve to a URL, taking the user to the proper location, they more importantly resolve to the content of the linked digital object (e.g. a dataset or publication). The example shows that the technical layer alone (global uniqueness through web addresses) is not enough to guarantee persistence and prevent "link rot". This is achieved socially through defined policies and institutions: PIDs are actively curated and managed through registration services overseeing that the linked digital object is properly located.
@@ -29,7 +29,7 @@ Although basically any imaginable &ndash; both analog and digital &ndash; entity
 
 The two best known examples for PIDs used in science are **DOI** (Digital Object Identifier) and **ORCID** (Open Researcher and Contributor ID).
 The most established use of DOIs is to identify publications. Similar to an ISBN for a book, a DOI alone suffices to persistently link and refer to a publication, without naming the title, authors or journal. Usually DOIs are not actively requested by standard users, e.g. the authors submitting a manuscript to a journal or data to a repository, but they are assigned during the publication process, e.g. by the journal or data repository acting as the PID registration service.
-<!-- As scientists, we benefit from DOI-referenced publications by better findability and more concise referencing (see also [kb-datapublications]) -->
+<!-- As scientists, we benefit from DOI-referenced publications by better findability and more concise referencing (see also [kb-DataPublications]) -->
 On the other hand, you, as a researcher, need to request an ORCID (once). ORCIDs concisely identify researchers independent of identical names between multiple researchers or name changes (e.g. due to wedding). They can actively be curated, e.g. to link and present all publication or other digital outputs.
 
 <!-- In summary, PIDs help making data FAIR. A dataset that is persistently linked via a PID will be findable and accesible and thereby  -->
@@ -70,7 +70,7 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledge base Cross-references -->
 
-[kb-FAIR]: ./FairDataPrinciples.html
+[kb-FairDataPrinciples]: ./FairDataPrinciples.html
 [kb-Metadata]: ./Metadata.html
 
 <!-- Reference links -->

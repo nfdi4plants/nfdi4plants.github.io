@@ -14,7 +14,7 @@ todo:
 
 # Annotated Research Context
 
-The importance of [Research Data Management (RDM)][kb-RDM] systems steadily increases, as scientists and institutions generate big, heterogeneous data nowadays. According to the [FAIR principles][kb-FAIR] such data should be available in open, public archives, stored in contextualized, non-proprietary formats. With the **Annotated Research Context** (ARC), DataPLANT provides an RDM platform to answer these requirements and to support machine-readability, as the system is entirely based on established standards. ARCs will be tagged with a persistent and unique identifier and contain, besides raw data, the entire information (metadata, external files, and code for computations) needed to reproduce the mapped studies. These can range from a single publication up to a multi-lab, long-term project. Thus, ARCs are FAIR Digital Objects (FDOs) and drive FAIRification of research data for fundamental plant research.
+The importance of [Research Data Management (RDM)][kb-ResearchDataManagement] systems steadily increases, as scientists and institutions generate big, heterogeneous data nowadays. According to the [FAIR principles][kb-FairDataPrinciples] such data should be available in open, public archives, stored in contextualized, non-proprietary formats. With the **Annotated Research Context** (ARC), DataPLANT provides an RDM platform to answer these requirements and to support machine-readability, as the system is entirely based on established standards. ARCs will be tagged with a persistent and unique identifier and contain, besides raw data, the entire information (metadata, external files, and code for computations) needed to reproduce the mapped studies. These can range from a single publication up to a multi-lab, long-term project. Thus, ARCs are FAIR Digital Objects (FDOs) and drive FAIRification of research data for fundamental plant research.
 
 ## Data centric approach
 
@@ -51,15 +51,15 @@ Detailed information can be found in the official [ARC Specification][ARCspecs].
  -->
 ### Collaborative work and versioning
 
-ARCs are based on the lightweight and decentralized version-control system [git][kb-git]. Thereby, every ARC contains its entire previous versions and is shipped together with them. Distribution and management of access rights is accomplished via DataPLANT’s GitLab instance functioning as [DataHUB][kb-datahub]. The git extension Git LFS takes care of files with a size of >100 Mb, as it stores the files in a separate location to avoid long synchronization times and creates a pointer file in the repository to establish a connection.
-Git (LFS) also ensures integrity of your data, as all objects in git are accessed using the SHA-1 hash function. Changing the content of a file thereby also results in a change of the checksum. This prevents corruption of files, as Git will return an error if some data cannot be found based on its checksum (see also [git][kb-git]).
+ARCs are based on the lightweight and decentralized version-control system [git][kb-VersionControlGit]. Thereby, every ARC contains its entire previous versions and is shipped together with them. Distribution and management of access rights is accomplished via DataPLANT’s GitLab instance functioning as [DataHUB][kb-DataHub]. The git extension Git LFS takes care of files with a size of >100 Mb, as it stores the files in a separate location to avoid long synchronization times and creates a pointer file in the repository to establish a connection.
+Git (LFS) also ensures integrity of your data, as all objects in git are accessed using the SHA-1 hash function. Changing the content of a file thereby also results in a change of the checksum. This prevents corruption of files, as Git will return an error if some data cannot be found based on its checksum (see also [git][kb-VersionControlGit]).
 <!-- TODOs: move some git details to git article and rather link here -->
 
 ## ARC features & prospects
 
 ### Single point of entry logic
 
-Once an ARC is filled, it should be able to target and interact with multiple platforms and services for research data management and computation. ARCs are stored on DataPLANTs DataHUB (GitLab), which enables collaborative work and version control immediately after initiation. Currently developed converters will be able to extract, transform, and validate metadata within an ARC to established standards like the Research Object Crate (RO-Crate) and facilitate an automatic upload to desired domain-specific [endpoint repositories][kb-Repositories] (such as GEO, MetaboLights, or PRIDE). Reproducible and transparent analyses are furthermore supported by connectivity to the workflow management system Galaxy.  
+Once an ARC is filled, it should be able to target and interact with multiple platforms and services for research data management and computation. ARCs are stored on DataPLANTs DataHUB (GitLab), which enables collaborative work and version control immediately after initiation. Currently developed converters will be able to extract, transform, and validate metadata within an ARC to established standards like the Research Object Crate (RO-Crate) and facilitate an automatic upload to desired domain-specific [endpoint repositories][kb-PublicDataRepositories] (such as GEO, MetaboLights, or PRIDE). Reproducible and transparent analyses are furthermore supported by connectivity to the workflow management system Galaxy.  
 
 ### Data provenance & integrity
 
@@ -79,7 +79,7 @@ The following table gives an overview about DataPLANT tools and services support
 
 Name | Type | Tasks on metadata
 ----------------|-----------|------------------
-**[DataPLANT's QuickStart on ARCs][quickstart-arc]**   | Document | **Tutorial:** <ul><li>How to initialize an ARC<li>How to package data with metadata</li></ul>
+**[DataPLANT's QuickStart on ARCs][kb-QuickStart_arc]**   | Document | **Tutorial:** <ul><li>How to initialize an ARC<li>How to package data with metadata</li></ul>
 **[Swate][Swate]** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
 **[ArcCommander][ArcCommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
 **[DataHUB](DataHub.html)** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
@@ -105,12 +105,12 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledge base cross-references -->
 
-[kb-git]: ./VersionControlGit.html "Git"
-[kb-datahub]: ./DataHub.html "DataPLANT DataHUB"
-[kb-FAIR]: ./FairDataPrinciples.html "FAIR Data principles"
-[quickstart-arc]: ./QuickStart_arc.html "Quickstart ARC"
-[kb-Repositories]: ./PublicDataRepositories.html "Repositories"
-[kb-RDM]: ./ResearchDataManagement.html "Research Data Management"
+[kb-VersionControlGit]: ./VersionControlGit.html "Git"
+[kb-DataHub]: ./DataHub.html "DataPLANT DataHUB"
+[kb-FairDataPrinciples]: ./FairDataPrinciples.html "FAIR Data principles"
+[kb-QuickStart_arc]: ./QuickStart_arc.html "Quickstart ARC"
+[kb-PublicDataRepositories]: ./PublicDataRepositories.html "Repositories"
+[kb-ResearchDataManagement]: ./ResearchDataManagement.html "Research Data Management"
 [kb-DataSharing]: ./DataSharing.html "Data Sharing"
 
 <!-- DataPLANT web links -->
