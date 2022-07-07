@@ -80,17 +80,17 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledge base cross-references -->
 
-[kb-datapublications]: ./datapublications.html "Data Publication"
-[kb-dmp]: ./dmp.html "Data Management Plan"
-[kb-FAIR]: ./fair.html "FAIR Data principles"
-[kb-Metadata]: ./metadata.html "Metadata"
-[kb-pid]: ./pids.html  "Persistent Identifiers"
-[kb-ARC]: ./arc.html "Annotated Research Context"
-[kb-datahub]: ./datahub.html "DataPLANT DataHUB"
-[kb-RDM]: ./rdm.html "Research Data Management"
-[kb-DataSharing]: ./datasharing.html "Data Sharing"
-[kb-git]: ./git.html "Git"
-[kb-Repositories]: ./repositories.html "Repositories"
+[kb-datapublications]: ./DataPublications.html "Data Publication"
+[kb-dmp]: ./DataManagementPlan.html "Data Management Plan"
+[kb-FAIR]: ./FairDataPrinciples.html "FAIR Data principles"
+[kb-Metadata]: ./Metadata.html "Metadata"
+[kb-pid]: ./PersistentIdentifiers.html  "Persistent Identifiers"
+[kb-ARC]: ./AnnotatedResearchContext.html "Annotated Research Context"
+[kb-datahub]: ./DataHub.html "DataPLANT DataHUB"
+[kb-RDM]: ./ResearchDataManagement.html "Research Data Management"
+[kb-DataSharing]: ./DataSharing.html "Data Sharing"
+[kb-git]: ./VersionControlGit.html "Git"
+[kb-Repositories]: ./PublicDataRepositories.html "Repositories"
 
 <!-- DataPLANT web links -->
 

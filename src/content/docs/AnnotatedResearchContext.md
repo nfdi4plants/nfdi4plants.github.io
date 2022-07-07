@@ -82,7 +82,7 @@ Name | Type | Tasks on metadata
 **[DataPLANT's QuickStart on ARCs][quickstart-arc]**   | Document | **Tutorial:** <ul><li>How to initialize an ARC<li>How to package data with metadata</li></ul>
 **[Swate][Swate]** <br> (Swate Workflow Annotation Tool for Excel) | Tool | **Collect and structure:** <ul><li>Annotate experimental and computational workflows with ISA metadata schema</li><li>Easy use of ontologies and controlled vocabularies</li><li>Metadata templates for versatile data types</li></ul>
 **[ArcCommander][ArcCommander]** | Tool | **Collect, structure and share:** <ul><li>Add bibliographical metadata to your ARC</li><li>ARC version control and sharing via DataPLANT's DataHUB</li><li>Automated metadata referencing and version control as your ARC grows</li></ul>
-**[DataHUB](datahub.html)** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
+**[DataHUB](DataHub.html)** | Service | **Share:** <ul><li>Federated system to share ARCs</li><li>Manage who can view or access your ARC</li></ul>
 **Invenio** | Service under construction | **Share:** <ul><li>Assign a DOI to an ARC</li></ul>
 **Metadata registry** | Service under construction | **Share:** <ul><li>Find ARC (meta)data</li></ul>
 **Converters** | Tool under construction | **Curate:** <ul><li>Harmonize and migrate between metadata schema
@@ -105,13 +105,13 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledge base cross-references -->
 
-[kb-git]: ./git.html "Git"
-[kb-datahub]: ./datahub.html "DataPLANT DataHUB"
-[kb-FAIR]: ./fair.html "FAIR Data principles"
-[quickstart-arc]: ./quickstart_arc.html "Quickstart ARC"
-[kb-Repositories]: ./repositories.html "Repositories"
-[kb-RDM]: ./rdm.html "Research Data Management"
-[kb-DataSharing]: ./datasharing.html "Data Sharing"
+[kb-git]: ./VersionControlGit.html "Git"
+[kb-datahub]: ./DataHub.html "DataPLANT DataHUB"
+[kb-FAIR]: ./FairDataPrinciples.html "FAIR Data principles"
+[quickstart-arc]: ./QuickStart_arc.html "Quickstart ARC"
+[kb-Repositories]: ./PublicDataRepositories.html "Repositories"
+[kb-RDM]: ./ResearchDataManagement.html "Research Data Management"
+[kb-DataSharing]: ./DataSharing.html "Data Sharing"
 
 <!-- DataPLANT web links -->
 

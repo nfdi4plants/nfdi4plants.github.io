@@ -70,8 +70,8 @@ Name | Type | Tasks on metadata
 
 <!-- Knowledge base Cross-references -->
 
-[kb-FAIR]: ./fair.html
-[kb-Metadata]: ./metadata.html
+[kb-FAIR]: ./FairDataPrinciples.html
+[kb-Metadata]: ./Metadata.html
 
 <!-- Reference links -->
 [DataHUB]: <https://git.nfdi4plants.org> "ARC DataHUB"
