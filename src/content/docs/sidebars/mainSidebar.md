@@ -19,7 +19,7 @@
 # DataHUB:/content/docs/datahub.html
 ```
 
-```Training & Tutorials
+<!-- ```Training & Tutorials -->
 <!-- # Sync ARCs via GitHub Desktop:/content/docs/tutorials/github_desktop.html -->
 <!-- # Markdown:/content/docs/tutorials/markdown.html -->
-```
+<!-- ``` -->
