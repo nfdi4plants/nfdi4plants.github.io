@@ -20,6 +20,7 @@
 ```
 
 <!-- ```Training & Tutorials -->
+<!-- # Swate Tutorial Videos:/content/docs/swate_videos.html -->
 <!-- # Sync ARCs via GitHub Desktop:/content/docs/tutorials/github_desktop.html -->
 <!-- # Markdown:/content/docs/tutorials/markdown.html -->
 <!-- ``` -->
