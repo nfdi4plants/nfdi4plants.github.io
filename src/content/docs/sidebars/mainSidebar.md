@@ -24,3 +24,7 @@
 <!-- # Sync ARCs via GitHub Desktop:/content/docs/tutorials/github_desktop.html -->
 <!-- # Markdown:/content/docs/tutorials/markdown.html -->
 <!-- ``` -->
+
+```Feedback
+# Feedback & Contribution:/content/docs/Feedback.html
+```

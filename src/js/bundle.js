@@ -10884,7 +10884,10 @@ let Navbar = class extends s$1 {
                     Fundamentals
                   </a>
                   <a class=${this.url == "${mainPageBaseUrl}content/docs/AnnotatedResearchContext.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/docs/AnnotatedResearchContext.html">
-                    Integration within DataPLANT
+                    Implementation within DataPLANT
+                  </a>
+                  <a class=${this.url == "${mainPageBaseUrl}content/docs/Feedback.html" ? "navbar-item is-active smooth-hover" : "navbar-item"} href="${mainPageBaseUrl}content/docs/Feedback.html">
+                    Feedback
                   </a>
                 </div>
               </div>
