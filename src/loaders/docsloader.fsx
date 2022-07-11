@@ -18,7 +18,7 @@ let loader (projectRoot: string) (siteContent: SiteContents) =
         |> Array.filter (fun n -> n.EndsWith ".md")
         |> Array.filter (fun n -> n.Contains "README.md" |> not)
 
-    let docs : DocsData [] = files |> Array.map (Docs.loadFile projectRoot contentDir)
+    let docs : Docs [] = files |> Array.map (fun fileName -> Docs.loadFile(projectRoot, contentDir, fileName) )
 
     docs |> Array.iter siteContent.Add
 

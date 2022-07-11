@@ -7,7 +7,7 @@ open Layout
 
 let generate' (ctx : SiteContents) (page: string) =
     let docs = 
-        ctx.TryGetValues<DocsData>() 
+        ctx.TryGetValues<Docs>() 
         |> Option.defaultValue Seq.empty
 
     // printfn "Number of generated docs: (Generator) %i" <| Seq.length docs
@@ -21,7 +21,7 @@ let generate' (ctx : SiteContents) (page: string) =
     match relevantDoc with
     | Some page ->
          Layout.layout ctx page.title [
-            Components.docsLayout baseUrl page
+            Components.docsLayout(baseUrl, page)
         ]
     | None -> 
         printfn "[Docs-Generator] No docs page found for %s" page
