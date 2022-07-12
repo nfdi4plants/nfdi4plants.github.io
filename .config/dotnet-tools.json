@@ -7,12 +7,6 @@
       "commands": [
         "fornax"
       ]
-    },
-    "paket": {
-      "version": "7.1.5",
-      "commands": [
-        "paket"
-      ]
     }
   }
 }

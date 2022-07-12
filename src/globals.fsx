@@ -382,16 +382,6 @@ module Predicates =
             page.Contains ".ionide"
         fileShouldBeExcluded |> not
 
-    let DocsPredicate (projectRoot: string, page: string) =
-        let fileName = Path.Combine(projectRoot,page)
-        let ext = Path.GetExtension page
-        if ext = ".md" then
-            let ctn = File.ReadAllText fileName
-            page.Contains("_public") |> not
-            && ctn.Contains("layout: docs")
-        else
-            false
-
 module News =
         
     let getStringForMonth (m:int) =

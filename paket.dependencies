@@ -1,7 +1,0 @@
-generate_load_scripts: true
-source https://api.nuget.org/v3/index.json
-
-storage: none
-framework: net5.0
-nuget Markdig
-nuget Nfdi4Plants.Fornax

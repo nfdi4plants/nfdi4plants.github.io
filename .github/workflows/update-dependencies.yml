@@ -48,11 +48,12 @@ jobs:
       - name: Bundle npm packages
         run: rollup --config rollup.config.js
           
-      - name: Restore dotnet tools
-        run: dotnet tool restore
+      # Nfdi4Plants.Fornax is only used for docs logic, which was separated from the main page.
+      # - name: Restore dotnet tools
+      #   run: dotnet tool restore
         
-      - name: Update to latest Nfdi4Plants.fornax version
-        run: dotnet paket update Nfdi4Plants.Fornax
+      # - name: Update to latest Nfdi4Plants.fornax version
+      #   run: dotnet paket update Nfdi4Plants.Fornax
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4

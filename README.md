@@ -20,8 +20,7 @@ in the root run once:
 
 1. Download repo.
 2. Run `dotnet tool restore` in root directory.
-3. Run `dotnet paket install` in root directory.
-4. Run `npm install` in root directory.
+3. Run `npm install` in root directory.
 
 ### Live development
 
