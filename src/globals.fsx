@@ -1,4 +1,5 @@
-#load "../.paket/load/main.group.fsx"
+#r "_lib/Fornax.Core.dll"
+#r "_lib/Markdig.dll"
 
 open System.IO
 open Markdig
