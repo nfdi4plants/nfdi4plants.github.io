@@ -40,13 +40,13 @@ jobs:
           node-version: '12'
 
       - name: Install rollup
-        run: npm install --global rollup
+        run: npm install --global rollup@3.1.0
 
       - name: Update to latest nfdi4plants web components
         run: npm install @nfdi4plants/web-components@latest
 
       - name: Bundle npm packages
-        run: rollup --config rollup.config.js
+        run: rollup --config rollup.config.js --bundleConfigAsCjs
           
       # Nfdi4Plants.Fornax is only used for docs logic, which was separated from the main page.
       # - name: Restore dotnet tools
