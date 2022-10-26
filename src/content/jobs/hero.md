@@ -5,8 +5,10 @@ bg-color: mint-lighter-80
 emphasis-color: darkblue
 image:
 layout: text-only
-
+# You can find the notification if no jobs are available. under "src/generators/jobs.fsx". Look for "noJobOffersMsg".
+open-job-offers: false
 --- 
+
 
 On this page you will find an overview of the current job opportunities in DataPLANT.
 

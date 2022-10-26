@@ -30,9 +30,9 @@ let generate' (ctx : SiteContents) (_: string) =
     Layout.layout ctx "" [
 
         section [Class "section"] [
-            createCard "white" "white"[
+            createCard "white" "white" [
                 let emphasisColor = (Colors.isColor "lightblue")
-                h1 [Class (sprintf "title %s" emphasisColor)] [!!"Creating ARCs using ​the ARC Commander"]
+                h1 [Class (sprintf "title %s" emphasisColor)] [!!"Creating ARCs using the ARC Commander"]
                 div [Class "columns"] [
                     div [Class "column is-4 is-hidden-mobile"] [
                         figure [Class "image"] [
@@ -47,7 +47,7 @@ let generate' (ctx : SiteContents) (_: string) =
                         ]
                         p [] [!!"To find the latest release of the ARC Commander, please click "; a [Href "https://github.com/nfdi4plants/arcCommander/releases"] [!!"here"]]
                         p [] [!!"For further Information visit the "; a [Href "https://github.com/nfdi4plants/arcCommander"] [!!"ARC Commander Github Page"]]
-                        p [] [!!"Although using the Commander will support you immensely in the creation of ARCs, it is optional and the ISA-TAB excel sheets can still be filled out manually.​"]
+                        p [] [!!"Although using the Commander will support you immensely in the creation of ARCs, it is optional and the ISA-TAB excel sheets can still be filled out manually."]
                     ]
                 ]
             ]

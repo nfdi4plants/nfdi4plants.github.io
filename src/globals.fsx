@@ -156,23 +156,23 @@ module HTMLComponents =
 
     let whiteIcon iconClass = 
         span [Class"icon is-white"] [
-            i [Class iconClass][]
+            i [Class iconClass] []
         ]
 
     let icon iconClass = 
         span [Class"icon"] [
-            i [Class iconClass][]
+            i [Class iconClass] []
         ]
 
     let iconTextRight iconClass text = 
-        span [Class "icon-text"][
+        span [Class "icon-text"] [
             icon iconClass
             span [] [!!text]
         ]
 
     let iconTextLeft iconClass text = 
-        span [Class "icon-text"][
-            span [] [!!text]
+        span [Class "icon-text"] [
+            span []  [!!text]
             icon iconClass
         ]
 
@@ -350,25 +350,38 @@ module Predicates =
 
     let staticPredicate (projectRoot: string, page: string) =
         let ext = Path.GetExtension page
-        if page.Contains "_public" ||
-           page.Contains "_bin" ||
-           page.Contains "content" ||
-           page.Contains "_lib" ||
-           page.Contains "_data" ||
-           page.Contains "_settings" ||
-           page.Contains "_config.yml" ||
-           page.Contains ".sass-cache" ||
-           page.Contains ".git" ||
-           page.Contains ".ionide" ||
-           page.Contains "configuration" ||
-           page.Contains "bulma-0.9.1" ||
-           page.Contains "style_src" ||
-           ext = ".fsx" ||
-           ext = ".scss"
-        then
-            false
-        else
-            true
+        // if page.Contains "_public" ||
+        //    page.Contains "_bin" ||
+        //    page.Contains "content" ||
+        //    page.Contains "_lib" ||
+        //    page.Contains "_data" ||
+        //    page.Contains "_settings" ||
+        //    page.Contains "_config.yml" ||
+        //    page.Contains ".sass-cache" ||
+        //    page.Contains ".git" ||
+        //    page.Contains ".ionide" ||
+        //    page.Contains "configuration" ||
+        //    page.Contains "bulma-0.9.1" ||
+        //    page.Contains "style_src" ||
+        //    ext = ".fsx" ||
+        //    ext = ".scss"
+        // then
+        //     false
+        // else
+        //     true
+        let fileShouldBeExcluded =
+            ext = ".fsx" ||
+            ext = ".md"  ||
+            page.Contains "_public" ||
+            page.Contains "_bin" ||
+            page.Contains "_lib" ||
+            page.Contains "_data" ||
+            page.Contains "_settings" ||
+            page.Contains "_config.yml" ||
+            page.Contains ".sass-cache" ||
+            page.Contains ".git" ||
+            page.Contains ".ionide"
+        fileShouldBeExcluded |> not
 
 module News =
         

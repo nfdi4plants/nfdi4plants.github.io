@@ -28,19 +28,21 @@ type JobsHero = {
     BgColor:        string
     EmphasisColor:  string
     Image:          string
+    OpenJobOffers:  bool
     Layout:         Layout
     Body:           string
 } with
 
-    static member create heading title bgColor emphasisColor image layout body = 
+    static member create heading title bgColor emphasisColor image openJobOffers layout body = 
         {
             Heading         = heading      
             Title           = title        
             BgColor         = bgColor      
             EmphasisColor   = emphasisColor
             Image           = image        
+            OpenJobOffers   = openJobOffers
             Layout          = layout     
-            Body            = body  
+            Body            = body
         }
 
     static member fromFile heroMarkdownPath = 
@@ -55,10 +57,11 @@ type JobsHero = {
         let bgColor         = config |> Map.find "bg-color" |> MarkdownProcessing.trimString
         let emphasisColor   = config |> Map.find "emphasis-color" |> MarkdownProcessing.trimString
         let image           = config |> Map.find "image" |> MarkdownProcessing.trimString
+        let openJobOffers   = config |> Map.find "open-job-offers" |> MarkdownProcessing.trimString |> System.Boolean.Parse
         let layout          = config |> Map.find "layout" |> MarkdownProcessing.trimString |> Layout.ofString
         let body            = content 
 
-        JobsHero.create heading title bgColor emphasisColor image layout body 
+        JobsHero.create heading title bgColor emphasisColor image openJobOffers layout body 
 
 type JobsCard = {
     Title           : string

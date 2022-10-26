@@ -1,0 +1,1 @@
+import * as nfdi_component from "@nfdi4plants/web-components";

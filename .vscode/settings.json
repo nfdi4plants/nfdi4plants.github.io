@@ -1,3 +1,6 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "FSharp.inlayHints.disableLongTooltip": true,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "cSpell.language": "de,en-GB"
 }
