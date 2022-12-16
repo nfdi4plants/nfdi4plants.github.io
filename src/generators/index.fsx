@@ -90,7 +90,7 @@ let generate' (ctx : SiteContents) (_: string) =
                     ]
                     p [Class "title"] [!!"Democratization of plant research"]
                     p [Class "title"] [!!"Made easy."]
-                    a [Class "button is-rounded has-bg-lightblue"; Href "https://register.nfdi4plants.org"] [iconTextLeft "fas fa-caret-right" "Become a member"]
+                    a [Class "button is-rounded has-bg-lightblue"; Href "https://auth.nfdi4plants.org/realms/dataplant/account"] [iconTextLeft "fas fa-caret-right" "Become a member"]
                 ]
             ]
         ]
