@@ -1,6 +1,5 @@
 ---
-date: 2023
--02-09
+date: 2023-02-09
 title: Data Competence Centers for Science - Meeting in Berlin
 preview-text: DataPLANT was present at the joint networking meeting of the NFDI and the applicants in the second grant application round for the data competence centers (DCC) an EU-funded project to improve data literacy in science. This was a full-day event at the Federal Ministry of Education and Research on February 9 in Berlin. To start, there was a presentation of the NFDI Edutrain section, the collaborative project Knowledge-Graph of the Data Literacy Alliance (DALIA), and a presentation...
 ---
