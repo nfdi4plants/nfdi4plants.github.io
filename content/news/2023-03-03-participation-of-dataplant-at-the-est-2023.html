@@ -1,0 +1,115 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <title>
+      nfdi4plants - News
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-collapsible@1.0.4/dist/css/bulma-collapsible.min.css"/>
+    <script defer="true" src="https://kit.fontawesome.com/0d3e0ea7a6.js" crossOrigin="anonymous"></script>
+    <script type="module" src="/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <section class="hero is-medium is-dark has-bg-lightblue">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            DataPLANT News
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container p-4">
+        <h1 class="title is-1">
+          Participation of DataPLANT at the E-Science-Tage 2023
+        </h1>
+        <h2 class="subtitle is-2">
+          3 Mar 2023
+        </h2>
+        <div class="content">
+          <p>Given the slogan &quot;Empower Your Research - Preserve Your Data&quot;, of course we didn't miss the opportunity to be part of the <a href="https://e-science-tage.de/de/startseite">E-Science Days</a> this year. In addition to the numerous contributions, the fact that contrary to last time we were able to meet in person in Heidelberg was great.</p>
+<p>We gave an overview of our homegrown data management plan assistance tool, named <a href="https://plan.nfdi4plants.org/">DataPLAN</a>, and on how we are attempting to close the ontology gap  and also what challenges we encountered when creating a data repository.
+<br>
+</br>
+🌱 <strong>Harnessing the power of ontologies for FAIR research data management</strong><br />
+<em><a href="https://www.conftool.com/e-science-tage-2023/index.php?page=browseSessions&amp;presentations=show&amp;mode=table&amp;cols=0&amp;search=Harnessing+the+power+of+ontologies+for+FAIR+research+data+management">Talk</a> by Kathryn Dumschott</em></p>
+<ul>
+<li>Using ontologies as a controlled vocabulary for labeling metadata increases its discoverability and reusability by making the metadata readable by humans and machines.</li>
+<li>DataPLANT aims to create a sustainable and well-annotated data management platform by using tools and ontologies.</li>
+<li>To achieve this, a collection of established ontologies called SwateDB has been collected and stored in Neo4j, a graph database connected to the Swate tool and updated via the Swate OBO Updater (Swobup) automatic process handler.</li>
+<li>Additionally, DataPLANT provides and curates the DataPLANT biology ontology (DPBO), which facilitates the quick and efficient annotation of metadata. Users can suggest the terms they require for their metadata sheets and ontology curators work to contextualize the respective terms according to their real world meaning, eventually suggesting terms to the most relevant established ontology. The DPBO therefore acts as a broker ontology to fill ontological gaps, facilitating the exchange of knowledge between the researcher and the main ontology provider.</li>
+</ul>
+<p><em>Find more info about ontologies in our <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/fundamentals/Ontologies.html">corresponding knowledge base article</a><br />
+How to best annotate data can be found <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/AnnotationPatterns.html">here</a><br />
+If you want to know more about our metadata annotation helper tool Swate, <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/Swate.html">this is the place to go</a><br />
+You have found a bug that should be fixed, then submit an issue <a href="https://github.com/nfdi4plants/Swate/issues">here</a></em>
+<br>
+</br>
+🌱 <strong>DataPLAN: a tool to plan your data management FAIR and fast</strong><br />
+<em><a href="https://www.conftool.com/e-science-tage-2023/index.php?page=browseSessions&amp;presentations=show&amp;mode=table&amp;cols=0&amp;search=DataPLAN%3A+a+tool+to+plan+your+data+management+FAIR+and+fast">Poster</a> by Xiaoran Zhou</em></p>
+<ul>
+<li>DataPLAN helps scientists create a data management plan (DMP) for their application.</li>
+<li>Our DMP tool reduces the number of questions and allows users to select the standardized pre-written answers instead of writing the answers by hand.</li>
+<li>Templates for DFG, ERC, BMBF and BMEL applications have been integrated already.</li>
+</ul>
+<p><em>If you don't know what DMPs are, check out <a href="https://www.nfdi4plants.de/nfdi4plants.knowledgebase/docs/fundamentals/DataManagementPlan.html">this knowledge base article</a><br />
+Please find our own DMP tool called DataPLAN <a href="https://plan.nfdi4plants.org/">here</a><br />
+The corresponding knowledge base article can be found <a href="https://www.nfdi4plants.de/nfdi4plants.knowledgebase/docs/implementation/DataPLAN.html">here</a><br />
+You have found a bug that should be fixed, then submit an issue <a href="https://github.com/nfdi4plants/dataplan/issues">here</a></em>
+<br>
+</br>
+🌱 <strong>Herausforderungen beim Aufbau eines föderierten Datenrepositoriums auf Basis von InvenioRDM</strong><br />
+<em><a href="https://www.conftool.com/e-science-tage-2023/index.php?page=browseSessions&amp;cols=0&amp;mode=table&amp;navbar_search=Herausforderungen+beim+Aufbau+eines+f%C3%B6derierten+Datenrepositoriums+auf+Basis+von+InvenioRDM&amp;presentations=show&amp;search=Herausforderungen+beim+Aufbau+eines+f%C3%B6derierten+Datenrepositoriums+auf+Basis+von+InvenioRDM">Talk</a> by Jonathan Bauer</em></p>
+<ul>
+<li>Using InvenioRDM Integration to enable data publication</li>
+<li>Useful publication of research data requires annotation with relevant scientific metadata beyond the requirements of the DataCite schema for DOI registration to provide subject-specific search queries and search functionality</li>
+<li>In DataPLANT full InvenioRDM can be used to publish data packages within ARCs</li>
+</ul>
+<p><em>Do you want to know more about ARCs, check out <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">this article</a><br />
+If you want to know where to collaborate on ARCs, read <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/DataHub.html">our article on our DataHUB</a><br />
+Check out our DataHUB and sample ARCs <a href="https://git.nfdi4plants.org/">here</a></em></p>
+
+        </div>
+      </div>
+    </section>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>
