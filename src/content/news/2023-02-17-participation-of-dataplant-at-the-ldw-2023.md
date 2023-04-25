@@ -10,4 +10,4 @@ Making data-driven decisions in the life sciences has a huge effect on the well-
 <br>
 </br>
 
-🍃 *By the way, the next Love Data Week for 2023 is already lined up. Find more information [here](https://www.icpsr.umich.edu/web/about/cms/3799?utm_source=all&utm_medium=all&utm_campaign=LDW23&utm_id=LDW23).*
+🍃 *By the way, the next Love Data Week for 2024 is already lined up. Find more information [here](https://www.icpsr.umich.edu/web/about/cms/3799?utm_source=all&utm_medium=all&utm_campaign=LDW23&utm_id=LDW23).*
