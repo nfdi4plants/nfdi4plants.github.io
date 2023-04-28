@@ -1,0 +1,83 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <title>
+      nfdi4plants - News
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-collapsible@1.0.4/dist/css/bulma-collapsible.min.css"/>
+    <script defer="true" src="https://kit.fontawesome.com/0d3e0ea7a6.js" crossOrigin="anonymous"></script>
+    <script type="module" src="/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <section class="hero is-medium is-dark has-bg-lightblue">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            DataPLANT News
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container p-4">
+        <h1 class="title is-1">
+          DataPLANT releases a first version of the Docker Image for the DataHUB on-premise installation
+        </h1>
+        <h2 class="subtitle is-2">
+          28 Apr 2023
+        </h2>
+        <div class="content">
+          <p>The <a href="https://git.nfdi4plants.org/explore">DataPLANT DataHUB</a> as a science gateway is primarily backed by the open source GitLab framework. It provides an entry point to our various services, starting with a versioned, generated web page and additional modules for community interaction. The DataHUB platform is where the DataPLANT Annotated Research Contexts (<a href="https://doi.org/10.11588/heibooks.979.c13751">ARCs</a>) evolve to a certain state. This can be done either on the central DataPLANT instance or on various on premise installations. To allow more sites to join the DataHUB federation, we created a Docker image to ease the on-premise installation. The package is available like other <a href="https://github.com/nfdi4plants">DataPLANT tools</a> on <a href="https://github.com/nfdi4plants/DataHUB">GitHub</a>.</p>
+<p><a href="https://github.com/nfdi4plants/DataHUB"><img src="../../images/News-Items/DataHUB-onprem.png" width="60%;" align-items:="" center="" alt="On Premise DataHUB" title="On Premise DataHUB" /></a></p>
+<p>Storage resources are used for both keeping the necessary service configurations and user data. Depending on the service provided locally, storage resources may be provided in the form of traditional network file systems such as NFS or SMB, or as object storage. The on-premise storage has to implement the necessary redundancy to keep user data secure to the required level. An authentication instance is required for authentication of users and the services behind them. The DataPLANT <a href="https://auth.nfdi4plants.org/realms/dataplant/protocol/openid-connect/auth?client_id=account&amp;redirect_uri=https%3A%2F%2Fauth.nfdi4plants.org%2Frealms%2Fdataplant%2Faccount%2Flogin-redirect&amp;state=0%2F9e672a18-002d-4fdc-a6cc-a3c64e64f9cd&amp;response_type=code&amp;scope=openid">user management</a> builds on existing AAIs. Well established services such as Life Sciences AAI and ORCID can be combined with local authentication within the central DataPLANT authentication service. The infrastructure relies on KeyCloak, which supports modern authentication protocols like OpenID Connect and SAML, allowing the integration of multiple AAIs and identity brokering. It is possible to assign different roles depending on the source of the account or specific attributes. Permissions can be derived from these roles to differentiate between users. These range from privileged users with full access to the data and the ability to create archives/publications, to users who only have a reporting function and/or read-only access to raw data. All of this is at an early stage and will need to be refined through more productive use of the infrastructure.</p>
+<p><strong>Links</strong><br />
+<a href="https://git.nfdi4plants.org/explore">DataPLANT DataHUB</a><br />
+<a href="https://github.com/nfdi4plants/DataHUB">On Premise DataHUB Service</a><br />
+<a href="https://auth.nfdi4plants.org/realms/dataplant/protocol/openid-connect/auth?client_id=account&amp;redirect_uri=https%3A%2F%2Fauth.nfdi4plants.org%2Frealms%2Fdataplant%2Faccount%2Flogin-redirect&amp;state=0%2F9e672a18-002d-4fdc-a6cc-a3c64e64f9cd&amp;response_type=code&amp;scope=openid">DataHUB Account Management</a><br />
+<a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/DataHub.html">Knowledge Base Article - DataHUB</a><br />
+<a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html">Knowledge Base Article - ARC</a></p>
+
+        </div>
+      </div>
+    </section>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>
