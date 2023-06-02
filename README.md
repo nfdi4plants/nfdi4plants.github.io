@@ -24,4 +24,4 @@ in the root run once:
 
 ### Live development
 
-Run `dotnet fornax watch` in `\src` folder.
+In root run `npm run fornax` and go to http://127.0.0.1:8080/index.html.

@@ -43,19 +43,9 @@ jobs:
         run: npm install --global rollup@3.1.0
 
       - name: Update to latest nfdi4plants web components
-        run: npm install @nfdi4plants/web-components@latest
-
-      - name: Bundle npm packages
-        run: rollup --config rollup.config.js --bundleConfigAsCjs
-          
-      # Nfdi4Plants.Fornax is only used for docs logic, which was separated from the main page.
-      # - name: Restore dotnet tools
-      #   run: dotnet tool restore
-        
-      # - name: Update to latest Nfdi4Plants.fornax version
-      #   run: dotnet paket update Nfdi4Plants.Fornax
+        run: npm run updatecomponents
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Update @nfdi4plants/web-components & Nfdi4Plants.Fornax ⬆️
+          commit_message: Update @nfdi4plants/web-components ⬆️
