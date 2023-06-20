@@ -3,6 +3,7 @@
 #load "../loaders/pageloader.fsx"
 #load "../loaders/globalloader.fsx"
 #load "../loaders/newsloader.fsx"
+#load "../loaders/eventsloader.fsx"
 #load "../loaders/mainpagecardloader.fsx"
 #load "../loaders/learnmoreloader.fsx"
 #load "../loaders/aboutloader.fsx"

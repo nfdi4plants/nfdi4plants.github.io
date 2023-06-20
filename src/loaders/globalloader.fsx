@@ -6,6 +6,6 @@ type SiteInfo = {
 }
 
 let loader (projectRoot: string) (siteContent: SiteContents) =
-    siteContent.Add({title = "nfdi4plants"; description = "DataPLANT News"})
+    siteContent.Add({title = "nfdi4plants"; description = ""})
 
     siteContent
