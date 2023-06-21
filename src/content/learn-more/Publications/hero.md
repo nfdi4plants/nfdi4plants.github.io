@@ -55,6 +55,13 @@ layout: text-only
 </tr>
 -->
 <tr>
+    <td>2022</td>
+    <td>DataPLANT - Platform for Research Data Management</td>
+    <td>Development and Operation of the Federated de.NBI Cloud</td>
+    <td>Brochure Article</td>
+    <td><a href="https://doi.org/10.4119/unibi/2963745">https://doi.org/10.4119/unibi/2963745</a></td>
+</tr>
+<tr>
     <td>2021</td>
     <td>Immutable yet evolving: ARCs for permanent sharing in the research data-time continuum</td>
     <td><a href="https://e-science-tage.de/de/startseite_2021">E-Science-Tage 2021</a></td>
@@ -123,7 +130,7 @@ layout: text-only
     <td>DataPLANT Kick-Off</td>
     <td>Presentation</td>
     <td><a href="https://doi.org/10.5281/zenodo.4039749">https://doi.org/10.5281/zenodo.4039749</a></td>
-</tr
+</tr>
 <tr>
     <td>2019</td>
     <td>DataPLANT - NFDI Consortium for Fundamental Plant Research</td>
