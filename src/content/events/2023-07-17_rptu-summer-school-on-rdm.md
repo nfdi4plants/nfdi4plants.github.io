@@ -32,7 +32,7 @@ preview-text: Are you a PhD student, PostDoc or project PI pursuing data-driven 
     data-address="Paul-Ehrlich-Straße 34" 
     data-city="67663 Kaiserslautern" 
     data-state="Germany" 
-    data-category="DataPLANT; Training">
+    data-category="DataPLANT">
     Add to Calendar
     </a>
     </td>
