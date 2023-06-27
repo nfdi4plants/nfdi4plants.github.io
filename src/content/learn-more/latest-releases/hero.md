@@ -45,6 +45,21 @@ layout: text-only
     </td>
 </tr>
 <!--<tr>
+    <td>ARCitect</td>
+    <td><a href="https://github.com/nfdi4plants/ARCitect/releases/latest">Latest Release</a></td>
+    <td>
+    <u>Knowledge Base:</u>
+    <li><a href="???">Converter</a></li>
+    <li><a href="???">Converter Manual</a></li>
+    <br>
+    <u>Github:</u>
+    <li><a href="https://github.com/nfdi4plants/ARCitect">Repository</a></li>
+    <li><a href="???">Bug Report</a></li>
+    <li><a href="???">Feature Request</a></li>
+    </td>
+    <br>
+</tr>-->
+<!--<tr>
     <td>Converter</td>
     <td><a href="https://github.com/nfdi4plants/converters/releases/latest">Latest Release</a></td>
     <td>
@@ -54,8 +69,8 @@ layout: text-only
     <br>
     <u>Github:</u>
     <li><a href="https://github.com/nfdi4plants/converters">Repository</a></li>
-    <li><a href="???">Bug Report</a></li>
-    <li><a href="???">Feature Request</a></li>
+    <li><a href="https://github.com/nfdi4plants/ARCitect/issues/new?assignees=&labels=&projects=&template=bug_report.md&title=%5BBUG%5D+placeholder">Bug Report</a></li>
+    <li><a href="https://github.com/nfdi4plants/ARCitect/issues/new?assignees=&labels=&projects=&template=feature_request.md&title=%5BFeature+Request%5D+placeholder">Feature Request</a></li>
     </td>
     <br>
 </tr>-->
