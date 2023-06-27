@@ -273,6 +273,15 @@ module Predicates =
 
     let isNewsFile f = newsPredicate("",f)
 
+    let eventsPredicate (projectRoot: string, page: string) = 
+        let ext = Path.GetExtension page
+        page.Contains("content")
+        && page.Contains("events")
+        && ext = ".md"
+        && (not (page.Contains "_public"))
+
+    let isEventsFile f = eventsPredicate("",f)
+
     let ServiceHeroPredicate (projectRoot: string, page: string) =
         let fileName = Path.GetFileNameWithoutExtension page
         let ext = Path.GetExtension page
@@ -384,6 +393,24 @@ module Predicates =
         fileShouldBeExcluded |> not
 
 module News =
+        
+    let getStringForMonth (m:int) =
+        match m with
+        | 1  -> "Jan"
+        | 2  -> "Feb"
+        | 3  -> "Mar"
+        | 4  -> "Apr"
+        | 5  -> "May"
+        | 6  -> "Jun"
+        | 7  -> "Jul"
+        | 8  -> "Aug"
+        | 9  -> "Sep"
+        | 10 -> "Oct"
+        | 11 -> "Nov"
+        | 12 -> "Dec"
+        | _ -> failwithf "%i is not a valid month number" m
+
+module Events =
         
     let getStringForMonth (m:int) =
         match m with
