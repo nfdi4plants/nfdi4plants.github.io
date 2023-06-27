@@ -17,7 +17,7 @@ let generate' (ctx : SiteContents) (page: string) =
         section [Class "hero is-medium has-bg-yellow"] [
           div [Class "hero-body"] [
                 div [Class "container has-text-centered"] [
-                    p [Class "title"] [!!"Events"]
+                    p [Class "title"] [!!" DataPLANT Events"]
                 ]
             ]
         ]
