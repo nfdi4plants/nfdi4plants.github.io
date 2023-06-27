@@ -1,7 +1,7 @@
 ---
 date: 2023-07-17
 title: RPTU Summer School on Fundamentals of Research Data Management
-preview-text: Are you a PhD student, PostDoc or project PI pursuing data-driven research? Does your daily work involve collecting, organizing, publishing research data sets, small or large? Are you interested in l earning about new concepts, principles, tools, and best practices that can make these activities more efficient and improve the quality of your data sets? Or are you interested in understanding these fundamentals to be able to formulate data management plans for research proposals? Or would you simply like to enhance your personal profile with new skills in research data management?
+preview-text: 
 ---
 
 <!--Here comes the general part-->
