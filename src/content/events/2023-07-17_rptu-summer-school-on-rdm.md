@@ -32,7 +32,7 @@ preview-text:
     data-address="Paul-Ehrlich-Straße 34" 
     data-city="67663 Kaiserslautern" 
     data-state="Germany" 
-    data-category="DataPLANT">
+    data-category="DataPLANT, Training">
     Add to Calendar
     </a>
     </td>
