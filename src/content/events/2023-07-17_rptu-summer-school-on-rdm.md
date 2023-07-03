@@ -24,7 +24,7 @@ preview-text:
     <b>Save the Date:</b>
     <br>    
     <a id="downloadICS" 
-    title="RPTU Summer School on Fundamentals of Research Data Management" 
+    title="RPTU Summer School on Fundamentals of RDM" 
     data-start-time="Jul 17, 2023 09:00" 
     data-end-time="Jul 21, 2023 12:30" 
     data-description="Find more information here: https://nfdi4plants.org/content/events/2023-07-17_rptu-summer-school-on-rdm.html" 
