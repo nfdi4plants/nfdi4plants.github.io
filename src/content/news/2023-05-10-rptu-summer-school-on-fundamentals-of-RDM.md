@@ -15,9 +15,9 @@ The
 will take place in the week from  
 **July 17th to 21th**  
 
-and will include a mix of lectures, workshops, and hands-on exercises. You can expect to learn from experts in the field and connect with colleagues from various disciplines. A preliminary program will be made available to registered participants in the very near future. The number of participants is limited on account of the space available, thus we kindly ask you to register at your earliest convenience but no later than **May 31, 2023** via [this](https://forms.office.com/e/SpERRjQGSv) form.
+and will include a mix of lectures, workshops, and hands-on exercises. You can expect to learn from experts in the field and connect with colleagues from various disciplines. A preliminary program will be made available to registered participants in the very near future. The number of participants is limited on account of the space available, thus we kindly ask you to register at your earliest convenience but no later than **July 13, 2023** via [this](https://forms.office.com/e/SpERRjQGSv) form.
 
-
+s
 We will send you further information in early June.
 The summer school is an on-site, in presence event held at the [RPTU](https://rptu.de/). (In well justified exceptional cases, we will facilitate remote participation.)  
 We hope you will join us in improving your knowledge in research data management, and look forward to welcoming you to our summer school!
