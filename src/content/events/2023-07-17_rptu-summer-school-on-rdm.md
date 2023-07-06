@@ -78,7 +78,7 @@ We will send you further information in early June.
 The summer school is an on-site, in presence event held at the [RPTU](https://rptu.de/). (In well justified exceptional cases, we will facilitate remote participation.)  
 We hope you will join us in improving your knowledge in research data management, and look forward to welcoming you to our summer school!
 
-Please direkt any questions to us via 
+Please direct any questions to us via 
 <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">mail</a>.
 </details>
 <br>
