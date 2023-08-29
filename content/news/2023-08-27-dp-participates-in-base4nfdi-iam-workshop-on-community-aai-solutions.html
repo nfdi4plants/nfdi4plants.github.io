@@ -1,0 +1,79 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <title>
+      nfdi4plants - News
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-collapsible@1.0.4/dist/css/bulma-collapsible.min.css"/>
+    <script defer="true" src="https://kit.fontawesome.com/0d3e0ea7a6.js" crossOrigin="anonymous"></script>
+    <script type="module" src="/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <section class="hero is-medium is-dark has-bg-lightblue">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container p-4">
+        <h1 class="title is-1">
+          DataPLANT participates in Base4NFDI IAM workshop on Community AAI solutions
+        </h1>
+        <h2 class="subtitle is-2">
+          27 Aug 2023
+        </h2>
+        <div class="content">
+          <p>DataPLANT's IAM experts participated in the second workshop which was held on the afternoon of August 24, 2023, as part of the IAM4NFDI Community Events. The purpose of these events is to disseminate fundamental Identity and Access Management (IAM) knowledge related to a the goal of a common NFDI AAI, provide information on the various facets of the Basic Service, and gather valuable feedback. The workshop started with an introduction and Recap to set the context for the workshop's objectives and inform all participating consortia on the state of the considerations and developments. In the Community-AAI (CAAI) Solutions part the workshop delved into the concepts surrounding Community-AAI solutions, specifically focusing on the Architecture of the NFDI-AAI. A further segment discussed the notion of Community-AAI as a service, exploring its implications and benefits within the context of the IAM framework. Four different implementations and frameworks got presented. This was followed by a field report detailing the integration of Research Data Management Organizers (RDMO) into the IAM system. In the second part of the workshop participants were briefed on crucial considerations and awareness points when operating a Community-AAI system. A further segment covered Authorization and Virtual Organization (VO) management within the Community-AAI framework. At the end insights and experiences from operators of Community-AAI systems were shared, providing valuable real-world perspectives.</p>
+<p>Up to now the architecture of the system, the attributes that define it, an initial set of policies, and initial documentation are available, all of which can be accessed <a href="https://doc.nfdi-aai.de">online</a>.</p>
+<p>DataPLANT finds itself positioned in a position in between: It has already implemented authentication and authorization mechanisms through life sciences and ORCID Attribute Authority Interfaces (AAIs), and it also boasts additional modules catering to user self-service functionalities. Several services already make use of these infrastructures. Thus, there are certain points that necessitate clarification in relation to DataPLANT's current state and its alignment within the broader NFDI IAM landscape: A primary concern is how the existing DataPLANT AAI framework can seamlessly integrate with the IAM framework proposed by the NFDI IAM Working Group. The question here is: What adjustments or enhancements are needed to ensure that DataPLANT's AAI framework is directly compatible with the suggested IAM architecture? Alternatively, there's the consideration of potentially replacing the DataPLANT AAI solution with an externally supported solution provided by the NFDI. This would aim to achieve similar outcomes while adhering to the standardized IAM approach endorsed by the NFDI.</p>
+<p>In a broader scope, the goals of the NFDI IAM Working Group encompass fostering the adoption of IAM concepts across consortia. This entails enabling users both within and outside the community to perform certain actions and access resources seamlessly. This scope revolves around establishing clear access management practices and facilitating robust accounting mechanisms. To extend user information and attributes, particularly affiliation details, for purposes like accounting and reporting, a plan needs to be devised. This would involve obtaining and integrating additional data points beyond the basics of contact information. When it comes to entitlements and attributes management, especially in the context of access control and accounting, a comprehensive strategy needs to be defined. This involves attaching specific information to individual users, granting them the authorization to utilize particular resources. This process requires careful consideration to ensure proper access management and effective resource allocation. The connectivity of various Identity Providers (IDPs) to the systems is another significant aspect. Depending on the available services within NFDI-IAM, these connections could occur at either the NFDI-IAM level or the DataPLANT Keycloak level.</p>
+<p>In summary, DataPLANT stands at a juncture where its existing AAI framework needs to be aligned with the vision put forth by the NFDI IAM Working Group. This entails exploring compatibility options, potential replacements, and the broader goals of standardized IAM practices. The path forward involves addressing aspects like extended user information, entitlements management, attribute customization, and the integration of multiple IDPs.</p>
+
+        </div>
+      </div>
+    </section>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>
