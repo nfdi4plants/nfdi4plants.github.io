@@ -3241,8 +3241,8 @@ a.box:active {
 }
 .button.is-loading::after {
   position: absolute;
-  left: calc(50% - (1em / 2));
-  top: calc(50% - (1em / 2));
+  left: calc(50% - 1em / 2);
+  top: calc(50% - 1em / 2);
   position: absolute !important;
 }
 .button.is-static {
@@ -11947,4 +11947,4 @@ body {
   margin-bottom: unset !important;
 }
 
-/*# sourceMappingURL=tmpSJ0ZF6.tmp.map */
+/*# sourceMappingURL=tmp8Ofzhp.tmp.map */
