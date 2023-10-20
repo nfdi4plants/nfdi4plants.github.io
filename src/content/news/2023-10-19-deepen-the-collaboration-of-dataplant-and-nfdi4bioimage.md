@@ -1,6 +1,6 @@
 ---
 date: 2023-10-19
-title: Deepen the collaboration of DataPLANT and NFDI4BIOIMAGE; All-Hands Meeting in Düsseldorf
+title: Deepen the collaboration of DataPLANT and NFDI4BIOIMAGE - All-Hands Meeting in Düsseldorf
 preview-text: Colleagues from DataPLANT were present at the three day all-hands event of NFDI4BIOIMAGE in Düsseldorf to further deepen the already started cooperation between the two consortia. NFDI4BIOIMAGE is an consortium of the third round in the National Research Data Infrastructure to foster the Research Data Management for Microscopy and Bioimage Analysis.Joint considerations for the use of the Annotated Research Context have already been made for the grant application and for a CoRDI poster...
 ---
 
