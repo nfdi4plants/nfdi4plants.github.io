@@ -6,7 +6,7 @@ preview-text: DataPLANT attended the 1st Conference on Research Data Infrastruct
 
 DataPLANT attended the [1st Conference on Research Data Infrastructure](LINK), which took place from 12. - 14. September in Karlsruhe. Research data are the foundation of knowledge and innovation in all scientific fields. The key to harnessing these data treasures is a powerful infrastructure for establishing interdisciplinary research data management. Under the motto "Connecting Communities", more than 700 national and international stakeholders from all fields of research as well as from the infrastructure sector took part to exchange ideas on excellent research data management (RDM) of the future. DataPLANT made intensive use of the opportunity to exchange ideas and network with NFDI consortia and other RDM stakeholders. Over the course of three days, topics related to RDM and the joint development of an effective research data infrastructure for Germany and beyond were examined from a variety of perspectives. CoRDI stands for more knowledge through better use of research data, for innovation and the resulting societal benefits.   
 
-![DataPLANT at CoRDI](../../images/News-Items/CoRDI-1.png)
+![DataPLANT at CoRDI](../../images/News-Items/CoRDI-3.png)
 
 DataPLANT was present more than seven posters and its own booth, partly in direct collaboration with other consortia. The posters attempted to provide a broad overview of current and future developments within the consortium, as well as highlighting potential collaborations and further developments. Topics included 
 
