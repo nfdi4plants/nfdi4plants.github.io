@@ -38,7 +38,7 @@ There was also a presentation on [Galaxy and RDM- Being More Than a Workflow Man
 ![DataPLANT at CoRDI](../../images/News-Items/CoRDI-2.png)
 
 **Further Links**   
-[CoRDI - Website](https://www.nfdi.de/cordi-2023/)
+[CoRDI - Website](https://www.nfdi.de/cordi-2023/)   
 [CoRDI - Programme](https://www.nfdi.de/wp-content/uploads/2023/09/CoRDI-Conference-Programme-1.pdf)  
 [CoRDI - Proceedings](https://www.tib-op.org/ojs/index.php/CoRDI/issue/view/12)  
 [CoRDI - Zenodo Community](https://zenodo.org/communities/cordi-2023)  
@@ -51,7 +51,7 @@ There was also a presentation on [Galaxy and RDM- Being More Than a Workflow Man
 [Poster - Combining the BIDS and ARC Directory Structures for Multimodal Research Data Organization](https://zenodo.org/doi/10.5281/zenodo.8349562)   
 [Poster - One Resource to Teach Them All](https://doi.org/10.5281/zenodo.8356260)   
 
-[Conference paper - DataPLANT Cloud Oriented Service Infrastructure](https://doi.org/10.52825/cordi.v1i.4143)   
+[Conference paper - DataPLANT Cloud Oriented Service Infrastructure](https://doi.org/10.52825/cordi.v1i.414)   
 [Conference paper - Improving the Research Desktop Experience for OpenStack VDI](https://doi.org/10.52825/cordi.v1i.413)    
 [Conference paper - One Resource to Teach Them All](https://doi.org/10.52825/CoRDI.v1i.267)   
 [DataPLANT Booth - Managing your Research Data with DataPLANT](https://doi.org/10.52825/cordi.v1i.413)   
