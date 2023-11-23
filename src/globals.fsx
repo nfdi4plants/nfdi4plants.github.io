@@ -468,14 +468,16 @@ module Imprint =
     let createImprintPageName (heroPath:string) =
         heroPath.Replace("/hero.md",".html")
 
+module Datahub =
+
+    let createDatahubPageName (heroPath:string) =
+        heroPath.Replace("/hero.md",".html")
+        
 module Privacy =
 
     let createPrivacyPageName (heroPath:string) =
         heroPath.Replace("/hero.md",".html")
 
-module Datahub =
 
-    let createDatahubPageName (heroPath:string) =
-        heroPath.Replace("/hero.md",".html")
         
         
