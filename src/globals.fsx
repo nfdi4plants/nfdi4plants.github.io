@@ -357,7 +357,6 @@ module Predicates =
 
     let isPrivacyHero f = PrivacyHeroPredicate("",f)
 
-
     let DatahubHeroPredicate (projectRoot: string, page: string) =
         let fileName = Path.GetFileNameWithoutExtension page
         let ext = Path.GetExtension page
@@ -478,4 +477,5 @@ module Datahub =
 
     let createDatahubPageName (heroPath:string) =
         heroPath.Replace("/hero.md",".html")
+        
         
