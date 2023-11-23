@@ -11,6 +11,7 @@
 #load "../loaders/privacyloader.fsx"
 #load "../loaders/jobsloader.fsx"
 #load "../loaders/serviceloader.fsx"
+#load "../loaders/datahubloader.fsx"
 #endif
 
 open Html

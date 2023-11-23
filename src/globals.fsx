@@ -357,6 +357,22 @@ module Predicates =
 
     let isPrivacyHero f = PrivacyHeroPredicate("",f)
 
+
+    let DatahubHeroPredicate (projectRoot: string, page: string) =
+        let fileName = Path.GetFileNameWithoutExtension page
+        let ext = Path.GetExtension page
+        page.Contains("datahub")
+        && fileName = "hero"
+        && ext = ".md"
+        
+    let DatahubPredicate (projectRoot: string, page: string) =
+        let fileName = Path.GetFileNameWithoutExtension page
+        let ext = Path.GetExtension page
+        page.Contains("datahub")
+        && ext = ".md"
+
+    let isDatahubHero f = DatahubHeroPredicate("",f)
+
     let staticPredicate (projectRoot: string, page: string) =
         let ext = Path.GetExtension page
         // if page.Contains "_public" ||
@@ -457,3 +473,9 @@ module Privacy =
 
     let createPrivacyPageName (heroPath:string) =
         heroPath.Replace("/hero.md",".html")
+
+module Datahub =
+
+    let createDatahubPageName (heroPath:string) =
+        heroPath.Replace("/hero.md",".html")
+        
