@@ -20,7 +20,7 @@ This initiative underscores the importance of collaboration among different cons
 
 **Further Links**   
 [Community Workshop - Vernetzung der FDM-Helpdesks](https://www.nfdi.de/community-workshop-helpdesk-vernetzung/)   
-[Poster - Optimizing User Support through Synergistic Integration of Helpdesk Systems](https://zenodo.org/doi/10.5281/zenodo.8356210) 
+[Poster - Optimizing User Support through Synergistic Integration of Helpdesk Systems](https://zenodo.org/doi/10.5281/zenodo.8356210)    
 [CoRDI - News-Item](https://nfdi4plants.org/content/news/2023-09-18-dataplant-attended-the-1st-conference-on-research-data-infrastructure.html)  
 [Website - NFDI4Biodiversity](https://www.nfdi4biodiversity.org/de/)  
 [Website - FAIRagro](https://fairagro.net/)   
