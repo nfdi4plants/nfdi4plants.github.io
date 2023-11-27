@@ -19,8 +19,9 @@ The future agenda promises further exciting developments, including a planned in
 This initiative underscores the importance of collaboration among different consortia to successfully address challenges in RDM and sustainably support the scientific community.
 
 **Further Links**   
-[Community Workshop - Vernsetzung der FDM-Helpdesks](https://www.nfdi.de/community-workshop-helpdesk-vernetzung/)   
-[Poster - Optimizing User Support through Synergistic Integration of Helpdesk Systems](https://zenodo.org/doi/10.5281/zenodo.8356210)   
+[Community Workshop - Vernetzung der FDM-Helpdesks](https://www.nfdi.de/community-workshop-helpdesk-vernetzung/)   
+[Poster - Optimizing User Support through Synergistic Integration of Helpdesk Systems](https://zenodo.org/doi/10.5281/zenodo.8356210) 
+[CoRDI - News-Item](https://nfdi4plants.org/content/news/2023-09-18-dataplant-attended-the-1st-conference-on-research-data-infrastructure.html)  
 [Website - NFDI4Biodiversity](https://www.nfdi4biodiversity.org/de/)  
 [Website - FAIRagro](https://fairagro.net/)   
 [Website - NFDI4Microbiota](https://nfdi4microbiota.de/)  
