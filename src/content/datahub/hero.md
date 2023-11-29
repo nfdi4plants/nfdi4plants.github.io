@@ -42,7 +42,7 @@ The <a href="https://gitlab.nfdi4plants.de/explore">Satellite - Tübingen DataHU
 <tr>
     <td><font color="black">Sattelite - TRR356</font></td>
     <td><font color="black">
-The <a href="https://gitlab.plantmicrobe.de/explore">TRR356 DataHUB</a> is a DataHUB implementation specific for the  <a href="https://trr356plantmicrobe.de/">transregional collaboration project PlantMicrobe</a> and is hosted at the University of Tübingen and the LMU in Munich. Only members of the project TRR356 PlantMicrobe have access to this DataHUB. Login is possible either through your home institution or by using another identity provider like ORCID, Google, or Apple. The PlantMicrobe DataHUB runs on a federated infrastructure that relies on fail-over strategies to ensure that the service is always available, even when hardware or network failures occur. Additionally, a backup strategy is in place to avoid the loss of stored research data.
+The <a href="https://gitlab.plantmicrobe.de/explore">Satellite - TRR356 DataHUB</a> is a DataHUB implementation specific for the  <a href="https://trr356plantmicrobe.de/">transregional collaboration project PlantMicrobe</a> and is hosted at the University of Tübingen and the LMU in Munich. Only members of the project TRR356 PlantMicrobe have access to this DataHUB. Login is possible either through your home institution or by using another identity provider like ORCID, Google, or Apple. The PlantMicrobe DataHUB runs on a federated infrastructure that relies on fail-over strategies to ensure that the service is always available, even when hardware or network failures occur. Additionally, a backup strategy is in place to avoid the loss of stored research data.
     </font></td>
 </tr>
 </table>
