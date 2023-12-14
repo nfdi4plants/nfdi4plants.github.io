@@ -1,0 +1,18 @@
+---
+date: 2023-12-01
+title: Contributions of DataPLANT at the E-Science Tage 2023 now available
+preview-text: We already reported the participation of DataPLANT at this year's E-Science Tage in Heidelberg. Now the proceedings and indidividual papers are publicly available online. Research in the digital transformation requires a coordinated environment. The E-Science Days 2023 offered those responsible and interested the opportunity to exchange ideas and network on current developments in the field of research data management. With the theme "Empower Your Research - Preserve Your Data", the focus...
+---
+We already reported the [participation of DataPLANT](https://nfdi4plants.org/content/news/2023-03-03-participation-of-dataplant-at-the-est-2023.html) at this year's [E-Science Tage in Heidelberg](https://e-science-tage.de/startseite_2023). Now the [proceedings](https://doi.org/10.11588/heibooks.1288) and indidividual papers are publicly available online. Research in the digital transformation requires a coordinated environment. The E-Science Days 2023 offered those responsible and interested the opportunity to exchange ideas and network on current developments in the field of research data management. With the theme "Empower Your Research - Preserve Your Data", the focus was on the sustainable storage and interdisciplinary and international availability of research data. The [next conference](https://e-science-tage.de/de/startseite) just got announced for March 2025.   
+
+During that last three years DataPLANT has developed tools and services that encourage open and collaborative research, facilitate the annotation of metadata, and unify the use of ontologies. DataPLANT aims to establish a foundation that enables scientists to effortlessly use and access specific ontologies as well as to expand ontologies with missing terms in order to increase the FAIRness of their research data. The team of Kathryn Dumschott, Hannah Dörpholz, Kevin Frey, Marcel Tschöpe, Heinrich Lukas Weil, Timo Mühlhaus, Dirk von Suchodoletz, Björn Usadel and Angela Kranz reported these activities in ["DataPLANT - Harnessing the Power of Ontologies for FAIR Research Data Management"](https://doi.org/10.11588/heibooks.1288.c18067), available as a full paper online.   
+
+From the BioDATEN Science Data Center team a further contribution is available on ["Challenges in setting up a federated data repository based on InvenioRDM"](https://doi.org/10.11588/heibooks.1288.c18069). The publication of research data is not only evidence of research performance, but also of good scientific practice. An aim in both BioDATEN and DataPLANT was to set up and permanently establish data publication repositories that provide low-threshold, include workflows for quality assurance and make it possible to find and cite research data. Research achievements will be identifiable in the long term and transparently linked to the scholarly record of the individual participants fostering the cultural change. InvenioRDM is the technological base for the [ARChive in DataPLANT](https://archive.nfdi4plants.org).
+
+
+**Further Links**   
+[E-Science-Tage 2025](https://e-science-tage.de/de/startseite)  
+[News Item - Participation of DataPLANT at the E-Science-Tage 2023](https://nfdi4plants.org/content/news/2023-03-03-participation-of-dataplant-at-the-est-2023.html)   
+[Proceedings - E-Science-Tage 2023: Empower Your Research – Preserve Your Data](https://doi.org/10.11588/heibooks.1288)    
+[Paper - DataPLANT - Harnessing the Power of Ontologies for FAIR Research Data Management](https://doi.org/10.11588/heibooks.1288.c18067)  
+[Paper - Challenges in setting up a federated data repository based on InvenioRDM](https://doi.org/10.11588/heibooks.1288.c18069)  
