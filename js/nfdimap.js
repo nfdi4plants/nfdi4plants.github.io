@@ -1,6 +1,6 @@
 Promise.all([
   d3.json("/data/nfdimap/germany.json"), 
-  d3.buffer("/data/nfdimap/participants.xlsx")
+  d3.buffer("/data/nfdimap/participants2.xlsx")
 ]).then( ([germany, buffer]) => {
 
   const tmp = XLSX.read(buffer, { type: 'array'})
