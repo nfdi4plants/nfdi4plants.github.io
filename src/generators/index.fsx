@@ -88,8 +88,9 @@ let generate' (ctx : SiteContents) (_: string) =
                     figure [Class "image"] [
                         img [Src "images/nfdi-hero.svg"]
                     ]
-                    p [Class "title"] [!!"Democratization of plant research"]
-                    p [Class "title"] [!!"Made easy."]
+                    p [Class "title"] [!!"Democratization of plant research."]
+                    p [Class "title"] [!!"Made easy and free"]
+                    p [Class "title"] [!!"for everyone!"]
                     a [Class "button is-rounded has-bg-lightblue"; Href "https://auth.nfdi4plants.org/realms/dataplant/account"] [iconTextLeft "fas fa-caret-right" "Become a member"]
                 ]
             ]
