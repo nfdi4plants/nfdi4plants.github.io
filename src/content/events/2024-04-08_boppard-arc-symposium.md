@@ -14,12 +14,14 @@ preview-text:
 </tr>
 <tr>
     <td>
-    <b>Date:</b><br>
-    April 08th to 10th<br>
+    <b>From:</b><br>
+    April 08th<br>
+    12:00<br>
     <br>
-    <b>Time:</b><br>
-    12:00 - 16:00<br>
-    <br>  
+    <b>To:</b><br>
+    April 10th<br>
+    16:00<br>
+    <br>
     <b>Category:</b>
     <br>Conference<br><br>
     </td>
