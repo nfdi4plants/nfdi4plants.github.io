@@ -14,13 +14,11 @@ preview-text:
 </tr>
 <tr>
     <td>
-    <b>From:</b><br>
-    April 08th<br>
-    12 noon<br>
+    <b>Date:</b><br>
+    April 08th to 10th<br>
     <br>
-    <b>To:</b><br>
-    April 10th<br>
-    4PM<br>
+    <b>Time:</b><br>
+    12:00 - 16:00<br>
     <br>  
     <b>Category:</b>
     <br>Conference<br><br>
@@ -51,10 +49,15 @@ The first afternoon will include talks and discussions surrounding the ARC ecosy
 From the first evening onwards, we will mostly work hands-on and hack collaboratively in groups on the goals identified in the first round of discussions.
 
 The conference will create a space for experts of the different NFDIs to interact, discuss and implement, leading to better mutual understanding and greater interoperability between standards and toolings used.
+</details>
+<br>
 
-### Contact
+<details><summary><span style="color: #1fc2a7;font-size:1.5em">
+Contact
+</summary>
 
-**Registration is done via mail**. Write to:
+**Registration is done via mail**.   
+Write to:
 
 Heinrich Lukas Weil<br>
 <a href="javascript:location='mailto:weil@rptu.de">weil@rptu.de</a>
@@ -71,7 +74,7 @@ We hope you will join us in sharing our collective Research Data Management know
 Program
 </summary>
 
-_Preliminary program:_
+**Preliminary program:**
 
 <iframe src="https://kroki.io/mermaid/svg/eNpVkMtqwzAQRff-itlkVwU5TiDVLrQUL2pSyBcM0sQWsUdGUkv795Ulu1CtxDn36jFCiMrYMI_40zlDCrSbZtSxEkn0yDFWkFZ0JgXQP8iDu98Ls3EkkOe9PIKAznGKZGEw0pvzE0ZoWzVNGeK3DSvctWrXVZkG0tE6hg_veo8lefHefuG4bEFBXSspn-AwAGR7oxCWRr24Jrt6fxqya5FNEFfeqkfVJN1s-joTp4x-WO4Xfc7tVf57zs1pi2NG75-sB4DtyEO5sXRe0iiI_twpu0aWb7xa5jStTT6vxV_PSl3P" style="border:0;width:70%;min-width:600px;height:20%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
