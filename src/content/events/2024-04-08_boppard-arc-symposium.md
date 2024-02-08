@@ -64,8 +64,10 @@ Let us know about your culinary needs.
 
 Write to:
 
-Heinrich Lukas Weil<br>
-<a href="javascript:location='mailto:weil@rptu.de">weil@rptu.de</a>
+Janine Mertel<br>
+<a href="javascript:location='mailto:jmertel@rptu.de">jmertel@rptu.de</a>
+
+The deadline for registration is **March 1st 2024**.
 
 We will send you further information in early March.
  
