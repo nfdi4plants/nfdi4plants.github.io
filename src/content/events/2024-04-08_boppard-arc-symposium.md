@@ -58,11 +58,16 @@ The conference will create a space for experts of the different NFDIs to interac
 Contact
 </summary>
 
-**Registration is done via mail**.   
+**Registration is done via mail**. Single rooms will be automatically booked for each registered participant. The fee, which will be approximately 220€ can be payed on-site, or via invoice.
+
+Let us know about your culinary needs.
+
 Write to:
 
-Heinrich Lukas Weil<br>
-<a href="javascript:location='mailto:weil@rptu.de">weil@rptu.de</a>
+Janine Mertel<br>
+<a href="javascript:location='mailto:jmertel@rptu.de">jmertel@rptu.de</a>
+
+The deadline for registration is **March 1st 2024**.
 
 We will send you further information in early March.
  
@@ -78,7 +83,7 @@ Program
 
 **Preliminary program:**
 
-<iframe src="https://kroki.io/mermaid/svg/eNpVkMtqwzAQRff-itlkVwU5TiDVLrQUL2pSyBcM0sQWsUdGUkv795Ulu1CtxDn36jFCiMrYMI_40zlDCrSbZtSxEkn0yDFWkFZ0JgXQP8iDu98Ls3EkkOe9PIKAznGKZGEw0pvzE0ZoWzVNGeK3DSvctWrXVZkG0tE6hg_veo8lefHefuG4bEFBXSspn-AwAGR7oxCWRr24Jrt6fxqya5FNEFfeqkfVJN1s-joTp4x-WO4Xfc7tVf57zs1pi2NG75-sB4DtyEO5sXRe0iiI_twpu0aWb7xa5jStTT6vxV_PSl3P" style="border:0;width:70%;min-width:600px;height:20%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://kroki.io/mermaid/svg/eNpVkMtqwzAQRff-itlkVwU5diDVLrQUL2pSyBcM0sQWsUdGUkv795WluFCtxDn36jFCiMrYsEz40ztDCrSbF9SxEkkMyDFWkFZ0JgXQ38mDu90Ks3EikKe9bEFA7zhFsjAY6c35GSN0nZrnDPHbhgfcdWrXV5kG0tE6hg_vBo8lefbefuG0bkFBXSspn-AwAmR7pRDWRr26Jrt6fxyz65BNEBfeqq1qkm42fVmIU0bfLQ-rPuV2W-S_51ydtjhl9P7JegTYjjyUG0vnJY2C6M8ds2tk-carZU7T2uTzo_gLzttdzg" style="border:0;width:70%;min-width:600px;height:20%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <iframe src="https://kroki.io/mermaid/svg/eNpVkEFuwyAQRfc-xWyyKxGJXallm6pl0ciV0guMYGKj2GAZLLW37xiStmGF3vuaPyCEqKyL04Dfx2BJgQnjhCZVgkWHPqUK-KRgOYDzhWYI53NhLg0E8nkrGxDwuVDkTDYWE72GecQEWqtxzBC_XLzCjVabY5VpJJNc8PAxh27GkjxRjCvbAyier6R8gN32sYdsNXobRevXO_udVPXNl0A7kQduWsZbpC4j-j-t0Vyc71b5lGVT5N1Op2AcDhkd-NFEcN9Zy7Lv--JND79y_7_tjZJolwS8NLw47_n_ONJcO38AF5ZixQ" style="border:0;width:70%;min-width:600px;height:20%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
