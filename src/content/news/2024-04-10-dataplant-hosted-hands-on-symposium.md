@@ -5,10 +5,9 @@ preview-text: The three day symposium on ARC communication and interoperability 
 
 ---
 The three day symposium on ARC communication and interoperability took place in Boppard. Besides several DataPLANT colleagues there were also participants from FAIRAGRO, NFDI4BIOIMAGE and NFDI4BIODIVERSITY. The conference created a space for experts of the different NFDIs to interact, discuss and implement, leading to better mutual understanding and greater interoperability between standards and toolings used. After talks and discussions surrounding the ARC ecosystem e.g. how ARCs interoperate with other research data standards implemented in different NFDIs there was hands-on work and collaborative hacking. 
---Hier kannst Du gerne noch ergänzen, was ihr an den letzten zwei Tagen so gemacht habt :)--
 
 The results are available to the community on Github:
-[TITEL](LINK).
+[ARC-Symposium](https://github.com/nfdi4plants/ARC-Symposium).
 
 **Further Links**
 - [FairAgro](https://fairagro.net/en/) is a community-driven initiative within the National Research Data Infrastructure (NFDI) and focuses on the agrosystem domain needed to develop sustainable crop production and agroecosystems.
