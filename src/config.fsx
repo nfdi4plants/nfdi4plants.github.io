@@ -21,5 +21,6 @@ let config = {
         {Script = "imprint.fsx"; Trigger = OnFilePredicate Predicates.ImprintHeroPredicate; OutputFile = Custom Imprint.createImprintPageName}
         {Script = "datahub.fsx"; Trigger = OnFilePredicate Predicates.DatahubHeroPredicate; OutputFile = Custom Datahub.createDatahubPageName}
         {Script = "privacy.fsx"; Trigger = OnFilePredicate Predicates.PrivacyHeroPredicate; OutputFile = Custom Privacy.createPrivacyPageName}
+        {Script = "publications.fsx"; Trigger = Once; OutputFile = NewFileName "publications.html" }
     ]
 }
