@@ -29,7 +29,7 @@ let generate' (ctx : SiteContents) (page: string) =
         ]
         section [Class "section"] [
             div [Class "Container box p-4 is-rounded"] [
-                    h1 [Class "title is-1"] [!!"Featured publications"]
+                    h2 [Class "title is-2"] [!!"Featured publications"]
                     yield! publications_featured |> Seq.map (fun publication -> Publication.createElement publication)
                 ]
         ]
