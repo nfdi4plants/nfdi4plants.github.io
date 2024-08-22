@@ -37,26 +37,36 @@ type Publication = {
     Title     : string
     Year      : int
     Authors   : string
-    DOI       : string
     Featured  : bool
     OpenAccess: bool
+    DOI       : string option
+    URL       : string option
     PubType   : string option
     Publisher : string option
 } with
     static member createElement (pub:Publication) =
 
-        let doi, link = 
-            match pub.DOI.Split("/", System.StringSplitOptions.RemoveEmptyEntries) with
-            | [|"https:"; "doi.org"; prefix; suffix|] -> $"{prefix}/{suffix}", $"https://doi.org/{prefix}/{suffix}"
-            | [|"doi.org"; prefix; suffix|] -> $"{prefix}/{suffix}", $"https://doi.org/{prefix}/{suffix}"
-            | [|"https:"; "doi.org"; unprefixed|] -> $"{unprefixed}", $"https://doi.org/{unprefixed}"
-            | [|"doi.org"; unprefixed|] -> $"{unprefixed}", $"https://doi.org/{unprefixed}"
-            | [|prefix; suffix|] -> $"{prefix}/{suffix}", $"https://doi.org/{prefix}/{suffix}"
-            | [|unprefixed|] -> $"{unprefixed}", $"https://doi.org/{unprefixed}"
+        let link =
+            match pub.URL, pub.DOI with
+            | Some url, None -> Some url
+            | _, Some doi -> 
+                let link = 
+                    match doi.Split("/", System.StringSplitOptions.RemoveEmptyEntries) with
+                    | [|"https:"; "doi.org"; prefix; suffix|] -> $"https://doi.org/{prefix}/{suffix}"
+                    | [|"doi.org"; prefix; suffix|] -> $"https://doi.org/{prefix}/{suffix}"
+                    | [|"https:"; "doi.org"; unprefixed|] -> $"https://doi.org/{unprefixed}"
+                    | [|"doi.org"; unprefixed|] -> $"https://doi.org/{unprefixed}"
+                    | [|prefix; suffix|] -> $"https://doi.org/{prefix}/{suffix}"
+                    | [|unprefixed|] -> $"https://doi.org/{unprefixed}"
+                    | _ -> $"https://doi.org/{doi}"
+                Some link
+            | _ -> None
 
-            | _ -> pub.DOI, $"https://doi.org/{pub.DOI}"
         div [Class "Container box p-4 is-rounded"] [
-            h4 [Class "title is-4"] [ a [Href link] [!! pub.Title]]
+            h4 [Class "title is-4"] [ 
+                if link.IsSome then a [Href link.Value] [!!pub.Title]
+                else !!pub.Title
+            ]
             h6 [Class "subtitle is-6"] [!!pub.Authors]
             div [Class "tags are-medium"] [
                 if pub.OpenAccess then span [Class "tag is-success"] [
@@ -81,16 +91,19 @@ type Publication = {
         let authors = Map.tryFind "author" parsed
         let publisher = Map.tryFind "journal" parsed
         let doi = Map.tryFind "doi" parsed
+        let url = Map.tryFind "url" parsed
         let note = Map.tryFind "note" parsed
 
         let printNone (o: Option<'T>) prop path = 
             match o with
             | None -> printfn $"[Publications-Loader]: {prop} is None for {path}"
             | Some _ -> ()
-            
 
-        match title, year, authors, doi with
-        | Some title, Some year, Some authors, Some doi ->
+        match title, year, authors, doi, url with
+        | _, _, _, None, None -> 
+            printfn $"[Publications-Loader]: Both URL and DOI are None for {path}"
+            None
+        | Some title, Some year, Some authors, doi, url ->
             Some {
                 PubType = if Option.contains "" pubType then None else pubType
                 Publisher = if Option.contains "" publisher then None else publisher
@@ -118,13 +131,14 @@ type Publication = {
                     )
                     |> String.concat ", "
                 DOI = doi
+                URL = url
                 Featured = featured
                 OpenAccess = 
                     match note with
                     | Some note -> note = "open access"
                     | _ -> false
             }
-        | _ -> 
+        | _ ->
             printNone title "title" path
             printNone year "year" path
             printNone authors "authors" path
