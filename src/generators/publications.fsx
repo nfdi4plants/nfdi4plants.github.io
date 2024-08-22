@@ -29,7 +29,7 @@ let generate' (ctx : SiteContents) (page: string) =
         ]
         section [Class "section"] [
             div [Class "Container box p-4 is-rounded"] [
-                    h2 [Class "title is-2"] [!!"Featured publications"]
+                    h2 [Class "title is-2"] [!! $"Featured publications ({publications_featured |> Seq.length})"]
                     yield! publications_featured |> Seq.map (fun publication -> Publication.createElement publication)
                 ]
         ]
@@ -38,7 +38,7 @@ let generate' (ctx : SiteContents) (page: string) =
             |> Seq.groupBy (fun p -> p.Year)
             |> Seq.map (fun (year, publications) ->
                 div [Class "Container box p-4 is-rounded"] [
-                    h2 [Class "title is-2"] [!!year.ToString()]
+                    h2 [Class "title is-2"] [!! $"{year.ToString()} ({publications |> Seq.length})"]
                     yield! publications |> Seq.map (fun publication -> Publication.createElement publication)
                 ]
             )

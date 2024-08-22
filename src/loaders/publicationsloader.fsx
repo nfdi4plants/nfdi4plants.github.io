@@ -34,18 +34,29 @@ let parseBibtexStringDirty (bibtex:string) =
 
 
 type Publication = {
-    PubType   : string
-    Publisher : string
     Title     : string
     Year      : int
     Authors   : string
     DOI       : string
     Featured  : bool
     OpenAccess: bool
+    PubType   : string option
+    Publisher : string option
 } with
     static member createElement (pub:Publication) =
+
+        let doi, link = 
+            match pub.DOI.Split("/", System.StringSplitOptions.RemoveEmptyEntries) with
+            | [|"https:"; "doi.org"; prefix; suffix|] -> $"{prefix}/{suffix}", $"https://doi.org/{prefix}/{suffix}"
+            | [|"doi.org"; prefix; suffix|] -> $"{prefix}/{suffix}", $"https://doi.org/{prefix}/{suffix}"
+            | [|"https:"; "doi.org"; unprefixed|] -> $"{unprefixed}", $"https://doi.org/{unprefixed}"
+            | [|"doi.org"; unprefixed|] -> $"{unprefixed}", $"https://doi.org/{unprefixed}"
+            | [|prefix; suffix|] -> $"{prefix}/{suffix}", $"https://doi.org/{prefix}/{suffix}"
+            | [|unprefixed|] -> $"{unprefixed}", $"https://doi.org/{unprefixed}"
+
+            | _ -> pub.DOI, $"https://doi.org/{pub.DOI}"
         div [Class "Container box p-4 is-rounded"] [
-            h4 [Class "title is-4"] [!! pub.Title]
+            h4 [Class "title is-4"] [ a [Href link] [!! pub.Title]]
             h6 [Class "subtitle is-6"] [!!pub.Authors]
             div [Class "tags are-medium"] [
                 if pub.OpenAccess then span [Class "tag is-success"] [
@@ -56,23 +67,13 @@ type Publication = {
                         span [] [!!"Open Access"]
                     ]
                 ]
-                span [Class "tag"] [!!pub.Publisher]
-                span [Class "tag"] [!!pub.PubType]
-                span [Class "tag"] [
-                    let doi, link = 
-                        match pub.DOI.Split("/", System.StringSplitOptions.RemoveEmptyEntries) with
-                        | [|"https:"; "doi.org"; prefix; suffix|] -> $"{prefix}/{suffix}", $"https://doi.org/{prefix}/{suffix}"
-                        | [|"doi.org"; prefix; suffix|] -> $"{prefix}/{suffix}", $"https://doi.org/{prefix}/{suffix}"
-                        | [|"https:"; "doi.org"; unprefixed|] -> $"{unprefixed}", $"https://doi.org/{unprefixed}"
-                        | [|"doi.org"; unprefixed|] -> $"{unprefixed}", $"https://doi.org/{unprefixed}"
-                        | [|prefix; suffix|] -> $"{prefix}/{suffix}", $"https://doi.org/{prefix}/{suffix}"
-                        | [|unprefixed|] -> $"{unprefixed}", $"https://doi.org/{unprefixed}"
-                        | _ -> pub.DOI, $"https://doi.org/{pub.DOI}"
-                    a [Href link] [!!doi]
-                ]
+                if pub.Publisher.IsSome then span [Class "tag"] [!!pub.Publisher.Value]
+                if pub.PubType.IsSome then span [Class "tag"] [!!pub.PubType.Value]
+                
             ]
         ]
-    static member tryParseFromBibTexString (featured: bool) (bibtex:string) =
+    static member tryParseFromFile (featured: bool) (path: string) =
+        let bibtex = File.ReadAllText path
         let parsed = parseBibtexStringDirty bibtex
         let pubType = Map.tryFind "type" parsed
         let title = Map.tryFind "title" parsed
@@ -82,11 +83,17 @@ type Publication = {
         let doi = Map.tryFind "doi" parsed
         let note = Map.tryFind "note" parsed
 
-        match pubType, title, year, authors, publisher, doi with
-        | Some pubType, Some title, Some year, Some authors, Some publisher, Some doi ->
+        let printNone (o: Option<'T>) prop path = 
+            match o with
+            | None -> printfn $"[Publications-Loader]: {prop} is None for {path}"
+            | Some _ -> ()
+            
+
+        match title, year, authors, doi with
+        | Some title, Some year, Some authors, Some doi ->
             Some {
-                PubType = pubType
-                Publisher = publisher
+                PubType = if Option.contains "" pubType then None else pubType
+                Publisher = if Option.contains "" publisher then None else publisher
                 Title = title
                 Year = int year
                 Authors = 
@@ -118,38 +125,44 @@ type Publication = {
                     | _ -> false
             }
         | _ -> 
-            printfn $"title: {title}, year: {year}, authors: {authors}, publisher: {publisher}, doi: {doi}"
+            printNone title "title" path
+            printNone year "year" path
+            printNone authors "authors" path
+            printNone doi "doi" path
             None
 let contentDir = "content/publications/"
-
-let loadFile (featured:bool) (bibFile: string) =    
-    bibFile
-    |> File.ReadAllText
-    |> Publication.tryParseFromBibTexString featured
 
 let loader (projectRoot: string) (siteContent: SiteContents) =
     let postsPath = Path.Combine(projectRoot, contentDir)
     let options = EnumerationOptions(RecurseSubdirectories = false)
     let files = Directory.GetFiles(postsPath, "*", options)
+
+    let mutable failed_pubs = 0
+    let mutable failed_featured_pubs = 0
+
     files
     |> Array.filter (fun n -> n.EndsWith ".bib")
     |> Array.iter (fun path ->
-        printfn "[Publications-Loader]: Adding publication at %s" path
-        let p = loadFile false path
+        let p = Publication.tryParseFromFile false path
         match p with
         | Some p -> siteContent.Add(p)
-        | None -> printfn $"[Publications-Loader]: Failed to parse publication at {path}"
+        | None -> 
+            printfn $"[Publications-Loader]: Failed to parse publication at {path}"
+            failed_pubs <- failed_pubs + 1
     )
     
-    let files = Directory.GetFiles(postsPath+"/featured/", "*", options)
-    files
+    let featured_files = Directory.GetFiles(postsPath+"/featured/", "*", options)
+    featured_files
     |> Array.filter (fun n -> n.EndsWith ".bib")
     |> Array.iter (fun path ->
-        printfn "[Publications-Loader]: Adding featured publication at %s" path
-        let p = loadFile true path
+        let p = Publication.tryParseFromFile true path
         match p with
         | Some p -> siteContent.Add(p)
-        | None -> printfn $"[Publications-Loader]: Failed to parse publication at {path}"
+        | None -> 
+            printfn $"[Publications-Loader]: Failed to parse publication at {path}"
+            failed_featured_pubs <- failed_featured_pubs + 1
     )
+    printfn $"[Publications-Loader]: {files.Length - failed_pubs}/{files.Length} publications loaded"
+    printfn $"[Publications-Loader]: {featured_files.Length - failed_featured_pubs}/{featured_files.Length} featured publications loaded"
     printfn "[Publications-Loader]: Done loading publications items"
     siteContent
