@@ -4,7 +4,11 @@ This repository contains the content and content generators that result in the D
 
 ## Authoring content
 
-Please refer to [this guide](./src/content/README.md) on how to create content for this website
+- [Introduction](./src/content/README.md#introduction)
+- [How generators work](./src/content/README.md#how-generators-work)
+- [Content registry](./src/content/README.md#content-registry)
+- [Details](./src/content/README.md#details)
+- [Publications](./src/content/README.md#publications)
 
 ## Development
 

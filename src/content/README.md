@@ -12,6 +12,7 @@
 - [Content registry](#content-registry)
 - [Details](#details)
   - [Allowed colors](#allowed-colors)
+- [Publications](#publications)
 
 <!-- /TOC -->
 
@@ -136,6 +137,8 @@ Additionally, you can use the `lighter-x` or `darker-x` modifiers, where x is a 
 Publications are used to render a list of DataPLANT publications on the `/publications.html` page.
 
 Publications are located in the `src/content/publications` directory, and MUST adhere to the [BibTeX format](https://bibtex.eu/de/fields/).
+
+To add a new publication, either file a pull request with a bibtex file, or [create an issue](https://github.com/nfdi4plants/nfdi4plants.github.io/issues/new) with the publication details.
 
 The following bibtex fields are *mandatory* for a publication to be rendered correctly:
 
