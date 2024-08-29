@@ -1,5 +1,5 @@
 name: Add publication
-about: Add a DataPLANT publication.
+description: Add a DataPLANT publication.
 title: "[Add publication]: "
 assignees:
   - fstein88
