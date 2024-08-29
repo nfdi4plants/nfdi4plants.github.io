@@ -3,15 +3,16 @@
 <!-- TOC -->
 
 - [Introduction](#introduction)
-    - [What is markdown](#what-is-markdown)
-    - [Writing markdown content](#writing-markdown-content)
+  - [What is markdown](#what-is-markdown)
+  - [Writing markdown content](#writing-markdown-content)
 - [How generators work](#how-generators-work)
-    - [Generator metadata](#generator-metadata)
-    - [Generator markdown content](#generator-markdown-content)
-    - [Example](#example)
+  - [Generator metadata](#generator-metadata)
+  - [Generator markdown content](#generator-markdown-content)
+  - [Example](#example)
 - [Content registry](#content-registry)
 - [Details](#details)
-    - [Allowed colors](#allowed-colors)
+  - [Allowed colors](#allowed-colors)
+- [Publications](#publications)
 
 <!-- /TOC -->
 
@@ -130,3 +131,51 @@ The following base colors are allowed in content:
     red
 
 Additionally, you can use the `lighter-x` or `darker-x` modifiers, where x is a multiple of 10 between 10 and 90, e.g. `mint-darker-20` or `red-lighter-80`
+
+## Publications
+
+Publications are used to render a list of DataPLANT publications on the `/publications.html` page.
+
+Publications are located in the `src/content/publications` directory, and MUST adhere to the [BibTeX format](https://bibtex.eu/de/fields/).
+
+To add a new publication, either file a pull request with a bibtex file, or [create an issue](https://github.com/nfdi4plants/nfdi4plants.github.io/issues/new) with the publication details.
+
+The following bibtex fields are *mandatory* for a publication to be rendered correctly:
+
+| Field  | Description | Example |
+| --- | --- | --- |
+| `title` | The title of the publication | `title = {PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research}` |
+| `author` | The authors of the publication. Ideally, follow the scheme of `Lastname, Suffix, Firstname` joined by `and` for multiple authors | `author = {Weil, Heinrich Lukas and Schneider, Kevin` |
+| `year` | The year of publication | `year = {2023}` |
+| `doi` or `url` | The DOI or URL of the publication. If both are present, `doi` will be used. This field is used to create the link pointing to the full publication record | `doi = {https://doi.org/10.1111/tpj.16474}`; `url = {https://doi.org/10.1111/tpj.16474}` |
+
+Here is an example containing minimal information:
+
+```BibTeX
+@article{DataHUB,
+  author = {Weil, Heinrich Lukas and Schneider, Kevin and Tschöpe, Marcel and Bauer, Jonathan and Maus, Oliver and Frey, Kevin and Brilhaus, Dominik and Martins Rodrigues, Cristina and Doniparthi, Gajendra and Wetzels, Florian and Lukasczyk, Jonas and Kranz, Angela and Grüning, Björn and Zimmer, David and Deßloch, Stefan and von Suchodoletz, Dirk and Usadel, Björn and Garth, Christoph and Mühlhaus, Timo},
+  title = {PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research},
+  doi = {https://doi.org/10.1111/tpj.16474},
+  year = {2023}
+}
+```
+
+The following bibtex fields are *optional* and are used to render additional information via tags:
+
+| Field  | Description | Example |
+| --- | --- | --- |
+| `journal` | The journal in which the publication was published | `journal = {The Plant Journal}` |
+| `note` | This field is used to indicate open access, strictly via the value `open access`. | `note = {open access}` |
+
+Here is an example containing all information:
+
+```BibTeX
+@article{DataHUB,
+  author = {Weil, Heinrich Lukas and Schneider, Kevin and Tschöpe, Marcel and Bauer, Jonathan and Maus, Oliver and Frey, Kevin and Brilhaus, Dominik and Martins Rodrigues, Cristina and Doniparthi, Gajendra and Wetzels, Florian and Lukasczyk, Jonas and Kranz, Angela and Grüning, Björn and Zimmer, David and Deßloch, Stefan and von Suchodoletz, Dirk and Usadel, Björn and Garth, Christoph and Mühlhaus, Timo},
+  title = {PLANTdataHUB: a collaborative platform for continuous FAIR data sharing in plant research},
+  journal = {The Plant Journal},
+  doi = {https://doi.org/10.1111/tpj.16474},
+  year = {2023},
+  note = {open access}
+}
+```

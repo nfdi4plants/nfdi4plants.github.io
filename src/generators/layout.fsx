@@ -12,6 +12,7 @@
 #load "../loaders/jobsloader.fsx"
 #load "../loaders/serviceloader.fsx"
 #load "../loaders/datahubloader.fsx"
+#load "../loaders/publicationsloader.fsx"
 #endif
 
 open Html
