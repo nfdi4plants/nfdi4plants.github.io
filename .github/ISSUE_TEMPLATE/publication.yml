@@ -1,0 +1,42 @@
+name: Add publication
+description: Add a DataPLANT publication.
+title: "[Add publication]: "
+assignees:
+  - fstein88
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Publication title
+    validations:
+      required: true
+- type: input
+  id: author
+  attributes:
+    label: Publication author
+  validations:
+    required: true
+- type: input
+  id: year
+  attributes:
+    label: Publication year
+  validations:
+    required: true
+- type: input
+  id: link
+  attributes:
+    label: Publication DOI or link
+  validations:
+    required: true
+- type: input
+  id: journal
+  attributes:
+    label: Publication journal
+  validations:
+    required: false
+- type: input
+  id: note
+  attributes:
+    label: Publication note
+  validations:
+    required: false
