@@ -65,6 +65,7 @@ let loader (projectRoot: string) (siteContent: SiteContents) =
     let newsPath = System.IO.Path.Combine(projectRoot, contentDir)
     System.IO.Directory.GetFiles newsPath
     |> Array.filter (Predicates.isMarkdownFile)
+    |> Array.filter (fun path -> Path.GetFileNameWithoutExtension path |> fun x -> x.StartsWith("_") |> not)
     |> Array.iter (fun path ->
         try 
             printfn "[MainPageCard-Loader]: Adding mainpagecard at %s" path

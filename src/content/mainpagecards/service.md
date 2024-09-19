@@ -1,13 +1,13 @@
 ---
 heading: service
 title: Building the DataPLANT infrastructure and service landscape
-index: 4
+index: 3
 card-bg: white
 container-bg: olive
 emphasis-color: olive
 image: /images/service.svg
 learn-more-link: content/service.html
-text-position: right
+text-position: left
 
 ---
 
