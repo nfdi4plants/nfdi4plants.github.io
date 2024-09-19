@@ -6,7 +6,7 @@ card-bg: white
 container-bg: mint
 emphasis-color: mint
 image: /images/mission.svg
-learn-more-link: content/learn-more/our-mission.html
+learn-more-link: content/pages/information.html
 text-position: right
 
 ---

@@ -6,7 +6,7 @@ card-bg: white
 container-bg: lightblue
 emphasis-color: lightblue
 image: /images/community.svg
-learn-more-link: content/learn-more/the-community.html
+learn-more-link: content/pages/participation.html
 text-position: left
 
 ---
