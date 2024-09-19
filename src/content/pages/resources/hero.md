@@ -8,22 +8,22 @@ layout: text-right-image-left
 ---
 
 
-## [DataHUB]()  
+## [DataHUB](#datahub)  
 
 Further information about our DataPLANt repositories.
 
-## [Toolbox]
+## [Toolbox](#toolbox)
 
 The collection of all our tools and other resources.
 
-## [Workflow Engine]()
+## [Workflow Engine](#workflow-engine)
 
 Analyze your data stored in ARCs using the Galaxy Workflow Platform.
 
-## [For Developers]()
+## [For Developers](#for-developers)
 
 Find all relevant information for developers regarding contributions.
 
-## [Styleguide]()
+## [Styleguide](#styleguide)
 
 Find information about DataPLANT logos, font and colorschemes here.

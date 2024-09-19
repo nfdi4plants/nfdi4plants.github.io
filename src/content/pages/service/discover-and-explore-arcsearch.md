@@ -1,6 +1,6 @@
 ---
 title: Search ARCs for specific keywords and metadata
-slug: arc-search
+slug: discover-explore
 bg-color: white
 border-color: white
 emphasis-color: darkblue

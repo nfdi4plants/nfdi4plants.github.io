@@ -1,5 +1,6 @@
 ---
 title: Contribute to our templates 
+slug: template-repo
 bg-color: white
 border-color: white
 emphasis-color: darkblue

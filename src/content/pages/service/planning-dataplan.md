@@ -1,6 +1,6 @@
 ---
 title: Our Data Management Plan Generator
-slug: dataplan 
+slug: planning 
 bg-color: white
 border-color: white
 emphasis-color: darkblue

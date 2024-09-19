@@ -1,6 +1,6 @@
 ---
 title: Homogenization to simplify the RDM landscape
-slug: harmonizing-templates
+slug: harmonizing
 bg-color: white
 border-color: white
 emphasis-color: darkblue

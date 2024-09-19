@@ -1,6 +1,6 @@
 ---
 title: The Galaxy Instance for Plant Biology
-slug: galaxy 
+slug: workflow-engine 
 bg-color: white
 border-color: white
 emphasis-color: darkblue

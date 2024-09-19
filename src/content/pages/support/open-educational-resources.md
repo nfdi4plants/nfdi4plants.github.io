@@ -1,6 +1,6 @@
 ---
 title: Browse our open educational resources
-slug: educational-resources
+slug: open-educational-resources
 bg-color: white
 border-color: white
 emphasis-color: darkblue

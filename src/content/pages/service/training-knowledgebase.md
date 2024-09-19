@@ -1,6 +1,6 @@
 ---
 title: Our teaching and training offers
-slug: teaching 
+slug: training 
 bg-color: white
 border-color: white
 emphasis-color: darkblue

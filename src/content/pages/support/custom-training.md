@@ -1,6 +1,6 @@
 ---
 title: Training made for you
-slug: training
+slug: custom-training
 bg-color: white
 border-color: white
 emphasis-color: darkblue

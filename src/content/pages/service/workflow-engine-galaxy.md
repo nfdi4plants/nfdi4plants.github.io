@@ -1,6 +1,6 @@
 ---
 title: Galaxy Workflow Engine
-slug: galaxy 
+slug: workflow-engine 
 bg-color: white
 border-color: white
 emphasis-color: darkblue

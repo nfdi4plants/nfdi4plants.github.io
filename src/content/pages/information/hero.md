@@ -7,17 +7,17 @@ image: ../../images/About/DataPLANT-n.svg
 layout: text-right-image-left
 ---
 
-## News
+## [News](#news)
 What’s new - find DataPLANT’s latest news here.
 
-## Events
+## [Events](#events)
 Events by and with DataPLANT - have a look and join us.
 
-## Knowledge Base
+## [Knowledge Base](#knowledge-base)
 Want to know more - visit the DataPLANT Knowledge Base.
 
-## Publications
+## [Publications](#publications)
 Various publications by DataPLANT members - have fun browsing.
 
-## Annotated Research Context
+## [Annotated Research Context](#arc)
 Interested in learning more about our annotated research context - find out more.
