@@ -1,12 +1,36 @@
 ---
-heading: 
-title: Support
+heading: We are here to help 
+title: Contact us via our helpdesk, learn more about research data management, browse our manuals and teaching materials or join our trainings.  
 bg-color: mint-lighter-80
 emphasis-color: darkblue
 image:
 layout: text-only
-
 --- 
 
+## [Helpdesk]()
 
-lorem asoihjdioasuhjdüä
+Looking for help on research data management or DataPLANT services and infrastructure? Get in touch with us! 
+
+## [Research Data Management]()
+
+Learn more about research data management and why it is important (to us). 
+
+## [Manuals]()
+
+Browse our guides to learn more about DataPLANTs tools and services. 
+
+## [Custom Training]()
+
+You want to learn how you can use the Annotated Research Context to structure your data? We offer on-site or online trainings. 
+
+## [User Support Meeting]()
+
+Join our monthly user support meeting for live support. 
+
+## [Teaching Materials]()
+
+Data management, annotation or publication: Have a look at our trainings and teaching materials. 
+
+## [Open Educational Resources]()
+
+Videos, slides, GitHub repositories and more: Explore our free self-learning materials! 

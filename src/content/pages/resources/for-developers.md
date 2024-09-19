@@ -1,5 +1,6 @@
 ---
-title: Are you interested in contributing to the development of our tools? Here you will find relevant information. 
+title: Are you interested in contributing to the development of our tools? Here you will find relevant information.
+slug: for-developers
 bg-color: white
 border-color: white
 emphasis-color: darkblue

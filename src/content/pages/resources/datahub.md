@@ -1,5 +1,6 @@
 ---
 title: About the DataHUB 
+slug: datahub
 bg-color: white
 border-color: white
 emphasis-color: darkblue

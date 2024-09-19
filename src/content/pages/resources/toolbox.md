@@ -1,5 +1,6 @@
 ---
-title: All tools developed by DataPLANT  
+title: All tools developed by DataPLANT
+slug: toolbox
 bg-color: white
 border-color: white
 emphasis-color: darkblue

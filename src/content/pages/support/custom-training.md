@@ -1,5 +1,6 @@
 ---
-title: PLACEHOLDER
+title: Training made for you
+slug: training
 bg-color: white
 border-color: white
 emphasis-color: darkblue
@@ -8,4 +9,6 @@ layout: text-right-image-left
 index: 4
 ---
 
-custom training
+In addition to offering educational material on DataPLANT’s concepts and tools online, DataPLANT’s Data Stewards offer custom support for your RDM.
+
+If you are interested in arranging a 1-2 day custom training with our Data Stewards you can reach out to us via our email address (info@nfdi4plants.org).

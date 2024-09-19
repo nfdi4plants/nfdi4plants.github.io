@@ -1,5 +1,6 @@
 ---
-title: DataPLANT Styleguide 
+title: DataPLANT Styleguide
+slug: styleguide
 bg-color: white
 border-color: white
 emphasis-color: darkblue
