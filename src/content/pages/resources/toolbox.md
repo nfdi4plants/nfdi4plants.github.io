@@ -1,5 +1,5 @@
 ---
-title: Placeholder 
+title: All tools developed by DataPLANT  
 bg-color: white
 border-color: white
 emphasis-color: darkblue
@@ -8,4 +8,12 @@ layout: text-right-image-left
 index: 2
 ---
 
-toolbox
+- [ARCitect](https://github.com/nfdi4plants/ARCitect) 
+
+- [ARCCommander](https://github.com/nfdi4plants/ARCCommander) 
+
+- [ARCmanager](https://nfdi4plants.de/arcmanager/app/index.html) 
+
+- [DataPLAN](https://dmpg.nfdi4plants.org/) 
+
+- [SWATE](https://swate-alpha.nfdi4plants.org/) 
