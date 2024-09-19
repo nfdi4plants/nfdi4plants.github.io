@@ -11,4 +11,4 @@ text-position: left
 
 ---
 
-DataPLANT’s mission is to provide a sustainable and well annotated data management platform for plant sciences. DataPLANT will pave the way from classical paper publication to pure data publication including the annotated research context
+DataPLANT’s mission is to provide a sustainable and well annotated data management platform for plant sciences. DataPLANT will pave the way from classical paper publication to pure data publication by making use of the Annotated Research Context (ARC).
