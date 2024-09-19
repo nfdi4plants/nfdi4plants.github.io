@@ -5,7 +5,7 @@ index: 2
 card-bg: white
 container-bg: darkblue
 emphasis-color: darkblue
-image: /images/community.svg
+image: /images/community.png
 learn-more-link: content/learn-more/the-community.html
 text-position: right
 
