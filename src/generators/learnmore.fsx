@@ -93,7 +93,11 @@ let createCard (card:Learnmoreloader.LearnMoreCard) =
         ]
 
     let titleComponent = 
-        h1 [Class (sprintf "title %s" emphasisColor)] [!!card.Title]
+        h1 [
+          if card.Slug.IsSome then
+            HtmlProperties.Id (sprintf "#%s" card.Slug.Value)
+          Class (sprintf "title %s" emphasisColor)
+        ] [!!card.Title]
 
     let bodyComponent =
         div [Class "content"] [!!card.Body]

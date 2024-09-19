@@ -62,6 +62,7 @@ type LearnMoreHero = {
 
 type LearnMoreCard = {
     Title           : string
+    Slug            : string option 
     BgColor         : string
     BorderColor     : string
     EmphasisColor   : string
@@ -71,9 +72,10 @@ type LearnMoreCard = {
     Body            : string
 } with
 
-    static member create title bgColor borderColor emphasisColor image layout index body = 
+    static member create title slug bgColor borderColor emphasisColor image layout index body = 
         {
             Title           = title        
+            Slug            = slug
             BgColor         = bgColor      
             BorderColor     = borderColor
             EmphasisColor   = emphasisColor
@@ -89,7 +91,7 @@ type LearnMoreCard = {
 
         let config = MarkdownProcessing.getFrontMatter text
         let content = MarkdownProcessing.getMarkdownContent text
-
+        let slug            = config |> Map.tryFind "slug" |> Option.map MarkdownProcessing.trimString
         let title           = config |> Map.find "title" |> MarkdownProcessing.trimString
         let bgColor         = config |> Map.find "bg-color" |> MarkdownProcessing.trimString
         let borderColor     = config |> Map.find "border-color" |> MarkdownProcessing.trimString
@@ -99,7 +101,7 @@ type LearnMoreCard = {
         let index           = config |> Map.find "index" |> MarkdownProcessing.trimString |> int
         let body            = content 
 
-        LearnMoreCard.create title bgColor borderColor emphasisColor image layout index body 
+        LearnMoreCard.create title slug bgColor borderColor emphasisColor image layout index body 
 
 type LearnMorePage = {
     Path        : string
