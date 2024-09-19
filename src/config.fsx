@@ -17,7 +17,6 @@ let config = {
         {Script = "service.fsx"; Trigger = OnFilePredicate Predicates.ServiceHeroPredicate; OutputFile = Custom Service.createServicePageName}
         {Script = "details.fsx"; Trigger = Once; OutputFile = NewFileName "content/service/arccommander.html"}
         {Script = "jobs.fsx"; Trigger = OnFilePredicate Predicates.JobsHeroPredicate; OutputFile = Custom Jobs.createJobsPageName}
-        {Script = "about.fsx"; Trigger = OnFilePredicate Predicates.AboutHeroPredicate; OutputFile = Custom About.createAboutPageName}
         {Script = "imprint.fsx"; Trigger = OnFilePredicate Predicates.ImprintHeroPredicate; OutputFile = Custom Imprint.createImprintPageName}
         {Script = "datahub.fsx"; Trigger = OnFilePredicate Predicates.DatahubHeroPredicate; OutputFile = Custom Datahub.createDatahubPageName}
         {Script = "privacy.fsx"; Trigger = OnFilePredicate Predicates.PrivacyHeroPredicate; OutputFile = Custom Privacy.createPrivacyPageName}

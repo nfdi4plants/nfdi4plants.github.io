@@ -131,7 +131,10 @@ type LearnMorePage = {
 
         let cards = 
             content 
-            |> Array.filter (fun c -> Path.GetFileNameWithoutExtension c <> "hero")
+            |> Array.filter (fun c -> 
+              Path.GetFileNameWithoutExtension c <> "hero"
+              && ((Path.GetFileNameWithoutExtension c).StartsWith("_") |> not)
+            )
             |> Array.map LearnMoreCard.fromFile
 
         match hero with
@@ -141,7 +144,7 @@ type LearnMorePage = {
         | None -> failwithf "[LearnMore-Loader] directory %s does not contain a hero.md file." folderPath
 
 
-let contentDir = "content/learn-more"
+let contentDir = "content/pages"
 
 let loader (projectRoot: string) (siteContent: SiteContents) =
     let learnMorePath = System.IO.Path.Combine(projectRoot, contentDir)
