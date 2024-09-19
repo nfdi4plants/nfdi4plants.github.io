@@ -1,5 +1,6 @@
 ---
-title: Task Area I - Driving Standardization 
+title: DataPLANT Knowledge Base
+slug: knowledge-base
 bg-color: white
 border-color: white
 emphasis-color: darkblue
@@ -8,4 +9,5 @@ layout: text-right-image-left
 index: 3
 ---
 
-knowledge base
+Service documentation, FAQs and more: Our Knowledge Base is our collaboratively maintained wiki for the management of data. 
+Learn More(Link zur Knowledge Base)

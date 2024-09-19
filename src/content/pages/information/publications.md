@@ -1,5 +1,6 @@
 ---
-title: Task Area I - Driving Standardization 
+title: Publications
+slug: publications 
 bg-color: white
 border-color: white
 emphasis-color: darkblue
@@ -8,4 +9,5 @@ layout: text-right-image-left
 index: 4
 ---
 
-publications
+Various publications, posters and by DataPLANT members - have fun browsing. 
+Learn More (Link zu publications)

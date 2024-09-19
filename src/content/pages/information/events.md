@@ -1,5 +1,6 @@
 ---
-title: Task Area I - Driving Standardization 
+title: DataPLANT Events
+slug: events
 bg-color: white
 border-color: white
 emphasis-color: darkblue
@@ -8,4 +9,7 @@ layout: text-right-image-left
 index: 2
 ---
 
-events
+Upcoming events by and with DataPLANT. 
+We organize our own events or are guests at external happenings. 
+Have a look and join us. 
+Learn More(Link zu events)

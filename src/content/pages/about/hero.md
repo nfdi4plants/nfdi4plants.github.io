@@ -1,6 +1,6 @@
 ---
-heading: DataPLANT
-title: An NFDI consortium of plant research
+heading: Mission
+title: Driving the digital change in plant science 
 bg-color: mint-lighter-70
 emphasis-color: darkblue
 image: ../../images/About/DataPLANT-n.svg
@@ -8,6 +8,26 @@ layout: text-right-image-left
 
 ---
 
-In modern fundamental plant research, scientists produce high-dimensional polymorphic data. To facilitate the collection, processing, exchange, and archiving of these data, the DataPLANT consortium within the [NFDI](https://www.nfdi.de) drives digital transformation and democratization of research data in the field of basic plant research.
+## Community & Partner 
 
-DataPLANT is well prepared for the upcoming challenges by combining expertise in the areas of basic plant research, information and computer sciences, and infrastructure. The targeted service landscape consists of technical-digital assistance as well as personnel on-site support, since the consortium was entirely designed to be user centric. 
+Find out more about our community and partner 
+
+## Governance 
+
+More about the DataPLANT governance. 
+
+## Task Areas 
+
+Four Task Areas contribute to DataPLANT’s work program. 
+
+## Research Concept 
+
+Interested in learning more about our research concept? Find out more. 
+
+## Testimonials 
+
+What our community and partners say about us. 
+
+## NFDI 
+
+DataPLANT is a consortium under the umbrella of the National Research Data Infrastructure (NFDI) dedicated to plant science 
