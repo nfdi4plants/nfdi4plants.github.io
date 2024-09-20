@@ -9,9 +9,14 @@ layout: text-right-image-left
 index: 6
 ---
 
-ARCs are designed to represent FAIR Digital Objects (FDOs) for plant sciences to facilitate encompassing Research Data Management (RDM) tasks.
-By following the ARC guidelines, scientists will package their research data with metadata in a way that will follow the FAIR principles, ISA standard and RO Crate standard.
+The [**A**nnotated **R**esearch **C**ontext (ARC)](https://nfdi4plants.github.io/arc-website/) is DataPLANT's central concept for organizing and documenting research data, focal point of collaboration, data exchange, and overall FAIR Digital Object of choice.
+
 When using the DataPLANT tools (e.g. [ARCitect](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html]) and [guides](https://nfdi4plants.org/nfdi4plants.knowledgebase/index.html) to create ARCs, the majority of ARC guidelines will be followed automatically.
-The detailed description of these technical requirements are captured in the ARC specification, that can be found on [GitHub](https://github.com/nfdi4plants/ARC-specification?tab=readme-ov-file).
-The main purpose of these ARC specifications is to benefit the scientist by supporting them in FAIR research data management that follows standards of the scientific community. As such, any feedback or contributions from the community are welcome.
-You can provide suggestions via [GitHub issues](https://github.com/nfdi4plants/ARC-specification/issues) or contribute to the discussion of novel conceptual ideas [here](https://github.com/nfdi4plants/ARC-specification/discussions).
+
+The detailed description of these technical requirements are captured in the **ARC specification**.
+However, the **ARC is not a top-down mandated concept**, but rather a community-driven effort.
+The ARC specification is a living document that is continuously improved and extended upon.
+It is [hosted on GitHub](https://github.com/nfdi4plants/ARC-specification) and open for contributions from the community, as well as [general discussions](https://github.com/nfdi4plants/ARC-specification/discussions).
+
+The same is true for all ARC-related tooling developed by DataPLANT: development is done out in the open on our [GitHub organization](https://github.com/nfdi4plants), which also has an [top-level discussion forum](https://github.com/orgs/nfdi4plants/discussions).
+For the core ARC tools, we even have an [open development board](https://github.com/orgs/nfdi4plants/projects/10/views/2), which gives an overview on the entire development process of our core developer team.
