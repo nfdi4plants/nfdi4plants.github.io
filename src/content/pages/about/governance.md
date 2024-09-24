@@ -1,11 +1,11 @@
 ---
-title: DataPLANT governance
+title: DataPLANT Governance
 slug: governance
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/About/TA1.svg
-layout: text-right-image-left
+image: ../../images/v2/about/governance.png
+layout: text-left-image-right
 index: 3
 ---
 
@@ -17,5 +17,3 @@ The Steering Committee will add three elected community members, and four Focus 
 The international Advisory Board will consist of international professionals external to DataPLANT, who are appointed due to their expertise in RDM. 
 DataPLANT implements an organizational model designed for long-term, community-enabled sustainability. 
 By implementing an open participation and contribution model, the foundations are laid for open science and self-governance.
-
-![governance](governance.png)

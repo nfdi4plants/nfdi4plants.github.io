@@ -11,4 +11,4 @@ index: 3
 Although ARCs can be generated completely manually, we encourage you to use our convenient tools that assist you in the process.  
 The [ARC Commander](https://github.com/nfdi4plants/arcCommander "Arc Commander") offers machine-aided creation and completion of the ARC folder and file structure.
 
-[SWATE](https://github.com/nfdi4plants/Swate "Swate") and our templates assists you in the process of creating your assay files. 
+[Swate](https://github.com/nfdi4plants/Swate "Swate") and our templates assists you in the process of creating your assay files. 

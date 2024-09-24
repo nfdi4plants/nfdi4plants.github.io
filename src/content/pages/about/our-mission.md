@@ -4,8 +4,8 @@ slug: mission
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/About/TA1.svg
-layout: text-right-image-left
+image: ../../images/v2/about/mission.png
+layout: text-top-image-bottom
 index: 1
 ---
 
@@ -13,4 +13,3 @@ DataPLANT is committed to developing a Research Data Management (RDM) system tha
 To achieve this, we introduce the Annotated Research Context (ARC), which supports the entire research cycle—from experiments to computational analyses, encompassing both actual data and metadata, as well as the resulting publications. 
 This approach ensures practical usability and will contribute to the creation of a central information resource.
 
-![Mission](mission.png)

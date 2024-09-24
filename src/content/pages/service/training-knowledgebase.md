@@ -4,9 +4,9 @@ slug: training
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/About/TA1.svg
+image: ../../images/v2/service/training-knowledgebase.png
 layout: text-right-image-left
-index: 3
+index: 8
 ---
 
 DataPLANT’s teaching and training services ensure smooth adoption and effective use of its tools in the research community. 
@@ -17,4 +17,6 @@ The website offers a self-study knowledge base with cookbooks, RDM tutorials, AR
 For community support, DataPLANT provides a helpdesk and a Git-based project exchange on GitHub, fostering international collaboration. 
 This platform enables project planning and offers a space for researchers to share experiences, seek advice, and collaborate. 
 DataPLANT also organizes community events, including onboarding sessions, consortium meetings, summer schools, lectures, practical courses, and hackathons together with Data Stewards to encourage knowledge sharing and engagement. 
-(Link zu Teaching material KB: https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/index.html)
+
+
+[Teaching material KB](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/index.html)

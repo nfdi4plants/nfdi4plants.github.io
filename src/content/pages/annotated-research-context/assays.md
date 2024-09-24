@@ -13,4 +13,4 @@ Assays correspond to outcomes of experimental assays or analytical measurements 
 
 Assay data files, as well as protocols, must be placed in a subdirectory individually. 
 
-We advise you to use SWATE for completing the study and assay metadata files, as it assists you in following the [annotation principles](http://www.nfdi4plants.org/AnnotationPrinciples/ "Annotation Principles") and comes along with a broad range of prepared templates. 
+We advise you to use Swate for completing the study and assay metadata files, as it assists you in following the [annotation principles](http://www.nfdi4plants.org/AnnotationPrinciples/ "Annotation Principles") and comes along with a broad range of prepared templates. 

@@ -3,11 +3,9 @@ heading: DataPLANT Services
 title: Tools and Services to structure the Data Jungle for plant researchers
 bg-color: mint-lighter-80
 emphasis-color: darkblue
-image:
-layout: text-only
+image: ../../images/v2/service/service.png
+layout: text-top-image-bottom
 --- 
-
-![HERO](hero.png)
 
 ## [Annotated Research Context](#arc)
 

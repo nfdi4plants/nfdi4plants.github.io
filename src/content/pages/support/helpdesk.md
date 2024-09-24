@@ -4,8 +4,8 @@ slug: helpdesk
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/About/TA1.svg
-layout: text-right-image-left
+image: ../../images/v2/support/helpdesk.png
+layout: text-top-image-bottom
 index: 1
 ---
 
@@ -19,4 +19,4 @@ Your questions will be received by our helpdesk team, which includes biologists,
 In many cases, they can assist you directly.
 If needed, they will forward your query to the appropriate expert within the DataPLANT network.
 
-Contact our helpdesk here (Button/Link zum Helpdesk) 
+Contact our helpdesk [here](https://helpdesk.nfdi4plants.org)!

@@ -4,9 +4,9 @@ slug: workflow-engine
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/About/TA1.svg
-layout: text-right-image-left
-index: 7
+image: ../../images/v2/service/workflow-engine.png
+layout: text-top-image-bottom
+index: 5
 ---
 
 The Galaxy workflow system allows you to analyze your data from you ARCs by executing a series of tools and dataset operations in a defined sequence as a batch process. 
@@ -18,6 +18,6 @@ Workflows can also be viewed and shared with colleagues, published for the broad
 Like other objects within Galaxy, workflows are treated as first-class citizens, enabling you to manage them just as you would with datasets or other analysis outputs. 
 Additionally, any workflow that you have permission to import can be modified using the workflow editor. 
 This allows you to tailor existing workflows to your specific needs, making Galaxy an adaptable platform for both standard and custom analysis pipelines. 
-Whether you're working on routine tasks or complex, multi-step processes, the Galaxy workflow system offers a robust solution for efficiently managing and automating your analyses. (Link zu Galaxy Plants: https://plants.usegalaxy.eu/).
+Whether you're working on routine tasks or complex, multi-step processes, the Galaxy workflow system offers a robust solution for efficiently managing and automating your analyses. 
 
-![Workflow Engine](workflow-engine.png)
+[Galaxy Plants](https://plants.usegalaxy.eu/).

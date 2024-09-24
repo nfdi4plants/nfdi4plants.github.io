@@ -4,7 +4,7 @@ slug: data-publication
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/About/TA1.svg
+image: ../../images/v2/service/data-publication.png
 layout: text-right-image-left
 index: 6
 ---
@@ -18,5 +18,3 @@ Once submitted via ARCigator, ARCs are submitted as a request for publication (R
 Once an ARC is in RFP stage, emails are sent to the addresses registered in the ARCs metadata that contain a link to the ARCs publication status update page. 
 RFPs are reviewed by the ARChive's editorial board, which might request changes to certain metadata entries to meet our quality criteria. 
 If the RFP is accepted, the ARC is published and a Digital Object Identifier (DOI) is minted for the ARC via DataCite.
-
-![Data Publication](data-publication.png)

@@ -5,9 +5,12 @@ bg-color: white
 border-color: white
 emphasis-color: darkblue
 image: ../../images/About/TA1.svg
-layout: text-right-image-left
+layout: text-only
 index: 5
 ---
+
+> If you want to dive deep into the ARC take a look at the [ARC website](arc-rdm.org)! 💡
+
 The concept of Fair Digital Objects (FDOs) is becoming central to data publication.
 Classical publications are beginning to reference FDOs as standalone data publications, enabling data to be shared independently of traditional articles.
 The [FAIR Data Principles](https://www.go-fair.org/fair-principles/) (Findable, Accessible, Interoperable, Reusable) outline how data packages should be structured to ensure they are useful for both humans and machines.

@@ -1,5 +1,5 @@
 ---
-title: SWATE - Swate Workflow Annotation Tool for Excel
+title: Swate - Swate Workflow Annotation Tool for Excel
 bg-color: mint-lighter-70
 border-color: mint-lighter-70
 emphasis-color: mint

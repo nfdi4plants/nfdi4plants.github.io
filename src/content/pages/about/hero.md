@@ -1,6 +1,6 @@
 ---
-heading: Mission
-title: Driving the digital change in plant science 
+heading: Information about DataPLANT
+title: Find out more about DataPLANT’s mission, our community and partner, our governance, task areas and research concept.   
 bg-color: mint-lighter-70
 emphasis-color: darkblue
 image: ../../images/About/DataPLANT-n.svg
@@ -8,9 +8,13 @@ layout: text-right-image-left
 
 ---
 
+## [Mission](#mission)
+
+Driving the digital change in plant science.
+
 ## [Community & Partner](#community-and-partners) 
 
-Find out more about our community and partner 
+Find out more about our community and partner.
 
 ## [Governance](#governance) 
 

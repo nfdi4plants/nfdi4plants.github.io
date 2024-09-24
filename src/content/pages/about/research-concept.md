@@ -4,8 +4,8 @@ slug: rdm-concept
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/About/TA1.svg
-layout: text-right-image-left
+image: ../../images/v2/about/research-data-management-concept.png
+layout: text-top-image-bottom
 index: 5
 ---
 
@@ -17,5 +17,3 @@ ARCs provide a set of guidelines for combining data, metadata, and workflows in 
 ARCs are based on international, open standards, like ISA, CWL and RO Crate. 
 DataPLANT’s RDM concept seamlessly integrates with national and international networked infrastructures with a common architecture. 
 Collaborations within and outside the NFDI are fostered to facilitate (re)use of data and services across consortia.
-
-![Research Data Management Concept](research-data-management-concept.png)
