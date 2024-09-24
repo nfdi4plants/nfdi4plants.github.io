@@ -3,7 +3,7 @@ heading: Information about DataPLANT
 title: Find out more about DataPLANT’s mission, our community and partner, our governance, task areas and research concept.   
 bg-color: mint-lighter-70
 emphasis-color: darkblue
-image: ../../images/About/DataPLANT-n.svg
+image: ../../images/About/DataPLANT-n.png
 layout: text-right-image-left
 
 ---

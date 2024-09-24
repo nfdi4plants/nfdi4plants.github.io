@@ -3,7 +3,7 @@ title: Task Area III – Personnel Community Support
 bg-color: white
 border-color: white
 emphasis-color: mint
-image: ../../images/About/TA3.svg
+image: ../../images/About/TA3.png
 layout: text-right-image-left
 index: 4
 
