@@ -3,7 +3,7 @@ title: DataPLANT’s vision
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/About/DataPLANT.svg
+image: ../../images/About/DataPLANT.png
 layout: text-left-image-right
 index: 1
 ---

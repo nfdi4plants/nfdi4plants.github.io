@@ -3,7 +3,7 @@ title: Task Area IV - Increasing reach and sustainable development
 bg-color: white
 border-color: white
 emphasis-color: grey
-image: ../../images/About/TA4.svg
+image: ../../images/About/TA4.png
 layout: text-left-image-right
 index: 5
 
