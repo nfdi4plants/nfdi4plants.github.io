@@ -10,8 +10,18 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.15.9",
     "@astrojs/check": "^0.9.3",
+    "@astrojs/lit": "^4.3.0",
+    "@astrojs/tailwind": "^5.1.1",
+    "@nfdi4plants/web-components": "^1.2.3",
+    "astro": "^4.15.9",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-slug": "^6.0.0",
+    "remark-directive": "^3.0.0",
+    "tailwindcss": "^3.4.13",
     "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "daisyui": "^4.12.10"
   }
 }

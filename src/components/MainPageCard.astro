@@ -1,0 +1,56 @@
+---
+import { bgColorMap, textColorMap } from "../statics"
+
+interface MainPageCardProps {
+  title: string
+  subtitle: string
+  index: number
+  bg: string
+  textColor: string
+  buttonColor: string
+  buttonTextColor: string
+  image: string
+  link: string
+  textPosition: "left" | "right"
+}
+
+const mpcProps = Astro.props.mainPageCardProps as MainPageCardProps;
+const html: string | null = Astro.props.html
+console.log(mpcProps)
+
+const cardClassTextRight = `card glass ${bgColorMap.get(mpcProps.bg)} ${textColorMap.get(mpcProps.textColor)} lg:card-side shadow-xl p-6`
+const cardClassTextLeft = `card ${bgColorMap.get(mpcProps.bg)} ${textColorMap.get(mpcProps.textColor)} lg:card-side shadow-xl p-6`
+const btnClass = `btn ${bgColorMap.get(mpcProps.buttonColor)} ${textColorMap.get(mpcProps.buttonTextColor)} text-lg`
+---
+
+<div class={mpcProps.textPosition === "left" ? cardClassTextLeft : cardClassTextRight}>
+{
+    mpcProps.textPosition === "left"
+    ? 
+    <div class="card-body">
+      <h1 class="card-title text-5xl mb-4">{mpcProps.title}</h1>
+      <h2 class="card-title text-3xl mb-4">{mpcProps.subtitle}</h2>
+      {html && <div class="text-justify text-lg" set:html={html}></div>}
+      <div class="card-actions justify-start">
+        <a href={mpcProps.link} class={btnClass}>Learn more</a>
+      </div>
+    </div>
+    <figure>
+      <img src={mpcProps.image}/>
+    </figure>
+     
+    : 
+    <figure>
+      <img src={mpcProps.image}/>
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title text-5xl mb-4">{mpcProps.title}</h2>
+      <h2 class="card-title text-3xl mb-4">{mpcProps.subtitle}</h2>
+      {html && <div class="text-justify text-lg" set:html={html}></div>}
+      <div class="card-actions justify-end mt-4 mb-4">
+        <a href={mpcProps.link} class={btnClass}>Learn more</a>
+      </div>
+    </div>
+  
+}
+</div>
