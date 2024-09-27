@@ -1,4 +1,8 @@
 ---
+// @ts-ignore  
+import {Navbar, Footer} from '@nfdi4plants/web-components';
+
+
 interface Props {
   title: string;
 }
@@ -17,15 +21,11 @@ const { title } = Astro.props;
   </head>
   <body>
     <main class="flex flex-col min-h-screen">
-      <div class="navbar bg-darkblue text-white">
-        <a class="btn btn-ghost text-xl">MOCKUP NAVBAR PLS IGNORE</a>
-      </div>
+      <Navbar client:only/>
       <div class="grow">
         <slot />
       </div>
-      <div class="footer bg-darkblue text-white">
-        <a class="btn btn-ghost text-xl">MOCKUP Footer PLS IGNORE</a>
-      </div>
+      <Footer client:only/>
     </main>
   </body>
 </html>

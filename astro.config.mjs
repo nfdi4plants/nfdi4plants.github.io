@@ -10,6 +10,11 @@ import remarkDirective from 'remark-directive';
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), lit()],
+  vite: {
+    ssr: {
+      noExternal: ["@nfdi4plants/web-components"],	
+    },
+  },
   markdown: {
     remarkPlugins: [remarkDirective, remarkReplaceLinks()],
     rehypePlugins: [

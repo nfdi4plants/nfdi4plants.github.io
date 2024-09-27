@@ -2,8 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import MainPageCard from '../components/MainPageCard.astro';
 
-// @ts-ignore  
-import { MarkdownInstance } from "astro";
+import { type MarkdownInstance } from "astro";
 const files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('../content/mainpagecards/*.md');
 
 // console.log(

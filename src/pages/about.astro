@@ -3,9 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import SubPageHero from '../components/SubPageHero.astro';
 import SubPageCard from '../components/SubPageCard.astro';
 import { bgColorMap, textColorMap } from "../statics"
-
-// @ts-ignore  
-import { MarkdownInstance } from "astro";
+  
+import { type MarkdownInstance } from "astro";
 const all_files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('../content/about/*.md');
 const hero : MarkdownInstance<Record<string,any>> = (await Astro.glob('../content/about/hero.md'))[0];
 
