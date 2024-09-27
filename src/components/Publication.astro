@@ -27,9 +27,11 @@ const cardClass = `card shadow-xl p-6 rounded-box grid place-items-center mb-2 $
     <p>{props.author}</p>
     {
       props.abstract && 
-      <details>
-        <summary>Abstract</summary>
-        <p>{props.abstract}</p>
+      <details class="collapse collapse-arrow">
+        <summary class="collapse-title text-md font-medium after:left-[1.4rem] pl-12 pr-4">Abstract</summary>
+        <div class="flex flex-wrap collapse-content">
+          <article class="prose text-justify">{props.abstract}</article>
+        </div>
       </details>
     }
     <div class="flex flex-wrap gap-2">
