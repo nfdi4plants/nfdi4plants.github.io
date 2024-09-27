@@ -7,7 +7,7 @@ interface PublicationProps {
   author : string;
   abstract: string | undefined;
   title : string;
-  journal : string;
+  journal : string | undefined;
   doi : string | undefined;
   url : number | undefined;
   year : number;
@@ -22,7 +22,7 @@ const link = props.doi ? (props.doi ? props.doi :  "#") : "#";
 const cardClass = `card shadow-xl p-6 rounded-box grid place-items-center mb-2 ${bgColor}`;
 ---
 <div class={cardClass}>
-  <div class="card-body">
+  <div class="card-body w-full break-words">
     <h2 class="card-title text-2xl text-olive-800 hover:text-mint-600"><a href={link}>{props.title}</a></h2>
     <p>{props.author}</p>
     {
@@ -32,11 +32,11 @@ const cardClass = `card shadow-xl p-6 rounded-box grid place-items-center mb-2 $
         <p>{props.abstract}</p>
       </details>
     }
-    <div class="flex gap-2">
-      {isOpenAccess && <div class="badge badge-lg bg-olive">Open Access</div>}
-      {props.journal && <div class="badge badge-lg bg-lightgray">{props.journal}</div>}
-      {props.journal && <div class="badge badge-lg bg-lightgray">{props.type}</div>}
-      {props.journal && <div class="badge badge-lg bg-lightgray">{props.year}</div>}
+    <div class="flex flex-wrap gap-2">
+      {isOpenAccess && <div class="badge badge-sm md:badge-md lg:badge-lg bg-olive">Open Access</div>}
+      {props.journal && props.journal.trim() != "" && <div class="badge badge-sm md:badge-md lg:badge-lg bg-lightgray">{props.journal}</div>}
+      {props.type && props.type.trim() != "" && <div class="badge badge-sm md:badge-md lg:badge-lg bg-lightgray">{props.type}</div>}
+      {props.year && <div class="badge badge-sm md:badge-md lg:badge-lg bg-lightgray">{props.year}</div>}
     </div>
   </div> 
 </div>

@@ -48,6 +48,12 @@ const heroProps: SubPageHeroProps = {
   textPosition: "text-only"
 }
 
+const yearLinks = groupedPubs.map(([year, pubs]) => ({
+  title: year,
+  slug: year,
+  summary: `(${pubs.length})`
+}))
+
 const heroSectionLinks: SectionLink[] = [
   {
     title: "Highlighted Publications",
@@ -66,38 +72,43 @@ const heroSectionLinks: SectionLink[] = [
   <div class="flex flex-col flex-grow place-content-center">
     <SubPageHero subPageHeroProps={heroProps} sectionLinks={heroSectionLinks}></SubPageHero>
     <div class="mx-auto w-full max-w-7xl pb-10 lg:py-12 lg:px-8">
-      <div class="space-y-24 sm:px-6 lg:col-span-12 lg:px-0">
-        <div class="card shadow-xl p-6 rounded-box grid place-items-center">
-          <div class="card-body">
-            <h1 id="highlighted-publications" class="card-title text-darkblue text-4xl mb-4 anchor"><a class="anchor-link" href="#highlighted-publications">Highlighted Publications ({highlightedPubs.length})</a></h2>
-            {
-              highlightedPubs
-              .map((pub) => (
-                <Publication bibtex={pub}></Publication>
-              ))
-            }
-          </div> 
-        </div>
+      <div class="space-y-12 sm:px-6 lg:col-span-12 lg:px-0">
+        <h1 id="highlighted-publications" class="title text-darkblue text-4xl mb-4 anchor p-2"><a class="anchor-link" href="#highlighted-publications">Highlighted Publications ({highlightedPubs.length})</a></h2>
+        {
+          highlightedPubs
+          .map((pub) => (
+            <Publication bibtex={pub}></Publication>
+          ))
+        }
         <div class="divider"></div>
-        <div class="card shadow-xl p-6 rounded-box grid place-items-center">
-          <div class="card-body">
-            <h1 id="all-publications" class="card-title text-4xl mb-4 anchor"><a class="anchor-link" href="#all-publications">All Publications ({bibJSON.length})</a></h2>
-              {
-                groupedPubs
-                .map(([year, publications]) => (
-                  <div>
-                    <h2 id={year} class="anchor text-darkblue font-bold text-2xl mb-4 anchor"><a href={"#" + year} class="anchor-link">{year} ({publications.length})</a></h2>
-                    {
-                      publications
-                      .map((pub) => (
-                        <Publication bibtex={pub}>
-                        </Publication>
-                      ))
-                    }
-                  </div>
-                ))
-              }
-          </div> 
+          <h1 id="all-publications" class="title text-4xl mb-4 anchor p-2"><a class="anchor-link" href="#all-publications">All Publications ({bibJSON.length})</a></h2>
+          <div class="flex flex-wrap gap-2">
+          {
+            yearLinks
+            .map((link) => (
+              <div class="badge md:badge-lg lg:badge-xl bg-white border-darkblue">
+                <a href={"#" + link.slug} class="text-darkblue font-bold hover:text-olive-800">
+                  {link.title} {link.summary}
+                </a>
+              </div>
+            ))
+          }
+          </div>
+          {
+            groupedPubs
+            .map(([year, publications]) => (
+              <div>
+                <h2 id={year} class="title anchor text-darkblue font-bold text-2xl mb-4 anchor p-2"><a href={"#" + year} class="anchor-link">{year} ({publications.length})</a></h2>
+                {
+                  publications
+                  .map((pub) => (
+                    <Publication bibtex={pub}>
+                    </Publication>
+                  ))
+                }
+              </div>
+            ))
+          }
         </div>
       </div>
     </div>
