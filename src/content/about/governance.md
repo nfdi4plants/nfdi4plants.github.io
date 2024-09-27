@@ -1,10 +1,11 @@
 ---
 title: DataPLANT Governance
+summary: More about the DataPLANT governance. 
 slug: governance
 bgColor: white
 textColor: black
 emphasisColor: darkblue
-image: ../../images/v2/about/governance.png
+image: ../../images/about/governance.png
 textPosition: left
 index: 3
 ---

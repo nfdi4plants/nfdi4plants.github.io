@@ -1,10 +1,11 @@
 ---
 title: Our Community & Partners
+summary: Find out more about our community and partners.
 slug: community-and-partners 
 bgColor: white
 textColor: black
 emphasisColor: darkblue
-image: ../../images/v2/about/community-and-partner.png
+image: ../../images/about/community-and-partner.png
 textPosition: right
 index: 2
 ---

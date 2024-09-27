@@ -1,10 +1,11 @@
 ---
 title: Our Task Areas
+summary: Four Task Areas contribute to DataPLANT’s work program. 
 slug: task-areas
 bgColor: white
 textColor: black
 emphasisColor: darkblue
-image: ../../images/v2/about/task-areas.png
+image: ../../images/about/task-areas.png
 textPosition: bottom
 index: 4
 ---

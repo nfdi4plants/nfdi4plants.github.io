@@ -1,10 +1,11 @@
 ---
 title: What others say about DataPLANT
+summary: What our community and partners say about us. 
 slug: testimonials
 bgColor: white
 textColor: black
 emphasisColor: darkblue
-image: ../../images/About/TA1.svg
+image: ../../images/about/TA1.svg
 textPosition: text-only
 index: 6
 ---

@@ -1,25 +1,47 @@
 ---
-import { bgColorMap, textColorMap } from "../statics"
+import { bgColorMap, textColorMap, textHoverColorMap, type SectionLink } from "../statics"
 
 interface SubPageHeroProps {
-    title: string
-    subtitle: string
-    bgColor: string
-    textColor: string
-    emphasisColor: string
-    image: string
-    textPosition: "left" | "right" | "top" | "bottom" | "text-only"
+  title: string
+  subtitle: string
+  bgColor: string
+  textColor: string
+  headerColor: string
+  emphasisColor: string
+  image: string
+  textPosition: "left" | "right" | "top" | "bottom" | "text-only"
 }
 
 const props = Astro.props.subPageHeroProps as SubPageHeroProps;
+const sectionLinks = Astro.props.sectionLinks as SectionLink[]
+
+console.log(sectionLinks)
+
 const html: string | null = Astro.props.html
+
+let bgColor = bgColorMap.get(props.bgColor)
+let textColor = textColorMap.get(props.textColor)
+let headerColor = textColorMap.get(props.headerColor)
+let emphasisColor = textHoverColorMap.get(props.emphasisColor)
+
+const heroClass = `hero min-h-[60vh] ${bgColor} ${textColor}`
 ---
 
-<div class="hero bg-base-200 min-h-[60vh]">
-    <div class="hero-content text-center">
-      <div class="max-w-md">
-        <h1 class="text-4xl font-bold mb-4">{props.title}</h1>
-        <button class="btn bg-lightblue text-2xl m-4">Become a member</button>
-      </div>
-    </div>
+<div class={heroClass}>
+  <div class="hero-content flex-col lg:flex-row">
+    <img src={props.image} class="max-w-lg" />
+  <div>
+    <h1 class={`text-5xl font-bold mb-6 ${headerColor}`}>{props.title}</h1>
+    <h2 class="text-xl mb-4">{props.subtitle}</h1>
+    {
+      sectionLinks.map((link) => (
+        <div class="mb-2">
+          <h3><a href={`#${link.slug}`} class={`text-xl font-bold ${headerColor} ${emphasisColor}`}># {link.title}</a></h3>
+          <p class="text-base">{link.summary}</p>
+        </div>
+      ))
+    }
   </div>
+
+  </div>
+</div>

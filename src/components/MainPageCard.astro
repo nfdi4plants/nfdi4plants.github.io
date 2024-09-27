@@ -17,10 +17,15 @@ interface MainPageCardProps {
 const props = Astro.props.mainPageCardProps as MainPageCardProps;
 const html: string | null = Astro.props.html
 
-const cardClassTextRight = `card glass ${bgColorMap.get(props.bgColor)} ${textColorMap.get(props.textColor)} lg:card-side shadow-xl p-6`
-const cardClassTextLeft = `card ${bgColorMap.get(props.bgColor)} ${textColorMap.get(props.textColor)} lg:card-side shadow-xl p-6`
-const btnClass = `btn ${bgColorMap.get(props.buttonColor)} ${textColorMap.get(props.buttonTextColor)} text-lg`
-const articleClass = `prose md:prose-base lg:prose-lg ${textColorMap.get(props.textColor)}`
+let bgColor = bgColorMap.get(props.bgColor)
+let textColor = textColorMap.get(props.textColor)
+let buttonColor = bgColorMap.get(props.buttonColor)
+let buttonTextColor = textColorMap.get(props.buttonTextColor)
+
+const cardClassTextRight = `card glass lg:card-side shadow-xl p-6 ${bgColor} ${textColor}`
+const cardClassTextLeft = `card lg:card-side shadow-xl p-6 ${bgColor} ${textColor}`
+const btnClass = `btn text-lg  ${buttonColor} ${buttonTextColor}`
+const articleClass = `prose md:prose-base lg:prose-lg ${textColor}`
 ---
 
 <div class={props.textPosition === "left" ? cardClassTextLeft : cardClassTextRight}>
