@@ -4,7 +4,7 @@ slug: governance
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/about/governance.png
+image: /src/assets/images/v2/about/governance.png
 layout: text-left-image-right
 index: 3
 ---

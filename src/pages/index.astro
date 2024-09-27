@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import MainPageCard from '../components/MainPageCard.astro';
+import MainPageNews from '~/components/MainPageNews.astro';
 
 import { type MarkdownInstance } from "astro";
 const files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('../content/mainpagecards/*.md');
@@ -31,6 +32,7 @@ const files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('../con
             ))
           }
       </div>
+      <MainPageNews
     </div>
   </div>
 </Layout>

@@ -4,7 +4,7 @@ slug: arc
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/service/arc.png
+image: /src/assets/images/v2/service/arc.png
 layout: text-right-image-left
 index: 1
 ---

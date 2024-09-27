@@ -3,7 +3,7 @@ title: Studies
 bg-color: white
 border-color: white
 emphasis-color: olive
-image: ../../images/Learn-more/ARC/Studies.svg
+image: /src/assets/images/Learn-more/ARC/Studies.svg
 layout: text-right-image-left
 index: 8
 ---

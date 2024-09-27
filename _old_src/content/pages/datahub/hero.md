@@ -3,7 +3,7 @@ heading: ARC Data Hubs
 title: The ARC Data Hub concept makes ARCs first-class citizens of the cloud.
 bg-color: lightblue
 emphasis-color: white
-image: ../../images/Learn-more/ARC/FDOs.png
+image: /src/assets/images/Learn-more/ARC/FDOs.png
 layout: text-bottom-image-top
 
 ---

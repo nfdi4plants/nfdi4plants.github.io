@@ -3,7 +3,7 @@ title: SeARChability
 bg-color: mint-lighter-70
 border-color: mint-lighter-70
 emphasis-color: mint
-image: ../../images/Learn-more/Mission/SeARChability.svg
+image: /src/assets/images/Learn-more/Mission/SeARChability.svg
 layout: text-top-image-bottom
 index: 3
 

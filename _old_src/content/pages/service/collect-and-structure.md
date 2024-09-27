@@ -4,7 +4,7 @@ slug: collect-structure
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/service/collect-and-structure.png
+image: /src/assets/images/v2/service/collect-and-structure.png
 layout: text-right-image-left
 index: 3
 ---

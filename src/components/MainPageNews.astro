@@ -1,0 +1,18 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import MainPageCard from '~/components/MainPageCard.astro';
+
+import { type MarkdownInstance } from "astro";
+const files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('~/pages/news/*.md');
+
+const latest6 = files.slice(0,6);
+console.log(latest6)
+---
+
+<div>
+  <div class="grid gap-8 gap-x-12 sm:gap-y-8 lg:grid-cols-3 sm:grid-cols-2">
+    {latest6.map((file) => (
+      <div>{file.frontmatter}</div>
+    ))}
+  </div>
+</div>

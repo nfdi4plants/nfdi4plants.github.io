@@ -3,7 +3,7 @@ title: Homogenization to simplify RDM landscape
 bg-color: yellow-lighter-70
 border-color: yellow-lighter-70
 emphasis-color: yellow
-image: ../../images/Learn-more/Mission/Homogenization.svg
+image: /src/assets/images/Learn-more/Mission/Homogenization.svg
 layout: text-top-image-bottom
 index: 1
 
@@ -14,4 +14,4 @@ No idea how to create an ARC?
 Use our "4 steps to your ARC" guide!
 
 *No idea how to create an ARC?*   
-*Read trough our [ArcCommander Wiki](https://github.com/nfdi4plants/arcCommander/wiki)!* [![ARC-Guide](../../images/Emojis/ARCblue.svg "ARC-Guide"){width=2.5%}](https://github.com/nfdi4plants/arcCommander/wiki) 
+*Read trough our [ArcCommander Wiki](https://github.com/nfdi4plants/arcCommander/wiki)!* [![ARC-Guide](/src/assets/images/branding/ARCblue.svg "ARC-Guide"){width=2.5%}](https://github.com/nfdi4plants/arcCommander/wiki) 

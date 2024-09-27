@@ -4,7 +4,7 @@ slug: mission
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/about/mission.png
+image: /src/assets/images/v2/about/mission.png
 layout: text-top-image-bottom
 index: 1
 ---

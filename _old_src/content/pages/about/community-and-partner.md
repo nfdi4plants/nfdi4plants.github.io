@@ -4,7 +4,7 @@ slug: community-and-partners
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/about/community-and-partner.png
+image: /src/assets/images/v2/about/community-and-partner.png
 layout: text-right-image-left
 index: 2
 ---

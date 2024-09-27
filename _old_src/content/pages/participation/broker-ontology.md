@@ -4,7 +4,7 @@ slug: broker-ontology
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/participation/broker-ontology.png
+image: /src/assets/images/v2/participation/broker-ontology.png
 layout: text-top-image-bottom
 index: 3
 ---

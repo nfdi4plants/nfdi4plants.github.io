@@ -3,7 +3,7 @@ title: Task Area II – Infrastructural Community Support
 bg-color: white
 border-color: white
 emphasis-color: yellow
-image: ../../images/About/TA2.png
+image: /src/assets/images/About/TA2.png
 layout: text-left-image-right
 index: 3
 

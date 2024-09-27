@@ -4,7 +4,7 @@ slug: custom-training
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/support/custom-training.png
+image: /src/assets/images/v2/support/custom-training.png
 layout: text-top-image-bottom
 index: 4
 ---

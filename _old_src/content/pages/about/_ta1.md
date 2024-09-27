@@ -3,7 +3,7 @@ title: Task Area I - Driving Standardization
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/About/TA1.png
+image: /src/assets/images/About/TA1.png
 layout: text-right-image-left
 index: 2
 

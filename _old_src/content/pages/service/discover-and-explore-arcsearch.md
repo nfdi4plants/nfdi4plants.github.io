@@ -4,7 +4,7 @@ slug: discover-explore
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/service/discover-and-explore.png
+image: /src/assets/images/v2/service/discover-and-explore.png
 layout: text-top-image-bottom
 index: 7
 ---

@@ -3,7 +3,7 @@ heading: Annotated Research Context
 title: ARCs are FAIR digital Objects (FDOs)
 bg-color: lightblue
 emphasis-color: white
-image: ../../images/Learn-more/ARC/FDOs.png
+image: /src/assets/images/Learn-more/ARC/FDOs.png
 layout: text-top-image-bottom
 
 ---

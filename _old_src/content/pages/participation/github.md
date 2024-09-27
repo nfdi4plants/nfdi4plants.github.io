@@ -4,7 +4,7 @@ slug: github
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/participation/github.png
+image: /src/assets/images/v2/participation/github.png
 layout: text-top-image-bottom
 index: 2
 ---

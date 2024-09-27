@@ -4,7 +4,7 @@ slug: task-areas
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/about/task-areas.png
+image: /src/assets/images/v2/about/task-areas.png
 layout: text-bottom-image-top
 index: 4
 ---

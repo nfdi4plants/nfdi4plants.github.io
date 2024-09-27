@@ -4,7 +4,7 @@ slug: workflow-engine
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/service/workflow-engine.png
+image: /src/assets/images/v2/service/workflow-engine.png
 layout: text-top-image-bottom
 index: 5
 ---

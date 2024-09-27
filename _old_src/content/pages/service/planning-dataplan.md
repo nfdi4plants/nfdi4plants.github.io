@@ -4,7 +4,7 @@ slug: planning
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/service/dataplan.png
+image: /src/assets/images/v2/service/dataplan.png
 layout: text-left-image-right
 index: 2
 ---

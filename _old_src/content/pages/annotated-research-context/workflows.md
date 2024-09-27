@@ -3,7 +3,7 @@ title: Workflows
 bg-color: white
 border-color: white
 emphasis-color: lightblue
-image: ../../images/Learn-more/ARC/workflows.svg
+image: /src/assets/images/Learn-more/ARC/workflows.svg
 layout: text-left-image-right
 index: 8
 ---

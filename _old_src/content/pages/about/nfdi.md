@@ -4,7 +4,7 @@ slug: nfdi
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/about/nfdi.png
+image: /src/assets/images/v2/about/nfdi.png
 layout: text-right-image-left
 index: 7
 ---

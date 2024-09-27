@@ -3,7 +3,7 @@ title: ISA investigation file
 bg-color: white
 border-color: white
 emphasis-color: mint
-image: ../../images/Learn-more/ARC/investigationfile.svg
+image: /src/assets/images/Learn-more/ARC/investigationfile.svg
 layout: text-right-image-left
 index: 5
 ---

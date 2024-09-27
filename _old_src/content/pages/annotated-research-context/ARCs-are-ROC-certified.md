@@ -3,7 +3,7 @@ title: ARCs are RO-Crate certified
 bg-color: darkblue
 border-color: darkblue
 emphasis-color: white
-image: ../../images/Learn-more/ARC/ROC.svg
+image: /src/assets/images/Learn-more/ARC/ROC.svg
 layout: text-left-image-right
 index: 2
 

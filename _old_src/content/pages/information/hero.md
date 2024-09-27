@@ -3,7 +3,7 @@ heading: Information about DataPLANT
 title: Latest news, event participation, publications, Knowledge Base – here you’ll find information about DataPLANT’s latest endeavours 
 bg-color: mint-lighter-70
 emphasis-color: darkblue
-image: ../../images/About/DataPLANT-n.svg
+image: /src/assets/images/About/DataPLANT-n.svg
 layout: text-right-image-left
 ---
 

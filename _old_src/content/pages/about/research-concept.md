@@ -4,7 +4,7 @@ slug: rdm-concept
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/about/research-data-management-concept.png
+image: /src/assets/images/v2/about/research-data-management-concept.png
 layout: text-top-image-bottom
 index: 5
 ---

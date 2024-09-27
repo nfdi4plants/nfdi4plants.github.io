@@ -4,7 +4,7 @@ slug: become-a-member
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/participation/become-a-member.png
+image: /src/assets/images/v2/participation/become-a-member.png
 layout: text-right-image-left
 index: 1
 ---

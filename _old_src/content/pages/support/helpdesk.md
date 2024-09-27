@@ -4,7 +4,7 @@ slug: helpdesk
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/support/helpdesk.png
+image: /src/assets/images/v2/support/helpdesk.png
 layout: text-top-image-bottom
 index: 1
 ---

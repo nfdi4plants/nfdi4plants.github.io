@@ -4,7 +4,7 @@ slug: template-repo
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/participation/template-repo.png
+image: /src/assets/images/v2/participation/template-repo.png
 layout: text-top-image-bottom
 index: 4
 ---

@@ -3,7 +3,7 @@ title: Sharing is Caring
 bg-color: lightblue-lighter-70
 border-color: lightblue-lighter-70
 emphasis-color: lightblue
-image: ../../images/Learn-more/Mission/SharingisCaring.svg
+image: /src/assets/images/Learn-more/Mission/SharingisCaring.svg
 layout: text-left-image-right
 index: 2
 

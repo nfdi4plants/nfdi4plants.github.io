@@ -4,7 +4,7 @@ title: Isa assay file
 bg-color: mint-lighter-40
 border-color: mint-lighter-40
 emphasis-color: white
-image: ../../images/Learn-more/ARC/assayfile.svg
+image: /src/assets/images/Learn-more/ARC/assayfile.svg
 layout: text-bottom-image-top
 index: 6
 

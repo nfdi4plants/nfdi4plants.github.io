@@ -4,7 +4,7 @@ slug: arc-development
 bg-color: white
 border-color: white
 emphasis-color: darkblue
-image: ../../images/v2/participation/arc-development.png
+image: /src/assets/images/v2/participation/arc-development.png
 layout: text-top-image-bottom
 index: 6
 ---
