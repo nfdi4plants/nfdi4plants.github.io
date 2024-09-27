@@ -1,12 +1,9 @@
 ---
 import { Icon } from 'astro-icon/components';
-import type { Post } from '~/types';
 import {Image} from 'astro:assets';
 
 const { post } = Astro.props;
 const image = post.image;
-console.log(post.image)
-
 const link = post.permalink
 ---
 
@@ -19,7 +16,7 @@ const link = post.permalink
             {image && (
               <Image
                 src={image}
-                class="absolute inset-0 object-cover w-full h-full mb-6 rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                class="absolute inset-0 object-cover w-full h-full mb-6 rounded shadow-lg bg-gray-400"
                 widths={[400, 900]}
                 width={900}
                 sizes="(max-width: 900px) 400px, 900px"
