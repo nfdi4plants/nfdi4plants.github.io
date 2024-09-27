@@ -1,0 +1,104 @@
+---
+import {BibtexParser, type Entry} from "bibtex-js-parser";
+import fs from 'node:fs';
+import Layout from '../layouts/Layout.astro';
+import Publication from '../components/Publication.astro';
+import SubPageHero from '../components/SubPageHero.astro';
+import { bgColorMap, textColorMap, groupBy, type SectionLink, type SubPageHeroProps} from "../statics"
+import { type MarkdownInstance } from "astro";
+import { glob } from 'glob'
+
+const bibtex_files = await glob("src/content/publications/*.bib");
+const bibtex = 
+  bibtex_files
+  .map(file => fs.readFileSync(file, { encoding: 'utf8', flag: 'r' }))
+  .join("\n")
+const bibJSON = BibtexParser.parseToJSON(bibtex)
+const highlightedPubsFile = (await Astro.glob("src/content/publications/_highlighted_publications.md"))[0];
+const highlightedCiteKeys: string [] = highlightedPubsFile.frontmatter.highlightedCiteKeys;
+
+const highlightedPubs =
+  bibJSON
+  .filter(entry => highlightedCiteKeys.includes(entry.id))
+
+const groupedPubs : [string, Entry[]][] = 
+  Object.entries(
+    groupBy(bibJSON, (pub) => pub.year ? pub.year : "unknown")
+  )
+  .sort(([a], [b]) => 
+    Number(a) - Number(b)
+  )
+
+console.log(bibtex_files);
+console.log(bibtex[1]);
+console.log(bibJSON);
+console.log(highlightedCiteKeys);
+console.log(highlightedPubs);
+
+const heroProps: SubPageHeroProps = {
+  title: "DataPLANT Publications",
+  titleColor: "white",
+  subtitle: "A selection of publications from DataPLANT participants and community",
+  bgColor: "darkblue",
+  textColor: "white",
+  headerColor: "olive-400",
+  emphasisColor: "mint-600",
+  image: "",
+  textPosition: "text-only"
+}
+
+const heroSectionLinks: SectionLink[] = [
+  {
+    title: "Highlighted Publications",
+    slug: "highlighted-publications",
+    summary: "Core concepts and other highlights"
+  },
+  {
+    title: "All Publications",
+    slug: "all-publications",
+    summary: "All publications sorted by year"
+  }
+]
+
+---
+<Layout title="DataPLANT - Publications">
+  <div class="flex flex-col flex-grow place-content-center">
+    <SubPageHero subPageHeroProps={heroProps} sectionLinks={heroSectionLinks}></SubPageHero>
+    <div class="mx-auto w-full max-w-7xl pb-10 lg:py-12 lg:px-8">
+      <div class="space-y-24 sm:px-6 lg:col-span-12 lg:px-0">
+        <div class="card shadow-xl p-6 rounded-box grid place-items-center">
+          <div class="card-body">
+            <h1 id="highlighted-publications" class="card-title text-darkblue text-4xl mb-4 anchor"><a class="anchor-link" href="#highlighted-publications">Highlighted Publications</a></h2>
+            {
+              highlightedPubs
+              .map((pub) => (
+                <Publication bibtex={pub}></Publication>
+              ))
+            }
+          </div> 
+        </div>
+        <div class="divider"></div>
+        <div class="card shadow-xl p-6 rounded-box grid place-items-center">
+          <div class="card-body">
+            <h1 id="all-publications" class="card-title text-4xl mb-4 anchor"><a class="anchor-link" href="#all-publications">All Publications</a></h2>
+              {
+                groupedPubs
+                .map(([year, publications]) => (
+                  <div>
+                    <h2 id={year} class="anchor text-darkblue font-bold text-2xl mb-4 anchor"><a href={"#" + year} class="anchor-link">{year} ({publications.length})</a></h2>
+                    {
+                      publications
+                      .map((pub) => (
+                        <Publication bibtex={pub}>
+                        </Publication>
+                      ))
+                    }
+                  </div>
+                ))
+              }
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,42 @@
+---
+import { bgColorMap, textColorMap, textHoverColorMap} from "../statics"
+
+interface PublicationProps {
+  id: string;
+  type: string;
+  author : string;
+  abstract: string | undefined;
+  title : string;
+  journal : string;
+  doi : string | undefined;
+  url : number | undefined;
+  year : number;
+  note : string | undefined;
+}
+const bgColor = Astro.props.bgColor ? bgColorMap.get(Astro.props.bgColor) : "bg-white";
+const props = Astro.props.bibtex as PublicationProps;
+
+const isOpenAccess = props.note ? props.note === "open access" : false;
+const link = props.doi ? (props.doi ? props.doi :  "#") : "#";
+
+const cardClass = `card shadow-xl p-6 rounded-box grid place-items-center ${bgColor}`;
+---
+<div class={cardClass}>
+  <div class="card-body">
+    <h2 class="card-title text-2xl text-olive-800 hover:text-mint-600"><a href={link}>{props.title}</a></h2>
+    <p>{props.author}</p>
+    {
+      props.abstract && 
+      <details>
+        <summary>Abstract</summary>
+        <p>{props.abstract}</p>
+    </details>
+    }
+    <div class="flex gap-2">
+      {isOpenAccess && <div class="badge badge-lg bg-olive">Open Access</div>}
+      {props.journal && <div class="badge badge-lg bg-lightgray">{props.journal}</div>}
+      {props.journal && <div class="badge badge-lg bg-lightgray">{props.type}</div>}
+      {props.journal && <div class="badge badge-lg bg-lightgray">{props.year}</div>}
+    </div>
+  </div> 
+</div>

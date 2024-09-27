@@ -1,16 +1,5 @@
 ---
-import { bgColorMap, textColorMap, textHoverColorMap, type SectionLink } from "../statics"
-
-interface SubPageHeroProps {
-  title: string
-  subtitle: string
-  bgColor: string
-  textColor: string
-  headerColor: string
-  emphasisColor: string
-  image: string
-  textPosition: "left" | "right" | "top" | "bottom" | "text-only"
-}
+import { bgColorMap, textColorMap, textHoverColorMap, type SectionLink, type SubPageHeroProps } from "../statics"
 
 const props = Astro.props.subPageHeroProps as SubPageHeroProps;
 const sectionLinks = Astro.props.sectionLinks as SectionLink[]
@@ -21,6 +10,7 @@ const html: string | null = Astro.props.html
 
 let bgColor = bgColorMap.get(props.bgColor)
 let textColor = textColorMap.get(props.textColor)
+let titleColor = textColorMap.get(props.titleColor)
 let headerColor = textColorMap.get(props.headerColor)
 let emphasisColor = textHoverColorMap.get(props.emphasisColor)
 
@@ -31,7 +21,7 @@ const heroClass = `hero min-h-[60vh] ${bgColor} ${textColor}`
   <div class="hero-content flex-col lg:flex-row">
     <img src={props.image} class="max-w-lg" />
   <div>
-    <h1 class={`text-5xl font-bold mb-6 ${headerColor}`}>{props.title}</h1>
+    <h1 class={`text-5xl font-bold mb-6 ${titleColor}`}>{props.title}</h1>
     <h2 class="text-xl mb-4">{props.subtitle}</h1>
     {
       sectionLinks.map((link) => (
