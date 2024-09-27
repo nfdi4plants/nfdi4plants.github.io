@@ -12,6 +12,8 @@ export default defineConfig({
   integrations: [tailwind(), lit()],
   vite: {
     ssr: {
+      // https://github.com/radix-ui/themes/issues/13#issuecomment-1704971219
+      // Seems to be an issue with web-components
       noExternal: ["@nfdi4plants/web-components"],	
     },
   },
