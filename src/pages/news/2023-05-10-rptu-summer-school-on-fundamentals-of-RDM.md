@@ -1,7 +1,7 @@
 ---
 date: 2023-05-10
 title: RPTU Summer School on Fundamentals of Research Data Management
-preview-text: Always wanted to understand the fundamentals of research data management? Join us for our Summer School the week of July 17th to 21th, 2023...
+previewText: Always wanted to understand the fundamentals of research data management? Join us for our Summer School the week of July 17th to 21th, 2023...
 ---
 **RPTU Summer School on Fundamentals of Research Data Management**  
 *July 17th to 21th, 2023*

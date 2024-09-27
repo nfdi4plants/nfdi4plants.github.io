@@ -1,7 +1,7 @@
 ---
 date: 2024-04-05
-title: Request for support: Unconference Session "towards a barrier-free research data management in European Plant Science" at the EOSC Symposium 2024
-preview-text: The EOSC Symposium 2024 (October 21 - 23) is vital to orchestrate activities for research data management (RDM) in Europe. Because of the strong partnership of EOSC and German NFDI program the symposium is a perfect place to mesh infrastructures, architectures, services, use cases, standards and train activities.
+title: "Request for support: Unconference Session \"towards a barrier-free research data management in European Plant Science\" at the EOSC Symposium 2024"
+previewText: The EOSC Symposium 2024 (October 21 - 23) is vital to orchestrate activities for research data management (RDM) in Europe. Because of the strong partnership of EOSC and German NFDI program the symposium is a perfect place to mesh infrastructures, architectures, services, use cases, standards and train activities.
 ---
 The [EOSC Symposium 2024](https://eosc.eu/symposium2024/) (October 21 - 23) is vital to orchestrate activities for research data management (RDM) in Europe. Because of the strong partnership of EOSC and German NFDI program the symposium is a perfect place to mesh infrastructures, architectures, services, use cases, standards and train activities. DataPLANT teamed with further NFDI consortia to suggest an "Unconference Session - Towards a barrier-free research data management in European Plant Science".
 

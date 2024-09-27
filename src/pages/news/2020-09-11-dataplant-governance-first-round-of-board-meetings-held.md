@@ -1,7 +1,7 @@
 ---
 date: 2020-09-11
-title: DataPLANT governance: First round of board meetings held
-preview-text: During the beginning of September the board meetings were held, starting with the Senior ManagementBoard followed both by the Scientific and Technical bards. The first round of meetings got chaired bythe speaker, future meetings will be coordinated by a board chair supported by the office. It was decided to make the relevant informationtransparent; thus the slides and minutes are directly available via the linked PDFs. All information presented and decisions made will be made public in the future ...
+title: "DataPLANT governance: First round of board meetings held"
+previewText: During the beginning of September the board meetings were held, starting with the Senior ManagementBoard followed both by the Scientific and Technical bards. The first round of meetings got chaired bythe speaker, future meetings will be coordinated by a board chair supported by the office. It was decided to make the relevant informationtransparent; thus the slides and minutes are directly available via the linked PDFs. All information presented and decisions made will be made public in the future ...
 ---
 
 During the beginning of September the board meetings were held, starting with the Senior ManagementBoard followed both by the Scientific and Technical bards. The first round of meetings got chaired bythe speaker, future meetings will be coordinated by a board chair supported by the office. It was decided to make the relevant informationtransparent; thus the slides and minutes are directly available via the linked PDFs. All information presented and decisions made will be made public in the future as well at least to all participants of DataPLANT. Until DataPLANT is officially started, the new web site is becoming available and the cooperation and participation tools are deciced upon, the documents will reside on the preliminary web site.

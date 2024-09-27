@@ -2,7 +2,7 @@
 date: 2024-08-13
 title: DataPLANT renewal proposal submitted
 highlight: true
-preview-text: After several months of preparation, we submitted the DataPLANT proposal for the second funding phase. A big thank you to everyone for their professional and intellectual input, as well as to the writing team for their commitment and perseverance! The fundamental goal of DataPLANT is to foster community participation and engagement by providing support that facilitates research data management (RDM) and FAIR compliance for researchers. It aims to bridge the gap...
+previewText: After several months of preparation, we submitted the DataPLANT proposal for the second funding phase. A big thank you to everyone for their professional and intellectual input, as well as to the writing team for their commitment and perseverance! The fundamental goal of DataPLANT is to foster community participation and engagement by providing support that facilitates research data management (RDM) and FAIR compliance for researchers. It aims to bridge the gap...
 ---
 After several months of preparation, we submitted the DataPLANT proposal for the second funding phase. A big thank you to everyone for their professional and intellectual input, as well as to the writing team for their commitment and perseverance!
 

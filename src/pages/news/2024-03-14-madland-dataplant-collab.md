@@ -1,7 +1,7 @@
 ---
 date: 2024-03-14
 title: Collaborative ties between DataPLANT and the MAdLand consortium
-preview-text: MAdLand (Molecular Adaptation to Land) is a DFG-priority programme research consortium exploring the molecular mechanism behind the transition of plant life from water to land. DataPLANT and MAdLand share common goals in terms of FAIR science, and are committed to close collaboration and open sharing of tools and resources.
+previewText: MAdLand (Molecular Adaptation to Land) is a DFG-priority programme research consortium exploring the molecular mechanism behind the transition of plant life from water to land. DataPLANT and MAdLand share common goals in terms of FAIR science, and are committed to close collaboration and open sharing of tools and resources.
 
 ---
 

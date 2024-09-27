@@ -1,7 +1,7 @@
 ---
 date: 2024-09-05
 title: IPK Gatersleben joins DataPLANT as participating institution 
-preview-text: Following its community centered strategy DataPLANT took in a new participant broadening its base and now including a non-university research institution in the field of plant biology. The research goals of the Leibniz Institute of Plant Genetics and Crop Plant Research (IPK) are directed towards an efficient and sustainable supply of food, energy and raw materials and thus towards meeting global challenges. At the IPK...
+previewText: Following its community centered strategy DataPLANT took in a new participant broadening its base and now including a non-university research institution in the field of plant biology. The research goals of the Leibniz Institute of Plant Genetics and Crop Plant Research (IPK) are directed towards an efficient and sustainable supply of food, energy and raw materials and thus towards meeting global challenges. At the IPK...
 highlight: yes
 ---
 Following its community centered strategy, DataPLANT took in a new participant broadening its base and now including a non-university research institution in the field of plant biology. The research goals of the Leibniz Institute of Plant Genetics and Crop Plant Research (IPK) are directed towards an efficient and sustainable supply of food, energy and raw materials and thus towards meeting global challenges. At the IPK, the conservation, research and utilisation of the genetic diversity of crop plants in the Federal Ex situ Gene Bank are combined with innovative research approaches in the fields of molecular genetics, genome research, molecular plant biology, systems biology, bioinformatics and modelling.

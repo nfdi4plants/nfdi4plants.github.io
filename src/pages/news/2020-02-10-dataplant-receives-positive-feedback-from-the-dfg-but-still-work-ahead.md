@@ -1,7 +1,7 @@
 ---
 date: 2020-02-10
 title: DataPLANT receives positive feedback from the DFG, but still work ahead
-preview-text: DataPLANT was present at the 3rd NFDI Community Workshop - Services for Research Data Management in Neuroscience hosted at the 10th Februar at Ludwig Maximilians University Munich to exchange with other NFDI consortia and  discuss common topics like infrastructure provisioning. The NFDI4Neuro as well as the NFDI4BIMP intend to hand  in their proposals in this year's round of applications. The main topic of this community workshop was the  exchange on infrastructure for the NFDI and especially ...
+previewText: DataPLANT was present at the 3rd NFDI Community Workshop - Services for Research Data Management in Neuroscience hosted at the 10th Februar at Ludwig Maximilians University Munich to exchange with other NFDI consortia and  discuss common topics like infrastructure provisioning. The NFDI4Neuro as well as the NFDI4BIMP intend to hand  in their proposals in this year's round of applications. The main topic of this community workshop was the  exchange on infrastructure for the NFDI and especially ...
 ---
 
 DataPLANT was present at the 3rd NFDI Community Workshop - Services for Research Data Management in Neuroscience hosted at the 10th Februar at Ludwig Maximilians University Munich to exchange with other NFDI consortia and  discuss common topics like infrastructure provisioning. The NFDI4Neuro as well as the NFDI4BIMP intend to hand  in their proposals in this year's round of applications. The main topic of this community workshop was the  exchange on infrastructure for the NFDI and especially on the providers' perspective.

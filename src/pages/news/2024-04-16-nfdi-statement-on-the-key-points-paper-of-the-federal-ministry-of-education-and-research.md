@@ -1,7 +1,7 @@
 ---
 date: 2024-04-16
 title: NFDI Statement on the key points paper of the Federal Ministry of Education and Research
-preview-text: DataPLANT was involved in the creation of the statement on the key points paper of the Federal Ministry of Education and Research on the Research Data Act. The consortium welcomes the objectives outlined in the BMBF key points paper on the Research Data Act to improve access to scientific data in general. To this end, the National Research Data Infrastructure consortium adopted a statement...
+previewText: DataPLANT was involved in the creation of the statement on the key points paper of the Federal Ministry of Education and Research on the Research Data Act. The consortium welcomes the objectives outlined in the BMBF key points paper on the Research Data Act to improve access to scientific data in general. To this end, the National Research Data Infrastructure consortium adopted a statement...
 ---
 
 DataPLANT was involved in the creation of the statement on the key points paper of the Federal Ministry of Education and Research (BMBF) on the Research Data Act. The consortium welcomes the objectives outlined in the BMBF key points paper on the Research Data Act (FDG) to improve access to scientific data in general. To this end, the National Research Data Infrastructure (NFDI) consortium adopted a [statement](https://www.nfdi.de/statement-zum-eckpunktepapier-des-bundesministeriums-fuer-bildung-und-forschung-bmbf-zum-forschungsdatengesetz/) on April 12, 2024.

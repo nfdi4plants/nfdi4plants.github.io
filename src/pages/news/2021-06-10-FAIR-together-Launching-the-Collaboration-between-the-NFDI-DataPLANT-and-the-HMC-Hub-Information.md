@@ -1,9 +1,7 @@
 ---
 date: 2021-06-10
 title: FAIR together – Launching the Collaboration between the NFDI DataPLANT and the HMC Hub Information
-preview-text: The mission of the Helmholtz Metadata Collaboration (HMC) platform and the National Research Data Infrastructure (NFDI) is to improve the findability (Findable), accessibility (Accessible), machine readability (Interoperable), and reusability (Re-usable) of research data across domains, with respect to the FAIR Principles. 
-
-The HMC Hub Information and the NFDI Consortium DataPLANT now starts a direct collaboration at the Jülich Research Center! ...
+previewText: The mission of the Helmholtz Metadata Collaboration (HMC) platform and the National Research Data Infrastructure (NFDI) is to improve the findability (Findable), accessibility (Accessible), machine readability (Interoperable), and reusability (Re-usable) of research data across domains, with respect to the FAIR Principles.
 ---
 
 The mission of the [Helmholtz Metadata Collaboration (HMC) platform](https://helmholtz-metadaten.de/de) and the [National Research Data Infrastructure (NFDI)](https://www.nfdi.de/) is to improve the findability (Findable), accessibility (Accessible), machine readability (Interoperable), and reusability (Re-usable) of research data across domains, with respect to the FAIR Principles. 

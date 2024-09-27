@@ -1,7 +1,7 @@
 ---
 date: 2022-03-25
 title: Overarching activities of DataPLANT in the evolvement of the NFDI
-preview-text:  With the completed onboarding of the second round of NFDI consortia the activities within the various bodies of the NFDI Associationare significantly on the rise and DataPLANT is getting more deeply involved in NFDI activities than originally foreseen. Activities are required in several fields starting from contributions to the four (later more) sections of the NFDI, providing input to various topics like DSI/Nagoya or cooperation with other NFDI consortia and contribution to the NFDI as a whole...
+previewText:  With the completed onboarding of the second round of NFDI consortia the activities within the various bodies of the NFDI Associationare significantly on the rise and DataPLANT is getting more deeply involved in NFDI activities than originally foreseen. Activities are required in several fields starting from contributions to the four (later more) sections of the NFDI, providing input to various topics like DSI/Nagoya or cooperation with other NFDI consortia and contribution to the NFDI as a whole...
 ---
 
 With the completed onboarding of the second round of NFDI consortia the activities within the various bodies of the [NFDI Association](https://nfdi.de) are significantly on the rise and DataPLANT is getting more deeply involved in NFDI activities than originally foreseen. Activities are required in several fields starting from contributions to the four (later more) sections of the NFDI, providing input to various topics like DSI/Nagoya or cooperation with other NFDI consortia and contribution to the NFDI as a whole.

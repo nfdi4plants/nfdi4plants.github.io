@@ -1,7 +1,7 @@
 ---
 date: 2023-02-17
 title: Participation of DataPLANT at Love Data Week 2023
-preview-text: This year's Love Data Week was attended by several NFDI consortia, which given the cutting-edge topic "Data - Agent of Change," is not surprising. Together with the NFDI consortia NFDI4Microbiota and NFDI4Biodiversity, a panel discussion entitled "Wind of change - sharing is caring! How to improve research data and its benefits in the life sciences." was held at the University of Bremen. Making data-driven decisions in the life sciences has a huge effect on the well-being...
+previewText: This year's Love Data Week was attended by several NFDI consortia, which given the cutting-edge topic "Data - Agent of Change," is not surprising. Together with the NFDI consortia NFDI4Microbiota and NFDI4Biodiversity, a panel discussion entitled "Wind of change - sharing is caring! How to improve research data and its benefits in the life sciences." was held at the University of Bremen. Making data-driven decisions in the life sciences has a huge effect on the well-being...
 ---
 
 This year's [Love Data Week](https://forschungsdaten.info/fdm-im-deutschsprachigen-raum/love-data-week/) was attended by several NFDI consortia, which given the cutting-edge topic "Data: Agent of Change," is not surprising.  

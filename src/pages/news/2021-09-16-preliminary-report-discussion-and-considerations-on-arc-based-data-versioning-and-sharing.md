@@ -1,7 +1,7 @@
 ---
 date: 2021-09-16
 title: Preliminary report - Discussion and considerations on ARC based data versioning and sharing
-preview-text: In DataPLANT a working group formed to define a specification of the Annotated Research Context (ARC) and the necessary backend infrastructure for actual data versioning and sharing. This group looks into code repositories as typical processes found in software development align well to the goals of research data management (RDM)...
+previewText: In DataPLANT a working group formed to define a specification of the Annotated Research Context (ARC) and the necessary backend infrastructure for actual data versioning and sharing. This group looks into code repositories as typical processes found in software development align well to the goals of research data management (RDM)...
 ---
 
 In DataPLANT a working group formed to define a specification of the Annotated Research Context (ARC) and the necessary backend infrastructure for actual data versioning and sharing. This group looks into code repositories as typical processes found in software development align well to the goals of research data management (RDM).

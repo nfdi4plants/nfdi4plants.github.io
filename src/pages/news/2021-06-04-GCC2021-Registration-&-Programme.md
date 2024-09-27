@@ -1,9 +1,7 @@
 ---
 date: 2021-06-04
 title: GCC2021 Registration & Programme
-preview-text: DataPLANT is deeply involved with Galaxy as a workflow system and thus would like to advertise the upcoming Galaxy Community Conference. The early registration deadline for the 2021 event has been moved back to June 8. This gives you more time to take advantage of the 50% discount off full registration prices, so make sure you sign up now so you don't miss out.
-
-The draft programme and the speakers are now also available online  ...
+previewText: DataPLANT is deeply involved with Galaxy as a workflow system and thus would like to advertise the upcoming Galaxy Community Conference. The early registration deadline for the 2021 event has been moved back to June 8. This gives you more time to take advantage of the 50% discount off full registration prices, so make sure you sign up now so you don't miss out.
 ---
 
 DataPLANT is deeply involved with Galaxy as a workflow system and thus would like to advertise the upcoming **Galaxy Community Conference**. The early registration deadline for the 2021 event has been moved back to **June 8**. This gives you more time to take advantage of the 50% discount off full registration prices, so make sure you [sign up now](https://www.vibconferences.be/events/gcc2021-virtual-edition#attendees) so you don't miss out.

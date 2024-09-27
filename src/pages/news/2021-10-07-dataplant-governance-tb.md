@@ -1,7 +1,7 @@
 ---
 date: 2021-10-07
-title: DataPLANT-Governance: Technical Board Meeting
-preview-text:  The various service and workflow developments as well as suggestions for the infrastructure operation are overseen by the technical board to ensure a structured evolotion of the implementation of the DataPLANT vision and FAIR principles. After one year of DataPLANT a review of the basic infrastructure and adaptation of the strategy according to the experiences made took place. Modular services are envisioned, ...
+title: 'DataPLANT-Governance: Technical Board Meeting'
+previewText:  The various service and workflow developments as well as suggestions for the infrastructure operation are overseen by the technical board to ensure a structured evolotion of the implementation of the DataPLANT vision and FAIR principles. After one year of DataPLANT a review of the basic infrastructure and adaptation of the strategy according to the experiences made took place. Modular services are envisioned, ...
 ---
 The various service and workflow developments as well as suggestions for the infrastructure operation are overseen by the technical board to
 ensure a structured evolotion of the implementation of the DataPLANT vision and FAIR principles. After one year of DataPLANT a review of the

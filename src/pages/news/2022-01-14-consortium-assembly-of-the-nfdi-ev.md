@@ -1,7 +1,7 @@
 ---
 date: 2022-01-14
 title: Consortium Assembly of the NFDI e.V. 
-preview-text: On the 14th January 2022, the elected spokespersons met for the consortium meeting of the National Research Data Infrastructure (NFDI) e.V. association in accordance with the statutes. The meeting took place as a web conference. After welcome and agreement to the agenda, admission of guests and the acceptance of the rules of procedure, the discussion of the consortium guidelines and discussion and resolution on the statement on basic services...
+previewText: On the 14th January 2022, the elected spokespersons met for the consortium meeting of the National Research Data Infrastructure (NFDI) e.V. association in accordance with the statutes. The meeting took place as a web conference. After welcome and agreement to the agenda, admission of guests and the acceptance of the rules of procedure, the discussion of the consortium guidelines and discussion and resolution on the statement on basic services...
 ---
 
 On the 14th January 2022, the elected spokespersons met for the consortium meeting of the National Research Data Infrastructure (NFDI) e.V. association in accordance with the statutes. The meeting took place as a web conference. After welcome and agreement to the agenda, admission of guests and the acceptance of the rules of procedure, the discussion of the consortium guidelines and discussion and resolution on the statement on basic services took the main part of the meeting time.

@@ -1,8 +1,7 @@
 ---
 date: 2022-09-16
-title: DataPLANT participated in the workshop "Forschungssoftware managen"
-preview-text: Two colleagues in the DataPLANT consortium participated in the workshop "Forschungssoftware managen" held at Stuttgart University mid September. The workshop was initiated by the DINI/nestor e.V. and brought together software developers and research data management specialists from various institutes, experts from service providers and university libraries.
-Software plays a central role in everyday research in order to generate, manage and use research data. Often, however, the software used is...
+title: 'DataPLANT participated in the workshop "Forschungssoftware managent"'
+previewText: 'Two colleagues in the DataPLANT consortium participated in the workshop "Forschungssoftware managen" held at Stuttgart University mid September. The workshop was initiated by the DINI/nestor e.V. and brought together software developers and research data management specialists from various institutes, experts from service providers and university libraries.'
 ---
 
 Two colleagues in the DataPLANT consortium participated in the workshop ["Forschungssoftware managen"](https://dini.de/veranstaltungen/workshops/forschungssoftware-managen/) held at Stuttgart University mid September. The workshop was initiated by the DINI/nestor e.V. and brought together software developers and research data management specialists from various institutes, experts from service providers and university libraries.

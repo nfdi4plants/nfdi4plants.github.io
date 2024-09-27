@@ -1,7 +1,7 @@
 ---
 date: 2023-07-06
 title: DataPLANT at the Open-Science-Festival
-preview-text: DataPLANT as a consortium in the National Research Data Infrastructure is committed to Open Science. The ZBmed, Information Center for Life Sciences and a key player in the NFDI, was host for the Open Science Festival 2023. DataPLANT was there for new ideas on how Open-Science and Open-Data becomes practice. OSF 2023 is one of the premier events for open science. Workshops and lightening talks presented tools and use-cases, but also asked whether the Wissenschaftszeitvertragsgesetz is suitable to...
+previewText: DataPLANT as a consortium in the National Research Data Infrastructure is committed to Open Science. The ZBmed, Information Center for Life Sciences and a key player in the NFDI, was host for the Open Science Festival 2023. DataPLANT was there for new ideas on how Open-Science and Open-Data becomes practice. OSF 2023 is one of the premier events for open science. Workshops and lightening talks presented tools and use-cases, but also asked whether the Wissenschaftszeitvertragsgesetz is suitable to...
 ---
 
 DataPLANT as a consortium in the National Research Data Infrastructure is committed to Open Science. The ZBmed, Information Center for Life Sciences and a key player in the NFDI, was host for the [Open Science Festival 2023](https://www.zbmed.de/vernetzen/veranstaltungen/open-science-festival). DataPLANT was there for new ideas on how Open-Science and Open-Data becomes practice. OSF 2023 is one of the premier events for open science.

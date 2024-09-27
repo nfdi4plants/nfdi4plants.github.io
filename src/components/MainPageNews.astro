@@ -1,18 +1,42 @@
 ---
-import Layout from '~/layouts/Layout.astro';
-import MainPageCard from '~/components/MainPageCard.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import {type Item} from '~/types';
 
 import { type MarkdownInstance } from "astro";
 const files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('~/pages/news/*.md');
 
-const latest6 = files.slice(0,6);
-console.log(latest6)
+const latest6: Item[] = 
+  files
+    .filter((file) => file.frontmatter.date) //filter out for example README.md
+    .sort((a, b) => {
+        const dateA = new Date(a.frontmatter.date).getTime();
+        const dateB = new Date(b.frontmatter.date).getTime();
+
+        return dateB - dateA;  // Sorts in descending order to get the latest first
+      })
+    .slice(0,6)
+    .map((file) => {
+      const date = new Date(file.frontmatter.date).toDateString();
+      return {
+        title: file.frontmatter.title,
+        description: file.frontmatter.previewText,
+        tagLine: date,
+        callToAction: {
+          href: file.url,
+          text: 'Read More',
+          variant: 'secondary',
+        }
+      }
+    });
+// console.log(latest6)
 ---
 
-<div>
-  <div class="grid gap-8 gap-x-12 sm:gap-y-8 lg:grid-cols-3 sm:grid-cols-2">
-    {latest6.map((file) => (
-      <div>{file.frontmatter}</div>
-    ))}
-  </div>
-</div>
+<Features2
+    title="DataPLANT News"
+    subtitle="Check out the latest developments"
+    items={latest6}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-yellow-300"></div>
+    </Fragment>
+  </Features2>

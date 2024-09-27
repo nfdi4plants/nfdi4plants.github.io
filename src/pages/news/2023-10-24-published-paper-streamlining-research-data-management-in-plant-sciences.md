@@ -1,7 +1,7 @@
 ---
 date: 2023-10-24
 title: Published paper - Streamlining Research Data Management in Plant Sciences
-preview-text: DataPLANT aims to support fundamental plant researchers in data management in various ways. Planning is a crucial component especially in the grant application and setup period of projects. Plant sciences present specific RDM needs, with unique data types and - DataPLAN. It addresses challenges in Research Data Management (RDM) specific to plant sciences....
+previewText: DataPLANT aims to support fundamental plant researchers in data management in various ways. Planning is a crucial component especially in the grant application and setup period of projects. Plant sciences present specific RDM needs, with unique data types and - DataPLAN. It addresses challenges in Research Data Management (RDM) specific to plant sciences....
 ---
 DataPLANT aims to support fundamental plant researchers in data management in various ways. Planning is a crucial component especially in the grant application and setup period of projects. Plant sciences present specific RDM needs, with unique data types and challenges. For this purpose the TA1 team developed a specialized tool: [DataPLAN](phttps://plan.nfdi4plants.org/). It addresses challenges in Research Data Management (RDM) specific to plant sciences. DataPLAN, an open-source tool, incorporates prewritten Data Management Plan (DMP) content to facilitate the creation of multiple DMPs. Compatible with Horizon 2020, Horizon Europe, and DFG-funded projects, DataPLAN aims to standardize RDM practices, reduce workload, and enhance collaboration by offering customizable templates.
 

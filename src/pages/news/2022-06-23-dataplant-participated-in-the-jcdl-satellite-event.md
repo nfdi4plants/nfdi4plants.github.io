@@ -1,7 +1,7 @@
 ---
 date: 2022-06-23
 title: DataPLANT participated in the JCDL Satellite Event 
-preview-text: DataPLANT participated in the JCDL Satellite Event on 23rd June 2022. It presented it's background and activities on research data management in the workshop "RDM and DP communities: Finding the common ground to develop a collaborative future service landscape". Long-term access to research data is one of the major goals of the NFDI. Our consortium is strongly committed to research data management and the necessary technical and organizational frameworks. Before the start of DataPLANT the participants...
+previewText: 'DataPLANT participated in the JCDL Satellite Event on 23rd June 2022. It presented its background and activities on research data management in the workshop "RDM and DP communities"'
 ---
 
 DataPLANT participated in the [JCDL Satellite Event](https://2022.jcdl.org/nfdi-satellite-event/) on 23rd June 2022. It presented it's background and activities on research data management in the workshop [RDM and DP communities: Finding the common ground to develop a collaborative future service landscape](https://2022.jcdl.org/nfdi-satellite-event/#workshop-rdm). Long-term access to research data is one of the major goals of the NFDI. Our consortium is strongly committed to research data management and the necessary technical and organizational frameworks. Before the start of DataPLANT the participants of the University Freiburg were active in long standing research activities in digital preservation and continuous access. They participated in various digital preservation projects like bwFLA, EMiL and RDM projects like CiTAR, VICE and BioDATEN.

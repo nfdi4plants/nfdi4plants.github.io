@@ -1,7 +1,7 @@
 ---
 date: 2023-11-22
 title: Collaborative Workshop Strengthens Interconnection of FDM Helpdesks Across Consortia and Beyond
-preview-text: In a collaborative effort to enhance the landscape of research data management (RDM), a two-day workshop on networking FDM helpdesks took place on November 20th and 21st, 2023, at the University of Duisburg-Essen. The event, which included participants beyond the DataPLANT Consortium, saw the gathering of professionals from institutional FDM contact points, NFDI helpdesks, and support initiatives from FDM state initiatives...
+previewText: In a collaborative effort to enhance the landscape of research data management (RDM), a two-day workshop on networking FDM helpdesks took place on November 20th and 21st, 2023, at the University of Duisburg-Essen. The event, which included participants beyond the DataPLANT Consortium, saw the gathering of professionals from institutional FDM contact points, NFDI helpdesks, and support initiatives from FDM state initiatives...
 ---
 
 In a collaborative effort to enhance the landscape of research data management (RDM), a [two-day workshop on networking FDM helpdesks](https://www.nfdi.de/community-workshop-helpdesk-vernetzung/) took place on November 20th and 21st, 2023, at the University of Duisburg-Essen. The event, which included participants beyond the DataPLANT Consortium, saw the gathering of professionals from institutional FDM contact points, NFDI helpdesks, and support initiatives from FDM state initiatives.

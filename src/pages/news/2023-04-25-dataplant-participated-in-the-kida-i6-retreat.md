@@ -1,7 +1,7 @@
 ---
 date: 2023-04-25
 title: DataPLANT participated in the KIDA I6 Retreat
-preview-text: DataPLANT recently participated in the KIDA I6 Retreat, held on April 24th and 25th, 2023 in Berlin Alt-Marienfelde at the German Federal Institute for Risk Assessment, 4SZ Study Centre for Food Chain Modelling and Artificial Intelligence, Department of Biological Safety. The retreat aimed to generate synergies between projects, with several topics presented during the event, including...
+previewText: DataPLANT recently participated in the KIDA I6 Retreat, held on April 24th and 25th, 2023 in Berlin Alt-Marienfelde at the German Federal Institute for Risk Assessment, 4SZ Study Centre for Food Chain Modelling and Artificial Intelligence, Department of Biological Safety. The retreat aimed to generate synergies between projects, with several topics presented during the event, including...
 ---
 
 DataPLANT recently participated in the [KIDA](https://www.kida-bmel.de/kida) I6 Retreat, held on April 24th and 25th, 2023 in Berlin Alt-Marienfelde at the German Federal Institute for Risk Assessment, 4SZ Study Centre for Food Chain Modelling and Artificial Intelligence, Department of Biological Safety. The retreat aimed to generate synergies between projects, with several topics presented during the event, including:

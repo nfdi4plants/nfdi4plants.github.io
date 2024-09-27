@@ -1,9 +1,7 @@
 ---
 date: 2022-09-27
 title: Create your own Data Management Plan with DataPLAN
-preview-text: A Data Management Plan (DMP) structures the handling of research data in a scientific project and describes how to deal with the data during and after the end of your project. Many third-party funders, such as DFG, Horizon Europe, or BMBF expect you to provide these information as part of your funding application.
-
-DataPLANT offers the tool DataPLAN to guide the community through the writing process of such a DMP. First, users need to select a template to generate...
+previewText: A Data Management Plan (DMP) structures the handling of research data in a scientific project and describes how to deal with the data during and after the end of your project. Many third-party funders, such as DFG, Horizon Europe, or BMBF expect you to provide these information as part of your funding application.
 ---
 A Data Management Plan (DMP) structures the handling of research data in a scientific project and describes how to deal with the data during and after the end of your project. Many third-party funders, such as DFG, Horizon Europe, or BMBF expect you to provide these information as part of your funding application.
 

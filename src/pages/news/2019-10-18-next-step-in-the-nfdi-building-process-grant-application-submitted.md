@@ -1,7 +1,7 @@
 ---
 date: 2019-10-18
-title: Next step in the NFDI building process: Grant application submitted
-preview-text: On Tuesday the 15th October the DataPLANT NFDI consortium submitted it's proposal to the DFG. The consortium in Fundamental Plant Research consists of roughly 30 participants including universities and large research institutions distributed over the country. A significant proportion of the participants originate from Baden-Württemberg and the BioDATEN Science Data Center. Further co-applicants are the Technical University of Kaiserslautern and the Forschungszentrum Jülich. The central aim of ...
+title: "Next step in the NFDI building process: Grant application submitted"
+previewText: On Tuesday the 15th October the DataPLANT NFDI consortium submitted it's proposal to the DFG. The consortium in Fundamental Plant Research consists of roughly 30 participants including universities and large research institutions distributed over the country. A significant proportion of the participants originate from Baden-Württemberg and the BioDATEN Science Data Center. Further co-applicants are the Technical University of Kaiserslautern and the Forschungszentrum Jülich. The central aim of ...
 ---
 
 On Tuesday the 15th October the DataPLANT NFDI consortium submitted it's proposal to the DFG. The consortium in Fundamental Plant Research consists of roughly 30 participants including universities and large research institutions distributed over the country. A significant proportion of the participants originate from Baden-Württemberg and the BioDATEN Science Data Center. Further co-applicants are the Technical University of Kaiserslautern and the Forschungszentrum Jülich.

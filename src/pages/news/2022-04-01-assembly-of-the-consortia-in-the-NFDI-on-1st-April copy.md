@@ -1,7 +1,7 @@
 ---
 date: 2022-04-01
 title: Assembly of the consortia in the NFDI on 1st April
-preview-text: As part of the governance of the NFDI Association quarterly assembly of the NFDI consortia (1st and 2nd round, 19 consortia in total) took place online. Before heading to the most significant topic of the state of the Base4NFDI grant application new (co-)heads of the assembly got elected. Andreas Witt of Text+ was proposed for the speaker role, Dirk von Suchodoletz of DataPLANT stood for (re-)election as co-speaker for this body. Both got elected for the coming two years...
+previewText: As part of the governance of the NFDI Association quarterly assembly of the NFDI consortia (1st and 2nd round, 19 consortia in total) took place online. Before heading to the most significant topic of the state of the Base4NFDI grant application new (co-)heads of the assembly got elected. Andreas Witt of Text+ was proposed for the speaker role, Dirk von Suchodoletz of DataPLANT stood for (re-)election as co-speaker for this body. Both got elected for the coming two years...
 ---
 
 As part of the governance of the [NFDI Association](https://www.nfdi.de/verein/) the quarterly assembly of the [NFDI consortia](https://www.nfdi.de/konsortien/) (1st and 2nd round, 19 consortia in total) took place online. Before heading to the most significant topic of the state of the Base4NFDI grant application new (co-)heads of the assembly got elected. Andreas Witt of Text+ was proposed for the speaker role, Dirk von Suchodoletz of DataPLANT stood for (re-)election as co-speaker for this body. Both got elected for the coming two years.

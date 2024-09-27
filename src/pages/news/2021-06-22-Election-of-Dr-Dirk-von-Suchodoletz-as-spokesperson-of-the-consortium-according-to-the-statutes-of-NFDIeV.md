@@ -1,7 +1,7 @@
 ---
 date: 2021-06-22
 title: Election of Dr. Dirk von Suchodoletz as spokesperson of the consortium according to the statutes of NFDI e.V.
-preview-text: We are happy to announce that progress continues to be made regarding the NFDI e.V. As the first consortial assembly will take place at the end of July, we have elected our spokesperson of the DataPLANT consortium on association level last week. We will be represented by Dr. Dirk von Suchodoletz, who also acts as spokesperson for the DFG-funded consortium. Cristina Martins Rodrigues, DataPLANT's project leader, was elected as deputy ...
+previewText: We are happy to announce that progress continues to be made regarding the NFDI e.V. As the first consortial assembly will take place at the end of July, we have elected our spokesperson of the DataPLANT consortium on association level last week. We will be represented by Dr. Dirk von Suchodoletz, who also acts as spokesperson for the DFG-funded consortium. Cristina Martins Rodrigues, DataPLANT's project leader, was elected as deputy ...
 ---
 
 We are happy to announce that progress continues to be made regarding the NFDI e.V. As the first consortial assembly will take place at the end of July, we have elected our spokesperson of the DataPLANT consortium on association level last week. We will be represented by Dr. Dirk von Suchodoletz, who also acts as spokesperson for the DFG-funded consortium. Cristina Martins Rodrigues, DataPLANT's project leader, was elected as deputy.

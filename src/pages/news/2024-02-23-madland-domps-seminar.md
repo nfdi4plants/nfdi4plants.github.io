@@ -1,7 +1,7 @@
 ---
 date: 2024-02-23
 title: MAdLand presents at DOMPS Plant Science Seminar
-preview-text: Deepti Varshney and Saskia Hiltemann from the University of Freiburg and MAdLand consortium presented a talk entitled "MAdLand Resources & Tools" at the Plant Science Seminar organised by the Department of Molecular Plant Sciences in Freiburg. In this presentation they highlighted the close collaborations between MAdLAnd and DataPLANT.
+previewText: Deepti Varshney and Saskia Hiltemann from the University of Freiburg and MAdLand consortium presented a talk entitled "MAdLand Resources & Tools" at the Plant Science Seminar organised by the Department of Molecular Plant Sciences in Freiburg. In this presentation they highlighted the close collaborations between MAdLAnd and DataPLANT.
 ---
 
 ![The MAdLand logo with the text “Molecular Adaptation to Land: plant evolution to change”](/src/assets/images/news/madland-logo.png){: style="float:right"}

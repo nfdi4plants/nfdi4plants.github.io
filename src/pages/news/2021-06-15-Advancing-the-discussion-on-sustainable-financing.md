@@ -1,7 +1,7 @@
 ---
 date: 2021-06-15
 title: Advancing the discussion on sustainable financing
-preview-text: DataPLANT got involved into furthering the discussion on sustainable financing via it's co-founding project BioDATEN. In Baden-Wuerttemberg the science data center activities are coordinated by a working group which held a meeting on business models to discuss options to establish sustainable support of research data management. Here, the insights of the NFDI and the state of considerations got presented by the DataPLANT speaker ...
+previewText: DataPLANT got involved into furthering the discussion on sustainable financing via it's co-founding project BioDATEN. In Baden-Wuerttemberg the science data center activities are coordinated by a working group which held a meeting on business models to discuss options to establish sustainable support of research data management. Here, the insights of the NFDI and the state of considerations got presented by the DataPLANT speaker ...
 ---
 
 DataPLANT got involved into furthering the discussion on sustainable financing via it's co-founding project [BioDATEN](https://portal.biodaten.info/). In Baden-Wuerttemberg the science data center activities are coordinated by a working group which held a meeting on business models to discuss options to establish sustainable support of research data management. Here, the insights of the [NFDI](https://www.nfdi.de/) and the state of considerations got presented by the DataPLANT speaker.

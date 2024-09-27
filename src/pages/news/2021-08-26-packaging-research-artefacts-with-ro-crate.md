@@ -1,7 +1,7 @@
 ---
 date: 2021-08-26
 title: Packaging research artefacts with RO-Crate
-preview-text: Dear DataPLANT Enthusiasts, since the beginning of our project, a lot has happened, always with the goal to improve the Annotated Research Context (ARC) as a FAIR Digital Object. To increase usability, we would like to invite you, the smart minds behind DataPLANT. Together we want to build, use or support ARCs with new tools, templates and ideas...
+previewText: Dear DataPLANT Enthusiasts, since the beginning of our project, a lot has happened, always with the goal to improve the Annotated Research Context (ARC) as a FAIR Digital Object. To increase usability, we would like to invite you, the smart minds behind DataPLANT. Together we want to build, use or support ARCs with new tools, templates and ideas...
 ---
 
 In DataPLANT a working group formed to define a specification of an outline and packaging of research data and its context. This group worked on the [specification of the Annotated Research Context (ARC)](https://github.com/nfdi4plants/ARC-specification/blob/main/ARC%20specification.md "ARC Specification") which will get finalized for the version 1.0 at the upcoming ARC hackathon beginning of September. This aligns well with the proclaimed objectives of DataPLANT regarding to the goals of research data management (RDM). The ARC builds on and implements existing standards like ISA for administrative and experimental metadata and CWL for analysis and workflow metadata. They are designed to represent digital objects that fulfill all FAIR principles and are therefore referred to as FAIR Digital Objects (FDO).

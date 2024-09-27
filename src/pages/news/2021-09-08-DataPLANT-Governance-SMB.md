@@ -1,7 +1,7 @@
 ---
 date: 2021-09-08
-title: DataPLANT Governance: Senior Management Board Meeting
-preview-text: On Wednesday, September 08, 2021 the senior management (SMB) board met again to discuss the current status of the project after pretty much one year of DataPLANT. The SMB's objective is the oversight of the general developments, interaction with other consortia and the general NFDI. It takes care of the strategy and standards development and suggests consortium members as experts for the relevant working groups. This meeting's agenda informed on the newly formed NFDI association and its vision, discussed aspects of community integration and public relations...
+title: 'DataPLANT Governance: Senior Management Board Meeting'
+previewText: On Wednesday, September 08, 2021 the senior management (SMB) board met again to discuss the current status of the project after pretty much one year of DataPLANT. The SMB's objective is the oversight of the general developments, interaction with other consortia and the general NFDI. It takes care of the strategy and standards development and suggests consortium members as experts for the relevant working groups. This meeting's agenda informed on the newly formed NFDI association and its vision, discussed aspects of community integration and public relations...
 ---
 On Wednesday, September 08, 2021 the senior management (SMB) board met again 
 to discuss the current status of the project after pretty much one year of 
