@@ -14,6 +14,7 @@
     "@astrojs/lit": "^4.3.0",
     "@astrojs/tailwind": "^5.1.1",
     "@iconify-json/flat-color-icons": "^1.2.0",
+    "@iconify-json/tabler": "^1.2.3",
     "@nfdi4plants/web-components": "^1.2.3",
     "astro": "^4.15.9",
     "astro-icon": "^1.1.1",

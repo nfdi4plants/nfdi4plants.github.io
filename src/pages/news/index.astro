@@ -1,0 +1,49 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import Layout from '~/layouts/Layout.astro';
+import RefListCard from '~/components/RefListCard.astro';
+
+const newsCollection = await getCollection('news')
+
+async function collectData() {
+  const newData = newsCollection
+    .sort((a, b) => {
+          const dateA = new Date(a.data.date).getTime();
+          const dateB = new Date(b.data.date).getTime();
+
+          return dateB - dateA;  // Sorts in descending order to get the latest first
+        })
+    .map(async (entry) => {
+    const { Content } = await entry.render();
+    return {
+      id: entry.id,
+      slug: entry.slug,
+      publishDate: entry.data.date,
+      title: entry.data.title,
+      permalink: "/news/" + entry.slug,
+      content: Content,
+      excerpt: entry.data.previewText,
+      image: entry.data.image,
+    }
+  })
+  return await Promise.all(newData)
+} 
+
+const data = await collectData();
+---
+
+<Layout title="News">
+  <div class="flex justify-center py-5 lg:py-10 xl:py-20">
+    <div class="max-w-4xl">
+      <ul>
+        {
+          data.map((entry) => (
+            <li class="mb-12 md:mb-20">
+              <RefListCard post={entry} />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</Layout>

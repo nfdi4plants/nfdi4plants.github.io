@@ -1,34 +1,33 @@
 ---
 import Features2 from '~/components/widgets/Features2.astro';
 import {type Item} from '~/types';
-
 import { type MarkdownInstance } from "astro";
-const files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('~/pages/news/*.md');
+import { getCollection, getEntry } from 'astro:content';
+
+const news = await getCollection('news')
 
 const latest6: Item[] = 
-  files
-    .filter((file) => file.frontmatter.date) //filter out for example README.md
+  news
     .sort((a, b) => {
-        const dateA = new Date(a.frontmatter.date).getTime();
-        const dateB = new Date(b.frontmatter.date).getTime();
+        const dateA = new Date(a.data.date).getTime();
+        const dateB = new Date(b.data.date).getTime();
 
         return dateB - dateA;  // Sorts in descending order to get the latest first
       })
     .slice(0,6)
-    .map((file) => {
-      const date = new Date(file.frontmatter.date).toDateString();
+    .map((newsItem) => {
+      const date = new Date(newsItem.data.date).toDateString();
       return {
-        title: file.frontmatter.title,
-        description: file.frontmatter.previewText,
+        title: newsItem.data.title,
+        description: newsItem.data.previewText,
         tagLine: date,
         callToAction: {
-          href: file.url,
+          href: "/news/" + newsItem.slug,
           text: 'Read More',
           variant: 'secondary',
         }
       }
     });
-// console.log(latest6)
 ---
 
 <Features2
