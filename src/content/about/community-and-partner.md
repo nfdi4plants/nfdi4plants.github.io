@@ -1,5 +1,6 @@
 ---
 title: Our Community & Partners
+titleColor: darkblue
 summary: Find out more about our community and partners.
 slug: community-and-partners 
 bgColor: white
