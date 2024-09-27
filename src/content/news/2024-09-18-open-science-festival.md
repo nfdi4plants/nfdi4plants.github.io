@@ -10,7 +10,7 @@ DataPLANT is committed to Open Science and actively participated with a market b
 
 During a captivating panel discussion the participants debated how open science could advance artificial intelligence. Workshops with active participation were furthermore fostering exchange about open science, but also topics like error culture and the complexity of crediting in open science. We are already looking forward to the next time.
 
-![View from the plenum onto the stage. The first slide of the presentation is visible, reading "Welcome to the Open Science Festival".](../../images/News-Items/OSF_2024.png)
+![View from the plenum onto the stage. The first slide of the presentation is visible, reading "Welcome to the Open Science Festival".](../../images/News-Items/OSF_2024.jpg)
 
 **Further Links**:
 - [NFDI](https://www.nfdi.de/?lang=en)
