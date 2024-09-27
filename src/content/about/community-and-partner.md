@@ -1,11 +1,11 @@
 ---
 title: Our Community & Partners
 slug: community-and-partners 
-bg-color: white
-border-color: white
-emphasis-color: darkblue
+bgColor: white
+textColor: black
+emphasisColor: darkblue
 image: ../../images/v2/about/community-and-partner.png
-layout: text-right-image-left
+textPosition: right
 index: 2
 ---
 

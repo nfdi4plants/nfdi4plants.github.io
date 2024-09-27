@@ -1,0 +1,24 @@
+---
+import { bgColorMap, textColorMap } from "../statics"
+
+interface SubPageCardProps {
+  title: string
+  slug: string
+  index: number
+  bgColor: string
+  textColor: string
+  image: string
+  link: string
+  textPosition: "left" | "right" | "top" | "bottom" | "text-only"
+}
+
+const mpcProps = Astro.props.subPageCardProps as SubPageCardProps;
+const html: string | null = Astro.props.html
+
+const cardClassTextRight = `card glass ${bgColorMap.get(mpcProps.bgColor)} ${textColorMap.get(mpcProps.textColor)} lg:card-side shadow-xl p-6`
+const cardClassTextLeft = `card ${bgColorMap.get(mpcProps.bgColor)} ${textColorMap.get(mpcProps.textColor)} lg:card-side shadow-xl p-6`
+---
+
+<div>
+    lol
+</div>

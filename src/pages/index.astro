@@ -10,9 +10,9 @@ const files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('../con
 //   files.map((file) => file.frontmatter)
 // )
 ---
-<Layout title="Welcome to Astro.">
-  <main class="flex flex-col flex-grow place-content-center">
-    <div class="hero bg-base-200 min-h-screen">
+<Layout title="DataPLANT - Home">
+  <div class="flex flex-col flex-grow place-content-center">
+    <div class="hero bg-base-200 min-h-[90vh]">
       <div class="hero-content text-center">
         <div class="max-w-md">
           <h1 class="text-4xl font-bold mb-4">Democratization of plant research.</h1>
@@ -33,6 +33,6 @@ const files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('../con
           }
       </div>
     </div>
-  </main>
+  </div>
 </Layout>
 

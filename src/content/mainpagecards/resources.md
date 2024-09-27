@@ -2,12 +2,12 @@
 title: resources
 subtitle: resources2
 index: 4
-bg: olive
+bgColor: olive
 textColor: black
 buttonColor: darkblue
 buttonTextColor: white
 image: /images/community.svg
-link: content/pages/resources.html
+link: /resources
 textPosition: left
 ---
 

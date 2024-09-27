@@ -2,12 +2,12 @@
 title: support
 subtitle: support2
 index: 6
-bg: mint
+bgColor: mint
 textColor: black
 buttonColor: darkblue
 buttonTextColor: white
 image: /images/community.svg
-link: content/pages/support.html
+link: /support
 textPosition: left
 ---
 

@@ -2,12 +2,12 @@
 title: service
 subtitle: Building the DataPLANT infrastructure and service landscape
 index: 3
-bg: lightblue
+bgColor: lightblue
 textColor: black
 buttonColor: darkblue
 buttonTextColor: white
 image: /images/service.svg
-link: content/pages/service.html
+link: /service
 textPosition: right
 
 ---

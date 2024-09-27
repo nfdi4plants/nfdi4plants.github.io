@@ -1,0 +1,25 @@
+---
+import { bgColorMap, textColorMap } from "../statics"
+
+interface SubPageHeroProps {
+    title: string
+    subtitle: string
+    bgColor: string
+    textColor: string
+    emphasisColor: string
+    image: string
+    textPosition: "left" | "right" | "top" | "bottom" | "text-only"
+}
+
+const props = Astro.props.subPageHeroProps as SubPageHeroProps;
+const html: string | null = Astro.props.html
+---
+
+<div class="hero bg-base-200 min-h-[60vh]">
+    <div class="hero-content text-center">
+      <div class="max-w-md">
+        <h1 class="text-4xl font-bold mb-4">{props.title}</h1>
+        <button class="btn bg-lightblue text-2xl m-4">Become a member</button>
+      </div>
+    </div>
+  </div>

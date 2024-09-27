@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SubPageHero from '../components/SubPageHero.astro';
+import SubPageCard from '../components/SubPageCard.astro';
+import { bgColorMap, textColorMap } from "../statics"
+
+// @ts-ignore  
+import { MarkdownInstance } from "astro";
+const all_files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('../content/about/*.md');
+const hero : MarkdownInstance<Record<string,any>> = (await Astro.glob('../content/about/hero.md'))[0];
+
+const hero_bg = bgColorMap.get(hero.frontmatter.bg)
+
+const cards =
+    all_files
+    .filter((file) => ! file.file.endsWith("hero.md"))
+    .sort((a,b) => a.frontmatter.index - b.frontmatter.index)
+
+console.log(hero)
+---
+<Layout title="Welcome to Astro.">
+  <div class="flex flex-col flex-grow place-content-center">
+    <SubPageHero subPageHeroProps={hero.frontmatter} html={hero.compiledContent()}></SubPageHero>
+    <div class="mx-auto w-full max-w-6xl pb-10 lg:py-12 lg:px-8">
+      <div class="space-y-24 sm:px-6 lg:col-span-12 lg:px-0">
+          {
+            cards
+            .map((file) => (
+              <SubPageCard subPageCardProps={file.frontmatter} html={file.compiledContent()}/>
+            ))
+          }
+      </div>
+    </div>
+  </div>
+</Layout>
+

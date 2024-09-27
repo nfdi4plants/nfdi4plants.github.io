@@ -1,11 +1,11 @@
 ---
 title: Our Task Areas
 slug: task-areas
-bg-color: white
-border-color: white
-emphasis-color: darkblue
+bgColor: white
+textColor: black
+emphasisColor: darkblue
 image: ../../images/v2/about/task-areas.png
-layout: text-bottom-image-top
+textPosition: bottom
 index: 4
 ---
 

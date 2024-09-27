@@ -1,11 +1,11 @@
 ---
 title: Our research data management concept
 slug: rdm-concept
-bg-color: white
-border-color: white
+bgColor: white
+textColor: black
 emphasis-color: darkblue
 image: ../../images/v2/about/research-data-management-concept.png
-layout: text-top-image-bottom
+textPosition: top
 index: 5
 ---
 

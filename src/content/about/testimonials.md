@@ -1,11 +1,11 @@
 ---
 title: What others say about DataPLANT
 slug: testimonials
-bg-color: white
-border-color: white
-emphasis-color: darkblue
+bgColor: white
+textColor: black
+emphasisColor: darkblue
 image: ../../images/About/TA1.svg
-layout: text-only
+textPosition: text-only
 index: 6
 ---
 

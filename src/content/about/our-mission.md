@@ -1,11 +1,11 @@
 ---
 title: Driving the digital change in plant science
 slug: mission
-bg-color: white
-border-color: white
-emphasis-color: darkblue
+bgColor: white
+textColor: black
+emphasisColor: darkblue
 image: ../../images/v2/about/mission.png
-layout: text-top-image-bottom
+textPosition: top
 index: 1
 ---
 

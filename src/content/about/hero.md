@@ -1,11 +1,11 @@
 ---
-heading: Information about DataPLANT
-title: Find out more about DataPLANT’s mission, our community and partner, our governance, task areas and research concept.   
-bg-color: mint-lighter-70
-emphasis-color: darkblue
+title: Information about DataPLANT
+subtitle: Find out more about DataPLANT’s mission, our community and partner, our governance, task areas and research concept.   
+bgColor: mint
+textColor: black
+emphasisColor: darkblue
 image: ../../images/About/DataPLANT-n.png
-layout: text-right-image-left
-
+textPosition: right
 ---
 
 ## [Mission](#mission)

@@ -1,11 +1,11 @@
 ---
 title: DataPLANT is part of the Nationale Forschungsdateninfrastruktur
 slug: nfdi
-bg-color: white
-border-color: white
-emphasis-color: darkblue
+bgColor: white
+textColor: black
+emphasisColor: darkblue
 image: ../../images/v2/about/nfdi.png
-layout: text-right-image-left
+textPosition: right
 index: 7
 ---
 

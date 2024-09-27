@@ -2,12 +2,12 @@
 title: Information
 subtitle: Information2
 index: 2
-bg: darkblue
+bgColor: darkblue
 textColor: white
 buttonColor: white
 buttonTextColor: darkblue
 image: /images/mission.svg
-link: content/pages/information.html
+link: /information
 textPosition: left
 ---
 

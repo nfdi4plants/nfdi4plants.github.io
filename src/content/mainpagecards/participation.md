@@ -2,12 +2,12 @@
 title: participation
 subtitle: participation2
 index: 5
-bg: lightgray
+bgColor: lightgray
 textColor: black
 buttonColor: darkblue
 buttonTextColor: white
 image: /images/community.svg
-link: content/pages/participation.html
+link: /participation
 textPosition: right
 
 ---
