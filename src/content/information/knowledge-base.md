@@ -11,6 +11,6 @@ textPosition: text-only
 index: 3
 ---
 
-Service documentation, FAQs and more: Our Knowledge Base is our collaboratively maintained wiki for the management of data. 
+Our Knowledge Base is our collaboratively maintained wiki for research data management.
 
 Check it out at [https://nfdi4plants.org/nfdi4plants.knowledgebase/](https://nfdi4plants.org/nfdi4plants.knowledgebase/) 📖.
