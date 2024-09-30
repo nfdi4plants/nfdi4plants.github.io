@@ -1,12 +1,13 @@
 ---
 title: We are here to help
+titleColor: black
 subtitle: Contact us via our helpdesk, learn more about research data management, browse our manuals and teaching materials or join our trainings.
-bgColor: mint-50
-headerColor: mint-800
+bgColor: lightgray
+headerColor: lightblue-700
 textColor: black
-emphasisColor: lightblue-600
-image: /src/assets/images/v2/service/service.png
-textPosition: top
+emphasisColor: lightblue
+image: 
+textPosition: text-only
 --- 
 
 ## [Helpdesk](#helpdesk)
