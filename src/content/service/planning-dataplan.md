@@ -1,11 +1,11 @@
 ---
 title: Our Data Management Plan Generator
-titleColor: darkblue
+titleColor: white
 summary: Our DataPLAN tool is designed to assist you in quickly generating Data Management Plans (DMPs) that can be used for a variety of purposes.
 slug: planning
-bgColor: white
-textColor: black
-emphasisColor: darkblue
+bgColor: darkblue
+textColor: white
+emphasisColor: white
 image: ../../images/about/nfdi.png
 textPosition: text-only
 index: 2
@@ -21,4 +21,4 @@ Researchers are prompted to detail how their data will be documented, how it wil
 It also supports customization for specific projects, allowing users to create plans that fit both small-scale studies and large, collaborative research efforts. 
 Furthermore, the tool provides templates that align with funding agency requirements, making it easier for researchers to meet compliance obligations. 
 
-[DataPLAN](https://dmpg.nfdi4plants.org/)
+<a class="btn btn-lg bg-white text-darkblue border-darkblue" href="https://dmpg.nfdi4plants.org">Try DataPLAN</a>

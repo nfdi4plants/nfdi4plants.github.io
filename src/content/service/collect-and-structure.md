@@ -5,7 +5,7 @@ summary: Our tools ARCitect and ARCCommander simplify the creation, structuring 
 slug: collect-structure
 bgColor: white
 textColor: black
-emphasisColor: darkblue
+borderColor: darkblue
 image: ../../images/about/nfdi.png
 textPosition: text-only
 index: 3
@@ -15,9 +15,9 @@ The ARCitect and ARCommander are two essential tools developed by DataPLANT that
 ARCitect is a graphical user interface tool that helps researchers structure their ARCs It guides users in creating, organizing, and annotating research data, ensuring adherence to FAIR principles. 
 ARCitect streamlines the documentation process, making it easier to manage data throughout the research lifecycle.
 
-[ARCitect](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html)
+<a class="btn btn-lg bg-white text-darkblue border-darkblue" href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html">Try ARCitect</a>
 
-ARCCommander complements ARCitect by offering robust management capabilities via the command line. 
-It helps researchers maintain, track, and update their ARCs, ensuring proper version control and compliance with evolving standards. 
+ARCCommander complements ARCitect by offering robust management capabilities via the command line.
+It helps researchers maintain, track, and update their ARCs, ensuring proper version control and compliance with evolving standards.
 
-[ARCCommander](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index.html)
+<a class="btn btn-lg bg-white text-darkblue border-darkblue" href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index.html">Try ARCCommander</a>

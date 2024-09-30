@@ -5,7 +5,7 @@ summary: Analyze your data stored in ARCs using the Galaxy Workflow Platform.
 slug: workflow-engine
 bgColor: white
 textColor: black
-emphasisColor: darkblue
+borderColor: darkblue
 image: ../../images/about/nfdi.png
 textPosition: text-only
 index: 5
@@ -22,4 +22,4 @@ Additionally, any workflow that you have permission to import can be modified us
 This allows you to tailor existing workflows to your specific needs, making Galaxy an adaptable platform for both standard and custom analysis pipelines. 
 Whether you're working on routine tasks or complex, multi-step processes, the Galaxy workflow system offers a robust solution for efficiently managing and automating your analyses. 
 
-[Galaxy Plants](https://plants.usegalaxy.eu/).
+<a class="btn btn-lg bg-white text-darkblue border-darkblue" href="https://plants.usegalaxy.eu/">Galaxy Plants</a>

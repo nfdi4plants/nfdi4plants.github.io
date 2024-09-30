@@ -5,7 +5,6 @@ summary:
 slug: co-applicants
 bgColor: white
 textColor: black
-emphasisColor: darkblue
 image: 
 textPosition: text-only
 index: 1

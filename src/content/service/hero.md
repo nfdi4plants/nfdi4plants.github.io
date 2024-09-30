@@ -1,10 +1,11 @@
 ---
 title: DataPLANT Services
+titleColor: darkblue
 subtitle: Tools and Services to structure the Data Jungle for plant researchers
-bgColor: mint-50
-headerColor: mint-800
-textColor: black
+bgColor: white
+headerColor: darkblue-300
+textColor: darkblue
 emphasisColor: lightblue-600
-image: /src/assets/images/v2/service/service.png
+image: /src/assets/images/service.png
 textPosition: top
 --- 

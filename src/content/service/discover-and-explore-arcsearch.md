@@ -5,7 +5,7 @@ summary: Our service for the discovery and exploration of ARCs helps you find da
 slug: discover-explore
 bgColor: white
 textColor: black
-emphasisColor: darkblue
+borderColor: darkblue
 image: ../../images/about/nfdi.png
 textPosition: text-only
 index: 7

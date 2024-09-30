@@ -1,11 +1,10 @@
 ---
 title: Our data publication tools
-titleColor: darkblue
+titleColor: white
 summary: ARChive is our platform to publish your research data via the ARCigator.
 slug: data-publication
-bgColor: white
-textColor: black
-emphasisColor: darkblue
+bgColor: darkblue
+textColor: white
 image: ../../images/about/nfdi.png
 textPosition: text-only
 index: 6

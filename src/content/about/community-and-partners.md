@@ -4,7 +4,7 @@ summary: Find out more about our community and partners.
 slug: community-and-partners 
 bgColor: olive-100
 textColor: black
-emphasisColor: darkblue
+titleColor: darkblue
 image: ../../images/about/community-and-partner.png
 textPosition: right
 index: 2

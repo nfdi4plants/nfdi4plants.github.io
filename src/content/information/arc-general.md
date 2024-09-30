@@ -5,7 +5,6 @@ summary: The ARC is DataPLANT's FAIR Digital Object of choice.
 slug: arc-general
 bgColor: white
 textColor: black
-emphasisColor: darkblue
 image: ../../images/about/nfdi.png
 textPosition: text-only
 index: 5

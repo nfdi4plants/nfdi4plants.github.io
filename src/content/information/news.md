@@ -5,7 +5,6 @@ summary: Project results, new publications, event announcements, follow-up repor
 slug: news
 bgColor: white
 textColor: black
-emphasisColor: darkblue
 image: ../../images/about/nfdi.png
 textPosition: text-only
 index: 1

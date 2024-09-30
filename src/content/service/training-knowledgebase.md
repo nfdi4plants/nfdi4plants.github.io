@@ -1,11 +1,10 @@
 ---
 title: Our teaching and training offers
-titleColor: darkblue
+titleColor: white
 summary: Learn more about our trainings and teaching materials..
 slug: training
-bgColor: white
-textColor: black
-emphasisColor: darkblue
+bgColor: darkblue
+textColor: white
 image: ../../images/about/nfdi.png
 textPosition: text-only
 index: 8
@@ -20,5 +19,4 @@ For community support, DataPLANT provides a helpdesk and a Git-based project exc
 This platform enables project planning and offers a space for researchers to share experiences, seek advice, and collaborate. 
 DataPLANT also organizes community events, including onboarding sessions, consortium meetings, summer schools, lectures, practical courses, and hackathons together with Data Stewards to encourage knowledge sharing and engagement. 
 
-
-[Teaching material KB](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/index.html)
+<a class="btn btn-lg bg-white text-darkblue border-darkblue" href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/index.html">DataPLANT Teaching material</a>

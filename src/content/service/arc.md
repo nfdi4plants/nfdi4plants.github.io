@@ -4,10 +4,11 @@ titleColor: darkblue
 summary: The ARC is DataPLANT's FAIR Digital Object of choice.
 slug: arc
 bgColor: white
-textColor: black
+borderColor: darkblue
+textColor: darkblue
 emphasisColor: darkblue
-image: ../../images/about/nfdi.png
-textPosition: text-only
+image: /src/assets/images/service/arc.svg
+textPosition: top
 index: 1
 ---
 

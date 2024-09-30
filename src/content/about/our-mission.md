@@ -1,11 +1,10 @@
 ---
 title: Our mission
-titleColor: white
+titleColor: titleColor
 summary: Driving the digital change in plant science.
 slug: mission
 bgColor: olive-100
 textColor: black
-emphasisColor: darkblue
 image: ../../images/about/mission.png
 textPosition: text-only
 index: 1

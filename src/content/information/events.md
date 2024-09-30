@@ -1,10 +1,10 @@
 ---
 title: DataPLANT Events
+titleColor: darkblue
 summary: Upcoming events by and with DataPLANT. 
 slug: events
 bgColor: white
 textColor: black
-emphasisColor: darkblue
 image: ../../images/about/nfdi.png
 textPosition: text-only
 index: 2

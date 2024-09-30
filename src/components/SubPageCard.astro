@@ -1,5 +1,5 @@
 ---
-import { bgColorMap, textColorMap } from "../statics"
+import { bgColorMap, textColorMap, borderColorMap } from "../statics"
 
 interface SubPageCardProps {
   title: string
@@ -7,8 +7,9 @@ interface SubPageCardProps {
   slug: string
   index: number
   bgColor: string
+  borderColor: string
   textColor: string
-  emphasisColor: string
+  titleColor: string
   image: string
   link: string
   textPosition: "left" | "right" | "top" | "bottom" | "text-only"
@@ -19,12 +20,14 @@ const html: string | null = Astro.props.html
 
 let bgColor = bgColorMap.get(props.bgColor)
 let textColor = textColorMap.get(props.textColor)
-let emphasisColor = textColorMap.get(props.emphasisColor)
+let titleColor = textColorMap.get(props.titleColor)
+let borderColor = borderColorMap.get(props.borderColor)
+let borderColorString = borderColor ? ` border-2 ${borderColor}` : ""
 
-const cardClassTB = `card shadow-xl p-6 ${bgColor} ${textColor}`
-const cardClassLR = `card lg:card-side shadow-xl p-6 ${bgColor} ${textColor}`
+const cardClassTB = `card shadow-xl p-6 ${bgColor} ${textColor}${borderColorString}`
+const cardClassLR = `card lg:card-side shadow-xl p-6 ${bgColor} ${textColor}${borderColorString}`
 
-const headerClass = `card-title text-4xl mb-4 ${emphasisColor}`
+const headerClass = `card-title text-4xl mb-4 ${titleColor}`
 
 const articleClass = `prose md:prose-base lg:prose-lg ${textColor}`
 const articleClassFullWidth = `prose max-w-none md:prose-base lg:prose-lg ${textColor}`

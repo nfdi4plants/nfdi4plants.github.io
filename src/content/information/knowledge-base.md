@@ -5,7 +5,6 @@ summary: Service documentation, FAQs and more.
 slug: knowledge-base
 bgColor: white
 textColor: black
-emphasisColor: darkblue
 image: ../../images/about/nfdi.png
 textPosition: text-only
 index: 3

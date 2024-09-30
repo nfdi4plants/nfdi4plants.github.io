@@ -1,10 +1,10 @@
 ---
 title: Our Research data management concept
+titleColor: darkblue
 summary: Interested in learning more about our research concept? Find out more. 
 slug: rdm-concept
 bgColor: olive-100
 textColor: black
-emphasisColor: darkblue
 image: /src/assets/images/about/research-data-management-concept.png
 textPosition: top
 index: 5
