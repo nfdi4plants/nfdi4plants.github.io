@@ -15,10 +15,22 @@ let headerColor = textColorMap.get(props.headerColor)
 let emphasisColor = textHoverColorMap.get(props.emphasisColor)
 
 const heroClass = `hero min-h-[60vh] ${bgColor} ${textColor}`
+let heroContentClass = ""
+if (props.textPosition === "left") {
+  heroContentClass = "hero-content flex-col lg:flex-row-reverse"
+} else if (props.textPosition === "right") {
+  heroContentClass = "hero-content flex-col-reverse lg:flex-row"
+} else if (props.textPosition === "top") {
+  heroContentClass = "hero-content flex-col"
+} else if (props.textPosition === "bottom") {
+  heroContentClass = "hero-content flex-col-reverse"
+} else {
+  heroContentClass = "hero-content flex-col lg:flex-row"
+}
 ---
 
 <div class={heroClass}>
-  <div class="hero-content flex-col lg:flex-row">
+  <div class={heroContentClass}>
     <img src={props.image} class="max-w-lg" />
   <div>
     <h1 class={`text-5xl font-bold mb-6 ${titleColor}`}>{props.title}</h1>
