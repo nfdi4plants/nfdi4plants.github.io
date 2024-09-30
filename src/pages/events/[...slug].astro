@@ -1,0 +1,92 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import { getCollection, getEntry } from 'astro:content';
+import ContentComponent from '~/components/widgets/Content.astro';
+import { Icon } from 'astro-icon/components';
+import SocialShare from '~/components/widgets/SocialShare.astro';
+
+export async function getStaticPaths() {
+  const eventsCollection = await getCollection('events')
+  return eventsCollection.map((entry) => {
+    return {
+      params: { slug: entry.slug },
+      props: { file: entry }
+    }
+  });
+
+}
+
+const { file } = Astro.props;
+
+const { Content, headings } = await file.render();
+
+const inPageNavigation: any = []
+
+if (headings) {
+  headings.forEach(heading => {
+    inPageNavigation.push({
+      icon: "tabler:chevron-right",
+      callToAction: {
+        text: heading.text,
+        href: "#" + heading.slug,
+      }
+    })
+  })  
+} 
+
+const formatterDate = new Intl.DateTimeFormat('en-US', { day: '2-digit', month: '2-digit', year: 'numeric' });
+const formatterTime = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute: '2-digit' });
+---
+
+<Layout title={"News - " + file.data.title}>
+  <ContentComponent 
+    id={file.slug}
+    image={file.data.location.image}
+    title={file.data.title}
+    tagline={file.data.category}
+    columns={inPageNavigation.length}
+    items={inPageNavigation}
+    >
+    <Fragment slot="content">
+      <div class="prose lg:prose-lg xl:prose-xl">
+        <div set:html={file.data.excerpt}></div>
+        <h3>Location</h3>
+        <div set:html={file.data.location.description}></div>
+        {file.data.location.organizer && <p set:html={file.data.location.organizer}></p>}
+        <ul class="!pl-0">
+          <li class="flex items-center gap-1">
+            <Icon name="tabler:calendar-time" class="w-4 h-4" />
+            {formatterDate.format(file.data.start) + " " + formatterTime.format(file.data.start)}
+            -
+            {formatterDate.format(file.data.end) + " " + formatterTime.format(file.data.end)}
+          </li>
+          { file.data.location.url &&
+            <li class="flex items-center gap-1">
+              <Icon name="tabler:world" class="w-4 h-4" />
+              <a href={file.data.location.url}>Read More</a>
+            </li>
+          }
+        </ul>
+      </div>      
+    </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50"></div>
+    </Fragment>
+    <Fragment slot="subtitle">
+      <SocialShare text={file.data.title} url={Astro.url} />
+    </Fragment>
+  </ContentComponent>
+  <div class="w-full p-2 flex grow justify-center lg:py-10">
+    <div class="prose lg:prose-lg xl:prose-xl">
+      <Content />
+    </div>
+  </div>
+</Layout>
+
+<style is:global>
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+  }
+
+</style>

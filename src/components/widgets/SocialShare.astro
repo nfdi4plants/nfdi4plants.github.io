@@ -1,0 +1,125 @@
+---
+// from astrowind template
+import { Icon } from 'astro-icon/components';
+
+export interface Props {
+  text: string;
+  url: string | URL;
+  class?: string;
+}
+
+const { text, url, class: className = 'inline-block' } = Astro.props;
+---
+
+<script is:inline>
+
+  function attachEvent(selector, event, fn) {
+    const matches = typeof selector === 'string' ? document.querySelectorAll(selector) : selector;
+    if (matches && matches.length) {
+      matches.forEach((elem) => {
+        elem.addEventListener(event, (e) => fn(e, elem), false);
+      });
+    }
+  }
+
+  const onLoad = function () { 
+
+    if (window.basic_script) {
+      return;
+    }
+
+    window.basic_script = true;
+
+    console.log("Social Share Script Loaded");
+
+    attachEvent('[data-aw-social-share]', 'click', function (_, elem) {
+      const network = elem.getAttribute('data-aw-social-share');
+      const url = encodeURIComponent(elem.getAttribute('data-aw-url'));
+      const text = encodeURIComponent(elem.getAttribute('data-aw-text'));
+  
+      let href;
+      switch (network) {
+        case 'facebook':
+          href = `https://www.facebook.com/sharer.php?u=${url}`;
+          break;
+        case 'twitter':
+          href = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+          break;
+        case 'linkedin':
+          href = `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${text}`;
+          break;
+        case 'whatsapp':
+          href = `https://wa.me/?text=${text}%20${url}`;
+          break;
+        case 'mail':
+          href = `mailto:?subject=%22${text}%22&body=${text}%20${url}`;
+          break;
+  
+        default:
+          return;
+      }
+  
+      const newlink = document.createElement('a');
+      newlink.target = '_blank';
+      newlink.href = href;
+      newlink.click();
+    });
+  }
+
+  window.onload = onLoad;
+
+</script>
+
+<div class={className}>
+  <span class="align-super font-bold text-slate-500">Share:</span>
+  <button
+    class="ml-2 rtl:ml-0 rtl:mr-2"
+    title="Twitter Share"
+    data-aw-social-share="twitter"
+    data-aw-url={url}
+    data-aw-text={text}
+    ><Icon
+      name="tabler:brand-x"
+      class="w-6 h-6 text-gray-400 hover:text-black"
+    />
+  </button>
+  <button class="ml-2 rtl:ml-0 rtl:mr-2" title="Facebook Share" data-aw-social-share="facebook" data-aw-url={url}
+    ><Icon
+      name="tabler:brand-facebook"
+      class="w-6 h-6 text-gray-400 hover:text-black"
+    />
+  </button>
+  <button
+    class="ml-2 rtl:ml-0 rtl:mr-2"
+    title="Linkedin Share"
+    data-aw-social-share="linkedin"
+    data-aw-url={url}
+    data-aw-text={text}
+    ><Icon
+      name="tabler:brand-linkedin"
+      class="w-6 h-6 text-gray-400 hover:text-black"
+    />
+  </button>
+  <button
+    class="ml-2 rtl:ml-0 rtl:mr-2"
+    title="Whatsapp Share"
+    data-aw-social-share="whatsapp"
+    data-aw-url={url}
+    data-aw-text={text}
+    ><Icon
+      name="tabler:brand-whatsapp"
+      class="w-6 h-6 text-gray-400 hover:text-black"
+    />
+  </button>
+  <button
+    class="ml-2 rtl:ml-0 rtl:mr-2"
+    title="Email Share"
+    data-aw-social-share="mail"
+    data-aw-url={url}
+    data-aw-text={text}
+    ><Icon
+      name="tabler:mail"
+      class="w-6 h-6 text-gray-400 hover:text-black"
+    />
+  </button>
+</div>

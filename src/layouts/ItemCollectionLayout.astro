@@ -1,0 +1,35 @@
+---
+import Layout from "./Layout.astro"
+import RefListCard from "~/components/RefListCard.astro"
+
+interface Data {
+  id: string,
+  slug: string,
+  publishDate: Date,
+  title: string,
+  permalink: string,
+  content: any,
+  excerpt: string,
+  image: string,
+}
+
+const data = Astro.props.data as Data[]
+
+const {collectionName} = Astro.props
+---
+
+<Layout title={collectionName}>
+  <div class="flex justify-center py-5 lg:py-10 xl:py-20">
+    <div class="max-w-4xl">
+      <ul>
+        {
+          data.map((entry: Data) => (
+            <li class="mb-12 md:mb-20">
+              <RefListCard post={entry} />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</Layout>
