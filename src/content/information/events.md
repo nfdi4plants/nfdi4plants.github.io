@@ -1,6 +1,5 @@
 ---
 title: DataPLANT Events
-titleColor: darkblue
 summary: Upcoming events by and with DataPLANT. 
 slug: events
 bgColor: white

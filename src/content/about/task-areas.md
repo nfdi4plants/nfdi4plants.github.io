@@ -1,9 +1,8 @@
 ---
 title: Our Task Areas
-titleColor: darkblue
 summary: Four Task Areas contribute to DataPLANT’s work program. 
 slug: task-areas
-bgColor: white
+bgColor: olive-100
 textColor: black
 emphasisColor: darkblue
 image: ../../images/about/task-areas.png
@@ -11,7 +10,7 @@ textPosition: bottom
 index: 4
 ---
 
-**Task Area 1** (Data Quality, Standardization, Interoperability) will provide support, including AI-based approaches, to facilitate the collection of vocabularies and ontologies, encouraging broader community participation. 
+**Task Area 1** (Data Quality, Standardization, Interoperability) will provide support, including AI-based approaches, to facilitate the collection of vocabularies and ontologies, encouraging broader community participation.
 TA1 will enhance ontologies embedded within international consortia, which are essential for improving data and workflow interoperability and ensuring AI-readiness through machine actionability. 
 This will connect user documentation, technical endpoints, workflow engines, and domain-specific requirements. 
 To guarantee high-quality (meta)data, TA1 will implement automated validation processes, supplemented by a community-driven data publication review system. 
