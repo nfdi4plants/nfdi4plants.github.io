@@ -2,6 +2,7 @@
 title: Participation
 subtitle: DataPLANT is an initiative for the plant community in Germany and beyond.
 index: 5
+glass: true
 bgColor: lightblue-500
 textColor: darkblue
 buttonColor: darkblue

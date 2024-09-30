@@ -5,6 +5,7 @@ interface MainPageCardProps {
   title: string
   subtitle: string
   index: number
+  glass: boolean
   bgColor: string
   textColor: string
   buttonColor: string
@@ -22,10 +23,12 @@ let textColor = textColorMap.get(props.textColor)
 let buttonColor = bgColorMap.get(props.buttonColor)
 let buttonTextColor = textColorMap.get(props.buttonTextColor)
 
-const cardClassTextRight = `card glass lg:card-side shadow-xl p-6 ${bgColor} ${textColor}`
-const cardClassTextLeft = `card lg:card-side shadow-xl p-6 ${bgColor} ${textColor}`
-const cardClassSequential = `card shadow-xl p-6 ${bgColor} ${textColor}`
-const cardClassTextOnly = `card glass shadow-xl p-6 ${bgColor} ${textColor}`
+const cardBaseClass = props.glass ? "card glass" : "card"
+
+const cardClassTextRight = `${cardBaseClass} lg:card-side shadow-xl p-6 ${bgColor} ${textColor}`
+const cardClassTextLeft = `${cardBaseClass} lg:card-side shadow-xl p-6 ${bgColor} ${textColor}`
+const cardClassSequential = `${cardBaseClass} shadow-xl p-6 ${bgColor} ${textColor}`
+const cardClassTextOnly = `${cardBaseClass} shadow-xl p-6 ${bgColor} ${textColor}`
 const btnClass = `btn text-lg  ${buttonColor} ${buttonTextColor}`
 const articleClass = `prose md:prose-base lg:prose-lg ${textColor}`
 ---

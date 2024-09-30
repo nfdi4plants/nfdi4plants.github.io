@@ -2,6 +2,7 @@
 title: About DataPLANT
 subtitle: Towards democratization of plant research.
 index: 1
+glass: true
 bgColor: mint
 textColor: black
 buttonColor: darkblue

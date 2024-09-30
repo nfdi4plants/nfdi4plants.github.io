@@ -2,6 +2,7 @@
 title: Support
 subtitle: We are here to help
 index: 6
+glass: true
 bgColor: lightgray
 textColor: black
 buttonColor: darkblue

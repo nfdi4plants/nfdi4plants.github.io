@@ -2,6 +2,7 @@
 title: DataPLANT Services
 subtitle: Tools and Services to structure the Data Jungle for plant researchers
 index: 3
+glass: false
 bgColor: white
 textColor: black
 buttonColor: darkblue

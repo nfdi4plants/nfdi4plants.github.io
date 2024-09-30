@@ -2,6 +2,7 @@
 title: Information
 subtitle: Stay up-to-date.
 index: 2
+glass: false
 bgColor: darkblue
 textColor: white
 buttonColor: white
