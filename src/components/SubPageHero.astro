@@ -30,8 +30,11 @@ if (props.textPosition === "left") {
 ---
 
 <div class={heroClass}>
-  <div class={heroContentClass}>
+  <div class="hero-content flex-col lg:flex-row">
     <img src={props.image} class="max-w-lg" />
+    <!-- {
+      props.image && <Image src={props.image} class="max-w-lg" alt="" inferSize/>
+    } -->
   <div>
     <h1 class={`text-5xl font-bold mb-6 ${titleColor}`}>{props.title}</h1>
     <h2 class="text-xl mb-4">{props.subtitle}</h1>

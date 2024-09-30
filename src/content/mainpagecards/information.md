@@ -1,6 +1,6 @@
 ---
 title: Information
-subtitle: Information2
+subtitle: Stay up-to-date.
 index: 2
 bgColor: darkblue
 textColor: white
@@ -8,16 +8,7 @@ buttonColor: white
 buttonTextColor: darkblue
 image: /images/mission.svg
 link: /information
-textPosition: left
+textPosition: text-only
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua.
-
-At vero eos et accusam et jus to duo dolores et ea rebum.
-
-Stet clita kasd gubergren, no sea takimata sanctus est Lorem. ipsum dolor sit amet.
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore et dolore magna aliquyam erat, sed diam volup tua.
-
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
- ipsum dolor sit amet.
+Latest news, event participation, publications, Knowledge Base – here you’ll find information about DataPLANT’s latest endeavours.

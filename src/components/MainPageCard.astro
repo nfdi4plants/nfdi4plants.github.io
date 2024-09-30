@@ -11,7 +11,7 @@ interface MainPageCardProps {
   buttonTextColor: string
   image: string
   link: string
-  textPosition: "left" | "right"
+  textPosition: "left" | "right" | "top" | "bottom" | "text-only"
 }
 
 const props = Astro.props.mainPageCardProps as MainPageCardProps;
@@ -24,38 +24,87 @@ let buttonTextColor = textColorMap.get(props.buttonTextColor)
 
 const cardClassTextRight = `card glass lg:card-side shadow-xl p-6 ${bgColor} ${textColor}`
 const cardClassTextLeft = `card lg:card-side shadow-xl p-6 ${bgColor} ${textColor}`
+const cardClassSequential = `card shadow-xl p-6 ${bgColor} ${textColor}`
+const cardClassTextOnly = `card glass shadow-xl p-6 ${bgColor} ${textColor}`
 const btnClass = `btn text-lg  ${buttonColor} ${buttonTextColor}`
 const articleClass = `prose md:prose-base lg:prose-lg ${textColor}`
 ---
 
-<div class={props.textPosition === "left" ? cardClassTextLeft : cardClassTextRight}>
 {
-    props.textPosition === "left"
-    ? 
-    <div class="card-body">
-      <h1 class="card-title text-4xl mb-4">{props.title}</h1>
-      <h2 class="card-title text-2xl mb-4">{props.subtitle}</h2>
-      {html && <article class={articleClass} set:html={html}></article>}
-      <div class="card-actions justify-start">
-        <a href={props.link} class={btnClass}>Learn more</a>
-      </div>
+props.textPosition === "left" &&
+<div class={cardClassTextLeft}>
+  <div class="card-body">
+    <h1 class="card-title text-4xl mb-4">{props.title}</h1>
+    <h2 class="card-title text-2xl mb-4">{props.subtitle}</h2>
+    {html && <article class={articleClass} set:html={html}></article>}
+    <div class="card-actions justify-start">
+      <a href={props.link} class={btnClass}>Learn more</a>
     </div>
-    <figure>
-      <img src={props.image}/>
-    </figure>
-     
-    : 
-    <figure>
-      <img src={props.image}/>
-    </figure>
-    <div class="card-body">
-      <h1 class="card-title text-4xl mb-4">{props.title}</h1>
-      <h2 class="card-title text-2xl mb-4">{props.subtitle}</h2>
-      {html && <article class={articleClass} set:html={html}></article>}
-      <div class="card-actions justify-end mt-4 mb-4">
-        <a href={props.link} class={btnClass}>Learn more</a>
-      </div>
-    </div>
-  
-}
+  </div>
+  <figure>
+    <img src={props.image}/>
+  </figure>
 </div>
+}
+
+{
+props.textPosition === "right" &&
+<div class={cardClassTextRight}>
+  <figure>
+    <img src={props.image}/>
+  </figure>
+  <div class="card-body">
+    <h1 class="card-title text-4xl mb-4">{props.title}</h1>
+    <h2 class="card-title text-2xl mb-4">{props.subtitle}</h2>
+    {html && <article class={articleClass} set:html={html}></article>}
+    <div class="card-actions justify-end mt-4 mb-4">
+      <a href={props.link} class={btnClass}>Learn more</a>
+    </div>
+  </div>
+</div>
+}
+{
+props.textPosition === "top" &&
+<div class={cardClassSequential}>
+  <div class="card-body">
+    <h1 class="card-title text-4xl mb-4">{props.title}</h1>
+    <h2 class="card-title text-2xl mb-4">{props.subtitle}</h2>
+    {html && <article class={articleClass} set:html={html}></article>}
+    <figure>
+      <img src={props.image}/>
+    </figure>
+    <div class="card-actions justify-end mt-4 mb-4">
+      <a href={props.link} class={btnClass}>Learn more</a>
+    </div>
+  </div>
+</div>
+}
+{
+  props.textPosition === "bottom" &&
+<div class={cardClassSequential}>
+  <div class="card-body">
+    <h1 class="card-title text-4xl mb-4">{props.title}</h1>
+    <h2 class="card-title text-2xl mb-4">{props.subtitle}</h2>
+    <figure>
+      <img src={props.image}/>
+    </figure>
+    {html && <article class={articleClass} set:html={html}></article>}
+    <div class="card-actions justify-end mt-4 mb-4">
+      <a href={props.link} class={btnClass}>Learn more</a>
+    </div>
+  </div>
+</div>
+}
+{
+  props.textPosition === "text-only" &&
+<div class={cardClassTextOnly}>
+  <div class="card-body">
+    <h1 class="card-title text-4xl mb-4">{props.title}</h1>
+    <h2 class="card-title text-2xl mb-4">{props.subtitle}</h2>
+    {html && <article class={articleClass} set:html={html}></article>}
+    <div class="card-actions justify-end mt-4 mb-4">
+      <a href={props.link} class={btnClass}>Learn more</a>
+    </div>
+  </div>
+</div>
+}

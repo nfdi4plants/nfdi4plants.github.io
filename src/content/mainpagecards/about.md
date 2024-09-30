@@ -1,14 +1,14 @@
 ---
-title: About
-subtitle: About2
+title: About DataPLANT
+subtitle: Towards democratization of plant research.
 index: 1
 bgColor: mint
 textColor: black
 buttonColor: darkblue
 buttonTextColor: white
-image: images/arc.svg
+image: /src/assets/images/DataPLANT_logo_dark.svg
 link: /about
 textPosition: right
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua.
+Find out more about DataPLANT’s mission, our community and partners, governance, task areas and research data management concepts.
