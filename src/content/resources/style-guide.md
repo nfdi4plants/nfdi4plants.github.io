@@ -1,9 +1,9 @@
 ---
 title: DataPLANT Styleguide
-titleColor: darkblue
+titleColor: olive-800
 summary: Find information about DataPLANT logos, font and colorschemes here.
 slug: styleguide
-bgColor: white
+bgColor: olive-100
 textColor: black
 emphasisColor: darkblue
 image: ../../images/about/nfdi.png

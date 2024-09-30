@@ -1,9 +1,9 @@
 ---
 title: Start your own ARC
-titleColor: darkblue
+titleColor: lightblue-600
 summary: You want to make your scientific data FAIR (Findable, Accessible, Interoperable, and Reusable)? Start now with our Annotated Research Context (ARC).
 slug: start-your-arc
-bgColor: white
+bgColor: lightblue-50
 textColor: black
 emphasisColor: darkblue
 image: ../../images/about/nfdi.png

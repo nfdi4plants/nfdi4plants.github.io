@@ -1,10 +1,11 @@
 ---
 title: The DataPLANT Toolbox
+titleColor: darkblue
 subtitle: Learn more about the tools provided by DataPLANT to support your RDM journey.
-bgColor: mint-50
-headerColor: mint-800
-textColor: black
-emphasisColor: lightblue-600
+bgColor: olive-400
+headerColor: olive-900
+textColor: darkblue
+emphasisColor: darkblue
 image: /src/assets/images/Learn-more/ARC/FDOs.png
-textPosition: top
+textPosition: text-only
 ---

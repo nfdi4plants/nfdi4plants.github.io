@@ -1,9 +1,9 @@
 ---
 title: Contribute to our broker ontology 
-titleColor: darkblue
+titleColor: lightblue-600
 summary: An intermediate ontology for plants used by DataPLANT to fill the ontology gap. We welcome every contribution!
 slug: broker-ontology
-bgColor: white
+bgColor: lightblue-50
 textColor: black
 emphasisColor: darkblue
 image: ../../images/about/nfdi.png

@@ -1,9 +1,9 @@
 ---
 title: The Galaxy Instance for Plant Biology
-titleColor: darkblue
+titleColor: olive-800
 summary: Analyze your data stored in ARCs using the Galaxy Workflow Platform.
 slug: workflow-engine
-bgColor: white
+bgColor: olive-100
 textColor: black
 emphasisColor: darkblue
 image: ../../images/about/nfdi.png

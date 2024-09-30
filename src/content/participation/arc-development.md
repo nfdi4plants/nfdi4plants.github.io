@@ -1,11 +1,10 @@
 ---
 title: Contribute to ARC development 
-titleColor: darkblue
+titleColor: lightblue-600
 summary: You want to contribute to our Annotated Research Context (ARC) concept or tools? Find out more.
 slug: arc-development
-bgColor: white
+bgColor: lightblue-50
 textColor: black
-emphasisColor: darkblue
 image: ../../images/about/nfdi.png
 textPosition: text-only
 index: 6

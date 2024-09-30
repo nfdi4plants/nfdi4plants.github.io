@@ -1,11 +1,10 @@
 ---
 title: Contribute to our templates 
-titleColor: darkblue
+titleColor: lightblue-600
 summary: Our annotation tool Swate simplifies adding standardized metadata for your experimental workflows. You would like to contribute a template?
 slug: templates
-bgColor: white
+bgColor: lightblue-50
 textColor: black
-emphasisColor: darkblue
 image: ../../images/about/nfdi.png
 textPosition: text-only
 index: 4

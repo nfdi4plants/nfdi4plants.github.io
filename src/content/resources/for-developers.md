@@ -1,9 +1,9 @@
 ---
 title: For Developers
-titleColor: darkblue
+titleColor: olive-800
 summary: Find all relevant information for developers regarding contributions.
 slug: for-developers
-bgColor: white
+bgColor: olive-100
 textColor: black
 emphasisColor: darkblue
 image: ../../images/about/nfdi.png

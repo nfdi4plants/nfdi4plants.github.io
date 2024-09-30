@@ -1,11 +1,10 @@
 ---
 title: Contribute to our GitHub repositories
-titleColor: darkblue
+titleColor: lightblue-600
 summary: DataPLANT's work is openly accesible on GitHub. Contributions to our repositories are welcome.
 slug: github
-bgColor: white
+bgColor: lightblue-50
 textColor: black
-emphasisColor: darkblue
 image: ../../images/about/nfdi.png
 textPosition: text-only
 index: 2

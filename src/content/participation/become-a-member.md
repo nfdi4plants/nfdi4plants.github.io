@@ -1,9 +1,9 @@
 ---
 title: Become a DataPLANT member
-titleColor: darkblue
+titleColor: lightblue-600
 summary: Use our PLANTdataHUB and other DataPLANT infrastructure and services.
 slug: become-a-member
-bgColor: white
+bgColor: lightblue-50
 textColor: black
 emphasisColor: darkblue
 image: ../../images/about/nfdi.png
