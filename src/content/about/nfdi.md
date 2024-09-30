@@ -1,12 +1,11 @@
 ---
 title: DataPLANT is part of the Nationale Forschungsdateninfrastruktur
-titleColor: darkblue
 summary: DataPLANT is a consortium under the umbrella of the National Research Data Infrastructure (NFDI) dedicated to plant science 
 slug: nfdi
-bgColor: white
+bgColor: olive-100
 textColor: black
-emphasisColor: darkblue
-image: ../../images/about/nfdi.png
+titleColor: darkblue
+image: /src/assets/images/about/nfdi.png
 textPosition: right
 index: 7
 ---

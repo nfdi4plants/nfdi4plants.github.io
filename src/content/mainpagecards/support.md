@@ -1,14 +1,15 @@
 ---
-title: support
-subtitle: support2
+title: Support
+subtitle: We are here to help
 index: 6
-bgColor: mint
+glass: true
+bgColor: lightgray
 textColor: black
 buttonColor: darkblue
 buttonTextColor: white
 image: /images/community.svg
 link: /support
-textPosition: left
+textPosition: text-only
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Contact us via our helpdesk, learn more about research data management, browse our manuals and teaching materials or join our training.

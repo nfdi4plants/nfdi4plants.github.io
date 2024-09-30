@@ -1,14 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "./Layout.astro";
+import { type MarkdownInstance } from "astro";
 import SubPageHero from '../components/SubPageHero.astro';
 import SubPageCard from '../components/SubPageCard.astro';
 import { bgColorMap, textColorMap, type SectionLink } from "../statics"
-  
-import { type MarkdownInstance } from "astro";
-const all_files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('../content/about/*.md');
-const hero : MarkdownInstance<Record<string,any>> = (await Astro.glob('../content/about/hero.md'))[0];
 
-const hero_bg = bgColorMap.get(hero.frontmatter.bg)
+const hero = Astro.props.hero as MarkdownInstance<Record<string,any>>;
+const all_files = Astro.props.cards as MarkdownInstance<Record<string,any>>[];
+const title = Astro.props.title as string;
 
 const cards =
     all_files
@@ -22,8 +21,10 @@ const sectionLinks =
     summary: file.frontmatter.summary,
     slug: file.frontmatter.slug
   }))
+
+
 ---
-<Layout title="DataPLANT - About">
+<Layout title={`DataPLANT - ${title}`}>
   <div class="flex flex-col flex-grow place-content-center">
     <SubPageHero subPageHeroProps={hero.frontmatter} sectionLinks={sectionLinks} html={hero.compiledContent()}></SubPageHero>
     <div class="mx-auto w-full max-w-7xl pb-10 lg:py-12 lg:px-8">
@@ -38,4 +39,3 @@ const sectionLinks =
     </div>
   </div>
 </Layout>
-

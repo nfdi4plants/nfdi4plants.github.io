@@ -1,24 +1,16 @@
 ---
-title: participation
-subtitle: participation2
+title: Participation
+subtitle: DataPLANT is an initiative for the plant community in Germany and beyond.
 index: 5
-bgColor: lightgray
-textColor: black
+glass: true
+bgColor: lightblue-500
+textColor: darkblue
 buttonColor: darkblue
 buttonTextColor: white
 image: /images/community.svg
 link: /participation
-textPosition: right
+textPosition: text-only
 
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua.
-
-At vero eos et accusam et jus to duo dolores et ea rebum.
-
-Stet clita kasd gubergren, no sea takimata sanctus est Lorem. ipsum dolor sit amet.
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut lab ore et dolore magna aliquyam erat, sed diam volup tua.
-
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
- ipsum dolor sit amet.
+We thrive to be open in everything we do and to give all stakeholders the opportunity to contribute to building a German research data infrastructure in plant science. To get involved, there are several possibilities: 

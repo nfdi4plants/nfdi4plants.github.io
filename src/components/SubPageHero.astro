@@ -15,23 +15,39 @@ let headerColor = textColorMap.get(props.headerColor)
 let emphasisColor = textHoverColorMap.get(props.emphasisColor)
 
 const heroClass = `hero min-h-[60vh] ${bgColor} ${textColor}`
+let heroContentClass = ""
+if (props.textPosition === "left") {
+  heroContentClass = "hero-content flex-col lg:flex-row-reverse"
+} else if (props.textPosition === "right") {
+  heroContentClass = "hero-content flex-col-reverse lg:flex-row"
+} else if (props.textPosition === "top") {
+  heroContentClass = "hero-content flex-col-reverse"
+} else if (props.textPosition === "bottom") {
+  heroContentClass = "hero-content flex-col"
+} else {
+  heroContentClass = "hero-content flex-col lg:flex-row"
+}
 ---
 
 <div class={heroClass}>
-  <div class="hero-content flex-col lg:flex-row">
-    <img src={props.image} class="max-w-lg" />
-  <div>
-    <h1 class={`text-5xl font-bold mb-6 ${titleColor}`}>{props.title}</h1>
-    <h2 class="text-xl mb-4">{props.subtitle}</h1>
-    {
-      sectionLinks.map((link) => (
-        <div class="mb-2">
-          <h3><a href={`#${link.slug}`} class={`text-xl font-bold ${headerColor} ${emphasisColor}`}># {link.title}</a></h3>
-          <p class="text-base">{link.summary}</p>
-        </div>
-      ))
+  <div class={heroContentClass}>
+    {!(props.textPosition === "text-only") &&
+      <img src={props.image} class="max-w-lg" />
+      <!-- {
+        props.image && <Image src={props.image} class="max-w-lg" alt="" inferSize/>
+      } -->
     }
-  </div>
-
+    <div>
+      <h1 class={`text-5xl font-bold mb-6 ${titleColor}`}>{props.title}</h1>
+      <h2 class="text-xl mb-4">{props.subtitle}</h1>
+      {
+        sectionLinks.map((link) => (
+          <div class="mb-2">
+            <h3><a href={`#${link.slug}`} class={`text-xl font-bold ${headerColor} ${emphasisColor}`}># {link.title}</a></h3>
+            <p class="text-base">{link.summary}</p>
+          </div>
+        ))
+      }
+    </div>
   </div>
 </div>

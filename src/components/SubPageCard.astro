@@ -1,5 +1,5 @@
 ---
-import { bgColorMap, textColorMap } from "../statics"
+import { bgColorMap, textColorMap, borderColorMap } from "../statics"
 
 interface SubPageCardProps {
   title: string
@@ -7,7 +7,9 @@ interface SubPageCardProps {
   slug: string
   index: number
   bgColor: string
+  borderColor: string
   textColor: string
+  titleColor: string
   image: string
   link: string
   textPosition: "left" | "right" | "top" | "bottom" | "text-only"
@@ -18,9 +20,14 @@ const html: string | null = Astro.props.html
 
 let bgColor = bgColorMap.get(props.bgColor)
 let textColor = textColorMap.get(props.textColor)
+let titleColor = textColorMap.get(props.titleColor)
+let borderColor = borderColorMap.get(props.borderColor)
+let borderColorString = borderColor ? ` border-2 ${borderColor}` : ""
 
-const cardClassTB = `card shadow-xl p-6 ${bgColor} ${textColor}`
-const cardClassLR = `card lg:card-side shadow-xl p-6 ${bgColor} ${textColor}`
+const cardClassTB = `card shadow-xl p-6 ${bgColor} ${textColor}${borderColorString}`
+const cardClassLR = `card lg:card-side shadow-xl p-6 ${bgColor} ${textColor}${borderColorString}`
+
+const headerClass = `card-title text-4xl mb-4 ${titleColor}`
 
 const articleClass = `prose md:prose-base lg:prose-lg ${textColor}`
 const articleClassFullWidth = `prose max-w-none md:prose-base lg:prose-lg ${textColor}`
@@ -30,7 +37,7 @@ const articleClassSmaller = `prose md:prose-sm lg:prose-base ${textColor}`
   props.textPosition === "left" &&
     <div class={cardClassLR}>
       <div class="card-body">
-        <h1 id={props.slug} class="card-title text-4xl mb-4 anchor"><a class="anchor-link" href={`#${props.slug}`}>#</a>{props.title}</h2>
+        <h1 id={props.slug} class={headerClass}><a class="anchor-link" href={`#${props.slug}`}>#</a>{props.title}</h2>
         <h2 class="card-title text-2xl mb-2">{props.summary}</h2>
         {html && <article class={articleClassSmaller} set:html={html}></article>}
       </div>
@@ -46,7 +53,7 @@ const articleClassSmaller = `prose md:prose-sm lg:prose-base ${textColor}`
         <img src={props.image}/>
       </figure>
       <div class="card-body">
-        <h1 id={props.slug} class="card-title text-4xl mb-4 anchor"><a class="anchor-link" href={`#${props.slug}`}>#</a>{props.title}</h2>
+        <h1 id={props.slug} class={headerClass}><a class="anchor-link" href={`#${props.slug}`}>#</a>{props.title}</h2>
         <h2 class="card-title text-2xl mb-2">{props.summary}</h2>
         {html && <article class={articleClassSmaller} set:html={html}></article>}
       </div>
@@ -56,7 +63,7 @@ const articleClassSmaller = `prose md:prose-sm lg:prose-base ${textColor}`
   props.textPosition === "top" &&
     <div class={cardClassTB}>
       <div class="card-body">
-        <h1 id={props.slug} class="card-title text-4xl mb-4 anchor"><a class="anchor-link" href={`#${props.slug}`}>#</a>{props.title}</h2>
+        <h1 id={props.slug} class={headerClass}><a class="anchor-link" href={`#${props.slug}`}>#</a>{props.title}</h2>
         <h2 class="card-title text-2xl mb-2">{props.summary}</h2>
         {html && <article class={articleClassFullWidth} set:html={html}></article>}
       </div>
@@ -72,7 +79,7 @@ const articleClassSmaller = `prose md:prose-sm lg:prose-base ${textColor}`
         <img src={props.image}/>
       </figure>
       <div class="card-body">
-        <h1 id={props.slug} class="card-title text-4xl mb-4 anchor"><a class="anchor-link" href={`#${props.slug}`}>#</a>{props.title}</h2>
+        <h1 id={props.slug} class={headerClass}><a class="anchor-link" href={`#${props.slug}`}>#</a>{props.title}</h2>
         <h2 class="card-title text-2xl mb-2">{props.summary}</h2>
         {html && <article class={articleClassFullWidth} set:html={html}></article>}
       </div>
@@ -82,7 +89,7 @@ const articleClassSmaller = `prose md:prose-sm lg:prose-base ${textColor}`
   props.textPosition === "text-only" &&
     <div class={cardClassTB}>
       <div class="card-body">
-        <h1 id={props.slug} class="card-title text-4xl mb-4 anchor"><a class="anchor-link" href={`#${props.slug}`}>#</a>{props.title}</h2>
+        <h1 id={props.slug} class={headerClass}><a class="anchor-link" href={`#${props.slug}`}>#</a>{props.title}</h2>
         <h2 class="card-title text-2xl mb-2">{props.summary}</h2>
         {html && <article class={articleClassFullWidth} set:html={html}></article>}
       </div>
