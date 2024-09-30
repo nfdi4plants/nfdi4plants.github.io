@@ -88,7 +88,7 @@ const link = post.permalink
       </h2>
     </header>
 
-    {post.excerpt && <p class="flex-grow text-muted text-lg">{post.excerpt}</p>}
+    {post.excerpt && <p class="flex-grow text-muted text-lg" set:html={post.excerpt}></p>}
     {
       post.tags && Array.isArray(post.tags) ? (
         <footer class="mt-5">

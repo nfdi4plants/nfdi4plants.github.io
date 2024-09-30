@@ -2,13 +2,13 @@
 import { getCollection, getEntry } from 'astro:content';
 import ItemCollectionLayout from '~/layouts/ItemCollectionLayout.astro';
 
-const newsCollection = await getCollection('news')
+const newsCollection = await getCollection('events')
 
 async function collectData() {
   const newData = newsCollection
     .sort((a, b) => {
-          const dateA = new Date(a.data.date).getTime();
-          const dateB = new Date(b.data.date).getTime();
+          const dateA = new Date(a.data.start).getTime();
+          const dateB = new Date(b.data.start).getTime();
 
           return dateB - dateA;  // Sorts in descending order to get the latest first
         })
@@ -17,12 +17,12 @@ async function collectData() {
     return {
       id: entry.id,
       slug: entry.slug,
-      publishDate: entry.data.date,
+      publishDate: entry.data.start,
       title: entry.data.title,
-      permalink: "/news/" + entry.slug,
+      permalink: "/events/" + entry.slug,
       content: Content,
-      excerpt: entry.data.previewText,
-      image: entry.data.image,
+      excerpt: entry.data.excerpt,
+      image: entry.data.location.image,
     }
   })
   return await Promise.all(newData)
@@ -31,4 +31,4 @@ async function collectData() {
 const data = await collectData();
 ---
 
-<ItemCollectionLayout data={data} collectionName="News" />
+<ItemCollectionLayout data={data} collectionName="Events" />
