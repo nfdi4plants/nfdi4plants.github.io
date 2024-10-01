@@ -38,4 +38,3 @@ Find more infos about the Open Science Festival and the registration [here](http
 
 <b>Program Overview Day 2</b>
 <img src="https://converia.uni-mainz.de/custom/media/OpenScience/PO_Day_2.png" width="359" height="598" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/> -->
-

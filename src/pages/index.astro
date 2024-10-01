@@ -2,6 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import MainPageCard from '../components/MainPageCard.astro';
 import MainPageNews from '~/components/MainPageNews.astro';
+import Banner from '~/components/Banner.astro';
+import ARCLogoSVG from '~/assets/images/branding/ARCblue.svg'
+import {Image} from 'astro:assets';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
 
 import { type MarkdownInstance } from "astro";
 const files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('../content/mainpagecards/*.md');
@@ -13,7 +18,11 @@ const files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('../con
 <Layout title="DataPLANT - Home">
   <div class="flex flex-col flex-grow place-content-center">
     <div class="hero bg-base-200 min-h-[90vh]">
-      <div class="hero-content text-center">
+      <div class="hero overlay">
+        <Image src={ARCLogoSVG} alt="ARC Logo" class="mx-auto md:hidden opacity-30"/>
+        <Banner />
+      </div>
+      <div class="hero-content text-center md:hidden">
         <div class="max-w-md">
           <h1 class="text-4xl font-bold mb-4">Democratization of plant research.</h1>
           <h1 class="text-4xl font-bold mb-4">Made easy and free.</h1>
@@ -22,6 +31,29 @@ const files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('../con
         </div>
       </div>
     </div>
+    <!-- show call to action only on larger screens below banner -->
+    <CallToAction
+      classes={{
+        container: 'hidden md:block',
+      }}
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Become a member',
+          href: 'https://github.com/onwidget/astrowind',
+          target: '_blank',
+          icon: 'tabler:user-plus',
+        },
+      ]}
+    >
+      <Fragment slot="title">
+        DataPLANT
+      </Fragment>
+
+      <Fragment slot="subtitle">
+        Democratization of plant research made easy and free for everyone!
+      </Fragment>
+    </CallToAction>
     <div class="mx-auto w-full max-w-6xl pb-10 lg:py-12 lg:px-8">
       <div class="space-y-24 sm:px-6 lg:col-span-12 lg:px-0">
           {
