@@ -1,9 +1,8 @@
 ---
 title: What others say about DataPLANT
 icon: "tabler:quote"
-readMore:
-  text: Learn More
-  href: /#
+href: "#"
+summary: "DataPLANT is a collaborative project. Here is what our partners say about us."
 ---
 
 <h3>Partner: Cluster of Excellence on Plant Sciences (CEPLAS)</h1>

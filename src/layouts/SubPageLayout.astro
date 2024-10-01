@@ -1,9 +1,8 @@
 ---
 import Layout from "./Layout.astro";
 import SubpageHero from '~/components/SubpageHero.astro';
-import SubpageCard from '~/components/SubpageCard.astro';
-import MarkdownMask from "./MarkdownMask.astro";
 import type { CollectionEntry } from 'astro:content';
+import Features from "~/components/widgets/Features.astro";
 
 interface Props {
   hero: CollectionEntry<'subpage'>;
@@ -15,17 +14,28 @@ const hero = Astro.props.hero;
 const cards = Astro.props.cards;
 const title = Astro.props.title;
 
+console.log(cards[0])
+
+const parsedCards = cards.map((card) => ({
+  title: card.data.title + `↪`,
+  description: card.data.summary,
+  icon: card.data.icon,
+  classes: {
+    title: 'hover:text-primary transition-colors duration-200',
+  },
+  href: card.data.href,
+}));
+
 ---
 <Layout title={`DataPLANT - ${title}`}>
-  <div>
-    <SubpageHero hero={hero}></SubPageHero>
-    <MarkdownMask frontmatter={hero.data}>
-        {
-          cards
-          .map((card) => (
-            <SubpageCard card={card}/>
-          ))
-        }
-    </MarkdownMask>
-  </div>
+  <SubpageHero hero={hero}></SubPageHero>
+  <Features
+    title={hero.data.title}
+    subtitle={hero.data.subtitle}
+    columns={2}
+    items={parsedCards} />
 </Layout>
+
+<style>
+
+</style>

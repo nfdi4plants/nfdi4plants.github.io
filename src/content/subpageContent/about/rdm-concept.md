@@ -1,9 +1,8 @@
 ---
 title: Our Research data management concept
 icon: "tabler:database"
-readMore:
-  text: Learn More
-  href: /#
+href: "#"
+summary: "DataPLANT’s research data management (RDM) concept focusses on FAIR compliance, data and service interoperability, community participation, knowledge transfer, and long-term sustainability."
 ---
 
 DataPLANT’s research data management (RDM) concept focusses on FAIR compliance, data and service interoperability, community participation, knowledge transfer, and long-term sustainability.

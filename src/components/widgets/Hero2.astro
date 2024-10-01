@@ -1,8 +1,9 @@
 ---
-import Image from '~/components/common/Image.astro';
+import {Image} from 'astro:assets';
 import Button from '~/components/ui/Button.astro';
 
 import type { Hero as Props } from '~/types';
+
 
 const {
   title = await Astro.slots.render('title'),
@@ -11,14 +12,14 @@ const {
 
   content = await Astro.slots.render('content'),
   actions = await Astro.slots.render('actions'),
-  image = await Astro.slots.render('image'),
+  image,
 
   id,
   bg = await Astro.slots.render('bg'),
 } = Astro.props;
 ---
 
-<section class="relative md:-mt-[76px] not-prose" {...id ? { id } : {}}>
+<section class="relative md:-mt-[76px]" {...id ? { id } : {}}>
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
     <slot name="bg">
       {bg ? <Fragment set:html={bg} /> : null}
@@ -31,7 +32,7 @@ const {
         {
           tagline && (
             <p
-              class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase"
+              class="not-prose text-base text-secondary font-bold tracking-wide uppercase"
               set:html={tagline}
             />
           )
@@ -39,13 +40,13 @@ const {
         {
           title && (
             <h1
-              class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200"
+              class="not-prose text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading"
               set:html={title}
             />
           )
         }
         <div class="max-w-3xl mx-auto lg:max-w-none">
-          {subtitle && <p class="text-xl text-muted mb-6 dark:text-slate-300" set:html={subtitle} />}
+          {subtitle && <div class="text-xl text-muted mb-6" set:html={subtitle} />}
 
           {
             actions && (
@@ -79,7 +80,8 @@ const {
                   loading="eager"
                   width={600}
                   height={600}
-                  {...image}
+                  alt={title}
+                  src={image}
                 />
               )}
             </div>

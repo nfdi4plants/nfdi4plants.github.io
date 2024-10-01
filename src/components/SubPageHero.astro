@@ -2,6 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 import { bgColorMap, textColorMap, textHoverColorMap, type SectionLink, type SubPageHeroProps } from "../statics"
 import {Image} from 'astro:assets';
+import Hero2 from './widgets/Hero2.astro';
 
 interface Props {
   hero: CollectionEntry<'subpage'>;
@@ -37,23 +38,20 @@ if (props.styling?.textPosition) {
 }
 ---
 
-<div class={heroClass}>
-  <div class={heroContentClass}>
-    {(!(props.styling?.textPosition === "text-only") && props.image) &&
-      <Image src={props.image} class="max-h-[600px] w-auto" alt={props.title}/>
-    }
-    <div>
-      <h1 class={`text-5xl font-bold mb-6 ${titleColor}`}>{props.title}</h1>
-      <h2 class="text-xl mb-4">{props.subtitle}</h1>
-      <Content />
-      <!-- {
-        sectionLinks.map((link) => (
-          <div class="mb-2">
-            <h3><a href={`#${link.slug}`} class={`text-xl font-bold ${headerColor} ${emphasisColor}`}># {link.title}</a></h3>
-            <p class="text-base">{link.summary}</p>
-          </div>
-        ))
-      } -->
-    </div>
-  </div>
-</div>
+<Hero2
+    tagline={hero.data.tagline}
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Get Started', href: 'https://github.com/onwidget/astrowind' },
+      { text: 'Learn more', href: '#features' },
+    ]}
+    image={hero.data.image}
+  >
+    <Fragment slot="title" set:html={hero.data.title}></Fragment>
+
+    <Fragment slot="subtitle">
+      <div class="prose">
+        <Content />
+      </div>
+    </Fragment>
+
+</Hero2>

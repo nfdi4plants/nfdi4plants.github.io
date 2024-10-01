@@ -34,6 +34,7 @@ const subpageHeroCollection = defineCollection({
   schema: ({ image }) => z.object({
     title: z.string(),
     subtitle: z.string(),
+    tagline: z.string().optional(),
     image: image(),
     content: z.array(reference('subpageContent')),
     styling: z.object({
@@ -52,10 +53,8 @@ const subpageContentCollection = defineCollection({
   schema: () => z.object({
     title: z.string(),
     icon: z.string(),
-    readMore: z.object({
-      text: z.string(),
-      href: z.string(),
-    }).optional(),
+    href: z.string(),
+    summary: z.string(),
   })
 });
 

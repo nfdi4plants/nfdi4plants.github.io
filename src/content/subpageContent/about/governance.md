@@ -1,10 +1,8 @@
 ---
 title: DataPLANT Governance
 icon: "tabler:schema"
-readMore:
-  text: Learn More
-  href: /#
-
+href: "#"
+summary: "DataPLANT implements an organizational model designed for long-term, community-enabled sustainability."
 ---
 
 The DataPLANT consortium has developed a participatory model where members play a key role in broadening its diversity. 

@@ -1,6 +1,7 @@
 ---
-title: About DataPLANT
-subtitle: Find out more about DataPLANT’s mission, our community and partner, our governance, task areas and research concept.   
+title: 'About <span class="text-accent highlight">DataPLANT<span/>'
+tagline: Democratization of plant research
+subtitle: 'Find out more about DataPLANT’s mission, our community and partner, our governance, task areas and research concept.'
 image: /src/assets/images/DataPLANT_logo_dark.svg
 styling:
   titleColor: darkblue
@@ -19,5 +20,10 @@ content:
   - about/nfdi
 ---
 
-⚠️ Placeholder content. DataPLANT is committed to developing a Research Data Management (RDM) system that meets community requirements and facilitates the processing and contextualization of research datasets in accordance with the FAIR principles (Findable, Accessible, Interoperable, Reusable).
+⚠️ Placeholder content. 
+
+1. test
+2. uhu
+
+DataPLANT is committed to developing a Research Data Management (RDM) system that meets community requirements and facilitates the processing and contextualization of research datasets in accordance with the FAIR principles (Findable, Accessible, Interoperable, Reusable).
 To achieve this, we introduce the Annotated Research Context (ARC), which supports the entire research cycle—from experiments to computational analyses, encompassing both actual data and metadata, as well as the resulting publications.

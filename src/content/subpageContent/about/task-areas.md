@@ -1,9 +1,8 @@
 ---
 title: Our Task Areas
 icon: "tabler:subtask"
-readMore:
-  text: Learn More
-  href: /about/task-areas
+href: /about/task-areas
+summary: "DataPLANT is organized into four task areas, each with a specific focus and set of objectives."
 ---
 
 **Task Area 1** (Data Quality, Standardization, Interoperability) will provide support, including AI-based approaches, to facilitate the collection of vocabularies and ontologies, encouraging broader community participation.
