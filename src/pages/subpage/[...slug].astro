@@ -1,0 +1,28 @@
+---
+import MarkdownLayout from "~/layouts/MarkdownLayout.astro"
+import SubPageLayout from '~/layouts/SubpageLayout.astro';
+import { getCollection, getEntries } from 'astro:content';
+
+
+export async function getStaticPaths() {
+  const collection = await getCollection('subpage')
+  return collection.map((entry) => {
+    return {
+      params: { slug: entry.slug },
+      props: { file: entry }
+    }
+  });
+
+}
+
+const { file } = Astro.props;
+
+const relatedContent = await getEntries(file.data.content);
+
+---
+
+<SubPageLayout
+  title={file.data.title}
+  hero={file}
+  cards={relatedContent}>
+</SubPageLayout>

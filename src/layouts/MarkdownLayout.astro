@@ -1,14 +1,12 @@
 ---
-import Layout from "./Layout.astro";
+import Layout from './Layout.astro';
+import MarkdownMask from './MarkdownMask.astro';
 
-const {frontmatter} = Astro.props;
+const { frontmatter, headings } = Astro.props;
 ---
 
 <Layout title={frontmatter.title}>
-  <div class="w-full flex grow justify-center lg:py-10">
-    <div class="prose lg:prose-lg xl:prose-xl">
-      <h1>{frontmatter.title}</h1>
-      <slot />
-    </div>
-  </div>
+  <MarkdownMask frontmatter={frontmatter} headings={headings}>
+    <slot />
+  </MarkdownMask>
 </Layout>

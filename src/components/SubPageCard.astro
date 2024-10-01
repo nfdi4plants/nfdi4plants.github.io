@@ -1,52 +1,56 @@
 ---
 import { bgColorMap, textColorMap, borderColorMap } from "../statics"
-
-interface SubPageCardProps {
-  title: string
-  summary: string
-  slug: string
-  index: number
-  bgColor: string
-  borderColor: string
-  textColor: string
-  titleColor: string
-  image: string
-  link: string
-  textPosition: "left" | "right" | "top" | "bottom" | "text-only"
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+interface Props {
+  card: CollectionEntry<'subpageContent'>;
 }
 
-const props = Astro.props.subPageCardProps as SubPageCardProps;
-const html: string | null = Astro.props.html
+const card = Astro.props.card;
+const props = card.data;
+const { Content, headings } = await card.render();
 
-let bgColor = bgColorMap.get(props.bgColor)
-let textColor = textColorMap.get(props.textColor)
-let titleColor = textColorMap.get(props.titleColor)
-let borderColor = borderColorMap.get(props.borderColor)
+let bgColor = props.styling?.bgColor && bgColorMap.get(props.styling.bgColor)
+let textColor = props.styling?.textColor && textColorMap.get(props.styling.textColor)
+let titleColor = props.styling?.titleColor && textColorMap.get(props.styling.titleColor)
+let borderColor = props.styling?.borderColor && borderColorMap.get(props.styling.borderColor)
 let borderColorString = borderColor ? ` border-2 ${borderColor}` : ""
 
 const cardClassTB = `card shadow-xl p-6 ${bgColor} ${textColor}${borderColorString}`
-const cardClassLR = `card lg:card-side shadow-xl p-6 ${bgColor} ${textColor}${borderColorString}`
+const cardClassLR = `card shadow-xl lg:card-side p-6 ${bgColor} ${textColor}${borderColorString}`
 
 const headerClass = `card-title text-4xl mb-4 ${titleColor}`
 
-const articleClass = `prose md:prose-base lg:prose-lg ${textColor}`
-const articleClassFullWidth = `prose max-w-none md:prose-base lg:prose-lg ${textColor}`
+const articleClass = `prose md:prose-base lg:prose-lg xl:prose-xl ${textColor}`
+const articleClassFullWidth = `prose md:prose-base lg:prose-lg xl:prose-xl ${textColor}`
 const articleClassSmaller = `prose md:prose-sm lg:prose-base ${textColor}`
+
+const postionStyling = 
+  props.styling?.textPosition === "left" ? { flex: "flex-col lg:flex-row", card: cardClassLR, prose: articleClassSmaller } :
+  props.styling?.textPosition === "right" ? { flex: "flex-col lg:flex-row-reverse", card: cardClassLR, prose: articleClassSmaller} :
+  props.styling?.textPosition === "top" ? { flex: "flex-col", card: cardClassTB, prose: articleClassFullWidth } :
+  props.styling?.textPosition === "bottom" ? { flex: "flex-col-reverse", card: cardClassTB, prose: articleClassFullWidth } :
+  props.styling?.textPosition === "text-only" ? { flex: "flex-col-rev", card: cardClassTB, prose: articleClassFullWidth } :
+  { flex: "flex-col lg:flex-row", card: cardClassTB, prose: articleClass }
+
+
 ---
-{
-  props.textPosition === "left" &&
-    <div class={cardClassLR}>
-      <div class="card-body">
-        <h1 id={props.slug} class={headerClass}><a class="anchor-link" href={`#${props.slug}`}>#</a>{props.title}</h2>
-        <h2 class="card-title text-2xl mb-2">{props.summary}</h2>
-        {html && <article class={articleClassSmaller} set:html={html}></article>}
-      </div>
-      <figure>
-        <img src={props.image}/>
-      </figure>
+
+  <div class:list={[postionStyling.card, postionStyling.flex]}>
+    <div class="card-body">
+      <h1 id={card.slug} class={headerClass}><a class="anchor-link" href={`#${card.slug}`}>#</a>{props.title}</h2>
+      {props.summary && <h2 class="card-title text-2xl mb-2">{props.summary}</h2>}
+      <article class={postionStyling.prose}>
+        <Content />
+      </article>
     </div>
-}
-{
+    {props.image && props.styling?.textPosition !== "text-only" &&
+      <figure>
+        <Image src={props.image} alt={props.title} class="max-h-[400px] w-auto"/>
+      </figure>
+    }
+  </div>
+<!-- {
   props.textPosition === "right" &&
     <div class={cardClassLR}>
       <figure>
@@ -94,4 +98,4 @@ const articleClassSmaller = `prose md:prose-sm lg:prose-base ${textColor}`
         {html && <article class={articleClassFullWidth} set:html={html}></article>}
       </div>
     </div>
-}
+} -->

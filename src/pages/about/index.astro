@@ -1,5 +1,5 @@
 ---
-import SubPageLayout from '../../layouts/SubPageLayout.astro';
+import SubPageLayout from '../../layouts/SubpageLayout.astro';
 import { type MarkdownInstance } from "astro";
 const all_files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('../../content/about/*.md');
 const hero : MarkdownInstance<Record<string,any>> = (await Astro.glob('../../content/about/hero.md'))[0];
