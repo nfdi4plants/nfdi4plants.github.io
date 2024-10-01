@@ -10,7 +10,7 @@ interface Props {
 const { title } = Astro.props;
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en" class="motion-safe:scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
@@ -18,7 +18,7 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
- 
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <!-- these below are required to use the google font used in the web banner -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

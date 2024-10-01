@@ -4,8 +4,6 @@ import { bgColorMap, textColorMap, textHoverColorMap, type SectionLink, type Sub
 const props = Astro.props.subPageHeroProps as SubPageHeroProps;
 const sectionLinks = Astro.props.sectionLinks as SectionLink[]
 
-console.log(sectionLinks)
-
 const html: string | null = Astro.props.html
 
 let bgColor = bgColorMap.get(props.bgColor)

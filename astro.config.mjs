@@ -11,30 +11,29 @@ import remarkDirective from 'remark-directive';
 
 import icon from 'astro-icon';
 
+import sitemap from '@astrojs/sitemap';
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    tailwind(), 
-    lit(), 
-    icon({
-      include: {
-        tabler: ['*'],
-        'flat-color-icons': [
-          'template',
-          'gallery',
-          'approval',
-          'document',
-          'advertising',
-          'currency-exchange',
-          'voice-presentation',
-          'business-contact',
-          'database',
-        ],
-      },
-    })
-  ],
+  site: 'https://www.nfdi4plants.org',
+  integrations: [tailwind(), lit(), icon({
+    include: {
+      tabler: ['*'],
+      'flat-color-icons': [
+        'template',
+        'gallery',
+        'approval',
+        'document',
+        'advertising',
+        'currency-exchange',
+        'voice-presentation',
+        'business-contact',
+        'database',
+      ],
+    },
+  }), sitemap()],
   vite: {
     ssr: {
       // https://github.com/radix-ui/themes/issues/13#issuecomment-1704971219

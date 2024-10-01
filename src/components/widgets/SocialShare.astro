@@ -30,8 +30,6 @@ const { text, url, class: className = 'inline-block' } = Astro.props;
 
     window.basic_script = true;
 
-    console.log("Social Share Script Loaded");
-
     attachEvent('[data-aw-social-share]', 'click', function (_, elem) {
       const network = elem.getAttribute('data-aw-social-share');
       const url = encodeURIComponent(elem.getAttribute('data-aw-url'));

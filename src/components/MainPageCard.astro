@@ -45,7 +45,7 @@ props.textPosition === "left" &&
     </div>
   </div>
   <figure>
-    <img src={props.image}/>
+    <img src={props.image} alt={props.title}/>
   </figure>
 </div>
 }
@@ -54,7 +54,7 @@ props.textPosition === "left" &&
 props.textPosition === "right" &&
 <div class={cardClassTextRight}>
   <figure>
-    <img src={props.image}/>
+    <img src={props.image} alt={props.title}/>
   </figure>
   <div class="card-body">
     <h1 class="card-title text-4xl mb-4">{props.title}</h1>
@@ -74,7 +74,7 @@ props.textPosition === "top" &&
     <h2 class="card-title text-2xl mb-4">{props.subtitle}</h2>
     {html && <article class={articleClass} set:html={html}></article>}
     <figure>
-      <img src={props.image}/>
+      <img src={props.image} alt={props.title}/>
     </figure>
     <div class="card-actions justify-end mt-4 mb-4">
       <a href={props.link} class={btnClass}>Learn more</a>
@@ -89,7 +89,7 @@ props.textPosition === "top" &&
     <h1 class="card-title text-4xl mb-4">{props.title}</h1>
     <h2 class="card-title text-2xl mb-4">{props.subtitle}</h2>
     <figure>
-      <img src={props.image}/>
+      <img src={props.image} alt={props.title}/>
     </figure>
     {html && <article class={articleClass} set:html={html}></article>}
     <div class="card-actions justify-end mt-4 mb-4">
