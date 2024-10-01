@@ -44,13 +44,13 @@ We hope you will join us in sharing our collective Research Data Management know
 
 <!-- note from the developer: the part below does not work for me, commented out ~Kevin F. -->
 
-<!-- ## Program
+## Program
 
 **Preliminary program:**
 
-<iframe src="https://kroki.io/mermaid/svg/eNpVkMtqwzAQRff-itlkVwU5diDVLrQUL2pSyBcM0sQWsUdGUkv795WluFCtxDn36jFCiMrYsEz40ztDCrSbF9SxEkkMyDFWkFZ0JgXQ38mDu90Ks3EikKe9bEFA7zhFsjAY6c35GSN0nZrnDPHbhgfcdWrXV5kG0tE6hg_vBo8lefbefuG0bkFBXSspn-AwAmR7pRDWRr26Jrt6fxyz65BNEBfeqq1qkm42fVmIU0bfLQ-rPuV2W-S_51ydtjhl9P7JegTYjjyUG0vnJY2C6M8ds2tk-carZU7T2uTzo_gLzttdzg" style="border:0;width:70%;min-width:600px;height:20%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://kroki.io/mermaid/svg/eNpVkMtqwzAQRff-itlkVwU5diDVLrQUL2pSyBcM0sQWsUdGUkv795WluFCtxDn36jFCiMrYsEz40ztDCrSbF9SxEkkMyDFWkFZ0JgXQ38mDu90Ks3EikKe9bEFA7zhFsjAY6c35GSN0nZrnDPHbhgfcdWrXV5kG0tE6hg_vBo8lefbefuG0bkFBXSspn-AwAmR7pRDWRr26Jrt6fxyz65BNEBfeqq1qkm42fVmIU0bfLQ-rPuV2W-S_51ydtjhl9P7JegTYjjyUG0vnJY2C6M8ds2tk-carZU7T2uTzo_gLzttdzg" style="border:0;min-width:70%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-<iframe src="https://kroki.io/mermaid/svg/eNpVkEFuwyAQRfc-xWyyKxGJXallm6pl0ciV0guMYGKj2GAZLLW37xiStmGF3vuaPyCEqKyL04Dfx2BJgQnjhCZVgkWHPqUK-KRgOYDzhWYI53NhLg0E8nkrGxDwuVDkTDYWE72GecQEWqtxzBC_XLzCjVabY5VpJJNc8PAxh27GkjxRjCvbAyier6R8gN32sYdsNXobRevXO_udVPXNl0A7kQduWsZbpC4j-j-t0Vyc71b5lGVT5N1Op2AcDhkd-NFEcN9Zy7Lv--JND79y_7_tjZJolwS8NLw47_n_ONJcO38AF5ZixQ" style="border:0;width:70%;min-width:600px;height:20%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://kroki.io/mermaid/svg/eNpVkEFuwyAQRfc-xWyyKxGJXallm6pl0ciV0guMYGKj2GAZLLW37xiStmGF3vuaPyCEqKyL04Dfx2BJgQnjhCZVgkWHPqUK-KRgOYDzhWYI53NhLg0E8nkrGxDwuVDkTDYWE72GecQEWqtxzBC_XLzCjVabY5VpJJNc8PAxh27GkjxRjCvbAyier6R8gN32sYdsNXobRevXO_udVPXNl0A7kQduWsZbpC4j-j-t0Vyc71b5lGVT5N1Op2AcDhkd-NFEcN9Zy7Lv--JND79y_7_tjZJolwS8NLw47_n_ONJcO38AF5ZixQ" style="border:0;min-width:70%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-<iframe src="https://kroki.io/mermaid/svg/eNp1jz1PwzAQhvf8ilu6YWQ3WfCKVGVoVQQD88m-Jlbjc2QbCf49h9siQMKT9Tz33odSqvOhrAt-HJInCy7FFV3tlIgJudYO5NXkpQDzmTKk0-nCQl0IjL7XAyh4Jc9UpKo5j5V2KUesMI42xgbxPZQr3Ix2c2iwkKshMTzlNGWM_7IR2Rd15K8_WNAPVus72M4ATe8C4wLPFGXHIt6Y5s3c7HEllg7uHHi6NjB9Kxhm6H7NfEku4NLQo1xKBLeAtr0Een3ZZ__GboZvuf057k9wuAU_ASpNYFE" style="border:0;width:70%;min-width:600px;height:20%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
- -->
+<iframe src="https://kroki.io/mermaid/svg/eNp1jz1PwzAQhvf8ilu6YWQ3WfCKVGVoVQQD88m-Jlbjc2QbCf49h9siQMKT9Tz33odSqvOhrAt-HJInCy7FFV3tlIgJudYO5NXkpQDzmTKk0-nCQl0IjL7XAyh4Jc9UpKo5j5V2KUesMI42xgbxPZQr3Ix2c2iwkKshMTzlNGWM_7IR2Rd15K8_WNAPVus72M4ATe8C4wLPFGXHIt6Y5s3c7HEllg7uHHi6NjB9Kxhm6H7NfEku4NLQo1xKBLeAtr0Een3ZZ__GboZvuf057k9wuAU_ASpNYFE" style="border:0;min-width:70%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
