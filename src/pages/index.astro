@@ -11,9 +11,6 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import { type MarkdownInstance } from "astro";
 const files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('../content/mainpagecards/*.md');
 
-// console.log(
-//   files.map((file) => file.frontmatter)
-// )
 ---
 <Layout title="DataPLANT - Home">
   <div class="flex flex-col flex-grow place-content-center">

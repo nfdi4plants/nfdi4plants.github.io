@@ -1,41 +1,44 @@
 ---
 import Layout from "./Layout.astro";
-import { type MarkdownInstance } from "astro";
-import SubPageHero from '../components/SubPageHero.astro';
-import SubPageCard from '../components/SubPageCard.astro';
-import { bgColorMap, textColorMap, type SectionLink } from "../statics"
+import SubpageHero from '~/components/SubpageHero.astro';
+import type { CollectionEntry } from 'astro:content';
+import Features from "~/components/widgets/Features.astro";
+import { bgColorMap, textColorMap } from "~/statics";
 
-const hero = Astro.props.hero as MarkdownInstance<Record<string,any>>;
-const all_files = Astro.props.cards as MarkdownInstance<Record<string,any>>[];
-const title = Astro.props.title as string;
+interface Props {
+  hero: CollectionEntry<'subpage'>;
+  cards: CollectionEntry<'subpageContent'>[];
+  title: string;
+}
 
-const cards =
-    all_files
-    .filter((file) => ! file.file.endsWith("hero.md"))
-    .sort((a,b) => a.frontmatter.index - b.frontmatter.index)
+const hero = Astro.props.hero;
+const cards = Astro.props.cards;
+const title = Astro.props.title;
 
-const sectionLinks = 
-  cards
-  .map((file) => ({
-    title: file.frontmatter.title,
-    summary: file.frontmatter.summary,
-    slug: file.frontmatter.slug
-  }))
+let bgColor = hero.data.styling?.bgColor && bgColorMap.get(hero.data.styling.bgColor) || ""
+let textColor = hero.data.styling?.textColor && textColorMap.get(hero.data.styling.textColor) || ""
 
+const parsedCards = cards.map((card) => ({
+  title: card.data.title + `↪`,
+  description: card.data.summary,
+  icon: card.data.icon,
+  classes: {
+    icon: bgColor + " " + textColor,
+    title: 'hover:scale-105 origin-left transition-transform duration-200',
+  },
+  href: card.data.href,
+}));
 
 ---
 <Layout title={`DataPLANT - ${title}`}>
-  <div class="flex flex-col flex-grow place-content-center">
-    <SubPageHero subPageHeroProps={hero.frontmatter} sectionLinks={sectionLinks} html={hero.compiledContent()}></SubPageHero>
-    <div class="mx-auto w-full max-w-7xl pb-10 lg:py-12 lg:px-8">
-      <div class="space-y-24 sm:px-6 lg:col-span-12 lg:px-0">
-          {
-            cards
-            .map((file) => (
-              <SubPageCard subPageCardProps={file.frontmatter} html={file.compiledContent()}/>
-            ))
-          }
-      </div>
-    </div>
-  </div>
+  <SubpageHero hero={hero}></SubPageHero>
+  <Features
+    title={hero.data.title}
+    subtitle={hero.data.subtitle}
+    columns={2}
+    items={parsedCards} />
 </Layout>
+
+<style>
+
+</style>

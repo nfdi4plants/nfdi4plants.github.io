@@ -11,15 +11,14 @@ export async function getStaticPaths() {
       props: { file: newsItem }
     }
   });
-
 }
 
 const { file } = Astro.props;
 
-const { Content } = await file.render();
+const { Content, headings } = await file.render();
 ---
 
-<MarkdownLayout frontmatter={file.data}>
+<MarkdownLayout frontmatter={file.data} headings={headings}>
     <h3 class="text-neutral">{file.data.date.toDateString()}</h3>
     <Content />
 </MarkdownLayout>
