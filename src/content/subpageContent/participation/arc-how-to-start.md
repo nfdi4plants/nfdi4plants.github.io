@@ -1,12 +1,8 @@
 ---
 title: Start your own ARC
 summary: You want to make your scientific data FAIR (Findable, Accessible, Interoperable, and Reusable)? Start now with our Annotated Research Context (ARC).
-styling:
-  titleColor: lightblue-600
-  bgColor: lightblue-50
-  textColor: black
-  emphasisColor: darkblue
-  textPosition: text-only
+icon: tabler:box
+href: arc-rdm.org
 ---
 
 The ARC is the central framework for research data management in DataPLANT.

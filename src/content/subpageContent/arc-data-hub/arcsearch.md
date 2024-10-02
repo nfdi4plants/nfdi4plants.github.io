@@ -1,12 +1,8 @@
 ---
 title: ARCSearch
 summary: ARC metadata search across all federated ARC Data Hub instances by DataPLANT.
-styling:
-  titleColor: darkblue
-  bgColor: white
-  textColor: black
-  emphasisColor: darkblue
-  textPosition: text-only
+icon: tabler:database-search
+href: https://arcregistry.nfdi4plants.org/isasearch
 ---
 
 The ARCSearch is a tool for integrated search and analysis of individual ARCs and experimental metadata.

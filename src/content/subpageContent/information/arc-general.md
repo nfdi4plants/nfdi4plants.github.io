@@ -1,12 +1,8 @@
 ---
 title: Annotated Research Context
 summary: The ARC is DataPLANT's FAIR Digital Object of choice.
-styling:
-  titleColor: darkblue
-  bgColor: white
-  textColor: black
-  textPosition: text-only
-  
+icon: tabler:box
+href: https://arc-rdm.org
 ---
 
 > If you want to dive deep into the ARC take a look at the [arc-rdm.org](https://arc-rdm.org)! 💡

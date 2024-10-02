@@ -1,12 +1,8 @@
 ---
 title: Become a DataPLANT member
 summary: Use our PLANTdataHUB and other DataPLANT infrastructure and services.
-styling:
-  titleColor: lightblue-600
-  bgColor: lightblue-50
-  textColor: black
-  emphasisColor: darkblue
-  textPosition: text-only
+icon: tabler:user-plus
+href: "https://auth.nfdi4plants.org/realms/dataplant/protocol/openid-connect/auth?client_id=account&redirect_uri=https%3A%2F%2Fauth.nfdi4plants.org%2Frealms%2Fdataplant%2Faccount%2Flogin-redirect&state=0%2F2083ce25-95bf-4a38-ba82-0502f7060042&response_type=code&scope=openid"
 ---
 
 All DataPLANT services, tools and infrastructures are freely accessible to anyone that is interested in using them.

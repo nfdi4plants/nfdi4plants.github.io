@@ -1,11 +1,8 @@
 ---
 title: DataPLANT News
 summary: Project results, new publications, event announcements, follow-up reports, and more.
-styling:
-  titleColor: darkblue
-  bgColor: white
-  textColor: black
-  textPosition: text-only
+icon: tabler:news
+href: /news
 ---
 
 Our news blog keeps you informed about news from DataPLANT.

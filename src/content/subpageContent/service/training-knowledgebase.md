@@ -1,13 +1,8 @@
 ---
 title: Our teaching and training offers
 summary: Learn more about our trainings and teaching materials..
-image: ~/assets/images/subpage/about/nfdi.png
-styling:
-  titleColor: white
-  bgColor: darkblue
-  textColor: white
-  textPosition: text-only
-
+icon: tabler:award
+href: https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/index.html
 ---
 
 DataPLANT’s teaching and training services ensure smooth adoption and effective use of its tools in the research community. 

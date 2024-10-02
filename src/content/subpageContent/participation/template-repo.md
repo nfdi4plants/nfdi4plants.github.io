@@ -1,11 +1,8 @@
 ---
 title: Contribute to our templates 
 summary: Our annotation tool Swate simplifies adding standardized metadata for your experimental workflows. You would like to contribute a template?
-styling:
-  titleColor: lightblue-600
-  bgColor: lightblue-50
-  textColor: black
-  textPosition: text-only
+icon: tabler:table-share
+href: https://github.com/nfdi4plants/Swate-templates
 ---
 
 Our spreadsheet-based tool Swate helps you to create annotation tables by adding different building blocks to represent your experimental process, while following the ISA schema and using ontology terms.

@@ -1,13 +1,8 @@
 ---
 title: Homogenization to simplify the RDM landscape
 summary: Our harmonization tools enable you to annotate your data with descriptive metadata and apply consistent terminologies.
-image: ~/assets/images/subpage/about/nfdi.png
-styling:
-  titleColor: white
-  bgColor: darkblue
-  textColor: white
-  textPosition: text-only
-
+icon: tabler:world-code
+href: https://swate-alphanfdi4plants.org
 ---
 
 The annotation of metadata is essential for well-maintained research data according to FAIR principles. 

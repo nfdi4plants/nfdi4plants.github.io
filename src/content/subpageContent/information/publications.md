@@ -1,11 +1,8 @@
 ---
 title: Publications
 summary: DataPLANT publications. 
-styling:
-  titleColor: darkblue
-  bgColor: darkblue
-  textColor: white
-  textPosition: text-only
+icon: tabler:file-like
+href: /publications
 ---
 
 Various publications, posters and by DataPLANT members - have fun browsing the full list of our publications!

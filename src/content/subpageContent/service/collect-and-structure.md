@@ -1,13 +1,8 @@
 ---
 title: Create, structure and fill your ARCs
 summary: Our tools ARCitect and ARCCommander simplify the creation, structuring and maintenance of ARCs.
-image: ~/assets/images/subpage/about/nfdi.png
-styling:
-  textPosition: text-only
-  titleColor: darkblue
-  borderColor: darkblue
-  bgColor: white
-  textColor: black
+icon: tabler:device-desktop-code
+href: "#"
 ---
 
 The ARCitect and ARCommander are two essential tools developed by DataPLANT that assist users with the creation and management of ARCs.

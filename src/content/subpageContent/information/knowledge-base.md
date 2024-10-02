@@ -1,11 +1,8 @@
 ---
 title: DataPLANT Knowledge Base
 summary: Service documentation, FAQs and more. 
-styling:
-  titleColor: darkblue
-  bgColor: white
-  textColor: black
-  textPosition: text-only
+icon: tabler:book
+href: https://nfdi4plants.org/nfdi4plants.knowledgebase/
 ---
 
 Our Knowledge Base is our collaboratively maintained wiki for research data management.

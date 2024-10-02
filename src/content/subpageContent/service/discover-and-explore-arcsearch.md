@@ -1,14 +1,8 @@
 ---
 title: Search ARCs for specific keywords and metadata
 summary: Our service for the discovery and exploration of ARCs helps you find data sets.
-image: ~/assets/images/subpage/about/nfdi.png
-styling:
-  textPosition: text-only
-  bgColor: white
-  titleColor: darkblue
-  textColor: black
-  borderColor: darkblue
-
+icon: tabler:file-search
+href: "#"
 ---
 
 The ARCSearch is a tool for integrated search and analysis of individual ARCs and experimental metadata. 

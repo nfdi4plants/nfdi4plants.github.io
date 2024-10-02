@@ -1,14 +1,8 @@
 ---
 title: Tools and services manuals
-titleColor: darkblue
 summary: Browse our guides to learn more about DataPLANTs tools and services.
-slug: manuals
-bgColor: white
-textColor: black
-emphasisColor: darkblue
-image: ../../images/about/nfdi.png
-textPosition: text-only
-index: 3
+icon: tabler:book
+href: https://nfdi4plants.org/nfdi4plants.knowledgebase/index.html
 ---
 
 DataPLANT offers several tools to facilitate RDM.

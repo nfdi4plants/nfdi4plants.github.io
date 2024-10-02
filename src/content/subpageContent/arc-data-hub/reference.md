@@ -1,12 +1,8 @@
 ---
 title: PLANTDataHUB
 summary: The PLANTDataHUB is DataPLANT's central reference implementation of the ARC Data Hub concept.
-styling:
-  titleColor: darkblue
-  bgColor: white
-  textColor: black
-  emphasisColor: darkblue
-  textPosition: text-only
+icon: tabler:database-heart
+href: https://git.nfdi4plants.org
 ---
 
 The [PLANTDataHUB](https://git.nfdi4plants.org) is the reference implementation of the ARC Data Hub concept as a collaborative cloud repository for ARCs based on GitLab.

@@ -1,14 +1,8 @@
 ---
 title: Training made for you
-titleColor: darkblue
 summary: You want to learn how you can use the Annotated Research Context to structure your data? We offer on-site or online trainings.
-slug: custom-training
-bgColor: white
-textColor: black
-emphasisColor: darkblue
-image: ../../images/about/nfdi.png
-textPosition: text-only
-index: 4
+icon: tabler:award
+href: "#"
 ---
 
 In addition to offering educational material on DataPLANT’s concepts and tools online, DataPLANT’s Data Stewards offer custom support for your RDM.

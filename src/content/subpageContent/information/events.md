@@ -1,11 +1,8 @@
 ---
 title: DataPLANT Events
 summary: Upcoming events by and with DataPLANT. 
-styling:
-  titleColor: darkblue
-  bgColor: white
-  textColor: black
-  textPosition: text-only
+icon: tabler:calendar-smile
+href: /events
 ---
 
 We organize our own events or are guests at external happenings. 

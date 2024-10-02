@@ -1,13 +1,8 @@
 ---
 title: For Developers
 summary: Find all relevant information for developers regarding contributions.
-styling:
-  textPosition: text-only
-  titleColor: olive-800
-  bgColor: olive-100
-  textColor: black
-  emphasisColor: darkblue
-
+icon: tabler:code
+href: https://github.com/nfdi4plants
 ---
 
 

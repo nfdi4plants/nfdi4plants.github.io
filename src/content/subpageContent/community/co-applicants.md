@@ -1,11 +1,8 @@
 ---
 title: DataPLANT Co-Applicants
-styling:
-  textPosition: text-only
-  titleColor: darkblue
-  bgColor: white
-  textColor: black
-
+summary: The DataPLANT project is a collaborative effort between several institutions.
+icon: tabler:building-community
+href: "#"
 ---
 
 The following institutions are co-applicants of DataPLANT:

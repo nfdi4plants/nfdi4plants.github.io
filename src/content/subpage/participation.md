@@ -1,5 +1,6 @@
 ---
 title: Contribute to DataPLANT
+tagline: Join the DataPLANT community!
 subtitle: DataPLANT is a community-driven initiative and open to any kind of contribution.
 content:
   - participation/become-a-member

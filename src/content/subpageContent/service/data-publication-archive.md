@@ -1,13 +1,8 @@
 ---
 title: Our data publication tools
 summary: ARChive is our platform to publish your research data via the ARCigator.
-image: ~/assets/images/subpage/about/nfdi.png
-styling:
-  textPosition: text-only
-  titleColor: white
-  bgColor: darkblue
-  textColor: white
-
+icon: tabler:file-like
+href: "#"
 ---
 
 ARChigator is a tool for submitting ARCs hosted on DataHUB for publication in the ARChive. 

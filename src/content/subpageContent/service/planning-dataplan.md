@@ -1,14 +1,8 @@
 ---
 title: Our Data Management Plan Generator
 summary: Our DataPLAN tool is designed to assist you in quickly generating Data Management Plans (DMPs) that can be used for a variety of purposes.
-image: src/assets/images/subpage/about/nfdi.png
-styling:
-  textPosition: text-only
-  titleColor: white
-  bgColor: darkblue
-  textColor: white
-  emphasisColor: white
-
+icon: tabler:map-question
+href: https://dmpg.nfdi4plants.org
 ---
 
 The DMP Generator of DataPLAN is an innovative tool designed to streamline the creation of Data DMPs, a key component in ensuring that research data is handled according to best practices throughout its lifecycle. 

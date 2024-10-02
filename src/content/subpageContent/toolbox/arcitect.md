@@ -1,13 +1,8 @@
 ---
 title: ARCitect
 summary: An end-to-end GUI application to manage ARCs.
-styling:
-  titleColor: darkblue
-  bgColor: white
-  textColor: black
-  emphasisColor: darkblue
-  textPosition: text-only
-
+icon: tabler:layout-grid-add
+href: https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html
 ---
 
 The ARCitect bundles many of the individual tools from DataPLANT into a single GUI application.

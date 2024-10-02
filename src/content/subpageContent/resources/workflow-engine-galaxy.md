@@ -1,13 +1,8 @@
 ---
 title: The Galaxy Instance for Plant Biology
 summary: Analyze your data stored in ARCs using the Galaxy Workflow Platform.
-styling:
-  titleColor: olive-800
-  bgColor: olive-100
-  textColor: black
-  emphasisColor: darkblue
-  textPosition: text-only
-
+icon: tabler:cloud-code
+href: "#"
 ---
 
 The Galaxy workflow system enables you to analyze data from your ARCs by running tools and datasets in a defined sequence, streamlining repetitive tasks and ensuring consistency.

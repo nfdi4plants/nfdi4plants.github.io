@@ -1,14 +1,8 @@
 ---
 title: Browse our open educational resources
-titleColor: darkblue
 summary: "Videos, slides, GitHub repositories and more: Explore our free self-learning materials!"
-slug: open-educational-resources
-bgColor: white
-textColor: black
-emphasisColor: darkblue
-image: ../../images/about/nfdi.png
-textPosition: text-only
-index: 6
+icon: tabler:user-screen
+href: "#"
 ---
 
 Whether you already participated in a personal DataPLANT training or not, you can become more familiar with DataPLANT’s tools and RDM concept by browsing our open educational resources.

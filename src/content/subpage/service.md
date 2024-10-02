@@ -1,5 +1,6 @@
 ---
 title: DataPLANT Services
+tagline: Concepts explained!
 subtitle: Tools and Services to structure the Data Jungle for plant researchers
 image: /src/assets/images/service.png
 content: 

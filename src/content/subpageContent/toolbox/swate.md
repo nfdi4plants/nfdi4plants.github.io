@@ -1,12 +1,8 @@
 ---
 title: Swate
 summary: Swate is a tool for ontology-driven metadata annotation.
-styling:
-  titleColor: darkblue
-  bgColor: white
-  textColor: black
-  emphasisColor: darkblue
-  textPosition: text-only
+icon: tabler:world-code
+href: https://swate-alpha.nfdi4plants.org/
 ---
 
 Swate provides a familiar, spreadsheet-like work environment that makes it easy to incrementally increase metadata quality of an [ARC Scaffold](https://arc-rdm.org/details/arc-representation/#arc-scaffold).

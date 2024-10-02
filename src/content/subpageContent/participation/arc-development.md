@@ -1,11 +1,8 @@
 ---
 title: Contribute to ARC development 
 summary: You want to contribute to our Annotated Research Context (ARC) concept or tools? Find out more.
-styling:
-  titleColor: lightblue-600
-  bgColor: lightblue-50
-  textColor: black
-  textPosition: text-only
+icon: tabler:adjustments-cog
+href: "#"
 ---
 
 The [**A**nnotated **R**esearch **C**ontext (ARC)](https://nfdi4plants.github.io/arc-website/) is DataPLANT's central concept for organizing and documenting research data, focal point of collaboration, data exchange, and overall FAIR Digital Object of choice.

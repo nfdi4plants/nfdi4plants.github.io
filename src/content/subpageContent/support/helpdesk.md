@@ -1,14 +1,8 @@
 ---
 title: Contact DataPLANT’s Helpdesk
-titleColor: darkblue
 summary: Looking for help on research data management or DataPLANT services and infrastructure? Get in touch with us!
-slug: helpdesk
-bgColor: white
-textColor: black
-emphasisColor: darkblue
-image: ../../images/about/nfdi.png
-textPosition: text-only
-index: 1
+icon: tabler:message-question
+href: https://helpdesk.nfdi4plants.org
 ---
 
 Our helpdesk is your primary point of contact for any questions or inquiries.

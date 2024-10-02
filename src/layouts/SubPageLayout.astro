@@ -3,7 +3,7 @@ import Layout from "./Layout.astro";
 import SubpageHero from '~/components/SubpageHero.astro';
 import type { CollectionEntry } from 'astro:content';
 import Features from "~/components/widgets/Features.astro";
-import { bgColorMap } from "~/statics";
+import { bgColorMap, textColorMap } from "~/statics";
 
 interface Props {
   hero: CollectionEntry<'subpage'>;
@@ -16,14 +16,15 @@ const cards = Astro.props.cards;
 const title = Astro.props.title;
 
 let bgColor = hero.data.styling?.bgColor && bgColorMap.get(hero.data.styling.bgColor) || ""
+let textColor = hero.data.styling?.textColor && textColorMap.get(hero.data.styling.textColor) || ""
 
 const parsedCards = cards.map((card) => ({
   title: card.data.title + `↪`,
   description: card.data.summary,
   icon: card.data.icon,
   classes: {
-    icon: bgColor,
-    title: 'hover:text-primary transition-colors duration-200',
+    icon: bgColor + " " + textColor,
+    title: 'hover:scale-105 origin-left transition-transform duration-200',
   },
   href: card.data.href,
 }));

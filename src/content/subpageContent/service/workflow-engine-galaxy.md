@@ -1,14 +1,8 @@
 ---
 title: Galaxy Workflow Engine
 summary: Analyze your data stored in ARCs using the Galaxy Workflow Platform.
-image: ~/assets/images/subpage/about/nfdi.png
-styling:
-  titleColor: darkblue
-  bgColor: white
-  textColor: black
-  borderColor: darkblue
-  textPosition: text-only
-
+icon: tabler:cloud-code
+href: https://plants.usegalaxy.eu/
 ---
 
 The Galaxy workflow system allows you to analyze your data from you ARCs by executing a series of tools and dataset operations in a defined sequence as a batch process. 

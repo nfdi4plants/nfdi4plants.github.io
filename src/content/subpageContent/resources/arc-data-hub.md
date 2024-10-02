@@ -1,11 +1,8 @@
 ---
 title: About the ARC Data Hub
 summary: Further information about the ARC Data Hub concepts and our implementations.
-styling:
-  titleColor: olive-800
-  textPosition: text-only
-  bgColor: olive-100
-  textColor: black
+icon: tabler:database
+href: "#"
 ---
 
 The ARC Data Hub concept makes ARCs first-class citizens of the cloud. DataPLANT hosts several implementations of the ARC Data Hub concept and offers integrated services to browse metadata across federated instances, as well as data publication.

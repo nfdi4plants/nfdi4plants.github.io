@@ -1,10 +1,8 @@
 ---
 title: DataPLANT Participants
-styling:
-  textColor: black
-  bgColor: white
-  titleColor: darkblue
-  textPosition: text-only
+summary: Users and contributors to the DataPLANT project.
+icon: tabler:users
+href: "#"
 ---
 
 - [Prof. Dr. Rolf Backofen](), University of Freiburg 

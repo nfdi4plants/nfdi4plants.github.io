@@ -1,12 +1,8 @@
 ---
 title: Contribute to our broker ontology 
 summary: An intermediate ontology for plants used by DataPLANT to fill the ontology gap. We welcome every contribution!
-styling:
-  titleColor: lightblue-600
-  bgColor: lightblue-50
-  textColor: black
-  emphasisColor: darkblue
-  textPosition: text-only
+icon: tabler:file-plus
+href: https://github.com/nfdi4plants/nfdi4plants_ontology
 ---
 
  

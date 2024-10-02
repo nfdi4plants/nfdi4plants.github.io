@@ -1,13 +1,8 @@
 ---
 title: ARChive
 summary: A Data Publication service for ARCs.
-styling:
-  titleColor: darkblue
-  bgColor: white
-  textColor: black
-  emphasisColor: darkblue
-  textPosition: text-only
-
+icon: tabler:file-like
+href: https://archive.nfdi4plants.org/communities/dataplant
 ---
 
 A data publication repository for ARCs with integrated DOI minting.
