@@ -133,8 +133,8 @@ const noInPageNavigation = nestedHeadings.length === 0;
     </div>
   </div>
   <div class="flex grow lg:py-5 flex-row items-start relative">
-    <!-- <div id="md-layout-left" class="w-[20%] h-full hidden lg:block"></div> -->
-    <div id="md-layout-left" class="w-[20%] h-full"></div>
+    <div id="md-layout-left" class="w-[20%] h-full hidden lg:block"></div>
+    <!-- <div id="md-layout-left" class="w-[20%] h-full"></div> -->
     <div id="md-layout-center" class="w-full lg:w-[60%] flex justify-center">
       <article class="prose lg:prose-lg xl:prose-xl grow p-5 overflow-hidden sm:overflow-visible">
         <h1>{frontmatter.title}</h1>
@@ -182,19 +182,8 @@ const noInPageNavigation = nestedHeadings.length === 0;
 
 <style is:global>
 
-  #md-content .tooltip::before {
-    width: 24ch !important;
-  }
-
-  @media screen and (max-width:450px) {
-  /* Bei jedem größeren Monitor kommen neue Regeln hinzu */
-    #md-content .tooltip::before {
-      width: unset !important;
-    }
-  }
-
   #md-content .anchor-link {
-    @apply text-accent
+    @apply text-secondary
   }
 
   #md-content h1,
