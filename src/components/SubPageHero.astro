@@ -39,17 +39,22 @@ if (props.styling?.textPosition) {
 ---
 
 <Hero2
+    id={hero.id}
     tagline={hero.data.tagline}
     actions={[
-      { variant: 'primary', target: '_blank', text: 'Get Started', href: 'https://github.com/onwidget/astrowind' },
-      { text: 'Learn more', href: '#features' },
+      { variant: 'secondary', target: '_blank', text: 'Get Started', href: 'https://github.com/onwidget/astrowind' },
+      { variant: 'secondary', text: 'Learn more', href: '#features' },
     ]}
     image={hero.data.image}
   >
-    <Fragment slot="title" set:html={hero.data.title}></Fragment>
-
+    <Fragment slot="title">
+      <div class:list={[titleColor]} set:html={hero.data.title}></div>
+    </Fragment>
+    <Fragment slot="bg">
+      <div class:list={["absolute inset-0", bgColor]}></div>
+    </Fragment>
     <Fragment slot="subtitle">
-      <div class="prose">
+      <div class:list={["prose", textColor]}>
         <Content />
       </div>
     </Fragment>

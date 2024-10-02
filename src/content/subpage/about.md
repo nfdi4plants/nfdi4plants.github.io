@@ -1,6 +1,6 @@
 ---
-title: 'About <span class="text-accent highlight">DataPLANT<span/>'
-tagline: Democratization of plant research
+title: 'About <span class="font-extrabold">DataPLANT<span/>'
+tagline: Towards democratization of plant research.
 subtitle: 'Find out more about DataPLANT’s mission, our community and partner, our governance, task areas and research concept.'
 image: /src/assets/images/DataPLANT_logo_dark.svg
 styling:

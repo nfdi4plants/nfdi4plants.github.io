@@ -3,6 +3,7 @@ import Layout from "./Layout.astro";
 import SubpageHero from '~/components/SubpageHero.astro';
 import type { CollectionEntry } from 'astro:content';
 import Features from "~/components/widgets/Features.astro";
+import { bgColorMap } from "~/statics";
 
 interface Props {
   hero: CollectionEntry<'subpage'>;
@@ -14,13 +15,14 @@ const hero = Astro.props.hero;
 const cards = Astro.props.cards;
 const title = Astro.props.title;
 
-console.log(cards[0])
+let bgColor = hero.data.styling?.bgColor && bgColorMap.get(hero.data.styling.bgColor) || ""
 
 const parsedCards = cards.map((card) => ({
   title: card.data.title + `↪`,
   description: card.data.summary,
   icon: card.data.icon,
   classes: {
+    icon: bgColor,
     title: 'hover:text-primary transition-colors duration-200',
   },
   href: card.data.href,
