@@ -341,24 +341,6 @@ export const borderColorMap = new Map<string,string> ([
   ['red-950', "border-red-950"],
 ])
 
-
-export interface SectionLink {
-  title: string
-  summary: string
-  slug: string
-}
-export interface SubPageHeroProps {
-  title: string
-  titleColor: string
-  subtitle: string
-  bgColor: string
-  textColor: string
-  headerColor: string
-  emphasisColor: string
-  image: string | null
-  textPosition: "left" | "right" | "top" | "bottom" | "text-only"
-}
-
 export function groupBy<T>(iterable: Iterable<T>, fn: (item: T) => string | number) {
   return [...iterable].reduce<Record<string, T[]>>((groups, curr) => {
     const key = fn(curr);
