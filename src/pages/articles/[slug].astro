@@ -4,11 +4,11 @@ import { getCollection, getEntry } from 'astro:content';
 
 
 export async function getStaticPaths() {
-  const newsCollection = await getCollection('news')
-  return newsCollection.map((newsItem) => {
+  const collection = await getCollection('articles')
+  return collection.map((entry) => {
     return {
-      params: { slug: newsItem.slug },
-      props: { file: newsItem }
+      params: { slug: entry.slug },
+      props: { file: entry }
     }
   });
 }
@@ -19,6 +19,5 @@ const { Content, headings } = await file.render();
 ---
 
 <MarkdownLayout frontmatter={file.data} headings={headings}>
-    <h3 class="text-neutral">{file.data.date.toDateString()}</h3>
     <Content />
 </MarkdownLayout>

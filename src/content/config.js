@@ -48,13 +48,24 @@ const subpageHeroCollection = defineCollection({
   })
 });
 
+// This is level 2 content and is rendered using custom components
 const subpageContentCollection = defineCollection({
-  type: 'content',
+  type: 'data',
   schema: () => z.object({
     title: z.string(),
     icon: z.string(),
     href: z.string(),
     summary: z.string(),
+  })
+});
+
+// This is level 3 content in a default markdown render
+const articleCollection = defineCollection({
+  type: 'content',
+  schema: () => z.object({
+    title: z.string(),
+    summary: z.string(),
+    tags: z.array(z.string()).optional(),
   })
 });
 
@@ -65,4 +76,5 @@ export const collections = {
   'events': eventsCollection,
   'subpage': subpageHeroCollection,
   'subpageContent': subpageContentCollection,
+  'articles': articleCollection,
 };
