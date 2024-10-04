@@ -31,6 +31,7 @@ const cardClassSequential = `${cardBaseClass} shadow-xl p-6 ${bgColor} ${textCol
 const cardClassTextOnly = `${cardBaseClass} shadow-xl p-6 ${bgColor} ${textColor}`
 const btnClass = `btn text-lg  ${buttonColor} ${buttonTextColor}`
 const articleClass = `prose md:prose-base lg:prose-lg ${textColor}`
+const imageContainerClass = "max-w-md"
 ---
 
 {
@@ -44,18 +45,22 @@ props.textPosition === "left" &&
       <a href={props.link} class={btnClass}>Learn more</a>
     </div>
   </div>
-  <figure>
-    <img src={props.image} alt={props.title}/>
-  </figure>
+  <div class={imageContainerClass}>
+    <figure>
+      <img src={props.image} alt={props.title}/>
+    </figure>
+  </div>
 </div>
 }
 
 {
 props.textPosition === "right" &&
 <div class={cardClassTextRight}>
-  <figure>
-    <img src={props.image} alt={props.title}/>
-  </figure>
+  <div class={imageContainerClass}>
+    <figure>
+      <img src={props.image} alt={props.title}/>
+    </figure>
+  </div>
   <div class="card-body">
     <h1 class="card-title text-4xl mb-4">{props.title}</h1>
     <h2 class="card-title text-2xl mb-4">{props.subtitle}</h2>

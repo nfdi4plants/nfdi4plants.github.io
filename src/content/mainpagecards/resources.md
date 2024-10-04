@@ -7,7 +7,7 @@ bgColor: olive
 textColor: black
 buttonColor: darkblue
 buttonTextColor: white
-image: /src/assets/images/resources.svg
+image: /src/assets/images/subpage/resources/resources-hero.svg
 link: /resources
-textPosition: text-only
+textPosition: left
 ---

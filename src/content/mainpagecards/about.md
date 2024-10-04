@@ -7,7 +7,7 @@ bgColor: mint
 textColor: black
 buttonColor: darkblue
 buttonTextColor: white
-image: /src/assets/images/DataPLANT_logo_dark.svg
+image:  /src/assets/images/subpage/about/about-mainpage.svg
 link: /about
 textPosition: right
 ---

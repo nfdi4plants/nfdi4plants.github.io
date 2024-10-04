@@ -7,9 +7,9 @@ bgColor: lightblue-500
 textColor: darkblue
 buttonColor: darkblue
 buttonTextColor: white
-image: /images/community.svg
+image: /src/assets/images/subpage/participation/participation-mainpage.svg
 link: /participation
-textPosition: text-only
+textPosition: right
 
 ---
 

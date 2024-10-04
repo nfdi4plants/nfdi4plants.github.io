@@ -2,7 +2,7 @@
 title: Resources
 tagline: DataPLANT developed!
 subtitle: A collection of useful tools, services and other resources from DataPLANT.
-image: ~/assets/images/DataPLANT_logo_bg_transparent.svg
+image: ~/assets/images/subpage/resources/resources-hero.svg
 # image: ~/assets/images/DataPLANT-n.svg
 styling:
   titleColor: darkblue

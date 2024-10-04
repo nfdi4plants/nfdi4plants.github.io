@@ -41,8 +41,8 @@ if (props.styling?.textPosition) {
     id={hero.id}
     tagline={hero.data.tagline}
     actions={[
-      { variant: 'secondary', target: '_blank', text: 'Get Started', href: 'https://github.com/onwidget/astrowind' },
-      { variant: 'secondary', text: 'Learn more', href: '#features' },
+      // { variant: 'secondary', target: '_blank', text: 'Get Started', href: 'https://github.com/onwidget/astrowind' },
+      // { variant: 'secondary', text: 'Learn more', href: '#features' },
     ]}
     image={hero.data.image}
   >
@@ -53,7 +53,7 @@ if (props.styling?.textPosition) {
       <div class:list={["absolute inset-0", bgColor]}></div>
     </Fragment>
     <Fragment slot="subtitle">
-      <div class:list={["prose", textColor]}>
+      <div class:list={["prose-lg font-medium text-justify", textColor]}>
         <Content />
       </div>
     </Fragment>

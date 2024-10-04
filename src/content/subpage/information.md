@@ -8,7 +8,7 @@ content:
   - information/knowledge-base
   - information/publications
   - information/arc-general
-image: /src/assets/images/lorempicsum.jpg
+image: /src/assets/images/subpage/information/information-hero.svg
 styling:
   titleColor: white
   bgColor: darkblue

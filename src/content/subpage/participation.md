@@ -9,7 +9,7 @@ content:
   - participation/broker-ontology
   - participation/template-repo
   - participation/arc-development
-image: /src/assets/images/lorempicsum.jpg
+image: ~/assets/images/subpage/participation/participation-hero.svg
 styling: 
   titleColor: darkblue
   bgColor: lightblue-400
