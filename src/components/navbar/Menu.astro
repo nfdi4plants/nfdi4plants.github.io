@@ -15,7 +15,7 @@ const currentPathWithoutTrailingBackslash = currentPath.replace(/\/$/, '');
 const menuArray = Array.isArray(menu) ? menu : [menu];
 ---
 
-<ul class:list={[className]} class="lg:min-w-max text-base-content" tabindex="0">
+<ul class:list={[className]} class="lg:min-w-max" tabindex="0">
   {menuArray.map((entry: RecursiveMenu) => (
     <li>
       {entry.children ? (

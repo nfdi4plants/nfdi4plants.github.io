@@ -6,7 +6,7 @@ import {Image} from 'astro:assets'
 import logo from '~/assets/images/DataPLANT_logo_bg_transparent.svg';
 ---
 
-<footer class="footer bg-base-200 text-base-content p-10">
+<footer class="footer bg-base-300 text-base-content p-10">
   <div class="footer md:grid-rows-2 gap-y-8">
     <aside>
       <Image src={logo} alt="logo" height="80"></Image>
@@ -72,7 +72,7 @@ import logo from '~/assets/images/DataPLANT_logo_bg_transparent.svg';
   </div>
   <nav>
     <h6 class="footer-title">Navigation</h6>
-    <ul class="menu md:menu-horizontal menu-xs rounded-box md:min-w-max p-0">
+    <ul class="menu md:menu-horizontal menu-xs md:min-w-max p-0">
       {MainNav.map((navItem) => 
         navItem.children 
           ? <li>
