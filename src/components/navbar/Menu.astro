@@ -1,0 +1,30 @@
+---
+import {type RecursiveMenu} from '~/types';
+
+interface Props {
+  menu: RecursiveMenu | RecursiveMenu[];
+  className?: string | string[];
+  isOpen?: boolean;
+}
+
+const { isOpen = false, menu, className } = Astro.props;
+const currentPath = Astro.url.pathname;
+const currentPathWithoutTrailingBackslash = currentPath.replace(/\/$/, '');
+
+//if menu is not an array then convert it to an array
+const menuArray = Array.isArray(menu) ? menu : [menu];
+---
+
+<ul class:list={[className]} class="lg:min-w-max bg-base-100 text-base-content" tabindex="0">
+  {menuArray.map((entry: RecursiveMenu) => (
+    <li>
+      {entry.children ? (
+        <a href={entry.slug} class:list={[{"underline": (currentPathWithoutTrailingBackslash === entry.slug)}, "decoration-primary"]}>{entry.title}</a>
+        <Astro.self menu={entry.children} isOpen={isOpen} class:list={[className]}/>
+      ) : (
+        <a href={entry.slug} class:list={[{"underline": (currentPathWithoutTrailingBackslash === entry.slug)}, "decoration-primary"]}>{entry.title}</a>
+      )}
+    </li>
+  ))}
+</ul>
+

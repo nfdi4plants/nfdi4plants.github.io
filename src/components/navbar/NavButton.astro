@@ -1,0 +1,28 @@
+---
+
+interface Props {
+  hasChildren?: boolean;
+}
+
+const { hasChildren = false } = Astro.props;
+
+---
+
+<div tabindex="0" role="button" class="h-[3rem] flex items-center px-2 transition-colors duration-300 hover:bg-base-300 hover:text-base-content">
+  <slot></slot>
+  {hasChildren && (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6 text-info pl-1"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  )}
+</div>
