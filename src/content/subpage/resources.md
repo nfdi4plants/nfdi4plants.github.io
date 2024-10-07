@@ -12,7 +12,7 @@ styling:
   textColor: darkblue
   emphasisColor: darkblue
 content: 
-  - resources/arc-data-hub
+  - resources/arc-data-hub-instances
   - resources/toolbox
   - resources/workflow-engine-galaxy
   - resources/for-developers
