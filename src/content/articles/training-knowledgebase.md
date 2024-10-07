@@ -1,6 +1,6 @@
 ---
-title: DataPLANT Task Areas
-summary: Overview of the DataPLANT Task Areas
+title: Our teaching and training offers
+summary: ""
 ---
 
 DataPLANT’s teaching and training services ensure smooth adoption and effective use of its tools in the research community. 

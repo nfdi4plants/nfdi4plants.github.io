@@ -3,6 +3,8 @@ title: Our Community & Partners
 summary: Find out more about our community and partners.
 ---
 
+![DataPLANT Community & Partners](src/assets/images/articles/community-and-partners.png)
+
 ## Co-applicants
 
 - [University of Freiburg (UFR)]()

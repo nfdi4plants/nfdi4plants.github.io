@@ -5,6 +5,7 @@ subtitle: DataPLANT develops research data management concepts and implements th
 image: src/assets/images/subpage/service/service-hero.svg
 content: 
   - rdm-as-a-service/arc
+  - rdm-as-a-service/arc-data-hub
   - rdm-as-a-service/planning-dataplan
   - rdm-as-a-service/collect-and-structure
   - rdm-as-a-service/harmonizing-templates

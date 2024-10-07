@@ -1,6 +1,6 @@
 ---
 title: ARC Data Hub Instances
-summary:
+summary: ""
 ---
 
 ## ARC Data Hubs managed by DataPLANT

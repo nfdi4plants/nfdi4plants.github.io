@@ -1,6 +1,6 @@
 ---
 title: DataPLANT Governance
-summary: 
+summary: ""
 ---
 The DataPLANT consortium has developed a participatory model where members play a key role in broadening its diversity. 
 In its daily operation, DataPLANT does not differentiate between the initial community and its significantly broadened user base. 
