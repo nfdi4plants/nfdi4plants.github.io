@@ -1,30 +1,31 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 import ItemCollectionLayout from '~/layouts/ItemCollectionLayout.astro';
 
 const newsCollection = await getCollection('events')
 
 async function collectData() {
-  const newData = newsCollection
-    .sort((a, b) => {
-          const dateA = new Date(a.data.start).getTime();
-          const dateB = new Date(b.data.start).getTime();
+  const newData = 
+    newsCollection.sort((a: CollectionEntry<'events'>, b: CollectionEntry<'events'>) => {
+        const dateA = new Date(a.data.start).getTime();
+        const dateB = new Date(b.data.start).getTime();
 
-          return dateB - dateA;  // Sorts in descending order to get the latest first
-        })
-    .map(async (entry) => {
-    const { Content } = await entry.render();
-    return {
-      id: entry.id,
-      slug: entry.slug,
-      publishDate: entry.data.start,
-      title: entry.data.title,
-      permalink: "/events/" + entry.slug,
-      content: Content,
-      excerpt: entry.data.excerpt,
-      image: entry.data.location.image,
-    }
-  })
+        return dateB - dateA;  // Sorts in descending order to get the latest first
+      })
+      .map(async (entry: CollectionEntry<'events'>) => {
+        const { Content } = await entry.render();
+        return {
+          id: entry.id,
+          slug: entry.slug,
+          publishDate: entry.data.start,
+          title: entry.data.title,
+          permalink: "/events/" + entry.slug,
+          content: Content,
+          excerpt: entry.data.excerpt,
+          image: entry.data.location.image,
+        }
+      })
   return await Promise.all(newData)
 } 
 
