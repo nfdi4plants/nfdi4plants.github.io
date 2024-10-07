@@ -30,7 +30,11 @@ const cardClass = `card shadow-xl p-6 rounded-box grid place-items-center mb-2 $
       <details class="collapse collapse-arrow">
         <summary class="collapse-title text-md font-medium after:left-[1.4rem] pl-12 pr-4">Abstract</summary>
         <div class="flex flex-wrap collapse-content">
-          <article class="prose text-justify">{props.abstract}</article>
+          <article class="text-justify columns-2">
+            <div class="prose">
+              {props.abstract}
+            </div>
+          </article>
         </div>
       </details>
     }
