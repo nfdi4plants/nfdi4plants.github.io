@@ -3,7 +3,7 @@ title: The Annotated Research Context
 summary: The ARC is DataPLANT's FAIR Digital Object of choice.
 ---
 
-> If you want to dive deep into the ARC take a look at the [arc-rdm.org](https://arc-rdm.org)! 💡
+> If you want to dive deep into the ARC take a look at [arc-rdm.org](https://arc-rdm.org)! 💡
 
 The concept of Fair Digital Objects (FDOs) is becoming central to data publication.
 Classical publications are beginning to reference FDOs as standalone data publications, enabling data to be shared independently of traditional articles.
