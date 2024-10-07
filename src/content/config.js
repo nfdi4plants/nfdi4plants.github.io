@@ -50,7 +50,7 @@ const subpageHeroCollection = defineCollection({
 
 // This is level 2 content and is rendered using custom components
 const subpageContentCollection = defineCollection({
-  type: 'data',
+  type: 'content',
   schema: () => z.object({
     title: z.string(),
     icon: z.string(),
