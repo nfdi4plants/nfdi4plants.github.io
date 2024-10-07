@@ -1,13 +1,13 @@
 Here you can find some additional content which might help you to contribute to this project.
 
-## Structure
+# Structure
 
-### Content
+## Content
 
 > [!TIP]
 > All frontmatter of content files can be further defined in `src/content/config.js`!
 
-#### `src/content/mainpagecards`
+### `src/content/mainpagecards`
 
 > [!NOTE]
 > This content generates what we call "LEVEL 1" content.
@@ -17,7 +17,7 @@ Sadly this does not follow standard astro content collection structure. Please c
 > [!IMPORTANT]
 > Feel free to contribute by adjusting this structure to follow the standard astro collection structure. With a defined schema in `src/content/config.js` combined with `getCollection()` for content access.
 
-#### `src/content/subpage` and `src/content/subpageContent`
+### `src/content/subpage` and `src/content/subpageContent`
 
 > [!NOTE]  
 > This content generates what we call "LEVEL 2" content.
@@ -32,41 +32,41 @@ content:
   - information/events
 ```
 
-#### `src/content/articles`
+### `src/content/articles`
 
 > [!NOTE]  
 > This content generates what we call "LEVEL 3" content.
 
 All files found here will be used to generate a file structure like `/articles/:slug`. The slug is automatically generated from the filename. The file responsible for generating the respective layout is `/src/pages/articles/[slug].astro`.
 
-#### `src/content/events`
+### `src/content/events`
 
 All files found here will be used to generate a file structure like `/events/:slug`. The slug is automatically generated from the filename. The file responsible for generating the respective layout is `/src/pages/events/[...slug].astro`.
 
 All content events are display in `/src/pages/events/index.astro`.
 
-#### `src/content/news`
+### `src/content/news`
 
 All files found here will be used to generate a file structure like `/news/:slug`. The slug is automatically generated from the filename. The file responsible for generating the respective layout is `/src/pages/news/[...slug].astro`.
 
 All content news are display in `/src/pages/news/index.astro`.
 
-#### `src/content/publications`
+### `src/content/publications`
 
 Publications do not follow standard astro collection structure. Instead a bibtex parser is used to read these files. The file responsible for generating the respective layout is `/src/pages/publications.astro`.
 
 
-### Pages
+## Pages
 
 Astro creates one url from any file placed in `src/pages`. The file structure is automatically converted to a url. For example, `src/pages/test.astro` will be available at `localhost:3000/test`. This can be used to create and design special pages not covered by the content collection structures.
 
-## Components
+# Components
 
-### Tailwind + Daisy UI
+## Tailwind + Daisy UI
 
 We added support for [Tailwind](https://tailwindcss.com) together with the more opinionated [daisyUI](https://daisyui.com).
 
-### Astro
+## Astro
 
 This site uses [Astro](https://astro.build) as static site generator. It is highly adaptable and can be used with any frontend framework. Currently we added support for `.astro`, `.md`, `.mdx` files. But astro can work with any frontend framework like React, Vue, Svelte, Preact etc.
 
