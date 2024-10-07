@@ -1,7 +1,7 @@
 ---
 title: About DataPLANT
 tagline: Towards democratization of plant research.
-subtitle: 'Find out more about DataPLANT’s mission, our community and partner, our governance, task areas and research concept.'
+subtitle: 'Towards democratization of plant research.'
 image: /src/assets/images/subpage/about/about-hero.svg
 styling:
   titleColor: darkblue
@@ -20,5 +20,8 @@ content:
   - about/nfdi
 ---
 
-DataPLANT is committed to developing a **Research Data Management (RDM) system** that meets community requirements and facilitates the processing and contextualization of research datasets in accordance with the FAIR principles (Findable, Accessible, Interoperable, Reusable).
-To achieve this, we introduce the Annotated Research Context (ARC), which supports the entire research cycle—from experiments to computational analyses, encompassing both actual data and metadata, as well as the resulting publications.
+DataPLANT is a consortium from the heart of the German plant research community. We aim to establish **sustainable Research Data management (RDM)** by providing digital (e.g., in the form of software or teaching material) and personal (e.g., via on-site consultation or workshops) assistance.
+
+DataPLANT is committed to developing a RDM system that meets community requirements and facilitates the processing and contextualization of research datasets in accordance with the FAIR principles (Findable, Accessible, Interoperable, Reusable).
+
+Find more about us below 👇
