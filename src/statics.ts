@@ -2,7 +2,23 @@
 const BASE_PATH = "/"
 
 export enum URLS {
-  INTERNAL_HOME = BASE_PATH
+  INTERNAL_HOME = BASE_PATH,
+  ARC_WEBSITE = "https://arc-rdm.org",
+  KNOWLEDGEBASE = "https://nfdi4plants.org/nfdi4plants.knowledgebase/",
+  GITLAB = "https://git.nfdi4plants.org/",
+  GITLAB_BIODATEN = "https://gitlab.nfdi4plants.de/",
+  GITLAB_PLANT_MICROBE = "https://gitlab.plantmicrobe.de/explore",
+  HELPDESK = "https://helpdesk.nfdi4plants.org/",
+  ACCOUNT_MANAGEMENT = "https://auth.nfdi4plants.org/realms/dataplant/account",
+  DATAPLAN = "https://dmpg.nfdi4plants.org",
+  ARCHIVE = "https://archive.nfdi4plants.org/communities/dataplant",
+  ARCSEARCH = "https://arcregistry.nfdi4plants.org/isasearch",
+
+  SOCIAL_TWITTER = "https://twitter.com/nfdi4plants",
+  SOCIAL_GITHUB = "https://github.com/nfdi4plants",
+  SOCIAL_YOUTUBE = "https://www.youtube.com/channel/UCrTBwQWOa0-aWYkwoY104Wg",
+  SOCIAL_ZENODO = "https://zenodo.org/communities/nfdi4plants?page=1&amp;size=20",
+  NFDI = "https://www.nfdi.de"
 }
 
 // tailwind wont generate these classes if they are not explicitly named somewhere, and i cannot be bothered to adapt every component right now so we do it like this sue me

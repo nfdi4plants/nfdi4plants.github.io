@@ -3,9 +3,7 @@ import {BibtexParser, type Entry} from "bibtex-js-parser";
 import fs from 'node:fs';
 import Layout from '../layouts/Layout.astro';
 import Publication from '~/components/Publication.astro';
-import Hero2 from '~/components/widgets/Hero2.astro';
 import { bgColorMap, textColorMap, groupBy} from "../statics"
-import { type MarkdownInstance } from "astro";
 import { glob } from 'glob'
 
 const bibtex_files = await glob("src/content/publications/*.bib");
