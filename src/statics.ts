@@ -17,8 +17,8 @@ export enum URLS {
   SOCIAL_TWITTER = "https://twitter.com/nfdi4plants",
   SOCIAL_GITHUB = "https://github.com/nfdi4plants",
   SOCIAL_YOUTUBE = "https://www.youtube.com/channel/UCrTBwQWOa0-aWYkwoY104Wg",
-  SOCIAL_ZENODO = "https://zenodo.org/communities/nfdi4plants?page=1&amp;size=20"
-
+  SOCIAL_ZENODO = "https://zenodo.org/communities/nfdi4plants?page=1&amp;size=20",
+  NFDI = "https://www.nfdi.de"
 }
 
 // tailwind wont generate these classes if they are not explicitly named somewhere, and i cannot be bothered to adapt every component right now so we do it like this sue me

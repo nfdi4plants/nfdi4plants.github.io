@@ -6,7 +6,7 @@ import { Image } from 'astro:assets';
 import logo from '~/assets/images/DataPLANT_logo_minimal_square_bg_transparent.svg';
 import { URLS } from "~/statics";
 
-const NavCenter: RecursiveMenu[] = [
+export const MainNav: RecursiveMenu[] = [
   { title: 'DataPLANT', slug: '/', children: [
     { title: 'About Us', slug: '/about' },
     { title: 'Participation', slug: '/participation' },
@@ -60,7 +60,7 @@ const NavCenter: RecursiveMenu[] = [
       <ul
         tabindex="0"
         class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow bg-base-100 text-base-content">
-        {NavCenter.map((navItem) => 
+        {MainNav.map((navItem) => 
           navItem.children 
             ? <li>
               <a href={navItem.slug}>{navItem.title}</a>
@@ -75,7 +75,7 @@ const NavCenter: RecursiveMenu[] = [
     </a>
   </div>
   <div class="navbar-center hidden lg:flex gap-1 h-full">
-    {NavCenter.map((navItem) => 
+    {MainNav.map((navItem) => 
       <div class="dropdown dropdown-hover">
         <NavButton hasChildren={navItem.children ? true : false}>
           {navItem.slug
