@@ -1,6 +1,6 @@
 ---
 title: The ARC Data Hub concept
-summary:
+summary: ""
 ---
 
 The **ARC Data Hub concept** applies the software development principles of _Continuous Integration (CI)_ and _Continuous Deployment (CD)_ to the research data management (RDM) framework provided by ARCs, making ARCs first-class citizens in the cloud.

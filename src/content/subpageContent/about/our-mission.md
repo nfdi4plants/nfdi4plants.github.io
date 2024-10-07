@@ -1,7 +1,7 @@
 ---
 title: Our mission
 icon: "tabler:shield-check"
-href: "#"
+href: "/articles/our-mission"
 summary: "DataPLANT is committed to developing a Research Data Management (RDM) system that meets community requirements and facilitates the processing and contextualization of research datasets in accordance with the FAIR principles (Findable, Accessible, Interoperable, Reusable)."
 ---
 

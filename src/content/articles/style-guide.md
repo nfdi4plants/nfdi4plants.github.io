@@ -1,4 +1,4 @@
 ---
-title: 
-summary:
+title: DataPLANT Styleguide
+summary: ""
 ---
