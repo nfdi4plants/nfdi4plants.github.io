@@ -9,7 +9,7 @@ content:
   - participation/broker-ontology
   - participation/template-repo
   - participation/arc-development
-image: ~/assets/images/subpage/participation/participation-hero.svg
+image: /src/assets/images/subpage/participation/participation-mainpage.svg
 styling: 
   titleColor: darkblue
   bgColor: lightblue-400

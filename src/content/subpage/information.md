@@ -8,7 +8,7 @@ content:
   - information/knowledge-base
   - information/publications
   - information/arc-general
-image: /src/assets/images/subpage/information/information-hero.svg
+image: /src/assets/images/subpage/information/information-mainpage.svg
 styling:
   titleColor: white
   bgColor: darkblue

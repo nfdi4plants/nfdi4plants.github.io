@@ -2,7 +2,7 @@
 title: Research Data Management as a Service
 tagline: RDMaaS!
 subtitle: DataPLANT develops research data management concepts and implements them as services for the plant research community.
-image: src/assets/images/subpage/service/service-hero.svg
+image: /src/assets/images/subpage/service/service-mainpage.svg
 content: 
   - rdm-as-a-service/arc
   - rdm-as-a-service/arc-data-hub

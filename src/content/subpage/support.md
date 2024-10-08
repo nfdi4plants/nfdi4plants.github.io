@@ -1,7 +1,7 @@
 ---
 title: We are here to help
 subtitle: Contact us via our helpdesk, learn more about research data management, browse our manuals and teaching materials or join our trainings.
-image: ~/assets/images/subpage/support/support-hero.svg
+image: /src/assets/images/subpage/support/support-hero.svg
 content: 
   - support/helpdesk
   - support/fundamentals-rdm
