@@ -1,0 +1,254 @@
+---
+import * as fs from "fs";
+import * as path from "path";
+import {JSDOM} from "jsdom";
+import * as d3 from "d3";
+import { parse } from 'csv-parse/sync';
+import * as topojson from "topojson-client";
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+type Person = {
+    Name: string;
+    Title: string;
+    Zusatz: string;
+    Link: string;
+    Affiliation: string;
+    Institution_Name: string;
+    Institution_Link: string;
+    City: string;
+    Role: string;
+    Project: string
+};
+
+type Place = {
+    Name: string;
+    Latitude: number;
+    Longitude: number;
+};
+
+type Project = {
+    Name: string;
+    Institution_Name: string;
+};
+
+const participants_path = path.resolve(__dirname, "../assets/data/participants.csv")
+const participants_headers = ["Title", "Zusatz", "Link", "Name", "Affiliation", "Institution_Link", "Institution_Name", "City", "Role", "Project"]
+const participants_file_content  = fs.readFileSync(participants_path, { encoding: 'utf8', flag: 'r' });
+
+const participants: Person[] = 
+    parse(participants_file_content, {
+        delimiter: ',',
+        columns: participants_headers,
+    })
+
+const places_path = path.resolve(__dirname, "../assets/data/places.csv");
+const places_headers = ["Name", "Latitude", "Longitude", ]
+const places_file_content  = fs.readFileSync(places_path, { encoding: 'utf8', flag: 'r' });
+
+const places: Place[] = 
+    parse(places_file_content, {
+        delimiter: ',',
+        columns: places_headers,
+        skip_empty_lines: true
+    })
+
+// const projects_path = path.resolve(__dirname, "../assets/data/projects.csv");
+// const projects_headers = []
+// const projects_file_content  = fs.readFileSync(places_path, { encoding: 'utf8', flag: 'r' });
+const projects: Project[] = [] // data not pushed yet
+
+places.shift(); // remove header row, idk why the parser includes it 
+participants.shift(); // remove header row, idk why the parser includes it
+
+console.log(places)
+
+const germany_path = path.resolve(__dirname, "../assets/data/germany.json")
+const germany = JSON.parse(fs.readFileSync(germany_path, { encoding: 'utf8', flag: 'r' }))
+const germany_features = topojson.feature(germany, germany.objects.states)
+  
+// Utility: format a person's name with their role
+const formatName = function(p: Person) {
+    return p.Name + (p.Role ? ` (${p.Role})` : '');
+};
+
+// Utility: make an HTML list with a heading (for People and Projects)
+const makeList = function(heading: string, entries: string []) {
+    if (entries.length === 0) return ''; // Do not show if no entries
+    return `<h4>${heading}</h4>` +
+            '<ul>' +
+            entries.map(e => `<li>${e}</li>`).join('') +
+            '</ul>';
+};
+
+// Combine data for each institution (people + projects)
+function combineInstitutionData(institution: string, people: Person[], projects: Project []) {
+
+    let peopleList = people.map(formatName);
+    let projectList = projects.map(p => p.Name);
+
+    // Show the institution name as a header (h4), and then lists of people and projects
+    const combinedEntries = [
+        `<h2>${institution}</h2>`,  // Display institution name as a header
+        makeList('People', peopleList),
+        makeList('Projects', projectList)  // Only show Projects if they exist
+    ];
+    return combinedEntries.join('');
+}
+
+// Function to determine the class attributes for a given place based on people
+function placeClass(entries: Person []) {
+    const allRoles = String(entries.map(d => d.Role).join('')).toLowerCase();
+    return allRoles.includes('spokesperson') ? 'applicant' : 'normal';
+}
+
+const { document } = new JSDOM().window
+
+const projection = d3.geoConicConformal().center([20.22, 49.3]).scale(2750);
+const placeIndex = d3.index(places, p => p.Name);
+
+type TippyData = {
+    name: string;
+    info: string;
+    longitude: number;
+    latitude: number;
+    type: string;
+}
+
+const geo_places : TippyData [] = 
+    d3.groups(
+        participants, 
+        p => p.City, 
+    ).map(([place, people]) => {
+      // Group projects by institution as well
+      const projectsByInstitution = d3.group(projects, p => p.Name);
+      // Group people by institution
+      const peopleByInstitution = d3.group(people, p => p.Institution_Name);
+
+      return {
+        name: place,
+        info: [...peopleByInstitution.entries()].map(([inst, people]) => {
+          const projects = projectsByInstitution.get(inst) || []; // Get projects for this institution, or empty array if none
+          return combineInstitutionData(inst, people, projects); // Combine people and projects per institution
+        }).join(''),
+        longitude: placeIndex.get(place)!.Longitude,
+        latitude: placeIndex.get(place)!.Latitude,
+        type: placeClass(people)  // determine class based on people roles
+      };
+    });
+
+console.log(geo_places)
+
+const geo_path = d3.geoPath().projection(projection);
+
+// begin map drawing
+const svg = 
+    d3
+    .select(document.body)
+    .append("svg")
+    .attr("viewBox", [0, 0, 300, 400])
+
+svg
+.append("g")
+.selectAll("path")
+//@ts-ignore
+.data(germany_features.features)
+.join("path")
+//@ts-ignore
+.attr("d", geo_path)
+.classed("map", true);
+
+const placesnodes = 
+    svg
+    .append("g")
+    .selectAll("circle")
+    .data(geo_places)
+    .join("circle")
+    .classed("place", true)
+    .attr("r", 5)
+    .attr("transform", function(d) {
+        return "translate(" + projection([
+            d.longitude as number,
+            d.latitude as number 
+        ]) + ")"
+    })
+    .attr('data-tippy-content', d => d.info)
+    .attr('data-place-type', d => d.type);
+---
+
+<style is:global>
+    /* Inline styles for map, might refactor */
+    #dataplant-map a:link {
+        color: #C2E5CD;
+    }
+    #dataplant-map a:hover {
+        color: #1FC2A7;
+    }
+    #dataplant-map a:visited {
+        color: #1FC2A7;
+    }
+    
+    #dataplant-map {
+        margin: 0 auto;
+        overflow: visible;
+        max-width: 500px;
+    }
+
+    #dataplant-map > svg .map {
+        fill: #C2E5CD;
+        stroke: #FFFFFF;
+        stroke-width: 1px;
+        vector-effect: non-scaling-stroke;
+    }
+
+    #dataplant-map > svg .place {
+        fill: #137464;
+    }
+
+    #dataplant-map > svg .place[data-place-type=applicant] {
+        fill: #1FC2A7;
+    }
+    .tippy-box[data-theme~="custom"] {
+        background-color: #137464;
+        color: white;
+        border: 1px solid #FFFFFF;
+        border-radius: 15;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }    
+</style>
+
+<!-- Start Map section 
+    svg is rendered on build, and injected as inner html into this div.
+    No client-side rendering needed.
+-->
+<div id="dataplant-map" set:html={document.body.innerHTML}></div>
+<!-- End Map section -->
+
+<!-- Start Tooltip section
+Inline scripts needed to render client-side tooltips -->
+<script is:inline src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script is:inline src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+<script is:inline>
+tippy('.place', {
+    appendTo: (reference) => document.querySelector('#dataplant-map'),
+    interactive: true,
+    maxWidth: 'none',
+    allowHTML: true,
+    theme: 'custom',
+    delay: [100, 100]
+});
+</script>
+<!-- End Tooltip section -->
+
+{ participants.map((person) => (
+<div class="prose mb-8">
+    <h2 class="text-2xl font-bold">{person.Name}</h2>
+    <p class="text-lg">{person.Affiliation}</p>
+    <p class="text-lg">{person.City}</p>
+    <p class="text-lg">{person.Role}</p>
+</div>
+)) }
+
