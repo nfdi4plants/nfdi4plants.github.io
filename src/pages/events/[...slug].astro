@@ -38,12 +38,12 @@ const formatterDate = new Intl.DateTimeFormat('en-US', { day: '2-digit', month: 
 const formatterTime = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute: '2-digit' });
 ---
 
-<Layout title={"News - " + file.data.title}>
+<Layout title={"Event - " + file.data.title}>
   <ContentComponent 
     id={file.slug}
     image={file.data.location.image}
     title={file.data.title}
-    tagline={file.data.category}
+    tagline={file.data.category + " – " + file.data.mode}
     columns={inPageNavigation.length}
     items={inPageNavigation}
     >
@@ -53,6 +53,9 @@ const formatterTime = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute
         <h3>Location</h3>
         <div set:html={file.data.location.description}></div>
         {file.data.location.organizer && <p set:html={file.data.location.organizer}></p>}
+        <h3>Registration</h3>
+        <p>Please register <a href={file.data.registration?.url}>here</a> before {formatterDate.format(file.data.registration?.deadline)}.</p>
+        <p>Maximum number of participants: {file.data.registration?.seats}.</p>
         <ul class="!pl-0">
           <li class="flex items-center gap-1">
             <Icon name="tabler:calendar-time" class="w-4 h-4" />

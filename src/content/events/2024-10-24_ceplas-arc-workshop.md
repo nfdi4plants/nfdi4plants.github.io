@@ -5,7 +5,7 @@ category: Training
 excerpt: 'This workshop demonstrates the ARC concept and introduces the DataPLANT tools and services <b>ARCitect</b>,    <b>SWATE</b> and <b>DataHUB</b>. In hands-on sessions you learn how to build a first ARC for your own research project and annotate the data in your ARC.'
 start: 2024-10-24T09:00:00
 end: 2024-10-24T12:00:00
-mode: on-site
+mode: On-site
 location:
   description: HHU, room tbd
   organizer:
