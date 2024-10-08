@@ -9,5 +9,5 @@ buttonColor: darkblue
 buttonTextColor: white
 image: /src/assets/images/subpage/service/service-mainpage.svg
 link: /rdm-as-a-service
-textPosition: right
+textPosition: left
 ---

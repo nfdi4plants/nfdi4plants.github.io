@@ -9,7 +9,7 @@ buttonColor: white
 buttonTextColor: darkblue
 image: /src/assets/images/subpage/information/information-mainpage.svg
 link: /information
-textPosition: left
+textPosition: right
 ---
 
 Latest news, event participation, publications, Knowledge Base – here you’ll find information about DataPLANT’s latest endeavours.

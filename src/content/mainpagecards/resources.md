@@ -9,5 +9,5 @@ buttonColor: darkblue
 buttonTextColor: white
 image: /src/assets/images/subpage/resources/resources-hero.svg
 link: /resources
-textPosition: left
+textPosition: right
 ---

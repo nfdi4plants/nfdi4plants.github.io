@@ -9,7 +9,7 @@ buttonColor: darkblue
 buttonTextColor: white
 image: /src/assets/images/subpage/support/support-hero.svg
 link: /support
-textPosition: left
+textPosition: right
 ---
 
 Contact us via our helpdesk, learn more about research data management, browse our manuals and teaching materials or join our training.

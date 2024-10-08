@@ -9,7 +9,7 @@ buttonColor: darkblue
 buttonTextColor: white
 image:  /src/assets/images/subpage/about/about-mainpage.svg
 link: /about
-textPosition: right
+textPosition: left
 ---
 
 Find out more about DataPLANT’s mission, our community and partners, governance, task areas and Research Data Management concepts.
