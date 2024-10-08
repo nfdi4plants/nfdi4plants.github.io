@@ -9,7 +9,7 @@ buttonColor: darkblue
 buttonTextColor: white
 image: /src/assets/images/subpage/participation/participation-mainpage.svg
 link: /participation
-textPosition: right
+textPosition: left
 
 ---
 
