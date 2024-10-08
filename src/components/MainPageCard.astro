@@ -23,7 +23,7 @@ let textColor = textColorMap.get(props.textColor)
 let buttonColor = bgColorMap.get(props.buttonColor)
 let buttonTextColor = textColorMap.get(props.buttonTextColor)
 
-const cardBaseClass = props.glass ? "card glass" : "card"
+const cardBaseClass = props.glass ? "card glass lg:!items-center" : "card lg:!items-center"
 
 const cardClassTextRight = `${cardBaseClass} lg:card-side shadow-xl p-6 ${bgColor} ${textColor}`
 const cardClassTextLeft = `${cardBaseClass} lg:card-side shadow-xl p-6 ${bgColor} ${textColor}`

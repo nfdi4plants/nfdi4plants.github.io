@@ -51,8 +51,8 @@ const files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('../con
         Democratization of plant research made easy and free for everyone!
       </Fragment>
     </CallToAction>
-    <div class="mx-auto w-full max-w-6xl pb-10 lg:py-12 lg:px-8">
-      <div class="space-y-24 sm:px-6 lg:col-span-12 lg:px-0">
+    <div class="mx-auto w-full max-w-6xl pb-10 md:px-2 lg:py-12 lg:px-8">
+      <div class="grid lg:grid-rows-5 grid-cols-1 gap-5 lg:gap-24">
           {
             files
             .sort((a,b) => a.frontmatter.index - b.frontmatter.index)
