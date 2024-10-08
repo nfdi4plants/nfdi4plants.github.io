@@ -19,6 +19,4 @@ content:
   - resources/style-guide
 ---
 
-⚠️ Placeholder content.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.
+DataPLANT develops advanced research data management (RDM) concepts tailored specifically to the needs of the plant research community, offering a comprehensive framework that supports the entire data lifecycle. Central to this model are Data Stewards, who provide expert guidance and training, and Embedded Data Stewards, who integrate within individual research consortia to offer localized support. These stewards play a key role in helping researchers adopt FAIR (Findable, Accessible, Interoperable, Reusable) data practices by providing tools, services, and hands-on assistance. DataPLANT’s resources, such as the ARC structure and PLANTdataHUB, enable plant scientists to efficiently manage, annotate, and share their data, ensuring it is organized, curated, and accessible for future research and collaboration.

@@ -11,3 +11,5 @@ image: /src/assets/images/subpage/resources/resources-hero.svg
 link: /resources
 textPosition: right
 ---
+
+DataPLANT develops research data management concepts and provides them as resources for the plant research community.

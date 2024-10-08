@@ -12,4 +12,4 @@ link: /about
 textPosition: left
 ---
 
-Find out more about DataPLANT’s mission, our community and partners, governance, task areas and Research Data Management concepts.
+DataPLANT’s mission is to lead the digital transformation in plant science by advancing from traditional publications to innovative data-driven formats like Annotated Research Contexts (ARC).

@@ -11,3 +11,6 @@ image: /src/assets/images/subpage/service/service-mainpage.svg
 link: /rdm-as-a-service
 textPosition: left
 ---
+
+
+DataPLANT builds user-friendly services that simplify data annotation and metadata management for plant scientists. By leveraging existing IT infrastructure, it aims to make the process as seamless and efficient as possible.
