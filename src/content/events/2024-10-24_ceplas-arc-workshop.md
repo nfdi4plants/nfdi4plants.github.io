@@ -6,19 +6,23 @@ excerpt: 'This workshop demonstrates the ARC concept and introduces the DataPLAN
 start: 2024-10-24T09:00:00
 end: 2024-10-24T12:00:00
 mode: On-site
+tutors:
+  - Dominik Brilhaus (CEPLAS)
+  - Sabrina Zander (MibiNet)
+organizer:
+  name: Dominik Brilhaus
+  affiliation: CEPLAS Data
+  url: https://www.ceplas.eu/en/research/data-science-and-data-management
 location:
-  description: HHU, room tbd
-  organizer:
-    <ul>
-        <li><a target="_blank", href="https://www.ceplas.eu/en/research/data-science-and-data-management">Dominik Brilhaus, CEPLAS Data</a></li>
-        <li><a target="_blank", href="https://www.sfb1535.hhu.de/projects/research-area-z/z03">Sabrina Zander, MibiNet</a></li>        
-    </ul>
+  address: HHU, room tbd
+  directionURL: https://www.ceplas.eu/en/contact/how-to-get-there
   image: ~/assets/images/events/ceplas-ARCs.drawio.png
 registration:
+    description: 'First-come-first-serve. Members of CEPLAS have priority. Everyone else is welcome, if seats are available.' 
     url: 'https://terminplaner6.dfn.de/de/b/87c954f819c87b27797bc747db30003b-603458'
     deadline: 2024-10-17
     seats: 12
-targetAudience: 'Users'
+audience: [Users, DataStewards]
 ---
 
 ## Goals
@@ -38,7 +42,9 @@ Please prepare the following **before the workshop**.
   - Please add your `Project/consortium` (e.g. CEPLAS, SFB, TRR) and choose the role `Guest` or `User`
 - Install <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html" target="_blank">ARCitect</a>
 
-:bulb: Not all installations are perfectly straight-forward. We will be available **half an hour before the workshop starts** to help you get your machine up and running.
+## Tech-check
+
+Not all installations are perfectly straight-forward. We will be available **half an hour before the workshop starts** to help you get your machine up and running.
 
 ## Continuous support  
 

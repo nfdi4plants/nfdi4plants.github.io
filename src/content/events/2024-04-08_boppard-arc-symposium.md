@@ -6,8 +6,8 @@ excerpt: 'The Hands-On Symposium on ARC Communication and Interoperability bring
 start: 2024-04-08T12:00:00
 end: 2024-04-10T12:16:00
 location: 
-  description: Bellevue Rheinhotel Boppard
-  url: https://www.bellevue-boppard.de/
+  address: Bellevue Rheinhotel Boppard
+  directionURL: https://www.bellevue-boppard.de/
   image: ~/assets/images/events/01-a-bellevue-rheinhotel-frontansicht-2015.webp
 ---
 

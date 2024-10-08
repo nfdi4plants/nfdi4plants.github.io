@@ -34,7 +34,8 @@ if (headings) {
   })  
 } 
 
-const formatterDate = new Intl.DateTimeFormat('en-US', { day: '2-digit', month: '2-digit', year: 'numeric' });
+const formatterDate = new Intl.DateTimeFormat('en-US', { year: "numeric", month: "long", day: "numeric"});
+// const formatterDate = new Intl.DateTimeFormat('en-US', { day: '2-digit', month: '2-digit', year: 'numeric' });
 const formatterTime = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute: '2-digit' });
 ---
 
@@ -50,25 +51,34 @@ const formatterTime = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute
     <Fragment slot="content">
       <div class="prose lg:prose-lg xl:prose-xl">
         <div set:html={file.data.excerpt}></div>
-        <h3>Location</h3>
-        <div set:html={file.data.location.description}></div>
-        {file.data.location.organizer && <p set:html={file.data.location.organizer}></p>}
-        {file.data.registration &&
-          <h3>Registration</h3>
-          <p>Please register <a href={file.data.registration?.url}>here</a> before {formatterDate.format(file.data.registration?.deadline)}.</p>
-          <p>Maximum number of participants: {file.data.registration?.seats}.</p>
-        }
-        <ul class="!pl-0">
+        <h4>Organizer</h4>
+        <!-- {file.data.organizer && <p set:html={file.data.organizer.name + ", " +file.data.organizer.affiliation}></p>} -->
+        {file.data.organizer && <a href={file.data.organizer.url}>{file.data.organizer.name + ", " +file.data.organizer.affiliation}</a>}
+        {file.data.tutors && <h4>Tutors</h4>
+        <p> {file.data.tutors.join(', ')}</p>
+      } 
+        <h4>Location</h4>
+        <div set:html={file.data.location.address}></div>   
+        {file.data.location.directionURL && <a href={file.data.location.directionURL}>Directions</a>}
+        {file.data.audience && <h4>Audience</h4>
+          <p> This event is made for {file.data.audience.join(' and ')}</p>
+        }           
+        {file.data.registration && <h4>Registration</h4>}
+          {file.data.registration?.description && <p>{file.data.registration?.description}</p>}
+          {file.data.registration?.url && <li>Please register <a href={file.data.registration?.url}>here.</a></li>}
+          {file.data.registration?.deadline && <li>Registration closes on {formatterDate.format(file.data.registration?.deadline)} </li>}     
+          {file.data.registration?.seats && <li>Maximum number of participants: {file.data.registration?.seats}.</li>}        <ul class="!pl-0">
+        
           <li class="flex items-center gap-1">
             <Icon name="tabler:calendar-time" class="w-4 h-4" />
             {formatterDate.format(file.data.start) + " " + formatterTime.format(file.data.start)}
             -
             {formatterDate.format(file.data.end) + " " + formatterTime.format(file.data.end)}
           </li>
-          { file.data.location.url &&
+          { file.data.readmoreURL &&
             <li class="flex items-center gap-1">
               <Icon name="tabler:world" class="w-4 h-4" />
-              <a href={file.data.location.url}>Read More</a>
+              <a href={file.data.readmoreURL}>Read More</a>
             </li>
           }
         </ul>
