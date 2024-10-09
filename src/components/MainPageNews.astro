@@ -1,8 +1,7 @@
 ---
 import Features2 from '~/components/widgets/Features2.astro';
 import {type Item} from '~/types';
-import { type MarkdownInstance } from "astro";
-import { getCollection, getEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
 
 const news = await getCollection('news')
 

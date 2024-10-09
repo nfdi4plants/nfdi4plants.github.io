@@ -6,7 +6,7 @@ import Banner from '~/components/Banner.astro';
 import ARCLogoSVG from '~/assets/images/branding/ARCblue.svg'
 import {Image} from 'astro:assets';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import { getCollection, getEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
 
 const mainPageCards = await getCollection('mainpagecards');
 

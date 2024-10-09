@@ -4,7 +4,6 @@ import { fileURLToPath } from 'url';
 import { defineConfig } from 'astro/config';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-import {remarkReplaceLinks} from './src/plugins/remark-replace-links';
 import tailwind from '@astrojs/tailwind';
 import remarkDirective from 'remark-directive';
 
@@ -43,7 +42,7 @@ export default defineConfig({
     },
   },
   markdown: {
-    remarkPlugins: [remarkDirective, remarkReplaceLinks()],
+    remarkPlugins: [remarkDirective],
     rehypePlugins: [
       rehypeSlug,
       [

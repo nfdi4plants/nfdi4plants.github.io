@@ -4,7 +4,7 @@ import Layout from './Layout.astro';
 const { 
   frontmatter, 
   headings,
-  hasContentBefore = await Astro.slots.has('before-content'), 
+  hasContentBefore = Astro.slots.has('before-content'), 
 } = Astro.props;
 
 export interface Heading {

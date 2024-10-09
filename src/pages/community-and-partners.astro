@@ -1,17 +1,15 @@
 ---
 import * as fs from "fs";
-import * as path from "path";
+//@ts-ignore
 import {JSDOM} from "jsdom";
+//@ts-ignore
 import * as d3 from "d3";
+//@ts-ignore
 import { parse } from 'csv-parse/sync';
+//@ts-ignore
 import * as topojson from "topojson-client";
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
 import Layout from "../layouts/Layout.astro";
 import { glob } from 'glob'
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 // ----------------------------------------------------- Domain model -----------------------------------------------------
 // type representing participants.csv
@@ -137,22 +135,22 @@ const germany_features = topojson.feature(germany, germany.objects.states)
 // ----------------------------------------------------- Data processing -----------------------------------------------------
 
 // Group projects by institution as well
-const projectsByInstitution = d3.group(projects, p => p.Institution_Name);
+const projectsByInstitution = d3.group(projects, (p: any) => p.Institution_Name);
 // Group people by institution
-const peopleByInstitution = d3.group(participants, p => p.Institution_Name);
+// const peopleByInstitution = d3.group(participants, (p: any) => p.Institution_Name);
 // place lookup index
-const placeIndex = d3.index(places, p => p.Name);
+const placeIndex = d3.index(places, (p: any) => p.Name);
 
 const localizedGroups : LocalizedGroup [] = 
     d3
-    .groups(participants, p => p.City)
-    .map(([place, people]) => {
+    .groups(participants, (p: any) => p.City)
+    .map(([place, people]: any[]) => {
         return {
             place: place,
             groupedInstitutions: 
                 d3
-                .groups(people, p => p.Institution_Name)
-                .map(([inst, people]) => {
+                .groups(people, (p: any) => p.Institution_Name)
+                .map(([inst, people]: any[]) => {
                     const projects = projectsByInstitution.get(inst) || []; // Get projects for this institution, or empty array if none
                     return [inst, people, projects]
                 }),
@@ -213,14 +211,14 @@ svg
     .join("circle")
     .classed("place", true)
     .attr("r", 5)
-    .attr("transform", function(d) {
+    .attr("transform", function(d: any) {
         return "translate(" + projection([
             d.longitude as number,
             d.latitude as number 
         ]) + ")"
     })
-    .attr('data-tippy-content', d => d.info)
-    .attr('data-place-type', d => d.type)
+    .attr('data-tippy-content', (d: any)=> d.info)
+    .attr('data-place-type', (d: any) => d.type)
 
 // add places as circles and add tippy data
 svg
@@ -229,10 +227,10 @@ svg
     .data(geo_places)
     .join("text")
     .classed("map-text", true)
-    .text(d => d.name)
+    .text((d: any) => d.name)
     .attr('text-anchor', "middle")
     .attr('dy',10)
-    .attr("transform", function(d) {
+    .attr("transform", function(d: any) {
         return "translate(" + projection([
             d.longitude as number,
             d.latitude as number 
@@ -263,7 +261,7 @@ svg
         <script is:inline src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
         <script is:inline>
             tippy('.place', {
-                appendTo: (reference) => document.querySelector('#dataplant-map'),
+                appendTo: (_) => document.querySelector('#dataplant-map'),
                 interactive: true,
                 arrow: false,
                 maxWidth: 'none',
@@ -300,7 +298,7 @@ svg
                                                 <li>
                                                     <p class="text-xl mb-2">Projects</p>
                                                     <ul class="list-inside list-disc pl-6">
-                                                        {projects.map(p => <li>p.Name</li>)}
+                                                        {projects.map(p => <li>{p.Name}</li>)}
                                                     </ul>
                                                 </li>
                                             </ul>

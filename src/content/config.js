@@ -56,8 +56,6 @@ const subpageHeroCollection = defineCollection({
       titleColor: z.string().optional(),
       bgColor: z.string().optional(),
       textColor: z.string().optional(),
-      headerColor: z.string().optional(),
-      emphasisColor: z.string().optional(),
       textPosition: z.enum(["left", "right", "top", "bottom", "text-only"]).optional(),
     }).optional(),
   })

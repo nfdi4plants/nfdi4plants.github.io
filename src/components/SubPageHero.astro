@@ -1,7 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { bgColorMap, textColorMap, textHoverColorMap} from "../statics"
-import {Image} from 'astro:assets';
+import { bgColorMap, textColorMap } from "../statics"
 import Hero2 from './widgets/Hero2.astro';
 
 interface Props {
@@ -12,29 +11,11 @@ const hero = Astro.props.hero;
 const props = hero.data;
 // const sectionLinks = Astro.props.sectionLinks as SectionLink[]
 
-const { Content, headings } = await hero.render();
+const { Content } = await hero.render();
 
 let bgColor = props.styling?.bgColor && bgColorMap.get(props.styling.bgColor)
 let textColor = props.styling?.textColor && textColorMap.get(props.styling.textColor)
 let titleColor = props.styling?.titleColor && textColorMap.get(props.styling.titleColor)
-let headerColor = props.styling?.headerColor && textColorMap.get(props.styling.headerColor)
-let emphasisColor = props.styling?.emphasisColor && textHoverColorMap.get(props.styling.emphasisColor)
-
-let heroContentClass = ""
-if (props.styling?.textPosition) {
-  const tp = props.styling.textPosition
-  if (tp === "left") {
-    heroContentClass = "hero-content flex-col lg:flex-row-reverse"
-  } else if (tp === "right") {
-    heroContentClass = "hero-content flex-col-reverse lg:flex-row"
-  } else if (tp === "top") {
-    heroContentClass = "hero-content flex-col-reverse"
-  } else if (tp === "bottom") {
-    heroContentClass = "hero-content flex-col"
-  } else {
-    heroContentClass = "hero-content flex-col lg:flex-row"
-  }
-}
 ---
 
 <Hero2
