@@ -2,14 +2,15 @@
 title: Participation
 subtitle: DataPLANT is an initiative for the plant community in Germany and beyond.
 index: 5
-glass: true
-bgColor: lightblue-500
-textColor: darkblue
-buttonColor: darkblue
-buttonTextColor: white
 image: /src/assets/images/subpage/participation/participation-mainpage.svg
-link: /participation
-textPosition: left
+styling:
+  glass: true
+  bgColor: lightblue-500
+  textColor: darkblue
+  buttonColor: darkblue
+  buttonTextColor: white
+  textPosition: left
+linkTo: participation
 
 ---
 

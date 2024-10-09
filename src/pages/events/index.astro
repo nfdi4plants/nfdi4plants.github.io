@@ -4,7 +4,6 @@ import Layout from "~/layouts/Layout.astro"
 import { groupByYear } from '../news/index.astro';
 import { Image } from 'astro:assets';
 import EventInfoList from '~/components/events/EventInfoList.astro';
-import { undefined } from 'astro:schema';
 
 const eventCollection = await getCollection('events')
 
@@ -14,7 +13,6 @@ const groupedEvents = groupByYear(eventCollection, (event) => event.data.start);
 const keys = Object.keys(groupedEvents)
   .map(year => parseInt(year)) // Convert keys to numbers
   .sort((a, b) => b - a); // Sort in descending order (b - a)
-
 
 ---
 

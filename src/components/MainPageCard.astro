@@ -1,29 +1,25 @@
 ---
 import { bgColorMap, textColorMap } from "../statics"
+import {Image} from 'astro:assets'
+import type { CollectionEntry } from 'astro:content';
+import { getEntry, getEntries } from 'astro:content';
 
-interface MainPageCardProps {
-  title: string
-  subtitle: string
-  index: number
-  glass: boolean
-  bgColor: string
-  textColor: string
-  buttonColor: string
-  buttonTextColor: string
-  image: string
-  link: string
-  textPosition: "left" | "right" | "top" | "bottom" | "text-only"
+interface Props {
+  card: CollectionEntry<'mainpagecards'>
 }
 
-const props = Astro.props.mainPageCardProps as MainPageCardProps;
-const html: string | null = Astro.props.html
+const { card } = Astro.props
 
-let bgColor = bgColorMap.get(props.bgColor)
-let textColor = textColorMap.get(props.textColor)
-let buttonColor = bgColorMap.get(props.buttonColor)
-let buttonTextColor = textColorMap.get(props.buttonTextColor)
+const relatedLevel2 = await getEntry(card.data.linkTo);
 
-const cardBaseClass = props.glass ? "card glass lg:!items-center" : "card lg:!items-center"
+const { Content } = await card.render()
+
+let bgColor = bgColorMap.get(card.data.styling.bgColor)
+let textColor = textColorMap.get(card.data.styling.textColor)
+let buttonColor = bgColorMap.get(card.data.styling.buttonColor)
+let buttonTextColor = textColorMap.get(card.data.styling.buttonTextColor)
+
+const cardBaseClass = card.data.styling.glass ? "card glass lg:!items-center" : "card lg:!items-center"
 
 const cardClassTextRight = `${cardBaseClass} lg:card-side shadow-xl p-6 ${bgColor} ${textColor}`
 const cardClassTextLeft = `${cardBaseClass} lg:card-side shadow-xl p-6 ${bgColor} ${textColor}`
@@ -35,83 +31,85 @@ const imageContainerClass = "max-w-md"
 ---
 
 {
-props.textPosition === "left" &&
+card.data.styling.textPosition === "left" &&
 <div class={cardClassTextLeft}>
   <div class="card-body">
-    <h1 class="card-title text-4xl mb-4">{props.title}</h1>
-    <h2 class="card-title text-2xl mb-4">{props.subtitle}</h2>
-    {html && <article class={articleClass} set:html={html}></article>}
+    <h1 class="card-title text-4xl mb-4">{card.data.title}</h1>
+    <h2 class="card-title text-2xl mb-4">{card.data.subtitle}</h2>
+    <article class={articleClass}>
+      <Content />
+    </article>
     <div class="card-actions justify-start">
-      <a href={props.link} class={btnClass}>Learn more</a>
+      <a href={relatedLevel2.slug} class={btnClass}>Learn more</a>
     </div>
   </div>
   <div class={imageContainerClass}>
-    <figure>
-      <img src={props.image} alt={props.title}/>
-    </figure>
+    <Image src={card.data.image} alt={card.data.title} />
   </div>
 </div>
 }
 
 {
-props.textPosition === "right" &&
+card.data.styling.textPosition === "right" &&
 <div class={cardClassTextRight}>
   <div class={imageContainerClass}>
-    <figure>
-      <img src={props.image} alt={props.title}/>
-    </figure>
+    <Image src={card.data.image} alt={card.data.title} />
   </div>
   <div class="card-body">
-    <h1 class="card-title text-4xl mb-4">{props.title}</h1>
-    <h2 class="card-title text-2xl mb-4">{props.subtitle}</h2>
-    {html && <article class={articleClass} set:html={html}></article>}
+    <h1 class="card-title text-4xl mb-4">{card.data.title}</h1>
+    <h2 class="card-title text-2xl mb-4">{card.data.subtitle}</h2>
+    <article class={articleClass}>
+      <Content />
+    </article>
     <div class="card-actions justify-end mt-4 mb-4">
-      <a href={props.link} class={btnClass}>Learn more</a>
+      <a href={relatedLevel2.slug} class={btnClass}>Learn more</a>
     </div>
   </div>
 </div>
 }
 {
-props.textPosition === "top" &&
+card.data.styling.textPosition === "top" &&
 <div class={cardClassSequential}>
   <div class="card-body">
-    <h1 class="card-title text-4xl mb-4">{props.title}</h1>
-    <h2 class="card-title text-2xl mb-4">{props.subtitle}</h2>
-    {html && <article class={articleClass} set:html={html}></article>}
-    <figure>
-      <img src={props.image} alt={props.title}/>
-    </figure>
+    <h1 class="card-title text-4xl mb-4">{card.data.title}</h1>
+    <h2 class="card-title text-2xl mb-4">{card.data.subtitle}</h2>
+    <article class={articleClass}>
+      <Content />
+    </article>
+    <Image src={card.data.image} alt={card.data.title} />
     <div class="card-actions justify-end mt-4 mb-4">
-      <a href={props.link} class={btnClass}>Learn more</a>
+      <a href={relatedLevel2.slug} class={btnClass}>Learn more</a>
     </div>
   </div>
 </div>
 }
 {
-  props.textPosition === "bottom" &&
+card.data.styling.textPosition === "bottom" &&
 <div class={cardClassSequential}>
   <div class="card-body">
-    <h1 class="card-title text-4xl mb-4">{props.title}</h1>
-    <h2 class="card-title text-2xl mb-4">{props.subtitle}</h2>
-    <figure>
-      <img src={props.image} alt={props.title}/>
-    </figure>
-    {html && <article class={articleClass} set:html={html}></article>}
+    <h1 class="card-title text-4xl mb-4">{card.data.title}</h1>
+    <h2 class="card-title text-2xl mb-4">{card.data.subtitle}</h2>
+    <Image src={card.data.image} alt={card.data.title} />
+    <article class={articleClass}>
+      <Content />
+    </article>
     <div class="card-actions justify-end mt-4 mb-4">
-      <a href={props.link} class={btnClass}>Learn more</a>
+      <a href={relatedLevel2.slug} class={btnClass}>Learn more</a>
     </div>
   </div>
 </div>
 }
 {
-  props.textPosition === "text-only" &&
+card.data.styling.textPosition === "text-only" &&
 <div class={cardClassTextOnly}>
   <div class="card-body">
-    <h1 class="card-title text-4xl mb-4">{props.title}</h1>
-    <h2 class="card-title text-2xl mb-4">{props.subtitle}</h2>
-    {html && <article class={articleClass} set:html={html}></article>}
+    <h1 class="card-title text-4xl mb-4">{card.data.title}</h1>
+    <h2 class="card-title text-2xl mb-4">{card.data.subtitle}</h2>
+    <article class={articleClass}>
+      <Content />
+    </article>
     <div class="card-actions justify-end mt-4 mb-4">
-      <a href={props.link} class={btnClass}>Learn more</a>
+      <a href={relatedLevel2.slug} class={btnClass}>Learn more</a>
     </div>
   </div>
 </div>

@@ -63,6 +63,25 @@ const subpageHeroCollection = defineCollection({
   })
 });
 
+const mainpageCollection = defineCollection({
+  type: 'content',
+  schema: ({ image }) => z.object({
+    title: z.string(),
+    index: z.number(),
+    subtitle: z.string(),
+    image: image(),
+    styling: z.object({
+      glass: z.boolean(),
+      bgColor: z.string(),
+      textColor: z.string(),
+      buttonColor: z.string(),
+      buttonTextColor: z.string(),
+      textPosition: z.enum(["left", "right", "top", "bottom", "text-only"]),
+    }),
+    linkTo: reference('subpage'),
+  })
+});
+
 // This is level 2 content and is rendered using custom components
 const subpageContentCollection = defineCollection({
   type: 'content',
@@ -92,4 +111,5 @@ export const collections = {
   'subpage': subpageHeroCollection,
   'subpageContent': subpageContentCollection,
   'articles': articleCollection,
+  'mainpagecards': mainpageCollection,
 };

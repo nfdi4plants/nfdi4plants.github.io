@@ -6,10 +6,9 @@ import Banner from '~/components/Banner.astro';
 import ARCLogoSVG from '~/assets/images/branding/ARCblue.svg'
 import {Image} from 'astro:assets';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { getCollection, getEntry } from 'astro:content';
 
-
-import { type MarkdownInstance } from "astro";
-const files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('../content/mainpagecards/*.md');
+const mainPageCards = await getCollection('mainpagecards');
 
 ---
 <Layout title="DataPLANT - Home">
@@ -54,10 +53,10 @@ const files : MarkdownInstance<Record<string,any>> [] = await Astro.glob('../con
     <div class="mx-auto w-full max-w-6xl pb-10 md:px-2 lg:py-12 lg:px-8">
       <div class="grid lg:grid-rows-5 grid-cols-1 gap-5 lg:gap-24">
           {
-            files
-            .sort((a,b) => a.frontmatter.index - b.frontmatter.index)
-            .map((file) => (
-              <MainPageCard mainPageCardProps={file.frontmatter} html={file.compiledContent()}/>
+            mainPageCards
+            .sort((a,b) => a.data.index - b.data.index)
+            .map((card) => (
+              <MainPageCard card={card}/>
             ))
           }
       </div>
