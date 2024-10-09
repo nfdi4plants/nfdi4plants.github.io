@@ -8,7 +8,7 @@ const newsCollection = await getCollection('news')
 
 type ExtractDateFn<T> = (item: T) => Date;
 
-function groupByYear<T>(array: T[], extractDate: ExtractDateFn<T>): Record<number, T[]> {
+export function groupByYear<T>(array: T[], extractDate: ExtractDateFn<T>): Record<number, T[]> {
   // First, group by year
   const grouped = array.reduce((acc: Record<number, T[]>, obj: T) => {
     const year = extractDate(obj).getFullYear(); // Get the year from the extracted date
@@ -39,12 +39,6 @@ const groupedNews = groupByYear(newsCollection, (news) => new Date(news.data.dat
 const keys = Object.keys(groupedNews)
   .map(year => parseInt(year)) // Convert keys to numbers
   .sort((a, b) => b - a); // Sort in descending order (b - a)
-
-groupedNews[2022].forEach((news) => {
-  console.log(news.data.title);
-});
-
-console.log(keys)
 ---
 
 <Layout title="News">

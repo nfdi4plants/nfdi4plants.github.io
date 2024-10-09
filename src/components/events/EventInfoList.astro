@@ -1,0 +1,68 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { Icon } from 'astro-icon/components';
+
+
+const formatterDate = new Intl.DateTimeFormat('en-US', { year: "numeric", month: "long", day: "numeric"});
+// const formatterDate = new Intl.DateTimeFormat('en-US', { day: '2-digit', month: '2-digit', year: 'numeric' });
+const formatterTime = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute: '2-digit' });
+
+interface Props {
+  event: CollectionEntry<'events'>
+}
+
+const {event} = Astro.props
+
+---
+
+<ul class="!pl-0 !mt-0">
+  {/* start and end */}
+  <li class="flex items-center gap-2">
+    <Icon name="tabler:calendar-time" class="text-xl"></Icon>
+    <span>
+      {formatterDate.format(event.data.start) + " " + formatterTime.format(event.data.start)}
+      -
+      {formatterDate.format(event.data.end) + " " + formatterTime.format(event.data.end)}
+    </span>
+  </li>
+  {/* tutors optional */}
+  {event.data.tutors && <li class="flex items-center gap-2">
+    <Icon name="tabler:user" class="text-xl" title="Tutors"></Icon>
+    <span>
+      <b>With </b> {event.data.tutors.join(', ')}
+    </span>
+  </li>}
+  {/* location */}
+  <li class="flex items-center gap-2">
+    <Icon name="tabler:map-pin" class="text-xl" title="Location"></Icon>
+    <span>
+      <span set:html={event.data.location.short}></span> 
+      {event.data.location.url && <sup><a href={event.data.location.url} class="text-blue-500">More</a></sup>}
+    </span>
+  </li>
+  {/* general info: modus, category */}
+  <li class="flex items-center gap-2">
+    <Icon name="tabler:info-square-rounded" class="text-xl" title="Info"></Icon>
+    <span>
+      {event.data.category} - {event.data.mode}
+    </span>
+  </li>
+  {/* audience */}
+  <li class="flex items-center gap-2">
+    <Icon name="tabler:users" class="text-xl" title="Target Audience"></Icon>
+    <span>
+      <b>For </b> {event.data.audience.join(', ')}
+    </span>
+  </li>
+  {/* registration */}
+  {event.data.registration && 
+    <li class="flex items-center gap-2">
+      <Icon name="tabler:clipboard-list" class="text-xl" title="Registration"></Icon>
+      <span>
+        {event.data.registration.url && <a href={event.data.registration.url} class="text-blue-500">Register</a>}
+        {event.data.registration.deadline && <span> until {formatterDate.format(event.data.registration.deadline)}</span>}
+      </span>
+    </li>
+  }
+  <slot></slot>
+</ul>

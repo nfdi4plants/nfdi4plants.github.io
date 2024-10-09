@@ -2,7 +2,7 @@
 date: 2024-10-24
 title: ARCify your research project
 category: Training
-excerpt: 'This workshop demonstrates the ARC concept and introduces the DataPLANT tools and services <b>ARCitect</b>,    <b>SWATE</b> and <b>DataHUB</b>. In hands-on sessions you learn how to build a first ARC for your own research project and annotate the data in your ARC.'
+excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
 start: 2024-10-24T09:00:00
 end: 2024-10-24T12:00:00
 mode: On-site
@@ -15,6 +15,7 @@ organizer:
   affiliation: CEPLAS Data
   url: https://www.ceplas.eu/en/research/data-science-and-data-management
 location:
+  short: HHU
   address: HHU, room tbd
   url: https://www.ceplas.eu/en/contact/how-to-get-there
 registration:

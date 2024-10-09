@@ -12,6 +12,8 @@ import icon from 'astro-icon';
 
 import sitemap from '@astrojs/sitemap';
 
+import react from '@astrojs/react';
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://astro.build/config
@@ -32,7 +34,7 @@ export default defineConfig({
         'database',
       ],
     },
-  }), sitemap()],
+  }), sitemap(), react()],
   vite: {
     resolve: {
       alias: {

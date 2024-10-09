@@ -1,42 +1,56 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import Layout from "~/layouts/Layout.astro"
+import { groupByYear } from '../news/index.astro';
+import { Image } from 'astro:assets';
+import EventInfoList from '~/components/events/EventInfoList.astro';
+import { undefined } from 'astro:schema';
 
-const events = await getCollection('events')
+const eventCollection = await getCollection('events')
 
-// async function collectData() {
-//   const newData = 
-//     newsCollection.sort((a: CollectionEntry<'events'>, b: CollectionEntry<'events'>) => {
-//         const dateA = new Date(a.data.start).getTime();
-//         const dateB = new Date(b.data.start).getTime();
+const groupedEvents = groupByYear(eventCollection, (event) => event.data.start);
 
-//         return dateB - dateA;  // Sorts in descending order to get the latest first
-//       })
-//       .map(async (entry: CollectionEntry<'events'>) => {
-//         const { Content } = await entry.render();
-//         return {
-//           id: entry.id,
-//           slug: entry.slug,
-//           publishDate: entry.data.start,
-//           title: entry.data.title,
-//           permalink: "/events/" + entry.slug,
-//           content: Content,
-//           excerpt: entry.data.excerpt,
-//           image: entry.data.image,
-//         }
-//       })
-//   return await Promise.all(newData)
-// } 
+// Assuming 'groupedByYear' is the result from the 'groupByYear' function
+const keys = Object.keys(groupedEvents)
+  .map(year => parseInt(year)) // Convert keys to numbers
+  .sort((a, b) => b - a); // Sort in descending order (b - a)
 
-// const data = await collectData();
+
 ---
 
 <Layout title="Events">
-  <div class="flex flex-col justify-center py-5 lg:py-10 xl:py-20">
-    {
-      events.map((event) => (
-        <div>{event.slug}</div>
-      ))
-    }
+  <div class="flex items-center justify-center w-full">
+    <div class="flex flex-col gap-4 p-2 lg:p-5 lg:py-10 xl:py-20">
+      {
+        keys.map((year) => {
+          const events = groupedEvents[year];
+          return (
+            <h1 class="text-7xl text-bold self-center mb-2">{year}</h1>
+            <div class="grid grid-cols-1 gap-4 lg:gap-10">
+              {
+                events.map((event) => (
+                  <div class="shadow border p-3 lg:p-5 rounded lg:max-w-5xl xl:max-w-6xl">
+                    <div class="grid lg:grid-rows-1 gap-2 lg:gap-4 lg:grid-cols-2" class:list={{'lg:grid-cols-2': event.data.image}}>
+                      <div class="prose-sm lg:prose">
+                        <h1><a href={"/events/" + event.slug}>{event.data.title}</a></h1>
+                        { event.data.image && <EventInfoList event={event} />}
+                        <p>
+                          { event.data.excerpt }
+                        </p>
+                      </div>
+                      {
+                        event.data.image 
+                          ? <Image src={event.data.image} alt={event.data.title} class="rounded max-h-[400px] w-auto m-auto"></Image>
+                          : <div class="prose"><EventInfoList event={event} /></div>
+                      }
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
+          )
+        })
+      }
+    </div>
   </div>
 </Layout>
