@@ -15,17 +15,32 @@ const eventsCollection = defineCollection({
   type: 'content',
   schema: ({ image }) => z.object({
     title: z.string(),
-    date: z.date(),
-    excerpt: z.string(),
+    date: z.date(), 
+    excerpt: z.string().max(200),
     category: z.enum(['Conference', 'Hackathon', 'Webinar', 'Training']), // There might be more
+    mode: z.enum(['On-site', 'Online', 'Hybrid']), // There might be more
+    audience: z.enum(['Users', 'DataStewards', 'Developers', 'Everyone']).array(), // There might be more
     start: z.date(),
     end: z.date(),
+    tutors: z.string().array().optional(),
+    image: image().optional(),
+    organizer: z.object({
+      name: z.string(),
+      affiliation: z.string(),
+      url: z.string().url()
+    }).partial().optional(),
     location: z.object({
-      description: z.string(),
-      organizer: z.string().optional(),
+      short: z.string().max(50),
+      address: z.string(),
       url: z.string().url().optional(),
-      image: image().optional(),
     }),
+    registration: z.object({
+      description: z.string(),
+      url: z.string().url(),
+      deadline: z.date(),
+      seats: z.number(),
+    }).partial().optional(),
+    external: z.string().url().optional(),
   })
 });
 

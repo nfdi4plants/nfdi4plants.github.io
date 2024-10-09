@@ -2,13 +2,17 @@
 title: Hands-On Symposium on ARC communication and interoperability
 date: 2024-04-08
 category: Conference
-excerpt: 'The Hands-On Symposium on ARC Communication and Interoperability brings experts together to improve ARC data standards and interoperability across NFDIs. It includes discussions and collaborative group work. Registration is via email, with a fee payable on-site.'
+excerpt: 'The symposium at Bellevue-Rheinhotel Boppard (April 8-10, 2024) features ARC ecosystem talks and hands-on work.'
 start: 2024-04-08T12:00:00
 end: 2024-04-10T12:16:00
+image: ~/assets/images/events/01-a-bellevue-rheinhotel-frontansicht-2015.webp
+audience:
+  - Everyone
+mode: On-site
 location: 
-  description: Bellevue Rheinhotel Boppard
+  short: Bellevue Rheinhotel Boppard
+  address: Bellevue Rheinhotel Boppard
   url: https://www.bellevue-boppard.de/
-  image: ~/assets/images/events/01-a-bellevue-rheinhotel-frontansicht-2015.webp
 ---
 
 

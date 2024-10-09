@@ -2,6 +2,7 @@
 date: 2024-02-06
 title: DataPLANT at the DFG mid-term symposium on the NFDI  
 previewText: The recent DFG mid-term symposium in Bonn provided a platform for DataPLANT to showcase its progress and objectives in advancing data management practices within the realm of plant science. With representatives including Cristina Martins Rodrigues as project coordinator, Stefanie Weidtkamp-Peters representing both the plant research community and being head of NFDI4BioImaging, Björn Usadel as the metadata and standardization specialist, Timo Mühlhaus for application development and Data Steward...
+image: /src/assets/images/news/ZBS3.jpeg
 ---
 The recent DFG mid-term symposium in Bonn provided a platform for DataPLANT to showcase its progress and objectives in advancing data management practices within the realm of plant science. With representatives including Cristina Martins Rodrigues as project coordinator, Stefanie Weidtkamp-Peters representing both the plant research community and being head of NFDI4BioImaging, Björn Usadel as the metadata and standardization specialist, Timo Mühlhaus for application development and Data Steward coordinator, and Dirk von Suchodoletz as the speaker, the symposium served as a pivotal moment to share insights and strategies.
 
