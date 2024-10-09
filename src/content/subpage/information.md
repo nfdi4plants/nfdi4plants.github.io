@@ -7,7 +7,6 @@ content:
   - information/events
   - information/knowledge-base
   - information/publications
-  - information/arc-general
 image: /src/assets/images/subpage/information/information-mainpage.svg
 styling:
   titleColor: white
@@ -17,9 +16,6 @@ styling:
   emphasisColor: lightblue-300
   textPosition: text-only
 ---
+We aim to maintain transparency and keep our community well-informed. We believe that clear communication and offering a platform for information exchange and knowledge sharing are key to fostering participation and collaboration.
 
-⚠️ Placeholder content.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.
-
-
+On this page, you'll find links to the latest news, events, publications, discussions, and more.
