@@ -65,6 +65,10 @@ const formatName = function(p: Participant) {
     return p.Name + (p.Role ? ` (${p.Role})` : '');
 };
 
+const createParticipantLink = function(p: Participant) {
+    return `<a href="${p.Link}" class="text-olive-800">${formatName(p)}</a>`;
+};
+
 // Utility: make an HTML list with a heading (for People and Projects)
 const makeList = function(heading: string, entries: string []) {
     if (entries.length === 0) return ''; // Do not show if no entries
@@ -157,37 +161,39 @@ const localizedGroups : LocalizedGroup [] =
         };
     })
 
-console.log(localizedGroups)
-
-const projection = d3.geoConicConformal().center([20.22, 49.3]).scale(2750);
-
-const { document } = new JSDOM().window
-
 const geo_places : TippyData [] = 
     localizedGroups
     .map((lg) => {
-      return {
-        name: lg.place,
-        info: 
-            lg.groupedInstitutions.map(([inst, participants, projects]) => {
-                return combineInstitutionData(inst, participants, projects);
-            })
-            .join(''),
-        longitude: lg.longitude,
-        latitude: lg.latitude,
-        type: lg.type
-      };
+        return {
+            name: lg.place,
+            info: 
+                `<h1 class="title underline text-2xl text-olive-800">${lg.place}</h1>` +
+                lg.groupedInstitutions.map(([inst, participants, projects]) => {
+                    return combineInstitutionData(inst, participants, projects);
+                })
+                .join(''),
+            longitude: lg.longitude,
+            latitude: lg.latitude,
+            type: lg.type
+        };
     });
-
+// ----------------------------------------------------- Map rendering -----------------------------------------------------
+const projection = d3.geoConicConformal().center([20.22, 49.3]).scale(2750);
 const geo_path = d3.geoPath().projection(projection);
 
+// we use a virtual dom to generate the svg and then inject it into the page on ssr. No client-side rendering needed.
+const { document } = new JSDOM().window
+
 // begin map drawing
+
+// base svg element
 const svg = 
     d3
     .select(document.body)
     .append("svg")
     .attr("viewBox", [0, 0, 300, 400])
 
+// add topography features
 svg
 .append("g")
 .selectAll("path")
@@ -198,8 +204,8 @@ svg
 .attr("d", geo_path)
 .classed("map", true);
 
-const placesnodes = 
-    svg
+// add places as circles and add tippy data
+svg
     .append("g")
     .selectAll("circle")
     .data(geo_places)
@@ -213,7 +219,25 @@ const placesnodes =
         ]) + ")"
     })
     .attr('data-tippy-content', d => d.info)
-    .attr('data-place-type', d => d.type);
+    .attr('data-place-type', d => d.type)
+
+// add places as circles and add tippy data
+svg
+    .append("g")
+    .selectAll("text")
+    .data(geo_places)
+    .join("text")
+    .classed("map-text", true)
+    .text(d => d.name)
+    .attr('text-anchor', "middle")
+    .attr('dy',10)
+    .attr("transform", function(d) {
+        return "translate(" + projection([
+            d.longitude as number,
+            d.latitude as number 
+        ]) + ")"
+    })
+
 ---
 
 <Layout title = "DataPLANT - Community and Partners">
@@ -254,23 +278,26 @@ const placesnodes =
             .map((lg) => (
                 <div class ="card glass shadow-xl p-6 m-4">
                     <div class ="card-content">
-                        <h1 class="card-title anchor text-darkblue font-bold text-2xl mb-4 anchor"><a href={"#" + lg.place} class="anchor-link">{lg.place}</a></h1>
+                        <h1 class="card-title anchor text-darkblue underline font-bold text-3xl mb-4 anchor"><a href={"#" + lg.place} class="anchor-link">{lg.place}</a></h1>
                         <ul class="list-inside list-none pl-6">
                             {
                                 lg.groupedInstitutions
                                 .map(([institution, participants, projects]) => (
-                                    <li>{institution}
-                                        <ul class="list-inside list-disc pl-6">
-                                            <li>Participants
+                                    <li>
+                                        <p class="text-2xl mb-2">{institution}</p>
+                                        <ul class="list-inside list-none pl-6">
+                                            <li>
+                                                <p class="text-xl mb-2">Participants</p>
                                                 <ul class="list-inside list-disc pl-6">
-                                                    {participants.map(p => <li>{formatName(p)}</li>)}
+                                                    {participants.map(p => <li set:html={createParticipantLink(p)}></li>)}
                                                 </ul>
                                             </li>
                                         </ul>
                                         {
                                             projects.length > 0 && 
-                                            <ul class="list-inside list-disc pl-6">
-                                                <li>Projects
+                                            <ul class="list-inside list-none pl-6">
+                                                <li>
+                                                    <p class="text-xl mb-2">Projects</p>
                                                     <ul class="list-inside list-disc pl-6">
                                                         {projects.map(p => <li>p.Name</li>)}
                                                     </ul>
@@ -301,9 +328,8 @@ const placesnodes =
         #dataplant-map {
             margin: 0 auto;
             overflow: visible;
-            max-width: 500px;
+            max-width: 600px;
         }
-
         #dataplant-map > svg .map {
             fill: #C2E5CD;
             stroke: #FFFFFF;
@@ -313,10 +339,19 @@ const placesnodes =
 
         #dataplant-map > svg .place {
             fill: #137464;
+            stroke: #FFFFFF;
+            stroke-width: 0.03rem;
+            cursor: help;
         }
 
         #dataplant-map > svg .place[data-place-type=applicant] {
             fill: #1FC2A7;
+        }
+
+        #dataplant-map > svg .map-text {
+            font-size: 0.3rem;
+            fill: #000000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .tippy-box[data-theme~="custom"] {
             margin: 2rem 2rem 1rem 1rem;
