@@ -1,18 +1,25 @@
 ---
 date: 2024-09-17
 title: Open Science Festival
+mode: On-site
 category: Conference
-excerpt: 'The Open Science Festival in Mainz, hosted by the Rhine-Main Universities, invites participants of all levels to engage through talks, workshops, and networking. DataPLANT will be at the NFDI booth, showcasing the role of research data as a common good. Register now to join the event!'
+excerpt: 'Join the Open Science Festival in Mainz for talks, workshops, and networking. DataPLANT will be at the NFDI booth. Register now!'
 start: 2024-09-17
 end: 2024-09-18
+image: ~/assets/images/events/conference-banner_open-science_2.png
+audience:
+  - Everyone
+organizer: 
+  affiliation: Rhine-Main Universities & Johannes Gutenberg University Mainz
 location: 
-  description: Johannes Gutenberg University Mainz<br>
+  short: Johannes Gutenberg University Mainz
+  address: Johannes Gutenberg University Mainz<br>
     Hochschule für Musik<br>
     Jakob-Welder-Weg 28<br>
     55128 Mainz<br>
-  organizer: Rhine-Main Universities & Johannes Gutenberg University Mainz
+registration:
   url: https://converia.uni-mainz.de/frontend/index.php?folder_id=928&page_id=
-  image: ~/assets/images/events/conference-banner_open-science_2.png
+readMoreURL: https://converia.uni-mainz.de/frontend/index.php?folder_id=928&page_id=
 ---
 
 

@@ -1,92 +1,50 @@
 ---
-import Layout from '~/layouts/Layout.astro';
+import MarkdownLayout from '~/layouts/MarkdownLayout.astro';
 import { getCollection, getEntry } from 'astro:content';
-import ContentComponent from '~/components/widgets/Content.astro';
-import { Icon } from 'astro-icon/components';
+import { Image } from 'astro:assets';
 import SocialShare from '~/components/widgets/SocialShare.astro';
+import EventInfoList from '~/components/events/EventInfoList.astro';
+import type { CollectionEntry } from 'astro:content';
 
 export async function getStaticPaths() {
   const eventsCollection = await getCollection('events')
   return eventsCollection.map((entry) => {
     return {
       params: { slug: entry.slug },
-      props: { file: entry }
+      props: { event: entry }
     }
   });
-
 }
 
-const { file } = Astro.props;
+interface Props {
+  event: CollectionEntry<'events'>
+}
 
-const { Content, headings } = await file.render();
+const { event } = Astro.props;
 
-const inPageNavigation: any = []
+const { Content, headings } = await event.render();
 
-if (headings) {
-  headings.forEach(heading => {
-    inPageNavigation.push({
-      icon: "tabler:chevron-right",
-      callToAction: {
-        text: heading.text,
-        href: "#" + heading.slug,
-      }
-    })
-  })  
-} 
+const frontmatter= {
+  ...event.data
+}
 
-const formatterDate = new Intl.DateTimeFormat('en-US', { day: '2-digit', month: '2-digit', year: 'numeric' });
-const formatterTime = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute: '2-digit' });
+const lowestDepth = Math.min(...headings.map(h => h.depth));
+
+headings.unshift({depth: lowestDepth, text: "#" + event.data.title, slug: event.slug});
+
 ---
 
-<Layout title={"News - " + file.data.title}>
-  <ContentComponent 
-    id={file.slug}
-    image={file.data.location.image}
-    title={file.data.title}
-    tagline={file.data.category}
-    columns={inPageNavigation.length}
-    items={inPageNavigation}
-    >
-    <Fragment slot="content">
-      <div class="prose lg:prose-lg xl:prose-xl">
-        <div set:html={file.data.excerpt}></div>
-        <h3>Location</h3>
-        <div set:html={file.data.location.description}></div>
-        {file.data.location.organizer && <p set:html={file.data.location.organizer}></p>}
-        <ul class="!pl-0">
-          <li class="flex items-center gap-1">
-            <Icon name="tabler:calendar-time" class="w-4 h-4" />
-            {formatterDate.format(file.data.start) + " " + formatterTime.format(file.data.start)}
-            -
-            {formatterDate.format(file.data.end) + " " + formatterTime.format(file.data.end)}
-          </li>
-          { file.data.location.url &&
-            <li class="flex items-center gap-1">
-              <Icon name="tabler:world" class="w-4 h-4" />
-              <a href={file.data.location.url}>Read More</a>
-            </li>
-          }
-        </ul>
-      </div>      
-    </Fragment>
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50"></div>
-    </Fragment>
-    <Fragment slot="subtitle">
-      <SocialShare text={file.data.title} url={Astro.url} />
-    </Fragment>
-  </ContentComponent>
-  <div class="w-full p-2 flex grow justify-center lg:py-10">
-    <div class="prose lg:prose-lg xl:prose-xl">
-      <Content />
-    </div>
-  </div>
-</Layout>
 
-<style is:global>
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 100px;
-  }
-
-</style>
+<MarkdownLayout frontmatter={frontmatter} headings={headings}>
+  <Fragment slot="before-content">
+    <section class="prose lg:prose-lg xl:prose-xl grow p-5 overflow-hidden sm:overflow-visible">
+      <div class="text-center">
+        <h1 id={event.slug}>{event.data.title}</h1>
+        <SocialShare text={event.data.title} url={Astro.url} />
+      </div>
+      <EventInfoList event={event}/>
+      {event.data.image && <Image src={event.data.image} alt={event.data.title}></Image>}
+    </section>
+  </Fragment >
+  <Content />
+</MarkdownLayout>
