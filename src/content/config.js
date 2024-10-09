@@ -15,7 +15,7 @@ const eventsCollection = defineCollection({
   type: 'content',
   schema: ({ image }) => z.object({
     title: z.string(),
-    date: z.date(),
+    date: z.date(), 
     excerpt: z.string(),
     category: z.enum(['Conference', 'Hackathon', 'Webinar', 'Training']), // There might be more
     mode: z.enum(['On-site', 'Online', 'Hybrid']).optional(), // There might be more
@@ -23,23 +23,23 @@ const eventsCollection = defineCollection({
     start: z.date(),
     end: z.date(),
     tutors: z.string().array().optional(),
+    image: image().optional(),
     organizer: z.object({
-      name: z.string().optional(),
-      affiliation: z.string().optional(),
-      url: z.string().url().optional(),
-    }).optional(),
+      name: z.string(),
+      affiliation: z.string(),
+      url: z.string().url()
+    }).partial().optional(),
     location: z.object({
-      address: z.string(),      
-      directionURL: z.string().url().optional(),
-      image: image().optional(),
-    }),
-    registration: z.object({      
-      description: z.string().optional(),
+      address: z.string(),
       url: z.string().url().optional(),
-      deadline: z.date().optional(),
-      seats: z.number().optional(),
-    }).optional(),
-    readmoreURL: z.string().url().optional(),
+    }),
+    registration: z.object({
+      description: z.string(),
+      url: z.string().url(),
+      deadline: z.date(),
+      seats: z.number(),
+    }).partial().optional(),
+    readMoreURL: z.string().url().optional(),
   })
 });
 

@@ -8,7 +8,7 @@ start: 2023-06-17T09:00:00
 end: 2023-06-21T16:00:00
 location: 
   address: RHRZ Kaiserslautern <br> Terminal Pool 1 <br> Building 34 <br> Room 253
-  directionURL: https://rptu.de/fileadmin/prum/02_Downloads/Lageplan/TUK_Plan__Juli_2021.pdf
+  url: https://rptu.de/fileadmin/prum/02_Downloads/Lageplan/TUK_Plan__Juli_2021.pdf
 organizer:
   affiliation: RPTU RDM Team & DataPLANT
 ---

@@ -1,34 +1,90 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
-import ItemCollectionLayout from '~/layouts/ItemCollectionLayout.astro';
+import Layout from '~/layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components'
 
 const newsCollection = await getCollection('news')
 
-async function collectData() {
-  const newData = newsCollection
-    .sort((a, b) => {
-          const dateA = new Date(a.data.date).getTime();
-          const dateB = new Date(b.data.date).getTime();
+type ExtractDateFn<T> = (item: T) => Date;
 
-          return dateB - dateA;  // Sorts in descending order to get the latest first
-        })
-    .map(async (entry) => {
-    const { Content } = await entry.render();
-    return {
-      id: entry.id,
-      slug: entry.slug,
-      publishDate: entry.data.date,
-      title: entry.data.title,
-      permalink: "/news/" + entry.slug,
-      content: Content,
-      excerpt: entry.data.previewText,
-      image: entry.data.image,
+function groupByYear<T>(array: T[], extractDate: ExtractDateFn<T>): Record<number, T[]> {
+  // First, group by year
+  const grouped = array.reduce((acc: Record<number, T[]>, obj: T) => {
+    const year = extractDate(obj).getFullYear(); // Get the year from the extracted date
+
+    if (!acc[year]) {
+      acc[year] = []; // Initialize array for the year if it doesn't exist
     }
-  })
-  return await Promise.all(newData)
-} 
 
-const data = await collectData();
+    acc[year].push(obj); // Add the object to the group for the corresponding year
+
+    return acc;
+  }, {});
+
+  // Sort each group by date
+  Object.keys(grouped).forEach((year) => {
+    grouped[parseInt(year)] = grouped[parseInt(year)].sort((a, b) => {
+      return extractDate(b).getTime() - extractDate(a).getTime();  // Sort by timestamp
+    });
+  });
+
+  return grouped;
+}
+
+
+const groupedNews = groupByYear(newsCollection, (news) => new Date(news.data.date));
+
+// Assuming 'groupedByYear' is the result from the 'groupByYear' function
+const keys = Object.keys(groupedNews)
+  .map(year => parseInt(year)) // Convert keys to numbers
+  .sort((a, b) => b - a); // Sort in descending order (b - a)
+
+groupedNews[2022].forEach((news) => {
+  console.log(news.data.title);
+});
+
+console.log(keys)
 ---
 
-<ItemCollectionLayout data={data} collectionName="News" />
+<Layout title="News">
+  <div class="flex items-center justify-center w-full">
+    <div class="flex flex-col gap-4 p-2 lg:p-5 lg:py-10 xl:py-20">
+      {
+        keys.map((year) => {
+          const news = groupedNews[year];
+          return (
+            <h1 class="text-7xl text-bold self-center mb-2">{year}</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+              {
+                news.map((news) => (
+                  <div class="shadow border p-3 rounded max-w-lg flex flex-col">
+                    <div class="flex flex-col lg:flex-row gap-2 text-lg font-bold border-b-2 p-2">
+                      <h2><mark class="bg-primary text-primary-content">{news.data.date.toLocaleDateString()}</mark></h2>
+                      <h2>{news.data.title}</h2>
+                    </div>
+                    <article class="prose p-2">
+                      {news.data.image 
+                        ? (
+                        <Image src={news.data.image} alt={news.data.title} />
+                        )
+                        : (<>{news.data.previewText}</>)
+                      }
+                      
+                    </article>
+                    <div class="flex grow justify-end items-end px-2">
+                      <a href={news.slug} class="btn btn-link">
+                        Read more
+                        <Icon name="tabler:arrow-right" class="w-4 h-4" />
+                      </a>
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
+          )
+        })
+      }
+    </div>
+  </div>
+</Layout>

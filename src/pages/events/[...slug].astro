@@ -42,7 +42,7 @@ const formatterTime = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute
 <Layout title={"Event - " + file.data.title}>
   <ContentComponent 
     id={file.slug}
-    image={file.data.location.image}
+    image={file.data.image}
     title={file.data.title}
     tagline={file.data.category + " – " + file.data.mode}
     columns={inPageNavigation.length}
@@ -54,12 +54,13 @@ const formatterTime = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute
         <h4>Organizer</h4>
         <!-- {file.data.organizer && <p set:html={file.data.organizer.name + ", " +file.data.organizer.affiliation}></p>} -->
         {file.data.organizer && <a href={file.data.organizer.url}>{file.data.organizer.name + ", " +file.data.organizer.affiliation}</a>}
-        {file.data.tutors && <h4>Tutors</h4>
-        <p> {file.data.tutors.join(', ')}</p>
-      } 
+        {file.data.tutors && 
+          <h4>Tutors</h4>
+          <p> {file.data.tutors.join(', ')}</p>
+        } 
         <h4>Location</h4>
         <div set:html={file.data.location.address}></div>   
-        {file.data.location.directionURL && <a href={file.data.location.directionURL}>Directions</a>}
+        {file.data.location.url && <a href={file.data.location.url}>Directions</a>}
         {file.data.audience && <h4>Audience</h4>
           <p> This event is made for {file.data.audience.join(' and ')}</p>
         }           
@@ -75,10 +76,10 @@ const formatterTime = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute
             -
             {formatterDate.format(file.data.end) + " " + formatterTime.format(file.data.end)}
           </li>
-          { file.data.readmoreURL &&
+          { file.data.readMoreURL &&
             <li class="flex items-center gap-1">
               <Icon name="tabler:world" class="w-4 h-4" />
-              <a href={file.data.readmoreURL}>Read More</a>
+              <a href={file.data.readMoreURL}>Read More</a>
             </li>
           }
         </ul>

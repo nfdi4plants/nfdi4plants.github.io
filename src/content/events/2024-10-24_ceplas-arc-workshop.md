@@ -6,6 +6,7 @@ excerpt: 'This workshop demonstrates the ARC concept and introduces the DataPLAN
 start: 2024-10-24T09:00:00
 end: 2024-10-24T12:00:00
 mode: On-site
+image: ~/assets/images/events/ceplas-ARCs.drawio.png
 tutors:
   - Dominik Brilhaus (CEPLAS)
   - Sabrina Zander (MibiNet)
@@ -15,8 +16,7 @@ organizer:
   url: https://www.ceplas.eu/en/research/data-science-and-data-management
 location:
   address: HHU, room tbd
-  directionURL: https://www.ceplas.eu/en/contact/how-to-get-there
-  image: ~/assets/images/events/ceplas-ARCs.drawio.png
+  url: https://www.ceplas.eu/en/contact/how-to-get-there
 registration:
     description: 'First-come-first-serve. Members of CEPLAS have priority. Everyone else is welcome, if seats are available.' 
     url: 'https://terminplaner6.dfn.de/de/b/87c954f819c87b27797bc747db30003b-603458'

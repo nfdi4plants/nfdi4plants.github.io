@@ -1,35 +1,42 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
-import ItemCollectionLayout from '~/layouts/ItemCollectionLayout.astro';
+import Layout from "~/layouts/Layout.astro"
 
-const newsCollection = await getCollection('events')
+const events = await getCollection('events')
 
-async function collectData() {
-  const newData = 
-    newsCollection.sort((a: CollectionEntry<'events'>, b: CollectionEntry<'events'>) => {
-        const dateA = new Date(a.data.start).getTime();
-        const dateB = new Date(b.data.start).getTime();
+// async function collectData() {
+//   const newData = 
+//     newsCollection.sort((a: CollectionEntry<'events'>, b: CollectionEntry<'events'>) => {
+//         const dateA = new Date(a.data.start).getTime();
+//         const dateB = new Date(b.data.start).getTime();
 
-        return dateB - dateA;  // Sorts in descending order to get the latest first
-      })
-      .map(async (entry: CollectionEntry<'events'>) => {
-        const { Content } = await entry.render();
-        return {
-          id: entry.id,
-          slug: entry.slug,
-          publishDate: entry.data.start,
-          title: entry.data.title,
-          permalink: "/events/" + entry.slug,
-          content: Content,
-          excerpt: entry.data.excerpt,
-          image: entry.data.location.image,
-        }
-      })
-  return await Promise.all(newData)
-} 
+//         return dateB - dateA;  // Sorts in descending order to get the latest first
+//       })
+//       .map(async (entry: CollectionEntry<'events'>) => {
+//         const { Content } = await entry.render();
+//         return {
+//           id: entry.id,
+//           slug: entry.slug,
+//           publishDate: entry.data.start,
+//           title: entry.data.title,
+//           permalink: "/events/" + entry.slug,
+//           content: Content,
+//           excerpt: entry.data.excerpt,
+//           image: entry.data.image,
+//         }
+//       })
+//   return await Promise.all(newData)
+// } 
 
-const data = await collectData();
+// const data = await collectData();
 ---
 
-<ItemCollectionLayout data={data} collectionName="Events" />
+<Layout title="Events">
+  <div class="flex flex-col justify-center py-5 lg:py-10 xl:py-20">
+    {
+      events.map((event) => (
+        <div>{event.slug}</div>
+      ))
+    }
+  </div>
+</Layout>
