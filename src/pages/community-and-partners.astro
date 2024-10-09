@@ -12,7 +12,9 @@ import Layout from "../layouts/Layout.astro";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-type Person = {
+// ----------------------------------------------------- Domain model -----------------------------------------------------
+// type representing participants.csv
+type Participant = {
     Name: string;
     Title: string;
     Zusatz: string;
@@ -25,22 +27,80 @@ type Person = {
     Project: string
 };
 
+// type representing places.csv
 type Place = {
     Name: string;
     Latitude: number;
     Longitude: number;
 };
 
+// type representing projects.csv
 type Project = {
     Name: string;
     Institution_Name: string;
 };
 
+// holds tooltip data for tippy.js
+type TippyData = {
+    name: string;
+    info: string;
+    longitude: number;
+    latitude: number;
+    type: string;
+}
+
+// fully grouped participant and project data by place, then institution
+type LocalizedGroup = {
+    place: string;
+    groupedInstitutions: [string, Participant[], Project[]][]
+    longitude: number;
+    latitude: number;
+    type: string
+}
+
+// ----------------------------------------------------- Utility Functions -----------------------------------------------------
+
+// Utility: format a person's name with their role
+const formatName = function(p: Participant) {
+    return p.Name + (p.Role ? ` (${p.Role})` : '');
+};
+
+// Utility: make an HTML list with a heading (for People and Projects)
+const makeList = function(heading: string, entries: string []) {
+    if (entries.length === 0) return ''; // Do not show if no entries
+    return  `<h2 class="subtitle text-base">${heading}</h2>` +
+            '<ul class="list-disc list-inside">' +
+            entries.map(e => `<li>${e}</li>`).join('') +
+            '</ul>';
+};
+
+// Combine data for each institution (people + projects) for tippy tooltips
+function combineInstitutionData(institution: string, people: Participant[], projects: Project []) {
+
+    let peopleList = people.map(formatName);
+    let projectList = projects.map(p => p.Name);
+
+    // Show the institution name as a header (h4), and then lists of people and projects
+    const combinedEntries = [
+        `<h1 class="title text-lg text-olive-800">${institution}</h1>`,  // Display institution name as a header
+        makeList('People', peopleList),
+        makeList('Projects', projectList)  // Only show Projects if they exist
+    ];
+    return combinedEntries.join('');
+    }
+
+// Function to determine the class attributes for a given place based on people
+function placeClass(entries: Participant []) {
+    const allRoles = String(entries.map(d => d.Role).join('')).toLowerCase();
+    return allRoles.includes('spokesperson') ? 'applicant' : 'normal';
+}
+
+// ----------------------------------------------------- Data import -----------------------------------------------------
 const participants_path = path.resolve(__dirname, "../assets/data/participants.csv")
 const participants_headers = ["Title", "Zusatz", "Link", "Name", "Affiliation", "Institution_Link", "Institution_Name", "City", "Role", "Project"]
 const participants_file_content  = fs.readFileSync(participants_path, { encoding: 'utf8', flag: 'r' });
 
-const participants: Person[] = 
+const participants: Participant[] = 
     parse(participants_file_content, {
         delimiter: ',',
         columns: participants_headers,
@@ -65,103 +125,59 @@ const projects: Project[] = [] // data not pushed yet
 places.shift(); // remove header row, idk why the parser includes it 
 participants.shift(); // remove header row, idk why the parser includes it
 
-console.log(places)
-
 const germany_path = path.resolve(__dirname, "../assets/data/germany.json")
 const germany = JSON.parse(fs.readFileSync(germany_path, { encoding: 'utf8', flag: 'r' }))
 const germany_features = topojson.feature(germany, germany.objects.states)
-  
-// Utility: format a person's name with their role
-const formatName = function(p: Person) {
-    return p.Name + (p.Role ? ` (${p.Role})` : '');
-};
 
-// Utility: make an HTML list with a heading (for People and Projects)
-const makeList = function(heading: string, entries: string []) {
-    if (entries.length === 0) return ''; // Do not show if no entries
-    return  `<h2 class="subtitle text-base">${heading}</h2>` +
-            '<ul class="list-disc list-inside">' +
-            entries.map(e => `<li>${e}</li>`).join('') +
-            '</ul>';
-};
+// ----------------------------------------------------- Data processing -----------------------------------------------------
 
-// Combine data for each institution (people + projects)
-function combineInstitutionData(institution: string, people: Person[], projects: Project []) {
-
-    let peopleList = people.map(formatName);
-    let projectList = projects.map(p => p.Name);
-
-    // Show the institution name as a header (h4), and then lists of people and projects
-    const combinedEntries = [
-        `<h1 class="title text-lg text-olive-800">${institution}</h1>`,  // Display institution name as a header
-        makeList('People', peopleList),
-        makeList('Projects', projectList)  // Only show Projects if they exist
-    ];
-    return combinedEntries.join('');
-}
-
-// Function to determine the class attributes for a given place based on people
-function placeClass(entries: Person []) {
-    const allRoles = String(entries.map(d => d.Role).join('')).toLowerCase();
-    return allRoles.includes('spokesperson') ? 'applicant' : 'normal';
-}
-
-const { document } = new JSDOM().window
-
-const projection = d3.geoConicConformal().center([20.22, 49.3]).scale(2750);
+// Group projects by institution as well
+const projectsByInstitution = d3.group(projects, p => p.Institution_Name);
+// Group people by institution
+const peopleByInstitution = d3.group(participants, p => p.Institution_Name);
+// place lookup index
 const placeIndex = d3.index(places, p => p.Name);
 
-type TippyData = {
-    name: string;
-    info: string;
-    longitude: number;
-    latitude: number;
-    type: string;
-}
-
-const groupedProjects = d3.group(projects, p => p.Name);
-
-type GroupedInstitution = {
-    institution: string;
-    people: Person[];
-    projects: Project[];
-}
-
-const groupedInstitutions = 
+const localizedGroups : LocalizedGroup [] = 
     d3
     .groups(participants, p => p.City)
     .map(([place, people]) => {
         return {
-            institution: place,
-            people: people,
-            projects: groupedProjects.get(place) || []
-        }
+            place: place,
+            groupedInstitutions: 
+                d3
+                .groups(people, p => p.Institution_Name)
+                .map(([inst, people]) => {
+                    const projects = projectsByInstitution.get(inst) || []; // Get projects for this institution, or empty array if none
+                    return [inst, people, projects]
+                }),
+            longitude: placeIndex.get(place)!.Longitude,
+            latitude: placeIndex.get(place)!.Latitude,
+            type: placeClass(people)  // determine class based on people roles
+        };
     })
 
+console.log(localizedGroups)
+
+const projection = d3.geoConicConformal().center([20.22, 49.3]).scale(2750);
+
+const { document } = new JSDOM().window
 
 const geo_places : TippyData [] = 
-    d3.groups(
-        participants, 
-        p => p.City, 
-    ).map(([place, people]) => {
-      // Group projects by institution as well
-      const projectsByInstitution = d3.group(projects, p => p.Name);
-      // Group people by institution
-      const peopleByInstitution = d3.group(people, p => p.Institution_Name);
-
+    localizedGroups
+    .map((lg) => {
       return {
-        name: place,
-        info: [...peopleByInstitution.entries()].map(([inst, people]) => {
-          const projects = projectsByInstitution.get(inst) || []; // Get projects for this institution, or empty array if none
-          return combineInstitutionData(inst, people, projects); // Combine people and projects per institution
-        }).join(''),
-        longitude: placeIndex.get(place)!.Longitude,
-        latitude: placeIndex.get(place)!.Latitude,
-        type: placeClass(people)  // determine class based on people roles
+        name: lg.place,
+        info: 
+            lg.groupedInstitutions.map(([inst, participants, projects]) => {
+                return combineInstitutionData(inst, participants, projects);
+            })
+            .join(''),
+        longitude: lg.longitude,
+        latitude: lg.latitude,
+        type: lg.type
       };
     });
-
-console.log(geo_places)
 
 const geo_path = d3.geoPath().projection(projection);
 
@@ -234,37 +250,37 @@ const placesnodes =
         <!-- End Tooltip section -->
 
         {
-            groupedInstitutions
-            .map((gi) => (
+            localizedGroups
+            .map((lg) => (
                 <div class ="card glass shadow-xl p-6 m-4">
                     <div class ="card-content">
-                        <h1 class="card-title anchor text-darkblue font-bold text-2xl mb-4 anchor"><a href={"#" + gi.institution} class="anchor-link">{gi.institution}</a></h1>
-                        <h2 class="card-title text-xl mb-4">People</h2>
-                        <ul class="list-inside list-disc pl-6">
+                        <h1 class="card-title anchor text-darkblue font-bold text-2xl mb-4 anchor"><a href={"#" + lg.place} class="anchor-link">{lg.place}</a></h1>
+                        <ul class="list-inside list-none pl-6">
                             {
-                                gi
-                                .people
-                                .map((person) => (
-                                    <li>
-                                        {formatName(person)}
+                                lg.groupedInstitutions
+                                .map(([institution, participants, projects]) => (
+                                    <li>{institution}
+                                        <ul class="list-inside list-disc pl-6">
+                                            <li>Participants
+                                                <ul class="list-inside list-disc pl-6">
+                                                    {participants.map(p => <li>{formatName(p)}</li>)}
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        {
+                                            projects.length > 0 && 
+                                            <ul class="list-inside list-disc pl-6">
+                                                <li>Projects
+                                                    <ul class="list-inside list-disc pl-6">
+                                                        {projects.map(p => <li>p.Name</li>)}
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        }
                                     </li>
                                 ))
                             }
                         </ul>
-                        {gi.projects.length > 0 && 
-                            <ul class="list-inside list-disc pl-6">
-                                <h2 class="card-title text-xl mb-4">Projects</h2>
-                                {
-                                    gi
-                                    .projects
-                                    .map((project) => (
-                                        <li>
-                                            {project.Name}
-                                        </li>
-                                    ))
-                                }
-                            </ul>
-                        }
                     </div>
                 </div>
             ))
