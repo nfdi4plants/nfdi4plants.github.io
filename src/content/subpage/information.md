@@ -5,8 +5,10 @@ subtitle: Latest news, event participation, publications, Knowledge Base – her
 content:
   - information/news
   - information/events
-  - information/knowledge-base
   - information/publications
+  - information/knowledge-base
+  - information/discussions
+  - information/matrix
 image: /src/assets/images/subpage/information/information-mainpage.svg
 styling:
   titleColor: white
