@@ -8,6 +8,7 @@ import * as topojson from "topojson-client";
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import Layout from "../layouts/Layout.astro";
+import { glob } from 'glob'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -100,9 +101,9 @@ function placeClass(entries: Participant []) {
 }
 
 // ----------------------------------------------------- Data import -----------------------------------------------------
-const participants_path = path.resolve(__dirname, "../assets/data/participants.csv")
+const participants_path = await glob("src/assets/data/participants.csv")
 const participants_headers = ["Title", "Zusatz", "Link", "Name", "Affiliation", "Institution_Link", "Institution_Name", "City", "Role", "Project"]
-const participants_file_content  = fs.readFileSync(participants_path, { encoding: 'utf8', flag: 'r' });
+const participants_file_content  = fs.readFileSync(participants_path[0], { encoding: 'utf8', flag: 'r' });
 
 const participants: Participant[] = 
     parse(participants_file_content, {
@@ -110,9 +111,9 @@ const participants: Participant[] =
         columns: participants_headers,
     })
 
-const places_path = path.resolve(__dirname, "../assets/data/places.csv");
+const places_path = await glob("src/assets/data/places.csv")
 const places_headers = ["Name", "Latitude", "Longitude", ]
-const places_file_content  = fs.readFileSync(places_path, { encoding: 'utf8', flag: 'r' });
+const places_file_content  = fs.readFileSync(places_path[0], { encoding: 'utf8', flag: 'r' });
 
 const places: Place[] = 
     parse(places_file_content, {
@@ -129,8 +130,8 @@ const projects: Project[] = [] // data not pushed yet
 places.shift(); // remove header row, idk why the parser includes it 
 participants.shift(); // remove header row, idk why the parser includes it
 
-const germany_path = path.resolve(__dirname, "../assets/data/germany.json")
-const germany = JSON.parse(fs.readFileSync(germany_path, { encoding: 'utf8', flag: 'r' }))
+const germany_path = await glob("src/assets/data/germany.json")
+const germany = JSON.parse(fs.readFileSync(germany_path[0], { encoding: 'utf8', flag: 'r' }))
 const germany_features = topojson.feature(germany, germany.objects.states)
 
 // ----------------------------------------------------- Data processing -----------------------------------------------------
