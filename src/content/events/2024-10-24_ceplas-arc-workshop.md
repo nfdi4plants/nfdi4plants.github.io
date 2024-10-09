@@ -18,7 +18,7 @@ preview-text:
 
 First-come-first-serve. Members of CEPLAS have priority. Everyone else is welcome, if seats are available.
 
-- Please register [here]().
+- Please register [here](https://terminplaner6.dfn.de/b/551776b4130c40357ea030db0142f472-910401).
 - Registration closes on October 17, 2024
 - Max. number of participants: 12
 
