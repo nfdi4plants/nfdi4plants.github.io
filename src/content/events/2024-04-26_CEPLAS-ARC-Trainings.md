@@ -1,7 +1,27 @@
 ---
 title: CEPLAS ARC Training Series – Tool Demo @ UoC
 date: 2024-04-26
-preview-text: 
+category: Training
+excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
+start: 2024-04-25T09:00:00
+end: 2024-04-25T12:00:00
+mode: On-site
+audience: [Users]
+location:
+  short: UoC
+  address: UoC, Biozentrum, Bldg 304, Room 1.007
+image: ~/assets/images/events/ceplas-ARCs.drawio.png
+tutors:
+  - Dominik Brilhaus (CEPLAS)
+  - Eik Dahms (TRR341)
+  - Dan Wang (MibiNet, TRR341)
+organizer:
+  name: Dominik Brilhaus
+  affiliation: CEPLAS Data
+  url: https://www.ceplas.eu/en/research/data-science-and-data-management
+registration:
+    url: 'https://terminplaner6.dfn.de/de/b/87c954f819c87b27797bc747db30003b-603458'
+    seats: 12
 ---
 
 ## About

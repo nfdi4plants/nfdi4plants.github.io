@@ -1,7 +1,22 @@
 ---
 title: MibiNet CEPLAS – DataPLANT Tool Workshop
 date: 2024-04-30
-preview-text: 
+category: Training
+excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
+start: 2024-04-30T09:00:00
+end: 2024-04-30T17:00:00
+mode: On-site
+audience: [Users]
+location:
+  short: HHU
+  address: HHU, 22.07.U1.025
+tutors:
+  - Sabrina Zander (MibiNet)
+  - Dominik Brilhaus (CEPLAS)
+organizer:
+  name: Sabrina Zander
+  affiliation: MibiNet
+  url: https://www.sfb1535.hhu.de/projects/research-area-z/z03
 ---
 
 ## About

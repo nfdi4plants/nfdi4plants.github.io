@@ -6,6 +6,11 @@ excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB,
 start: 2024-10-24T09:00:00
 end: 2024-10-24T12:00:00
 mode: On-site
+audience: [Users, DataStewards]
+location:
+  short: HHU
+  address: HHU, room tbd
+  url: https://www.ceplas.eu/en/contact/how-to-get-there
 image: ~/assets/images/events/ceplas-ARCs.drawio.png
 tutors:
   - Dominik Brilhaus (CEPLAS)
@@ -14,16 +19,11 @@ organizer:
   name: Dominik Brilhaus
   affiliation: CEPLAS Data
   url: https://www.ceplas.eu/en/research/data-science-and-data-management
-location:
-  short: HHU
-  address: HHU, room tbd
-  url: https://www.ceplas.eu/en/contact/how-to-get-there
 registration:
     description: 'First-come-first-serve. Members of CEPLAS have priority. Everyone else is welcome, if seats are available.' 
     url: 'https://terminplaner6.dfn.de/en/b/551776b4130c40357ea030db0142f472-910401'
     deadline: 2024-10-17
     seats: 12
-audience: [Users, DataStewards]
 ---
 
 ## Goals

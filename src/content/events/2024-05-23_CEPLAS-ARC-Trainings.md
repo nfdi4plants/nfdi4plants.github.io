@@ -1,7 +1,27 @@
 ---
 title: CEPLAS ARC Training Series – Tool Demo & Hands-on @ HHU
 date: 2024-05-23
-preview-text: 
+category: Training
+excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
+start: 2024-05-23T09:00:00
+end: 2024-05-23T17:00:00
+mode: On-site
+audience: [Users]
+location:
+  short: HHU
+  address: HHU, ZSL 22.07, Room U1.25
+  url: https://www.ceplas.eu/en/contact/how-to-get-there
+image: ~/assets/images/events/ceplas-ARCs.drawio.png
+tutors:
+  - Dominik Brilhaus (CEPLAS)
+  - Sabrina Zander (MibiNet)
+organizer:
+  name: Dominik Brilhaus
+  affiliation: CEPLAS Data
+  url: https://www.ceplas.eu/en/research/data-science-and-data-management
+registration:
+    url: 'https://terminplaner6.dfn.de/de/b/87c954f819c87b27797bc747db30003b-603458'
+    seats: 12
 ---
 
 ## About
