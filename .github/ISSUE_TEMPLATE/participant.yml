@@ -4,11 +4,11 @@ title: "[Add participant]: "
 body:
   - type: dropdown
     id: type
-    options:
-      - participant
-      - project
     attributes:
       label: Type
+       options:
+        - participant
+        - project
     validations:
       required: true
   - type: input
