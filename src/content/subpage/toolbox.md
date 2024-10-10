@@ -9,10 +9,14 @@ styling:
   textColor: darkblue
   emphasisColor: darkblue
   textPosition: text-only
-image: /src/assets/images/lorempicsum.jpg
+image: ~/assets/images/subpage/toolbox/toolbox-hero.svg
 content: 
   - toolbox/arcitect
   - toolbox/swate
   - toolbox/dataplan
   - toolbox/arcmanager
 ---
+
+In addition to establishing [RDM concepts](/rdm-as-a-servcie) we also provide the respective reference implementations.
+
+DataPLANT provides a variety of tools to support your research data management journey. Explore the tools below to learn more about how they can help you manage your research data effectively.
