@@ -15,4 +15,4 @@ The [ARC (**A**nnotated **R**esearch **C**ontext)](https://arc-rdm.org) is an im
 It is a framework for organizing and documenting research data, as well as a container that continuously supports collaboration, data exchange, and adherence to FAIR principles among various researchers.
 It is developed under the umbrella of DataPLANT for for plant research, but is applicable to many other research domains.
 
-DataPLANT develops and maintains  [tools for the ARC ecosystem](/resources/#toolbox), hosts [services to collaborate on ARCs](/service), and provides [training and support](/service/#training) for ARC users.
+DataPLANT develops and maintains  [tools for the ARC ecosystem](/resources/#toolbox), hosts [services to collaborate on ARCs](https://nfdi4plants.github.io/arc-data-hub/), and provides [training and support](https://nfdi4plants.github.io/support/) for ARC users.
