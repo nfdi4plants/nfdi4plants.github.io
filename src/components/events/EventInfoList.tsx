@@ -58,7 +58,7 @@ export default function EventInfoList({event, additional}: Props) {
         </span>
       </li>
       {/* registration */}
-      {event.data.registration && 
+      {event.data.registration && event.data.registration.url &&
         <li className="flex items-center gap-2">
           <InlineIcon icon="tabler:clipboard-list" className="text-xl" aria-label="Registration" />
           <span>

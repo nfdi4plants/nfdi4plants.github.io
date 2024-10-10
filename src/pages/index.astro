@@ -26,7 +26,20 @@ const events = await getCollection('events');
           <h1 class="text-4xl font-bold mb-4">Democratization of plant research.</h1>
           <h1 class="text-4xl font-bold mb-4">Made easy and free.</h1>
           <h1 class="text-4xl font-bold mb-4">for everyone!</h1>
-          <button class="btn bg-lightblue text-2xl m-4">Become a member</button>
+          <CallToAction
+            classes={{
+              container: '',
+            }}
+            actions={[
+              {
+                variant: 'primary',
+                text: 'Become a member',
+                href: 'https://auth.nfdi4plants.org/realms/dataplant/protocol/openid-connect/auth?client_id=account&redirect_uri=https%3A%2F%2Fauth.nfdi4plants.org%2Frealms%2Fdataplant%2Faccount%2Flogin-redirect&state=0%2F2083ce25-95bf-4a38-ba82-0502f7060042&response_type=code&scope=openid',
+                target: '_blank',
+                icon: 'tabler:user-plus',
+              },
+            ]}
+          >
         </div>
       </div>
     </div>
