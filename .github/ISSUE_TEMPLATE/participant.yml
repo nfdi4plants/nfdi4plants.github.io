@@ -1,0 +1,52 @@
+name: Add participant
+description: Add a DataPLANT participant.
+title: "[Add participant]: "
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options: ["participant", "project"]
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Title (e.g. Dr.)
+    validations:
+      required: false
+  - type: input
+    id: link
+    attributes:
+      label: Link to personal or project page
+    validations:
+      required: false
+  - type: input
+    id: name
+    attributes:
+      label: Project or participant name
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation
+    validations:
+      required: false
+  - type: input
+    id: institution
+    attributes:
+      label: Institution
+    validations:
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: Role
+    validations:
+      required: false
+
+
+
+
+      
