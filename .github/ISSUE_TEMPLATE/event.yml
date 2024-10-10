@@ -1,0 +1,92 @@
+name: Add event
+description: Add an event (e.g. workshop, training or demo) to be listed on the [DataPLANT events site](https://nfdi4plants.org/events/).
+title: "[Add event]: "
+body:
+  - type: input
+    id: start
+    attributes:
+      label: Event start time
+      description: e.g. 2024-10-24T09:00:00
+    validations:
+      required: true
+  - type: input
+    id: end
+    attributes:
+      label: Event end time
+      description: e.g. 2024-10-24T12:00:00
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Event title
+    validations:
+      required: true
+  - type: input
+    id: organizer
+    attributes:
+      label: Organizer(s)
+      description: Name(s) of contact person(s)
+    validations:
+      required: false
+  - type: input
+    id: tutors
+    attributes:
+      label: Tutor(s)
+      description: Name(s) of tutor(s)
+    validations:
+      required: false
+  - type: dropdown
+    id: audience
+    attributes:
+      label: audience
+      options:
+        - Users
+        - Data Stewards
+        - Developers
+        - Everyone
+      multiple: true
+    validations:
+      required: false
+  - type: input
+    id: registration-url
+    attributes:
+      label: Registration link or contact
+    validations:
+      required: false
+  - type: input
+    id: registration-deadline
+    attributes:
+      label: Registration deadline
+      description: Registration deadline date
+    validations:
+      required: false
+  - type: input
+    id: registration-seats
+    attributes:
+      label: Max. number of seats
+    validations:
+      required: false
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Event mode
+      options:
+        - On-site
+        - Online
+        - Hybrid
+  - type: dropdown
+    id: category
+    attributes:
+      label: Event category
+      options:
+        - Conference
+        - Hackathon
+        - Webinar
+        - Training
+  - type: input
+    id: location
+    attributes:
+      label: Event location
+      description: location address, room // hybrid meeting link
+
