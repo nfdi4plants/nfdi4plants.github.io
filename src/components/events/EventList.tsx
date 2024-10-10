@@ -73,10 +73,11 @@ function EventCard (event: CollectionEntry<'events'>) {
 export default function EventList( {events}: Props ) {
   let now = new Date();
   const upcomingEvents = sortByYear(events.filter((event) => {
-    return new Date(event.data.date) >= now;
+    return new Date(event.data.start) >= now;
   }), (event) => event.data.start);
+
   const pastEvents = events.filter((event) => {
-    return new Date(event.data.date) < now;
+    return new Date(event.data.start) < now;
   });
   const pastEventsGrouped = groupByYear(pastEvents, (event) => event.data.start);
   

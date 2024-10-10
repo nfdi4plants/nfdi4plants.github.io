@@ -9,6 +9,8 @@ audience: [Everyone]
 mode: Online
 organizer:
   name: DataPLANT
+location:
+  short: "-"
 ---
 
 ## About
