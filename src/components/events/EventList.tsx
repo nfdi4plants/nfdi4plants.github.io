@@ -41,8 +41,8 @@ function ControlButtons({label, options, selectedOption, setOption}: ControlButt
     <>
       <label>{label}</label>
       <div className="flex flex-row space gap-3">
-        {Array.from(options).map((option) => (
-          <ControlButton value={option} selectedValue={selectedOption} setValue={() => setOption(option)} />
+        {Array.from(options).map((option, index) => (
+          <ControlButton value={option} selectedValue={selectedOption} setValue={() => setOption(option)} key={"control-buttons-" + index} />
         ))}
       </div>
     </>
@@ -51,7 +51,7 @@ function ControlButtons({label, options, selectedOption, setOption}: ControlButt
 
 function EventCard (event: CollectionEntry<'events'>) {
   return (
-    <div className="shadow border p-3 lg:p-5 rounded lg:max-w-5xl xl:max-w-6xl" key={"past-" + event.slug}>
+    <div className="shadow border p-3 lg:p-5 rounded lg:max-w-5xl xl:max-w-6xl" key={"event-" + event.slug}>
       <div className={"grid lg:grid-rows-1 gap-2 lg:gap-4 lg:grid-cols-2 " + (event.data.image ? 'lg:grid-cols-2' : '')}>
         <div className="prose-sm lg:prose">
           <h1><a href={"/events/" + event.slug}>{event.data.title}</a></h1>
@@ -122,7 +122,7 @@ export default function EventList( {events}: Props ) {
       </div>
       {
         upcomingEvents.filter(filterEvents).map((event) => (
-          <EventCard {...event} />
+          <EventCard {...event} key={"card-" + event.slug} />
         ))
       }
       <h2 className="text-5xl lg:text-7xl text-center bg-secondary text-secondary-content p-2">Archive</h2>
@@ -135,16 +135,16 @@ export default function EventList( {events}: Props ) {
         keys.map((year) => {
           const events = pastEventsGrouped[year];
           return (
-          <>
-            <h1 className="text-5xl lg:text-7xl text-bold self-center mb-2">{year}</h1>
-            <div className="grid grid-cols-1 gap-4 lg:gap-10">
-              {
-                events.map((event) => (
-                  <EventCard {...event} />
-                ))
-              }
+            <div key={year} className="flex flex-col">
+              <h1 className="text-5xl lg:text-7xl text-bold self-center mb-2">{year}</h1>
+              <div className="grid grid-cols-1 gap-4 lg:gap-10">
+                {
+                  events.map((event) => (
+                    <EventCard {...event} key={"card-" + event.slug}/>
+                  ))
+                }
+              </div>
             </div>
-          </>
           )
         })
       }

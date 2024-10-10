@@ -29,7 +29,7 @@ export default function UpcomingEventBanner({events}: Props) {
       <span
         className="bg-white/40 font-semibold px-1 py-0.5 text-xs mr-0.5 rtl:mr-0 rtl:ml-0.5 inline-flex items-center">
           <InlineIcon icon="tabler:info-square" className='text-2xl' />
-          NEXT EVENT
+          UPCOMING EVENT
         </span>
       <a href={"/events/" + nextEvent.slug} className="hover:!underline font-medium">
         <span className='sm:hidden'>More</span>
