@@ -15,6 +15,6 @@ The ARC Data Hubs of DataPLANT serve as central repositories where research data
 All Data Hubs offer robust version control features, allowing users full authority over access and interaction with their research data.
 Each ARC Data Hub implementation includes backup strategies to ensure the stored data is safeguarded.
 
-DataPLANT offers two primary DataHUB nodes: the [PLANTdataHUB](#plant-data-hub) and the [DataHUB (federated)](#federated), both accessible to the entire plant science community.
+DataPLANT offers two primary DataHUB nodes: the [PLANTdataHUB](https://git.nfdi4plants.org/) and the [DataHUB (federated)](https://gitlab.nfdi4plants.de/), both accessible to the entire plant science community.
 Additionally, there are on-premise implementations designed for specific sub-communities.
 All DataHUBs are equipped with backup and sustainability measures to ensure data safety and long-term availability.
