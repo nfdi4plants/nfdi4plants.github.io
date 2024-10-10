@@ -20,7 +20,7 @@ location:
   url: https://www.ceplas.eu/en/contact/how-to-get-there
 registration:
     description: 'First-come-first-serve. Members of CEPLAS have priority. Everyone else is welcome, if seats are available.' 
-    url: 'https://terminplaner6.dfn.de/de/b/87c954f819c87b27797bc747db30003b-603458'
+    url: 'https://terminplaner6.dfn.de/en/b/551776b4130c40357ea030db0142f472-910401'
     deadline: 2024-10-17
     seats: 12
 audience: [Users, DataStewards]
