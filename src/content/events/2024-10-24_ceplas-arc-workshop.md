@@ -9,8 +9,8 @@ mode: On-site
 audience: [Users, DataStewards]
 location:
   short: HHU
-  address: HHU, room tbd
-  url: https://www.ceplas.eu/en/contact/how-to-get-there
+  address: HHU, Room 26.44.U1.022
+  url: https://www.hhu.de/fileadmin/redaktion/Oeffentliche_Medien/Karten-Anfahrtplaene-HHU/Infocenter_Lage_und_Anreise/HHU_Campusplan.jpg
 image: ~/assets/images/events/ceplas-ARCs.drawio.png
 tutors:
   - Dominik Brilhaus (CEPLAS)
