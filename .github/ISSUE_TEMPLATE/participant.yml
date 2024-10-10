@@ -15,7 +15,7 @@ body:
       label: Title (e.g. Dr.)
     validations:
       required: false
-  - type: Link
+  - type: input
     id: link
     attributes:
       label: Link to personal or project page
