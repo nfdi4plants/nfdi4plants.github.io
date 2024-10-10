@@ -3,8 +3,9 @@ import MarkdownLayout from '~/layouts/MarkdownLayout.astro';
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 import SocialShare from '~/components/widgets/SocialShare.astro';
-import EventInfoList from '~/components/events/EventInfoList.astro';
+import EventInfoList from '~/components/events/EventInfoList.tsx';
 import type { CollectionEntry } from 'astro:content';
+import {Icon} from 'astro-icon/components';
 
 export async function getStaticPaths() {
   const eventsCollection = await getCollection('events')
@@ -30,8 +31,40 @@ const frontmatter= {
 
 const lowestDepth = Math.min(...headings.map(h => h.depth));
 
-headings.unshift({depth: lowestDepth, text: "#" + event.data.title, slug: event.slug});
+(event.data.registration && event.data.registration.description &&
+  headings.unshift({depth: lowestDepth, text: "#registration", slug: "registration"})
+);
 
+
+headings.unshift(
+  {depth: lowestDepth, text: "#" + event.data.title, slug: event.slug},
+  {depth: lowestDepth, text: "#info", slug: "info"},
+);
+
+function generateOrganizerHtml(organizer: any) {
+  const name = organizer?.name ? `${organizer.name}` : "";
+  const affiliation = organizer?.affiliation ? `${organizer.affiliation}` : "";
+  const url = organizer?.url ? `<a href="${organizer.url}" target="_blank">more</a>` : "";
+  
+  return `<div><b>Organized by</b> ${[name, affiliation, url].filter(Boolean).join(" | ")}</div>`;
+}
+
+const additionalMetadata: ({
+    icon: string;
+    __html: string;
+    ariaLabel: string;
+} | undefined)[] = [
+  (event.data.organizer && {
+    icon: "tabler:affiliate", 
+    __html: generateOrganizerHtml(event.data.organizer), 
+    ariaLabel: "Organizer"
+  }),
+  (event.data.external ? {
+    icon: "tabler:external-link",
+    __html: `<a href="${event.data.external}" target="_blank">Event Website</a>`,
+    ariaLabel: "Event Website"
+  } : undefined)
+]
 ---
 
 
@@ -42,7 +75,30 @@ headings.unshift({depth: lowestDepth, text: "#" + event.data.title, slug: event.
         <h1 id={event.slug}>{event.data.title}</h1>
         <SocialShare text={event.data.title} url={Astro.url} />
       </div>
-      <EventInfoList event={event}/>
+      <div class="text-center prose max-w-none" set:html={event.data.excerpt} />
+      <div class="text-center prose max-w-none">
+        <h3 id="info">Info</h3>
+      </div>
+      <EventInfoList 
+        event={event} 
+        client:load 
+        additional={additionalMetadata} />
+      {event.data.registration && event.data.registration.description && (
+        <div class="text-center prose max-w-none bg-secondary text-secondary-content p-4 rounded shadow">
+          <h3 id="registration" class="!mt-0 text-primary">Registration</h3>
+          <p> 
+            <span set:html={event.data.registration.description}></span>
+          </p>
+          {event.data.registration.seats && (
+            <p class="text-lg">
+              <Icon name="tabler:armchair" class="inline" title="Seats"/> {event.data.registration.seats}
+            </p>
+          )}
+          {event.data.registration.url && (
+            <a href={event.data.registration.url} class="btn btn-primary btn-wide" target="_blank" rel="noopener">Register</a>
+          )}
+        </div>
+      )}
       {event.data.image && <Image src={event.data.image} alt={event.data.title}></Image>}
     </section>
   </Fragment >
