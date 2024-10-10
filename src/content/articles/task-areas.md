@@ -3,41 +3,38 @@ title: DataPLANT Task Areas
 summary: Overview of the DataPLANT Task Areas
 ---
 
-## Task Area 1
+## Task Area I - Driving Standardization
 
-_Data Quality, Standardization, Interoperability_ 
+In Task Area I, topics such as data quality, interoperability and standardization are promoted.
+Besides the definition of metadata standards, the application of widely used ontologies, such as the Gene-, KEGG-, and Plant Ontology, and will be supported in a first step.
+These existing ontologies will then be iteratively adapted to the needs of researchers and their specific experiments in order to comprehensively describe workflows.
 
-Will provide support, including AI-based approaches, to facilitate the collection of vocabularies and ontologies, encouraging broader community participation.
-TA1 will enhance ontologies embedded within international consortia, which are essential for improving data and workflow interoperability and ensuring AI-readiness through machine actionability. 
-This will connect user documentation, technical endpoints, workflow engines, and domain-specific requirements. 
-To guarantee high-quality (meta)data, TA1 will implement automated validation processes, supplemented by a community-driven data publication review system. 
-Furthermore, TA1 will promote RDM practices through the involvement of data stewards, fostering a culture of traceability within the community.
+The often-long path from the identification of a missing term to the final adoption into the descriptive reference ontology will be significantly shortened with minimal friction.
+A first approach to achieve this is pursued by DataPLANT’s developed tool SWATE.
 
-## Task Area 2
-_Infrastructure, Service, and Workflow Platform_
+## Task Area II – Infrastructural Community Support
 
-Will enhance the DataPLANT DataHUB and associated services to ensure deep integration with both national and international infrastructures. 
-This includes platforms such as the NFDI Research Data Commons, OpenAIRE, EOSC, and EBI. 
-These efforts aim to improve the visibility and recognition of DataPLANT by journals, the NFDI, the EU, and key international RDM initiatives and stakeholders. 
-Task Area 2 supports efficient data management and analysis, enabling the execution of actionable FAIR Digital Objects (FDOs) within established workflow environments. 
-It will leverage consortium cloud environments and the NFDI FAIR data spaces to implement an infrastructure-as-a-service model for distribution and maintenance.
+DataPLANT and the plant research community can draw on extensive infrastructural capacities for compute and storage, such as the de.NBI Cloud in Tübingen and Freiburg and the bwCloud, amongst others.
+Task Area II will provide the infrastructural basis for the developed tools.
+For this, the DataPLANT Hub, based on HUBZero, will serve as the central access point.
+Wherever possible, a single sign-on concept will be used for user-friendliness.
+Furthermore, a service to facilitate data and metadata versioning, collaboration among researchers, and data sharing within ongoing projects will be set up.
+To support researchers in publishing their work, a service based on InvenioRDM is established.
+Unique identification will be accomplished using Digital Object Identifier (DOI) and ORCID.
 
-## Task Area 3
+## Task Area III – Personnel Community Support
 
-_Software, Application, and Transfer_ 
+Task Area III takes care of the continuous community contact and direct personnel support of the individual research groups during their everyday data management tasks.
+This is accomplished through Data Stewards as a core element of the DataPLANT research data management strategy to bridge the gap between technical solutions, infrastructure, and researchers.
 
-Will promote an open-source culture, encouraging participation and skill development in research data projects and software. 
-TA3 will foster community engagement by offering personalized support through tailored digital assistance. 
-It will also refine and consolidate the plant FAIR Digital Object (FDO) software stack to enhance interoperability with other NFDI and international RDM services. 
-TA3 will provide open educational resources and implement a "train the trainer" model to support the embedded data steward approach. 
-This will include the development of improved documentation, tutorials, and teaching materials, empowering active community participation through transparent, community-driven feedback and development processes. 
-Additionally, TA3 will establish a support framework for embedded and geo-distributed data stewards.
+By providing advice in data and workflow management, they promote the process of standardizing metadata, the use of ontologies and data provenance.
+Through direct on-site interaction, they can immediately respond immediately to the requirements and needs of researchers.
+Training of these Data Stewards also belongs to the responsibility of Task Area III.
 
-## Task Area 4
+## Task Area IV - Increasing reach and sustainable development
 
-_Coordination and Management_ 
-
-Will focus on efficiently managing the consortium and ensuring alignment with community-driven objectives. 
-TA4 will coordinate the dissemination of project information and outcomes from all task areas, ensuring that all stakeholders, both within and outside the consortium, are well-informed. 
-It will also establish bidirectional advocacy structures and create low-barrier participation opportunities for the broader community and beyond. 
-Additionally, TA4 will form special interest groups for the life sciences (LS), address legal matters, represent the consortium in dealings with the DFG, and foster collaboration among state-level initiatives, compute centers, faculty IT, research institutions, libraries, and NFDI liaison efforts to drive consolidation.
+Task Area IV is responsible for the communication within the project, as well as integration with the overall NFDI and promotion of common efforts.
+A central task is the extension to all researchers in the field of fundamental plant research.
+Only in this way the consortium can credibly represent the research area and establish common standards and concepts.
+Thus, DataPLANT immediately aimed for close cooperation and coordination and could already accomplish a close connection with the INF-Project SFB TRR175 and the Data Stewards of CEPLAS.
+A certain provision of support by data stewards, advice on application and legal issues, and infrastructure is intended for researchers who join the project later on.
