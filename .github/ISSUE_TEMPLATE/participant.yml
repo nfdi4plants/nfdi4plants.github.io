@@ -6,9 +6,7 @@ body:
     id: type
     attributes:
       label: Type
-       options:
-        - participant
-        - project
+      options: ["participant", "project"]
     validations:
       required: true
   - type: input
