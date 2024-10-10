@@ -9,31 +9,23 @@ import { URLS } from "~/statics";
 export const MainNav: RecursiveMenu[] = [
   { title: 'DataPLANT', slug: '/', children: [
     { title: 'About Us', slug: '/about' },
-    { title: 'Participation', slug: '/participation' },
+    { title: 'Information', slug: '/information'},
     { title: 'RDM As A Service', slug: '/rdm-as-a-service' },
-    { title: 'Support', slug: '/support' },
+    { title: 'Participation', slug: '/participation' },
     { title: 'Resources', slug: '/resources' },
-    {
-      title: 'Information',
-      slug: '/information',
-      children: [
-        { title: 'Knowledgebase', slug: URLS.KNOWLEDGEBASE },
-        { title: 'ARC', slug: URLS.ARC_WEBSITE },
-        { title: 'News', slug: '/news' },
-        { title: 'Events', slug: '/events' },
-        { title: 'Publications', slug: '/publications' },
-      ],
-    },
+    { title: 'Support', slug: '/support' },
   ]},
+  { title: 'News', slug: '/news' },
+  { title: 'Events', slug: '/events' },
   { title: 'Data Hubs', slug: '/arc-data-hub' },
   { 
     title: 'Tools',
     slug: '/toolbox',
     children: [
-      { title: 'ARCitect 🚧', slug: '#' },
-      { title: 'Swate 🚧', slug: '#' },
-      { title: 'DataPLAN 🚧', slug: '#' },
-      { title: 'ARCManager 🚧', slug: '#' },
+      { title: 'ARCitect', slug: 'https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html' },
+      { title: 'Swate', slug: 'https://swate-alpha.nfdi4plants.org/' },
+      { title: 'DataPLAN', slug: 'https://dmpg.nfdi4plants.org/' },
+      { title: 'ARCManager', slug: 'https://www.nfdi4plants.de/nfdi4plants.knowledgebase/docs/ARCmanager-manual/00_index.html' },
     ]
   },
 ]
