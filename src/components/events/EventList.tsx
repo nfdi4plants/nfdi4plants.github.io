@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import type { CollectionEntry } from 'astro:content';
 import {sortByYear, groupByYear } from '~/util/GroupByYear';
 import EventInfoList from './EventInfoList.tsx';
@@ -109,6 +109,8 @@ export default function EventList( {events}: Props ) {
     return true;
   }
 
+  const filteredUpcomingEvents = upcomingEvents.filter(filterEvents);
+
   return (
     <>
       <div className='grid grid-cols-1 md:grid-cols-[auto_minmax(0,_1fr)] gap-x-4 gap-y-2'>
@@ -116,13 +118,15 @@ export default function EventList( {events}: Props ) {
         <ControlButtons label="Audience" options={audiences} selectedOption={config.audience} setOption={toggleAudience}/>
         <ControlButtons label="Category" options={categories} selectedOption={config.category} setOption={toggleCategory}/>	
       </div>
+
+      <h2 className="text-5xl lg:text-7xl text-center bg-secondary text-secondary-content p-2">Upcoming</h2>
       <div>
         <span className='py-2 text-lg'>
           Found <b>{upcomingEvents.filter(filterEvents).length}</b> upcoming event(s).
         </span>
       </div>
       {
-        upcomingEvents.filter(filterEvents).map((event) => (
+        filteredUpcomingEvents.map((event) => (
           <EventCard {...event} key={"card-" + event.slug} />
         ))
       }
