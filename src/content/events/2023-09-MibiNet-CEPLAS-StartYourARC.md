@@ -3,8 +3,9 @@ title: MibiNet/CEPLAS Start Your ARC Workshop
 date: 2023-09-20
 category: Training
 excerpt: ' '
-start: 2024-09-20
-end: 2024-09-20
+when: 
+  start: 2024-09-20
+  end: 2024-09-20
 mode: On-site
 audience: [Users]
 location:

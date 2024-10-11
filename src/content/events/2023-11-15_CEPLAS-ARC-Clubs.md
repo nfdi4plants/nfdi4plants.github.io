@@ -4,9 +4,9 @@ excerpt: "a two-day adventure to prepare your lab for the ARC universe"
 category: Training
 mode: On-site
 audience: [Users]
-date: 2023-10-31
-start: 2023-11-15T09:00:00
-end: 2023-11-15T17:00:00
+when:
+    start: 2023-11-15T09:00:00
+    end: 2023-11-15T17:00:00
 location:
   short: HHU, UoC
   address: HHU, UoC
