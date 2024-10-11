@@ -1,5 +1,5 @@
 import type { CollectionEntry } from 'astro:content';
-import { sortByYear } from '~/util/GroupByYear';
+import { sortByYear } from '~/util/EventUtil';
 import { InlineIcon } from '@iconify/react/dist/iconify.js';
 
 interface Props {

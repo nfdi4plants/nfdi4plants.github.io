@@ -6,10 +6,12 @@ import SocialShare from '~/components/widgets/SocialShare.astro';
 import EventInfoList from '~/components/events/EventInfoList.tsx';
 import type { CollectionEntry } from 'astro:content';
 import {Icon} from 'astro-icon/components';
+import { reducePeriodicEvents, type ReducedEvent } from '~/util/EventUtil.ts';
 
 export async function getStaticPaths() {
   const eventsCollection = await getCollection('events')
-  return eventsCollection.map((entry) => {
+  const reducedEvents = reducePeriodicEvents(eventsCollection);
+  return reducedEvents.map((entry) => {
     return {
       params: { slug: entry.slug },
       props: { event: entry }
@@ -18,7 +20,7 @@ export async function getStaticPaths() {
 }
 
 interface Props {
-  event: CollectionEntry<'events'>
+  event: ReducedEvent
 }
 
 const { event } = Astro.props;

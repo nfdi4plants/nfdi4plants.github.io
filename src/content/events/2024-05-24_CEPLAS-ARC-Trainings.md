@@ -1,10 +1,10 @@
 ---
 title: CEPLAS ARC Training Series – Tool Demo @ HHU
-date: 2024-05-24
 category: Training
 excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
-start: 2024-05-24T09:00:00
-end: 2024-05-24T12:00:00
+when:
+  start: 2024-05-24T09:00:00
+  end: 2024-05-24T12:00:00
 mode: On-site
 audience: [Users]
 location:

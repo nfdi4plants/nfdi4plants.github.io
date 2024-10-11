@@ -1,10 +1,11 @@
 ---
-date: 2024-10-09
 title: CEPLAS – Good Data Management Practices
 category: Training
 excerpt: Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata. This workshop is offered as part of the CEPLAS PhD module 2024.
-start: 2024-11-10T09:30:00
-end: 2024-11-11T16:00:00
+when:
+  start: 2024-11-10T09:30:00
+  end: 2024-11-11T16:00:00
+
 mode: On-site
 # image: ~/assets/images/events/ceplas-ARCs.drawio.png
 tutors:
@@ -19,11 +20,11 @@ location:
   address: UoC, COPT building (Luxemburger Str. 90)
   url: https://maps.app.goo.gl/2QcX8i5SNwVSRYNs5
 registration:
-  description: 'This workshop is offered as part of the **CEPLAS PhD module 2024**.' 
+  description: 'This workshop is offered as part of the <b>CEPLAS PhD module 2024</b>.' 
   url: 'https://terminplaner6.dfn.de/b/6d3df2a8ec5131258e57468e84e672f6-906681'
   deadline: 2024-11-04
   seats: 9
-audience: [Everyone]
+audience: ['Users', 'DataStewards', 'Developers']
 ---
 
 This workshop is currently under re-construction.

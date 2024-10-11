@@ -1,11 +1,11 @@
 ---
 title: ARC User Meeting
-date: 2024-10-11
 category: Webinar
 audience: [Users]
 excerpt: 'With this monthly ARC user meeting we try to regularly answer questions, demonstrate tools and services or discuss data management issues.'
-start: 2024-10-11T13:00:00
-end: 2024-10-11T14:00:00
+when:
+  start: 2024-10-11T13:00:00
+  end: 2024-10-11T14:00:00
 mode: Online
 tutors: 
  - DataStewards of DataPLANT, CEPLAS, MibiNet, TRR341

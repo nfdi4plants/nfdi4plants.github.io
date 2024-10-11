@@ -1,6 +1,6 @@
-import { Fragment, useState } from 'react';
+import { useState } from 'react';
 import type { CollectionEntry } from 'astro:content';
-import {sortByYear, groupByYear } from '~/util/GroupByYear';
+import {sortByYear, groupByYear, reducePeriodicEvents } from '~/util/EventUtil.ts';
 import EventInfoList from './EventInfoList.tsx';
 
 interface Props {
@@ -70,16 +70,18 @@ function EventCard (event: CollectionEntry<'events'>) {
   )
 }
 
-export default function EventList( {events}: Props ) {
+export default function EventList( {events: rawEvents}: Props ) {
   let now = new Date();
+  let events = reducePeriodicEvents(rawEvents);
+  
   const upcomingEvents = sortByYear(events.filter((event) => {
-    return new Date(event.data.start) >= now;
-  }), (event) => event.data.start);
+    return event.data.when.start >= now;
+  }), (event) => event.data.when.start);
 
   const pastEvents = events.filter((event) => {
-    return new Date(event.data.start) < now;
+    return event.data.when.start < now;
   });
-  const pastEventsGrouped = groupByYear(pastEvents, (event) => event.data.start);
+  const pastEventsGrouped = groupByYear(pastEvents, (event) => event.data.when.start);
   
   const [config, setConfig] = useState<ConfigState>({category: null, mode: null, audience: null});
   // Assuming 'groupedByYear' is the result from the 'groupByYear' function

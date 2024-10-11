@@ -1,11 +1,11 @@
 ---
 title: Third ARC Hackathon
-date: 2022-10-07
 category: Conference
 excerpt: 'Hackathon to improve DataPLANTs solution for FAIR data: the Annotated Research Context and its associated tools and services.'
-start: 2022-10-05T13:00:00
-end: 2022-10-07T14:00:00
-audience: [Everyone]
+when:
+  start: 2022-10-05T13:00:00
+  end: 2022-10-07T14:00:00
+audience: ['Users', 'DataStewards', 'Developers']
 mode: On-site
 location: 
   short: Forschungszentrum Jülich GmbH

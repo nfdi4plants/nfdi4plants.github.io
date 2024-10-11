@@ -1,9 +1,10 @@
 import type { CollectionEntry } from 'astro:content';
 import { InlineIcon } from '@iconify/react';
+import { type ReducedEvent } from '~/util/EventUtil';
 
-const formatterDate = new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Berlin', year: "numeric", month: "numeric", day: "numeric"});
+const formatterDate = new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', year: "numeric", month: "2-digit", day: "2-digit"});
 // const formatterDate = new Intl.DateTimeFormat('en-US', { day: '2-digit', month: '2-digit', year: 'numeric' });
-const formatterTime = new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Berlin', hour: '2-digit', minute: '2-digit' });
+const formatterTime = new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', hour: '2-digit', minute: '2-digit' });
 
 interface AdditionalListElements {
   __html: string;
@@ -12,7 +13,7 @@ interface AdditionalListElements {
 }
 
 interface Props {
-  event: CollectionEntry<'events'>,
+  event: ReducedEvent,
   additional?: (AdditionalListElements | undefined)[];
 }
 
@@ -23,9 +24,10 @@ export default function EventInfoList({event, additional}: Props) {
       <li className="flex items-center gap-2">
         <InlineIcon icon="tabler:calendar-time" className="text-xl"/>
         <span>
-          {formatterDate.format(event.data.start) + " " + formatterTime.format(event.data.start)}
+          {event.data.periodic && <span title="repeating" className="inline-block align-middle"><InlineIcon icon="tabler:infinity"></InlineIcon></span>}
+          {formatterDate.format(event.data.when.start) + " " + formatterTime.format(event.data.when.start)}
           <span> – </span>
-          {formatterDate.format(event.data.end) + " " + formatterTime.format(event.data.end)}
+          {formatterDate.format(event.data.when.end) + " " + formatterTime.format(event.data.when.end)}
         </span>
       </li>
       {/* tutors optional */}

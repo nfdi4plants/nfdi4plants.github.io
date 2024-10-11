@@ -1,11 +1,8 @@
 ---
 title: DataSteward Circle
-date: 2024-10-11
 category: Meeting
 audience: [DataStewards]
 excerpt: 'Exchange best practices about creating ARCs. Updates on tools and services as well as annotation support, that will make your work as Data Stewards easier.'
-start: 2024-10-16T09:00:00
-end: 2024-10-16T10:00:00
 when:
   -
     start: 2024-10-16T09:00:00
