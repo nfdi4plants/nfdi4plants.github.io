@@ -60,18 +60,18 @@ image: ~/assets/images/events/ARCClub.drawio.png
 
 Time | Content
 --- | ---
-Morning | Tech-check (Installation) | Intro ARC, ARC Commander & DataHUB | hands-on with dummy data
+Morning | Tech-check (Installation) - Intro ARC, ARC Commander & DataHUB - hands-on with dummy data
 Lunch | *tbd* :hamburger:
-Afternoon | Discuss / assign projects | Start creating ARCs
+Afternoon | Discuss / assign projects - Start creating ARCs
 Evening | *tbd* :tropical_drink:
 
 ### Day 2
 
 Time | Content
 --- | ---
-Morning | Present project status | Intro Swate | hands-on with dummy data
+Morning | Present project status - Intro Swate - hands-on with dummy data
 Lunch | *tbd* :pizza: 
-Afternoon | - Annotate experimental data | Start creating ARCs
+Afternoon | Annotate experimental data - Start creating ARCs
 Evening | *tbd* :beers:
 
 ## Volunteers
