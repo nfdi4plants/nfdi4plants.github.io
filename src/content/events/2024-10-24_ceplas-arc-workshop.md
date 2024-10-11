@@ -13,13 +13,11 @@ location:
   url: https://www.ceplas.eu/en/contact/how-to-get-there
 image: ~/assets/images/events/ceplas-ARCs.drawio.png
 tutors:
-  # - <a href="github.com/brilator">Dominik Brilhaus</a> (<a href="https://www.google.de">CEPLAS</a>)
-  # - Sabrina Zander (MibiNet)
-  - <a href="http://localhost:4321/events/2024-10-24_ceplas-arc-workshop#tech-check">authors</a>
-  - <a href="http://localhost:4321/events/2024-10-24_ceplas-arc-workshop#tech-check">affiliations</a>
+  - Dominik Brilhaus (<a href="https://www.ceplas.eu/en/research/data-science-and-data-management">CEPLAS Data</a>)
+  - Sabrina Zander (<a href="https://www.sfb1535.hhu.de/projects/research-area-z/z03">MibiNet</a>)
 organizer:
   name: Dominik Brilhaus
-  affiliation: CEPLAS Data
+  affiliation: CEPLAS
   url: https://www.ceplas.eu/en/research/data-science-and-data-management
 registration:
     description: 'First-come-first-serve. Members of CEPLAS have priority. Everyone else is welcome, if seats are available.' 
