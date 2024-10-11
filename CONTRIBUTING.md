@@ -4,6 +4,33 @@ Independent of the type of contribution you want to make, make sure to first und
 
 Then, we have dedicated sections for [content creators](#for-content-creators) and [developers](#for-developers).
 
+- [General Page and Content Structure](#general-page-and-content-structure)
+  - [Page structure](#page-structure)
+  - [Content structure](#content-structure)
+- [For Content Creators](#for-content-creators)
+  - [Mainpage Cards](#mainpage-cards)
+  - [Subpages](#subpages)
+    - [SubPage Configuration](#subpage-configuration)
+    - [SubPage Content](#subpage-content)
+  - [Articles](#articles)
+  - [Events](#events)
+  - [News](#news)
+  - [Publications](#publications)
+  - [Participants](#participants)
+- [For Developers](#for-developers)
+  - [Content](#content)
+    - [`src/content/mainpagecards`](#srccontentmainpagecards)
+    - [`src/content/subpage` and `src/content/subpageContent`](#srccontentsubpage-and-srccontentsubpagecontent)
+    - [`src/content/articles`](#srccontentarticles)
+    - [`src/content/events`](#srccontentevents)
+    - [`src/content/news`](#srccontentnews)
+    - [`src/content/publications`](#srccontentpublications)
+  - [Pages](#pages)
+- [Components](#components)
+  - [Tailwind + Daisy UI](#tailwind--daisy-ui)
+  - [Astro](#astro)
+
+
 ## General Page and Content Structure
 
 ### Page structure
