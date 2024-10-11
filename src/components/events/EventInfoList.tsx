@@ -24,7 +24,7 @@ export default function EventInfoList({event, additional}: Props) {
         <InlineIcon icon="tabler:calendar-time" className="text-xl"/>
         <span>
           {formatterDate.format(event.data.start) + " " + formatterTime.format(event.data.start)}
-          -
+          <span> – </span>
           {formatterDate.format(event.data.end) + " " + formatterTime.format(event.data.end)}
         </span>
       </li>
@@ -32,7 +32,7 @@ export default function EventInfoList({event, additional}: Props) {
       {event.data.tutors && <li className="flex items-center gap-2">
         <InlineIcon icon="tabler:user" className="text-xl" aria-label="Tutors" />
         <span>
-          <b>With </b> {event.data.tutors.join(', ')}
+          <b>With </b> {event.data.tutors.map((tutor, index) => <span dangerouslySetInnerHTML={{__html: index > 0 ? ", " + tutor : tutor}}></span>)}
         </span>
       </li>}
       {/* location */}
@@ -47,7 +47,7 @@ export default function EventInfoList({event, additional}: Props) {
       <li className="flex items-center gap-2">
         <InlineIcon icon="tabler:info-square-rounded" className="text-xl" aria-label="Info" />
         <span>
-          {event.data.category} - {event.data.mode}
+          {event.data.category} | {event.data.mode}
         </span>
       </li>
       {/* audience */}

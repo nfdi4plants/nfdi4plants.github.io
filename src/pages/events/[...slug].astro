@@ -90,8 +90,9 @@ const additionalMetadata: ({
             <span set:html={event.data.registration.description}></span>
           </p>
           {event.data.registration.seats && (
+            <h4 class="text-primary mb-0">Maximum number of participants</h4>
             <p class="text-lg">
-              <Icon name="tabler:armchair" class="inline" title="Seats"/> {event.data.registration.seats}
+               <Icon name="tabler:armchair" class="inline" title="Maximum number of participants"/> {event.data.registration.seats}
             </p>
           )}
           {event.data.registration.url && (

@@ -14,6 +14,8 @@ export enum URLS {
   ARCHIVE = "https://archive.nfdi4plants.org/communities/dataplant",
   ARCSEARCH = "https://arcregistry.nfdi4plants.org/isasearch",
 
+  SOCIAL_MASTODOON = "nfdi4plants@nfdi.social",
+  SOCIAL_BLUESKY = "https://bsky.app/profile/nfdi4plants.bsky.social",
   SOCIAL_TWITTER = "https://twitter.com/nfdi4plants",
   SOCIAL_GITHUB = "https://github.com/nfdi4plants",
   SOCIAL_YOUTUBE = "https://www.youtube.com/channel/UCrTBwQWOa0-aWYkwoY104Wg",

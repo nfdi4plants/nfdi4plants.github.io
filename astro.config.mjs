@@ -21,6 +21,9 @@ export default defineConfig({
   integrations: [tailwind(), icon({
     include: {
       tabler: ['*'],
+      'academicons' : [
+        'zenodo-square'
+      ],
       'flat-color-icons': [
         'template',
         'gallery',
