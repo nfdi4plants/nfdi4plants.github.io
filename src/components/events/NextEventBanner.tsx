@@ -1,16 +1,15 @@
 import type { CollectionEntry } from 'astro:content';
-import { sortByYear } from '~/util/EventUtil';
 import { InlineIcon } from '@iconify/react/dist/iconify.js';
+import { reducePeriodicEvents, formatterDate } from '~/util/EventUtil';
 
 interface Props {
   events: CollectionEntry<'events'>[];
 }
 
-
 export default function UpcomingEventBanner({events}: Props) {
-  const sortedEvents = sortByYear(events, (event) => new Date(event.data.start));
+  const reducedEvents = reducePeriodicEvents(events);
   //only future events
-  const upcomingEvents = sortedEvents.filter((event) => event.data.start > new Date());
+  const upcomingEvents = reducedEvents.filter((event) => event.data.when.start > new Date());
   const nextEvent = upcomingEvents[upcomingEvents.length - 1];
   if (!nextEvent) {
     return null;
@@ -33,7 +32,7 @@ export default function UpcomingEventBanner({events}: Props) {
         </span>
       <a href={"/events/" + nextEvent.slug} className="hover:!underline font-medium">
         <span className='sm:hidden'>More</span>
-        <span className='hidden sm:inline'>{nextEvent.data.title} <span className='hidden md:inline'>~ {nextEvent.data.start.toDateString()}</span> </span>
+        <span className='hidden sm:inline'>{nextEvent.data.title} <span className='hidden md:inline'>~ {formatterDate.format(nextEvent.data.when.start)}</span> </span>
         <span> »</span>
       </a>
     </section>

@@ -48,56 +48,56 @@ const nestedHeadings = buildNestedHeadings(headings);
 const noInPageNavigation = nestedHeadings.length === 0;
 ---
 
-<script define:vars={{hasContentBefore}}>
+<script is:inline define:vars={{hasContentBefore}}>
 
-  document.addEventListener("DOMContentLoaded", function () {
-      const contentContainerId = hasContentBefore ? 'md-layout-center' : 'md-content';
-      const marker = document.getElementById('nav-marker');
-      const mdContent = document.getElementById(contentContainerId);
-      const headers = mdContent?.querySelectorAll('h1, h2, h3, h4, h5, h6');  // Select all headers
-  
-      if (!headers) return;
-  
-      const OFFSET = 100;  // Offset for considering a header 'in view'
-  
-      function updateMarker(linkId) {
-  
-          const link = document.getElementById(linkId);
-          const container = document.getElementById("in-page-nav-container");
-          if (!link || !container || !marker) return;
-          const containerRect = container.getBoundingClientRect();
-          const rect = link.getBoundingClientRect();
-  
-          // Adjust the marker's position and size relative to the link
-          marker.style.top = (rect.top - containerRect.top + 4) + 'px';
-          marker.style.height = (rect.height + 8) + 'px';
-      }
-  
-      // Function to find the active header and move the marker accordingly
-      function handleScroll() {
-          let activeLinkId = '';
-          headers?.forEach(header => {
-              const rect = header.getBoundingClientRect();
-              const headerId = header.id;
-              const navLinkId = `${headerId}-nav`;
-              // If the header's top is in the viewport with some offset (50px from top)
-              if (rect.top <= OFFSET && rect.bottom >= OFFSET) {
-                  activeLinkId = navLinkId;
-              }
-          });
-  
-          if (activeLinkId) {
-              updateMarker(activeLinkId);
-          }
-      }
-  
-      // Initially set the marker to the first navigation link
-      updateMarker(`${headers[0].id}-nav`);
-  
-      // Listen for scroll events
-      window.addEventListener('scroll', handleScroll);
-  });
-  </script>
+document.addEventListener("DOMContentLoaded", function () {
+    const contentContainerId = hasContentBefore ? 'md-layout-center' : 'md-content';
+    const marker = document.getElementById('nav-marker');
+    const mdContent = document.getElementById(contentContainerId);
+    const headers = mdContent?.querySelectorAll('h1, h2, h3, h4, h5, h6');  // Select all headers
+
+    if (!headers) return;
+
+    const OFFSET = 100;  // Offset for considering a header 'in view'
+
+    function updateMarker(linkId) {
+
+        const link = document.getElementById(linkId);
+        const container = document.getElementById("in-page-nav-container");
+        if (!link || !container || !marker) return;
+        const containerRect = container.getBoundingClientRect();
+        const rect = link.getBoundingClientRect();
+
+        // Adjust the marker's position and size relative to the link
+        marker.style.top = (rect.top - containerRect.top + 4) + 'px';
+        marker.style.height = (rect.height + 8) + 'px';
+    }
+
+    // Function to find the active header and move the marker accordingly
+    function handleScroll() {
+        let activeLinkId = '';
+        headers?.forEach(header => {
+            const rect = header.getBoundingClientRect();
+            const headerId = header.id;
+            const navLinkId = `${headerId}-nav`;
+            // If the header's top is in the viewport with some offset (50px from top)
+            if (rect.top <= OFFSET && rect.bottom >= OFFSET) {
+                activeLinkId = navLinkId;
+            }
+        });
+
+        if (activeLinkId) {
+            updateMarker(activeLinkId);
+        }
+    }
+
+    // Initially set the marker to the first navigation link
+    updateMarker(`${headers[0].id}-nav`);
+
+    // Listen for scroll events
+    window.addEventListener('scroll', handleScroll);
+});
+</script>
   
 
 <Layout title={frontmatter.title}>

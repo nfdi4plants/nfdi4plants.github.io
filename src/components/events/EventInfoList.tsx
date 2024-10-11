@@ -1,10 +1,5 @@
-import type { CollectionEntry } from 'astro:content';
 import { InlineIcon } from '@iconify/react';
-import { type ReducedEvent } from '~/util/EventUtil';
-
-const formatterDate = new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', year: "numeric", month: "2-digit", day: "2-digit"});
-// const formatterDate = new Intl.DateTimeFormat('en-US', { day: '2-digit', month: '2-digit', year: 'numeric' });
-const formatterTime = new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', hour: '2-digit', minute: '2-digit' });
+import { type ReducedEvent, formatterDate, formatterTime } from '~/util/EventUtil';
 
 interface AdditionalListElements {
   __html: string;
@@ -34,15 +29,18 @@ export default function EventInfoList({event, additional}: Props) {
       {event.data.tutors && <li className="flex items-center gap-2">
         <InlineIcon icon="tabler:user" className="text-xl" aria-label="Tutors" />
         <span>
-          <b>With </b> {event.data.tutors.map((tutor, index) => <span dangerouslySetInnerHTML={{__html: index > 0 ? ", " + tutor : tutor}}></span>)}
+          <b>With </b> {event.data.tutors.map((tutor, index) => <span key={index} dangerouslySetInnerHTML={{__html: index > 0 ? ", " + tutor : tutor}}></span>)}
         </span>
       </li>}
       {/* location */}
       <li className="flex items-center gap-2">
         <InlineIcon icon="tabler:map-pin" className="text-xl" aria-label="Location" />
         <span>
-          <span dangerouslySetInnerHTML={{ __html: event.data.location.short}}></span> 
-          {event.data.location.url && <sup><a href={event.data.location.url}>More</a></sup>}
+          {
+            event.data.location.url 
+              ? <a href={event.data.location.url} dangerouslySetInnerHTML={{ __html: event.data.location.short}}></a>
+              : <span dangerouslySetInnerHTML={{ __html: event.data.location.short}}></span> 
+          }
         </span>
       </li>
       {/* general info: modus, category */}
@@ -60,11 +58,11 @@ export default function EventInfoList({event, additional}: Props) {
         </span>
       </li>
       {/* registration */}
-      {event.data.registration && event.data.registration.url &&
+      {event.data.registration && (event.data.registration.url || event.data.registration.deadline) &&
         <li className="flex items-center gap-2">
           <InlineIcon icon="tabler:clipboard-list" className="text-xl" aria-label="Registration" />
           <span>
-            {event.data.registration.url && <a href={event.data.registration.url}>Register</a>}
+            {event.data.registration.url && <a href={event.data.registration.url} className="underline">Register</a>}
             {event.data.registration.deadline && <span> until {formatterDate.format(event.data.registration.deadline)}</span>}
           </span>
         </li>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { CollectionEntry } from 'astro:content';
-import {sortByYear, groupByYear, reducePeriodicEvents } from '~/util/EventUtil.ts';
+import {sortByYear, groupByYear, reducePeriodicEvents, type ReducedEvent } from '~/util/EventUtil.ts';
 import EventInfoList from './EventInfoList.tsx';
 
 interface Props {
@@ -49,7 +49,7 @@ function ControlButtons({label, options, selectedOption, setOption}: ControlButt
   )
 }
 
-function EventCard (event: CollectionEntry<'events'>) {
+function EventCard (event: ReducedEvent) {
   return (
     <div className="shadow border p-3 lg:p-5 rounded lg:max-w-5xl xl:max-w-6xl" key={"event-" + event.slug}>
       <div className={"grid lg:grid-rows-1 gap-2 lg:gap-4 lg:grid-cols-2 " + (event.data.image ? 'lg:grid-cols-2' : '')}>
@@ -72,7 +72,7 @@ function EventCard (event: CollectionEntry<'events'>) {
 
 export default function EventList( {events: rawEvents}: Props ) {
   let now = new Date();
-  let events = reducePeriodicEvents(rawEvents);
+  let events: ReducedEvent[] = reducePeriodicEvents(rawEvents);
   
   const upcomingEvents = sortByYear(events.filter((event) => {
     return event.data.when.start >= now;
@@ -104,7 +104,7 @@ export default function EventList( {events: rawEvents}: Props ) {
     category === config.category ? setConfig({...config, category: null}) : setConfig({...config, category: category}) 
   }
 
-  const filterEvents = (event: CollectionEntry<'events'>) => {
+  const filterEvents = (event: ReducedEvent) => {
     if (config.mode && event.data.mode !== config.mode) return false;
     if (config.audience && !(event.data.audience as string[]).includes(config.audience)) return false;
     if (config.category && event.data.category !== config.category) return false;
