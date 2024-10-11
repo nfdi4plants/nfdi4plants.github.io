@@ -17,7 +17,7 @@ const eventsCollection = defineCollection({
     title: z.string(),
     date: z.date(), 
     excerpt: z.string().max(200),
-    category: z.enum(['Conference', 'Hackathon', 'Webinar', 'Training']), // There might be more
+    category: z.enum(['Conference', 'Hackathon', 'Webinar', 'Training', 'Meeting']), // There might be more
     mode: z.enum(['On-site', 'Online', 'Hybrid']), // There might be more
     audience: z.enum(['Users', 'DataStewards', 'Developers', 'Everyone']).array(), // There might be more
     start: z.date(),
