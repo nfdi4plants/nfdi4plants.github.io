@@ -25,3 +25,7 @@ registration:
 ## Dates
 
 We meet every second Wednesday, starting September 18th from 9.00-10.00 via Microsoft Teams
+
+## Support chat
+
+Feel free to join the chat via our Element room: #datastewardexchange:matrix.uni-freiburg.de. Directly contact us there for data stewardship, to raise questions, and to discuss topics for upcoming meetings with us.
