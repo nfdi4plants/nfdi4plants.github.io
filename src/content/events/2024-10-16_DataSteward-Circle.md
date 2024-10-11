@@ -18,7 +18,9 @@ registration:
 
 ## Topics
 
-There will be an update on new developments in tools and services (~ 10 min) as well as regarding templates and terminology (~ 10 min). For the rest of the time, we will have a look at ARCs and how research data is documented in them. One person will present their current work and how they went about in structuring the ARC.
+- ARCification: How to document research data in an ARC
+- Technology: Short updates on new developments in tools and services
+- Annotation support: Short updates on template and terminology development
 
 ## Dates
 
