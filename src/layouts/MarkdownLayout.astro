@@ -48,17 +48,19 @@ const nestedHeadings = buildNestedHeadings(headings);
 const noInPageNavigation = nestedHeadings.length === 0;
 ---
 
-<script>
+<script define:vars={{hasContentBefore}}>
+
   document.addEventListener("DOMContentLoaded", function () {
+      const contentContainerId = hasContentBefore ? 'md-layout-center' : 'md-content';
       const marker = document.getElementById('nav-marker');
-      const mdContent = document.getElementById('md-content');
+      const mdContent = document.getElementById(contentContainerId);
       const headers = mdContent?.querySelectorAll('h1, h2, h3, h4, h5, h6');  // Select all headers
   
       if (!headers) return;
   
       const OFFSET = 100;  // Offset for considering a header 'in view'
   
-      function updateMarker(linkId: string) {
+      function updateMarker(linkId) {
   
           const link = document.getElementById(linkId);
           const container = document.getElementById("in-page-nav-container");

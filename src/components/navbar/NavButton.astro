@@ -2,13 +2,23 @@
 
 interface Props {
   hasChildren?: boolean;
+  href?: string
+  props?: any
 }
 
-const { hasChildren = false } = Astro.props;
+const { hasChildren = false, href, props } = Astro.props;
+
+let HtmlTag;
+
+if (href) {
+  HtmlTag = 'a';
+} else {
+  HtmlTag = 'div';
+}
 
 ---
 
-<div tabindex="0" role="button" class="h-[3rem] flex items-center px-2 transition-colors duration-300 hover:bg-base-300 hover:text-base-content">
+<HtmlTag tabindex="0" role="button" class="h-[3rem] flex items-center px-2 transition-colors duration-300 hover:bg-base-300 hover:text-base-content" href={href && href} {...props}>
   <slot></slot>
   {hasChildren && (
     <svg
@@ -25,4 +35,4 @@ const { hasChildren = false } = Astro.props;
       />
     </svg>
   )}
-</div>
+</HtmlTag>
