@@ -1,5 +1,6 @@
 ---
 import {type RecursiveMenu} from '~/types';
+import { Icon } from 'astro-icon/components';
 
 interface Props {
   menu: RecursiveMenu | RecursiveMenu[];
@@ -17,12 +18,15 @@ const menuArray = Array.isArray(menu) ? menu : [menu];
 
 <ul class:list={[className]} class="lg:min-w-max" tabindex="0">
   {menuArray.map((entry: RecursiveMenu) => (
-    <li>
-      {entry.children ? (
+    <li class="flex-row">
+      <span class="w-full">
+        { entry.icon && <Icon name={entry.icon} class="w-4 h-4 !text-secondary inline"></Icon>} 
         <a href={entry.slug} class:list={[{"underline": (currentPathWithoutTrailingBackslash === entry.slug)}, "decoration-primary"]}>{entry.title}</a>
+      </span>
+      {entry.children ? (
         <Astro.self menu={entry.children} isOpen={isOpen} class:list={[className]}/>
       ) : (
-        <a href={entry.slug} class:list={[{"underline": (currentPathWithoutTrailingBackslash === entry.slug)}, "decoration-primary"]}>{entry.title}</a>
+        null
       )}
     </li>
   ))}

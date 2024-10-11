@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import Layout from '~/layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components'
-import {groupByYear} from '~/util/GroupByYear';
+import {groupByYear} from '~/util/EventUtil';
 
 const newsCollection = await getCollection('news')
 

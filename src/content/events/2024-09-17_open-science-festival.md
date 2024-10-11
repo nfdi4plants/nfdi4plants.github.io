@@ -1,14 +1,13 @@
 ---
-date: 2024-09-17
 title: Open Science Festival
 mode: On-site
 category: Conference
 excerpt: 'Join the Open Science Festival in Mainz for talks, workshops, and networking. DataPLANT will be at the NFDI booth. Register now!'
-start: 2024-09-17
-end: 2024-09-18
+when:
+  start: 2024-09-17
+  end: 2024-09-18
 image: ~/assets/images/events/conference-banner_open-science_2.png
-audience:
-  - Everyone
+audience: ['Users', 'DataStewards', 'Developers']
 organizer: 
   affiliation: Rhine-Main Universities & Johannes Gutenberg University Mainz
 location: 

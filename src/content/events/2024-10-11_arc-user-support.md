@@ -1,6 +1,5 @@
 ---
 title: ARC User Meeting
-date: 2024-10-11
 category: Webinar
 audience: [Users]
 excerpt: 'With this monthly ARC user meeting we try to regularly answer questions, demonstrate tools and services or discuss data management issues.'

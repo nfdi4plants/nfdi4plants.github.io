@@ -3,6 +3,7 @@ import type { HTMLAttributes, ImageMetadata } from 'astro/types';
 
 export interface RecursiveMenu {
   title: string;
+  icon?: string;
   slug?: string;
   children?: RecursiveMenu[];
 }

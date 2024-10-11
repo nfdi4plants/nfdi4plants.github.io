@@ -14,16 +14,22 @@ import { glob } from 'glob'
 // ----------------------------------------------------- Domain model -----------------------------------------------------
 // type representing participants.csv
 type Participant = {
-    Name: string;
     Title: string;
-    Zusatz: string;
-    Link: string;
-    Affiliation: string;
+    Name: string;
     Institution_Name: string;
-    Institution_Link: string;
+    Affiliation: string;
+    Link: string;
     City: string;
     Role: string;
-    Project: string
+};
+
+// type representing projects.csv
+type Project = {
+    Name: string;
+    Institution_Name: string;
+    Link: string;
+    City: string;
+    Role: string;
 };
 
 // type representing places.csv
@@ -32,11 +38,10 @@ type Place = {
     Latitude: number;
     Longitude: number;
 };
-
-// type representing projects.csv
-type Project = {
+// type representing institutions.csv
+type Institution = {
     Name: string;
-    Institution_Name: string;
+    Link: string
 };
 
 // holds tooltip data for tippy.js
@@ -51,7 +56,7 @@ type TippyData = {
 // fully grouped participant and project data by place, then institution
 type LocalizedGroup = {
     place: string;
-    groupedInstitutions: [string, Participant[], Project[]][]
+    groupedInstitutions: [Institution, Participant[], Project[]][]
     longitude: number;
     latitude: number;
     type: string
@@ -61,11 +66,19 @@ type LocalizedGroup = {
 
 // Utility: format a person's name with their role
 const formatName = function(p: Participant) {
-    return p.Name + (p.Role ? ` (${p.Role})` : '');
+    return (p.Title ? `${p.Title} ` : '') + p.Name;
 };
 
 const createParticipantLink = function(p: Participant) {
     return `<a href="${p.Link}" class="text-olive-800">${formatName(p)}</a>`;
+};
+
+const createProjectLink = function(p: Project) {
+    return `<a href="${p.Link}" class="text-olive-800">${p.Name}</a>`;
+};
+
+const createInstitutionLink = function(i: Institution) {
+    return `<a class="text-lg text-olive-800" href="${i.Link}">${i.Name}</a>`;
 };
 
 // Utility: make an HTML list with a heading (for People and Projects)
@@ -78,16 +91,13 @@ const makeList = function(heading: string, entries: string []) {
 };
 
 // Combine data for each institution (people + projects) for tippy tooltips
-function combineInstitutionData(institution: string, people: Participant[], projects: Project []) {
-
-    let peopleList = people.map(formatName);
-    let projectList = projects.map(p => p.Name);
+function combineInstitutionData(institution: Institution, people: Participant[], projects: Project []) {
 
     // Show the institution name as a header (h4), and then lists of people and projects
     const combinedEntries = [
-        `<h1 class="title text-lg text-olive-800">${institution}</h1>`,  // Display institution name as a header
-        makeList('People', peopleList),
-        makeList('Projects', projectList)  // Only show Projects if they exist
+        `${createInstitutionLink(institution)}`,
+        makeList('People', people.map(p => createParticipantLink(p))),
+        makeList('Projects', projects.map(p => createProjectLink(p)))
     ];
     return combinedEntries.join('');
     }
@@ -100,13 +110,24 @@ function placeClass(entries: Participant []) {
 
 // ----------------------------------------------------- Data import -----------------------------------------------------
 const participants_path = await glob("src/assets/data/participants.csv")
-const participants_headers = ["Title", "Zusatz", "Link", "Name", "Affiliation", "Institution_Link", "Institution_Name", "City", "Role", "Project"]
+const participants_headers = ["Title","Name","Institution_Name","Affiliation","Link","City","Role"]
 const participants_file_content  = fs.readFileSync(participants_path[0], { encoding: 'utf8', flag: 'r' });
 
 const participants: Participant[] = 
     parse(participants_file_content, {
         delimiter: ',',
         columns: participants_headers,
+    })
+
+const projects_path = await glob("src/assets/data/projects.csv");
+const projects_headers = ["Name","Institution_Name","Link","City","Role"]
+const projects_file_content  = fs.readFileSync(projects_path[0], { encoding: 'utf8', flag: 'r' });
+
+const projects: Project[] =
+    parse(projects_file_content, {
+        delimiter: ',',
+        columns: projects_headers,
+        skip_empty_lines: true
     })
 
 const places_path = await glob("src/assets/data/places.csv")
@@ -120,13 +141,21 @@ const places: Place[] =
         skip_empty_lines: true
     })
 
-// const projects_path = path.resolve(__dirname, "../assets/data/projects.csv");
-// const projects_headers = []
-// const projects_file_content  = fs.readFileSync(places_path, { encoding: 'utf8', flag: 'r' });
-const projects: Project[] = [] // data not pushed yet
+const institutions_path = await glob("src/assets/data/institutions.csv")
+const institutions_headers = ["Name", "Link"]
+const institutions_file_content  = fs.readFileSync(institutions_path[0], { encoding: 'utf8', flag: 'r' });
+
+const institutions: Institution[] = 
+    parse(institutions_file_content, {
+        delimiter: ',',
+        columns: institutions_headers,
+        skip_empty_lines: true
+    })
 
 places.shift(); // remove header row, idk why the parser includes it 
 participants.shift(); // remove header row, idk why the parser includes it
+projects.shift(); // remove header row, idk why the parser includes it
+institutions.shift(); // remove header row, idk why the parser includes it
 
 const germany_path = await glob("src/assets/data/germany.json")
 const germany = JSON.parse(fs.readFileSync(germany_path[0], { encoding: 'utf8', flag: 'r' }))
@@ -134,25 +163,23 @@ const germany_features = topojson.feature(germany, germany.objects.states)
 
 // ----------------------------------------------------- Data processing -----------------------------------------------------
 
-// Group projects by institution as well
-const projectsByInstitution = d3.group(projects, (p: any) => p.Institution_Name);
-// Group people by institution
-// const peopleByInstitution = d3.group(participants, (p: any) => p.Institution_Name);
-// place lookup index
-const placeIndex = d3.index(places, (p: any) => p.Name);
+
+const projectsByInstitution = d3.group(projects, p => p.Institution_Name);
+const placeIndex = d3.index(places, p => p.Name);
+const institutionIndex = d3.index(institutions, i => i.Name);
 
 const localizedGroups : LocalizedGroup [] = 
     d3
-    .groups(participants, (p: any) => p.City)
-    .map(([place, people]: any[]) => {
+    .groups(participants, (p) => p.City)
+    .map(([place, people]) => {
         return {
             place: place,
             groupedInstitutions: 
                 d3
-                .groups(people, (p: any) => p.Institution_Name)
-                .map(([inst, people]: any[]) => {
+                .groups(people, (p) => p.Institution_Name)
+                .map(([inst, people]) => {
                     const projects = projectsByInstitution.get(inst) || []; // Get projects for this institution, or empty array if none
-                    return [inst, people, projects]
+                    return [institutionIndex.get(inst)!, people, projects]
                 }),
             longitude: placeIndex.get(place)!.Longitude,
             latitude: placeIndex.get(place)!.Latitude,
@@ -166,7 +193,7 @@ const geo_places : TippyData [] =
         return {
             name: lg.place,
             info: 
-                `<h1 class="title underline text-2xl text-olive-800">${lg.place}</h1>` +
+                `<h1 class="title underline text-2xl">${lg.place}</h1>` +
                 lg.groupedInstitutions.map(([inst, participants, projects]) => {
                     return combineInstitutionData(inst, participants, projects);
                 })
@@ -274,39 +301,62 @@ svg
 
         {
             localizedGroups
+            .sort((a, b) => a.place.localeCompare(b.place))
             .map((lg) => (
                 <div class ="card glass shadow-xl p-6 m-4">
                     <div class ="card-content">
                         <h1 class="card-title anchor text-darkblue underline font-bold text-3xl mb-4 anchor"><a href={"#" + lg.place} class="anchor-link">{lg.place}</a></h1>
-                        <ul class="list-inside list-none pl-6">
-                            {
-                                lg.groupedInstitutions
-                                .map(([institution, participants, projects]) => (
-                                    <li>
-                                        <p class="text-2xl mb-2">{institution}</p>
-                                        <ul class="list-inside list-none pl-6">
-                                            <li>
-                                                <p class="text-xl mb-2">Participants</p>
-                                                <ul class="list-inside list-disc pl-6">
-                                                    {participants.map(p => <li set:html={createParticipantLink(p)}></li>)}
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        {
-                                            projects.length > 0 && 
-                                            <ul class="list-inside list-none pl-6">
-                                                <li>
-                                                    <p class="text-xl mb-2">Projects</p>
-                                                    <ul class="list-inside list-disc pl-6">
-                                                        {projects.map(p => <li>{p.Name}</li>)}
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        }
-                                    </li>
-                                ))
-                            }
-                        </ul>
+                        {
+                            lg.groupedInstitutions
+                            .map(([institution, participants, projects]) => (
+                                <h2 class="text-2xl mb-4 font-semibold text-olive-800"><a href={institution.Link}>{institution.Name}</a></h2>
+                                <h3 class="text-xl mb-4 font-semibold">Participants</h3>
+                                <table class="table table-fixed table-zebra table-md mb-4">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Role</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    {
+                                        participants
+                                        .sort((a, b) => a.Role.localeCompare(b.Role))
+                                        .reverse()
+                                        .map(p => 
+                                            <tr>
+                                                <td><a class="text-olive-700" href={p.Link}>{formatName(p)}</a></td>
+                                                <td>{p.Role}</td>
+                                            </tr>
+                                        )
+                                    }
+                                    </tbody>
+                                </table>
+                                <h3 class="text-xl mb-4 font-semibold">Projects</h3>
+                                <table class="table table-fixed table-zebra table-md mb-4">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Role</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    {
+                                        projects
+                                        .sort((a, b) => a.Role.localeCompare(b.Role))
+                                        .reverse()
+                                        .map(p => 
+                                            <tr>
+                                                <td><a class="text-olive-700" href={p.Link}>{p.Name}</a></td>
+                                                <td>{p.Role}</td>
+                                            </tr>
+                                        )
+                                    }
+                                    </tbody>
+                                </table>
+                            ))
+                        }
+
                     </div>
                 </div>
             ))
@@ -314,16 +364,6 @@ svg
     </div>
     <style is:global>
         /* Inline styles for map, might refactor */
-        #dataplant-map a:link {
-            color: #C2E5CD;
-        }
-        #dataplant-map a:hover {
-            color: #1FC2A7;
-        }
-        #dataplant-map a:visited {
-            color: #1FC2A7;
-        }
-        
         #dataplant-map {
             margin: 0 auto;
             overflow: visible;
@@ -354,7 +394,7 @@ svg
         }
         .tippy-box[data-theme~="custom"] {
             margin: 2rem 2rem 1rem 1rem;
-            background-color: rgba(255,255,255,0.85);
+            background-color: rgba(255,255,255,0.95);
             color: black;
             border: 1px solid #137464;
             border-radius: 15;

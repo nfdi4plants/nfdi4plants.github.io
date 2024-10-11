@@ -1,10 +1,10 @@
 ---
-date: 2024-10-24
 title: ARCify your research project
 category: Training
 excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
-start: 2024-10-24T09:00:00
-end: 2024-10-24T12:00:00
+when:
+  start: 2024-10-24T09:00:00
+  end: 2024-10-24T12:00:00
 mode: On-site
 audience: [Users, DataStewards]
 location:
@@ -13,11 +13,11 @@ location:
   url: https://www.hhu.de/fileadmin/redaktion/Oeffentliche_Medien/Karten-Anfahrtplaene-HHU/Infocenter_Lage_und_Anreise/HHU_Campusplan.jpg
 image: ~/assets/images/events/ceplas-ARCs.drawio.png
 tutors:
-  - Dominik Brilhaus (CEPLAS)
-  - Sabrina Zander (MibiNet)
+  - Dominik Brilhaus (<a href="https://www.ceplas.eu/en/research/data-science-and-data-management">CEPLAS Data</a>)
+  - Sabrina Zander (<a href="https://www.sfb1535.hhu.de/projects/research-area-z/z03">MibiNet</a>)
 organizer:
   name: Dominik Brilhaus
-  affiliation: CEPLAS Data
+  affiliation: CEPLAS
   url: https://www.ceplas.eu/en/research/data-science-and-data-management
 registration:
     description: 'First-come-first-serve. Members of CEPLAS have priority. Everyone else is welcome, if seats are available.' 

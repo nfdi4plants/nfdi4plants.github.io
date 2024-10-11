@@ -1,10 +1,10 @@
 ---
 title: MibiNet CEPLAS – DataPLANT Tool Demonstration
-date: 2024-04-11
 category: Training
 excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
-start: 2024-04-11T09:00:00
-end: 2024-04-11T13:00:00
+when:
+  start: 2024-04-11T09:00:00
+  end: 2024-04-11T13:00:00
 mode: On-site
 audience: [Users]
 location:
