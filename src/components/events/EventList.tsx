@@ -144,7 +144,7 @@ export default function EventList( {events}: Props ) {
               <h1 className="text-5xl lg:text-7xl text-bold self-center mb-2">{year}</h1>
               <div className="grid grid-cols-1 gap-4 lg:gap-10">
                 {
-                  events.map((event) => (
+                  events.filter(filterEvents).map((event) => (
                     <EventCard {...event} key={"card-" + event.slug}/>
                   ))
                 }
