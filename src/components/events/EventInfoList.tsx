@@ -1,9 +1,9 @@
 import type { CollectionEntry } from 'astro:content';
 import { InlineIcon } from '@iconify/react';
 
-const formatterDate = new Intl.DateTimeFormat('en-US', { year: "numeric", month: "long", day: "numeric"});
+const formatterDate = new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Berlin', year: "numeric", month: "numeric", day: "numeric"});
 // const formatterDate = new Intl.DateTimeFormat('en-US', { day: '2-digit', month: '2-digit', year: 'numeric' });
-const formatterTime = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute: '2-digit' });
+const formatterTime = new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Berlin', hour: '2-digit', minute: '2-digit' });
 
 interface AdditionalListElements {
   __html: string;
