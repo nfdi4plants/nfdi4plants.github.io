@@ -4,18 +4,23 @@ import Menu from './navbar/Menu.astro';
 import {URLS} from '~/statics';
 import {Image} from 'astro:assets'
 import logo from '~/assets/images/DataPLANT_logo_bg_transparent.svg';
+import dfgLogo from '~/assets/images/branding/dfg_logo_englisch_blau_en.jpg';
 ---
 
 <footer class="footer bg-base-300 text-base-content p-10">
   <div class="footer md:grid-rows-2 gap-y-8">
     <aside>
-      <Image src={logo} alt="logo" height="80"></Image>
+      <Image src={logo} alt="logo" height="80"></Image>        
       <h4 class="footer-title">
         DataPLANT - Democratization of plant research made easy.
       </h4>
       <p>DataPLANT is part of <a href={URLS.NFDI} class="text-info">NFDI</a>.</p>
       <p>This website is developed and maintained by members of DataPLANT</p>
       <!-- <div class="divider divider-base-content w-full"></div> -->
+      <div>
+        <em>Funded by</em>
+        <Image src={dfgLogo} alt="DFG Logo" height="40" class="h-[40px]"></Image>
+      </div>
     </aside>
     <nav>
       <h4 class="footer-title">Legal</h4>
@@ -68,7 +73,6 @@ import logo from '~/assets/images/DataPLANT_logo_bg_transparent.svg';
           </a>
       </div>
     </nav>
-
   </div>
   <nav>
     <h6 class="footer-title">Navigation</h6>
