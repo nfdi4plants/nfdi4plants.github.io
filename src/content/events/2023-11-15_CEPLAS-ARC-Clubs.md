@@ -10,7 +10,6 @@ when:
 location:
   short: HHU, UoC
   address: HHU, UoC
-#   url: https://www.ceplas.eu/en/contact/how-to-get-there
 tutors:
   - Dominik Brilhaus (CEPLAS)
 organizer:
@@ -23,8 +22,8 @@ image: ~/assets/images/events/ARCClub.drawio.png
 
 ## Goals
 
-- Move existing datasets into [ARCs](./../../../implementation/AnnotatedResearchContext.html)
-- Share them via the [DataHUB](./../../../implementation/DataHub.html)
+- Move existing datasets into [ARCs](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html)
+- Share them via the [DataHUB](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/DataHub.html)
   - This can be done privately, group-internally or publicly
 - First few steps into the ARC ecosystem
   - We will not produce "perfect" or "final" ARCs
@@ -110,5 +109,5 @@ To make this as smooth as possible and create an enjoyable atmosphere, we ideall
 - multi-outlet power strips
 - a list of putative datasets or projects to be ARCified
   - discuss with the PI or participants
-- a <a href="./../../../DataHUB-Manual/datahub-CreateGroup.html" target="_blank">DataHUB user group</a> for your lab
+- a <a href="https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/DataHUB-Manual/datahub-CreateGroup.html" target="_blank">DataHUB user group</a> for your lab
   - (optional) invite members from your lab
