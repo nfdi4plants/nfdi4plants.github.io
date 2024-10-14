@@ -11,7 +11,7 @@ body:
   - type: input
     id: description
     attributes:
-      label: Description (short)
+      label: Description
       description: Max. 200 signs.
     validations:
       required: true
@@ -50,26 +50,26 @@ body:
       render: markdown
     validations:
       required: true
-  - type: input
-    id: organizer-name
+  - type: textarea
+    id: organizer
     attributes:
       label: Organizer
-      description: Name of responsible person
+      description: Details of responsible person
+      value: |
+        organizer:
+          name: Mrs. Organize-A-Lot
+          affiliation: DataPLANT
+          url: https://www.nfdi4plants.org
     validations:
       required: false
-  - type: input
-    id: organizer-affiliation
-    attributes:
-      label: Organizer
-      description: Affiliation of responsible person
-      placeholder: DataPLANT
-    validations:
-      required: false
-  - type: input
+  - type: textarea
     id: tutors
     attributes:
-      label: Tutor(s)
-      description: Name(s) of tutor(s)
+      label: Tutors
+      description: List of tutors
+      value: |
+        - Sir Tutor-A-Lot (<a href="https://www.nfdi4plants.org">DataPLANT</a>)
+        - Edna Krabappel          
     validations:
       required: false
   - type: dropdown
@@ -126,6 +126,7 @@ body:
     id: location-name
     attributes:
       label: Location
+      description: 50 signs maximum
       placeholder: Heinrich-Heine-University
   - type: input
     id: location-address
