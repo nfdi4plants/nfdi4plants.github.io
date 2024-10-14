@@ -16,6 +16,35 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - On-site
+        - Online
+        - Hybrid
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Conference
+        - Hackathon
+        - Webinar
+        - Training
+  - type: dropdown
+    id: audience
+    attributes:
+      label: audience
+      options:
+        - Users
+        - Data Stewards
+        - Developers
+        - Everyone
+      multiple: true
+    validations:
+      required: false
+  - type: dropdown
     id: recurrence
     attributes:
       label: Recurrence
@@ -72,68 +101,29 @@ body:
         - Edna Krabappel          
     validations:
       required: false
-  - type: dropdown
-    id: mode
+  - type: textarea
+    id: registration
     attributes:
-      label: Mode
-      options:
-        - On-site
-        - Online
-        - Hybrid
-  - type: dropdown
-    id: category
-    attributes:
-      label: Category
-      options:
-        - Conference
-        - Hackathon
-        - Webinar
-        - Training
-  - type: dropdown
-    id: audience
-    attributes:
-      label: audience
-      options:
-        - Users
-        - Data Stewards
-        - Developers
-        - Everyone
-      multiple: true
+      label: Registration
+      value: |
+        url: link to a registration form or a mailto-link (email adress)
+        description: add additional details to the registration
+        deadline: 2024-10-12
+        seats: Max. number of participants
+      render: markdown
     validations:
       required: false
-  - type: input
-    id: registration-url
-    attributes:
-      label: Registration url or contact
-      description: The URL can be a link to a regsitration site or a mailto-link.
-    validations:
-      required: false
-  - type: input
-    id: registration-deadline
-    attributes:
-      label: Registration deadline
-      description: Registration deadline date
-    validations:
-      required: false
-  - type: input
-    id: registration-seats
-    attributes:
-      label: Max. number of participants
-      placeholder: "12"
-    validations:
-      required: false
-  - type: input
-    id: location-name
+  - type: textarea
+    id: location
     attributes:
       label: Location
-      description: 50 signs maximum
-      placeholder: Heinrich-Heine-University
-  - type: input
-    id: location-address
-    attributes:
-      label: Location Address
-      placeholder: Room 22.07.U1.21, Heinrich-Heine-University, Universitätstr. 1, Düsseldorf 
-      description: location address, room
+      value: |
+        url: link to hybrid meeting or direactions (e.g. online map)
+        name: 50 signs max.
+        address: Street address and room
+      render: markdown
+    validations:
+      required: false
   - type: textarea
     id: detail
     attributes:
