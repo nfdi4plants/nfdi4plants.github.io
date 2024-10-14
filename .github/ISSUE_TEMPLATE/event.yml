@@ -12,7 +12,7 @@ body:
     id: description
     attributes:
       label: Description (short)
-      descritption: Max. 200 signs.
+      description: Max. 200 signs.
     validations:
       required: true
   - type: dropdown
@@ -30,19 +30,24 @@ body:
     attributes:
       label: When
       value: |
-      # Single event
-        start: 2024-10-24T09:00:00
-        end: 2024-10-24T12:00:00
-      # Multi event (consecutive days)
-        start: 2024-10-24T09:00:00
-        end: 2024-10-25T17:00:00
-      # Multi event (non-consecutive days)
+        # Single event
+          start: 2024-10-24T09:00:00
+          end: 2024-10-24T12:00:00
+
+        # Multi event (consecutive days)
+
+          start: 2024-10-24T09:00:00          
+          end: 2024-10-25T17:00:00
+
+        # Multi event (non-consecutive days)
+        
         - 
           start: 2024-10-24T09:00:00
           end: 2024-10-24T17:00:00
         - 
           start: 2024-10-31T09:00:00
           end: 2024-10-31T17:00:00
+      render: markdown
     validations:
       required: true
   - type: input
@@ -114,7 +119,7 @@ body:
     id: registration-seats
     attributes:
       label: Max. number of participants
-      placeholder: 12
+      placeholder: "12"
     validations:
       required: false
   - type: input
