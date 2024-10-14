@@ -3,30 +3,61 @@ description: Add an event (e.g. workshop, training or demo) to be listed on the 
 title: "[Add event]: "
 body:
   - type: input
-    id: start
-    attributes:
-      label: Event start time
-      description: e.g. 2024-10-24T09:00:00
-    validations:
-      required: true
-  - type: input
-    id: end
-    attributes:
-      label: Event end time
-      description: e.g. 2024-10-24T12:00:00
-    validations:
-      required: true
-  - type: input
     id: title
     attributes:
-      label: Event title
+      label: Title
     validations:
       required: true
   - type: input
-    id: organizer
+    id: description
     attributes:
-      label: Organizer(s)
-      description: Name(s) of contact person(s)
+      label: Description (short)
+      descritption: Max. 200 signs.
+    validations:
+      required: true
+  - type: dropdown
+      id: recurrence
+    attributes:
+      label: Recurrence
+      options:
+        - Single
+        - Periodic
+        - Series
+      description: |
+        Single = one-time event; Series = multiple-session event planned for non-consecutive days; Periodic = regularily repeating (e.g. Data Steward Circle)
+  - type: textarea
+    id: when
+    attributes:
+      label: When
+      value: |
+      # Single event
+        start: 2024-10-24T09:00:00
+        end: 2024-10-24T12:00:00
+      # Multi event (consecutive days)
+        start: 2024-10-24T09:00:00
+        end: 2024-10-25T17:00:00
+      # Multi event (non-consecutive days)
+        - 
+          start: 2024-10-24T09:00:00
+          end: 2024-10-24T17:00:00
+        - 
+          start: 2024-10-31T09:00:00
+          end: 2024-10-31T17:00:00
+    validations:
+      required: true
+  - type: input
+    id: organizer-name
+    attributes:
+      label: Organizer
+      description: Name of responsible person
+    validations:
+      required: false
+  - type: input
+    id: organizer-affiliation
+    attributes:
+      label: Organizer
+      description: Affiliation of responsible person
+      placeholder: DataPLANT
     validations:
       required: false
   - type: input
@@ -36,6 +67,23 @@ body:
       description: Name(s) of tutor(s)
     validations:
       required: false
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - On-site
+        - Online
+        - Hybrid
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Conference
+        - Hackathon
+        - Webinar
+        - Training
   - type: dropdown
     id: audience
     attributes:
@@ -51,7 +99,8 @@ body:
   - type: input
     id: registration-url
     attributes:
-      label: Registration link or contact
+      label: Registration url or contact
+      description: The URL can be a link to a regsitration site or a mailto-link.
     validations:
       required: false
   - type: input
@@ -64,29 +113,36 @@ body:
   - type: input
     id: registration-seats
     attributes:
-      label: Max. number of seats
+      label: Max. number of participants
+      placeholder: 12
     validations:
       required: false
-  - type: dropdown
-    id: mode
-    attributes:
-      label: Event mode
-      options:
-        - On-site
-        - Online
-        - Hybrid
-  - type: dropdown
-    id: category
-    attributes:
-      label: Event category
-      options:
-        - Conference
-        - Hackathon
-        - Webinar
-        - Training
   - type: input
-    id: location
+    id: location-name
     attributes:
-      label: Event location
-      description: location address, room // hybrid meeting link
+      label: Location
+      placeholder: Heinrich-Heine-University
+  - type: input
+    id: location-address
+    attributes:
+      label: Location Address
+      placeholder: Room 22.07.U1.21, Heinrich-Heine-University, Universitätstr. 1, Düsseldorf 
+      description: location address, room
+  - type: textarea
+    id: detail
+    attributes:
+      description: Use this free-text area to describe your event with more detail
+      label: Detail
+      value: |
+        # About this event
 
+        ...
+
+        # Teaching Materials
+
+        ... 
+  - type: input
+    id: image
+    attributes:
+      label: Image
+      description: add an image URL here or upload an image via comment to the issue
