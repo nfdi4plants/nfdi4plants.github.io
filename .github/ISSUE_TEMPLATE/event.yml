@@ -32,6 +32,7 @@ body:
         - Hackathon
         - Webinar
         - Training
+        - Meeting
   - type: dropdown
     id: audience
     attributes:
@@ -40,7 +41,6 @@ body:
         - Users
         - Data Stewards
         - Developers
-        - Everyone
       multiple: true
     validations:
       required: false
@@ -83,14 +83,19 @@ body:
     id: organizer
     attributes:
       label: Organizer
-      description: Details of responsible person
       value: |
+        organizer:
+          name: 
+          affiliation: 
+          url: 
+      description: |
+        Details of responsible person, e.g.
         organizer:
           name: Mrs. Organize-A-Lot
           affiliation: DataPLANT
           url: https://www.nfdi4plants.org
     validations:
-      required: false
+      required: true
   - type: textarea
     id: tutors
     attributes:
@@ -106,6 +111,11 @@ body:
     attributes:
       label: Registration
       value: |
+        url: 
+        description:
+        deadline:
+        seats:
+      description: |
         url: link to a registration form or a mailto-link (email adress)
         description: add additional details to the registration
         deadline: 2024-10-12
@@ -118,6 +128,10 @@ body:
     attributes:
       label: Location
       value: |
+        url:
+        name:
+        address: 
+      description: |
         url: link to hybrid meeting or direactions (e.g. online map)
         name: 50 signs max.
         address: Street address and room
