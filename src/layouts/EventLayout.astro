@@ -82,36 +82,15 @@ const additionalMetadata: ({
           <Icon name="tabler:location" class="inline text-primary" title="Location"/>
           Where?
         </h3>
-        <div class="grid md:grid-cols-2 auto-cols-fr not-prose gap-4 md:text-left">
-          <div>
-            <p>
-              <b>Name:</b>
-            </p>
-            <p>
-              <span>{event.data.location.name}</span>
-            </p>
-          </div>
+        <p>
+          <div>{event.data.location.name}</div>
           { event.data.location.url &&
-            <div>
-              <p>
-                <b>Find more!</b>
-              </p>
-              <p>
-                <a class="underline" href={event.data.location.url}>Click me</a>
-              </p>
-            </div>
+            <a class="underline !text-secondary" href={event.data.location.url}>Find more!</a>
           }
-          { event.data.location.address &&
-            <div class="md:col-span-2">
-              <p>
-                <b>Address:</b>
-              </p>
-              <p>
-                <span>{event.data.location.address}</span>
-              </p>
-            </div>
-          }
-        </div>
+        </p>
+        { event.data.location.address &&
+          <p set:html={event.data.location.address}></p>
+        }
       </div>
       {
         event.data.repeating && 
