@@ -116,7 +116,7 @@ body:
         deadline:
         seats:
       description: |
-        url: link to a registration form or a mailto-link (email adress)
+        url: link to a registration form or a mailto-link (email address)
         description: add additional details to the registration
         deadline: 2024-10-12
         seats: Max. number of participants
@@ -132,7 +132,7 @@ body:
         name:
         address: 
       description: |
-        url: link to hybrid meeting or direactions (e.g. online map)
+        url: link to hybrid meeting or directions (e.g. online map)
         name: 50 signs max.
         address: Street address and room
       render: markdown
