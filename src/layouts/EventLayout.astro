@@ -1,22 +1,10 @@
 ---
+import { type ReducedEvent } from '~/util/EventUtil.ts';
 import MarkdownLayout from '~/layouts/MarkdownLayout.astro';
-import { getCollection } from 'astro:content';
-import { Image } from 'astro:assets';
 import SocialShare from '~/components/widgets/SocialShare.astro';
-import EventInfoList from '~/components/events/EventInfoList.tsx';
-import {Icon} from 'astro-icon/components';
-import { reducePeriodicEvents, type ReducedEvent } from '~/util/EventUtil.ts';
-
-export async function getStaticPaths() {
-  const eventsCollection = await getCollection('events')
-  const reducedEvents = reducePeriodicEvents(eventsCollection);
-  return reducedEvents.map((entry) => {
-    return {
-      params: { slug: entry.slug },
-      props: { event: entry }
-    }
-  });
-}
+import EventInfoList from '~/components/events/EventInfoList';
+import { Icon } from 'astro-icon/components';
+import { Image } from 'astro:assets';
 
 interface Props {
   event: ReducedEvent
@@ -84,6 +72,15 @@ const additionalMetadata: ({
         event={event} 
         client:load 
         additional={additionalMetadata} />
+      {
+        event.data.repeating && 
+        <div class="text-center prose max-w-none">
+          <h3>Repeating Event</h3>
+          <p>
+            This event is part of a returning series! Check out all dates for this event here: <a href={`/events/${event.slug}`}>All Dates</a>
+          </p>
+        </div>
+      }
       {event.data.registration && event.data.registration.description && (
         <div class="text-center prose max-w-none bg-secondary text-secondary-content p-4 rounded shadow">
           <h3 id="registration" class="!mt-0 text-primary">Registration</h3>
@@ -101,7 +98,9 @@ const additionalMetadata: ({
           )}
         </div>
       )}
-      {event.data.image && <Image src={event.data.image} alt={event.data.title}></Image>}
+      <div class="flex justify-center">
+        {event.data.image && <Image src={event.data.image} alt={event.data.title}></Image>}
+      </div>
     </section>
   </Fragment >
   <Content />

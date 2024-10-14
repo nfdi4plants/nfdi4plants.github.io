@@ -1,4 +1,5 @@
 ---
+slug: datasteward-circle
 title: DataSteward Circle
 category: Meeting
 audience: [DataStewards]
