@@ -10,7 +10,7 @@ mode: Online
 organizer:
   name: DataPLANT
 location:
-  short: "-"
+  name: "-"
 ---
 
 ## About

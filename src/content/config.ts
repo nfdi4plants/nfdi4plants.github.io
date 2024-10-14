@@ -35,7 +35,8 @@ const eventsCollection = defineCollection({
       url: z.string().url()
     }).partial().optional(),
     location: z.object({
-      short: z.string().max(50),
+      name: z.string().max(50),
+      address: z.string().optional(),
       url: z.string().url().optional(),
     }),
     registration: z.object({

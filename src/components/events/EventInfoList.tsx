@@ -38,8 +38,8 @@ export default function EventInfoList({event, additional}: Props) {
         <span>
           {
             event.data.location.url 
-              ? <a href={event.data.location.url} dangerouslySetInnerHTML={{ __html: event.data.location.short}}></a>
-              : <span dangerouslySetInnerHTML={{ __html: event.data.location.short}}></span> 
+              ? <a href={event.data.location.url} dangerouslySetInnerHTML={{ __html: event.data.location.name}}></a>
+              : <span dangerouslySetInnerHTML={{ __html: event.data.location.name}}></span> 
           }
         </span>
       </li>

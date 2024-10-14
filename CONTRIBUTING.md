@@ -292,7 +292,7 @@ with these fields:
 | `title`       | The title of the event                                                | **Mandatory** |
 | `excerpt`     | A brief description of the event                                      | **Mandatory** |
 | `category`    | The category of the event                                             | one of Conference', 'Hackathon', 'Webinar', 'Training', **Mandatory** |
-| `when`       | Event instantiation(s)               | Either a single object or an array of 'when's , containing the start and end date and time of the event in ISO 8601 format. **Mandatory** |
+| `when`        | Event instantiation(s)                                                | Either a single object or an array of 'when's , containing the start and end date and time of the event in ISO 8601 format. **Mandatory** |
 | `mode`        | The mode of the event (e.g., online, on-site)                         | one of 'On-site', 'Online', 'Hybrid', **Mandatory** |
 | `audience`    | The intended audience of the event                                    | array of 'Users', 'DataStewards', 'Developers', 'Everyone', **Mandatory** |
 | `location`    | The location information for the event                                | **Mandatory** |
@@ -306,8 +306,9 @@ with these fields:
 
 | Field name | description                              | Note         |
 | ---------- | ---------------------------------------- | ------------ |
-| `short`    | A short name or abbreviation of the location | **Optional**  |
+| `name`     | A short name or abbreviation of the location | **Mandatory**  |
 | `url`      | The URL with directions or location info  | **Optional**  |
+| `address`  | The address of the location in freetext   | **Optional**  |
 
 `tutors` is an array of strings listing the names and affiliations of event tutors.
 

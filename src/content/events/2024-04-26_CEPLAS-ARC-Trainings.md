@@ -8,7 +8,7 @@ when:
 mode: On-site
 audience: [Users]
 location:
-  short: UoC
+  name: UoC
   address: UoC, Biozentrum, Bldg 304, Room 1.007
 image: ~/assets/images/events/ceplas-ARCs.drawio.png
 tutors:

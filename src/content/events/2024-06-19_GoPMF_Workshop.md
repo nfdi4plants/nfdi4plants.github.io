@@ -8,7 +8,7 @@ when:
 mode: On-site
 audience: [Users]
 location:
-  short: Universität Münster
+  name: Universität Münster
   address: Schlossplatz 4, R.106
 tutors:
   - Stella Eggels (Forschungszentrum Jülich, DataPLANT)

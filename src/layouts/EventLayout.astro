@@ -24,10 +24,10 @@ const lowestDepth = Math.min(...headings.map(h => h.depth));
   headings.unshift({depth: lowestDepth, text: "#registration", slug: "registration"})
 );
 
-
 headings.unshift(
   {depth: lowestDepth, text: "#" + event.data.title, slug: event.slug},
   {depth: lowestDepth, text: "#info", slug: "info"},
+  {depth: lowestDepth, text: "#where", slug: "where"},
 );
 
 function generateOrganizerHtml(organizer: any) {
@@ -54,6 +54,7 @@ const additionalMetadata: ({
     ariaLabel: "Event Website"
   } : undefined)
 ]
+
 ---
 
 
@@ -64,31 +65,76 @@ const additionalMetadata: ({
         <h1 id={event.slug}>{event.data.title}</h1>
         <SocialShare text={event.data.title} url={Astro.url} />
       </div>
-      <div class="text-center prose max-w-none" set:html={event.data.excerpt} />
-      <div class="text-center prose max-w-none">
-        <h3 id="info">Info</h3>
+      <div class="event-section" set:html={event.data.excerpt} />
+      <div class="event-section">
+        <h3 id="info">
+          <Icon name="tabler:info-square" class="inline text-primary" title="Location"/>
+          Info
+        </h3>
       </div>
       <EventInfoList 
         event={event} 
         client:load 
         additional={additionalMetadata} />
+      <!-- where display -->
+      <div class="event-section">
+        <h3 id="where" class="text-center">
+          <Icon name="tabler:location" class="inline text-primary" title="Location"/>
+          Where?
+        </h3>
+        <div class="grid md:grid-cols-2 auto-cols-fr not-prose gap-4 md:text-left">
+          <div>
+            <p>
+              <b>Name:</b>
+            </p>
+            <p>
+              <span>{event.data.location.name}</span>
+            </p>
+          </div>
+          { event.data.location.url &&
+            <div>
+              <p>
+                <b>Find more!</b>
+              </p>
+              <p>
+                <a class="underline" href={event.data.location.url}>Click me</a>
+              </p>
+            </div>
+          }
+          { event.data.location.address &&
+            <div class="md:col-span-2">
+              <p>
+                <b>Address:</b>
+              </p>
+              <p>
+                <span>{event.data.location.address}</span>
+              </p>
+            </div>
+          }
+        </div>
+      </div>
       {
         event.data.repeating && 
-        <div class="text-center prose max-w-none">
-          <h3>Repeating Event</h3>
+        <div class="event-section">
+          <h3>
+            Repeating Event
+          </h3>
           <p>
             This event is part of a returning series! Check out all dates for this event here: <a href={`/events/${event.slug}`}>All Dates</a>
           </p>
         </div>
       }
       {event.data.registration && event.data.registration.description && (
-        <div class="text-center prose max-w-none bg-secondary text-secondary-content p-4 rounded shadow">
-          <h3 id="registration" class="!mt-0 text-primary">Registration</h3>
+        <div class="event-section bg-secondary !text-secondary-content rounded shadow">
+          <h3 id="registration" class="!mt-0 !text-primary">
+            <Icon name="tabler:clipboard-list" class="inline" title="Registration"/>
+            Registration
+          </h3>
           <p> 
             <span set:html={event.data.registration.description}></span>
           </p>
           {event.data.registration.seats && (
-            <h4 class="text-primary mb-0">Maximum number of participants</h4>
+            <h4 class="!text-primary mb-0">Maximum number of participants</h4>
             <p class="text-lg">
                <Icon name="tabler:armchair" class="inline" title="Maximum number of participants"/> {event.data.registration.seats}
             </p>
@@ -105,3 +151,11 @@ const additionalMetadata: ({
   </Fragment >
   <Content />
 </MarkdownLayout>
+
+<style>
+
+  .event-section {
+    @apply text-center prose lg:prose-lg max-w-none p-4
+  }
+
+</style>

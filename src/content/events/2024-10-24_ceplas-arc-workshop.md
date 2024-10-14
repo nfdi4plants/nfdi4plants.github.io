@@ -8,7 +8,7 @@ when:
 mode: On-site
 audience: [Users, DataStewards]
 location:
-  short: HHU
+  name: HHU
   address: HHU, room tbd
   url: https://www.ceplas.eu/en/contact/how-to-get-there
 image: ~/assets/images/events/ceplas-ARCs.drawio.png

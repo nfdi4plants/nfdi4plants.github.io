@@ -8,7 +8,7 @@ when:
 mode: On-site
 audience: [Users]
 location:
-  short: HHU
+  name: HHU
   address: HHU, 28.01.00.011
 tutors:
   - Sabrina Zander (MibiNet)

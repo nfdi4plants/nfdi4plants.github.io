@@ -11,7 +11,7 @@ audience: ['Users', 'DataStewards', 'Developers']
 organizer: 
   affiliation: Rhine-Main Universities & Johannes Gutenberg University Mainz
 location: 
-  short: Johannes Gutenberg University Mainz
+  name: Johannes Gutenberg University Mainz
   address: Johannes Gutenberg University Mainz<br>
     Hochschule für Musik<br>
     Jakob-Welder-Weg 28<br>

@@ -16,7 +16,7 @@ tutors:
 #   - Eik Dahms ([TRR341](https://trr341.uni-koeln.de/projects/data-management-z3))
 #   - Stella Eggels, Angela Kranz ([DataPLANT](https://www.fz-juelich.de/en/ibg/ibg-4/research/research-projects/projects-usadel-group/dataplant-1))
 location:
-  short: WebEx
+  name: WebEx
   address: ""
   url: https://hhu.webex.com/hhu-en/j.php?MTID=m37ec02b7a7afdc4b0e1b310bd693ac0c
 registration: 

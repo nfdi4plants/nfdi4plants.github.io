@@ -8,7 +8,7 @@ when:
   end: 2023-06-21T16:00:00
 audience: ['Users', 'DataStewards', 'Developers']
 location: 
-  short: RHRZ Kaiserslautern
+  name: RHRZ Kaiserslautern
   address: RHRZ Kaiserslautern <br> Terminal Pool 1 <br> Building 34 <br> Room 253
   url: https://rptu.de/fileadmin/prum/02_Downloads/Lageplan/TUK_Plan__Juli_2021.pdf
 organizer:

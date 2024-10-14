@@ -16,7 +16,7 @@ organizer:
   affiliation: CEPLAS Data
   url: https://www.ceplas.eu/en/research/data-science-and-data-management
 location:
-  short: UoC, COPT building (Luxemburger Str. 90)
+  name: UoC, COPT building (Luxemburger Str. 90)
   address: UoC, COPT building (Luxemburger Str. 90)
   url: https://maps.app.goo.gl/2QcX8i5SNwVSRYNs5
 registration:
