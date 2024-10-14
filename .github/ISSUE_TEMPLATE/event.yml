@@ -16,7 +16,7 @@ body:
     validations:
       required: true
   - type: dropdown
-      id: recurrence
+    id: recurrence
     attributes:
       label: Recurrence
       options:
