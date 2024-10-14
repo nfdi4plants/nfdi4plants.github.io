@@ -1,6 +1,6 @@
 ---
 title: PLANTDataHUB
-summary: The PLANTDataHUB is DataPLANT's central reference implementation of the ARC Data Hub concept.
+summary: The <b>PLANTDataHUB</b> is DataPLANT's central reference implementation of the ARC Data Hub concept.
 icon: tabler:database-heart
 href: https://git.nfdi4plants.org
 ---

@@ -22,4 +22,9 @@ styling:
   textPosition: top
 --- 
 
-DataPLANT offers a comprehensive suite of research data management (RDM) services tailored to the plant science community. Key services include the **PLANTdataHUB**, a collaborative platform for managing research data, and tools for managing **Active Research Contexts (ARCs)**, such as ARCcommander and ARCitect. **Data Stewards** provide personalized support, offering training and consultancy to ensure best practices in RDM. Additionally, DataPLANT integrates **ontology modeling**, metadata validation, and interoperability tools, ensuring that research data is FAIR-compliant and compatible with various repositories. Regular **training and workshops** further support the community in effective data management and collaboration.
+DataPLANT offers a comprehensive suite of research data management (RDM) services tailored to the plant science community.
+Key services include the **PLANTdataHUB**, a collaborative platform for managing research data, and tools for managing **Active Research Contexts (ARCs)**, such as ARCcommander and ARCitect. **Data Stewards** provide personalized support, offering training and consultancy to ensure best practices in RDM.
+Additionally, DataPLANT integrates **ontology modeling**, metadata validation, and interoperability tools, ensuring that research data is FAIR-compliant and compatible with various repositories.
+Regular **training and workshops** further support the community in effective data management and collaboration.
+
+Read more below 👇

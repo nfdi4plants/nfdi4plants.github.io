@@ -20,7 +20,8 @@ content:
   - about/nfdi
 ---
 
-DataPLANT is a consortium from the heart of the German plant research community. We aim to establish **sustainable Research Data management (RDM)** by providing digital (e.g., in the form of software or teaching material) and personal (e.g., via on-site consultation or workshops) assistance.
+DataPLANT is a consortium from the heart of the German plant research community.
+We aim to establish **sustainable Research Data management (RDM)** by providing digital (e.g., in the form of software or teaching material) and personal (e.g., via on-site consultation or workshops) assistance.
 
 DataPLANT is committed to developing a RDM system that meets community requirements and facilitates the processing and contextualization of research datasets in accordance with the FAIR principles (Findable, Accessible, Interoperable, Reusable).
 
