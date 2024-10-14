@@ -249,30 +249,38 @@ The frontmatter for an event looks like this:
 
 ```yaml
 ---
-date: 2024-10-24
 title: ARCify your research project
-category: Training
 excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
-start: 2024-10-24T09:00:00
-end: 2024-10-24T12:00:00
+category: Training
 mode: On-site
 audience: [Users, DataStewards]
-location:
-  short: HHU
-  url: https://www.ceplas.eu/en/contact/how-to-get-there
-image: ~/assets/images/events/ceplas-ARCs.drawio.png
+when:
+  start: 2024-10-24T09:00:00
+  end: 2024-10-24T12:00:00
+  # -- or for repeating events --
+  # - 
+  #  start: 2024-10-24
+  #  end: 2024-10-25
+  # - 
+  #  start: 2024-11-24
+  #  end: 2024-11-25
 tutors:
   - Dominik Brilhaus (CEPLAS)
   - Sabrina Zander (MibiNet)
+image: ~/assets/images/events/ceplas-ARCs.drawio.png
 organizer:
   name: Dominik Brilhaus
   affiliation: CEPLAS Data
   url: https://www.ceplas.eu/en/research/data-science-and-data-management
+location:
+  short: HHU
+  url: https://www.ceplas.eu/en/contact/how-to-get-there
 registration:
     description: 'First-come-first-serve. Members of CEPLAS have priority. Everyone else is welcome, if seats are available.' 
     url: 'https://terminplaner6.dfn.de/en/b/551776b4130c40357ea030db0142f472-910401'
     deadline: 2024-10-17
     seats: 12
+external: https://en.wikipedia.org/wiki/URL#:~:text=A%20typical%20URL%20could%20have,html%20).
 ---
 ```
 
@@ -281,12 +289,10 @@ with these fields:
 
 | Field name    | description                                                           | Note         |
 | ------------- | --------------------------------------------------------------------- | ------------ |
-| `date`        | The date of the event                                                 | **Mandatory** |
 | `title`       | The title of the event                                                | **Mandatory** |
-| `category`    | The category of the event                                             | one of Conference', 'Hackathon', 'Webinar', 'Training', **Mandatory** |
 | `excerpt`     | A brief description of the event                                      | **Mandatory** |
-| `start`       | The start date and time of the event in ISO 8601 format               | **Mandatory** |
-| `end`         | The end date and time of the event in ISO 8601 format                 | **Mandatory** |
+| `category`    | The category of the event                                             | one of Conference', 'Hackathon', 'Webinar', 'Training', **Mandatory** |
+| `when`       | Event instantiation(s)               | Either a single object or an array of 'when's , containing the start and end date and time of the event in ISO 8601 format. **Mandatory** |
 | `mode`        | The mode of the event (e.g., online, on-site)                         | one of 'On-site', 'Online', 'Hybrid', **Mandatory** |
 | `audience`    | The intended audience of the event                                    | array of 'Users', 'DataStewards', 'Developers', 'Everyone', **Mandatory** |
 | `location`    | The location information for the event                                | **Mandatory** |
@@ -321,6 +327,54 @@ with these fields:
 | `url`        | The registration URL                      | **Optional** |
 | `deadline`   | The deadline for registration in YYYY-MM-DD format | **Optional** |
 | `seats`      | The number of available seats             | **Optional** |
+
+`when` can be either a single object or an array of objects, each containing the start and end date and time of the event in ISO 8601 format.
+
+Single:
+
+```yaml
+when:
+  start: 2024-10-24T09:00:00
+  end: 2024-10-24T12:00:00
+```
+
+Repeating:
+
+Using a list of objects will create multiple instances of the event. This is useful for events that repeat on a regular basis.
+
+```yaml
+when:
+  - 
+    start: 2024-10-24T09:00:00
+    end: 2024-10-25T12:00:00
+  - 
+    start: 2024-11-24T09:00:00
+    end: 2024-11-25T12:00:00
+```
+
+You can give optional props to single instantiantions of a event using the syntax below. The `props` object can have any field the base type has, but it is not mandatory to provide all fields. 
+
+> [!CAUTION]
+> If you replace any object field, for example `registration`, you must provide all subfields for this object you want to use. You cannot partially replace an object field.
+
+```yaml
+when:
+  - 
+    start: 2024-10-24T09:00:00
+    end: 2024-10-25T12:00:00
+  - 
+    start: 2024-11-24T09:00:00
+    end: 2024-11-25T12:00:00
+    props:
+      registration:
+        description: 'First-come-first-serve. Members of CEPLAS have priority. Everyone else is welcome, if seats are available.' 
+        url: 'https://an-entirely-different-url.com'
+        deadline: 2024-11-17
+        seats: 42
+```
+
+In this example the event on 2024-11-24 has a specific different registration object.
+
 
 ### News
 
@@ -434,9 +488,11 @@ All files found here will be used to generate a file structure like `/articles/:
 
 #### `src/content/events`
 
-All files found here will be used to generate a file structure like `/events/:slug`. The slug is automatically generated from the filename. The file responsible for generating the respective layout is `/src/pages/events/[...slug].astro`.
+All files found here are used to generate the page `/events/...` structure. Multiple pages are created for this content:
 
-All content events are display in `/src/pages/events/index.astro`.
+- `/events` is a list of all events (from `/src/pages/events/index.astro`)
+- `/events/[slug]`, where slug is the file name or a frontmatter `slug` property. This can be any of two, a detailed view on a single event or a list of events for repeating events (`when` is array, from `/src/pages/[event]/index.astro`).
+- `/events/[slug]/[dd-MM-yyyy]`, slug as above, `dd-MM-yyyy` is `when`.`start` of the specific event instantiation (e.g. `13-11-2024`). This is always a detailed view on a single event (from `src/pages/events/[event]/[date].astro`).
 
 #### `src/content/news`
 
