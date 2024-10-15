@@ -164,3 +164,10 @@ body:
     attributes:
       label: Image
       description: add an image URL here or upload an image via comment to the issue
+  - type: input
+    id: external-link
+    attributes:
+      label: External link
+      description: "Add a link to an external resource"
+    validations:
+      required: false
