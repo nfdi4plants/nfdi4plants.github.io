@@ -1,15 +1,14 @@
 ---
-date: 2023-07-17
 title: RPTU Summer School on Fundamentals of Research Data Management
 mode: On-site
 category: Training
 excerpt: 'The RPTU Summer School on Research Data Management offers hands-on training for PhD students, PostDocs, and PIs involved in data-driven research.'
-start: 2023-06-17T09:00:00
-end: 2023-06-21T16:00:00
-audience: 
-  - Everyone
+when:
+  start: 2023-06-17T09:00:00
+  end: 2023-06-21T16:00:00
+audience: ['Users', 'DataStewards', 'Developers']
 location: 
-  short: RHRZ Kaiserslautern
+  name: RHRZ Kaiserslautern
   address: RHRZ Kaiserslautern <br> Terminal Pool 1 <br> Building 34 <br> Room 253
   url: https://rptu.de/fileadmin/prum/02_Downloads/Lageplan/TUK_Plan__Juli_2021.pdf
 organizer:

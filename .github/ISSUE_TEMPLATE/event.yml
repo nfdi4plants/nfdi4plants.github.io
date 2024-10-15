@@ -3,39 +3,36 @@ description: Add an event (e.g. workshop, training or demo) to be listed on the 
 title: "[Add event]: "
 body:
   - type: input
-    id: start
-    attributes:
-      label: Event start time
-      description: e.g. 2024-10-24T09:00:00
-    validations:
-      required: true
-  - type: input
-    id: end
-    attributes:
-      label: Event end time
-      description: e.g. 2024-10-24T12:00:00
-    validations:
-      required: true
-  - type: input
     id: title
     attributes:
-      label: Event title
+      label: Title
     validations:
       required: true
   - type: input
-    id: organizer
+    id: description
     attributes:
-      label: Organizer(s)
-      description: Name(s) of contact person(s)
+      label: Description
+      description: Max. 200 signs.
     validations:
-      required: false
-  - type: input
-    id: tutors
+      required: true
+  - type: dropdown
+    id: mode
     attributes:
-      label: Tutor(s)
-      description: Name(s) of tutor(s)
-    validations:
-      required: false
+      label: Mode
+      options:
+        - On-site
+        - Online
+        - Hybrid
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Conference
+        - Hackathon
+        - Webinar
+        - Training
+        - Meeting
   - type: dropdown
     id: audience
     attributes:
@@ -44,49 +41,118 @@ body:
         - Users
         - Data Stewards
         - Developers
-        - Everyone
       multiple: true
     validations:
       required: false
-  - type: input
-    id: registration-url
-    attributes:
-      label: Registration link or contact
-    validations:
-      required: false
-  - type: input
-    id: registration-deadline
-    attributes:
-      label: Registration deadline
-      description: Registration deadline date
-    validations:
-      required: false
-  - type: input
-    id: registration-seats
-    attributes:
-      label: Max. number of seats
-    validations:
-      required: false
   - type: dropdown
-    id: mode
+    id: recurrence
     attributes:
-      label: Event mode
+      label: Recurrence
       options:
-        - On-site
-        - Online
-        - Hybrid
-  - type: dropdown
-    id: category
+        - Single
+        - Periodic
+        - Series
+      description: |
+        Single = one-time event; Series = multiple-session event planned for non-consecutive days; Periodic = regularily repeating (e.g. Data Steward Circle)
+  - type: textarea
+    id: when
     attributes:
-      label: Event category
-      options:
-        - Conference
-        - Hackathon
-        - Webinar
-        - Training
-  - type: input
+      label: When
+      value: |
+        # Single event
+          start: 2024-10-24T09:00:00
+          end: 2024-10-24T12:00:00
+
+        # Multi event (consecutive days)
+
+          start: 2024-10-24T09:00:00          
+          end: 2024-10-25T17:00:00
+
+        # Multi event (non-consecutive days)
+        
+        - 
+          start: 2024-10-24T09:00:00
+          end: 2024-10-24T17:00:00
+        - 
+          start: 2024-10-31T09:00:00
+          end: 2024-10-31T17:00:00
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: organizer
+    attributes:
+      label: Organizer
+      value: |
+        organizer:
+          name: 
+          affiliation: 
+          url: 
+      description: |
+        Details of responsible person, e.g.
+        organizer:
+          name: Mrs. Organize-A-Lot
+          affiliation: DataPLANT
+          url: https://www.nfdi4plants.org
+    validations:
+      required: true
+  - type: textarea
+    id: tutors
+    attributes:
+      label: Tutors
+      description: List of tutors
+      value: |
+        - Sir Tutor-A-Lot (<a href="https://www.nfdi4plants.org">DataPLANT</a>)
+        - Edna Krabappel          
+    validations:
+      required: false
+  - type: textarea
+    id: registration
+    attributes:
+      label: Registration
+      value: |
+        url: 
+        description:
+        deadline:
+        seats:
+      description: |
+        url: link to a registration form or a mailto-link (email address)
+        description: add additional details to the registration
+        deadline: 2024-10-12
+        seats: Max. number of participants
+      render: markdown
+    validations:
+      required: false
+  - type: textarea
     id: location
     attributes:
-      label: Event location
-      description: location address, room // hybrid meeting link
+      label: Location
+      value: |
+        url:
+        name:
+        address: 
+      description: |
+        url: link to hybrid meeting or directions (e.g. online map)
+        name: 50 signs max.
+        address: Street address and room
+      render: markdown
+    validations:
+      required: false
+  - type: textarea
+    id: detail
+    attributes:
+      description: Use this free-text area to describe your event with more detail
+      label: Detail
+      value: |
+        # About this event
 
+        ...
+
+        # Teaching Materials
+
+        ... 
+  - type: input
+    id: image
+    attributes:
+      label: Image
+      description: add an image URL here or upload an image via comment to the issue

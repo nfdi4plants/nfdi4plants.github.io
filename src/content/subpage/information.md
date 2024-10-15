@@ -18,6 +18,9 @@ styling:
   emphasisColor: lightblue-300
   textPosition: text-only
 ---
-We aim to maintain transparency and keep our community well-informed. We believe that clear communication and offering a platform for information exchange and knowledge sharing are key to fostering participation and collaboration.
+We aim to maintain transparency and keep our community well-informed.
+We believe that clear communication and offering a platform for information exchange and knowledge sharing are key to fostering participation and collaboration.
 
 On this page, you'll find links to the latest news, events, publications, discussions, and more.
+
+Read more below 👇

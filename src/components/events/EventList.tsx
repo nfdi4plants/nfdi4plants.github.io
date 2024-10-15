@@ -1,10 +1,12 @@
-import { Fragment, useState } from 'react';
-import type { CollectionEntry } from 'astro:content';
-import {sortByYear, groupByYear } from '~/util/GroupByYear';
+import { useState } from 'react';
+import {sortByYear, groupByYear, isPastOrWithinNext31Days, type ReducedEvent } from '~/util/EventUtil.ts';
 import EventInfoList from './EventInfoList.tsx';
 
 interface Props {
-  events: CollectionEntry<'events'>[];
+  events: ReducedEvent[];
+  showFilter?: boolean;
+  // This prop determines if all events should be shown, or only those within the next 31 days
+  showPastFutureLimit?: boolean;
 }
 
 interface ConfigState {
@@ -49,12 +51,12 @@ function ControlButtons({label, options, selectedOption, setOption}: ControlButt
   )
 }
 
-function EventCard (event: CollectionEntry<'events'>) {
+function EventCard (event: ReducedEvent) {
   return (
     <div className="shadow border p-3 lg:p-5 rounded lg:max-w-5xl xl:max-w-6xl" key={"event-" + event.slug}>
       <div className={"grid lg:grid-rows-1 gap-2 lg:gap-4 lg:grid-cols-2 " + (event.data.image ? 'lg:grid-cols-2' : '')}>
         <div className="prose-sm lg:prose">
-          <h1><a href={"/events/" + event.slug}>{event.data.title}</a></h1>
+          <h1><a href={"/events/" + event.href}>{event.data.title}</a></h1>
           { event.data.image && <EventInfoList event={event} />}
           <p>
             { event.data.excerpt }
@@ -70,16 +72,30 @@ function EventCard (event: CollectionEntry<'events'>) {
   )
 }
 
-export default function EventList( {events}: Props ) {
+export default function EventList( {events, showFilter = true, showPastFutureLimit = false}: Props ) {
   let now = new Date();
-  const upcomingEvents = sortByYear(events.filter((event) => {
-    return new Date(event.data.start) >= now;
-  }), (event) => event.data.start);
+  
+  const filterFutureEventsFunction = (events: ReducedEvent[]) => {
+    return events
+      .filter((event) => {
+        return event.data.when.start >= now;
+      })
+      .filter((event) => 
+        showPastFutureLimit 
+          ? true 
+          : isPastOrWithinNext31Days(event.data.when.start)
+      )
+  }
+
+  const upcomingEvents = sortByYear(
+    filterFutureEventsFunction(events), 
+    (event) => event.data.when.start
+  );
 
   const pastEvents = events.filter((event) => {
-    return new Date(event.data.start) < now;
+    return event.data.when.start < now;
   });
-  const pastEventsGrouped = groupByYear(pastEvents, (event) => event.data.start);
+  const pastEventsGrouped = groupByYear(pastEvents, (event) => event.data.when.start);
   
   const [config, setConfig] = useState<ConfigState>({category: null, mode: null, audience: null});
   // Assuming 'groupedByYear' is the result from the 'groupByYear' function
@@ -102,7 +118,7 @@ export default function EventList( {events}: Props ) {
     category === config.category ? setConfig({...config, category: null}) : setConfig({...config, category: category}) 
   }
 
-  const filterEvents = (event: CollectionEntry<'events'>) => {
+  const filterEvents = (event: ReducedEvent) => {
     if (config.mode && event.data.mode !== config.mode) return false;
     if (config.audience && !(event.data.audience as string[]).includes(config.audience)) return false;
     if (config.category && event.data.category !== config.category) return false;
@@ -113,11 +129,15 @@ export default function EventList( {events}: Props ) {
 
   return (
     <>
-      <div className='grid grid-cols-1 md:grid-cols-[auto_minmax(0,_1fr)] gap-x-4 gap-y-2'>
-        <ControlButtons label="Mode" options={modes} selectedOption={config.mode} setOption={toggleMode}/>
-        <ControlButtons label="Audience" options={audiences} selectedOption={config.audience} setOption={toggleAudience}/>
-        <ControlButtons label="Category" options={categories} selectedOption={config.category} setOption={toggleCategory}/>	
-      </div>
+      {
+        showFilter && (
+          <div className='grid grid-cols-1 md:grid-cols-[auto_minmax(0,_1fr)] gap-x-4 gap-y-2'>
+            <ControlButtons label="Mode" options={modes} selectedOption={config.mode} setOption={toggleMode}/>
+            <ControlButtons label="Audience" options={audiences} selectedOption={config.audience} setOption={toggleAudience}/>
+            <ControlButtons label="Category" options={categories} selectedOption={config.category} setOption={toggleCategory}/>	
+          </div>
+        )
+      }
 
       <h2 className="text-5xl lg:text-7xl text-center bg-secondary text-secondary-content p-2">Upcoming</h2>
       <div>
@@ -127,7 +147,7 @@ export default function EventList( {events}: Props ) {
       </div>
       {
         filteredUpcomingEvents.map((event) => (
-          <EventCard {...event} key={"card-" + event.slug} />
+          <EventCard {...event} key={"card-" + event.href} />
         ))
       }
       <h2 className="text-5xl lg:text-7xl text-center bg-secondary text-secondary-content p-2">Archive</h2>
@@ -145,7 +165,7 @@ export default function EventList( {events}: Props ) {
               <div className="grid grid-cols-1 gap-4 lg:gap-10">
                 {
                   events.filter(filterEvents).map((event) => (
-                    <EventCard {...event} key={"card-" + event.slug}/>
+                    <EventCard {...event} key={"card-" + event.href}/>
                   ))
                 }
               </div>

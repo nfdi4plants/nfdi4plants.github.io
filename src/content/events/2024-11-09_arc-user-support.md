@@ -1,11 +1,11 @@
 ---
 title: ARC User Meeting
-date: 2024-10-11
 category: Webinar
 audience: [Users]
 excerpt: 'With this monthly ARC user meeting we try to regularly answer questions, demonstrate tools and services or discuss data management issues.'
-start: 2024-11-08T13:00:00
-end: 2024-11-08T14:00:00
+when:
+  start: 2024-11-08T13:00:00
+  end: 2024-11-08T14:00:00
 mode: Online
 tutors: 
  - DataStewards of DataPLANT, CEPLAS, MibiNet, TRR341
@@ -16,7 +16,7 @@ tutors:
 #   - Eik Dahms ([TRR341](https://trr341.uni-koeln.de/projects/data-management-z3))
 #   - Stella Eggels, Angela Kranz ([DataPLANT](https://www.fz-juelich.de/en/ibg/ibg-4/research/research-projects/projects-usadel-group/dataplant-1))
 location:
-  short: WebEx
+  name: WebEx
   address: ""
   url: https://hhu.webex.com/hhu-en/j.php?MTID=m37ec02b7a7afdc4b0e1b310bd693ac0c
 registration: 

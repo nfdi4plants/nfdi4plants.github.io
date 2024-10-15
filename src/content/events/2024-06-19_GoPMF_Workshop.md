@@ -1,14 +1,14 @@
 ---
-date: 2024-06-19
 title: GoPMF - DataPLANT workshop
 category: Training
 excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
-start: 2024-06-19T10:00:00
-end: 2024-06-20T13:00:00
+when:
+  start: 2024-06-19T10:00:00
+  end: 2024-06-20T13:00:00
 mode: On-site
 audience: [Users]
 location:
-  short: Universität Münster
+  name: Universität Münster
   address: Schlossplatz 4, R.106
 tutors:
   - Stella Eggels (Forschungszentrum Jülich, DataPLANT)

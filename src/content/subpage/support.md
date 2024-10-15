@@ -18,4 +18,7 @@ styling:
   textPosition: top
 --- 
 
-Find personalized support by reaching out to our team or educating yourself through our extensive knowledge base. We also organize workshops and offer dedicated assistance through Data Stewards, who provide expert guidance and help curate your research data to ensure it aligns with best practices.
+Find personalized support by reaching out to our team or educating yourself through our extensive knowledge base.
+We also organize workshops and offer dedicated assistance through Data Stewards, who provide expert guidance and help curate your research data to ensure it aligns with best practices.
+
+Read more below 👇
