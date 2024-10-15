@@ -1,5 +1,5 @@
 import { InlineIcon } from '@iconify/react';
-import { type ReducedEvent, formatterDate, formatterTime } from '~/util/EventUtil';
+import { type ReducedEvent, formatterDate, formatterTime, getHumanReadableAttendanceMode } from '~/util/EventUtil';
 
 interface AdditionalListElements {
   __html: string;
@@ -47,7 +47,7 @@ export default function EventInfoList({event, additional}: Props) {
       <li className="flex items-center gap-2">
         <InlineIcon icon="tabler:info-square-rounded" className="text-xl" aria-label="Info" />
         <span>
-          {event.data.category} | {event.data.mode}
+          {event.data.category} | {getHumanReadableAttendanceMode(event.data.mode)}
         </span>
       </li>
       {/* audience */}

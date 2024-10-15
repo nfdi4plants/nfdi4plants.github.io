@@ -2,6 +2,19 @@ import type { CollectionEntry } from 'astro:content';
 
 type ExtractDateFn<T> = (item: T) => Date;
 
+export function getHumanReadableAttendanceMode(mode: 'OfflineEventAttendanceMode' | 'OnlineEventAttendanceMode' | 'MixedEventAttendanceMode'): string {
+  switch (mode) {
+    case 'OfflineEventAttendanceMode':
+      return 'In-person';
+    case 'OnlineEventAttendanceMode':
+      return 'Online';
+    case 'MixedEventAttendanceMode':
+      return 'Hybrid Event';
+    default:
+      return 'Unknown Event Attendance Mode';
+  }
+}
+
 export const formatterDate = new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', day: "2-digit", month: "2-digit", year: "numeric"});
 export function formatDateToHref(date: Date): string { 
   return formatterDate

@@ -20,9 +20,9 @@ body:
     attributes:
       label: Mode
       options:
-        - On-site
-        - Online
-        - Hybrid
+        - OnlineEventAttendanceMode
+        - OfflineEventAttendanceMode
+        - MixedEventAttendanceMode
   - type: dropdown
     id: category
     attributes:
