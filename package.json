@@ -21,6 +21,7 @@
     "@types/react-dom": "^18.3.0",
     "astro": "^4.15.9",
     "astro-icon": "^1.1.1",
+    "astro-seo": "^0.8.4",
     "bibtex-js-parser": "^1.1.6",
     "csv-parse": "^5.5.6",
     "d3": "^7.9.0",
