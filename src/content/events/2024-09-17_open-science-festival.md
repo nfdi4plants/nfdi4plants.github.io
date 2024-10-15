@@ -1,8 +1,8 @@
 ---
 title: Open Science Festival
-mode: On-site
+mode: OfflineEventAttendanceMode
 category: Conference
-excerpt: 'Join the Open Science Festival in Mainz for talks, workshops, and networking. DataPLANT will be at the NFDI booth. Register now!'
+description: 'Join the Open Science Festival in Mainz for talks, workshops, and networking. DataPLANT will be at the NFDI booth. Register now!'
 when:
   start: 2024-09-17
   end: 2024-09-18

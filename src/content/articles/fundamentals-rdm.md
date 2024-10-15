@@ -1,6 +1,6 @@
 ---
 title: Learn more about Research Data Management (RDM)
-summary: Learn more about research data management and why it is important (to us). 
+description: Learn more about research data management and why it is important (to us). 
 ---
 
 Whether you are new to RDM or simply want to increase your knowledge and skills, we have compiled several articles on the fundamentals of RDM, including the FAIR principles, metadata and ontologies, data sharing and publications and more.

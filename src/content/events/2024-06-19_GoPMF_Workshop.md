@@ -1,11 +1,11 @@
 ---
 title: GoPMF - DataPLANT workshop
 category: Training
-excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
+description: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
 when:
   start: 2024-06-19T10:00:00
   end: 2024-06-20T13:00:00
-mode: On-site
+mode: OfflineEventAttendanceMode
 audience: [Users]
 location:
   name: Universität Münster

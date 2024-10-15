@@ -1,5 +1,6 @@
 ---
 title: Imprint
+description: Privacy Policy
 layout: src/layouts/MarkdownLayout.astro
 ---
 

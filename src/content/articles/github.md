@@ -1,6 +1,6 @@
 ---
 title: Contribute to our GitHub repositories
-summary: DataPLANT's work is openly accesible on GitHub. Contributions to our repositories are welcome.
+description: DataPLANT's work is openly accesible on GitHub. Contributions to our repositories are welcome.
 ---
 
 DataPLANT's work is openly accessible on GitHub.

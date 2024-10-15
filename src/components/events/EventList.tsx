@@ -59,7 +59,7 @@ function EventCard (event: ReducedEvent) {
           <h1><a href={"/events/" + event.href}>{event.data.title}</a></h1>
           { event.data.image && <EventInfoList event={event} />}
           <p>
-            { event.data.excerpt }
+            { event.data.description }
           </p>
         </div>
         {

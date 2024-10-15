@@ -1,6 +1,6 @@
 ---
 title: Tools and services manuals
-summary: Browse our guides to learn more about DataPLANTs tools and services.
+description: Browse our guides to learn more about DataPLANTs tools and services.
 ---
 
 DataPLANT offers several tools to facilitate RDM.

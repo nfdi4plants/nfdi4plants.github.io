@@ -1,6 +1,6 @@
 ---
 title: The Annotated Research Context
-summary: The ARC is DataPLANT's FAIR Digital Object of choice.
+description: The ARC is DataPLANT's FAIR Digital Object of choice.
 ---
 
 > If you want to dive deep into the ARC take a look at [arc-rdm.org](https://arc-rdm.org)! 💡

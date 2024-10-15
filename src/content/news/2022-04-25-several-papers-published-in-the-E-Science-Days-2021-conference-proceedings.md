@@ -1,7 +1,7 @@
 ---
 date: 2022-04-25
 title: Several papers published in the E-Science Days 2021 conference proceedings
-previewText: DataPLANT participated in last year's E-Science Days 2021 in various forms. We provided an overview on the Annotated Research Context (ARC), ongoing technical developments for an initial set of annotation tools, and our approach to the use of data stewards. We also participated in the NFDI workshop and one of our infrastructure partners, bwSFS - Storage-for-Science, was also present with a poster...
+description: DataPLANT participated in last year's E-Science Days 2021 in various forms. We provided an overview on the Annotated Research Context (ARC), ongoing technical developments for an initial set of annotation tools, and our approach to the use of data stewards. We also participated in the NFDI workshop and one of our infrastructure partners, bwSFS - Storage-for-Science, was also present with a poster...
 ---
 DataPLANT participated in last year's [E-Science Days 2021](https://e-science-tage.de/de/startseite_2021) in various forms. We provided an overview on the **Annotated Research Context (ARC)**, ongoing technical developments for an initial set of **annotation tools**, and our approach to the use of **Data Stewards**. We also participated in the NFDI workshop and one of our infrastructure partners, **bwSFS - Storage-for-Science**, was also present with a poster.
 

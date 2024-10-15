@@ -1,7 +1,7 @@
 ---
 date: 2022-05-19
 title: DataPLANT infrastructure and services at upcoming NFDI Tool Talk
-previewText: The infrastructure development team of DataPLANT will present “The current state of developments in the DataPLANT infrastructure and services” at the upcoming NFDI tool talks. The tool talks are open to the wider NFDI community and foster the exchange between the practitioners and developers in research data management tools and services. It allows us to verify our concepts and receive feedback on the principles and ideas before advancing them to the next level. The presentation follows up...
+description: The infrastructure development team of DataPLANT will present “The current state of developments in the DataPLANT infrastructure and services” at the upcoming NFDI tool talks. The tool talks are open to the wider NFDI community and foster the exchange between the practitioners and developers in research data management tools and services. It allows us to verify our concepts and receive feedback on the principles and ideas before advancing them to the next level. The presentation follows up...
 ---
 The infrastructure development team of DataPLANT will present “The current state of developments in the DataPLANT infrastructure and services” at the upcoming NFDI tool talks. The tool talks are open to the wider NFDI community and foster the exchange between the practitioners and developers in research data management tools and services. It allows us to verify our concepts and receive feedback on the principles and ideas before advancing them to the next level. 
 

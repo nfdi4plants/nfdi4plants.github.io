@@ -1,6 +1,6 @@
 ---
 title: Start your own ARC
-summary: You want to make your scientific data FAIR (Findable, Accessible, Interoperable, and Reusable)? Start now with our Annotated Research Context (ARC).
+description: You want to make your scientific data FAIR (Findable, Accessible, Interoperable, and Reusable)? Start now with our Annotated Research Context (ARC).
 ---
 
 The ARC is the central framework for research data management in DataPLANT.

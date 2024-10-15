@@ -1,6 +1,6 @@
 ---
 title: Homogenization of metadata to simplify the RDM landscape
-summary: Our harmonization tools enable you to annotate your data with descriptive metadata and apply consistent terminologies.
+description: Our harmonization tools enable you to annotate your data with descriptive metadata and apply consistent terminologies.
 ---
 The annotation of data with metadata is essential for well-maintained research data according to FAIR principles.
 Metadata is particularly important for describing how your data was generated.

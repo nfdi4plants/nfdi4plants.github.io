@@ -3,7 +3,7 @@ slug: datasteward-circle
 title: DataSteward Circle
 category: Meeting
 audience: [DataStewards]
-excerpt: 'Exchange best practices about creating ARCs. Updates on tools and services as well as annotation support, that will make your work as Data Stewards easier.'
+description: 'Exchange best practices about creating ARCs. Updates on tools and services as well as annotation support, that will make your work as Data Stewards easier.'
 when:
   -
     start: 2024-10-16T09:00:00
@@ -17,7 +17,7 @@ when:
   -
     start: 2024-11-27T09:00:00
     end: 2024-11-27T10:00:00
-mode: Online
+mode: OnlineEventAttendanceMode
 image: ~/assets/images/DataPLANT_logo_square_bg_darkblue.svg
 location:
   name: Microsoft Teams

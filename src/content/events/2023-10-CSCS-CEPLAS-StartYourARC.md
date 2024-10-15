@@ -1,8 +1,8 @@
 ---
 title: CSCS Start Your ARC Workshop
-excerpt: "This two-day workshop demonstrates the concept of ARC and introduces how to build a first ARC for your own research project."
+description: "This two-day workshop demonstrates the concept of ARC and introduces how to build a first ARC for your own research project."
 category: Webinar
-mode: Online
+mode: OnlineEventAttendanceMode
 audience: [Users]
 when:
   - 

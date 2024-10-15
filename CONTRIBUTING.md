@@ -152,7 +152,7 @@ The configuration file for a subpage are located at `src/content/subpage`. The f
 ---
 title: About DataPLANT
 tagline: Towards democratization of plant research.
-subtitle: 'Towards democratization of plant research.'
+description: 'Towards democratization of plant research.'
 image: /src/assets/images/subpage/about/about-mainpage.svg
 styling:
   titleColor: darkblue
@@ -175,8 +175,8 @@ with these fields:
 | Field name | description | Note |
 | --- | --- | --- |
 | `title` | The title of the subpage hero | **Mandatory** |
-| `subtitle` | A subtitle for the subpage hero | **Mandatory** |
-| `tagline` | A tagline for the subpage hero | **Optional** |
+| `description` | A subtitle for the subpage hero | **Mandatory** |
+| `tagline` | A tagline for the subpage hero, must be short | **Optional** |
 | `image` | The path to the image for the subpage hero | **Mandatory** |
 | `styling` | The styling of the subpage hero | **Mandatory** |
 | `content` | The content of the subpage feature section | **Mandatory** |
@@ -230,7 +230,7 @@ The frontmatter for an article looks like this:
 ```yaml
 ---
 title: DataPLANT Task Areas
-summary: Overview of the DataPLANT Task Areas
+description: Overview of the DataPLANT Task Areas
 ---
 ```
 
@@ -239,7 +239,7 @@ with these fields:
 | Field name | description | Note |
 | --- | --- | --- |
 | `title` | The title of the article | **Mandatory** |
-| `summary` | A summary of the article | **Mandatory** |
+| `description` | A summary of the article | **Mandatory** |
 
 ### Events
 
@@ -250,9 +250,9 @@ The frontmatter for an event looks like this:
 ```yaml
 ---
 title: ARCify your research project
-excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
+description: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
 category: Training
-mode: On-site
+mode: 'OfflineEventAttendanceMode'
 audience: [Users, DataStewards]
 when:
   start: 2024-10-24T09:00:00
@@ -276,10 +276,10 @@ location:
   short: HHU
   url: https://www.ceplas.eu/en/contact/how-to-get-there
 registration:
-    description: 'First-come-first-serve. Members of CEPLAS have priority. Everyone else is welcome, if seats are available.' 
-    url: 'https://terminplaner6.dfn.de/en/b/551776b4130c40357ea030db0142f472-910401'
-    deadline: 2024-10-17
-    seats: 12
+  description: 'First-come-first-serve. Members of CEPLAS have priority. Everyone else is welcome, if seats are available.' 
+  url: 'https://terminplaner6.dfn.de/en/b/551776b4130c40357ea030db0142f472-910401'
+  deadline: 2024-10-17
+  seats: 12
 external: https://en.wikipedia.org/wiki/URL#:~:text=A%20typical%20URL%20could%20have,html%20).
 ---
 ```
@@ -290,10 +290,10 @@ with these fields:
 | Field name    | description                                                           | Note         |
 | ------------- | --------------------------------------------------------------------- | ------------ |
 | `title`       | The title of the event                                                | **Mandatory** |
-| `excerpt`     | A brief description of the event                                      | **Mandatory** |
+| `description` | A brief description of the event                                      | **Mandatory** |
 | `category`    | The category of the event                                             | one of Conference', 'Hackathon', 'Webinar', 'Training', **Mandatory** |
 | `when`        | Event instantiation(s)                                                | Either a single object or an array of 'when's , containing the start and end date and time of the event in ISO 8601 format. **Mandatory** |
-| `mode`        | The mode of the event (e.g., online, on-site)                         | one of 'On-site', 'Online', 'Hybrid', **Mandatory** |
+| `mode`        | The mode of the event (e.g., online, OfflineEventAttendanceMode)                         | one of 'OfflineEventAttendanceMode', 'OnlineEventAttendanceMode', 'MixedEventAttendanceMode', **Mandatory** |
 | `audience`    | The intended audience of the event                                    | array of 'Users', 'DataStewards', 'Developers', 'Everyone', **Mandatory** |
 | `location`    | The location information for the event                                | **Mandatory** |
 | `image`       | The path to the image associated with the event                       | **Optional**  |
@@ -387,7 +387,7 @@ The frontmatter for a news item looks like this:
 ---
 date: 2019-05-15
 title: BioDATEN and DaPLUS+ at NFDI conference in Bonn
-previewText: Both the not yet started Science Data Center "BioDATEN" and the DaPLUS+ initiative were present at the two days NFDI conference held in mid of May in Bonn.
+description: Both the not yet started Science Data Center "BioDATEN" and the DaPLUS+ initiative were present at the two days NFDI conference held in mid of May in Bonn.
 ---
 ```
 
@@ -395,9 +395,9 @@ with these fields:
 
 | Field name    | description                                                           | Note         |
 | ------------- | --------------------------------------------------------------------- | ------------ |
-| `date`        | The date of the news item                                              | **Mandatory** |
-| `title`       | The title of the news item                                             | **Mandatory** |
-| `previewText` | A brief description of the news item                                   | **Mandatory** |
+| `date`        | The date of the news item                                             | **Mandatory** |
+| `title`       | The title of the news item                                            | **Mandatory** |
+| `description` | A brief description of the news item                                  | **Mandatory** |
 
 ### Publications
 

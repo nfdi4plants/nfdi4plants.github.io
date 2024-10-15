@@ -18,7 +18,7 @@ const latest6: Item[] =
       const date = new Date(newsItem.data.date).toDateString();
       return {
         title: newsItem.data.title,
-        description: newsItem.data.previewText,
+        description: newsItem.data.description,
         tagLine: date,
         callToAction: {
           href: "/news/" + newsItem.slug,

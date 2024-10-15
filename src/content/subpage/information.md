@@ -1,7 +1,7 @@
 ---
 title: Information about DataPLANT
 tagline: Stay up-to-date!
-subtitle: Latest news, event participation, publications, Knowledge Base – here you’ll find information about DataPLANT’s latest endeavours.
+description: Latest news, event participation, publications, Knowledge Base – here you’ll find information about DataPLANT’s latest endeavours.
 content:
   - information/news
   - information/events

@@ -1,7 +1,7 @@
 ---
 title: Contribute to DataPLANT
 tagline: Join the DataPLANT community!
-subtitle: DataPLANT is a community-driven initiative and open to any kind of contribution.
+description: DataPLANT is a community-driven initiative and open to any kind of contribution.
 content:
   - participation/become-a-member
   - participation/arc-how-to-start

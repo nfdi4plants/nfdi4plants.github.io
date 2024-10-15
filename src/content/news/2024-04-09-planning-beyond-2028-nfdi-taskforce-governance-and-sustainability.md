@@ -1,7 +1,7 @@
 ---
 date: 2024-04-09
 title: "Planning beyond 2028: NFDI Taskforce Governance and Sustainability"
-previewText: Starting for the follow up grant application of the DataPLANT consortium we are joining forces with other consortia to shape the future vision and development of the NFDI. On the 9th April the second online meeting of the Taskforce Governance and Sustainability was held. DataPLANT is becoming actively involved in the Taskforce Governance and Sustainability of the NFDI. The taskforce is currently working on formulating a joint position paper that outlines how the NFDI should evolve from the perspective...
+description: Starting for the follow up grant application of the DataPLANT consortium we are joining forces with other consortia to shape the future vision and development of the NFDI. On the 9th April the second online meeting of the Taskforce Governance and Sustainability was held. DataPLANT is becoming actively involved in the Taskforce Governance and Sustainability of the NFDI. The taskforce is currently working on formulating a joint position paper that outlines how the NFDI should evolve from the perspective...
 
 ---
 

@@ -1,0 +1,46 @@
+---
+import { SEO } from "astro-seo";
+import type { ImageMetadata } from 'astro';
+import DefaultImage from '~/assets/images/branding/ARCblue.svg';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: ImageMetadata;
+  jsonLD?: string;
+}
+
+const { 
+  title, 
+  description = "Democratization of plant research made easy and free for everyone!", 
+  image = DefaultImage,
+  jsonLD
+} = Astro.props;
+
+---
+<!-- Render the JSON-LD inside a script tag -->
+<script is:inline type="application/ld+json" set:html={jsonLD}></script>
+
+<SEO
+  titleTemplate="%s | DataPLANT"
+  title={title}
+  description={description}
+  openGraph={{
+    basic: {
+      title: title,
+      type: "website",
+      image: image.src,
+    },
+    image: {
+      width: image.width,
+      height: image.height, 
+    }
+  }}
+  twitter={{
+    creator: "@jonasmerlins1"
+  }}
+  extend={{
+    // extending the default link tags
+    link: [{ rel: "icon", href: "/favicon.png" }],
+  }}
+/>

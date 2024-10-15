@@ -1,6 +1,6 @@
 ---
 title: Contact DataPLANT’s Helpdesk
-summary: Looking for help on research data management or DataPLANT services and infrastructure? Get in touch with us!
+description: Looking for help on research data management or DataPLANT services and infrastructure? Get in touch with us!
 ---
 
 Our helpdesk is your primary point of contact for any questions or inquiries.

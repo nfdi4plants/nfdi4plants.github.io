@@ -1,7 +1,7 @@
 ---
 date: 2023-12-19
 title: Considerations on challenges in connection with research software  
-previewText: 'As part of the BioDATEN Science Data Center associated with DataPLANT, an assessment of research software was developed together with the other Science Data Centers in the FDM working group in Baden-Württemberg and has just been published on "Bausteine FDM" online journal.'
+description: 'As part of the BioDATEN Science Data Center associated with DataPLANT, an assessment of research software was developed together with the other Science Data Centers in the FDM working group in Baden-Württemberg and has just been published on "Bausteine FDM" online journal.'
 ---
 As part of the BioDATEN Science Data Center associated with DataPLANT, an assessment of research software was developed together with the other Science Data Centers in the FDM working group in Baden-Württemberg and has just been published on ["Bausteine FDM"](https://bausteine-fdm.de/) online journal:
 

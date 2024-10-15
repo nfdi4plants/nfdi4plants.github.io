@@ -1,7 +1,7 @@
 ---
 date: 2021-03-09
 title: DataPLANT presented at E-Science-Tage
-previewText: Once again, the E-Science Days were acomplete success. In addition to the other fortunate consortia that have successfully mastered the first round of funding, we were also present with numerous contributions. Benedikt Venn used his poster to explain what an ARC (Annotated Research Context) actually is. Jens Krüger, one of the co-speakers of DataPLANT went in his tech talk into more detail about the Metadata ToolChain, which is offered by DataPLANT up to now. Furthermore, our speaker Dirk ...
+description: Once again, the E-Science Days were acomplete success. In addition to the other fortunate consortia that have successfully mastered the first round of funding, we were also present with numerous contributions. Benedikt Venn used his poster to explain what an ARC (Annotated Research Context) actually is. Jens Krüger, one of the co-speakers of DataPLANT went in his tech talk into more detail about the Metadata ToolChain, which is offered by DataPLANT up to now. Furthermore, our speaker Dirk ...
 ---
 
 Once again, the E-Science Days were acomplete success. In addition to the other fortunate consortia that have successfully mastered the first round of funding, we were also present with numerous contributions. Benedikt Venn [@BenediktVenn](https://twitter.com/BenediktVenn) used his poster to explain what an ARC (Annotated Research Context) actually is. 

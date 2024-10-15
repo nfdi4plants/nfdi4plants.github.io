@@ -1,7 +1,7 @@
 ---
 title: CEPLAS Start Your ARC Workshop Series
 category: Training
-excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
+description: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
 when:
   - 
     start: 2023-05-09T10:00:00
@@ -12,7 +12,7 @@ when:
   - 
     start: 2023-06-14T10:00:00
     end: 2023-06-14T11:30:00
-mode: On-site
+mode: OfflineEventAttendanceMode
 audience: [Users]
 location:
   name: HHU, ZSL 22.07, Room U1.025

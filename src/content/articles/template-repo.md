@@ -1,6 +1,6 @@
 ---
 title: Contribute to our templates 
-summary: Our annotation tool Swate simplifies adding standardized metadata for your experimental workflows. You would like to contribute a template?
+description: Our annotation tool Swate simplifies adding standardized metadata for your experimental workflows. You would like to contribute a template?
 ---
 
 Our spreadsheet-based tool Swate helps you to create annotation tables by adding different building blocks to represent your experimental process, while following the ISA schema and using ontology terms.

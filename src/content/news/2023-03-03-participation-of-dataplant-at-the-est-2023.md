@@ -1,7 +1,7 @@
 ---
 date: 2023-03-03
 title: Participation of DataPLANT at the E-Science-Tage 2023
-previewText: Given the slogan "Empower Your Research - Preserve Your Data", of course we didn't miss the opportunity to be part of the E-Science Days this year. In addition to the numerous contributions, the fact that contrary to last time we were able to meet in person in Heidelberg was great. We gave an overview of our homegrown data management plan assistance tool, named DataPLAN, and on how we are attempting to close the ontology gap  and also what challenges we encountered when creating a data repository...
+description: Given the slogan "Empower Your Research - Preserve Your Data", of course we didn't miss the opportunity to be part of the E-Science Days this year. In addition to the numerous contributions, the fact that contrary to last time we were able to meet in person in Heidelberg was great. We gave an overview of our homegrown data management plan assistance tool, named DataPLAN, and on how we are attempting to close the ontology gap  and also what challenges we encountered when creating a data repository...
 ---
 
 Given the slogan "Empower Your Research - Preserve Your Data", of course we didn't miss the opportunity to be part of the [E-Science Days](https://e-science-tage.de/de/startseite) this year. In addition to the numerous contributions, the fact that contrary to last time we were able to meet in person in Heidelberg was great.

@@ -1,6 +1,6 @@
 ---
 title: Become a DataPLANT member
-summary: Use our PLANTdataHUB and other DataPLANT infrastructure and services.
+description: Use our PLANTdataHUB and other DataPLANT infrastructure and services.
 ---
 
 All DataPLANT services, tools and infrastructures are freely accessible to anyone that is interested in using them.

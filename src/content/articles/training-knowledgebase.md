@@ -1,6 +1,6 @@
 ---
 title: Our teaching and training offers
-summary: ""
+description: ""
 ---
 
 DataPLANT’s teaching and training services ensure smooth adoption and effective use of its tools in the research community. 

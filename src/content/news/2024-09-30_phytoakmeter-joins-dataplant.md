@@ -1,7 +1,7 @@
 ---
 title: PhytOakmeter and DataPLANT sign Memorandum of Understanding
 date: 2024-09-30
-previewText: The DFG and SNF funded project PhytOakmeter (FOR 5571) joins forces with DataPLANT to make their research data FAIR - Findable, Accessible, Interoperable, and Reusable. A memorandum of understanding (MoU) was signed to formalize the common goal of establishing a data framework for plant research in compliance with the FAIR data principles and contributing to open science.
+description: The DFG and SNF funded project PhytOakmeter (FOR 5571) joins forces with DataPLANT to make their research data FAIR - Findable, Accessible, Interoperable, and Reusable. A memorandum of understanding (MoU) was signed to formalize the common goal of establishing a data framework for plant research in compliance with the FAIR data principles and contributing to open science.
 ---
 
 ![The PhytOakmeter logo](~/assets/images/news/phytoakmeter-logo.jpg)

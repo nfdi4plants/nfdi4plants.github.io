@@ -1,6 +1,6 @@
 ---
 title: Create, structure and fill your ARCs
-summary: Our tools ARCitect and ARCCommander simplify the creation, structuring and maintenance of ARCs.
+description: Our tools ARCitect and ARCCommander simplify the creation, structuring and maintenance of ARCs.
 ---
 
 The ARCitect and ARCCommander are two essential tools developed by DataPLANT that assist users with the creation and management of ARCs.

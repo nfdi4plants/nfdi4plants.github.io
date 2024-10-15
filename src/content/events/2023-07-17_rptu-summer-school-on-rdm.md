@@ -1,8 +1,8 @@
 ---
 title: RPTU Summer School on Fundamentals of Research Data Management
-mode: On-site
+mode: OfflineEventAttendanceMode
 category: Training
-excerpt: 'The RPTU Summer School on Research Data Management offers hands-on training for PhD students, PostDocs, and PIs involved in data-driven research.'
+description: 'The RPTU Summer School on Research Data Management offers hands-on training for PhD students, PostDocs, and PIs involved in data-driven research.'
 when:
   start: 2023-06-17T09:00:00
   end: 2023-06-21T16:00:00
@@ -38,7 +38,7 @@ and will include a mix of lectures, workshops, and hands-on exercises. You can e
 ## Contact
 
 We will send you further information in early June.
-The summer school is an on-site, in presence event held at the [RPTU](https://rptu.de/). (In well justified exceptional cases, we will facilitate remote participation.)  
+The summer school is an OfflineEventAttendanceMode, in presence event held at the [RPTU](https://rptu.de/). (In well justified exceptional cases, we will facilitate remote participation.)  
 We hope you will join us in improving your knowledge in research data management, and look forward to welcoming you to our summer school!
 
 Please direct any questions to us via 

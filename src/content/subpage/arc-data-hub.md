@@ -1,6 +1,6 @@
 ---
 title: ARC Data Hub
-subtitle: Further information about the ARC Data Hub concepts and our implementations.
+description: Further information about the ARC Data Hub concepts and our implementations.
 tagline: Share, discover, publish!
 image: ~/assets/images/subpage/arc-data-hub/arc-data-hub-hero.svg
 content: 

@@ -1,7 +1,7 @@
 ---
 date: 2023-06-16
 title: DataPLANT participated in the 15th International Workshop on Science Gateways
-previewText: DataPLANT actively participated in the 15th International Workshop on Science Gateways held in Tübingen, Germany from 13th to 15th June. The workshop aimed to bring together researchers, scientists, software engineers, and Science Gateway developers from various domains to discuss challenges, share solutions, and shape the future directions of Science Gateways in e-Science...
+description: DataPLANT actively participated in the 15th International Workshop on Science Gateways held in Tübingen, Germany from 13th to 15th June. The workshop aimed to bring together researchers, scientists, software engineers, and Science Gateway developers from various domains to discuss challenges, share solutions, and shape the future directions of Science Gateways in e-Science...
 ---
 
 DataPLANT actively participated in the [15th International Workshop on Science Gateways](https://iwsgateways.github.io/iwsg2023/index.html) held in Tübingen, Germany from 13th to 15th June. The workshop aimed to bring together researchers, scientists, software engineers, and Science Gateway developers from various domains to discuss challenges, share solutions, and shape the future directions of Science Gateways in e-Science.

@@ -1,8 +1,8 @@
 ---
 title: "ARC Club HHU"
-excerpt: "a two-day adventure to prepare your lab for the ARC universe"
+description: "a two-day adventure to prepare your lab for the ARC universe"
 category: Training
-mode: On-site
+mode: OfflineEventAttendanceMode
 audience: [Users]
 when:
     start: 2023-08-17T09:00:00

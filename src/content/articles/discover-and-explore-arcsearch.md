@@ -1,6 +1,6 @@
 ---
 title: Search ARCs for specific keywords and metadata
-summary: Our service for the discovery and exploration of ARCs helps you find data sets.
+description: Our service for the discovery and exploration of ARCs helps you find data sets.
 ---
 
 The ARCSearch is a tool for integrated search and analysis of individual ARCs and experimental metadata. 

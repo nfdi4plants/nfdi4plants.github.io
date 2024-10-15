@@ -1,6 +1,6 @@
 ---
 title: The Annotated Research Context
-summary: The ARC is DataPLANT's FAIR Digital Object of choice.
+description: The ARC is DataPLANT's FAIR Digital Object of choice.
 ---
 
 The importance of RDM systems continues to grow as scientists and institutions increasingly generate large, diverse datasets.

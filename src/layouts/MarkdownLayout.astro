@@ -98,9 +98,9 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', handleScroll);
 });
 </script>
-  
 
-<Layout title={frontmatter.title}>
+
+<Layout {...frontmatter}>
   <div class="navbar sticky top-0 bg-base-300 z-20 min-h-[unset] lg:hidden" class:list={[{hidden: noInPageNavigation}]}>
     <div class="flex-1">
       <!-- <a class="btn btn-ghost btn-sm">daisyUI</a> -->

@@ -1,7 +1,7 @@
 ---
 date: 2022-01-17
 title: Statement of the assembly of the NFDI consortia on basic services
-previewText: At the consortium meeting of the National Research Data Infrastructure (NFDI) association on January 14, DataPLANT among the consortia represented therein approved the publication of a joint statement on the relevance and success criteria of basic services. Basic service may develop into one of the pillars of the future joint scientific infrastructure for research data management overarching various fields in science...
+description: At the consortium meeting of the National Research Data Infrastructure (NFDI) association on January 14, DataPLANT among the consortia represented therein approved the publication of a joint statement on the relevance and success criteria of basic services. Basic service may develop into one of the pillars of the future joint scientific infrastructure for research data management overarching various fields in science...
 ---
 
 At the consortium meeting of the National Research Data Infrastructure (NFDI) association on January 14, DataPLANT among the consortia represented therein approved the publication of a [joint statement on the relevance and success criteria of basic services](https://zenodo.org/record/6091657#.Yg0ulIiZPe9 "Stellungnahme der NFDI-Konsortien zu Basisdiensten"). Basic service may develop into one of the pillars of the future joint scientific infrastructure for research data management overarching various fields in science.

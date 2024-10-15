@@ -13,7 +13,7 @@ const mainPageCards = await getCollection('mainpagecards');
 const events = await getCollection('events');
 
 ---
-<Layout title="DataPLANT - Home">
+<Layout title="Home">
   <div class="flex flex-col flex-grow place-content-center">
     <NextEventBanner events={events} client:load/>
     <div class="hero bg-base-200 min-h-[90vh]">

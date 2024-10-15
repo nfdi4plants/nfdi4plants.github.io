@@ -2,7 +2,7 @@
 title: MibiNet/CEPLAS Start Your ARC Workshop
 date: 2023-09-20
 category: Training
-excerpt: 'This two-session workshop series demonstrates the ARC concept and introduces how to build a first ARC for your own research project and annotate the data in your ARC.'
+description: 'This two-session workshop series demonstrates the ARC concept and introduces how to build a first ARC for your own research project and annotate the data in your ARC.'
 when: 
   - 
     start: 2024-09-21T09:30:00
@@ -10,7 +10,7 @@ when:
   - 
     start: 2024-09-28T09:30:00
     end: 2024-09-28T15:30:00
-mode: On-site
+mode: OfflineEventAttendanceMode
 audience: [Users]
 location:
   name: HHU, ZSL 22.07, Room U1.021

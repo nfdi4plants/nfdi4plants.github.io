@@ -1,11 +1,11 @@
 ---
 title: ARCify your research project
 category: Training
-excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
+description: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
 when:
   start: 2024-10-24T09:00:00
   end: 2024-10-24T12:00:00
-mode: On-site
+mode: OfflineEventAttendanceMode
 audience: [Users, DataStewards]
 location:
   name: HHU

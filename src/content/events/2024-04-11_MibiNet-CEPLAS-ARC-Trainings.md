@@ -1,7 +1,7 @@
 ---
 title: MibiNet CEPLAS – DataPLANT Tool Demonstration
 category: Training
-excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
+description: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
 when:
   - 
     start: 2024-04-11T09:00:00
@@ -23,7 +23,7 @@ when:
 location:
   name: HHU, 26.24.U1.018
   address: HHU, 26.24.U1.018
-mode: On-site
+mode: OfflineEventAttendanceMode
 audience: [Users]
 tutors:
   - Sabrina Zander (<a href="https://www.sfb1535.hhu.de/projects/research-area-z/z03">MibiNet</a>)

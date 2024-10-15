@@ -1,7 +1,7 @@
 ---
 title: CEPLAS ARC Training Series
 category: Training
-excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
+description: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
 when:
   -
     start: 2024-04-03T09:00:00
@@ -44,7 +44,7 @@ when:
         - Dominik Brilhaus (<a href="https://www.ceplas.eu/en/research/data-science-and-data-management">CEPLAS Data</a>)
         - Eik Dahms (<a href="https://trr341.uni-koeln.de/projects/data-management-z3">TRR341</a>)
         - Dan Wang (<a href="https://www.sfb1535.hhu.de/projects/research-area-z/z03">MibiNet</a>, <a href="https://trr341.uni-koeln.de/projects/data-management-z3">TRR341</a>)
-mode: On-site
+mode: OfflineEventAttendanceMode
 audience: [Users]
 location:
   name: HHU

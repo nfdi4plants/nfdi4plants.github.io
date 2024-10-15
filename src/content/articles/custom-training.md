@@ -1,6 +1,6 @@
 ---
 title: Training made for you
-summary: You want to learn how you can use the Annotated Research Context to structure your data? We offer on-site or online trainings.
+description: You want to learn how you can use the Annotated Research Context to structure your data? We offer on-site or online trainings.
 ---
 
 In addition to offering educational material on DataPLANT’s concepts and tools online, DataPLANT’s Data Stewards offer custom support for your RDM.

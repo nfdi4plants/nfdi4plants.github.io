@@ -1,7 +1,7 @@
 ---
 date: 2023-07-03
 title: DataPlant Scientific Board Meeting
-previewText: 'End of June the DataPLANT Scientific Board meeting was held online to discuss the progress of the ongoing developments within the NFDI consortium. The developments are based on two main principles: personnel assistance and technical support, and infrastructure. The following key points were addressed...'
+description: 'End of June the DataPLANT Scientific Board meeting was held online to discuss the progress of the ongoing developments within the NFDI consortium. The developments are based on two main principles: personnel assistance and technical support, and infrastructure. The following key points were addressed...'
 ---
 End of June the DataPLANT Scientific Board meeting was held online to discuss the progress of the ongoing developments within the NFDI consortium. The developments are based on two main principles: personnel assistance and technical support, and infrastructure. The following key points were addressed:    
 

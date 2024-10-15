@@ -2,7 +2,7 @@
 date: 2024-09-18
 title: DataPLANT participates in the 3. Open Science Festival
 highlight: true
-previewText: "The 3rd Open Science Festival Germany took place at the Johannes Gutenberg University in Mainz from 17-18 September 2024 under the motto Meet, Share, Inspire, Care. It was aimed equally at newcomers, interested parties and experts with the aim to facilitate encounters and dialogue in a wide variety of formats. DataPLANT was actively participating with a market booth together with other NFDI consortia to present The German National Research Data Infrastructure (NFDI)..."
+description: "The 3rd Open Science Festival Germany took place at the Johannes Gutenberg University in Mainz from 17-18 September 2024 under the motto Meet, Share, Inspire, Care. It was aimed equally at newcomers, interested parties and experts with the aim to facilitate encounters and dialogue in a wide variety of formats. DataPLANT was actively participating with a market booth together with other NFDI consortia to present The German National Research Data Infrastructure (NFDI)..."
 ---
 The 3rd [Open Science Festival](https://converia.uni-mainz.de/frontend/index.php?sub=153) Germany took place at the Johannes Gutenberg University in Mainz from September 17-18, 2024 under the motto Meet, Share, Inspire, Care. It was aimed equally at newcomers, interested parties and experts with the aim to facilitate encounters and dialogue in a wide variety of formats. 
 

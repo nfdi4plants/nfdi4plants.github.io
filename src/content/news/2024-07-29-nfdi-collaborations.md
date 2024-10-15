@@ -1,7 +1,7 @@
 ---
 date: 2024-07-29
 title: Second overview of NFDI collaborations published
-previewText: The National Research Data Infrastructure (NFDI) in Germany has established itself and now comprises 26 consortia covering various disciplines. The main aim of the NFDI is to establish a cross-disciplinary research data infrastructure and to make scientific research more efficient. The initiative thus contributes to strengthening the research landscape in Germany and creates a solid foundation for future scientific breakthroughs. An overview from January 2023 described the extensive collaborative activities...
+description: The National Research Data Infrastructure (NFDI) in Germany has established itself and now comprises 26 consortia covering various disciplines. The main aim of the NFDI is to establish a cross-disciplinary research data infrastructure and to make scientific research more efficient. The initiative thus contributes to strengthening the research landscape in Germany and creates a solid foundation for future scientific breakthroughs. An overview from January 2023 described the extensive collaborative activities...
 highlight: false
 ---
 The National Research Data Infrastructure (NFDI) in Germany has established itself and now comprises 26 consortia covering various disciplines. The main aim of the NFDI is to establish a cross-disciplinary research data infrastructure and to make scientific research more efficient. The initiative thus contributes to strengthening the research landscape in Germany and creates a solid foundation for future scientific breakthroughs.

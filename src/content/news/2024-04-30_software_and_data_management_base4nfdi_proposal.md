@@ -1,7 +1,7 @@
 ---
 date: 2024-04-30
 title: Software and Data Management - Developing a proposal for Base4NFDI
-previewText: Following the presentation at the end of March in the RSE Working Group and the well-attended online session of the Common Infrastructure Section in mid-April, DataPLANT is now in the process of writing a proposal for Base4NFDI with the input to promote a potential joint service. We have been using GitLab in the consortium for some time for our DataHUB,...
+description: Following the presentation at the end of March in the RSE Working Group and the well-attended online session of the Common Infrastructure Section in mid-April, DataPLANT is now in the process of writing a proposal for Base4NFDI with the input to promote a potential joint service. We have been using GitLab in the consortium for some time for our DataHUB,...
 
 ---
 Following the presentation at the end of March in the [RSE Working Group](https://doi.org/10.5281/zenodo.6483449) and the well-attended online session of the [Common Infrastructure Section](https://www.nfdi.de/section-infra/) in mid-April, DataPLANT is now in the process of writing a proposal for Base4NFDI with the input to promote a potential joint service. We have been using GitLab in the consortium for some time for our [DataHUB](https://git.nfdi4plants.org/explore), but we also use public (commercial) resources for software development. Sustainability is always a bit of a question here, as is whether companies will change or discontinue such services at some point. The NFDI is so large that it requires its own activities, which are best combined with other ongoing initiatives.

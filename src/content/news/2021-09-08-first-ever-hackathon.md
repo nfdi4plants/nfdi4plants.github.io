@@ -1,7 +1,7 @@
 ---
 date: 2021-09-08
 title: First ever ARC Hackathon
-previewText: 'From 6th to 8th September DataPLANT scientists of the different Task Areas came together at Villa Denis in Frankenstein to continue their work on improving DataPLANTs solution for FAIR data. the Annotated Research Context and its associated tools and services. During the three-day event, the data experts tackled four essential topics.'
+description: 'From 6th to 8th September DataPLANT scientists of the different Task Areas came together at Villa Denis in Frankenstein to continue their work on improving DataPLANTs solution for FAIR data. the Annotated Research Context and its associated tools and services. During the three-day event, the data experts tackled four essential topics.'
 ---
 
 From 6th to 8th September DataPLANT scientists of the different Task Areas came together at Villa Denis in Frankenstein to continue their work on improving DataPLANTs solution for FAIR data: the Annotated Research Context and its associated tools and services.  

@@ -1,7 +1,7 @@
 ---
 date: 2021-03-02
 title: DataPLANT presented at NFDI-Talks online series
-previewText: DataPLANT presented in the second event of the NFDI Talks online series on considerations on project sustainability and community expansion as the total number of researchers covered by the NFDI in Germany should be steadily expanded in the course of the formation process. Additionally the consortia should provide concepts for a long-term perspective after the first funding phase. The ongoing procedures for the formation of new consortia as well as the activities within the already funded ...
+description: DataPLANT presented in the second event of the NFDI Talks online series on considerations on project sustainability and community expansion as the total number of researchers covered by the NFDI in Germany should be steadily expanded in the course of the formation process. Additionally the consortia should provide concepts for a long-term perspective after the first funding phase. The ongoing procedures for the formation of new consortia as well as the activities within the already funded ...
 ---
 
 📣 [Find the recordings here](https://www.youtube.com/watch?v=VTGhtQmn2p4)

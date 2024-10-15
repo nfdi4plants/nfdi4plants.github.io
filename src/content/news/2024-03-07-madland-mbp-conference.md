@@ -1,7 +1,7 @@
 ---
 date: 2024-03-07
 title: MAdLand presents at Molecular Biology of Plants (MBP) Conference
-previewText: Deepti Varshney and Saskia Hiltemann from the University of Freiburg and the MAdLand consortium presented a poster entitled "MAdLand Resources & Tools" at the MBP2024 conference in Hennef. In this poster presentation they highlighted the close collaborations between MAdLAnd and DataPLANT.
+description: Deepti Varshney and Saskia Hiltemann from the University of Freiburg and the MAdLand consortium presented a poster entitled "MAdLand Resources & Tools" at the MBP2024 conference in Hennef. In this poster presentation they highlighted the close collaborations between MAdLAnd and DataPLANT.
 ---
 
 ![The MAdLand logo with the text “Molecular Adaptation to Land: plant evolution to change”](/src/assets/images/news/madland-logo.png){: style="float:right"}

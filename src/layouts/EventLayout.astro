@@ -5,6 +5,7 @@ import SocialShare from '~/components/widgets/SocialShare.astro';
 import EventInfoList from '~/components/events/EventInfoList';
 import { Icon } from 'astro-icon/components';
 import { Image } from 'astro:assets';
+import { createEventSchema } from '~/util/JsonLDSchemas';
 
 interface Props {
   event: ReducedEvent
@@ -14,8 +15,11 @@ const { event } = Astro.props;
 
 const { Content, headings } = await event.render();
 
+const jsonLD = createEventSchema(event)
+
 const frontmatter= {
-  ...event.data
+  ...event.data,
+  jsonLD: jsonLD
 }
 
 const lowestDepth = Math.min(...headings.map(h => h.depth));
@@ -65,7 +69,7 @@ const additionalMetadata: ({
         <h1 id={event.slug}>{event.data.title}</h1>
         <SocialShare text={event.data.title} url={Astro.url} />
       </div>
-      <div class="event-section" set:html={event.data.excerpt} />
+      <div class="event-section" set:html={event.data.description} />
       <div class="event-section">
         <h3 id="info">
           <Icon name="tabler:info-square" class="inline text-primary" title="Location"/>

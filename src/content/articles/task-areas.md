@@ -1,6 +1,6 @@
 ---
 title: DataPLANT Task Areas
-summary: Overview of the DataPLANT Task Areas
+description: Overview of the DataPLANT Task Areas
 ---
 
 ## Task Area I - Driving Standardization
