@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {sortByYear, groupByYear, isPastOrWithinNext31Days, type ReducedEvent } from '~/util/EventUtil.ts';
+import {sortByYear, groupByYear, isPastOrWithinNext31Days, type ReducedEvent, getHumanReadableAttendanceMode } from '~/util/EventUtil.ts';
 import EventInfoList from './EventInfoList.tsx';
 
 interface Props {
@@ -53,7 +53,7 @@ function ControlButtons({label, options, selectedOption, setOption}: ControlButt
 
 function EventCard (event: ReducedEvent) {
   return (
-    <div className="shadow border p-3 lg:p-5 rounded lg:max-w-5xl xl:max-w-6xl" key={"event-" + event.slug}>
+    <div className="shadow border p-3 lg:p-5 rounded lg:w-[64rem] xl:w-[72rem] lg:max-w-5xl xl:max-w-6xl" key={"event-" + event.slug}>
       <div className={"grid lg:grid-rows-1 gap-2 lg:gap-4 lg:grid-cols-2 " + (event.data.image ? 'lg:grid-cols-2' : '')}>
         <div className="prose-sm lg:prose">
           <h1><a href={"/events/" + event.href}>{event.data.title}</a></h1>
@@ -103,7 +103,7 @@ export default function EventList( {events, showFilter = true, showPastFutureLim
     .map(year => parseInt(year)) // Convert keys to numbers
     .sort((a, b) => b - a); // Sort in descending order (b - a)
 
-  const modes = new Set(events.map((event) => event.data.mode));
+  const modes = new Set(events.map((event) => getHumanReadableAttendanceMode(event.data.mode)));
   const toggleMode = (mode: string) => {
     mode === config.mode ? setConfig({...config, mode: null}) : setConfig({...config, mode: mode}) 
   }
@@ -119,7 +119,7 @@ export default function EventList( {events, showFilter = true, showPastFutureLim
   }
 
   const filterEvents = (event: ReducedEvent) => {
-    if (config.mode && event.data.mode !== config.mode) return false;
+    if (config.mode && getHumanReadableAttendanceMode(event.data.mode) !== config.mode) return false;
     if (config.audience && !(event.data.audience as string[]).includes(config.audience)) return false;
     if (config.category && event.data.category !== config.category) return false;
     return true;
@@ -139,7 +139,7 @@ export default function EventList( {events, showFilter = true, showPastFutureLim
         )
       }
 
-      <h2 className="text-5xl lg:text-7xl text-center bg-secondary text-secondary-content p-2">Upcoming</h2>
+      <h2 className="text-5xl lg:text-7xl text-center bg-secondary text-secondary-content p-2 lg:w-[64rem] xl:w-[72rem] lg:max-w-5xl xl:max-w-6xl">Upcoming</h2>
       <div>
         <span className='py-2 text-lg'>
           Found <b>{upcomingEvents.filter(filterEvents).length}</b> upcoming event(s).
@@ -150,7 +150,7 @@ export default function EventList( {events, showFilter = true, showPastFutureLim
           <EventCard {...event} key={"card-" + event.href} />
         ))
       }
-      <h2 className="text-5xl lg:text-7xl text-center bg-secondary text-secondary-content p-2">Archive</h2>
+      <h2 className="text-5xl lg:text-7xl text-center bg-secondary text-secondary-content p-2 lg:w-[64rem] xl:w-[72rem] lg:max-w-5xl xl:max-w-6xl">Archive</h2>
       <div>
         <span className='py-2 text-lg'>
           Found <b>{pastEvents.filter(filterEvents).length}</b> past event(s).
