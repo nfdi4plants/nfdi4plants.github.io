@@ -12,7 +12,7 @@ body:
     id: excerpt
     attributes:
       label: Excerpt
-      description: Max. 200 signs.
+      description: Add a short (max. 200 signs) description about the event
     validations:
       required: true
   - type: dropdown
@@ -141,7 +141,7 @@ body:
           address: 
       description: |
         url: link to hybrid meeting or directions (e.g. online map)
-        name: 50 signs max.
+        name: Short (max. 50 signs) name of the location
         address: Street address and room
       render: markdown
     validations:
