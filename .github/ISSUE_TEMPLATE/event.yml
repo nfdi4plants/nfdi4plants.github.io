@@ -108,8 +108,9 @@ body:
       label: Tutors
       description: List of tutors
       value: |
-        - Sir Tutor-A-Lot (<a href="https://www.nfdi4plants.org">DataPLANT</a>)
-        - Edna Krabappel          
+        tutors:
+          - Sir Tutor-A-Lot (<a href="https://www.nfdi4plants.org">DataPLANT</a>)
+          - Edna Krabappel          
     validations:
       required: false
   - type: textarea
