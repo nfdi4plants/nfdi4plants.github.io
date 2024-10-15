@@ -1,5 +1,5 @@
 name: Add event
-description: Add an event (e.g. workshop, training or demo) to be listed on the [DataPLANT events site](https://nfdi4plants.org/events/). Please check out the [contribution guide](https://github.com/nfdi4plants/nfdi4plants.github.io/blob/main/CONTRIBUTING.md#events) for more details
+description: Add an event (e.g. workshop, training or demo) to be listed on the [DataPLANT events site](https://nfdi4plants.org/events/).
 title: "[Add event]: "
 body:
   - type: input
