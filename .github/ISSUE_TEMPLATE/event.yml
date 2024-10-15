@@ -1,5 +1,5 @@
 name: Add event
-description: Add an event (e.g. workshop, training or demo) to be listed on the [DataPLANT events site](https://nfdi4plants.org/events/).
+description: "Add an event to be listed on the [DataPLANT events site](https://nfdi4plants.org/events/). Details: https://github.com/nfdi4plants/nfdi4plants.github.io/blob/main/CONTRIBUTING.md"
 title: "[Add event]: "
 body:
   - type: input
@@ -106,11 +106,11 @@ body:
     id: tutors
     attributes:
       label: Tutors
-      description: List of tutors
+      description: List of tutors. You can use html to add links or styling
       value: |
         tutors:
-          - Sir Tutor-A-Lot (<a href="https://www.nfdi4plants.org">DataPLANT</a>)
           - Edna Krabappel          
+          - Sir Tutor-A-Lot (<a href="https://www.nfdi4plants.org">DataPLANT</a>)
     validations:
       required: false
   - type: textarea
