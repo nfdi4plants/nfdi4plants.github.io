@@ -135,9 +135,10 @@ body:
     attributes:
       label: Location
       value: |
-        url:
-        name:
-        address: 
+        location:
+          name:
+          url:
+          address: 
       description: |
         url: link to hybrid meeting or directions (e.g. online map)
         name: 50 signs max.
