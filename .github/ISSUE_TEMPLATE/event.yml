@@ -23,6 +23,8 @@ body:
         - On-site
         - Online
         - Hybrid
+    validations:
+      required: true
   - type: dropdown
     id: category
     attributes:
