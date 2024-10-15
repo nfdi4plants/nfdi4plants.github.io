@@ -117,10 +117,11 @@ body:
     attributes:
       label: Registration
       value: |
-        url: 
-        description:
-        deadline:
-        seats:
+        registration:
+          url: 
+          description:
+          deadline:
+          seats:
       description: |
         url: link to a registration form or a mailto-link (email address)
         description: add additional details to the registration
