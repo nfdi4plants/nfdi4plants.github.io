@@ -2,58 +2,69 @@ import type { CollectionEntry } from 'astro:content';
 
 type ExtractDateFn<T> = (item: T) => Date;
 
-export const formatterDate = new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', year: "numeric", month: "2-digit", day: "2-digit"});
+export const formatterDate = new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', day: "2-digit", month: "2-digit", year: "numeric"});
+export function formatDateToHref(date: Date): string { 
+  return formatterDate
+    .formatToParts(date)
+    .reduce((accumulator, {type, value}) => { 
+      if (type === "literal") {
+        return accumulator + "-";
+      } else {
+        return accumulator + value;
+      }
+    }, "");
+}
+
 // const formatterDate = new Intl.DateTimeFormat('en-US', { day: '2-digit', month: '2-digit', year: 'numeric' });
 export const formatterTime = new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', hour: '2-digit', minute: '2-digit' });
 
 // Extend the type by adding the `periodic` flag
 export type ReducedEvent = CollectionEntry<'events'> & {
-  slug: string,
   data: {
-    periodic: boolean; // Add the periodic flag
+    repeating: boolean; // Add the periodic flag
     when: { start: Date; end: Date } // Update the when field
   };
+  href: string; 
 };
 
 // Helper function to determine if the date is within the next 31 days
-const isPastOrWithinNext31Days = (date: Date): boolean => {
+export const isPastOrWithinNext31Days = (date: Date): boolean => {
   const now = new Date();
   const futureLimit = new Date(now.getTime() + 31 * 24 * 60 * 60 * 1000); // 31 days in the future
   return date <= futureLimit;
 };
 
-// Function to reduce periodic events to single events
-export const reducePeriodicEvents = (events: CollectionEntry<'events'>[]): ReducedEvent[] => {
-  // this below is in fact a ReducedEvent[][], but ts has issues with slug being a overriden as string in ReducedEvent.
-  //@ts-ignore
-  const reducedEvent: ReducedEvent[][] = events.map((event) => {
-    if (Array.isArray(event.data.when)) {
-      return event.data.when
-        .filter((whenEntry) => isPastOrWithinNext31Days(whenEntry.start))
-        .map((whenEntry) => ({
-          ...event,
-          data: {
-            ...event.data,
-            // override the props with specialized information from the specific event date in a series
-            ...whenEntry.props, 
-            when: whenEntry as { start: Date; end: Date },
-            periodic: true
-          },
-          slug: event.slug + "/" + whenEntry.start.getTime() as string, //generate one file per date
-        }));
-    } else {
-      return [{
+export const reducePeriodicEvent = (event: CollectionEntry<'events'>): ReducedEvent[] => {
+  if (Array.isArray(event.data.when)) {
+    return event.data.when
+      .map((whenEntry) => ({
         ...event,
         data: {
           ...event.data,
-          when : event.data.when as { start: Date; end: Date },
-          periodic: false
+          // override the props with specialized information from the specific event date in a series
+          ...whenEntry.props, 
+          when: whenEntry as { start: Date; end: Date },
+          repeating: true
         },
-        slug: event.slug as string,
-      }]
-    }
-  });
-  return reducedEvent.flat();
+        href: `${event.slug}/${formatDateToHref(whenEntry.start)}`
+      }));
+  } else {
+    return [{
+      ...event,
+      data: {
+        ...event.data,
+        when : event.data.when as { start: Date; end: Date },
+        repeating: false
+      },
+      href: event.slug
+    }]
+  }
+}
+
+// Function to reduce periodic events to single events
+export const reducePeriodicEvents = (events: CollectionEntry<'events'>[]): ReducedEvent[] => {
+  const reducedEvents: ReducedEvent[][] = events.map((event) => reducePeriodicEvent(event));
+  return reducedEvents.flat();
 };
 
 export function sortByYear<T>(array: T[], extractDate: ExtractDateFn<T>): T[] {

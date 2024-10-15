@@ -1,17 +1,15 @@
 ---
 import { getCollection } from 'astro:content';
-import Layout from "~/layouts/Layout.astro"
+import CenteredLayout from "~/layouts/CenteredLayout.astro"
 import EventList from '~/components/events/EventList.tsx';
+import { reducePeriodicEvents, type ReducedEvent } from '~/util/EventUtil.ts';
 
 const eventCollection = await getCollection('events')
+const events: ReducedEvent[] = reducePeriodicEvents(eventCollection);
 ---
 
-<Layout title="Events">
-  <div class="flex items-center justify-center w-full">
-    <div class="flex flex-col gap-4 p-2 lg:p-5 lg:py-10 xl:py-20">
-      <EventList 
-        client:load
-        events={eventCollection} />
-    </div>
-  </div>
-</Layout>
+<CenteredLayout title="Events">
+  <EventList 
+    client:load
+    events={events} />
+</CenteredLayout>

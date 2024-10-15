@@ -47,7 +47,7 @@ when:
 mode: On-site
 audience: [Users]
 location:
-  short: HHU, ZSL 22.07, Room U1.21
+  name: HHU
   address: HHU, ZSL 22.07, Room U1.21
   url: https://www.ceplas.eu/en/contact/how-to-get-there
 image: ~/assets/images/events/ceplas-ARCs.drawio.png

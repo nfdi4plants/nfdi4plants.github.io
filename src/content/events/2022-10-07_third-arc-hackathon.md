@@ -8,7 +8,7 @@ when:
 audience: ['Users', 'DataStewards', 'Developers']
 mode: On-site
 location: 
-  short: Forschungszentrum Jülich GmbH
+  name: Forschungszentrum Jülich GmbH
   address: Bioinformatik (IBG-4), Wilhelm-Johnen-Straße, 52428 Jülich
   url: https://www.fz-juelich.de/de/ibg/ibg-4
 organizer:

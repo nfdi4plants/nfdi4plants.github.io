@@ -25,6 +25,9 @@ location:
   address: HHU, 26.24.U1.018
 mode: On-site
 audience: [Users]
+location:
+  name: HHU
+  address: HHU, 26.24.U1.018
 tutors:
   - Sabrina Zander (<a href="https://www.sfb1535.hhu.de/projects/research-area-z/z03">MibiNet</a>)
   - Dominik Brilhaus (<a href="https://www.ceplas.eu/en/research/data-science-and-data-management">CEPLAS Data</a>)

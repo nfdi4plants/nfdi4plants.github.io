@@ -1,0 +1,26 @@
+---
+
+import { getCollection } from 'astro:content';
+import { reducePeriodicEvents, formatDateToHref, type ReducedEvent } from '~/util/EventUtil.ts';
+import EventLayout from '~/layouts/EventLayout.astro';
+export async function getStaticPaths() {
+  const eventsCollection = await getCollection('events')
+  const reducedEvents = reducePeriodicEvents(eventsCollection);
+  return reducedEvents.map((entry) => {
+    const dateString = formatDateToHref(entry.data.when.start);
+    return {
+      params: { event: entry.slug, date: dateString},
+      props: { event: entry }
+    }
+  });
+}
+
+interface Props {
+  event: ReducedEvent
+}
+
+const { event } = Astro.props;
+---
+
+
+<EventLayout event={event}>

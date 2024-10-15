@@ -9,7 +9,7 @@ image: ~/assets/images/events/01-a-bellevue-rheinhotel-frontansicht-2015.webp
 audience: ['Users', 'DataStewards', 'Developers']
 mode: On-site
 location: 
-  short: Bellevue Rheinhotel Boppard
+  name: Bellevue Rheinhotel Boppard
   address: Bellevue Rheinhotel Boppard
   url: https://www.bellevue-boppard.de/
 ---

@@ -20,7 +20,7 @@ mode: Online
 tutors: 
  - DataStewards of DataPLANT, CEPLAS, MibiNet, TRR341
 location:
-  short: WebEx
+  name: WebEx
   address: ""
   url: https://hhu.webex.com/hhu-en/j.php?MTID=m37ec02b7a7afdc4b0e1b310bd693ac0c
 registration: 

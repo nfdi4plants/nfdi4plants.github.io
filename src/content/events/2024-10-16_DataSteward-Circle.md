@@ -1,4 +1,5 @@
 ---
+slug: datasteward-circle
 title: DataSteward Circle
 category: Meeting
 audience: [DataStewards]
@@ -19,7 +20,7 @@ when:
 mode: Online
 image: ~/assets/images/DataPLANT_logo_square_bg_darkblue.svg
 location:
-  short: Microsoft Teams
+  name: Microsoft Teams
   url: https://teams.microsoft.com/l/meetup-join/19%3ameeting_MWU2NWYwNTYtYmY3OS00OWZkLThkM2YtNWQzMWJlODAwZWZl%40thread.v2/0?context=%7b%22Tid%22%3a%229071867c-98f0-4006-89aa-4e4fd55af39d%22%2c%22Oid%22%3a%221c9911a0-ac64-4f61-8904-9ec3eeb64f98%22%7d
 registration: 
   description: Please register via email. You’ll receive a reminder with a short agenda shortly before each meeting.

@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+import { reducePeriodicEvent } from '~/util/EventUtil.ts';
+import type { CollectionEntry } from 'astro:content';
+import CenteredLayout from '~/layouts/CenteredLayout.astro';
+import EventList from '~/components/events/EventList.tsx';
+import EventLayout from '~/layouts/EventLayout.astro';
+
+export async function getStaticPaths() {
+  const eventsCollection = await getCollection('events')
+  return eventsCollection.map((entry) => {
+    return {
+      params: { event: entry.slug },
+      props: { event: entry }
+    }
+  });
+}
+
+interface Props {
+  event: CollectionEntry<'events'>
+}
+
+const { event } = Astro.props;
+
+
+// ⚠️ at this point we do not know if we should show a single event or a list of events (in case of a repeating event)
+// Therefore, we reduce the event. This will create a list of multiple events if the event is repeating.
+const reducedEvents = reducePeriodicEvent(event);
+
+---
+{reducedEvents.length > 1 
+  ? <CenteredLayout title="Events">
+      <div class="prose lg:prose-lg">
+        <h1 class="!mb-0">{event.data.title}</h1>
+        <h2 class="!mt-0 text-opacity-20 text-base-content">Periodic event with the following dates!</h2>
+      </div>
+      <EventList 
+        client:load
+        events={reducedEvents} 
+        showFilter={false}
+        showPastFutureLimit={true} />
+    </CenteredLayout>
+  : <EventLayout event={reducedEvents[0]} />
+}

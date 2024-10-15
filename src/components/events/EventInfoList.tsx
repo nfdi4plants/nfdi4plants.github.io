@@ -19,7 +19,7 @@ export default function EventInfoList({event, additional}: Props) {
       <li className="flex items-center gap-2">
         <InlineIcon icon="tabler:calendar-time" className="text-xl"/>
         <span>
-          {event.data.periodic && <span title="repeating" className="inline-block align-middle"><InlineIcon icon="tabler:infinity"></InlineIcon></span>}
+          {event.data.repeating && <span title="repeating" className="inline-block align-middle"><InlineIcon icon="tabler:infinity"></InlineIcon></span>}
           {formatterDate.format(event.data.when.start) + " " + formatterTime.format(event.data.when.start)}
           <span> – </span>
           {formatterDate.format(event.data.when.end) + " " + formatterTime.format(event.data.when.end)}
@@ -38,8 +38,8 @@ export default function EventInfoList({event, additional}: Props) {
         <span>
           {
             event.data.location.url 
-              ? <a href={event.data.location.url} dangerouslySetInnerHTML={{ __html: event.data.location.short}}></a>
-              : <span dangerouslySetInnerHTML={{ __html: event.data.location.short}}></span> 
+              ? <a href={event.data.location.url} dangerouslySetInnerHTML={{ __html: event.data.location.name}}></a>
+              : <span dangerouslySetInnerHTML={{ __html: event.data.location.name}}></span> 
           }
         </span>
       </li>

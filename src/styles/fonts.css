@@ -1,8 +1,6 @@
 @font-face {
   font-family: 'shadows_into_light_tworegular';
-  src: url('/fonts/shadowsintolighttwo-regular-webfont.woff2') format('woff2'),
-      url('/fonts/shadowsintolighttwo-regular-webfont.woff') format('woff');
+  src: url('/src/assets/fonts/shadowsintolighttwo-regular-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-
 }

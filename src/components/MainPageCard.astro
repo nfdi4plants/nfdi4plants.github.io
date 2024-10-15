@@ -19,7 +19,7 @@ let textColor = textColorMap.get(card.data.styling.textColor)
 let buttonColor = bgColorMap.get(card.data.styling.buttonColor)
 let buttonTextColor = textColorMap.get(card.data.styling.buttonTextColor)
 
-const cardBaseClass = card.data.styling.glass ? "card glass lg:!items-center" : "card lg:!items-center"
+const cardBaseClass = card.data.styling.glass ? "card glass max-md:rounded-none lg:!items-center" : "card max-md:rounded-none lg:!items-center"
 
 const cardClassTextRight = `${cardBaseClass} lg:card-side shadow-xl p-6 ${bgColor} ${textColor}`
 const cardClassTextLeft = `${cardBaseClass} lg:card-side shadow-xl p-6 ${bgColor} ${textColor}`

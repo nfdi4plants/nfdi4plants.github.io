@@ -8,7 +8,7 @@ when:
 audience: ['Users', 'DataStewards', 'Developers']
 mode: On-site
 location: 
-  short: Villa Denis Conference Center
+  name: Villa Denis Conference Center
   address: Diemerstein 9, 67468 Frankenstein
 organizer:
   name: DataPLANT
