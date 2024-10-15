@@ -8,7 +8,7 @@ when:
     start: 2023-11-15T09:00:00
     end: 2023-11-15T17:00:00
 location:
-  short: HHU, UoC
+  name: HHU, UoC
   address: HHU, UoC
 tutors:
   - Dominik Brilhaus (CEPLAS)

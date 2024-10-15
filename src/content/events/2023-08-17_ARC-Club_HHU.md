@@ -8,7 +8,7 @@ when:
     start: 2023-08-17T09:00:00
     end: 2023-08-18T17:00:00
 location:
-  short: HHU
+  name: HHU
   address: HHU, ZSL 22.07, Room U1.21
   url: https://www.ceplas.eu/en/contact/how-to-get-there
 tutors:

@@ -11,23 +11,20 @@ when:
     end: 2024-04-18T17:00:00
     props:
       location:
-        short: HHU, 28.01.00.011
+        name: HHU, 28.01.00.011
         address: HHU, 28.01.00.011
   -   
     start: 2024-04-30T09:00:00
     end: 2024-04-30T17:00:00
     props:
       location:
-        short: HHU, 22.07.U1.025
+        name: HHU, 22.07.U1.025
         address: HHU, 22.07.U1.025
 location:
-  short: HHU, 26.24.U1.018
+  name: HHU, 26.24.U1.018
   address: HHU, 26.24.U1.018
 mode: On-site
 audience: [Users]
-location:
-  name: HHU
-  address: HHU, 26.24.U1.018
 tutors:
   - Sabrina Zander (<a href="https://www.sfb1535.hhu.de/projects/research-area-z/z03">MibiNet</a>)
   - Dominik Brilhaus (<a href="https://www.ceplas.eu/en/research/data-science-and-data-management">CEPLAS Data</a>)

@@ -12,7 +12,7 @@ when:
     start: 2023-10-11T13:00:00
     end: 2023-10-11T17:00:00
 location:
-  short: WebEx
+  name: WebEx
   url: https://hhu.webex.com/hhu-en/j.php?MTID=m8469363c6758c7556096e3704df51885
 tutors:
   - Dominik Brilhaus (CEPLAS)

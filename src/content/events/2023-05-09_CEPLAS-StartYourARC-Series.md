@@ -15,7 +15,7 @@ when:
 mode: On-site
 audience: [Users]
 location:
-  short: HHU, ZSL 22.07, Room U1.025
+  name: HHU, ZSL 22.07, Room U1.025
   address: HHU, ZSL 22.07, Room U1.025
   url: https://www.ceplas.eu/en/contact/how-to-get-there
 tutors:
