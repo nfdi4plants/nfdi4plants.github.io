@@ -13,6 +13,6 @@ It is important to mention, since it is is often misunderstood, that the ‘A’
 
 The [ARC (**A**nnotated **R**esearch **C**ontext)](https://arc-rdm.org) is an implementation of the FDO concept.
 It is a framework for organizing and documenting research data, as well as a container that continuously supports collaboration, data exchange, and adherence to FAIR principles among various researchers.
-It is developed under the umbrella of DataPLANT for for plant research, but is applicable to many other research domains.
+While being developed under the umbrella of DataPLANT for plant research, the ARC is applicable to many other research domains.
 
 DataPLANT develops and maintains  [tools for the ARC ecosystem](/resources/#toolbox), hosts [services to collaborate on ARCs](https://nfdi4plants.github.io/arc-data-hub/), and provides [training and support](https://nfdi4plants.github.io/support/) for ARC users.
