@@ -3,10 +3,12 @@ title: Hands-On Symposium on ARC communication and interoperability
 category: Conference
 description: 'The symposium at Bellevue-Rheinhotel Boppard (April 8-10, 2024) features ARC ecosystem talks and hands-on work.'
 when:
-  start: 2024-04-08T12:00:00
-  end: 2024-04-10T12:16:00
+  start: 2024-04-08T10:00:00
+  end: 2024-04-10T14:00:00
 image: ~/assets/images/events/01-a-bellevue-rheinhotel-frontansicht-2015.webp
 audience: ['Users', 'DataStewards', 'Developers']
+tutors:
+  - Heinrich Lukas Weil (<a href="https://nfdi4plants.org/">DataPLANT</a>)
 mode: OfflineEventAttendanceMode
 location: 
   name: Bellevue Rheinhotel Boppard
