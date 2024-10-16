@@ -7,7 +7,7 @@ content:
   - participation/arc-how-to-start
   - participation/github
   - participation/broker-ontology
-  - participation/template-repo
+  - participation/swate-templates
   - participation/arc-development
 image: /src/assets/images/subpage/participation/participation-mainpage.svg
 styling: 
