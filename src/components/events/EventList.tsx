@@ -42,7 +42,7 @@ function ControlButtons({label, options, selectedOption, setOption}: ControlButt
   return (
     <>
       <label>{label}</label>
-      <div className="flex flex-row space gap-3">
+      <div className="flex flex-row space gap-3 flex-wrap">
         {Array.from(options).map((option, index) => (
           <ControlButton value={option} selectedValue={selectedOption} setValue={() => setOption(option)} key={"control-buttons-" + index} />
         ))}
