@@ -1,10 +1,10 @@
 ---
 title: First ARC Hackathon
-category: Conference
+category: Hackathon
 description: 'Hackathon to improve DataPLANTs solution for FAIR data: the Annotated Research Context and its associated tools and services.'
 when:
   start: 2021-09-06T12:00:00
-  end: 2021-09-08T12:16:00
+  end: 2021-09-08T12:00:00
 audience: ['Users', 'DataStewards', 'Developers']
 mode: OfflineEventAttendanceMode
 location: 
