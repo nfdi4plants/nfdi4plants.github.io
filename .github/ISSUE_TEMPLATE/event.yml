@@ -1,5 +1,5 @@
 name: Add event
-description: Add an event (e.g. workshop, training or demo) to be listed on the [DataPLANT events site](https://nfdi4plants.org/events/).
+description: "Add an event to be listed on the [DataPLANT events site](https://nfdi4plants.org/events/). Details: https://github.com/nfdi4plants/nfdi4plants.github.io/blob/main/CONTRIBUTING.md"
 title: "[Add event]: "
 body:
   - type: input
@@ -9,10 +9,10 @@ body:
     validations:
       required: true
   - type: input
-    id: description
+    id: excerpt
     attributes:
-      label: Description
-      description: Max. 200 signs.
+      label: Excerpt
+      description: Add a short (max. 200 signs) description about the event
     validations:
       required: true
   - type: dropdown
@@ -23,6 +23,8 @@ body:
         - OnlineEventAttendanceMode
         - OfflineEventAttendanceMode
         - MixedEventAttendanceMode
+    validations:
+      required: true
   - type: dropdown
     id: category
     attributes:
@@ -33,17 +35,19 @@ body:
         - Webinar
         - Training
         - Meeting
+    validations:
+      required: true
   - type: dropdown
     id: audience
     attributes:
-      label: audience
+      label: Audience
       options:
         - Users
         - Data Stewards
         - Developers
       multiple: true
     validations:
-      required: false
+      required: True
   - type: dropdown
     id: recurrence
     attributes:
@@ -54,6 +58,8 @@ body:
         - Series
       description: |
         Single = one-time event; Series = multiple-session event planned for non-consecutive days; Periodic = regularily repeating (e.g. Data Steward Circle)
+    validations:
+      required: true
   - type: textarea
     id: when
     attributes:
@@ -95,15 +101,16 @@ body:
           affiliation: DataPLANT
           url: https://www.nfdi4plants.org
     validations:
-      required: true
+      required: false
   - type: textarea
     id: tutors
     attributes:
       label: Tutors
-      description: List of tutors
+      description: List of tutors. You can use html to add links or styling
       value: |
-        - Sir Tutor-A-Lot (<a href="https://www.nfdi4plants.org">DataPLANT</a>)
-        - Edna Krabappel          
+        tutors:
+          - Edna Krabappel          
+          - Sir Tutor-A-Lot (<a href="https://www.nfdi4plants.org">DataPLANT</a>)
     validations:
       required: false
   - type: textarea
@@ -111,10 +118,11 @@ body:
     attributes:
       label: Registration
       value: |
-        url: 
-        description:
-        deadline:
-        seats:
+        registration:
+          url: 
+          description:
+          deadline:
+          seats:
       description: |
         url: link to a registration form or a mailto-link (email address)
         description: add additional details to the registration
@@ -128,12 +136,13 @@ body:
     attributes:
       label: Location
       value: |
-        url:
-        name:
-        address: 
+        location:
+          name:
+          url:
+          address: 
       description: |
         url: link to hybrid meeting or directions (e.g. online map)
-        name: 50 signs max.
+        name: Short (max. 50 signs) name of the location
         address: Street address and room
       render: markdown
     validations:
@@ -156,3 +165,10 @@ body:
     attributes:
       label: Image
       description: add an image URL here or upload an image via comment to the issue
+  - type: input
+    id: external-link
+    attributes:
+      label: External link
+      description: "Add a link to an external resource"
+    validations:
+      required: false
