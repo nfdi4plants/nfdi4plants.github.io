@@ -1,7 +1,7 @@
 ---
 date: 2021-09-30
 title: Make a september to remember 
-previewText: This September has been a busy month for the DataPLANT team. It started with a trip by our project coordinator Cristina Martins Rodrigues to the Chlamy 2020+1. This is a biennial meeting of all groups working on Chlamydomonas reinhardtii. For the experts on the green alga, the RDM is also an important endeavour to act FAIR.
+description: This September has been a busy month for the DataPLANT team. It started with a trip by our project coordinator Cristina Martins Rodrigues to the Chlamy 2020+1. This is a biennial meeting of all groups working on Chlamydomonas reinhardtii. For the experts on the green alga, the RDM is also an important endeavour to act FAIR.
 ---
 
 This September has been a busy month for the DataPLANT team. It started with a trip by our project coordinator [Cristina Martins Rodrigues](https://twitter.com/C_MRodrigues) to the [Chlamy 2020+1](https://chlamy2020.sciencesconf.org/). This is a biennial meeting of all groups working on *Chlamydomonas reinhardtii*. For the experts on the green alga, the RDM is also an important endeavour to act FAIR.  

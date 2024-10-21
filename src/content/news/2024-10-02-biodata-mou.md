@@ -1,7 +1,7 @@
 ---
 date: 2024-10-02
 title: DataPLANT, NFDI4Biodiversity and NFDI4Microbiota intensify their collaboration as Biodata Interest Group
-previewText: The consortia DataPLANT, NFDI4Biodiversity and NFDI4Microbiota have taken a significant step towards closer cooperation by signing a joint Memorandum of Understanding (MoU). The aim is...
+description: The consortia DataPLANT, NFDI4Biodiversity and NFDI4Microbiota have taken a significant step towards closer cooperation by signing a joint Memorandum of Understanding (MoU). The aim is...
 highlight: true
 ---
 

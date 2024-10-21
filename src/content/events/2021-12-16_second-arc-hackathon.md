@@ -1,12 +1,12 @@
 ---
 title: Second ARC Hackathon
 category: Conference
-excerpt: 'Hackathon to improve DataPLANTs solution for FAIR data: the Annotated Research Context and its associated tools and services.'
+description: 'Hackathon to improve DataPLANTs solution for FAIR data: the Annotated Research Context and its associated tools and services.'
 when:
   start: 2021-12-14T13:00:00
   end: 2021-12-16T14:00:00
 audience: ['Users', 'DataStewards', 'Developers']
-mode: Online
+mode: OnlineEventAttendanceMode
 organizer:
   name: DataPLANT
 location:

@@ -1,7 +1,7 @@
 ---
 date: 2021-06-02
 title: Participation in the upcoming 3rd NFDI conference on 8th July
-previewText: DataPLANT will participate in the 3rd NFDI conference, held virtually on the **8th July**. The National Research Data Infrastructure (NFDI) is being established as a cooperative network of consortia over a three-year period (2019-2021) in three stages. DataPLANT was already successful in the first round. As part of the third round of calls, the third NFDI conference will be held in a virtual format on July 8 ...
+description: DataPLANT will participate in the 3rd NFDI conference, held virtually on the **8th July**. The National Research Data Infrastructure (NFDI) is being established as a cooperative network of consortia over a three-year period (2019-2021) in three stages. DataPLANT was already successful in the first round. As part of the third round of calls, the third NFDI conference will be held in a virtual format on July 8 ...
 ---
 
 DataPLANT will participate in the [3rd NFDI conference](https://www.dfg.de/foerderung/info_wissenschaft/2021/info_wissenschaft_21_38/index.html), held virtually on the **8th July**. The [National Research Data Infrastructure (NFDI)](https://www.nfdi.de/) is being established as a cooperative network of consortia over a three-year period (2019-2021) in three stages. DataPLANT was already successful in the first round. As part of the third round of calls, the third NFDI conference will be held in a virtual format on July 8, 2021.

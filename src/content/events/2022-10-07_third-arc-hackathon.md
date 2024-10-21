@@ -1,12 +1,12 @@
 ---
 title: Third ARC Hackathon
 category: Conference
-excerpt: 'Hackathon to improve DataPLANTs solution for FAIR data: the Annotated Research Context and its associated tools and services.'
+description: 'Hackathon to improve DataPLANTs solution for FAIR data: the Annotated Research Context and its associated tools and services.'
 when:
   start: 2022-10-05T13:00:00
   end: 2022-10-07T14:00:00
 audience: ['Users', 'DataStewards', 'Developers']
-mode: On-site
+mode: OfflineEventAttendanceMode
 location: 
   name: Forschungszentrum Jülich GmbH
   address: Bioinformatik (IBG-4), Wilhelm-Johnen-Straße, 52428 Jülich

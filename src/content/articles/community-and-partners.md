@@ -1,6 +1,6 @@
 ---
 title: Our Community & Partners
-summary: Find out more about our community and partners.
+description: Find out more about our community and partners.
 ---
 
 ![DataPLANT Community & Partners](src/assets/images/articles/community-and-partners.png)

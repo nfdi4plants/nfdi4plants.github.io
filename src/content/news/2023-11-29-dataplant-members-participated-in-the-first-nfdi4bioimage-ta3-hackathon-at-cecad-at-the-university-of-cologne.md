@@ -1,7 +1,7 @@
 ---
 date: 2023-11-29
 title: DataPLANT members participated in the first NFDI4BIOIMAGE - TA3-Hackathon at CECAD at the University of Cologne
-previewText: All participants from various Task Areas (TAs) of NFDI4BIOIMAGE and Heinrich Lukas Weil from DataPLANT actively contributed via presentations, hacking, discussion and documentation on four topics. These correspond to various measures in TA3 (and TA1 & TA5) of NFDI4BIOIMAGE comprising OMERO-ARC interoperability, REMBI and mapping as well as the Neuroglancer...
+description: All participants from various Task Areas (TAs) of NFDI4BIOIMAGE and Heinrich Lukas Weil from DataPLANT actively contributed via presentations, hacking, discussion and documentation on four topics. These correspond to various measures in TA3 (and TA1 & TA5) of NFDI4BIOIMAGE comprising OMERO-ARC interoperability, REMBI and mapping as well as the Neuroglancer...
 ---
 All participants from various Task Areas (TAs) of [NFDI4BIOIMAGE](https://nfdi4bioimage.de/en/start/) and Heinrich Lukas Weil from DataPLANT actively contributed via presentations, hacking, discussion and documentation on four topics. These correspond to various measures in TA3 (and TA1 & TA5) of NFDI4BIOIMAGE comprising [OMERO](https://www.openmicroscopy.org/omero/)-[ARC](https://zenodo.org/badge/latestdoi/380251011) interoperability, REMBI and mapping as well as the Neuroglancer.
 

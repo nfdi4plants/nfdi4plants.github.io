@@ -1,6 +1,6 @@
 ---
 title: DataPLANT’s training and teaching materials
-summary: "Data management, annotation or publication: Have a look at our trainings and teaching materials."
+description: "Data management, annotation or publication: Have a look at our trainings and teaching materials."
 ---
 
 We offer frequent trainings by our Data Stewards to bring different scientific groups on board with DataPLANT’s concepts and tools as well as keep them up to date.

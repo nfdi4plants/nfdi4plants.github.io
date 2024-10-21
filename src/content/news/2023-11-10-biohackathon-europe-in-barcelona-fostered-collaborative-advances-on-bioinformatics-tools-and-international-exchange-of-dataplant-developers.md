@@ -1,7 +1,7 @@
 ---
 date: 2023-11-10
 title: BioHackathon Europe in Barcelona Fostered Collaborative Advances on Bioinformatics Tools and International Exchange of (DataPLANT) Developers
-previewText: Last week, from October 30th to November 3rd, ELIXIR organized the BioHackathon Europe in Barcelona, drawing international participants, including Timo Mühlhaus, Jonathan Bauer, Lukas Weil, Xiaoran Zhou, and Björn Grüning from the DataPLANT team. The event fostered collaboration, discussions, and shared experiences among 150 participants from across Europe and even Australia...
+description: Last week, from October 30th to November 3rd, ELIXIR organized the BioHackathon Europe in Barcelona, drawing international participants, including Timo Mühlhaus, Jonathan Bauer, Lukas Weil, Xiaoran Zhou, and Björn Grüning from the DataPLANT team. The event fostered collaboration, discussions, and shared experiences among 150 participants from across Europe and even Australia...
 ---
 
 Last week, from October 30th to November 3rd, ELIXIR organized the [BioHackathon Europe](https://biohackathon-europe.org/) in Barcelona, drawing international participants, including Timo Mühlhaus, Jonathan Bauer, Lukas Weil, Xiaoran Zhou, and Björn Grüning from the DataPLANT team. The event fostered collaboration, discussions, and shared experiences among 150 participants from across Europe and even Australia.

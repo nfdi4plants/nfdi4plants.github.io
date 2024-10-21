@@ -1,6 +1,6 @@
 ---
 title: DataPLANT is part of the NFDI
-summary: DataPLANT is a consortium under the umbrella of the National Research Data Infrastructure (NFDI) dedicated to plant science 
+description: DataPLANT is a consortium under the umbrella of the National Research Data Infrastructure (NFDI) dedicated to plant science 
 ---
 
 NFDI (Nationale Forschungsdateninfrastruktur) organises a nationwide collaborative network for the joint use of data and software across scientific domains.

@@ -1,6 +1,7 @@
 ---
 import MarkdownLayout from "~/layouts/MarkdownLayout.astro"
 import { getCollection } from 'astro:content';
+import { createArticleSchema } from "~/util/JsonLDSchemas";
 
 
 export async function getStaticPaths() {
@@ -16,8 +17,10 @@ export async function getStaticPaths() {
 const { file } = Astro.props;
 
 const { Content, headings } = await file.render();
+
+const jsonLD = createArticleSchema(file.data)
 ---
 
-<MarkdownLayout frontmatter={file.data} headings={headings}>
+<MarkdownLayout frontmatter={{...file.data, jsonLD: jsonLD}} headings={headings}>
     <Content />
 </MarkdownLayout>

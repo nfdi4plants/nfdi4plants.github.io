@@ -1,11 +1,50 @@
 ---
-title: CEPLAS ARC Training Series – Tool Demo & Hands-on @ HHU
+title: CEPLAS ARC Training Series
 category: Training
-excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
+description: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
 when:
-  start: 2024-04-03T09:00:00
-  end: 2024-04-03T17:00:00
-mode: On-site
+  -
+    start: 2024-04-03T09:00:00
+    end: 2024-04-03T17:00:00
+  -
+    start: 2024-04-04T09:00:00
+    end: 2024-04-04T17:00:00
+  -   
+    start: 2024-05-23T09:00:00
+    end: 2024-05-23T17:00:00
+    props:
+      location:
+        short: HHU, ZSL 22.07, Room U1.25
+        address: HHU, ZSL 22.07, Room U1.25
+  - 
+    start: 2024-05-24T09:00:00
+    end: 2024-05-24T12:00:00
+    props:
+      tutors:
+        - Dominik Brilhaus (<a href="https://www.ceplas.eu/en/research/data-science-and-data-management">CEPLAS Data</a>)
+  - 
+    start: 2024-04-25T09:00:00
+    end: 2024-04-25T17:00:00
+    props:
+      location:
+        short: UoC, Biozentrum, Bldg 304, Room 1.007
+        address: UoC, Biozentrum, Bldg 304, Room 1.007
+      tutors:
+        - Dominik Brilhaus (<a href="https://www.ceplas.eu/en/research/data-science-and-data-management">CEPLAS Data</a>)
+        - Eik Dahms (<a href="https://trr341.uni-koeln.de/projects/data-management-z3">TRR341</a>)
+        - Dan Wang (<a href="https://www.sfb1535.hhu.de/projects/research-area-z/z03">MibiNet</a>, <a href="https://trr341.uni-koeln.de/projects/data-management-z3">TRR341</a>)
+  - 
+    start: 2024-04-26T09:00:00
+    end: 2024-04-26T12:00:00
+    props:
+      location:
+        short: UoC, Biozentrum, Bldg 304, Room 1.007
+        address: UoC, Biozentrum, Bldg 304, Room 1.007
+      tutors:
+        - Dominik Brilhaus (<a href="https://www.ceplas.eu/en/research/data-science-and-data-management">CEPLAS Data</a>)
+        - Eik Dahms (<a href="https://trr341.uni-koeln.de/projects/data-management-z3">TRR341</a>)
+        - Dan Wang (<a href="https://www.sfb1535.hhu.de/projects/research-area-z/z03">MibiNet</a>, <a href="https://trr341.uni-koeln.de/projects/data-management-z3">TRR341</a>)
+mode: OfflineEventAttendanceMode
 audience: [Users]
 location:
   name: HHU
@@ -13,11 +52,11 @@ location:
   url: https://www.ceplas.eu/en/contact/how-to-get-there
 image: ~/assets/images/events/ceplas-ARCs.drawio.png
 tutors:
-  - Dominik Brilhaus (CEPLAS)
-  - Sabrina Zander (MibiNet)
+  - Dominik Brilhaus (<a href="https://www.ceplas.eu/en/research/data-science-and-data-management">CEPLAS Data</a>)
+  - Sabrina Zander (<a href="https://www.sfb1535.hhu.de/projects/research-area-z/z03">MibiNet</a>)
 organizer:
   name: Dominik Brilhaus
-  affiliation: CEPLAS Data
+  affiliation: CEPLAS
   url: https://www.ceplas.eu/en/research/data-science-and-data-management
 registration:
     url: 'https://terminplaner6.dfn.de/de/b/87c954f819c87b27797bc747db30003b-603458'
@@ -27,14 +66,6 @@ registration:
 ## About
 
 This workshop demonstrates the ARC concept and introduces the DataPLANT tools and services **ARCitect**, **SWATE** and **DataHUB**. In the hands-on sessions (full-day workshop only) you learn how to build a first ARC for your own research project and annotate the data in your ARC.
-
-## Organizers
-
-- Contact: Dominik Brilhaus; [CEPLAS Data](https://www.ceplas.eu/en/research/data-science-and-data-management)
-- Additional support by
-  - Sabrina Zander ([MibiNet](https://www.sfb1535.hhu.de/projects/research-area-z/z03))
-  - Eik Dahms, Dan Wang ([TRR341](https://trr341.uni-koeln.de/projects/data-management-z3))
-  - Stella Eggels ([FZJ](https://www.fz-juelich.de/en/ibg/ibg-4/research/research-projects/projects-usadel-group/dataplant-1))
 
 ## Registration
 

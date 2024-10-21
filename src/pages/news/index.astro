@@ -15,7 +15,7 @@ const keys = Object.keys(groupedNews)
   .sort((a, b) => b - a); // Sort in descending order (b - a)
 ---
 
-<Layout title="News">
+<Layout title="News" description="A collection of all DataPLANT news!">
   <div class="flex items-center justify-center w-full">
     <div class="flex flex-col gap-4 p-2 lg:p-5 lg:py-10 xl:py-20">
       {
@@ -36,7 +36,7 @@ const keys = Object.keys(groupedNews)
                         ? (
                         <Image src={news.data.image} alt={news.data.title} />
                         )
-                        : (<>{news.data.previewText}</>)
+                        : (<>{news.data.description}</>)
                       }
                       
                     </article>

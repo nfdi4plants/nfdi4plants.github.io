@@ -1,6 +1,6 @@
 ---
 title: Browse our open educational resources
-summary: "Videos, slides, GitHub repositories and more: Explore our free self-learning materials!"
+description: "Videos, slides, GitHub repositories and more: Explore our free self-learning materials!"
 ---
 
 Whether you already participated in a personal DataPLANT training or not, you can become more familiar with DataPLANT’s tools and RDM concept by browsing our open educational resources.

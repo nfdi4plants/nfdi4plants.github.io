@@ -1,5 +1,6 @@
 ---
 title: Impressum (Imprint)
+description: Impressum
 layout: src/layouts/MarkdownLayout.astro
 ---
 

@@ -1,7 +1,7 @@
 ---
 date: 2024-06-05
 title: Meeting of Coordinators and PIs with Developers in DataPLANT and NFDI4BIOIMAGE Projects
-previewText: In the beginning of June we had a lively discussion on the current status of development in Virtual Infrastructure ontop of OpenStack and options for tighter collaborations between NFDI consortia following the Management Circle meeting of the NFDI in Freiburg. The exchange focused on... 
+description: In the beginning of June we had a lively discussion on the current status of development in Virtual Infrastructure ontop of OpenStack and options for tighter collaborations between NFDI consortia following the Management Circle meeting of the NFDI in Freiburg. The exchange focused on... 
 ---
 In the beginning of June we had a lively discussion on the current status of development in Virtual Infrastructure ontop of OpenStack and options for tighter collaborations between NFDI consortia following the Management Circle meeting of the NFDI in Freiburg. The exchange focused on the status of Open Source VDI development in Task Area 6 lead by Freiburg and how to proceed in the near future. The actual development in the VDI is primarily advanced in four aspects:
 1. Development of a Common Access Gateway: Facilitating unified access to all VDI resources in the cloud, including a web page frontend to use prepared desktop environments customized to user requirements.

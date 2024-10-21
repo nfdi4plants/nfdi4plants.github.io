@@ -1,6 +1,6 @@
 ---
 title: We are here to help
-subtitle: Contact us via our helpdesk, learn more about research data management, browse our manuals and teaching materials or join our trainings.
+description: Contact us via our helpdesk, learn more about research data management, browse our manuals and teaching materials or join our trainings.
 image: /src/assets/images/subpage/support/support-hero.svg
 content: 
   - support/helpdesk

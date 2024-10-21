@@ -1,7 +1,7 @@
 ---
 date: 2022-10-25
 title: 3rd ARC Hackathon at the Forschungszentrum Jülich
-previewText: We were glad to finally meet again in person for an ARC Hackathon at Forschungszentrum Jülich. The goal of the event was to work on improving DataPLANTs solution for FAIR data. The Annotated Research Context and its associated tools and services.
+description: We were glad to finally meet again in person for an ARC Hackathon at Forschungszentrum Jülich. The goal of the event was to work on improving DataPLANTs solution for FAIR data. The Annotated Research Context and its associated tools and services.
 ---
 We were glad to finally meet again in person for an ARC Hackathon in the [IBG-4](https://www.fz-juelich.de/de/ibg/ibg-4) of the [Forschungszentrum Jülich](https://www.fz-juelich.de/de). The goal of the event was to work on improving DataPLANTs solution for FAIR data: The Annotated Research Context and its associated tools and services.
 

@@ -1,7 +1,7 @@
 ---
 date: 2021-07-26
 title: Further exchange with the DFG and NFDI directorate on future community integration and onboarding
-previewText: To advance the understanding and developing its role DataPLANT exchanged ideas with Ms. Kerremans from the DFG and Mr. Sure-Vetter from the NFDI Association on future community integration and onboarding of new participants. The topics we had already talked about e.g. at the NFDI Infratalks were discussed further....
+description: To advance the understanding and developing its role DataPLANT exchanged ideas with Ms. Kerremans from the DFG and Mr. Sure-Vetter from the NFDI Association on future community integration and onboarding of new participants. The topics we had already talked about e.g. at the NFDI Infratalks were discussed further....
 ---
 
 To advance the understanding and developing its role DataPLANT exchanged ideas with Ms. Kerremans from the DFG and Mr. Sure-Vetter from the NFDI Association on future community integration and onboarding of new participants. The topics we had already talked about e.g. at the [NFDI Infratalks](https://www.youtube.com/watch?v=VTGhtQmn2p4 "NFDI-Infratalk - Gedanken zu Community-Durchdringung und Nachhaltigkeit") were discussed further: long term development and sustainability of the NFDI and the onboarding process. DataPLANT was able to place some points and present ideas that need to be developed further step by step, e.g. by putting it into a strategy paper. In addition to it, there were aspects that still needed some thought/formulation and that should certainly be discussed:

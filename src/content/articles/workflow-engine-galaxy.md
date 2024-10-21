@@ -1,6 +1,6 @@
 ---
 title: Galaxy Workflow Engine
-summary: Analyze your data stored in ARCs using the Galaxy Workflow Platform.
+description: Analyze your data stored in ARCs using the Galaxy Workflow Platform.
 ---
 
 The Galaxy workflow system allows you to analyze your data from you ARCs by executing a series of tools and dataset operations in a defined sequence as a batch process. 

@@ -1,6 +1,6 @@
 ---
 title: Our data publication tools
-summary: ARChive is our platform to publish your research data via the ARCigator.
+description: ARChive is our platform to publish your research data via the ARCigator.
 ---
 
 ARChigator is a tool for submitting ARCs hosted on DataHUB for publication in the ARChive. 

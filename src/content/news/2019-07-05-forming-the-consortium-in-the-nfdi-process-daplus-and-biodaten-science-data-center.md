@@ -1,7 +1,7 @@
 ---
 date: 2019-07-05
 title: "Forming the consortium in the NFDI process: DaPLUS+ and BioDATEN Science Data Center"
-previewText: Together with colleagues from Tübingen, Konstanz, Freiburg, Heidelberg, ... parts of the BioDATEN community joined forces with the DaPLUS+ consortium from Kaiserlautern, Jülich and Düsseldorf to paticipate in the process to create a National Research Data Infrastructure. The newly formed consortium centers around plant data in bioinformatics and handed in a binding "Letter of Interest. In modern hypothesis-driven science, researchers increasingly rely on effective research data management services and ...
+description: Together with colleagues from Tübingen, Konstanz, Freiburg, Heidelberg, ... parts of the BioDATEN community joined forces with the DaPLUS+ consortium from Kaiserlautern, Jülich and Düsseldorf to paticipate in the process to create a National Research Data Infrastructure. The newly formed consortium centers around plant data in bioinformatics and handed in a binding "Letter of Interest. In modern hypothesis-driven science, researchers increasingly rely on effective research data management services and ...
 ---
 
 __Together with colleagues from Tübingen, Konstanz, Freiburg, Heidelberg, ... parts of the BioDATEN community joined forces with the DaPLUS+ consortium from Kaiserlautern, Jülich and Düsseldorf to paticipate in the process to create a National Research Data Infrastructure. The newly formed consortium centers around plant data in bioinformatics and handed in a binding "Letter of Interest.__

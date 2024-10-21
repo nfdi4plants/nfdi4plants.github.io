@@ -1,7 +1,7 @@
 ---
 date: 2022-04-29
 title: DataPLANT participates in Base4NFDI
-previewText: From the very beginning, the National Infrastructure has been dedicated to the common topics spanning all consortia. At the beginning, common cross-cutting topics were agreed upon in a meeting in Berlin. Subsequently, based on this, four sections were established by the Scientific Senate on 1.10.2021. The following sections have been launched...
+description: From the very beginning, the National Infrastructure has been dedicated to the common topics spanning all consortia. At the beginning, common cross-cutting topics were agreed upon in a meeting in Berlin. Subsequently, based on this, four sections were established by the Scientific Senate on 1.10.2021. The following sections have been launched...
 ---
 From the very beginning, the National Infrastructure has been dedicated to the common topics spanning all consortia. At the beginning, common [cross-cutting topics were agreed upon in a meeting in Berlin](http://www.zenodo.org/record/3457213). Subsequently, based on this, four [sections](https://www.nfdi.de/sektionen/) were established by the Scientific Senate on 1.10.2021. The following sections have been launched:  
 * Common Infrastructures (*section-infra*).  

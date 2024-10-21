@@ -1,7 +1,7 @@
 ---
 date: 2020-10-22
 title: DataPLANT is happy to annouce a project coordinator
-previewText: The DataPLANT NFDI was able to convince Cristina, a highly skilled person about to graduate in fundamental plant research as a project coordinator. She will help to work on DataPLANT mission to combine the technical expertise in the areas of basic plant research, information and computer sciences and infrastructure specialists for supporting plant scientists in the handling of research data in a customized way.
+description: The DataPLANT NFDI was able to convince Cristina, a highly skilled person about to graduate in fundamental plant research as a project coordinator. She will help to work on DataPLANT mission to combine the technical expertise in the areas of basic plant research, information and computer sciences and infrastructure specialists for supporting plant scientists in the handling of research data in a customized way.
 ---
 
 The DataPLANT NFDI was able to convince Cristina, a highly skilled

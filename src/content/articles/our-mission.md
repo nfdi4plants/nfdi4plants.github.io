@@ -1,6 +1,6 @@
 ---
 title: Our mission
-summary: Driving the digital change in plant science.
+description: Driving the digital change in plant science.
 ---
 
 In order to drive the digital change, **DataPLANT's primary mission** is to foster active community participation and engagement by providing comprehensive support that streamlines Research Data Management (RDM) and ensures compliance with the FAIR principles. It aims to seamlessly connect research activities with data management processes, thereby equipping researchers to handle RDM effectively without drawing a distinction between the two. This goal necessitates a sociotechnical participation framework that aligns DataPLANT’s objectives with the broader objectives of the NFDI, thereby facilitating digital transformation across and within research communities. Achieving these outcomes demands the integration of diverse expertise. DataPLANT's mission is to empower the community to "employ, contribute, govern" through a strategy supported by technical aims to "ensure, develop, interoperate" and integrative goals to "deploy, network, exchange".

@@ -1,16 +1,16 @@
 ---
 title: ARCify your research project
 category: Training
-excerpt: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
+description: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
 when:
   start: 2024-10-24T09:00:00
   end: 2024-10-24T12:00:00
-mode: On-site
+mode: OfflineEventAttendanceMode
 audience: [Users, DataStewards]
 location:
   name: HHU
-  address: HHU, room tbd
-  url: https://www.ceplas.eu/en/contact/how-to-get-there
+  address: HHU, Room 26.44.U1.022
+  url: https://www.hhu.de/fileadmin/redaktion/Oeffentliche_Medien/Karten-Anfahrtplaene-HHU/Infocenter_Lage_und_Anreise/HHU_Campusplan.jpg
 image: ~/assets/images/events/ceplas-ARCs.drawio.png
 tutors:
   - Dominik Brilhaus (<a href="https://www.ceplas.eu/en/research/data-science-and-data-management">CEPLAS Data</a>)

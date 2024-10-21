@@ -1,6 +1,6 @@
 ---
 title: What others say about DataPLANT
-summary: What our community and partners say about us. 
+description: What our community and partners say about us. 
 ---
 
 ## Partner: Cluster of Excellence on Plant Sciences (CEPLAS)

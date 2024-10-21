@@ -1,7 +1,7 @@
 ---
 date: 2024-07-22
 title: FAIRagro and DataPLANT strengthen collaboration 
-previewText: "FAIRagro and DataPLANT have formalised their collaboration by signing a Memorandum of Understanding (MoU). This partnership aims to address critical needs in the agrosystem and plant research community by fostering joint activities and facilitating seamless interaction between the two consortia. The collaboration focuses on several key objectives..."
+description: "FAIRagro and DataPLANT have formalised their collaboration by signing a Memorandum of Understanding (MoU). This partnership aims to address critical needs in the agrosystem and plant research community by fostering joint activities and facilitating seamless interaction between the two consortia. The collaboration focuses on several key objectives..."
 ---
 
 FAIRagro and DataPLANT have formalised their collaboration by signing a Memorandum of Understanding (MoU). This partnership aims to address critical needs in the agrosystem and plant research community by fostering joint activities and facilitating seamless interaction between the two consortia.

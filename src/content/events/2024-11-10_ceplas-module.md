@@ -1,12 +1,12 @@
 ---
 title: CEPLAS – Good Data Management Practices
 category: Training
-excerpt: Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata. This workshop is offered as part of the CEPLAS PhD module 2024.
+description: Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata. This workshop is offered as part of the CEPLAS PhD module 2024.
 when:
   start: 2024-11-10T09:30:00
   end: 2024-11-11T16:00:00
 
-mode: On-site
+mode: OfflineEventAttendanceMode
 # image: ~/assets/images/events/ceplas-ARCs.drawio.png
 tutors:
   - Vittorio Tracanna (CEPLAS)

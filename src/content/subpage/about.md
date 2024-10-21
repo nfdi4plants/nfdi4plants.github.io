@@ -1,7 +1,7 @@
 ---
 title: About DataPLANT
 tagline: Towards democratization of plant research.
-subtitle: 'Towards democratization of plant research.'
+description: 'Towards democratization of plant research.'
 image: /src/assets/images/subpage/about/about-mainpage.svg
 styling:
   titleColor: darkblue

@@ -37,11 +37,13 @@ type Place = {
     Name: string;
     Latitude: number;
     Longitude: number;
+    IsApplicant: boolean;
 };
 // type representing institutions.csv
 type Institution = {
     Name: string;
-    Link: string
+    City:string;
+    Link: string;
 };
 
 // holds tooltip data for tippy.js
@@ -102,12 +104,6 @@ function combineInstitutionData(institution: Institution, people: Participant[],
     return combinedEntries.join('');
     }
 
-// Function to determine the class attributes for a given place based on people
-function placeClass(entries: Participant []) {
-    const allRoles = String(entries.map(d => d.Role).join('')).toLowerCase();
-    return allRoles.includes('spokesperson') ? 'applicant' : 'normal';
-}
-
 // ----------------------------------------------------- Data import -----------------------------------------------------
 const participants_path = await glob("src/assets/data/participants.csv")
 const participants_headers = ["Title","Name","Institution_Name","Affiliation","Link","City","Role"]
@@ -131,18 +127,27 @@ const projects: Project[] =
     })
 
 const places_path = await glob("src/assets/data/places.csv")
-const places_headers = ["Name", "Latitude", "Longitude", ]
+const places_headers = ["Name", "Latitude", "Longitude", "IsApplicant"]
 const places_file_content  = fs.readFileSync(places_path[0], { encoding: 'utf8', flag: 'r' });
 
 const places: Place[] = 
     parse(places_file_content, {
         delimiter: ',',
         columns: places_headers,
-        skip_empty_lines: true
+        skip_empty_lines: true,
+        cast: function (value, context) {
+            if (context.index === 3) {
+                return value.toLowerCase() == 'true' // is there really nothing better thah this? lol
+            } else {
+                return value 
+            }
+        }
     })
 
+console.log(places)
+
 const institutions_path = await glob("src/assets/data/institutions.csv")
-const institutions_headers = ["Name", "Link"]
+const institutions_headers = ["Name", "City", "Link"]
 const institutions_file_content  = fs.readFileSync(institutions_path[0], { encoding: 'utf8', flag: 'r' });
 
 const institutions: Institution[] = 
@@ -162,28 +167,31 @@ const germany = JSON.parse(fs.readFileSync(germany_path[0], { encoding: 'utf8', 
 const germany_features = topojson.feature(germany, germany.objects.states)
 
 // ----------------------------------------------------- Data processing -----------------------------------------------------
-
-
 const projectsByInstitution = d3.group(projects, p => p.Institution_Name);
-const placeIndex = d3.index(places, p => p.Name);
-const institutionIndex = d3.index(institutions, i => i.Name);
+const participantsByInstitution = d3.group(participants, p => p.Institution_Name);
+const institutionsByCity = d3.group(institutions, i => i.City);
 
 const localizedGroups : LocalizedGroup [] = 
-    d3
-    .groups(participants, (p) => p.City)
-    .map(([place, people]) => {
+    places
+    .filter((place) => institutionsByCity.has(place.Name))
+    .map((place) => {
+        console.log(place.Name)
+        console.log(institutionsByCity.has(place.Name))
         return {
-            place: place,
+            place: place.Name,
             groupedInstitutions: 
-                d3
-                .groups(people, (p) => p.Institution_Name)
-                .map(([inst, people]) => {
-                    const projects = projectsByInstitution.get(inst) || []; // Get projects for this institution, or empty array if none
-                    return [institutionIndex.get(inst)!, people, projects]
+                institutionsByCity.get(place.Name)!
+                .map((institutions) => {
+                    return [
+                        institutions,
+                        participantsByInstitution.get(institutions.Name) || [],
+                        projectsByInstitution.get(institutions.Name) || []
+                    ];
                 }),
-            longitude: placeIndex.get(place)!.Longitude,
-            latitude: placeIndex.get(place)!.Latitude,
-            type: placeClass(people)  // determine class based on people roles
+
+            longitude: place.Longitude,
+            latitude: place.Latitude,
+            type: place.IsApplicant ? 'applicant' : 'normal'
         };
     })
 
@@ -266,7 +274,7 @@ svg
 
 ---
 
-<Layout title = "DataPLANT - Community and Partners">
+<Layout title = "Community and Partners" description="Explore our community and partners!">
     <div class="mx-auto w-full max-w-6xl pb-10 lg:py-12 lg:px-8">
         <div class ="card glass shadow-xl p-6 m-4">
             <div class ="card-content">
@@ -298,7 +306,6 @@ svg
             });
         </script>
         <!-- End Tooltip section -->
-
         {
             localizedGroups
             .sort((a, b) => a.place.localeCompare(b.place))
@@ -310,50 +317,60 @@ svg
                             lg.groupedInstitutions
                             .map(([institution, participants, projects]) => (
                                 <h2 class="text-2xl mb-4 font-semibold text-olive-800"><a href={institution.Link}>{institution.Name}</a></h2>
-                                <h3 class="text-xl mb-4 font-semibold">Participants</h3>
-                                <table class="table table-fixed table-zebra table-md mb-4">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Role</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    {
-                                        participants
-                                        .sort((a, b) => a.Role.localeCompare(b.Role))
-                                        .reverse()
-                                        .map(p => 
+                                <>
+                                {   
+                                    participants.length > 0 &&
+                                    <h3 class="text-xl mb-4 font-semibold">Participants</h3>
+                                    <table class="table table-fixed table-zebra table-md mb-4">
+                                        <thead>
                                             <tr>
-                                                <td><a class="text-olive-700" href={p.Link}>{formatName(p)}</a></td>
-                                                <td>{p.Role}</td>
+                                                <th>Name</th>
+                                                <th>Role</th>
                                             </tr>
-                                        )
-                                    }
-                                    </tbody>
-                                </table>
-                                <h3 class="text-xl mb-4 font-semibold">Projects</h3>
-                                <table class="table table-fixed table-zebra table-md mb-4">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Role</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    {
-                                        projects
-                                        .sort((a, b) => a.Role.localeCompare(b.Role))
-                                        .reverse()
-                                        .map(p => 
+                                        </thead>
+                                        <tbody>
+                                        {
+                                            participants
+                                            .sort((a, b) => a.Role.localeCompare(b.Role))
+                                            .reverse()
+                                            .map(p => 
+                                                <tr>
+                                                    <td><a class="text-olive-700" href={p.Link}>{formatName(p)}</a></td>
+                                                    <td>{p.Role}</td>
+                                                </tr>
+                                            )
+                                        }
+                                        </tbody>
+                                    </table>
+                                }
+                                </>
+                                <>
+                                {   
+                                    projects.length > 0 &&
+                                    <h3 class="text-xl mb-4 font-semibold">Projects</h3>
+                                    <table class="table table-fixed table-zebra table-md mb-4">
+                                        <thead>
                                             <tr>
-                                                <td><a class="text-olive-700" href={p.Link}>{p.Name}</a></td>
-                                                <td>{p.Role}</td>
+                                                <th>Name</th>
+                                                <th>Role</th>
                                             </tr>
-                                        )
-                                    }
-                                    </tbody>
-                                </table>
+                                        </thead>
+                                        <tbody>
+                                        {
+                                            projects
+                                            .sort((a, b) => a.Role.localeCompare(b.Role))
+                                            .reverse()
+                                            .map(p => 
+                                                <tr>
+                                                    <td><a class="text-olive-700" href={p.Link}>{p.Name}</a></td>
+                                                    <td>{p.Role}</td>
+                                                </tr>
+                                            )
+                                        }
+                                        </tbody>
+                                    </table>
+                                }
+                                </>
                             ))
                         }
 

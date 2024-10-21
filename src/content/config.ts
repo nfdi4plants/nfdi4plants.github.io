@@ -6,7 +6,7 @@ const newsCollection = defineCollection({
   schema: ({ image }) => z.object({
     title: z.string(),
     date: z.date(),
-    previewText: z.string(),
+    description: z.string(),
     image: image().optional(),
   })
 });
@@ -15,9 +15,9 @@ const eventsCollection = defineCollection({
   type: 'content',
   schema: ({ image }) => z.object({
     title: z.string(),
-    excerpt: z.string().max(200),
+    description: z.string().max(200),
     category: z.enum(['Conference', 'Hackathon', 'Webinar', 'Training', 'Meeting']), // There might be more
-    mode: z.enum(['On-site', 'Online', 'Hybrid']), // There might be more
+    mode: z.enum(['OfflineEventAttendanceMode', 'OnlineEventAttendanceMode', 'MixedEventAttendanceMode']), // There might be more
     audience: z.enum(['Users', 'DataStewards', 'Developers']).array(), // There might be more
     when: z.object({
       start: z.date(),
@@ -53,8 +53,8 @@ const subpageHeroCollection = defineCollection({
   type: 'content',
   schema: ({ image }) => z.object({
     title: z.string(),
-    subtitle: z.string(),
-    tagline: z.string().optional(),
+    description: z.string(),
+    tagline: z.string().max(50).optional(),
     image: image(),
     content: z.array(reference('subpageContent')),
     styling: z.object({
@@ -101,7 +101,7 @@ const articleCollection = defineCollection({
   type: 'content',
   schema: () => z.object({
     title: z.string(),
-    summary: z.string(),
+    description: z.string(),
     tags: z.array(z.string()).optional(),
   })
 });

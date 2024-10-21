@@ -1,7 +1,7 @@
 ---
 date: 2020-09-21
 title: "DataPLANT: First General Assembly"
-previewText: On 21st September the DataPLANT participants gathered online to officially meet for the First General Assembly of the consortium. More then 40 people participated and discussed in the two hours session. At the beginning the DataPLANT mission got refined and explained and how it fits into the NFDI general objectives. The NFDI intends to build a national, sustainable data infrastructure for disciplinary sciences. All successful consortia will enjoy a funding for five years initially. After a successful...
+description: On 21st September the DataPLANT participants gathered online to officially meet for the First General Assembly of the consortium. More then 40 people participated and discussed in the two hours session. At the beginning the DataPLANT mission got refined and explained and how it fits into the NFDI general objectives. The NFDI intends to build a national, sustainable data infrastructure for disciplinary sciences. All successful consortia will enjoy a funding for five years initially. After a successful...
 ---
 
 On 21st September the DataPLANT participants gathered online to officially meet for the First General Assembly of the consortium. More then 40 people participated and discussed in the two hours session. At

@@ -1,6 +1,6 @@
 ---
 title: For Developers
-summary: Find all relevant information for developers regarding contributions.
+description: Find all relevant information for developers regarding contributions.
 ---
 Developers can actively contribute to the development of DataPLANT tools by collaborating on various projects hosted on our [GitHub repositories](https://github.com/nfdi4plants).
 Whether you're interested in improving existing features, fixing bugs, or creating new functionalities, there are multiple ways to get involved:

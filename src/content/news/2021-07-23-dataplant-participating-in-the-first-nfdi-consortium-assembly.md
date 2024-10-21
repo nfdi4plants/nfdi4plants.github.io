@@ -1,7 +1,7 @@
 ---
 date: 2021-07-23
 title: DataPLANT participating in the first NFDI consortium assembly
-previewText: Today the first meeting of the consortium assembly of the NFDI association took place online. In this meeting the nine initial consortia kicked off another integral part of the NFDI governance. A couple of important personnel decisions were made. The Chair (Christoph Steinbeck of NFDI4Chem) and Vice Chair (Dirk von Suchodoletz of DataPLANT) of the Consortium Assembly have been newly established. These two offices were not previously provided for in the articles of the NFDI Association, but were...
+description: Today the first meeting of the consortium assembly of the NFDI association took place online. In this meeting the nine initial consortia kicked off another integral part of the NFDI governance. A couple of important personnel decisions were made. The Chair (Christoph Steinbeck of NFDI4Chem) and Vice Chair (Dirk von Suchodoletz of DataPLANT) of the Consortium Assembly have been newly established. These two offices were not previously provided for in the articles of the NFDI Association, but were...
 ---
 
 Today the first meeting of the consortium assembly of the NFDI association took place online. In this meeting the nine initial consortia kicked off another integral part of the NFDI governance. A couple of important personnel decisions were made. The Chair (Christoph Steinbeck of NFDI4Chem) and Vice Chair (Dirk von Suchodoletz of DataPLANT) of the Consortium Assembly have been newly established. These two offices were not previously provided for in the articles of the NFDI Association, but were deemed useful by the Consortium Assembly. They are to be defined in the rules of procedure of the body.
