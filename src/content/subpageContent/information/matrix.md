@@ -1,6 +1,6 @@
 ---
-title: Matrix chat (coming soon)
+title: Matrix chat
 summary: Chat with the DataPLANT team and the community in our Matrix chat rooms.
 icon: tabler:brand-matrix
-href: "#"
+href: "https://matrix.to/#/#dataplant:matrix.uni-freiburg.de"
 ---
