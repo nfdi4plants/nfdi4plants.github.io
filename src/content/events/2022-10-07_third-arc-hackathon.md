@@ -1,10 +1,10 @@
 ---
 title: Third ARC Hackathon
-category: Conference
+category: Hackathon
 description: 'Hackathon to improve DataPLANTs solution for FAIR data: the Annotated Research Context and its associated tools and services.'
 when:
-  start: 2022-10-05T13:00:00
-  end: 2022-10-07T14:00:00
+  start: 2022-10-05T11:00:00
+  end: 2022-10-07T12:00:00
 audience: ['Users', 'DataStewards', 'Developers']
 mode: OfflineEventAttendanceMode
 location: 
