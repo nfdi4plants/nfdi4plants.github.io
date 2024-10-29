@@ -3,38 +3,52 @@ title: DataPLANT Task Areas
 description: Overview of the DataPLANT Task Areas
 ---
 
-## Task Area I - Driving Standardization
+## Task Area 1
 
-In Task Area I, topics such as data quality, interoperability and standardization are promoted.
-Besides the definition of metadata standards, the application of widely used ontologies, such as the Gene-, KEGG-, and Plant Ontology, and will be supported in a first step.
-These existing ontologies will then be iteratively adapted to the needs of researchers and their specific experiments in order to comprehensively describe workflows.
+_Data Quality, Standardization, Interoperability_ 
 
-The often-long path from the identification of a missing term to the final adoption into the descriptive reference ontology will be significantly shortened with minimal friction.
-A first approach to achieve this is pursued by DataPLANT’s developed tool Swate.
+Promotes topics such as data quality assurance, interoperability and standardization including AI-based approaches, to facilitate the collection of vocabularies and 
+ontologies, encouraging broader community participation. The task area will further its efforts to enhance data and workflow interoperability, focusing on semantic 
+understandability and machine actionability to maximize user benefits. Central to this effort is the ongoing support and development of a standardized annotation 
+principle. This principle bridges user documentation with specific technological endpoints, workflow engines, domain-specific requirements, search engines, and data 
+indexing services, thereby improving data FAIRness. Expert assistance will be provided for the collection and management of missing vocabulary needed for metadata 
+annotation, tailored to community needs and encouraging active participation. To ensure the quality of (meta)data, we will implement automatic validation processes 
+that support an envisioned journal-like peer-review system for data publication. Additionally, we will promote RDM practices that support a culture of error 
+acknowledgment within the community.
 
-## Task Area II – Infrastructural Community Support
+These efforts will be conducted to strengthen and coordinate standardization efforts in plant research-related data and workflow annotation and will be closely linked with other relevant NFDIs nationally, and e.g. ELIXIR, EOSC, IPPN, MIAPPE, and RO-Crate internationally.
 
-DataPLANT and the plant research community can draw on extensive infrastructural capacities for compute and storage, such as the de.NBI Cloud in Tübingen and Freiburg and the bwCloud, amongst others.
-Task Area II will provide the infrastructural basis for the developed tools.
-For this, the DataPLANT Hub, based on HUBZero, will serve as the central access point.
-Wherever possible, a single sign-on concept will be used for user-friendliness.
-Furthermore, a service to facilitate data and metadata versioning, collaboration among researchers, and data sharing within ongoing projects will be set up.
-To support researchers in publishing their work, a service based on InvenioRDM is established.
-Unique identification will be accomplished using Digital Object Identifier (DOI) and ORCID.
+## Task Area 2
+_Infrastructure, Service, and Workflow Platform_
 
-## Task Area III – Personnel Community Support
+Enhances the DataPLANT DataHUB and associated services to ensure deep integration with both national and international infrastructures. This includes platforms such as the NFDI Research Data Commons, OpenAIRE, EOSC, and EBI. This evolution embraces the envisioned multi-cloud environment and the NFDI AAI concept to support a federated landscape through an infrastructure-as-a-service distribution and maintenance model.
 
-Task Area III takes care of the continuous community contact and direct personnel support of the individual research groups during their everyday data management tasks.
-This is accomplished through Data Stewards as a core element of the DataPLANT research data management strategy to bridge the gap between technical solutions, infrastructure, and researchers.
+These efforts aim to improve the visibility and recognition of DataPLANT by journals, the NFDI, the EU, and key international RDM initiatives and stakeholders. 
+Task Area 2 supports efficient data management and analysis, enabling the execution of actionable FAIR Digital Objects (FDOs) within established workflow environments. 
+It will leverage consortium cloud environments and the NFDI FAIR data spaces to implement an infrastructure-as-a-service model for distribution and maintenance.
 
-By providing advice in data and workflow management, they promote the process of standardizing metadata, the use of ontologies and data provenance.
-Through direct on-site interaction, they can immediately respond immediately to the requirements and needs of researchers.
-Training of these Data Stewards also belongs to the responsibility of Task Area III.
+## Task Area 3
 
-## Task Area IV - Increasing reach and sustainable development
+_Software, Application, and Transfer_ 
 
-Task Area IV is responsible for the communication within the project, as well as integration with the overall NFDI and promotion of common efforts.
-A central task is the extension to all researchers in the field of fundamental plant research.
-Only in this way the consortium can credibly represent the research area and establish common standards and concepts.
-Thus, DataPLANT immediately aimed for close cooperation and coordination and could already accomplish a close connection with the INF-Project SFB TRR175 and the Data Stewards of CEPLAS.
-A certain provision of support by data stewards, advice on application and legal issues, and infrastructure is intended for researchers who join the project later on.
+Promotes an open-source culture, encouraging participation and skill development in research data projects and software.  To achieve sustainable development, 
+the task area will seek to educate and empower members of the community to participate in shaping software evolution and its application through both onboarding and 
+training materials as well as a community-directed feature process. TA3 aims to understand how the software solutions  developed can benefit from and bring benefit 
+to other communities, nationally (NFDI) and internationally.
+
+TA3 directly fosters community engagement by offering personalized support through tailored digital assistance. It also refines and consolidates the plant FAIR 
+Digital Object (FDO) software stack to enhance interoperability with other NFDI and international RDM services. This will include the development of improved 
+documentation, tutorials, and teaching materials, empowering active community participation through transparent, community-driven feedback and development 
+processes. Additionally, TA3 will establish a support framework for embedded and geo-distributed data stewards. It will provide open educational resources and 
+implement a "train the trainer" model. 
+
+
+## Task Area 4
+
+_Coordination and Management_ 
+
+Focuses on efficiently managing the consortium and ensuring alignment with community-driven objectives. TA4 coordinates the dissemination of project information 
+and outcomes from all task areas, ensuring that all stakeholders, both within and outside the consortium, are well-informed. It will also establish bidirectional 
+advocacy structures and create low-barrier participation opportunities for the broader community and beyond. Additionally, TA4 forms special interest groups for 
+the life sciences (LS), address legal matters, represent the consortium in dealings with the DFG, and foster collaboration among state-level initiatives, 
+compute centers, faculty IT, research institutions, libraries, and NFDI liaison efforts to drive consolidation.
