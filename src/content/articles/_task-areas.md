@@ -7,11 +7,10 @@ description: Overview of the DataPLANT Task Areas
 
 _Data Quality, Standardization, Interoperability_ 
 
-Will provide support, including AI-based approaches, to facilitate the collection of vocabularies and ontologies, encouraging broader community participation.
-TA1 will enhance ontologies embedded within international consortia, which are essential for improving data and workflow interoperability and ensuring AI-readiness through machine actionability. 
-This will connect user documentation, technical endpoints, workflow engines, and domain-specific requirements. 
-To guarantee high-quality (meta)data, TA1 will implement automated validation processes, supplemented by a community-driven data publication review system. 
-Furthermore, TA1 will promote RDM practices through the involvement of data stewards, fostering a culture of traceability within the community.
+Will promote topics such as data quality assurance, interoperability and standardization. The task area will further its efforts to enhance data and workflow interoperability, focusing on semantic understandability and machine actionability to maximize user benefits. Central to this effort is the ongoing support and development of a standardized annotation principle. This principle bridges user documentation with specific technological endpoints, workflow engines, domain-specific requirements, search engines, and data indexing services, thereby improving data FAIRness. Expert assistance will be provided for the collection and management of missing vocabulary needed for metadata
+annotation, tailored to community needs and encouraging active participation. To ensure the quality of (meta)data, we will implement automatic validation processes that support an envisioned journal-like peer-review system for data publication. Additionally, we will promote RDM practices that support a culture of error acknowledgment within the community.
+
+These efforts will be conducted to strengthen and coordinate standardization efforts in plant research-related data and workflow annotation and will be closely linked with other relevant NFDIs nationally, and e.g. ELIXIR, EOSC, IPPN, MIAPPE, and RO-Crate internationally.
 
 ## Task Area 2
 _Infrastructure, Service, and Workflow Platform_
