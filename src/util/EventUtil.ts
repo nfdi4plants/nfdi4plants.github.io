@@ -15,7 +15,7 @@ export function getHumanReadableAttendanceMode(mode: 'OfflineEventAttendanceMode
   }
 }
 
-export const formatterDate = new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', day: "2-digit", month: "2-digit", year: "numeric"});
+export const formatterDate = new Intl.DateTimeFormat('de-DE', { timeZone: 'UTC', day: "2-digit", month: "2-digit", year: "numeric"});
 export function formatDateToHref(date: Date): string { 
   return formatterDate
     .formatToParts(date)
@@ -29,7 +29,7 @@ export function formatDateToHref(date: Date): string {
 }
 
 // const formatterDate = new Intl.DateTimeFormat('en-US', { day: '2-digit', month: '2-digit', year: 'numeric' });
-export const formatterTime = new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', hour: '2-digit', minute: '2-digit' });
+export const formatterTime = new Intl.DateTimeFormat('de-DE', { timeZone: 'UTC', hour: '2-digit', minute: '2-digit' });
 
 // Extend the type by adding the `periodic` flag
 export type ReducedEvent = CollectionEntry<'events'> & {
