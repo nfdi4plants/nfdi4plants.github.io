@@ -4,15 +4,15 @@ title: Hands-on Workshop on FAIR Data Management Using ARCs
 category: Training
 description: "The workshop covers the fundamentals of research data management and the principles of FAIR data."
 when:
-  start: 2024-10-21T09:30:00
-  end: 2024-10-23T15:00:00
+  start: 2024-10-21T09:00:00
+  end: 2024-10-23T16:00:00
 mode: OnlineEventAttendanceMode
 tutors:
   - Bianca Laker
 organizer:
   name: Bianca Laker
 location:
-  name: " "
+  name: "Zoom"
 registration:
   seats: 14
 audience: [Users]
