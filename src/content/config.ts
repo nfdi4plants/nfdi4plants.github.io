@@ -14,8 +14,8 @@ const newsCollection = defineCollection({
 const eventsCollection = defineCollection({ 
   type: 'content',
   schema: ({ image }) => z.object({
-    title: z.string(),
-    description: z.string().max(200),
+    title: z.string().trim().min(1),
+    description: z.string().trim().max(200).min(1),
     category: z.enum(['Conference', 'Hackathon', 'Webinar', 'Training', 'Meeting']), // There might be more
     mode: z.enum(['OfflineEventAttendanceMode', 'OnlineEventAttendanceMode', 'MixedEventAttendanceMode']), // There might be more
     audience: z.enum(['Users', 'DataStewards', 'Developers']).array(), // There might be more
@@ -30,12 +30,12 @@ const eventsCollection = defineCollection({
     tutors: z.string().array().optional(),
     image: image().optional(),
     organizer: z.object({
-      name: z.string(),
-      affiliation: z.string(),
+      name: z.string().trim().min(1),
+      affiliation: z.string().trim().min(1),
       url: z.string().url()
     }).partial().optional(),
     location: z.object({
-      name: z.string().max(50),
+      name: z.string().trim().max(50).min(1),
       address: z.string().optional(),
       url: z.string().url().optional(),
     }),
