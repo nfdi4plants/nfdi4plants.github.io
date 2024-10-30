@@ -12,7 +12,7 @@ tutors:
 organizer:
   name: Bianca Laker
 location:
-  name: " "
+  name: "Zoom"
 registration:
   seats: 14
 audience: [Users]
