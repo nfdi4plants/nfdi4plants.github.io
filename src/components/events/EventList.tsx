@@ -125,7 +125,10 @@ export default function EventList( {events, showFilter = true, showPastFutureLim
     return true;
   }
 
-  const filteredUpcomingEvents = upcomingEvents.filter(filterEvents);
+  const filteredUpcomingEvents = 
+    upcomingEvents
+      .filter(filterEvents)
+      .sort((a, b) => a.data.when.start.getTime() - b.data.when.start.getTime());
 
   return (
     <>
