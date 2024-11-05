@@ -1,7 +1,11 @@
-Galaxy and DataPLANT at EOSCxNFDI event in Berlin
-
-EOSCxNFDI was putting a spotlight on exploring how EOSC and NFDI can jointly create added value for achieving an effective 
-international research data management. The event was part of the EOSC Symposium in October 2024 in Berlin discussing the 
+---
+date: 2024-10-28
+title: Galaxy and DataPLANT at EOSCxNFDI event in Berlin
+description: The EOSCxNFDI event was putting a spotlight on exploring how EOSC and NFDI can jointly create added value for achieving an effective international research data management ...
+highlight: true
+---
+The EOSCxNFDI event was putting a spotlight on exploring how EOSC and NFDI can jointly create added value for achieving an
+effective international research data management. It was part of the EOSC Symposium in October 2024 in Berlin discussing the 
 EOSC Impact and Opportunities on the Infrastructure landscape. Several NFDI consortia and the Base4NFDI initiative were 
 present, for DataPLANT Björn Grüning from the Galaxy Team Freiburg participated in the event. Several exchanges in various 
 formats focused on the intersection of the NFDI and EOSC thematic communities.
