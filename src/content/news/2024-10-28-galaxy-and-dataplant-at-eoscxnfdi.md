@@ -31,11 +31,11 @@ with ongoing discussions on whether Galaxy might integrate into EOSC nodes or be
 also part of the NFDI through its integration in DataPLANT. It’s expected that de.NBI, ELIXIR, and the European Grid 
 Initiative will submit a node application, and ELIXIR will likely partner with EMBL to create another node. With their 
 cloud-enabled services, DataPLANT and its participating universities are well-positioned to take an active role in the 
-nodes and establish some valuable standards.
+nodes and establish some valuable standards. 
 
 Galaxy and DataPLANT are already indirectly shaping decisions through their involvement in “opportunity areas” and by 
 participating in larger technical discussions. In the medium term, DataPLANT and the universities involved face the 
 question of whether to join the EOSC Association officially. This step would require time and careful coordination 
 with de.NBI and NFDI activities. If universities seek greater international recognition in RDM and infrastructure, 
 membership could be beneficial—provided that adequate time is allocated within institutions and consortia to engage 
-effectively.
+effectively. 
