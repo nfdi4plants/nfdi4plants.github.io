@@ -13,6 +13,6 @@ ARCitect and ARC Commander initialize your ARC as a git repository, allowing you
 The tools can also be used to back-up and synchronize your ARC with the DataHUB as well as to download and modify ARCs from the DataHUB.
 Managing data throughout the research lifecycle is thus simplified.
 
-[Try ARCitect](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html)
+[Try ARCitect](https://nfdi4plants.org/nfdi4plants.knowledgebase/arcitect)
 
-[Try ARC Commander](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index.html)
+[Try ARC Commander](https://nfdi4plants.org/nfdi4plants.knowledgebase/arc-commander)

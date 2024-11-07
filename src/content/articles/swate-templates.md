@@ -12,5 +12,5 @@ If there is no template representing your metadata requirements, you can contrib
 You can create the template using the online version of [Swate](https://swate-alpha.nfdi4plants.org/) and add tags for it to be easily findable.
 The addition to our Swate database that makes it available in the tool occurs via a pull request on GitHub.
 
-A detailed guide for creating and contributing templates you can find in the [Knowledge Base](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/guides/swate_template-contribution.html).
+A detailed guide for creating and contributing templates you can find in the [Knowledge Base](https://nfdi4plants.org/nfdi4plants.knowledgebase/swate/swate-template-contribution/).
 You can find here the respective [GitHub repo here](https://github.com/nfdi4plants/Swate-templates).

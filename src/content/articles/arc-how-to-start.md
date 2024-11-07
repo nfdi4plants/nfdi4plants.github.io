@@ -13,4 +13,4 @@ ARC Commander and ARCitect also allow you to track all commits and push your ARC
 
 To read more about ARCs, check out our [ARC website](arc-rdm.org).
 
-If you want to start creating your ARC, you can find detailed guides for the [ARC Commander](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ArcCommanderManual/index.html) and [ARCitect](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html) in the knowledge base.
+If you want to start creating your ARC, you can find a detailed [getting started guide](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/start-here/) in the knowledge base.

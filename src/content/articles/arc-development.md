@@ -4,7 +4,7 @@ description: You want to contribute to our Annotated Research Context (ARC) conc
 ---
 The [**A**nnotated **R**esearch **C**ontext (ARC)](https://arc-rdm.org) is DataPLANT's central concept for organizing and documenting research data, focal point of collaboration, data exchange, and overall FAIR Digital Object of choice.
 
-When using the DataPLANT tools (e.g. [ARCitect](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/ARCitect-Manual/index.html]) and [guides](https://nfdi4plants.org/nfdi4plants.knowledgebase/index.html) to create ARCs, the majority of ARC guidelines will be followed automatically.
+When using the DataPLANT tools (e.g. [ARCitect](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/arcitect/) and [guides](https://nfdi4plants.org/nfdi4plants.knowledgebase/index.html) to create ARCs, the majority of ARC guidelines will be followed automatically.
 
 The detailed description of these technical requirements are captured in the **ARC specification**.
 However, the **ARC is not a top-down mandated concept**, but rather a community-driven effort.
