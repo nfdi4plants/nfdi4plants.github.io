@@ -12,4 +12,4 @@ For community support, DataPLANT provides a helpdesk and a Git-based project exc
 This platform enables project planning and offers a space for researchers to share experiences, seek advice, and collaborate. 
 DataPLANT also organizes community events, including onboarding sessions, consortium meetings, summer schools, lectures, practical courses, and hackathons together with Data Stewards to encourage knowledge sharing and engagement. 
 
-[DataPLANT Teaching material](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/teaching-materials/index.html)
+[DataPLANT Teaching material](https://nfdi4plants.org/nfdi4plants.knowledgebase/index.html)

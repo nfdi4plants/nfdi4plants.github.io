@@ -15,5 +15,5 @@ Our ontology curators will check whether the term already exists in external ont
 
 If the term did not previously exist in an ontology, our ontology curators will suggest the term to be added to a suitable external ontology.
 This way, little by little, missing terms for data annotation should become available in commonly used ontologies.
-To read more about DataPLANT’s ontology service landscape, you can read our [Knowledge Base article](https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/OntologyServiceLandscape.html).
+To read more about DataPLANT’s ontology service landscape, you can read our [Knowledge Base article](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/fundamentals/ontology-service-landscape/).
 To directly contribute to our DPBO, visit our [GitHub repository](https://github.com/nfdi4plants/nfdi4plants_ontology/issues/new/choose).
