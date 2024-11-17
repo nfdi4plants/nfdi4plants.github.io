@@ -7,7 +7,7 @@ import logo from '~/assets/images/DataPLANT_logo_minimal_square_bg_transparent.s
 import { URLS } from "~/statics";
 
 export const MainNav: RecursiveMenu[] = [
-  { title: 'DataPLANT', slug: '/', children: [
+  { title: 'DataPLANT', children: [
     { title: 'About Us', slug: '/about' },
     { title: 'Information', slug: '/information'},
     { title: 'RDM As A Service', slug: '/rdm-as-a-service' },
@@ -20,7 +20,6 @@ export const MainNav: RecursiveMenu[] = [
   { title: 'Data Hubs', slug: '/arc-data-hub' },
   { 
     title: 'Tools',
-    slug: '/toolbox',
     children: [
       { title: 'ARCitect', slug: 'https://nfdi4plants.github.io/nfdi4plants.knowledgebase/arcitect/' },
       { title: 'Swate', slug: 'https://swate-alpha.nfdi4plants.org/' },
