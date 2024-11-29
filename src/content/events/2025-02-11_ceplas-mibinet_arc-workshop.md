@@ -3,8 +3,8 @@ title: ARCify your research project
 category: Training
 description: 'Learn how to create ARCs for your datasets, annotate them with metadata and share them via the DataHUB.'
 when:
-  start: 2025-02-12T09:00:00
-  end: 2025-02-12T12:00:00
+  start: 2025-02-11T09:00:00
+  end: 2025-02-11T12:00:00
 mode: OfflineEventAttendanceMode
 audience: [Users, DataStewards]
 location:
