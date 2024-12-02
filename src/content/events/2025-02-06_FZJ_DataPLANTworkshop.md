@@ -14,6 +14,7 @@ tutors:
   - Angela Kranz (DataPLANT, Forschungszentrum Jülich)
   - Stella Eggels (DataPLANT, Forschungszentrum Jülich)
 registration:
+    description: 'Members of Forschungszentrum Jülich have priority.' 
     url: https://terminplaner6.dfn.de/en/b/e7c09d997f55c2c823c8ecf23c57e9d8-995329
     deadline: 2025-01-29
     seats: 20
