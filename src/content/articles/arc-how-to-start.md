@@ -11,6 +11,6 @@ To facilitate and partly automate the creation of ARCs two tools were developed:
 
 ARC Commander and ARCitect also allow you to track all commits and push your ARC to the PLANTdataHUB for versioning, storage and sharing with collaborators or the whole scientific community.
 
-To read more about ARCs, check out our [ARC website](arc-rdm.org).
+To read more about ARCs, check out our [ARC website](https://arc-rdm.org/).
 
 If you want to start creating your ARC, you can find a detailed [getting started guide](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/start-here/) in the knowledge base.
