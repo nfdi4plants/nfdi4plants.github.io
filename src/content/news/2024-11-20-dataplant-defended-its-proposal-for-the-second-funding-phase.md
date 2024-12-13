@@ -12,3 +12,4 @@ future developments. Additionally, it presented DataPLANT's sustainability strat
 contribution model. During the poster session, some practical aspects of the ARC, workflows on the PLANTdataHUB and especially the 
 ARCitect were demonstrated. The time was tightly scheduled, and the exchange was intensive. We are looking forward to receive the 
 reviewers further questions at January 15th, 2025.
+![DataPLANT Phase II Poster](/src/assets/images/news/DFG-Review-Poster.png){width=60%}
