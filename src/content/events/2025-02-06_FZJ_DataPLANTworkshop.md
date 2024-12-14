@@ -11,8 +11,8 @@ location:
   name: Forschungszentrum Jülich
   address: central library 04.7, conference room 338
 tutors:
-  - Angela Kranz (DataPLANT, Forschungszentrum Jülich)
-  - Stella Eggels (DataPLANT, Forschungszentrum Jülich)
+  - Angela Kranz (DataPLANT, <a href="https://www.fz-juelich.de/en/ibg/ibg-4/research/research-projects/projects-usadel-group/dataplant-1)">Forschungszentrum Jülich</a>)
+  - Stella Eggels (DataPLANT, <a href="https://www.fz-juelich.de/en/ibg/ibg-4/research/research-projects/projects-usadel-group/dataplant-1)">Forschungszentrum Jülich</a>)
 registration:
     description: 'Members of Forschungszentrum Jülich have priority.' 
     url: https://terminplaner6.dfn.de/en/b/e7c09d997f55c2c823c8ecf23c57e9d8-995329
