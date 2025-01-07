@@ -17,6 +17,24 @@ when:
   -
     start: 2024-11-27T08:00:00
     end: 2024-11-27T09:00:00
+  -
+    start: 2025-01-08T08:00:00
+    end: 2025-01-08T09:00:00
+  -
+    start: 2025-01-22T08:00:00
+    end: 2025-01-22T09:00:00
+  -
+    start: 2025-02-05T08:00:00
+    end: 2025-02-05T09:00:00
+  -
+    start: 2025-02-19T08:00:00
+    end: 2025-02-19T09:00:00
+  -
+    start: 2025-03-05T08:00:00
+    end: 2025-03-05T09:00:00
+  -
+    start: 2025-03-19T08:00:00
+    end: 2025-03-19T09:00:00
 mode: OnlineEventAttendanceMode
 image: ~/assets/images/events/datastewardcircle.png
 location:
