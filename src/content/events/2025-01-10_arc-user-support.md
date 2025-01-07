@@ -1,8 +1,8 @@
 ---
-title: ARC User Meeting
+title: ARC User Support Meeting
 category: Webinar
 audience: [Users]
-description: 'With this monthly ARC user meeting we regularly answer questions, demonstrate tools and services or discuss data management issues.'
+description: 'In this monthly meeting Data Stewards answer questions, demonstrate tools and services or discuss data management issues.'
 when:
   -
     start: 2025-01-10T13:00:00
