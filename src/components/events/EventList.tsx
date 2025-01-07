@@ -72,7 +72,8 @@ function EventCard (event: ReducedEvent) {
   )
 }
 
-export default function EventList( {events, showFilter = true, showPastFutureLimit = false}: Props ) {
+// set showPastFutureLimit = false if you want to filter out events that are more than 31 days in the future
+export default function EventList( {events, showFilter = true, showPastFutureLimit = true}: Props ) {
   let now = new Date();
   
   const filterFutureEventsFunction = (events: ReducedEvent[]) => {

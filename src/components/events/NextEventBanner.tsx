@@ -1,6 +1,6 @@
 import type { CollectionEntry } from 'astro:content';
 import { InlineIcon } from '@iconify/react/dist/iconify.js';
-import { reducePeriodicEvents, formatterDate } from '~/util/EventUtil';
+import { reducePeriodicEvents, formatterDate, type ReducedEvent } from '~/util/EventUtil';
 
 interface Props {
   events: CollectionEntry<'events'>[];
@@ -9,7 +9,10 @@ interface Props {
 export default function UpcomingEventBanner({events}: Props) {
   const reducedEvents = reducePeriodicEvents(events);
   //only future events
-  const upcomingEvents = reducedEvents.filter((event) => event.data.when.start > new Date());
+  const upcomingEvents = 
+    reducedEvents
+      .filter((event) => event.data.when.start > new Date())
+      .sort((a: ReducedEvent, b: ReducedEvent) => b.data.when.start.getTime() - a.data.when.start.getTime());
   const nextEvent = upcomingEvents[upcomingEvents.length - 1];
   if (!nextEvent) {
     return null;
