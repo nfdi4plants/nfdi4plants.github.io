@@ -20,7 +20,7 @@ mode: OnlineEventAttendanceMode
 tutors: 
  - DataStewards of DataPLANT, CEPLAS, MibiNet, TRR341
 location:
-  name: MS Teams
+  name: Microsoft Teams
   url: https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzFlNzVkOWItYzNjNS00NWMxLWE3ZDUtY2M2YmEwOTk1YWUw%40thread.v2/0?context=%7b%22Tid%22%3a%229071867c-98f0-4006-89aa-4e4fd55af39d%22%2c%22Oid%22%3a%224b7a1c1c-664e-42ce-b224-7599ace27c53%22%7d
 registration: 
   description: No registration required
