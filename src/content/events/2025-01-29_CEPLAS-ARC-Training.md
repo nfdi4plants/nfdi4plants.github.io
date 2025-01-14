@@ -6,13 +6,12 @@ when:
   start: 2025-01-29T13:00:00
   end: 2025-01-29T17:00:00
 mode: OfflineEventAttendanceMode
-audience: [Users, DataStewards]
+audience: [Users]
 location:
   name: COPT building
-  address: First Floor Meeting Room, Cologne
-image: ~/assets/images/events/arc-workshop.png
+  address: First Floor Meeting Room, Luxemburgerstr. 90, Cologne
 tutors:
-  - Vittorio Tracanna (<a href="https://www.ceplas.eu/en/research/ceplas-data" target="_blank">CEPLAS Data</a>)
+  - Vittorio Tracanna (<a href="https://www.ceplas.eu/en/research/ceplas-data">CEPLAS Data</a>)
 organizer:
   name: Vittorio Tracanna
   affiliation: CEPLAS
