@@ -1,6 +1,6 @@
 ---
 date: 2025-01-03
-title: "From DataPLANT’s DataHUB to DataPUB(lication)"
+title: \"From DataPLANT’s DataHUB to DataPUB(lication)\" officially published
 description: "A core document describing one of the central objectives of the DataPLANT consortium has been published by our partner, 
 the University Library of Tübingen. One of the major development tasks in our project was to provide a science gateway 
 as a technical foundation that applies software engineering-inspired approaches to data management ..."
