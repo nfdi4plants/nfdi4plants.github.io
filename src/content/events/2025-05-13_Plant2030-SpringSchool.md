@@ -7,6 +7,7 @@ when:
   end: 2025-05-16T15:00:00
 mode: OfflineEventAttendanceMode
 audience: [Users]
+image: ~/assets/images/events/2025-05-13_Plant2030-SpringSchool.jpg
 location:
   name: IPK Gatersleben
   address: https://www.ipk-gatersleben.de
