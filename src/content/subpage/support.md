@@ -9,6 +9,7 @@ content:
   - support/custom-training
   - support/teaching-materials
   - support/open-educational-resources
+  - support/user-support-chat
 styling:
   titleColor: black
   bgColor: lightgray
