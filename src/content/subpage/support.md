@@ -10,6 +10,7 @@ content:
   - support/teaching-materials
   - support/open-educational-resources
   - support/user-support-chat
+  - support/user-support-meeting
 styling:
   titleColor: black
   bgColor: lightgray
