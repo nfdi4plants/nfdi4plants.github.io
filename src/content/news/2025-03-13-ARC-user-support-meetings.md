@@ -1,7 +1,7 @@
 ---
 date: 2025-03-13
 title: ARC user support meetings and Matrix chat
-description: DataPLANT is organizing monthly ARC users support meetings every second Friday of the month. In addition, an ARC users support Matrix chat channel has been set up.
+description: DataPLANT is organizing monthly ARC users support meetings every second Friday of the month. In addition, an ARC user support Matrix chat channel has been set up.
 ---
 
 DataPLANT is organizing monthly ARC user support meetings, [every second Friday of the month from 13:00 to 14:00](https://nfdi4plants.github.io/events/arc-user-support/) on [Teams](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzFlNzVkOWItYzNjNS00NWMxLWE3ZDUtY2M2YmEwOTk1YWUw%40thread.v2/0?context=%7b%22Tid%22%3a%229071867c-98f0-4006-89aa-4e4fd55af39d%22%2c%22Oid%22%3a%224b7a1c1c-664e-42ce-b224-7599ace27c53%22%7d).
