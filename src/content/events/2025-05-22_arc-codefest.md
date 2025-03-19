@@ -9,7 +9,7 @@ mode: OfflineEventAttendanceMode
 audience: [Developers]
 location:
   name: HHU
-  address: HHU, ZSL
+  address: HHU, ZSL (22.07.U1.025)
   url: https://maps.app.goo.gl/jwBtdwG9KfYkR3K7A
 tutors:
   - Lukas Weil (<a href="https://www.nfdi4plants.org">DataPLANT</a>)
@@ -18,7 +18,7 @@ organizer:
   affiliation: CEPLAS
   url: https://www.ceplas.eu/en/research/ceplas-data
 registration:
-    url: "javascript:location='mailto:\u0062\u0072\u0069\u006c\u0068\u0061\u0075\u0073\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0"
+    url: https://terminplaner6.dfn.de/en/b/8af62b9b26a0df00abbd6baff01da746-1147202
     deadline: 2025-05-10
     seats: 8
 ---
@@ -31,5 +31,4 @@ Developers bring their own code projects or patches to existing tools. We will m
 
 - Please bring your laptop
 - Please familiarize with ARCtrl. ARCtrl docs are available in the [DataPLANT knowledge base](https://nfdi4plants.github.io/nfdi4plants.knowledgebase/arctrl/).
-
 
