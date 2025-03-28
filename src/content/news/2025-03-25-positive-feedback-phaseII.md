@@ -1,7 +1,7 @@
 ---
 date: 2025-03-25
 title: Positive Feedback of phase II grant application
-description: 
+description: The DataPLANT project team is pleased to inform you that the NFDI expert committee of the DFG has recommended the DataPLANT proposal for further funding within the NFDI.
 ---
 The DataPLANT project team is pleased to inform you that the NFDI expert committee of the DFG has recommended the DataPLANT proposal 
 for further funding within the NFDI. The committee has discussed it in a combination of a written procedure and a hybrid session on 
