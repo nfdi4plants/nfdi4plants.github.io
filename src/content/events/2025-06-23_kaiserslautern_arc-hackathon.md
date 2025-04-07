@@ -40,7 +40,7 @@ The participation fee including 2 stays and catering will be **approximately 350
 
 Let us know about your culinary needs.
 
-For registration, write to:
+For registration, write your full name, address and affiliation to:
 
 <a href="javascript:location='mailto:\u006a\u006d\u0065\u0072\u0074\u0065\u006c\u0040\u0072\u0070\u0074\u0075\u002e\u0064\u0065';void 0">Janine Mertel</a>
 
