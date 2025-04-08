@@ -1,7 +1,9 @@
 ---
 title: 2nd Hands-On Symposium on ARC communication and interoperability
 category: Conference
-description: 'Registration now open! <br> Talks, Discussions, Coding and much more about the ARC ecosystem and beyond!'
+description: | 
+  Registration now open! 
+  Talks, Discussions, Coding and much more about the ARC ecosystem and beyond!
 when:
   start:  2025-06-23T12:00:00
   end:    2025-06-25T15:00:00
