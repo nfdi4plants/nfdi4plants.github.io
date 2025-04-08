@@ -1,6 +1,6 @@
 ---
 date: 2025-04-04
-title: 2nd NFDIxCS Symposium in Potsdam: Advancing FAIR and Reproducible Research
+title: 2nd NFDIxCS Symposium in Potsdam - Advancing FAIR and Reproducible Research
 description: DataPLANT recently took part in the 2nd NFDIxCS Symposium, held in Potsdam. This event brought together experts from Computer Science and ...
 ---
 
