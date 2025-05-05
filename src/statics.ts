@@ -9,6 +9,7 @@ export enum URLS {
   GITLAB_BIODATEN = "https://gitlab.nfdi4plants.de/",
   GITLAB_PLANT_MICROBE = "https://gitlab.plantmicrobe.de/explore",
   HELPDESK = "https://helpdesk.nfdi4plants.org/",
+  MAILING_LIST_SUBSCRIBE = "mailto:arc-user-support-join@lists.nfdi.de?subject=subscribe&body=Hit send on this email to join the ARC user support mailing list",
   ACCOUNT_MANAGEMENT = "https://auth.nfdi4plants.org/realms/dataplant/account",
   DATAPLAN = "https://dmpg.nfdi4plants.org",
   ARCHIVE = "https://archive.nfdi4plants.org/communities/dataplant",

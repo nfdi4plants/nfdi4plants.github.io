@@ -19,7 +19,7 @@ export const MainNav: RecursiveMenu[] = [
   { title: 'News', slug: '/news' },
   { title: 'Events', slug: '/events' },
   { title: 'Data Hubs', slug: '/arc-data-hub' },
-  { 
+  {
     title: 'Tools',
     children: [
       { title: 'ARCitect', slug: 'https://nfdi4plants.github.io/nfdi4plants.knowledgebase/arcitect/' },
@@ -55,8 +55,8 @@ export const MainNav: RecursiveMenu[] = [
       <ul
         tabindex="0"
         class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow bg-base-100 text-base-content">
-        {MainNav.map((navItem) => 
-          navItem.children 
+        {MainNav.map((navItem) =>
+          navItem.children
             ? <li>
               <a href={navItem.slug}>{navItem.title}</a>
               <Menu isOpen={true} menu={navItem.children} className=""></Menu>
@@ -70,14 +70,14 @@ export const MainNav: RecursiveMenu[] = [
     </a>
   </div>
   <div class="navbar-center hidden lg:flex gap-1 h-full">
-    {MainNav.map((navItem) => 
+    {MainNav.map((navItem) =>
       <div class="dropdown dropdown-hover">
         {
-          navItem.slug 
+          navItem.slug
             ? <NavButton hasChildren={navItem.children ? true : false} href={navItem.slug}>{navItem.title}</NavButton>
             : <NavButton hasChildren={navItem.children ? true : false} >{navItem.title}</NavButton>
         }
-        {navItem.children && 
+        {navItem.children &&
           <Menu isOpen={true} menu={navItem.children} className="dropdown-content menu bg-base-100 text-base-content lg:border-r-2 min-h-full w-80 p-4 menu-sm"></Menu>
         }
       </div>
@@ -97,13 +97,14 @@ export const MainNav: RecursiveMenu[] = [
           <path fill="currentColor" d="M191.1 224c0-17.72-14.34-32.04-32-32.04L144 192c-35.34 0-64 28.66-64 64.08v47.79C80 339.3 108.7 368 144 368H160c17.66 0 32-14.36 32-32.06L191.1 224zM256 0C112.9 0 4.583 119.1 .0208 256L0 296C0 309.3 10.75 320 23.1 320S48 309.3 48 296V256c0-114.7 93.34-207.8 208-207.8C370.7 48.2 464 141.3 464 256v144c0 22.09-17.91 40-40 40h-110.7C305 425.7 289.7 416 272 416H241.8c-23.21 0-44.5 15.69-48.87 38.49C187 485.2 210.4 512 239.1 512H272c17.72 0 33.03-9.711 41.34-24H424c48.6 0 88-39.4 88-88V256C507.4 119.1 399.1 0 256 0zM368 368c35.34 0 64-28.7 64-64.13V256.1C432 220.7 403.3 192 368 192l-16 0c-17.66 0-32 14.34-32 32.04L320 335.9C320 353.7 334.3 368 352 368H368z"/>
         </svg>
       </NavButton>
-      <Menu 
-        isOpen={true} 
+      <Menu
+        isOpen={true}
         menu={[
           { title: "Helpdesk", slug: URLS.HELPDESK, icon: "tabler:message-circle-question"},
           { title: "Matrix Support Channel", slug: URLS.SOCIAL_MATRIX, icon: "tabler:brand-matrix"},
           { title: "User Support Meeting", slug: "events/arc-user-support", icon: "tabler:calendar-stats"},
-        ]} 
+          { title: "ARC user mailing list", slug: URLS.MAILING_LIST_SUBSCRIBE, icon: "tabler:mail"},
+        ]}
         className="dropdown-content menu bg-base-100 text-base-content lg:border-r-2 min-h-full w-80 p-4 menu-sm"></Menu>
     </div>
     <NavButton props={{title: "E-Mail"}} href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0">
@@ -127,14 +128,14 @@ export const MainNav: RecursiveMenu[] = [
       <NavButton props={{title: "Socials"}}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon-size"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentColor" d="M160 368c26.5 0 48 21.5 48 48l0 16 72.5-54.4c8.3-6.2 18.4-9.6 28.8-9.6L448 368c8.8 0 16-7.2 16-16l0-288c0-8.8-7.2-16-16-16L64 48c-8.8 0-16 7.2-16 16l0 288c0 8.8 7.2 16 16 16l96 0zm48 124l-.2 .2-5.1 3.8-17.1 12.8c-4.8 3.6-11.3 4.2-16.8 1.5s-8.8-8.2-8.8-14.3l0-21.3 0-6.4 0-.3 0-4 0-48-48 0-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L448 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64l-138.7 0L208 492z"/></svg>
       </NavButton>
-      <Menu 
-        isOpen={true} 
+      <Menu
+        isOpen={true}
         menu={[
           { title: 'YouTube', slug: URLS.SOCIAL_YOUTUBE, icon: "tabler:brand-youtube" },
           { title: 'Twitter-X', slug: URLS.SOCIAL_TWITTER, icon: "tabler:brand-x" },
           { title: "Bluesky", slug: URLS.SOCIAL_BLUESKY, icon: "tabler:brand-bluesky" },
           { title: 'Mastodon', slug: URLS.SOCIAL_MASTODOON, icon: "tabler:brand-mastodon"}
-        ]} 
+        ]}
         className="dropdown-content menu bg-base-100 text-base-content lg:border-r-2 min-h-full w-80 p-4 menu-sm"></Menu>
     </div>
     <NavButton href={URLS.SOCIAL_GITHUB} props={{title: "GitHub"}}>
@@ -154,7 +155,7 @@ export const MainNav: RecursiveMenu[] = [
 
 <style>
 .icon-size {
-  @apply w-4 h-5 lg:w-5 lg:h-5 
+  @apply w-4 h-5 lg:w-5 lg:h-5
 }
 
 </style>
