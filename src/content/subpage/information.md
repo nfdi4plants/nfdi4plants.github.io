@@ -5,6 +5,7 @@ description: Latest news, event participation, publications, Knowledge Base – 
 content:
   - information/news
   - information/events
+  - information/citing
   - information/publications
   - information/knowledge-base
   - information/discussions
