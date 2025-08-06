@@ -75,7 +75,7 @@ organizer:
   url: https://www.ceplas.eu/en/research/data-science-and-data-management
 registration:
     description: 'First-come-first-serve. Members of CEPLAS have priority. Everyone else is welcome, if seats are available.' 
-    url: 'http://localhost:4321/events/2025-09-09_ceplas-arc-workshops-hhu/09-09-2025#register'
+    url: 'https://uni-duesseldorf.sciebo.de/apps/forms/s/Nq8qZbXEKARiCNxHNX7NYpZB'
     seats: 15
 ---
 
