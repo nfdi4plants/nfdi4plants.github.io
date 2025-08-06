@@ -4,9 +4,6 @@ category: Training
 description: 'Learn how to package datasets as ARCs, annotate them with metadata, and share them via the DataHUB.'
 when:
   - 
-    start: 2025-09-09T09:00:00
-    end: 2025-09-09T12:00:00
-  - 
     start: 2025-09-09T13:00:00
     end: 2025-09-09T16:00:00
   - 
