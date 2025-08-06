@@ -75,7 +75,7 @@ organizer:
   url: https://www.ceplas.eu/en/research/data-science-and-data-management
 registration:
     description: 'First-come-first-serve. Members of CEPLAS have priority. Everyone else is welcome, if seats are available.' 
-    url: 'https://uni-duesseldorf.sciebo.de/apps/forms/s/Nq8qZbXEKARiCNxHNX7NYpZB'
+    url: 'http://localhost:4321/events/2025-09-09_ceplas-arc-workshops-hhu/09-09-2025#register'
     seats: 15
 ---
 
@@ -131,3 +131,9 @@ Not all installations are perfectly straight-forward. We will be available half 
 - ⏱️ **Duration: ca. 1 hr**
 - 🧑‍🏫 **Content**: Non-interactive live demo to introduce the main concepts and features of ARCs, ARC tools and services (no laptops required)
 - 🗒️ Afterwards participants can flexibly explore the self-guided tutorials in the knowledge base
+
+## Register
+
+<embed type="text/html" src="https://uni-duesseldorf.sciebo.de/apps/forms/embed/Nq8qZbXEKARiCNxHNX7NYpZB" width="850" height="1200"> 
+
+Note, if the registration form does not work, please follow [this link](https://uni-duesseldorf.sciebo.de/apps/forms/s/Nq8qZbXEKARiCNxHNX7NYpZB). 
