@@ -1,4 +1,5 @@
 import { type ReducedEvent } from "./EventUtil";
+import type { CollectionEntry } from 'astro:content';
 
 export function createEventSchema(reducedEvent: ReducedEvent) {
   return JSON.stringify({
@@ -58,5 +59,22 @@ export function createArticleSchema(article: Article) {
     "description": article.description,
     "image": article.image?.src,
     "keywords": article.keywords?.join(", ")
+  })
+}
+
+export function createPersonSchema(person: CollectionEntry<"member">) {
+  
+
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": person.data.name,
+    "image": person.data.image?.src,
+    "affiliation": {
+        "@type": "Organization",
+        "name": person.data.affiliation
+      },
+    "description": person.body,
+    "sameAs": person.data.socials?.map(social => social.href)
   })
 }

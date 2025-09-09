@@ -1,0 +1,46 @@
+---
+import { getCollection } from 'astro:content';
+import CenteredLayout from "~/layouts/CenteredLayout.astro"
+import { Image } from "astro:assets";
+
+const memberCollection = await getCollection('member')
+---
+
+<CenteredLayout title="Members">
+  <div class="flex flex-col gap-6">
+    <div>
+      <h1 class="text-4xl font-bold mb-4">Meet our Members</h1>
+      <div class="text-md text-base-content/80 max-w-xl">
+        Here you can find an overview of all members of the NFDI4Plants consortium. Click on a member to learn more about them.
+      </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {memberCollection.map((member) => (
+        <a href={`/member/${member.slug}`} class="p-4 border border-base-content/10 rounded-lg hover:shadow-lg transition-shadow flex gap-2">
+          <div class="min-w-fit flex justify-center items-center" >
+            {
+              member.data.image ? (
+                <Image
+                  src={member.data.image}
+                  alt={member.data.name + " Avatar"}
+                  class="size-28 ring-base-content ring-offset-base-100 rounded-full ring-2 ring-offset-2 m-2"
+                />
+              ) : (
+                <div class="size-28 ring-base-content ring-offset-base-100 rounded-full ring-2 ring-offset-2 bg-base-200 flex justify-center items-center text-6xl m-2">
+                  {member.data.name.slice(0,3).toUpperCase()}
+                </div>
+              )
+            }
+          </div>
+          <div>
+            <div class="text-xl font-semibold mb-2">{member.data.name}</div>
+            {member.data.affiliation && <div class="text-sm text-base-content/70 mb-1">{member.data.affiliation}</div>}
+            {member.data.location && <div class="text-sm text-base-content/70 mb-1">{member.data.location}</div>}
+            {member.data.description && <div class="text-sm text-base-content/80">{member.data.description}</div>}
+          </div>
+        </a>
+      ))}
+
+    </div>
+  </div>
+</CenteredLayout>

@@ -16,6 +16,7 @@
     "@astrojs/tailwind": "^5.1.1",
     "@iconify-json/academicons": "^1.2.1",
     "@iconify-json/flat-color-icons": "^1.2.0",
+    "@iconify-json/simple-icons": "^1.2.50",
     "@iconify-json/tabler": "^1.2.3",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.0",
@@ -38,6 +39,7 @@
     "typescript": "^5.6.2"
   },
   "devDependencies": {
+    "@iconify-json/mdi": "^1.2.3",
     "@iconify/react": "^5.0.2",
     "@tailwindcss/typography": "^0.5.15",
     "@types/d3": "^7.4.3",

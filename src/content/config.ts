@@ -11,6 +11,24 @@ const newsCollection = defineCollection({
   })
 });
 
+const memberCollection = defineCollection({ 
+  type: 'content',
+  schema: ({ image }) => z.object({
+    name: z.string().trim().min(1),
+    image: image().optional(),
+    description: z.string().trim().max(100).optional(),
+    socials: z.array(
+      z.object({
+        href: z.string().trim().min(1).url(),
+        name: z.string().trim().min(1),
+      })
+    ).optional(),
+    affiliation: z.string().trim().max(20).optional(),
+    location: z.string().trim().max(50).optional(),
+  })
+});
+
+
 const eventsCollection = defineCollection({ 
   type: 'content',
   schema: ({ image }) => z.object({
@@ -115,4 +133,5 @@ export const collections = {
   'subpageContent': subpageContentCollection,
   'articles': articleCollection,
   'mainpagecards': mainpageCollection,
+  'member': memberCollection,
 };
