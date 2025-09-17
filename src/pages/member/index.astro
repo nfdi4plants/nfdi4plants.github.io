@@ -23,7 +23,7 @@ const memberCollection = await getCollection('member')
                 <Image
                   src={member.data.image}
                   alt={member.data.name + " Avatar"}
-                  class="size-28 ring-base-content ring-offset-base-100 rounded-full ring-2 ring-offset-2 m-2"
+                  class="size-28 ring-base-content ring-offset-base-100 rounded-full ring-2 ring-offset-2 m-2" style="object-fit: cover;"
                 />
               ) : (
                 <div class="size-28 ring-base-content ring-offset-base-100 rounded-full ring-2 ring-offset-2 bg-base-200 flex justify-center items-center text-6xl m-2">
