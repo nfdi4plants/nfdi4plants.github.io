@@ -2,7 +2,7 @@
 name: Saskia Hiltemann
 image: /src/assets/images/member/saskia-hiltemann.jpg
 
-description: Hi! I am Saskia, I am a data steward for DataPLANT and the Univesity of Freiburg.
+description: Hi! I am Saskia, I am a data steward for DataPLANT and the University of Freiburg.
 socials:
   - href: https://github.com/shiltemann
     name: GitHub
