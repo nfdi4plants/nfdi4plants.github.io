@@ -10,6 +10,8 @@ socials:
     name: ORCID
   - href: https://linkedin.com/in/shiltemann
     name: LinkedIN
+  - href: https://matrix.to/#/@shiltemann:matrix.org
+    name: Matrix Chat
 
 affiliation: DataPLANT & UFR
 location: Germany & The Netherlands
