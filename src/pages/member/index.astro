@@ -14,7 +14,7 @@ const memberCollection = await getCollection('member')
         Here you can find an overview of all members of the NFDI4Plants consortium. Click on a member to learn more about them.
       </div>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
       {memberCollection.map((member) => (
         <a href={`/member/${member.slug}`} class="p-4 border border-base-content/10 rounded-lg hover:shadow-lg transition-shadow flex gap-2">
           <div class="min-w-fit flex justify-center items-center" >
