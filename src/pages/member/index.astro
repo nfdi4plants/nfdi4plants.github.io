@@ -34,13 +34,13 @@ const memberCollection = await getCollection('member')
           </div>
           <div>
             <div class="text-xl font-semibold mb-2">{member.data.name}</div>
-            {member.data.affiliation && <div class="text-sm text-base-content/70 mb-1">{member.data.affiliation}</div>}
+            {member.data.affiliation && <div class="text-sm text-base-content/70 mb-1">{member.data.affiliation.join(", ")}</div>}
             {member.data.location && <div class="text-sm text-base-content/70 mb-1">{member.data.location}</div>}
             {member.data.description && <div class="text-sm text-base-content/80">{member.data.description}</div>}
           </div>
         </a>
       ))}
-
     </div>
+    <div class="text-sm w-full text-center text-base-content/60 mt-20">If you are part of DataPLANT and want to be listed, open an issue <a class="underline text-blue-600" href="https://github.com/nfdi4plants/nfdi4plants.github.io/issues/new">here</a>.</div>
   </div>
 </CenteredLayout>

@@ -67,12 +67,12 @@ const jsonLD = createPersonSchema(file);
       <div class="text-base-content/80 text-left">{file.data.description}</div>
       <div class="flex flex-row gap-2 flex-wrap">
         {
-          file.data.affiliation && (
+          file.data.affiliation && file.data.affiliation.map((affiliation) => (
             <span class="badge badge-lg badge-soft badge-primary gap-2">
               {" "}
-              <Icon name="mdi:house-city" /> {file.data.affiliation}
+              <Icon name="mdi:house-city" /> {affiliation}
             </span>
-          )
+          ))
         }
         {
           file.data.location && (

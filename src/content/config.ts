@@ -23,7 +23,9 @@ const memberCollection = defineCollection({
         name: z.string().trim().min(1),
       })
     ).optional(),
-    affiliation: z.string().trim().max(20).optional(),
+    affiliation: z.array(
+      z.string().trim().max(20)
+    ).max(3).optional(),
     location: z.string().trim().max(50).optional(),
   })
 });

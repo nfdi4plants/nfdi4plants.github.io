@@ -7,8 +7,9 @@ socials:
     name: GitHub
   - href: https://orcid.org/0000-0002-8510-6810
     name: ORCID
-affiliation: DataPLANT
-location: Germany, Rhineland-Palatinate
+affiliation: 
+  - DataPLANT
+location: Germany, Kaiserslautern
 ---
 
 Within DataPLANT, I am involved in most web development tasks, such as this exact page 😅 . 

@@ -13,11 +13,13 @@ socials:
   - href: https://matrix.to/#/@shiltemann:matrix.org
     name: Matrix Chat
 
-affiliation: DataPLANT & UFR
+affiliation: 
+  - DataPLANT
+  - UFR
 location: Germany & The Netherlands
 ---
 
-Within DataPLANT, I lead the Data Steward Circle and am involved in user support. I am also a Data Steward for the [MAdLand](https://madland.science) project, as well as for the [Central Data Facility](https://uni-freiburg.de/cdf-en) of the University of Freiburg.
+Within DataPLANT, I lead the [Data Steward Circle](/events/datasteward-circle/) and am involved in user support. I am also a Data Steward for the [MAdLand](https://madland.science) project, as well as for the [Central Data Facility](https://uni-freiburg.de/cdf-en) of the University of Freiburg.
 
 I am also very active in the Galaxy community, where I create tools and workflows for researchers, and I lead the [Galaxy Training Network](https://training.galaxyprojec.org).
 
