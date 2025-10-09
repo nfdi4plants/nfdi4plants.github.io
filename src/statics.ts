@@ -15,7 +15,7 @@ export enum URLS {
   ARCHIVE = "https://archive.nfdi4plants.org/communities/dataplant",
   ARCSEARCH = "https://arcregistry.nfdi4plants.org/isasearch",
 
-  SOCIAL_MATRIX = "https://matrix.to/#/#dataplant:matrix.uni-freiburg.de",
+  SOCIAL_MATRIX = "https://matrix.to/#/%23arc-user-support:matrix.org",
   SOCIAL_MASTODOON = "https://nfdi.social/@nfdi4plants",
   SOCIAL_BLUESKY = "https://bsky.app/profile/nfdi4plants.bsky.social",
   SOCIAL_TWITTER = "https://twitter.com/nfdi4plants",
