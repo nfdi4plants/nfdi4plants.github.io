@@ -1,0 +1,88 @@
+---
+import MarkdownLayout from "~/layouts/MarkdownLayout.astro";
+import { getCollection } from "astro:content";
+import { createPersonSchema } from "~/util/JsonLDSchemas";
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+
+export async function getStaticPaths() {
+  const collection = await getCollection("member");
+  return collection.map((entry) => {
+    return {
+      params: { slug: entry.slug },
+      props: { file: entry },
+    };
+  });
+}
+
+const { file } = Astro.props;
+
+const { Content, headings } = await file.render();
+
+const jsonLD = createPersonSchema(file);
+---
+
+<MarkdownLayout
+  frontmatter={{ ...file.data, jsonLD: jsonLD, title: file.data.name }}
+  hasContentBefore={true}
+  headings={headings}
+>
+  <div class="flex flex-col md:flex-row not-prose my-4 gap-4">
+    <div class="flex justify-center md:justify-start">
+      {
+        file.data.image ? (
+          <Image
+            src={file.data.image}
+            alt={file.data.name + " Avatar"}
+            class="size-28 ring-base-content ring-offset-base-100 rounded-full ring-2 ring-offset-2 m-2"
+          />
+        ) : (
+          <div class="size-28 ring-base-content ring-offset-base-100 rounded-full ring-2 ring-offset-2 bg-base-200 flex justify-center items-center text-6xl m-2">
+            {file.data.name.slice(0,3).toUpperCase()}
+          </div>
+        )
+      }
+    </div>
+    <div>
+      <div class="">
+        {
+          file.data.socials && file.data.socials.length > 0 && (
+            <div class="flex flex-row flex-wrap gap-4 not-prose">
+              {file.data.socials.map((social) => (
+                <a
+                  href={social.href}
+                  target="_blank"
+                  class="inline-flex items-center gap-1 link tracking-tight text-md font-medium hover:underline"
+                >
+                  {/* use icon name as fallback if no name is given */}
+                  {/* e.g. "mdi:github" -> "github" */}
+                  {social.name && <># {social.name}</>}
+                </a>
+              ))}
+            </div>
+          )
+        }
+      </div>
+      <h1 class="text-6xl font-bold">{file.data.name}</h1>
+      <div class="text-base-content/80 text-left">{file.data.description}</div>
+      <div class="flex flex-row gap-2 flex-wrap">
+        {
+          file.data.affiliation && file.data.affiliation.map((affiliation) => (
+            <span class="badge badge-lg badge-soft badge-primary gap-2">
+              {" "}
+              <Icon name="mdi:house-city" /> {affiliation}
+            </span>
+          ))
+        }
+        {
+          file.data.location && (
+            <span class="badge badge-lg badge-soft badge-primary gap-2">
+              <Icon name="mdi:location" /> {file.data.location}
+            </span>
+          )
+        }
+      </div>
+    </div>
+  </div>
+  <Content />
+</MarkdownLayout>
