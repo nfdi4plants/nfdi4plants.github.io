@@ -53,7 +53,7 @@ Innovative proposals are encouraged, and every project that contributes to FAIR 
   <li><strong>01.04.2026</strong> Earliest start of funding</li>
 </ul>
 
-[Download Word-Dokument](../../assets/data/flexfunds/test.docx)
+[Download Word-Dokument](../../../public/docs/test.docx)
 
 ### Funding Conditions
 
