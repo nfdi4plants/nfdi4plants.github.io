@@ -1,6 +1,6 @@
 ---
 name: Yaser Alashloo
-image: 
+image: /src/assets/images/member/yaser.jpg
 
 description: Hey! I'm Yaser, a data steward for CEPLAS at Heinrich Heine University Düsseldorf.
 socials:
@@ -13,7 +13,7 @@ socials:
   - href: https://matrix.to/#/@yalashloo:matrix.org
     name: Matrix Chat
 
-affiliation: 
+affiliation:
   - CEPLAS
   - HHU
 location: Düsseldorf, Germany
