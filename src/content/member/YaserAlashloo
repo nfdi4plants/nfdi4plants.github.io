@@ -1,0 +1,23 @@
+---
+name: Yaser Alashloo
+image: 
+
+description: Hey! I'm Yaser, a data steward for CEPLAS at Heinrich Heine University Düsseldorf.
+socials:
+  - href: https://github.com/yalashloo
+    name: GitHub
+  - href: https://orcid.org/0000-0001-6858-8961
+    name: ORCID
+  - href: https://www.linkedin.com/in/s-yaser-moussavi-alashloo-95816046/
+    name: LinkedIN
+  - href: https://matrix.to/#/@yalashloo:matrix.org
+    name: Matrix Chat
+
+affiliation: 
+  - CEPLAS
+  - HHU
+location: Düsseldorf, Germany
+---
+
+I am a data steward working with the Cluster of Excellence on Plant Sciences (CEPLAS) at HHU. My role involves developing and maintaining the HHU DataHub infrastructure to enhance research data management. In addition, I support and advise researchers in implementing robust, transparent, and FAIR-aligned data management practices.
+
