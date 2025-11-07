@@ -37,14 +37,14 @@ Innovative proposals are encouraged, and every project that contributes to FAIR 
 
 ### Process
 
-<ul style="margin: 0; padding-left: 1.2em; line-height: 1.2;">
-  <li><strong>Submission</strong> Filled Application Form including Budget Calculation</li>
-  <li><strong>Contact</strong> <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0"><script type="text/javascript">document.write('\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067')</script></a></li>
-</ul>
+Please send the filled Application Form including Budget Calculation to 
+<a href="mailto:&#x63;&#x6f;&#x6d;&#x6d;&#x75;&#x6e;&#x69;&#x74;&#x79;&#x63;&#x61;&#x6c;&#x6c;&#x40;&#x6e;&#x66;&#x64;&#x69;&#x34;&#x70;&#x6c;&#x61;&#x6e;&#x74;&#x73;&#x2e;&#x6f;&#x72;&#x67;?subject=DataPLANT%20Community%20Call%202026%20%E2%80%93%20Application">
+  communitycall[at]nfdi4plants.org
+</a>
 
-__Submission Forms__   
-[Application](../../../public/docs/flexfunds/DataPLANT_2026CommunityCall_ApplicationForm.docx)   
-[Budget Calculation](../../../public/docs/flexfunds/DataPLANT_2026CommunityCall_BudgetTemplate.xlsx)
+*Submission Forms*   
+[Application](../../../public/docs/DataPLANT_2026CommunityCall_ApplicationForm.docx)   
+[Budget Calculation](../../../public/docs/DataPLANT_2026CommunityCall_BudgetTemplate.xlsx)
 
 ### Timeline 
 
@@ -54,8 +54,6 @@ __Submission Forms__
   <li><strong>01.04.2026</strong> Earliest start of funding <i>(earlier start might be considered in justified cases)</i></li>
 </ul>
 
-[Application Form](../../../public/docs/test.docx)
-
 ### Funding Conditions
 
 <ul style="margin: 0; padding-left: 1.2em; line-height: 1.2;">
@@ -64,7 +62,15 @@ __Submission Forms__
 
 
 
-<!--DataPLANT Flexfunds empower small, high-impact projects that advance FAIR data principles in plant science. Whether you want to develop a new tool, create an ARC dataset, build an interface, or organize a workshop, these funds help transform innovative ideas into practical solutions.
+<!--
+<a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0"><script type="text/javascript">document.write('\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067')</script></a>
+
+<ul style="margin: 0; padding-left: 1.2em; line-height: 1.2;">
+  <li><strong>Submission</strong> Filled Application Form including Budget Calculation</li>
+  <li><strong>Contact</strong> <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067';void 0"><script type="text/javascript">document.write('\u0069\u006e\u0066\u006f\u0040\u006e\u0066\u0064\u0069\u0034\u0070\u006c\u0061\u006e\u0074\u0073\u002e\u006f\u0072\u0067')</script></a></li>
+</ul>
+
+DataPLANT Flexfunds empower small, high-impact projects that advance FAIR data principles in plant science. Whether you want to develop a new tool, create an ARC dataset, build an interface, or organize a workshop, these funds help transform innovative ideas into practical solutions.
 
 💡 Who can apply?
 Researchers, developers, and data stewards within the DataPLANT consortium.
