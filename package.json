@@ -20,7 +20,7 @@
     "@iconify-json/tabler": "^1.2.3",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.0",
-    "astro": "^4.15.9",
+    "astro": "^5.15.5",
     "astro-icon": "^1.1.1",
     "astro-seo": "^0.8.4",
     "bibtex-js-parser": "^1.1.6",
