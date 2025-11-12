@@ -4,7 +4,6 @@ tagline: Join the DataPLANT community!
 description: DataPLANT is a community-driven initiative and open to any kind of contribution.
 content:
   - participation/become-a-member
-  - participation/community-call
   - participation/arc-how-to-start
   - participation/github
   - participation/broker-ontology

@@ -12,9 +12,9 @@ DataPLANT is pleased to announce the 2026 Community Call, offering targeted supp
 This call is designed to accelerate data stewardship capacities across the community. Funded activities include:
 
 <ul style="margin: 0; padding-left: 1.2em; line-height: 1.2;">
-  <li><strong>DataSteward Onboarding Kit</strong> Structured guidance and best practices to quickly integrate community members into the DataPLANT ecosystem.</li>
-  <li><strong>Direct DataSteward support</strong> Community members can request dedicated time from employed DataStewards to assist with project-specific tasks.</li>
-  <li><strong>Personnel funding for facilities or consortia</strong>Large facilities, service units, or consortia may receive funds to employ DataStewards locally, strengthening data mobilisation.</li>
+  <li><strong>DataSteward Onboarding Kit</strong> – Structured guidance and best practices to quickly integrate community members into the DataPLANT ecosystem.</li>
+  <li><strong>Direct DataSteward Support</strong> – Community members can request dedicated time from employed DataStewards to assist with project-specific tasks.</li>
+  <li><strong>Personnel Funding for Facilities or Consortia</strong> – Large facilities, service units, or consortia may receive funds to employ DataStewards locally, strengthening data mobilisation.</li>
 </ul>
 
 This pillar aims to enhance data management expertise, improve FAIR-compliant workflows, and provide tailored assistance to researchers and facilities across the plant science community.
@@ -24,11 +24,11 @@ This pillar aims to enhance data management expertise, improve FAIR-compliant wo
 The Project Call supports practical, community-driven initiatives that develop tools, workflows, or resources within the DataPLANT ecosystem. Projects may focus on any initiative that advances FAIR data practices in plant science. Examples include, but are not limited to:
 
 <ul style="margin: 0; padding-left: 1.2em; line-height: 1.2;">
-  <li><strong>ARC datasets</strong> Creation and integration into the DataPLANT repository</li>
-  <li><strong>Tool development</strong> New software or extensions for analysis, visualization, or workflow management</li>
-  <li><strong>Interfaces</strong> Connecting DataPLANT tools with external systems</li>
-  <li><strong>Community events</strong> Hackathons, workshops, and training initiatives</li>
-  <li><strong>Templates and tutorials</strong> Resources supporting FAIR-compliant data management</li>
+  <li><strong>ARC Datasets</strong> – Creation and integration into the DataPLANT repository</li>
+  <li><strong>Tool Development</strong> – New software or extensions for analysis, visualization, or workflow management</li>
+  <li><strong>Interfaces</strong> – Connecting DataPLANT tools with external systems</li>
+  <li><strong>Community Events</strong> – Hackathons, workshops, and training initiatives</li>
+  <li><strong>Templates and Tutorials</strong> – Resources supporting FAIR-compliant data management</li>
 </ul>
 
 Innovative proposals are encouraged, and every project that contributes to FAIR data in plant research is welcome.
