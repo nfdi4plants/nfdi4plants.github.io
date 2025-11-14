@@ -43,8 +43,8 @@ Please send the filled Application Form including Budget Calculation to
 </a>
 
 *Submission Forms*   
-[Application](../../../public/docs/DataPLANT_2026CommunityCall_ApplicationForm.docx)   
-[Budget Calculation](../../../public/docs/DataPLANT_2026CommunityCall_BudgetTemplate.xlsx)
+[Application](/docs/DataPLANT_2026CommunityCall_ApplicationForm.docx)   
+[Budget Calculation](/docs/DataPLANT_2026CommunityCall_BudgetTemplate.xlsx)
 
 ### Timeline 
 
