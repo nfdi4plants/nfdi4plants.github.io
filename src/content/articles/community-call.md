@@ -49,7 +49,7 @@ Please send the filled Application Form including Budget Calculation to
 ### Timeline 
 
 <ul style="margin: 0; padding-left: 1.2em; line-height: 1.2;">
-  <li><strong>18.11.2025</strong> Call for proposals published</li>
+  <li><strong>17.11.2025</strong> Call for proposals published</li>
   <li><strong>15.01.2026</strong> Submission deadline</li>
   <li><strong>01.04.2026</strong> Earliest start of funding <i>(earlier start might be considered in justified cases)</i></li>
 </ul>
