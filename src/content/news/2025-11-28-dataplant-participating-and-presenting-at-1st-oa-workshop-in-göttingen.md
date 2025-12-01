@@ -21,7 +21,7 @@ One of the key takeaways from these sessions was the importance of standardizati
 The 1st OA Workshop in Göttingen served as a crucial platform for advancing the conversation about the future of data architecture in the context of the NFDI. DataPLANT's participation highlighted the project's ongoing efforts to build flexible, scalable, and interoperable data solutions for fundamental plant research which could be deployed for further scientific communities as well. The workshop's focus on collaborative design, best practices, and the need for standards sets the stage for continued progress in building a robust and sustainable research data infrastructure.
 
 
-![DataPLANT at Open Architecture in Göttingen](/src/assets/images/news/OA_11_2025.jpeg)
+![DataPLANT at Open Architecture in Göttingen](/public/images/news/OA_11_2025.jpeg)
 
 **Further Links**  
 * [Galaxy News - One framework, one workflow, many communities: Freiburg Galaxy team at EOSC Symposium 2025](https://galaxyproject.org/news/2025-11-13-eosc-symposium2025/)  
