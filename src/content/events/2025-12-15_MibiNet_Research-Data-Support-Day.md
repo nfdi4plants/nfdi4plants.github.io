@@ -12,7 +12,7 @@ location:
   address: HHU, seminar room 26.21.01.31.
 tutors:
   - Sabrina Zander (<a href="https://www.sfb1535.hhu.de/projects/research-area-z/z03">MibiNet</a>)
- organizer:
+organizer:
   name: Sabrina Zander
   affiliation: MibiNet
   url: https://www.sfb1535.hhu.de/projects/research-area-z/z03
