@@ -1,7 +1,7 @@
 ---
 title: MibiNet Research Data Support Day
 category: Training
-description: 'Get an Overview about the DataPLANT tool chain, learn how to create ARCs, annotate them with metadata,share them via the DataHUB and publish them. Short introduction into eLabFTW and the elab2ARC tool.'
+description: 'Learn how to build and annotate ARCs, share them via the DataHUB, and publish them. Includes a short introduction to eLabFTW and the elab2ARC tool.'
 when:
   start: 2025-12-15T09:00:00
   end: 2025-12-15T13:00:00
