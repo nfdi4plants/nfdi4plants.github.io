@@ -151,7 +151,7 @@ export default function EventList( {events, showFilter = true, showPastFutureLim
       </div>
       {
         filteredUpcomingEvents.map((event) => (
-          <EventCard {...event} key={"card-" + event.href} />
+          <EventCard {...event} key={"card-upcoming-" + event.href} />
         ))
       }
       <h2 className="text-5xl lg:text-7xl text-center bg-secondary text-secondary-content p-2 lg:w-[64rem] xl:w-[72rem] lg:max-w-5xl xl:max-w-6xl">Archive</h2>
@@ -169,7 +169,7 @@ export default function EventList( {events, showFilter = true, showPastFutureLim
               <div className="grid grid-cols-1 gap-4 lg:gap-10">
                 {
                   events.filter(filterEvents).map((event) => (
-                    <EventCard {...event} key={"card-" + event.href}/>
+                    <EventCard {...event} key={"card-past-" + event.href}/>
                   ))
                 }
               </div>
