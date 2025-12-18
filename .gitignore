@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # linux swap files
 *.swp
+
+# copilot files
+.github/copilot-instructions.md
