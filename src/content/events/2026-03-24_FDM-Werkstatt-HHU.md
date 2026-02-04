@@ -1,6 +1,6 @@
 ---
 title: "Turning Research Projects into FAIR Digital Objects: a Hands-On Introduction to Annotated Research Contexts (ARCs) and ELN integration"
-category: "Workshop (Training)" 
+category: "Training" 
 description: 'Learn how to move your datasets into ARCs, share them via the DataHUB, and annotate them with metadata.'
 when:
     start: 2026-03-24T09:00:00 
@@ -20,7 +20,7 @@ organizer:
 registration:
     description: 'This workshop is part of [FDM-Werkstatt 2026](https://www.fdm.nrw/fdm-werkstatt).' 
     url: "https://eveeno.com/fdmwerkstatt2026duesseldorf"
-    seats: "15"
+    seats: 15
 ---
 
 ## Goals
