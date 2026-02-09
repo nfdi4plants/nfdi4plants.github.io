@@ -4,11 +4,11 @@ category: Training
 description: 'Learn how to package datasets as ARCs, annotate them with metadata, and share them via the DataHUB.'
 when:
   start: 2026-02-11T08:30:00
-  end: 2026-02-11T12:00:00
+  end: 2026-02-11T11:00:00
 mode: OfflineEventAttendanceMode
 audience: [Users]
 location:
-  name: HHU, ZSL Building 22.07 – room TBD
+  name: HHU, ZSL Building 22.07 – room 00.033
   url: https://link.mazemap.com/r3Ur8IgZ
 image: ~/assets/images/events/ceplas-ARCs.drawio.png
 tutors:
