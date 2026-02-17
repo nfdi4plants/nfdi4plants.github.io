@@ -13,7 +13,7 @@ The meeting also addressed the further development of the DataPLANTCommunity Cal
 
 This strategy meeting provided important impulses for the next projectphase, reinforcing a shared commitment to adaptive, community-drivenresearch data infrastructure development.
 
-![DataPLANT Strategy Meeting Team](/src/assets/images/news/2026_02_Grouppicture4.jpg)
+![DataPLANT Strategy Meeting Team](/images/news/2026_02_Grouppicture4.jpg)
 
 
 
