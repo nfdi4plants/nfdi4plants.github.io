@@ -1,3 +1,4 @@
+---
 title: ARCify your research project
 category: Training
 description: 'Learn how to package datasets as ARCs, annotate them with metadata, and share them via the DataHUB.'
