@@ -1,7 +1,7 @@
 ---
 title: 3rd Hands-On Symposium on ARC communication and interoperability
 category: Conference
-description: 'Save the date! Talks, Discussions, Coding and much more about the ARC ecosystem and beyond!'
+description: 'Registration opened! Talks, Discussions, Coding and much more about the ARC ecosystem and beyond!'
 when:
   start:  2026-06-15T12:00:00
   end:    2026-06-17T15:00:00
