@@ -8,7 +8,7 @@ when:
 mode: OfflineEventAttendanceMode
 audience: [Users]
 location:
-  name: HHU, ZSL Building 22.07 – room 01.023
+  name: HHU, ZSL Building 22.07 – room U1.023
   url: https://link.mazemap.com/r3Ur8IgZ
 image: ~/assets/images/events/ceplas-ARCs.drawio.png
 tutors:
