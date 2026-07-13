@@ -14,7 +14,7 @@ layout: src/layouts/MarkdownLayout.astro
 
 - Telephone: +49 761 203-0
 - Fax: +49 761 203-4369
-- [info@uni-freiburg.de](mailto:info@uni-freiburg.de)
+- <a data-obfuscation="0" href="mailto:info@uni-freiburg.de">info@uni-freiburg.de</a>
 - [https://uni-freiburg.de](https://uni-freiburg.de)
 
 ## Legal form and Legal Representation

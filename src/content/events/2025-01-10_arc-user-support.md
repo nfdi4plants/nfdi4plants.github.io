@@ -106,4 +106,4 @@ The easiest way to directly contact us for data stewardship is via our public [A
 
 There we try to quickly answer questions and keep you up-to-date with latest developments. Feel free to join the discussions, raise questions and topics for upcoming user meetings.
 
-To stay informed about the ARC user support meetings (and occasional other ARC updates), please join the <a href="mailto:arc-user-support-join@lists.nfdi.de?subject=subscribe&body=Hit send on this email to join the ARC user support mailing list">ARC user support mailing list</a>.
+To stay informed about the ARC user support meetings (and occasional other ARC updates), please join the <a data-obfuscation="0" href="mailto:arc-user-support-join@lists.nfdi.de?subject=subscribe&body=Hit send on this email to join the ARC user support mailing list">ARC user support mailing list</a>.
