@@ -10,87 +10,70 @@ layout: src/layouts/MarkdownLayout.astro
 
 **79098 Freiburg**
 
-## Kontakt
+## Contact
 
-- Telefon: [++49] 0761 / 203 – 0
-- Fax: [++49] 0761 / 203 – 4369
+- Telephone: +49 761 203-0
+- Fax: +49 761 203-4369
 - [info@uni-freiburg.de](mailto:info@uni-freiburg.de)
 - [https://uni-freiburg.de](https://uni-freiburg.de)
 
-## Rechtsform und gesetzliche Vertretung
+## Legal form and Legal Representation
 
-Die Universität Freiburg ist eine Körperschaft des Öffentlichen Rechts.
-Sie wird durch die Rektorin [Prof. Dr. Kerstin Krieglstein](https://uni-freiburg.de/universitaet/governance/rektorat/rektorin/) gesetzlich vertreten.
+The University of Freiburg is a corporation under public law.
+It is legally represented by the Rector Prof. Dr. Kerstin Krieglstein.
 
-## Zuständige Aufsichtsbehörde
+## Competent Supervisory Authority
 
-[Ministerium für Wissenschaft, Forschung und Kunst Baden-Württemberg](https://mwk.baden-wuerttemberg.de/)
-
+[Ministry of Science, Research and the Arts Baden-Württemberg](https://mwk.baden-wuerttemberg.de/)
 Königstraße 46, 70173 Stuttgart
 
-## Umsatzsteuer-ID-Nummer
+## VAT ID number
 
 DE 142116817
 
-## EORI-Nummer
+## EORI Number
 
 DE1112988
 
-## Inhaltliche Verantwortlichkeit
+## Responsibility for Content
 
-Für die zentralen Seiten der Universität ist inhaltlich Verantwortliche:
+The person responsible for the content of the university’s central pages is:
 
 **Rimma Gerenstein**
 
-Kommunikationsleiterin und Pressesprecherin
+Rimma Gerenstein
+Head of Communications and Press Officer
+Department of University and Science Communication
+rimma.gerenstein@zv.uni-freiburg.de
+Telephone: +49 761 203-8812
 
-Abteilung Hochschul- und Wissenschaftskommunikation
+For all other websites (e.g. those of faculties, institutes, seminars or administrative offices), the responsibility for the content lies with the departments (or persons) who created or published the pages. If you have any questions about one of these websites, please contact the department or person specified.
 
-- [rimma.gerenstein@zv.uni-freiburg.de](mailto:rimma.gerenstein@zv.uni-freiburg.de)
-- Telefon: [++49] 0761 / 203 – 8812
+## General Bank details University of Freiburg
 
-Für alle anderen Internetseiten (z.B. der Fakultäten, Institute, Seminare oder Verwaltungsstellen) liegt die inhaltliche Verantwortung bei den Stellen (oder Personen), die die Seiten erstellt oder veröffentlicht haben.
-Falls Sie Fragen zu einem dieser Internetangebote haben, wenden Sie sich bitte an die jeweils angegebene Stelle oder Person.
-
-## Allgemeine Bankverbindung
-
-Landesbank Baden-Württemberg / Baden-Württembergische Bank (Sitz Stuttgart)
-
-LBBW/BW-Bank Stuttgart
-
+Albert-Ludwig-Universität
 IBAN-Nr.: DE47 6005 0101 7438 5009 55
-
 BIC/SWIFT: SOLADEST600
 
-## Bankverbindung für die Rückmeldung von Studierenden
+## Bank details for student re-registration / enrolment at the University of Freiburg
 
-Landesbank Baden-Württemberg / Baden-Württembergische Bank (Sitz Stuttgart)
-
-LBBW/BW-Bank Stuttgart
-
+Albert-Ludwig-Universität
 IBAN-Nr.: DE71 6005 0101 7438 5087 68
-
 BIC/SWIFT: SOLADEST600
 
-## Urheberrecht
+## Copyright
 
-### Copyright-Hinweise zu Fotos und Graphiken
+### Copyright Information on Photos and Graphics
 
-Angaben zum Copyright der verwendeten Fotos und Graphiken finden Sie auf jeder Seite im Bereich “Mediennachweise”.
+Information on the copyright of the photos and graphics used can be found on each page in the “Media Credits” section.
 
-### Haftungsausschluss bei eigenen Inhalten
+### Disclaimer for own content
 
-Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt recherchiert und implementiert.
-Fehler im Bearbeitungsvorgang sind dennoch nicht auszuschließen.
-Hinweise und Korrekturen senden Sie bitte an [webseiten@uni-freiburg.de](mailto:webseiten@uni-freiburg.de).
-Eine Haftung für die Richtigkeit, Vollständigkeit und Aktualität dieser Webseiten kann trotz sorgfältiger Prüfung nicht übernommen werden.
-Die Universität Freiburg übernimmt insbesondere keinerlei Haftung, für eventuelle Schäden oder Konsequenzen, die durch die direkte oder indirekte Nutzung der angebotenen Inhalte entstehen.
+The contents of this website are researched and implemented with the greatest possible care. However, errors in the processing process cannot be ruled out. Please send comments and corrections to
+webseiten@uni-freiburg.de.
+Despite careful checking, no liability can be accepted for the accuracy, completeness and topicality of these websites. In particular, the University of Freiburg assumes no liability for any damage or consequences arising from the direct or indirect use of the content offered.
 
-### Haftungsausschluss bei Querverweisen und Links
+### Disclaimer for cross-references and links
 
-Die Universität Freiburg ist als Inhaltsanbieter für die eigenen Inhalte, die es zur Nutzung bereithält, nach den allgemeinen Gesetzen verantwortlich.
-Von diesen eigenen Inhalten sind Querverweise auf die von anderen Anbietern bereitgehaltenen Inhalte zu unterscheiden.
-Diese fremden Inhalte stammen weder von der Universität Freiburg, noch hat die Universität Freiburg die Möglichkeit, den Inhalt von Seiten Dritter zu beeinflussen.
-Die Inhalte fremder Seiten, auf die die Universität Freiburg mittels Links hinweist, spiegeln nicht die Meinung der Universität Freiburg wider, sondern dienen lediglich der Information und der Darstellung von Zusammenhängen.
-Diese Feststellungen gelten für alle innerhalb des eigenen Internetangebotes gesetzten Links und Verweise sowie für Fremdeinträge in von der Universität Freiburg eingerichteten Gästebüchern, Diskussionsforen und Mailinglisten.
-Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargebotener Informationen entstehen, haftet allein der Anbieter der Seite, auf welche verwiesen wurde.
+As a content provider, the University of Freiburg is responsible for its own content that it makes available for use in accordance with general law. Cross-references to content made available by other providers must be distinguished from this own content. This external content does not originate from the University of Freiburg, nor does the University of Freiburg have the ability to influence the content of third-party sites. The content of external sites to which the University of Freiburg refers via links does not reflect the opinion of the University of Freiburg, but is merely intended to provide information and illustrate contexts.
+These statements apply to all links and references set up within the University’s own Internet offering, as well as to third-party entries in guest books, discussion forums and mailing lists set up by the University of Freiburg. The provider of the site to which reference was made is solely liable for illegal, incorrect or incomplete content and in particular for damages resulting from the use or non-use of such information.
