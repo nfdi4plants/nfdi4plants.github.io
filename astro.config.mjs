@@ -13,8 +13,6 @@ import sitemap from '@astrojs/sitemap';
 
 import react from '@astrojs/react';
 
-import mailObfuscation from 'astro-mail-obfuscation';
-
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://astro.build/config
@@ -38,7 +36,7 @@ export default defineConfig({
         'database',
       ],
     },
-  }), sitemap(), react(), mailObfuscation()],
+  }), sitemap(), react()],
   vite: {
     resolve: {
       alias: {

@@ -14,7 +14,7 @@ layout: src/layouts/MarkdownLayout.astro
 
 - Telephone: +49 761 203-0
 - Fax: +49 761 203-4369
-- <a data-obfuscation="0" href="mailto:info@uni-freiburg.de">info@uni-freiburg.de</a>
+- <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u0075\u006e\u0069\u002d\u0066\u0072\u0065\u0069\u0062\u0075\u0072\u0067\u002e\u0064\u0065';void 0"><script type="text/javascript">document.write('\u0069\u006e\u0066\u006f\u0040\u0075\u006e\u0069\u002d\u0066\u0072\u0065\u0069\u0062\u0075\u0072\u0067\u002e\u0064\u0065')</script></a>
 - [https://uni-freiburg.de](https://uni-freiburg.de)
 
 ## Legal form and Legal Representation

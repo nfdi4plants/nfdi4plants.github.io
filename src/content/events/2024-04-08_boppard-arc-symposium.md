@@ -39,7 +39,7 @@ Let us know about your culinary needs.
 Write to:
 
 Janine Mertel<br>
-<a data-obfuscation="0" href="mailto:jmertel@rptu.de">jmertel@rptu.de</a>
+<a href="javascript:location='mailto:\u006a\u006d\u0065\u0072\u0074\u0065\u006c\u0040\u0072\u0070\u0074\u0075\u002e\u0064\u0065';void 0"><script type="text/javascript">document.write('\u006a\u006d\u0065\u0072\u0074\u0065\u006c\u0040\u0072\u0070\u0074\u0075\u002e\u0064\u0065')</script></a>
 
 The deadline for registration is **March 1st 2024**.
 

@@ -15,8 +15,8 @@ The controller within the meaning of the General Data Protection Regulation and 
 Albert-Ludwigs-Universität Freiburg  
 Friedrichstraße 39  
 79098 Freiburg  
-<a href="tel:+497612030" data-obfuscation="0">+49 (0)761/203-0</a></br>
-<a href="mailto:info@uni-freiburg.de" data-obfuscation="0">info@uni-freiburg.de</a>
+<a href="tel:+497612030">+49 (0)761/203-0</a></br>
+<a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u0075\u006e\u0069\u002d\u0066\u0072\u0065\u0069\u0062\u0075\u0072\u0067\u002e\u0064\u0065';void 0"><script type="text/javascript">document.write('\u0069\u006e\u0066\u006f\u0040\u0075\u006e\u0069\u002d\u0066\u0072\u0065\u0069\u0062\u0075\u0072\u0067\u002e\u0064\u0065')</script></a>
 
 ## II. Name and address of the data protection officer
 
@@ -26,7 +26,7 @@ Albert-Ludwigs-Universität Freiburg
 Der Datenschutzbeauftragte  
 Fahnenbergplatz  
 79085 Freiburg  
-<a href="mailto:datenschutzbeauftragter@uni-freiburg.de" data-obfuscation="0">datenschutzbeauftragter@uni-freiburg.de</a>
+<a href="javascript:location='mailto:\u0064\u0061\u0074\u0065\u006e\u0073\u0063\u0068\u0075\u0074\u007a\u0062\u0065\u0061\u0075\u0066\u0074\u0072\u0061\u0067\u0074\u0065\u0072\u0040\u0075\u006e\u0069\u002d\u0066\u0072\u0065\u0069\u0062\u0075\u0072\u0067\u002e\u0064\u0065';void 0"><script type="text/javascript">document.write('\u0064\u0061\u0074\u0065\u006e\u0073\u0063\u0068\u0075\u0074\u007a\u0062\u0065\u0061\u0075\u0066\u0074\u0072\u0061\u0067\u0074\u0065\u0072\u0040\u0075\u006e\u0069\u002d\u0066\u0072\u0065\u0069\u0062\u0075\u0072\u0067\u002e\u0064\u0065')</script></a>
 
 ## III. Scope of this declaration
 
