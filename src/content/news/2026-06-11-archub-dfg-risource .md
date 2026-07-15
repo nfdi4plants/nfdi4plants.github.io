@@ -1,10 +1,11 @@
 ---
 date: 2026-06-11
-title: Funding Made Simple - DataPLANT Recognized as an Official DFG-RIsource
+title: Finding RDM Services Made Simple - The DataPLANT ARChub Recognized as an Official DFG-RIsource
 description: DataPLANT has officially been registered as an approved DFG-RIsource, marking an important step toward establishing our consortium within the national research data infrastructure landscape. Discover how this milestone simplifies referencing our services and cost structures for upcoming funding applications and strengthens our strategic role in national infrastructure.
 ---
 
-**DataPLANT has officially been registered as an approved DFG-RIsource.** This represents a significant milestone for our consortium, marking an important step toward establishing DataPLANT as a sustainable component of the national research data infrastructure landscape. By securing this status, we are establishing a long-term framework for how collaborative biological research is supported and sustained.
+**DataPLANT has officially been registered as an approved DFG-RIsource.** This represents a significant milestone for our consortium, marking an important step toward establishing DataPLANT as a sustainable component of the national research data infrastructure landscape. By securing this status, we are establishing a long-term framework for how collaborative biological research is supported and sustained.   
+This milestone futher strengthens DataPLANT’s role within the national research data infrastructure landscape. It provides a clear framework for referencing our services in future funding applications, while increasing transparency around available infrastructure offerings and associated cost structures. In doing so, the DFG-RIsource registration supports both researchers planning new projects and the long-term strategic positioning of DataPLANT’s services.
 
 **DFG-RIsources: A Registry for Research Infrastructures.**
 The DFG RIsources is an information portal operated by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation). It provides a comprehensive registry of scientific research infrastructures in Germany and abroad. This registry makes it easier for applicants to locate established facilities, services, and resources and explicitly include them when preparing funding proposals.
