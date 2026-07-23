@@ -3,29 +3,25 @@ title: ARCify your research project
 category: Training
 description: 'Learn how to package datasets as ARCs, annotate them with metadata, and share them via the DataHUB.'
 when:
-  -
-    start: 2026-08-13T8:30:00
-    end: 2026-08-13T12:00:00
-  -
-    start: 2026-08-13T13:00:00
-    end: 2026-08-13T16:30:00
+  start: 2026-08-24T10:00:00
+  end: 2026-08-24T15:00:00
 mode: OfflineEventAttendanceMode
 audience: [Users]
 location:
-  name: HHU, ZSL Building 22.07 – room U1.021
-  url: https://link.mazemap.com/r3Ur8IgZ
+  name: Seminar room 1.23 
+  address: Seminar room 1.23 Luxemburger Str. 90 (COPT)
 image: ~/assets/images/events/ceplas-ARCs.drawio.png
 tutors:
-  - Dominik Brilhaus (<a href="https://www.ceplas.eu/en/research/data-science-and-data-management">CEPLAS Data</a>)
+  - Vittorio Tracanna (<a href="https://www.ceplas.eu/en/research/data-science-and-data-management">CEPLAS Data</a>)
 organizer:
-  name: Dominik Brilhaus
+  name: Vittorio Tracanna
   affiliation: CEPLAS
   url: https://www.ceplas.eu/en/research/data-science-and-data-management
 registration:
-    description: 'First-come-first-serve. Members of CEPLAS have priority. Everyone else is welcome, if seats are available.' 
-    url: 'https://terminplaner6.dfn.de/b/7e3a982aecaee837fd603db68ca4dd21-1854181'
-    seats: 15
-    deadline: 2026-08-06
+  url: https://terminplaner6.dfn.de/b/e81189ec9244eee58255ac5d087bb4ac-1857919
+  description: Learn how to package datasets as ARCs, annotate them with metadata, and share them via the DataHUB
+  deadline: 2026-08-16
+  seats: 10
 ---
 
 ## Goals
