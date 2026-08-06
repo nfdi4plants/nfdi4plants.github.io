@@ -8,7 +8,7 @@ when:
 mode: OfflineEventAttendanceMode
 audience: [Users]
 location:
-  name: Seminar room 1.23 
+  name: Seminar room 1.23 Luxemburger Str. 90 (COPT)
   address: Seminar room 1.23 Luxemburger Str. 90 (COPT)
 image: ~/assets/images/events/ceplas-ARCs.drawio.png
 tutors:
@@ -18,10 +18,10 @@ organizer:
   affiliation: CEPLAS
   url: https://www.ceplas.eu/en/research/data-science-and-data-management
 registration:
-  url: https://terminplaner6.dfn.de/b/e81189ec9244eee58255ac5d087bb4ac-1857919
+  url: https://terminplaner.dfn.de/public/bookings/f6718f0f-2a02-4a60-9436-c35ff5e833ba
   description: Learn how to package datasets as ARCs, annotate them with metadata, and share them via the DataHUB
   deadline: 2026-08-16
-  seats: 10
+  seats: 15
 ---
 
 ## Goals
