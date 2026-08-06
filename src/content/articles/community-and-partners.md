@@ -42,5 +42,6 @@ description: Find out more about our community and partners.
 - [Prof. Dr. Thomas Walter](), University of Tübingen 
 - [Prof. Dr. Andreas P.M. Weber](), Heinrich Heine University Düsseldorf
 - [Prof. Dr. Stefanie Weidtkamp-Peters](), Heinrich Heine University Düsseldorf
+- [Dr. Barbara Ebert](), GFBio - German Federation for Biological Data
   
 ## Partners
