@@ -1,74 +1,49 @@
 ---
+slug: arc-user-support
 title: ARC User Support Meeting
 category: Webinar
 audience: [Users]
-description: 'In this monthly meeting Data Stewards answer questions, demonstrate tools and services or discuss data management issues.'
+description: 'In this weekly meeting Data Stewards answer questions, demonstrate tools and services or discuss data management issues.'
 when:
-  -
-    start: 2025-01-10T13:00:00
-    end: 2025-01-10T14:00:00
-  -
-    start: 2025-02-14T13:00:00
-    end: 2025-02-14T14:00:00
-  -
-    start: 2025-03-14T13:00:00
-    end: 2025-03-14T14:00:00
-  -
-    start: 2025-04-11T13:00:00
-    end: 2025-04-11T14:00:00
-  -
-    start: 2025-05-9T13:00:00
-    end: 2025-05-9T14:00:00
-  -
-    start: 2025-06-13T13:00:00
-    end: 2025-06-13T14:00:00
-  -
-    start: 2025-07-11T13:00:00
-    end: 2025-07-11T14:00:00
-  -
-    start: 2025-08-08T13:00:00
-    end: 2025-08-08T14:00:00
-  -
-    start: 2025-09-12T13:00:00
-    end: 2025-09-12T14:00:00
-  -
-    start: 2025-10-10T13:00:00
-    end: 2025-10-10T14:00:00
-  -
-    start: 2025-11-14T13:00:00
-    end: 2025-11-14T14:00:00
-  -
-    start: 2025-12-12T13:00:00
-    end: 2025-12-12T14:00:00
-  -
-    start: 2026-01-09T13:00:00
-    end: 2026-01-09T14:00:00
-  -
-    start: 2026-02-13T13:00:00
-    end: 2026-02-13T14:00:00
-  -
-    start: 2026-03-13T13:00:00
-    end: 2026-03-13T14:00:00
-  -
-    start: 2026-04-10T13:00:00
-    end: 2026-04-10T14:00:00
-  -
-    start: 2026-05-8T13:00:00
-    end: 2026-05-8T14:00:00
-  -
-    start: 2026-06-12T13:00:00
-    end: 2026-06-12T14:00:00
-  -
-    start: 2026-07-10T13:00:00
-    end: 2026-07-10T14:00:00
-  -
-    start: 2026-08-14T13:00:00
-    end: 2026-08-14T14:00:00
-
-
+  - 
+    start: 2026-09-11T13:00:00
+    end: 2026-09-11T14:00:00
+  - 
+    start: 2026-09-18T13:00:00
+    end: 2026-09-18T14:00:00
+  - 
+    start: 2026-09-25T13:00:00
+    end: 2026-09-25T14:00:00
+  - 
+    start: 2026-10-02T13:00:00
+    end: 2026-10-02T14:00:00
+  - 
+    start: 2026-10-09T13:00:00
+    end: 2026-10-09T14:00:00
+  - 
+    start: 2026-10-16T13:00:00
+    end: 2026-10-16T14:00:00
+  - 
+    start: 2026-10-23T13:00:00
+    end: 2026-10-23T14:00:00
+  - 
+    start: 2026-10-30T13:00:00
+    end: 2026-10-30T14:00:00
+  - 
+    start: 2026-11-06T13:00:00
+    end: 2026-11-06T14:00:00
+  - 
+    start: 2026-11-13T13:00:00
+    end: 2026-11-13T14:00:00
+  - 
+    start: 2026-11-20T13:00:00
+    end: 2026-11-20T14:00:00
+  - 
+    start: 2026-11-27T13:00:00
+    end: 2026-11-27T14:00:00
 mode: OnlineEventAttendanceMode
 tutors:
- - DataStewards of DataPLANT, CEPLAS, MibiNet, TRR341
+ - Data Stewards
 location:
   name: Microsoft Teams
   url: https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzFlNzVkOWItYzNjNS00NWMxLWE3ZDUtY2M2YmEwOTk1YWUw%40thread.v2/0?context=%7b%22Tid%22%3a%229071867c-98f0-4006-89aa-4e4fd55af39d%22%2c%22Oid%22%3a%224b7a1c1c-664e-42ce-b224-7599ace27c53%22%7d
@@ -79,7 +54,10 @@ registration:
 
 ## Dates
 
-- Every second Friday of the month from 1 pm - 2pm
+- Every Friday from 1 pm - 2pm
+
+🗓️ [Download the calendar invite](/dataplant-arc-user-support-meeting.ics)
+
 
 ## Topics
 
