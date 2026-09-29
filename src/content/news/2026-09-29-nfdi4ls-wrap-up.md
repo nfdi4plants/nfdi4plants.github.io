@@ -6,7 +6,7 @@ description: Three days, seven keynotes and 41 talks and posters in Gatersleben.
 
 <figure style="margin: 0;">
   <div style="display: flex; gap: 20px; align-items: flex-start;">
-    <img src="/src/assets/images/news/2026-09-29-me-nfdi4ls-group-picture.jpg" alt="Grop Picture." style="width: 100%; margin: auto;" />
+    <img src="/public/images/news/2026-09-29-me-nfdi4ls-group-picture.jpg" alt="Grop Picture." style="width: 100%; margin: auto;" />
   </div>
   <figcaption style="text-align: center; font-size: 0.9em; color: #555; margin-top: 12px;">
     Participants of the 1st NFDI4LifeSciences Conference at IPK Gatersleben.
@@ -28,7 +28,7 @@ If several tools read and write the same standard, they need to read and write i
 
 <figure style="margin: 0;">
   <div style="display: flex; gap: 20px; align-items: flex-start;">
-    <img src="/src/assets/images/news/2026-09-29-me-lukas-weil.jpg" alt="Lukas Weil" style="width: 65%; margin: auto;" />
+    <img src="/public/images/news/2026-09-29-me-lukas-weil.jpg" alt="Lukas Weil" style="width: 65%; margin: auto;" />
   </div>
   <figcaption style="text-align: center; font-size: 0.9em; color: #555; margin-top: 12px;">
     Lukas Weil presenting ARCtrl.
@@ -45,8 +45,8 @@ Provenance is essential for reuse, but it quickly becomes hard to edit as experi
 
 <figure style="margin: 0;">
   <div style="display: flex; gap: 20px; align-items: flex-start;">
-    <img src="/src/assets/images/news/2026-09-29-me-bbq.jpg" alt="BBQ." style="width: 50%; margin: 0;" />
-    <img src="/src/assets/images/news/2026-09-29-me-poster.jpg" alt="Poster Session" style="width: 50%; margin: 0;" />
+    <img src="/public/images/news/2026-09-29-me-bbq.jpg" alt="BBQ." style="width: 50%; margin: 0;" />
+    <img src="/public/images/news/2026-09-29-me-poster.jpg" alt="Poster Session" style="width: 50%; margin: 0;" />
   </div>
   <figcaption style="text-align: center; font-size: 0.9em; color: #555; margin-top: 12px;">
     Poster session and BBQ in the sunshine.
@@ -66,8 +66,8 @@ Some of the best exchanges happened outside the lecture hall: at the poster sess
 
 <figure style="margin: 0;">
   <div style="display: flex; gap: 20px; align-items: flex-start;">
-    <img src="/src/assets/images/news/2026-09-29-me-city-tour.jpg" alt="City Tour QLB." style="width: 50%; margin: 0;" />
-    <img src="/src/assets/images/news/2026-09-29-me-conference-dinner.jpg" alt="Conference Dinner" style="width: 50%; margin: 0;" />
+    <img src="/public/images/news/2026-09-29-me-city-tour.jpg" alt="City Tour QLB." style="width: 50%; margin: 0;" />
+    <img src="/public/images/news/2026-09-29-me-conference-dinner.jpg" alt="Conference Dinner" style="width: 50%; margin: 0;" />
   </div>
   <figcaption style="text-align: center; font-size: 0.9em; color: #555; margin-top: 12px;">
     City Tour and Conference dinner in Quedlinburg.
