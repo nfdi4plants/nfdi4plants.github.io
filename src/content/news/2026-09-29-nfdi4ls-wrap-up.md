@@ -6,13 +6,12 @@ description: Three days, seven keynotes and 41 talks and posters in Gatersleben.
 
 <figure style="margin: 0;">
   <div style="display: flex; gap: 20px; align-items: flex-start;">
-    <img src="/public/images/news/2026-09-29-me-nfdi4ls-group-picture.jpg" alt="Grop Picture." style="width: 100%; margin: auto;" />
+    <img src="../../assets/images/news/2026-09-29-me-nfdi4ls-group-picture.jpg" alt="Grop Picture." style="width: 100%; margin: auto;" />
   </div>
   <figcaption style="text-align: center; font-size: 0.9em; color: #555; margin-top: 12px;">
     Participants of the 1st NFDI4LifeSciences Conference at IPK Gatersleben.
   </figcaption>
 </figure>
-
 
 From 2 to 4 September 2026, 71 participants from 6 countries and 3 continents met at the Leibniz Institute of Plant Genetics and Crop Plant Research (IPK) in Gatersleben for the 1st [NFDI4LifeSciences Conference](https://meetings.ipk-gatersleben.de/nfdi4LS-IB2026/), held together with the 20th International Symposium on Integrative Bioinformatics. DataPLANT was one of the three organising consortia, and we are proud of how the week turned out.
 
@@ -28,7 +27,7 @@ If several tools read and write the same standard, they need to read and write i
 
 <figure style="margin: 0;">
   <div style="display: flex; gap: 20px; align-items: flex-start;">
-    <img src="/public/images/news/2026-09-29-me-lukas-weil.jpg" alt="Lukas Weil" style="width: 65%; margin: auto;" />
+    <img src="../../assets/images/news/2026-09-29-me-lukas-weil.jpg" alt="Lukas Weil" style="width: 65%; margin: auto;" />
   </div>
   <figcaption style="text-align: center; font-size: 0.9em; color: #555; margin-top: 12px;">
     Lukas Weil presenting ARCtrl.
@@ -45,8 +44,8 @@ Provenance is essential for reuse, but it quickly becomes hard to edit as experi
 
 <figure style="margin: 0;">
   <div style="display: flex; gap: 20px; align-items: flex-start;">
-    <img src="/public/images/news/2026-09-29-me-bbq.jpg" alt="BBQ." style="width: 50%; margin: 0;" />
-    <img src="/public/images/news/2026-09-29-me-poster.jpg" alt="Poster Session" style="width: 50%; margin: 0;" />
+    <img src="../../assets/images/news/2026-09-29-me-bbq.jpg" alt="BBQ." style="width: 50%; margin: 0;" />
+    <img src="../../assets/images/news/2026-09-29-me-poster.jpg" alt="Poster Session" style="width: 50%; margin: 0;" />
   </div>
   <figcaption style="text-align: center; font-size: 0.9em; color: #555; margin-top: 12px;">
     Poster session and BBQ in the sunshine.
@@ -66,20 +65,19 @@ Some of the best exchanges happened outside the lecture hall: at the poster sess
 
 <figure style="margin: 0;">
   <div style="display: flex; gap: 20px; align-items: flex-start;">
-    <img src="/public/images/news/2026-09-29-me-city-tour.jpg" alt="City Tour QLB." style="width: 50%; margin: 0;" />
-    <img src="/public/images/news/2026-09-29-me-conference-dinner.jpg" alt="Conference Dinner" style="width: 50%; margin: 0;" />
+    <img src="../../assets/images/news/2026-09-29-me-city-tour.jpg" alt="City Tour QLB." style="width: 50%; margin: 0;" />
+    <img src="../../assets/images/news/2026-09-29-me-conference-dinner.jpg" alt="Conference Dinner" style="width: 50%; margin: 0;" />
   </div>
   <figcaption style="text-align: center; font-size: 0.9em; color: #555; margin-top: 12px;">
     City Tour and Conference dinner in Quedlinburg.
   </figcaption>
 </figure>
 
-
 ## What we take home.
 
 The participants were impressed by how far the ARC has come, and we got the impression that the framework is not also accepted but also apprciated  by the community. For us this is a clear sign to keep going: keeping the specification and ARCtrl stable, improving tools such as Swate and ARCitect, and working with the other NFDI consortia so that ARCs work across domains.
 
-*Want to try the ARC yourself?* Start with the [ARC specification](https://arc-rdm.org), [ARC Knowledgebase](https://nfdi4plants.org/nfdi4plants.knowledgebase/) or get in touch with the [DataPLANT helpdesk](https://helpdesk.nfdi4plants.org/). 
+*Want to try the ARC yourself?* Start with the [ARC specification](https://arc-rdm.org), [ARC Knowledgebase](https://nfdi4plants.org/nfdi4plants.knowledgebase/) or get in touch with the [DataPLANT helpdesk](https://helpdesk.nfdi4plants.org/).
 
 **Thank you.**
 
