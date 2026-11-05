@@ -11,7 +11,7 @@ styling:
   textPosition: text-only
 image: ~/assets/images/subpage/toolbox/toolbox-hero.svg
 content: 
-  - toolbox/arcitisa
+  # - toolbox/arcitisa
   - toolbox/excel-add-in
   - toolbox/dataplan
   - toolbox/arcmanager
