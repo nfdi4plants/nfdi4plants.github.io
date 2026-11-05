@@ -9,8 +9,8 @@ when:
 mode: OfflineEventAttendanceMode
 audience: [Users]
 location:
-  name: UoC, Comp Building Luxemburgerstr. 90 – Seminar room 1.23
-  url: -
+  name: UoC, Comp Building Luxemburgerstr. 90 – room 1.23
+  url: https://maps.uni-koeln.de/map?building=315&at=50.92511,6.93668,18z
 image: ~/assets/images/events/ceplas-ARCs.drawio.png
 tutors:
   - Vittorio Tracanna (<a href="https://www.ceplas.eu/en/research/ceplas-data">CEPLAS Data</a>)
