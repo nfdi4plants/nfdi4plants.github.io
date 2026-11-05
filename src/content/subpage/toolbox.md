@@ -11,9 +11,7 @@ styling:
   textPosition: text-only
 image: ~/assets/images/subpage/toolbox/toolbox-hero.svg
 content: 
-  - toolbox/arcitect
-  - toolbox/swate
-  - toolbox/arc-vs-code
+  - toolbox/arcitisa
   - toolbox/excel-add-in
   - toolbox/dataplan
   - toolbox/arcmanager

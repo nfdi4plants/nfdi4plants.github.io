@@ -17,4 +17,4 @@ affiliation:
 location: Halle, Germany
 ---
 
-I am the Data Steward for [SNP2Prot](https://snp2prot.uni-halle.de/), a consortium which involves the University of Halle, IPK, IPB, and the University of Leipzig. I also like helping out with the software surrounding ARCs (mostly the ARCitect so far) if there is a little fix or feature I can contribute. 
+I am the Data Steward for [SNP2Prot](https://snp2prot.uni-halle.de/), a consortium which involves the University of Halle, IPK, IPB, and the University of Leipzig. I also like helping out with the software surrounding ARCs (mostly ARCitISA and ARCitect so far) if there is a little fix or feature I can contribute. 
