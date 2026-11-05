@@ -22,7 +22,7 @@ registration:
     description: 'First-come-first-serve. Members of CEPLAS have priority. Everyone else is welcome, if seats are available.' 
     url: 'https://terminplaner.dfn.de/public/bookings/ac7f5e43-9c20-4c97-b9cc-ac4cad0873b5'
     seats: 15
-    deadline: 2026-11-20
+    deadline: 2026-11-17
 ---
 
 ## Goals
