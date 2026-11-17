@@ -1,5 +1,4 @@
 ---
-slug: arcafe-at-hhu
 title: ARCafé @ HHU — In-Person Hands-On ARC Sessions
 category: Meeting
 audience: [Users]
