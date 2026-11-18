@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import {sortByYear, groupByYear, isPastOrWithinNext31Days, type ReducedEvent, getHumanReadableAttendanceMode } from '~/util/EventUtil.ts';
 import EventInfoList from './EventInfoList.tsx';
+import EventCalendar from './EventCalendar.tsx';
 
 interface Props {
   events: ReducedEvent[];
@@ -126,6 +127,7 @@ export default function EventList( {events, showFilter = true, showPastFutureLim
     return true;
   }
 
+  const filteredEvents = events.filter(filterEvents);
   const filteredUpcomingEvents = 
     upcomingEvents
       .filter(filterEvents)
@@ -143,6 +145,7 @@ export default function EventList( {events, showFilter = true, showPastFutureLim
         )
       }
 
+      <EventCalendar events={filteredEvents} />
       <h2 className="text-5xl lg:text-7xl text-center bg-secondary text-secondary-content p-2 lg:w-[64rem] xl:w-[72rem] lg:max-w-5xl xl:max-w-6xl">Upcoming</h2>
       <div>
         <span className='py-2 text-lg'>
