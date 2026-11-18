@@ -11,9 +11,7 @@ However, for individual researchers, the number of different standards and check
 Therefore, we have made it our mission to keep track of the key metadata relevant for data publication by including it in templates that can be integrated into ARCs easily, enabling the individual researcher to comfortably use the prefabricated construct.
 
 
-For using these metadata templates as well as easily creating and filling annotation tables with ontology terms, we developed the tool Swate (Swate workflow annotation tool for Excel).
-Swate contains templates that represent the specific metadata requirements of different data repositories and minimum information standards as well as general templates for different lab assays.
-Swate is integrated into ARCitect and will automatically be used when adding metadata to your studies and assays from within ARCitect, but it can also be used as a standalone tool in Excel and in your browser.
+For using these metadata templates as well as easily creating and filling annotation tables with ontology terms, we developed the tool ARCitISA. ARCitISA contains templates that represent the specific metadata requirements of different data repositories and minimum information standards as well as general templates for different lab assays.
+ARCitISA can also be used as a standalone tool in Excel and in your browser.
 
-
-[Try Swate](https://swate-alphanfdi4plants.org)
+[Try ARCitISA](https://swate.nfdi4plants.org)
