@@ -25,9 +25,6 @@ when:
   -
     start: 2026-09-30T14:00:00
     end: 2026-09-30T15:00:00
-  -
-    start: 2026-11-25T14:00:00
-    end: 2026-11-25T15:00:00
 
 
 mode: OnlineEventAttendanceMode
