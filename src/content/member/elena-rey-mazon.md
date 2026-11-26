@@ -1,6 +1,6 @@
 ---
 name: Elena Rey Mazón
-image: /src/assets/images/member/erm.jpg
+image: /src/assets/images/member/elena-rey.jpg
 description: Data Steward for DataPLANT
 socials:
   - href: https://orcid.org/0000-0003-4813-5927
