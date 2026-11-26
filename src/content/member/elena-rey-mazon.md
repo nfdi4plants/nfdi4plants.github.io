@@ -1,16 +1,16 @@
 ---
 name: Elena Rey Mazón
-image: 
+# image: 
 
 description: Data Steward for DataPLANT
 socials:
-  - href: 
+  - href: https://orcid.org/0000-0003-4813-5927
     name: ORCID
-  - href: 
+  - href: https://git.nfdi4plants.org/elenareymazon
     name: DataHUB
-  - href: 
+  - href: https://matrix.to/#/@elenarey:matrix.org
     name: Matrix Chat
-  - href: 
+  - href: https://github.com/wanalanda
     name: GitHub
 
 affiliation: 
